@@ -1,0 +1,29 @@
+name: fetch
+
+on:
+  schedule:
+    - cron:  '5 2 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+      with:
+        lfs: true
+
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: '14'
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: |
+        sh ./archive.sh
