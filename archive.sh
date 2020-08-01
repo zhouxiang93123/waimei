@@ -1,7 +1,7 @@
 #!/bin/bash
-# git config --global user.email "becare4@tutanota.com";
-# git config --global user.name "nodebe4";
-# git config --global pull.rebase false;
+git config --local user.email "becare4@tutanota.com";
+git config --local user.name "nodebe4";
+git config --local pull.rebase false;
 git lfs install;
 
 now=$(date +"%F");
