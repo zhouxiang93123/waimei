@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout this repo
+      uses: actions/checkout@v2
+      with:
+        lfs: true
     - name: Build the site in the jekyll/builder container
       env:
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
