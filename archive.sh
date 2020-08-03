@@ -6,7 +6,7 @@ git lfs install;
 
 now=$(date +"%F");
 
-function datediff () {
+datediff () {
   D1=$(date -d "$1" '+%s');
   D2=$(date -d "$2" '+%s');
   echo "$(((D2-D1)/86400))";
