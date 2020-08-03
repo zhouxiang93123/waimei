@@ -25,7 +25,7 @@ navigation:
   - name: 時間
     url: /archive
   - name: 来源
-    url: /tags
+    url: /categories
   - name: 观点
     url: https://nodebe4.github.io/opinion/
   - name: 反馈
