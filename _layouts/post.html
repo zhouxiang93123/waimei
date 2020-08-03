@@ -7,8 +7,8 @@ layout: default
 {% assign post_tag_p2 = false %}
 {% assign post_tag_p1 = false %}
 
-{% assign pagetag = page.tags[0] %}
-{% assign tag_posts = site.tags[pagetag] %}
+{% assign pagetag = page.categories.last %}
+{% assign tag_posts = site.categories[pagetag] %}
 {% for post in tag_posts %}
   {% if post.url == page.url %}
     {% break %}
@@ -16,7 +16,7 @@ layout: default
   {% assign post_tag_m2 = post_tag_m1 %}
   {% assign post_tag_m1 = post %}
 {% endfor %}
-{% assign tag_posts = site.tags[pagetag] | reverse %}
+{% assign tag_posts = site.categories[pagetag] | reverse %}
 {% for post in tag_posts %}
   {% if post.url == page.url %}
     {% break %}
