@@ -2,24 +2,6 @@
 layout: default
 ---
 
-<style type="text/css">
-  #search-container {
-    max-width: 40em;
-    padding: 1em;
-    margin: 1em auto;
-    border: 1px solid lightgrey;
-  }
-  #search-input {
-    display: inline-block;
-    padding: .5em;
-    width: 100%;
-    font-size: 0.8em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-</style>
-
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
@@ -31,7 +13,7 @@ layout: default
 </div>
 
 <!-- or without installing anything -->
-<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
 
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -101,10 +83,10 @@ layout: default
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/{{site.baseurl}}/search.json',
+    json: '{{site.baseurl}}/search.json',
     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
     noResultsText: 'No results found',
-    limit: 10,
+    limit: 50,
     fuzzy: false,
     exclude: ['Welcome']
   })
