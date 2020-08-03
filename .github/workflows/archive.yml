@@ -14,4 +14,5 @@ jobs:
       with:
         lfs: true
     - run: |
-        sh ./archive.sh
+        chmod +x ./archive.sh
+        ./archive.sh
