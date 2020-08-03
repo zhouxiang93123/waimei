@@ -15,6 +15,19 @@ layout: default
 <!-- or without installing anything -->
 <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
 
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{site.baseurl}}/search.json',
+  searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+  noResultsText: 'No results found',
+  limit: 50,
+  fuzzy: true,
+  exclude: ['Welcome']
+})
+</script>
+
 <div class="pagination">
   {% if paginator.previous_page %}
     <span class="prev">
@@ -80,16 +93,6 @@ layout: default
     if (e.keyCode == '39') { window.location = '{{ site.baseurl}}{{ paginator.next_page_path }}'; } // right arrow key
   };
 
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '{{site.baseurl}}/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    noResultsText: 'No results found',
-    limit: 50,
-    fuzzy: false,
-    exclude: ['Welcome']
-  })
   </script>
 
 </div>
