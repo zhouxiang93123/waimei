@@ -2,7 +2,7 @@ name: archive
 
 on:
   schedule:
-    - cron:  '5 * * * *'
+    - cron:  '5 */12 * * *'
 
 jobs:
   build:
