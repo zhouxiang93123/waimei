@@ -2,28 +2,36 @@
 layout: default
 ---
 
+<style type="text/css">
+  #search-container {
+    max-width: 40em;
+    padding: 1em;
+    margin: 1em auto;
+    border: 1px solid lightgrey;
+  }
+  #search-input {
+    display: inline-block;
+    padding: .5em;
+    width: 100%;
+    font-size: 0.8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+</style>
+
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
-<!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search..."
   style="margin: 0px 0px 20px 0px; height: 40px; width: 100%;">
 <ul id="results-container"></ul>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src="{{site.baseurl}}/assets/js/search-script.js" type="text/javascript"></script>
-
-<!-- Configuration -->
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '{{site.baseurl}}/search.json'
-})
-</script>
+<!-- or without installing anything -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -89,6 +97,17 @@ SimpleJekyllSearch({
     if (e.keyCode == '37') { window.location = '{{ site.baseurl }}{{ paginator.previous_page_path }}'; } // left arrow key
     if (e.keyCode == '39') { window.location = '{{ site.baseurl}}{{ paginator.next_page_path }}'; } // right arrow key
   };
+
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/{{site.baseurl}}/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
   </script>
 
 </div>
