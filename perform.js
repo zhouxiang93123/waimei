@@ -13,7 +13,6 @@ let feedxUrls = {
   '法广': 'https://feedx.net/rss/rfi.xml',
   '德国之声': 'https://feedx.net/rss/dw.xml',
   '联合早报': 'https://rsshub.app/zaobao/realtime/china',
-  'RTI 中央廣播電臺': 'http://www.rti.org.tw/rss/',
   '(臺)中央社CNA': 'https://feedx.net/rss/cna.xml',
   'CCTV新闻联播': 'https://rsshub.app/xinwenlianbo/index',
   '维权网': 'https://wqw2010.blogspot.com/feeds/posts/default',
