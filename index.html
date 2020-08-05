@@ -48,6 +48,19 @@ SimpleJekyllSearch({
 <ul class="archive">
 
   {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        <h2>{{ month }}</h2>
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% capture ndate %}{{ post.next.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if date != ndate %}
+        <h2>{{ post.date | date: '%Y-%m-%d' }}</h2>
+      {% endif %}
+    {% endunless %}
     <li>
       {% if post.link %}
       <a href="{{ post.link }}">
