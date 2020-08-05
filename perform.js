@@ -144,7 +144,7 @@ function generateArticle(article) {
     pubDate = today
   }
   let dateString = pubDate.toISOString()
-  let titletext = article.title.toString().replace('"', '\\"').replace('\'','\\\'').replace("...", "")
+  let titletext = article.title.toString().replace(/"/g, '\\"').replace(/'/g,'\\\'').replace("...", '')
   let articlelink = new URL(article.link).href
   let header = `---
 layout: post
@@ -157,7 +157,7 @@ categories: [ news, ${article.site} ]
 ---
 `
   md = header + md
-  let filename = `${dateString.substring(0, 10)}-${titletext}.md`.replace(/\//g, '--')
+  let filename = `${dateString.substring(0, 10)}-${titletext.substring(0, 50)}.md`.replace(/\//g, '--')
   if (!fs.existsSync(`./_posts/${filename}`)) {
     fs.writeFileSync(`./_posts/${filename}`, md)
     console.log(`add ./_posts/${filename}`)
