@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Microsoft’s proposed purchase of TikTok would be its biggest yet"
+date: 2020-08-04T21:09:50.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/08/04/microsofts-proposed-purchase-of-tiktok-would-be-its-biggest-yet
+tags: [ 经济学人en ]
+categories: [ news, 经济学人en ]
+---
+<!--1596575390000-->
+[Microsoft’s proposed purchase of TikTok would be its biggest yet](https://www.economist.com/graphic-detail/2020/08/04/microsofts-proposed-purchase-of-tiktok-would-be-its-biggest-yet)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/sites/default/files/20200808_WOC942.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-08-04T00:00:00Z" >Aug 4th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >THE POLITICS of technology in America are becoming ever more febrile. Big tech companies have long been accused of abusing dominant market positions; four were grilled by a congressional committee last week. Social-media firms are beset by allegations of bias. And the administration of President Donald Trump regards China’s growing technological prowess as a threat to both America’s competitiveness and its national security.</p><p >In recent days the anti-Chinese theme has taken a new twist: Microsoft looks likely to buy the American assets of TikTok, a Chinese-made social-media app that teenagers around the world find addictive. Mr Trump, who has threatened to “close down” the app on September 15th unless it is bought by a “very American” company, has blessed the idea. In a further Trumpian turn he has also demanded that the Treasury should get “a very large percentage of the purchase price”, having been responsible for bringing the deal about.</p><div  id="gpt-ad-slot-1" data-test-id="Inline Ad"></div><p >Mr Trump is unhappy with ByteDance, TikTok’s parent company, because he perceives it to be too close to the Chinese government and the ruling Communist Party (CCP). Meanwhile ByteDance counters that its software does not nefariously snoop on its users, nor does it share any data with the CCP. TikTok, along with 58 other Chinese-made apps, was banned in India at the end of June, because the government feared that the firm was infringing upon its sovereignty and security at a time of heightened tension on the two countries’ disputed border. Mr Trump’s hard line means that ByteDance is certain to dispose of American operations. China has complained that a deal would amount to a “smash and grab” raid on a Chinese company. Microsoft reportedly wants reassurance that Beijing will not retaliate against its business in China.</p><p >Microsoft&#x27;s shareholders appear to welcome the acquisition, despite the political uncertainties and a mooted purchase price of $50bn—twice as much as its biggest previous purchase, LinkedIn, a professional-networking and job-search platform. Microsoft’s share price has risen by 4% since the announcement of the prospective deal, adding around $60bn to its market value. In recent years America’s five biggest tech firms have all been eager acquirers of other, smaller firms (see chart)—one of the complaints of congressional Democrats. If Microsoft buys the American bit of TikTok, it will cement its position as the biggest spender in the group.</p>
+</div>
