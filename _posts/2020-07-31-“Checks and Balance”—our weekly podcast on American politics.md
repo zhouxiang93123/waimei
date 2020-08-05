@@ -5,7 +5,7 @@ date: 2020-07-31T19:09:46.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/07/31/checks-and-balance-our-weekly-podcast-on-american-politics
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596222586000-->
 [“Checks and Balance”—our weekly podcast on American politics](https://www.economist.com/podcasts/2020/07/31/checks-and-balance-our-weekly-podcast-on-american-politics)

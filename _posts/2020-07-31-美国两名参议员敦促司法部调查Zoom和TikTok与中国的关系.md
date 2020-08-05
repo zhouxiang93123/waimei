@@ -5,7 +5,7 @@ date: 2020-07-31T02:55:37.000Z
 author: 路透
 from: https://cn.reuters.com/article/usa-senators-tiktok-zoom-china-0730-thur-idCNKCS24W0AL
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596164137000-->
 [美国两名参议员敦促司法部调查Zoom和TikTok与中国的关系](https://cn.reuters.com/article/usa-senators-tiktok-zoom-china-0730-thur-idCNKCS24W0AL)

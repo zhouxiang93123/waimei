@@ -5,7 +5,7 @@ date: 2020-08-04T14:23:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65144
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596550980000-->
 [约旦关闭教师工会封锁 Facebook Live 服务](https://www.solidot.org/story?sid=65144)

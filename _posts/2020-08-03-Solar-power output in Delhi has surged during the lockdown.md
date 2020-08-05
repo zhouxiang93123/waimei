@@ -5,7 +5,7 @@ date: 2020-08-03T05:09:46.000Z
 author: 经济学人en
 from: https://www.economist.com/graphic-detail/2020/07/31/solar-power-output-in-delhi-has-surged-during-the-lockdown
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596431386000-->
 [Solar-power output in Delhi has surged during the lockdown](https://www.economist.com/graphic-detail/2020/07/31/solar-power-output-in-delhi-has-surged-during-the-lockdown)

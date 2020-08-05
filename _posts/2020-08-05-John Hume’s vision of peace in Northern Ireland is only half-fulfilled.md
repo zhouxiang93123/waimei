@@ -5,7 +5,7 @@ date: 2020-08-05T15:09:06.000Z
 author: 经济学人en
 from: https://www.economist.com/britain/2020/08/05/john-humes-vision-of-peace-in-northern-ireland-is-only-half-fulfilled
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596640146000-->
 [John Hume’s vision of peace in Northern Ireland is only half-fulfilled](https://www.economist.com/britain/2020/08/05/john-humes-vision-of-peace-in-northern-ireland-is-only-half-fulfilled)

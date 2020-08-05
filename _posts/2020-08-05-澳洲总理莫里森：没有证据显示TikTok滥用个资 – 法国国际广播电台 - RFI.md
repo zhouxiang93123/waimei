@@ -5,7 +5,7 @@ date: 2020-08-05T05:54:18.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200805-%E6%BE%B3%E6%B4%B2%E6%80%BB%E7%90%86%E8%8E%AB%E9%87%8C%E6%A3%AE%E6%B2%A1%E6%9C%89%E8%AF%81%E6%8D%AE%E6%98%BE%E7%A4%BAtiktok%E6%BB%A5%E7%94%A8%E4%B8%AA%E8%B5%84
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596606858000-->
 [澳洲总理莫里森：没有证据显示TikTok滥用个资 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200805-%E6%BE%B3%E6%B4%B2%E6%80%BB%E7%90%86%E8%8E%AB%E9%87%8C%E6%A3%AE%E6%B2%A1%E6%9C%89%E8%AF%81%E6%8D%AE%E6%98%BE%E7%A4%BAtiktok%E6%BB%A5%E7%94%A8%E4%B8%AA%E8%B5%84)

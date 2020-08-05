@@ -5,7 +5,7 @@ date: 2020-07-30T07:23:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65096
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596093780000-->
 [微软加入 Blender Development Fund](https://www.solidot.org/story?sid=65096)

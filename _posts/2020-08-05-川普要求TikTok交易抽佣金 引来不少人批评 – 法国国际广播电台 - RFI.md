@@ -5,7 +5,7 @@ date: 2020-08-05T04:54:54.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200805-%E5%B7%9D%E6%99%AE%E8%A6%81%E6%B1%82tiktok%E4%BA%A4%E6%98%93%E6%8A%BD%E4%BD%A3%E9%87%91-%E5%BC%95%E6%9D%A5%E4%B8%8D%E5%B0%91%E4%BA%BA%E6%89%B9%E8%AF%84
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596603294000-->
 [川普要求TikTok交易抽佣金 引来不少人批评 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200805-%E5%B7%9D%E6%99%AE%E8%A6%81%E6%B1%82tiktok%E4%BA%A4%E6%98%93%E6%8A%BD%E4%BD%A3%E9%87%91-%E5%BC%95%E6%9D%A5%E4%B8%8D%E5%B0%91%E4%BA%BA%E6%89%B9%E8%AF%84)

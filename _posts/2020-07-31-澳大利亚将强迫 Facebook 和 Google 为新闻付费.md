@@ -5,7 +5,7 @@ date: 2020-07-31T14:02:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65113
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596204120000-->
 [澳大利亚将强迫 Facebook 和 Google 为新闻付费](https://www.solidot.org/story?sid=65113)

@@ -5,7 +5,7 @@ date: 2020-08-04T13:09:48.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/04/this-is-a-massive-gamble-and-the-stakes-are-increasingly-high-for-turkey-a-regional-power-spreads
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596546588000-->
 [“This is a massive gamble, and the stakes are increasingly high for Turkey”—a regional power spreads](https://www.economist.com/podcasts/2020/08/04/this-is-a-massive-gamble-and-the-stakes-are-increasingly-high-for-turkey-a-regional-power-spreads)

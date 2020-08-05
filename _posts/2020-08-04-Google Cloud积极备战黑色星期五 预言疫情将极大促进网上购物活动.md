@@ -5,7 +5,7 @@ date: 2020-08-04T10:23:19.000Z
 author: 路透
 from: https://cn.reuters.com/article/google-cloud-black-friday-0804-idCNKCS2501BM
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596536599000-->
 [Google Cloud积极备战黑色星期五 预言疫情将极大促进网上购物活动](https://cn.reuters.com/article/google-cloud-black-friday-0804-idCNKCS2501BM)

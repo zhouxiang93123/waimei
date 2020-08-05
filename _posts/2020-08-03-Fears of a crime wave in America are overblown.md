@@ -5,7 +5,7 @@ date: 2020-08-03T17:09:59.000Z
 author: 经济学人en
 from: https://www.economist.com/graphic-detail/2020/08/03/fears-of-a-crime-wave-in-america-are-overblown
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596474599000-->
 [Fears of a crime wave in America are overblown](https://www.economist.com/graphic-detail/2020/08/03/fears-of-a-crime-wave-in-america-are-overblown)

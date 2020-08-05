@@ -5,7 +5,7 @@ date: 2020-08-03T17:09:59.000Z
 author: 经济学人en
 from: https://www.economist.com/prospero/2020/08/03/gillian-welchs-appalachian-music-has-a-sombre-power
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596474599000-->
 [Gillian Welch’s Appalachian music has a sombre power](https://www.economist.com/prospero/2020/08/03/gillian-welchs-appalachian-music-has-a-sombre-power)

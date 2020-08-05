@@ -5,7 +5,7 @@ date: 2020-07-30T15:09:10.000Z
 author: 经济学人en
 from: https://www.economist.com/leaders/2020/07/30/levelling-up-britain-boris-johnson-has-a-big-idea-but-no-plan
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596121750000-->
 [Levelling up Britain: Boris Johnson has a big idea, but no plan](https://www.economist.com/leaders/2020/07/30/levelling-up-britain-boris-johnson-has-a-big-idea-but-no-plan)

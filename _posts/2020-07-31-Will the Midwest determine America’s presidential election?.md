@@ -5,7 +5,7 @@ date: 2020-07-31T17:09:47.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/07/31/will-the-midwest-determine-americas-presidential-election
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596215387000-->
 [Will the Midwest determine America’s presidential election?](https://www.economist.com/podcasts/2020/07/31/will-the-midwest-determine-americas-presidential-election)

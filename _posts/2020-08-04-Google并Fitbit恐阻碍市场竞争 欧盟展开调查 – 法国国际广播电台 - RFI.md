@@ -5,7 +5,7 @@ date: 2020-08-04T17:56:02.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200804-google%E5%B9%B6fitbit%E6%81%90%E9%98%BB%E7%A2%8D%E5%B8%82%E5%9C%BA%E7%AB%9E%E4%BA%89-%E6%AC%A7%E7%9B%9F%E5%B1%95%E5%BC%80%E8%B0%83%E6%9F%A5
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596563762000-->
 [Google并Fitbit恐阻碍市场竞争 欧盟展开调查 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200804-google%E5%B9%B6fitbit%E6%81%90%E9%98%BB%E7%A2%8D%E5%B8%82%E5%9C%BA%E7%AB%9E%E4%BA%89-%E6%AC%A7%E7%9B%9F%E5%B1%95%E5%BC%80%E8%B0%83%E6%9F%A5)

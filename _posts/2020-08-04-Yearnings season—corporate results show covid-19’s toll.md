@@ -5,7 +5,7 @@ date: 2020-08-04T21:09:50.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/04/yearnings-season-corporate-results-show-covid-19s-toll
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596575390000-->
 [Yearnings season—corporate results show covid-19’s toll](https://www.economist.com/podcasts/2020/08/04/yearnings-season-corporate-results-show-covid-19s-toll)

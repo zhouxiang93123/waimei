@@ -5,7 +5,7 @@ date: 2020-07-28T07:56:10.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200728-garmin遇骇服务断线数日-网路功能将恢复正常
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1595922970000-->
 [Garmin遇骇服务断线数日 网路功能将恢复正常 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200728-garmin%E9%81%87%E9%AA%87%E6%9C%8D%E5%8A%A1%E6%96%AD%E7%BA%BF%E6%95%B0%E6%97%A5-%E7%BD%91%E8%B7%AF%E5%8A%9F%E8%83%BD%E5%B0%86%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8)

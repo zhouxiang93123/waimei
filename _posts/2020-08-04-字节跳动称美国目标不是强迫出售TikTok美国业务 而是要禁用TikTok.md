@@ -5,7 +5,7 @@ date: 2020-08-04T10:23:19.000Z
 author: 路透
 from: https://cn.reuters.com/article/bytedance-tiktok-us-trump-0804-idCNKCS25019B
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596536599000-->
 [字节跳动称美国目标不是强迫出售TikTok美国业务 而是要禁用TikTok](https://cn.reuters.com/article/bytedance-tiktok-us-trump-0804-idCNKCS25019B)

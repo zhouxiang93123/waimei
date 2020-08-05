@@ -5,7 +5,7 @@ date: 2020-07-30T15:09:10.000Z
 author: 经济学人en
 from: https://www.economist.com/britain/2020/07/30/why-britain-is-more-geographically-unequal-than-any-other-rich-country
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596121750000-->
 [Why Britain is more geographically unequal than any other rich country](https://www.economist.com/britain/2020/07/30/why-britain-is-more-geographically-unequal-than-any-other-rich-country)

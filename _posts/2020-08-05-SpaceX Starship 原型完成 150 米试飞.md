@@ -5,7 +5,7 @@ date: 2020-08-05T13:32:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65157
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596634320000-->
 [SpaceX Starship 原型完成 150 米试飞](https://www.solidot.org/story?sid=65157)

@@ -5,7 +5,7 @@ date: 2020-07-31T02:23:19.000Z
 author: 路透
 from: https://cn.reuters.com/article/tiktok-lawsuit-triller-0730-thur-idCNKCS24W05V
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596162199000-->
 [TikTok遭竞争对手Triller起诉侵犯专利 并被求偿](https://cn.reuters.com/article/tiktok-lawsuit-triller-0730-thur-idCNKCS24W05V)

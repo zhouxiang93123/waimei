@@ -5,7 +5,7 @@ date: 2020-08-04T20:01:20.000Z
 author: 自由亚洲电台
 from: https://www.rfa.org/mandarin/yataibaodao/meiti/jt-08042020143659.html
 tags: [ 自由亚洲电台 ]
-categories: [ news, 自由亚洲电台 ]
+categories: [ 自由亚洲电台 ]
 ---
 <!--1596571280000-->
 [美国为何与TikTok过不去？TikTok踩了三个雷区](https://www.rfa.org/mandarin/yataibaodao/meiti/jt-08042020143659.html)

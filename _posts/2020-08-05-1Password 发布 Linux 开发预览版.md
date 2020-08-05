@@ -5,7 +5,7 @@ date: 2020-08-05T13:11:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65156
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596633060000-->
 [1Password 发布 Linux 开发预览版](https://www.solidot.org/story?sid=65156)

@@ -5,7 +5,7 @@ date: 2020-08-05T11:09:50.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/05/its-been-the-most-controversial-acre-in-all-of-india-a-divisive-temple-rises
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596625790000-->
 [“It’s been the most controversial acre in all of India”—a divisive temple rises](https://www.economist.com/podcasts/2020/08/05/its-been-the-most-controversial-acre-in-all-of-india-a-divisive-temple-rises)

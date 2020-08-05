@@ -5,7 +5,7 @@ date: 2020-07-23T05:51:56.000Z
 author: 金融时报
 from: https://cn.ft.com/story/001088671?full=y
 tags: [ 金融时报 ]
-categories: [ news, 金融时报 ]
+categories: [ 金融时报 ]
 ---
 <!--1595483516000-->
 [Wirecard前CEO再次被捕](https://cn.ft.com/story/001088671?full=y)

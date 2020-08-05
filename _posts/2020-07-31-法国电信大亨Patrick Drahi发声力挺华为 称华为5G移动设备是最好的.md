@@ -5,7 +5,7 @@ date: 2020-07-31T05:23:18.000Z
 author: 路透
 from: https://cn.reuters.com/article/france-tycoon-huawei-0730-support-idCNKCS24W0I7
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596172998000-->
 [法国电信大亨Patrick Drahi发声力挺华为 称华为5G移动设备是最好的](https://cn.reuters.com/article/france-tycoon-huawei-0730-support-idCNKCS24W0I7)

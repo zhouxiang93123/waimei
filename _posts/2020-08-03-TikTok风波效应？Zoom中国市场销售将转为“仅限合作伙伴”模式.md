@@ -5,7 +5,7 @@ date: 2020-08-03T09:53:23.000Z
 author: 路透
 from: https://cn.reuters.com/article/zoom-china-0803-idCNKBS24Z15F
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596448403000-->
 [TikTok风波效应？Zoom中国市场销售将转为“仅限合作伙伴”模式](https://cn.reuters.com/article/zoom-china-0803-idCNKBS24Z15F)

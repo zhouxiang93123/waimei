@@ -5,7 +5,7 @@ date: 2020-08-03T19:09:46.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/03/googles-middle-age-migration-amid-covid-19-and-levelling-britain-up
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596481786000-->
 [Google’s middle age, migration amid covid-19 and levelling Britain up](https://www.economist.com/podcasts/2020/08/03/googles-middle-age-migration-amid-covid-19-and-levelling-britain-up)

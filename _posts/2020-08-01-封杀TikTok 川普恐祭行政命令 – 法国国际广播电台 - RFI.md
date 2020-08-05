@@ -5,7 +5,7 @@ date: 2020-08-01T08:57:13.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200801-%E5%B0%81%E6%9D%80tiktok-%E5%B7%9D%E6%99%AE%E6%81%90%E7%A5%AD%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596272233000-->
 [封杀TikTok 川普恐祭行政命令 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200801-%E5%B0%81%E6%9D%80tiktok-%E5%B7%9D%E6%99%AE%E6%81%90%E7%A5%AD%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4)

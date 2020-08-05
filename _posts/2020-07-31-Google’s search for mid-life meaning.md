@@ -5,7 +5,7 @@ date: 2020-07-31T19:09:46.000Z
 author: 经济学人en
 from: https://www.economist.com/graphic-detail/2020/07/31/googles-search-for-mid-life-meaning
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596222586000-->
 [Google’s search for mid-life meaning](https://www.economist.com/graphic-detail/2020/07/31/googles-search-for-mid-life-meaning)

@@ -5,7 +5,7 @@ date: 2020-08-03T08:53:57.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200803-%E5%BE%AE%E8%BD%AF%E6%89%A7%E8%A1%8C%E9%95%BF%E4%B8%8E%E5%B7%9D%E6%99%AE%E4%BC%9A%E8%B0%88%E5%90%8E-%E7%BB%A7%E7%BB%AD%E6%B4%BD%E8%B4%ADtiktok
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596444837000-->
 [微软执行长与川普会谈后  继续洽购TikTok – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200803-%E5%BE%AE%E8%BD%AF%E6%89%A7%E8%A1%8C%E9%95%BF%E4%B8%8E%E5%B7%9D%E6%99%AE%E4%BC%9A%E8%B0%88%E5%90%8E-%E7%BB%A7%E7%BB%AD%E6%B4%BD%E8%B4%ADtiktok)

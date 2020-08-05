@@ -5,7 +5,7 @@ date: 2020-07-30T02:23:17.000Z
 author: 路透
 from: https://cn.reuters.com/article/brazil-china-dourados-chicken-0730-idCNKCS24V076
 tags: [ 路透 ]
-categories: [ news, 路透 ]
+categories: [ 路透 ]
 ---
 <!--1596075797000-->
 [巴西BRF称中国禁止其Dourados厂对华出口鸡肉](https://cn.reuters.com/article/brazil-china-dourados-chicken-0730-idCNKCS24V076)

@@ -5,7 +5,7 @@ date: 2020-08-05T17:09:56.000Z
 author: 经济学人en
 from: https://www.economist.com/prospero/2020/08/05/ronald-searle-created-his-own-style-of-graphic-art
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596647396000-->
 [Ronald Searle created his own style of graphic art](https://www.economist.com/prospero/2020/08/05/ronald-searle-created-his-own-style-of-graphic-art)

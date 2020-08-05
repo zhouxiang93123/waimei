@@ -5,7 +5,7 @@ date: 2020-07-31T13:24:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65112
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596201840000-->
 [Telegram 向欧盟投诉苹果的 App Store](https://www.solidot.org/story?sid=65112)

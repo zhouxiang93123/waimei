@@ -5,7 +5,7 @@ date: 2020-07-25T08:55:37.000Z
 author: 德国之声
 from: https://www.dw.com/zh/新冠警告App在iPhone上也出错/a-54315473
 tags: [ 德国之声 ]
-categories: [ news, 德国之声 ]
+categories: [ 德国之声 ]
 ---
 <!--1595667337000-->
 [新冠警告App在iPhone上也出错](https://www.dw.com/zh/%E6%96%B0%E5%86%A0%E8%AD%A6%E5%91%8AApp%E5%9C%A8iPhone%E4%B8%8A%E4%B9%9F%E5%87%BA%E9%94%99/a-54315473)

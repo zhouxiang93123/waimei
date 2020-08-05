@@ -5,7 +5,7 @@ date: 2020-08-05T19:09:53.000Z
 author: 经济学人en
 from: https://www.economist.com/books-and-arts/2020/08/05/the-benefits-of-learning-an-instrument-in-lockdown
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596654593000-->
 [The benefits of learning an instrument in lockdown](https://www.economist.com/books-and-arts/2020/08/05/the-benefits-of-learning-an-instrument-in-lockdown)

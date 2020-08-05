@@ -5,7 +5,7 @@ date: 2020-08-05T07:56:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65151
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596614160000-->
 [Google Play Music 即将关闭，12 月清空账号](https://www.solidot.org/story?sid=65151)

@@ -5,7 +5,7 @@ date: 2020-07-21T11:55:06.000Z
 author: 法广
 from: http://www.rfi.fr//cn/中国/20200721-法国参议员-andré-gattolin-欧盟将在年底通过欧盟的马格尼茨基法案
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1595332506000-->
 [法国参议员 André Gattolin：欧盟将在年底通过欧盟的马格尼茨基法案](http://www.rfi.fr//cn/%E4%B8%AD%E5%9B%BD/20200721-%E6%B3%95%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98-andr%C3%A9-gattolin-%E6%AC%A7%E7%9B%9F%E5%B0%86%E5%9C%A8%E5%B9%B4%E5%BA%95%E9%80%9A%E8%BF%87%E6%AC%A7%E7%9B%9F%E7%9A%84%E9%A9%AC%E6%A0%BC%E5%B0%BC%E8%8C%A8%E5%9F%BA%E6%B3%95%E6%A1%88)

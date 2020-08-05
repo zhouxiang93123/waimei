@@ -5,7 +5,7 @@ date: 2020-08-05T14:56:38.000Z
 author: 法广
 from: http://www.rfi.fr//cn/%E5%9B%BD%E9%99%85/20200805-%E9%AB%98%E5%BA%A6%E7%B1%BB%E4%BC%BCtiktok-%E8%84%B8%E4%B9%A6%E6%8E%A8%E5%87%BAreels
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596639398000-->
 [高度类似TikTok 脸书推出Reels](http://www.rfi.fr//cn/%E5%9B%BD%E9%99%85/20200805-%E9%AB%98%E5%BA%A6%E7%B1%BB%E4%BC%BCtiktok-%E8%84%B8%E4%B9%A6%E6%8E%A8%E5%87%BAreels)

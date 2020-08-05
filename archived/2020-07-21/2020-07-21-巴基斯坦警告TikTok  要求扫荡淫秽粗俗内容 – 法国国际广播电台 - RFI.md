@@ -5,7 +5,7 @@ date: 2020-07-21T16:56:35.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200721-巴基斯坦警告tiktok-要求扫荡淫秽粗俗内容
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1595350595000-->
 [巴基斯坦警告TikTok  要求扫荡淫秽粗俗内容 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200721-%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E8%AD%A6%E5%91%8Atiktok-%E8%A6%81%E6%B1%82%E6%89%AB%E8%8D%A1%E6%B7%AB%E7%A7%BD%E7%B2%97%E4%BF%97%E5%86%85%E5%AE%B9)

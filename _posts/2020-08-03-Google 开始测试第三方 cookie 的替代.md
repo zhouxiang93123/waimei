@@ -5,7 +5,7 @@ date: 2020-08-03T06:43:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65123
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596436980000-->
 [Google 开始测试第三方 cookie 的替代](https://www.solidot.org/story?sid=65123)

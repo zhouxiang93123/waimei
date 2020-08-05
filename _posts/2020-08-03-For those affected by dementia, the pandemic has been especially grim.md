@@ -5,7 +5,7 @@ date: 2020-08-03T23:09:51.000Z
 author: 经济学人en
 from: https://www.economist.com/international/2020/08/03/for-those-affected-by-dementia-the-pandemic-has-been-especially-grim
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596496191000-->
 [For those affected by dementia, the pandemic has been especially grim](https://www.economist.com/international/2020/08/03/for-those-affected-by-dementia-the-pandemic-has-been-especially-grim)

@@ -5,7 +5,7 @@ date: 2020-08-05T19:09:53.000Z
 author: 经济学人en
 from: https://www.economist.com/the-americas/2020/08/05/argentina-reaches-a-deal-with-its-foreign-creditors
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596654593000-->
 [Argentina reaches a deal with its foreign creditors](https://www.economist.com/the-americas/2020/08/05/argentina-reaches-a-deal-with-its-foreign-creditors)

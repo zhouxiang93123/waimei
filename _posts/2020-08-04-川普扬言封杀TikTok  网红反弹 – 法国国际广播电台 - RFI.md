@@ -5,7 +5,7 @@ date: 2020-08-04T15:55:06.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200804-%E5%B7%9D%E6%99%AE%E6%89%AC%E8%A8%80%E5%B0%81%E6%9D%80tiktok-%E7%BD%91%E7%BA%A2%E5%8F%8D%E5%BC%B9
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596556506000-->
 [川普扬言封杀TikTok  网红反弹 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200804-%E5%B7%9D%E6%99%AE%E6%89%AC%E8%A8%80%E5%B0%81%E6%9D%80tiktok-%E7%BD%91%E7%BA%A2%E5%8F%8D%E5%BC%B9)

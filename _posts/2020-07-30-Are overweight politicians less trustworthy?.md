@@ -5,7 +5,7 @@ date: 2020-07-30T17:09:49.000Z
 author: 经济学人en
 from: https://www.economist.com/graphic-detail/2020/07/30/are-overweight-politicians-less-trustworthy
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596128989000-->
 [Are overweight politicians less trustworthy?](https://www.economist.com/graphic-detail/2020/07/30/are-overweight-politicians-less-trustworthy)

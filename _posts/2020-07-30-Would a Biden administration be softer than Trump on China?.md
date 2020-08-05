@@ -5,7 +5,7 @@ date: 2020-07-30T15:09:10.000Z
 author: 经济学人en
 from: https://www.economist.com/united-states/2020/07/30/would-a-biden-administration-be-softer-than-trump-on-china
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596121750000-->
 [Would a Biden administration be softer than Trump on China?](https://www.economist.com/united-states/2020/07/30/would-a-biden-administration-be-softer-than-trump-on-china)

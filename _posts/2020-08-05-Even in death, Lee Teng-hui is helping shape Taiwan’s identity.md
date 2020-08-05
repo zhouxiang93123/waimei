@@ -5,7 +5,7 @@ date: 2020-08-05T21:09:47.000Z
 author: 经济学人en
 from: https://www.economist.com/asia/2020/08/05/even-in-death-lee-teng-hui-is-helping-shape-taiwans-identity
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596661787000-->
 [Even in death, Lee Teng-hui is helping shape Taiwan’s identity](https://www.economist.com/asia/2020/08/05/even-in-death-lee-teng-hui-is-helping-shape-taiwans-identity)

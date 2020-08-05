@@ -5,7 +5,7 @@ date: 2020-08-04T23:09:47.000Z
 author: 经济学人en
 from: https://www.economist.com/finance-and-economics/2020/08/04/economic-forecasts-are-too-rosy-that-can-be-costly
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596582587000-->
 [Economic forecasts are too rosy. That can be costly](https://www.economist.com/finance-and-economics/2020/08/04/economic-forecasts-are-too-rosy-that-can-be-costly)

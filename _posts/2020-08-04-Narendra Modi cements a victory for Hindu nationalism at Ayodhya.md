@@ -5,7 +5,7 @@ date: 2020-08-04T21:09:50.000Z
 author: 经济学人en
 from: https://www.economist.com/asia/2020/08/04/narendra-modi-cements-a-victory-for-hindu-nationalism-at-ayodhya
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596575390000-->
 [Narendra Modi cements a victory for Hindu nationalism at Ayodhya](https://www.economist.com/asia/2020/08/04/narendra-modi-cements-a-victory-for-hindu-nationalism-at-ayodhya)

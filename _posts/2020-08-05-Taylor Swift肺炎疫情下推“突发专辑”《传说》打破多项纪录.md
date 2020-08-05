@@ -5,7 +5,7 @@ date: 2020-08-05T01:24:54.000Z
 author: BBC
 from: http://www.bbc.com/zhongwen/simp/world-53649480
 tags: [ BBC ]
-categories: [ news, BBC ]
+categories: [ BBC ]
 ---
 <!--1596590694000-->
 [Taylor Swift肺炎疫情下推“突发专辑”《传说》打破多项纪录](http://www.bbc.com/zhongwen/simp/world-53649480)

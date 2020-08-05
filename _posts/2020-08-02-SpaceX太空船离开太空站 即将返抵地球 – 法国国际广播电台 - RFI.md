@@ -5,7 +5,7 @@ date: 2020-08-02T16:56:14.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200802-spacex%E5%A4%AA%E7%A9%BA%E8%88%B9%E7%A6%BB%E5%BC%80%E5%A4%AA%E7%A9%BA%E7%AB%99-%E5%8D%B3%E5%B0%86%E8%BF%94%E6%8A%B5%E5%9C%B0%E7%90%83
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596387374000-->
 [SpaceX太空船离开太空站 即将返抵地球 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200802-spacex%E5%A4%AA%E7%A9%BA%E8%88%B9%E7%A6%BB%E5%BC%80%E5%A4%AA%E7%A9%BA%E7%AB%99-%E5%8D%B3%E5%B0%86%E8%BF%94%E6%8A%B5%E5%9C%B0%E7%90%83)

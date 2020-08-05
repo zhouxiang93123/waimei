@@ -5,7 +5,7 @@ date: 2020-08-02T21:09:09.000Z
 author: 经济学人en
 from: https://www.economist.com/international/2020/08/02/the-pandemic-puts-a-strain-on-elite-private-schools
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596402549000-->
 [The pandemic puts a strain on elite private schools](https://www.economist.com/international/2020/08/02/the-pandemic-puts-a-strain-on-elite-private-schools)

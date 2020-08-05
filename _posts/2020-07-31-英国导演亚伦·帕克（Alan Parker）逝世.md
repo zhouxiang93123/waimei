@@ -5,7 +5,7 @@ date: 2020-07-31T19:57:10.000Z
 author: 法广
 from: http://www.rfi.fr//cn/%E6%AC%A7%E6%B4%B2/20200731-%E8%8B%B1%E5%9B%BD%E5%AF%BC%E6%BC%94%E4%BA%9A%E4%BC%A6%C2%B7%E5%B8%95%E5%85%8B-alan-parker-%E9%80%9D%E4%B8%96
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596225430000-->
 [英国导演亚伦·帕克（Alan Parker）逝世](http://www.rfi.fr//cn/%E6%AC%A7%E6%B4%B2/20200731-%E8%8B%B1%E5%9B%BD%E5%AF%BC%E6%BC%94%E4%BA%9A%E4%BC%A6%C2%B7%E5%B8%95%E5%85%8B-alan-parker-%E9%80%9D%E4%B8%96)

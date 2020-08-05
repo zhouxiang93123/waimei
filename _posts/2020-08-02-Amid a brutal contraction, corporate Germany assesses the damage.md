@@ -5,7 +5,7 @@ date: 2020-08-02T21:09:09.000Z
 author: 经济学人en
 from: https://www.economist.com/business/2020/08/02/amid-a-brutal-contraction-corporate-germany-assesses-the-damage
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596402549000-->
 [Amid a brutal contraction, corporate Germany assesses the damage](https://www.economist.com/business/2020/08/02/amid-a-brutal-contraction-corporate-germany-assesses-the-damage)

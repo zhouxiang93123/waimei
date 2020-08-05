@@ -5,7 +5,7 @@ date: 2020-08-04T06:54:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65138
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596524040000-->
 [ProtonMail 指控苹果将所有人当成人质](https://www.solidot.org/story?sid=65138)

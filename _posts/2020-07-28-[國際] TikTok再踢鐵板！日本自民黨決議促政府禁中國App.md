@@ -5,7 +5,7 @@ date: 2020-07-28T06:39:41.000Z
 author: RTI 中央廣播電臺
 from: https://www.rti.org.tw/news/view/id/2073778
 tags: [ RTI 中央廣播電臺 ]
-categories: [ news, RTI 中央廣播電臺 ]
+categories: [ RTI 中央廣播電臺 ]
 ---
 <!--1595918381000-->
 [[國際] TikTok再踢鐵板！日本自民黨決議促政府禁中國App](https://www.rti.org.tw/news/view/id/2073778)

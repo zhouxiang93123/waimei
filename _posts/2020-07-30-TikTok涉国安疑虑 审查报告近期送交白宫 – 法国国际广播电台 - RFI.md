@@ -5,7 +5,7 @@ date: 2020-07-30T05:54:58.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200730-tiktok涉国安疑虑-审查报告近期送交白宫
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596088498000-->
 [TikTok涉国安疑虑 审查报告近期送交白宫 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200730-tiktok%E6%B6%89%E5%9B%BD%E5%AE%89%E7%96%91%E8%99%91-%E5%AE%A1%E6%9F%A5%E6%8A%A5%E5%91%8A%E8%BF%91%E6%9C%9F%E9%80%81%E4%BA%A4%E7%99%BD%E5%AE%AB)

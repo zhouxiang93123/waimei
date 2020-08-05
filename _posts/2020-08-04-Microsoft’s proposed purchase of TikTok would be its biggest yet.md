@@ -5,7 +5,7 @@ date: 2020-08-04T21:09:50.000Z
 author: 经济学人en
 from: https://www.economist.com/graphic-detail/2020/08/04/microsofts-proposed-purchase-of-tiktok-would-be-its-biggest-yet
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596575390000-->
 [Microsoft’s proposed purchase of TikTok would be its biggest yet](https://www.economist.com/graphic-detail/2020/08/04/microsofts-proposed-purchase-of-tiktok-would-be-its-biggest-yet)

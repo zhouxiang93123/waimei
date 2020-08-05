@@ -5,7 +5,7 @@ date: 2020-08-05T15:06:47.000Z
 author: 中国数字时代
 from: https://chinadigitaltimes.net/chinese/2020/08/%e6%95%b0%e5%ad%97%e7%bb%8f%e6%b5%8eclub%ef%bd%9c%e5%af%b9tiktok%e5%88%86%e6%9e%90%e6%9c%80%e9%80%8f%e5%bd%bb%e7%9a%84%e6%96%87%e7%ab%a0%ef%bc%9a%e5%bc%a0%e4%b8%80%e9%b8%a3%e4%bd%9c%e8%8c%a7%e8%87%aa/
 tags: [ 中国数字时代 ]
-categories: [ news, 中国数字时代 ]
+categories: [ 中国数字时代 ]
 ---
 <!--1596640007000-->
 [数字经济Club｜对TikTok分析最透彻的文章：张一鸣作茧自缚](https://chinadigitaltimes.net/chinese/2020/08/%e6%95%b0%e5%ad%97%e7%bb%8f%e6%b5%8eclub%ef%bd%9c%e5%af%b9tiktok%e5%88%86%e6%9e%90%e6%9c%80%e9%80%8f%e5%bd%bb%e7%9a%84%e6%96%87%e7%ab%a0%ef%bc%9a%e5%bc%a0%e4%b8%80%e9%b8%a3%e4%bd%9c%e8%8c%a7%e8%87%aa/)

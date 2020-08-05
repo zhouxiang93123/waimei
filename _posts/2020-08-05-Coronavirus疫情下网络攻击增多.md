@@ -5,7 +5,7 @@ date: 2020-08-05T16:56:23.000Z
 author: 法广
 from: http://www.rfi.fr//cn/%E6%B3%95%E5%9B%BD/20200805-rfi-%E6%B3%95%E5%B9%BF-%E5%B0%BC%E5%8F%A4%E6%8B%89-coronavirus%E7%96%AB%E6%83%85%E4%B8%8B%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E5%A2%9E%E5%A4%9A
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596646583000-->
 [Coronavirus疫情下网络攻击增多](http://www.rfi.fr//cn/%E6%B3%95%E5%9B%BD/20200805-rfi-%E6%B3%95%E5%B9%BF-%E5%B0%BC%E5%8F%A4%E6%8B%89-coronavirus%E7%96%AB%E6%83%85%E4%B8%8B%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E5%A2%9E%E5%A4%9A)

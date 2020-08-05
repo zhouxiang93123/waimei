@@ -5,7 +5,7 @@ date: 2020-07-30T07:59:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65097
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596095940000-->
 [TikTok CEO 表示将发布内容审核算法](https://www.solidot.org/story?sid=65097)

@@ -5,7 +5,7 @@ date: 2020-08-02T23:57:10.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200803-spacex%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%BD%BD%E4%BA%BA%E8%BF%94%E6%8A%B5%E5%9C%B0%E7%90%83-%E9%99%8D%E8%90%BD%E5%A2%A8%E8%A5%BF%E5%93%A5%E6%B9%BE%E6%B5%B7%E5%9F%9F
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596412630000-->
 [SpaceX太空船载人返抵地球 降落墨西哥湾海域 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200803-spacex%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%BD%BD%E4%BA%BA%E8%BF%94%E6%8A%B5%E5%9C%B0%E7%90%83-%E9%99%8D%E8%90%BD%E5%A2%A8%E8%A5%BF%E5%93%A5%E6%B9%BE%E6%B5%B7%E5%9F%9F)

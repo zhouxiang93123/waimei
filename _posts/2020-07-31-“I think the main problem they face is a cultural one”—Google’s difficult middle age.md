@@ -5,7 +5,7 @@ date: 2020-07-31T13:09:46.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/07/31/i-think-the-main-problem-they-face-is-a-cultural-one-googles-difficult-middle-age
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596200986000-->
 [“I think the main problem they face is a cultural one”—Google’s difficult middle age](https://www.economist.com/podcasts/2020/07/31/i-think-the-main-problem-they-face-is-a-cultural-one-googles-difficult-middle-age)

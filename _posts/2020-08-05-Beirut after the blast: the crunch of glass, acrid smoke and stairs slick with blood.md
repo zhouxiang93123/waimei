@@ -5,7 +5,7 @@ date: 2020-08-05T23:09:57.000Z
 author: 经济学人en
 from: https://www.economist.com/middle-east-and-africa/2020/08/05/beirut-after-the-blast-the-crunch-of-glass-acrid-smoke-and-stairs-slick-with-blood
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596668997000-->
 [Beirut after the blast: the crunch of glass, acrid smoke and stairs slick with blood](https://www.economist.com/middle-east-and-africa/2020/08/05/beirut-after-the-blast-the-crunch-of-glass-acrid-smoke-and-stairs-slick-with-blood)

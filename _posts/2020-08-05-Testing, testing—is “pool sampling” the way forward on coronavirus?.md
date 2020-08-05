@@ -5,7 +5,7 @@ date: 2020-08-05T19:09:53.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/05/testing-testing-is-pool-sampling-the-way-forward-on-coronavirus
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596654593000-->
 [Testing, testing—is “pool sampling” the way forward on coronavirus?](https://www.economist.com/podcasts/2020/08/05/testing-testing-is-pool-sampling-the-way-forward-on-coronavirus)

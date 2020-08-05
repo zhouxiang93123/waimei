@@ -5,7 +5,7 @@ date: 2020-08-05T06:17:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65147
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596608220000-->
 [Anthony Levandowski 被判 18 个月但在疫情结束前免于服刑](https://www.solidot.org/story?sid=65147)

@@ -5,7 +5,7 @@ date: 2020-08-05T17:56:02.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200805-%E7%A7%BB%E6%B0%91%E7%81%AB%E6%98%9F-spacex%E6%88%90%E5%8A%9F%E8%AF%95%E9%A3%9E%E6%98%9F%E8%88%B0%E5%8E%9F%E5%9E%8B%E7%81%AB%E7%AE%AD
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596650162000-->
 [移民火星 SpaceX成功试飞星舰原型火箭 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200805-%E7%A7%BB%E6%B0%91%E7%81%AB%E6%98%9F-spacex%E6%88%90%E5%8A%9F%E8%AF%95%E9%A3%9E%E6%98%9F%E8%88%B0%E5%8E%9F%E5%9E%8B%E7%81%AB%E7%AE%AD)

@@ -5,7 +5,7 @@ date: 2020-08-05T06:45:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65149
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596609900000-->
 [伊朗黑客组织在攻击中利用 DNS-over-HTTPS (DoH) 协议](https://www.solidot.org/story?sid=65149)

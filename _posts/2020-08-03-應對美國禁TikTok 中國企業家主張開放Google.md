@@ -5,7 +5,7 @@ date: 2020-08-03T15:57:08.000Z
 author: (臺)中央社CNA
 from: https://www.cna.com.tw/news/acn/202008030332.aspx
 tags: [ (臺)中央社CNA ]
-categories: [ news, (臺)中央社CNA ]
+categories: [ (臺)中央社CNA ]
 ---
 <!--1596470228000-->
 [應對美國禁TikTok 中國企業家主張開放Google](https://www.cna.com.tw/news/acn/202008030332.aspx)

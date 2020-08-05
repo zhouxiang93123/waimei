@@ -5,7 +5,7 @@ date: 2020-08-04T15:09:13.000Z
 author: 经济学人en
 from: https://www.economist.com/prospero/2020/08/04/a-jordanian-podcast-is-exploring-the-regions-taboo-subjects
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596553753000-->
 [A Jordanian podcast is exploring the region’s taboo subjects](https://www.economist.com/prospero/2020/08/04/a-jordanian-podcast-is-exploring-the-regions-taboo-subjects)

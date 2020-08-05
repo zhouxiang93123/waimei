@@ -5,7 +5,7 @@ date: 2020-08-03T13:09:49.000Z
 author: 经济学人en
 from: https://www.economist.com/podcasts/2020/08/03/the-street-protests-that-so-roiled-the-territory-last-year-are-now-a-thing-of-the-past-hong-kong
 tags: [ 经济学人en ]
-categories: [ news, 经济学人en ]
+categories: [ 经济学人en ]
 ---
 <!--1596460189000-->
 [“The street protests that so roiled the territory last year are now a thing of the past”—Hong Kong](https://www.economist.com/podcasts/2020/08/03/the-street-protests-that-so-roiled-the-territory-last-year-are-now-a-thing-of-the-past-hong-kong)

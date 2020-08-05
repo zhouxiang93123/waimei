@@ -5,7 +5,7 @@ date: 2020-08-04T08:56:22.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200804-google%E6%8E%A8%E6%96%B0%E6%9C%BA-pixel-4a%E4%BB%B7%E6%A0%BC%E5%BE%88%E4%BA%B2%E6%B0%91
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596531382000-->
 [Google推新机 Pixel 4a价格很亲民 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200804-google%E6%8E%A8%E6%96%B0%E6%9C%BA-pixel-4a%E4%BB%B7%E6%A0%BC%E5%BE%88%E4%BA%B2%E6%B0%91)

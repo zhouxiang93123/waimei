@@ -5,7 +5,7 @@ date: 2020-08-04T03:54:43.000Z
 author: 法广
 from: http://www.rfi.fr//cn/contenu/20200804-tiktok%E6%94%B6%E8%B4%AD%E6%A1%88%E5%B7%9D%E6%99%AE%E4%B8%8B%E9%80%9A%E7%89%92-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A6%81%E5%88%86%E4%B8%80%E6%9D%AF%E7%BE%B9
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1596513283000-->
 [TikTok收购案川普下通牒 美国政府要分一杯羹 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200804-tiktok%E6%94%B6%E8%B4%AD%E6%A1%88%E5%B7%9D%E6%99%AE%E4%B8%8B%E9%80%9A%E7%89%92-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A6%81%E5%88%86%E4%B8%80%E6%9D%AF%E7%BE%B9)

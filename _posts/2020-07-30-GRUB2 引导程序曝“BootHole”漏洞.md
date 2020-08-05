@@ -5,7 +5,7 @@ date: 2020-07-30T13:50:00.000Z
 author: Solidot
 from: https://www.solidot.org/story?sid=65102
 tags: [ Solidot ]
-categories: [ news, Solidot ]
+categories: [ Solidot ]
 ---
 <!--1596117000000-->
 [GRUB2 引导程序曝“BootHole”漏洞](https://www.solidot.org/story?sid=65102)

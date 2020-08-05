@@ -5,7 +5,7 @@ date: 2020-07-21T11:55:06.000Z
 author: 法广
 from: http://www.rfi.fr//cn/中国/20200721-法国参议员-andré-gattolin-希望法国取消与中国签署的双边引渡协议
 tags: [ 法广 ]
-categories: [ news, 法广 ]
+categories: [ 法广 ]
 ---
 <!--1595332506000-->
 [法国参议员 André Gattolin ：希望法国取消与中国签署的双边引渡协议 - 要闻解说](http://www.rfi.fr//cn/%E4%B8%AD%E5%9B%BD/20200721-%E6%B3%95%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98-andr%C3%A9-gattolin-%E5%B8%8C%E6%9C%9B%E6%B3%95%E5%9B%BD%E5%8F%96%E6%B6%88%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%AD%BE%E7%BD%B2%E7%9A%84%E5%8F%8C%E8%BE%B9%E5%BC%95%E6%B8%A1%E5%8D%8F%E8%AE%AE)
