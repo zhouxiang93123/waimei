@@ -27,25 +27,6 @@ layout: default
 
 
 
-{% include social-share.html %}
-
-<div class="pagination">
-  {% if page.previous.url %}
-    <span class="prev" >
-        <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-          前一篇
-        </a>
-    </span>
-  {% endif %}
-  {% if page.next.url %}
-    <span class="next" >
-        <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-          后一篇
-        </a>
-    </span>
-  {% endif %}
-</div>
-
 <article class="post">
   <h1>{{ page.title }}</h1>
   <!-- Look the author details up from the site config. -->
@@ -167,8 +148,8 @@ layout: default
     document.body.onkeyup = function(e){
       if (e.keyCode == '37') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}'; } // left arrow key
       if (e.keyCode == '39') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.next.url }}'; } // right arrow key
-      if (e.keyCode == '45') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.post_tag_m1.url }}'; } // insert key
-      if (e.keyCode == '46') { window.location = '{{ site.url }}{{ site.baseurl }}{{ page.post_tag_p1.url }}'; } // delete key
+      if (e.keyCode == '45') { window.location = '{{ site.url }}{{ site.baseurl }}{{ post_tag_m1.url }}'; } // insert key
+      if (e.keyCode == '46') { window.location = '{{ site.url }}{{ site.baseurl }}{{ post_tag_p1.url }}'; } // delete key
     };
     /* add first image to post */
     window.addEventListener('load', (event) => {
@@ -182,6 +163,7 @@ layout: default
       }
     });
     </script>
+    {% include fab.html %}
 
   </div>
 
