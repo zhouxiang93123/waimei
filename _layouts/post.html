@@ -25,7 +25,7 @@ layout: default
   {% assign post_tag_p1 = post %}
 {% endfor %}
 
-
+{% include social-share.html %}
 
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -74,13 +74,13 @@ layout: default
     </span>
 
 
-    <span style="float: right;" title="提交到时代透镜">
+    <!-- <span style="float: right;" title="提交到时代透镜">
       <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u={{ page.from | url_encode }}&t={{ page.title | url_encode }}&d={{ page.date | slice: 0, 10 }}&e={{ page.content | strip_html | truncate: 400 }}" target="_blank" class="ssk ssk-icon ssk-github"></a>
     </span>
 
     <span style="float: right;" title="提交到BE4新闻站">
       <a style="color: #5CBA66; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/submit?u={{ page.from | url_encode }}&t={{ page.title | url_encode }}" target="_blank">🐍</a>
-    </span>
+    </span> -->
   </div>
 
   <div class="entry" id="div-content-rss">

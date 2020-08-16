@@ -5,6 +5,7 @@
   {% assign shareurl = {{site.url}}{{page.url}} %}
 {% endif %}
 <div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+    <a href="https://be4news.pythonanywhere.com/submit?u={{ page.from | url_encode }}&t={{ page.title | url_encode }}" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
     <a href="https://chinatimeline.github.io/form/?u={{ shareurl | url_encode }}&t={{ page.title | url_encode }}&d={{ page.date | slice: 0, 10 }}&e={{ page.content | strip_html | truncate: 400 }}" target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
     <a href="https://www.facebook.com/sharer.php?u={{ shareurl }}" class="ssk ssk-facebook"></a>
     <a href="https://twitter.com/intent/tweet?url={{ shareurl }}&text={{ page.title }}&hashtags={{ page.author }}" class="ssk ssk-twitter"></a>
