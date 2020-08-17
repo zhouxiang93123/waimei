@@ -38,7 +38,12 @@ async function fetchArticles(site) {
 }
 
 async function fetchFeedx(site, url) {
-  let parser = new Parser()
+  let parser = new Parser({customFields: {
+                              item: [
+                                ['media:group', 'media:group'],
+                              ]
+                            }
+                          })
   let feed = await parser.parseURL(url)
 
   return feed.items.map(item => {
@@ -46,6 +51,8 @@ async function fetchFeedx(site, url) {
     let link;
     if(item['content:encoded']){
       content = item['content:encoded']
+    }else if (item['media:group']) {
+      content = item['media:group']['media:description'][0]
     }else{
       content = item.content
     }
