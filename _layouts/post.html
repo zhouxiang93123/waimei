@@ -46,13 +46,11 @@ layout: default
     {% endif %}
 
     <ul class="tag">
-      {% for tag in page.tags %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-          {{ tag }}
+        <a href="{{ site.url }}{{ site.baseurl }}/categories/#{{ page.categories.last }} ">
+          {{ page.categories.last }}
         </a>
       </li>
-      {% endfor %}
     </ul>
 
     {% if page.from %}
