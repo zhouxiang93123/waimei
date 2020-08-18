@@ -1,0 +1,16 @@
+---
+layout: post
+title: "How Donald Trump polarised postal voting"
+date: 2020-08-18T19:09:47.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/08/18/how-donald-trump-polarised-postal-voting
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1597777787000-->
+[How Donald Trump polarised postal voting](https://www.economist.com/graphic-detail/2020/08/18/how-donald-trump-polarised-postal-voting)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/sites/default/files/20200822_WOC241.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-08-18T00:00:00Z" >Aug 18th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >YOU MIGHT have supposed that an institution as beloved as the United States Postal Service could stay above the political fray. But these days even the post office—which once employed Abraham Lincoln and Harry Truman—has become a partisan issue. A poll released on August 16th found that nearly half of Americans who support Joe Biden, the presumptive Democratic nominee for president, plan to vote by mail rather than in person on election day, compared with just one in ten backers of President Donald Trump.</p><p >This partisan gap is new, according to a recent <a href="https://www.economist.comhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=3630334">working paper</a> by political scientists at Vanderbilt and the University of Pennsylvania, an artefact both of the coronavirus pandemic and of Mr Trump’s <a href="https://www.economist.com/united-states/2020/08/16/before-the-election-donald-trump-squeezes-the-postal-service">assault</a> on the 245-year-old organisation. As recently as 2018, according to polls analysed by the researchers, 40% of Democrats and 26% of Republicans supported postal voting, a difference of just 15 percentage points. By May, this gap had widened nearly four-fold (see left-hand chart).</p><div  id="gpt-ad-slot-1" data-test-id="Inline Ad"></div><p >To better understand this disparity, the authors conducted their own surveys. They found that in April, Republicans who were worried about the coronavirus were ten percentage points more likely to support postal voting than those who paid the virus little mind. By May, after weeks of Mr Trump calling postal ballots “rigged” and prone to voter fraud, support among Republicans untroubled by covid-19 had fallen even further (see right-hand chart). The pattern was not present for Democrats or independents. Polarisation over postal voting is therefore being driven by a subset of Mr Trump’s supporters: those who are ambivalent about the pandemic.</p><p >This year public support for postal voting is higher than ever before. And yet the partisan split has the potential to harm both parties. If the postal service’s financial woes persist—it lost $4.5bn in the first quarter alone—delays in the delivery of ballot papers may disproportionately hurt the Democratic vote. If Trump supporters remain suspicious of the post, but grow more fearful of venturing out to cast their votes in person, Republicans could be harmed, too. Perhaps the lesson is that, as polarisation grows, everyone loses.</p>
+</div>
