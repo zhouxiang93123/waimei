@@ -34,6 +34,8 @@ navigation:
 # Pagination
 paginate: 100
 
+searchlimit: 300
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   behance: # https://www.behance.net/<username>
