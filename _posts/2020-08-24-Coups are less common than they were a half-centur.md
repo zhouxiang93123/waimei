@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Coups are less common than they were a half-century ago"
+date: 2020-08-24T19:09:49.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/08/24/coups-are-less-common-than-they-were-a-half-century-ago
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1598296189000-->
+[Coups are less common than they were a half-century ago](https://www.economist.com/graphic-detail/2020/08/24/coups-are-less-common-than-they-were-a-half-century-ago)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/sites/default/files/20200829_WOC954.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-08-24T00:00:00Z" >Aug 24th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >THE COUP D’ETAT has grown out of fashion. In 1980 there were 19 coups or attempted coups around the world, according to the Centre for Systemic Peace (CSP), an American think-tank, or roughly one every 19 days. In 2020, by contrast, the world went 230 days without one. That streak ended on August 18th when soldiers overthrew the elected government in Mali (though under the CSP’s definition this would count as a “coerced resignation” rather than a full-blown military putsch). Although forced government takeovers like this one occur less frequently than they used to, that does not make them any less worrying.</p><p >Since the end of the second world war, more than 550 coups have been attempted around the world, with some 200 of them succeeding (as many as 300 alleged plots have been foiled before they even began). Such events are rarely good for democracy. In many cases, they make things worse. Thailand has experienced more successful coups than any other country in the world. It also holds the record for “adverse regime changes”, which the CSP defines as shifts towards authoritarianism, violence or political disorder in the following three years. The country has experienced this on four occasions since 1971, most recently after the army’s takeover in 2014. Since then, the junta has been chipping away at political freedoms, leading some Thai students to start pro-democracy protests earlier this year.</p><div ><figure><div itemscope="" itemProp="image" itemType="https://schema.org/ImageObject" data-slim="1"><meta itemProp="url" content="https://www.economist.com/img/b/608/742/90/sites/default/files/20200829_WOC955.png"/><img src="https://images.weserv.nl/?url=www.economist.com/img/b/608/742/90/sites/default/files/20200829_WOC955.png"  sizes="300px" alt=""/></div></figure><p >The long-term consequences of coups have worsened in recent years. In the 1960s 26% of coups resulted in more authoritarianism and disorder. In the 2010s 50% yielded regime changes deemed “adverse” (see chart).</p><p >This does not bode well for Malians. The soldiers behind the coup have vowed to hold new elections, but many are rightly sceptical. After an insurrection in 2012, citizens were also promised elections; all they got was violence and chaos, as jihadists poured into Timbuktu and Gao. This time, if history is any guide, the chances of a peaceful democratic transition may be no better than a coin flip.</p></div>
+</div>
