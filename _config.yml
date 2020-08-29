@@ -26,6 +26,8 @@ navigation:
     url: /categories
   - name: 观点
     url: https://nodebe4.github.io/opinion/
+  - name: 英雄
+    url: https://nodebe4.github.io/hero/
   - name: 反馈
     url: https://be4.herokuapp.com
   - name: 关于
