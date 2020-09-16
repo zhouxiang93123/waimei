@@ -4,32 +4,19 @@ let querystring = require('querystring')
 let urlMod = require('url')
 let URL = urlMod.URL
 
-let feedxUrls = {
-  '路透': 'https://feedx.net/rss/reuters.xml',
-  '纽约时报': 'https://feedx.net/rss/nytimes.xml',
-  '美国之音': 'https://feedx.net/rss/mgzy1.xml',
-  'BBC': 'https://rsshub.app/bbc/chinese', // 'https://feedx.net/rss/bbc.xml',
-  '自由亚洲电台': 'https://www.rfa.org/mandarin/yataibaodao/rss2.xml',
-  '法广': 'https://feedx.net/rss/rfi.xml',
-  '德国之声': 'https://feedx.net/rss/dw.xml',
-  '联合早报': 'https://rsshub.app/zaobao/realtime/china',
-  '(臺)中央社CNA': 'https://feedx.net/rss/cna.xml',
-  'CCTV新闻联播': 'https://rsshub.app/xinwenlianbo/index',
-  '维权网': 'https://wqw2010.blogspot.com/feeds/posts/default',
-  '寒冬': 'https://zh.bitterwinter.org/feed/',
-  '经济学人en': 'https://feedx.net/rss/economist.xml',
-  'Solidot': 'https://www.solidot.org/index.rss',
-}
+
+let jsonText = fs.readFileSync('./subs.json');
+let feedxUrls = JSON.parse(jsonText);
+let content = JSON.stringify(feedxUrls, undefined, 4);
+fs.writeFileSync(`./subs.json`, content)
 
 async function fetchArticles(site) {
 
   let articles
-  if (feedxUrls[site]) {
-    articles = await fetchFeedx(site, feedxUrls[site])
-  //  } else if (site == '中国数字时代') {
-  //    articles = await fetchCDT()
-  // } else if (site == '自由亚洲电台') {
-  //   articles = await fetchRFA()
+  if (site['url']) {
+    articles = await fetchFeedx(site['site'], site['url'])
+  } else if (site == '中国数字时代') {
+    articles = await fetchCDT()
   }
 
   articles.sort((x, y) => x.pubDate - y.pubDate)
@@ -62,8 +49,8 @@ async function fetchFeedx(site, url) {
       link = item.guid
     }
     return {
-      title: item.title,
-      content: content,
+      title: item.title.replace(/[\x00-\x1F\x7F-\x9F]/g, ""),
+      content: content.replace(/[\x00-\x1F\x7F-\x9F]/g, ""),
       link: link,
       pubDate: Date.parse(item.pubDate),
       site: site
@@ -114,12 +101,13 @@ async function performCDT() {
 }
 
 async function perform() {
-  let sites = Object.keys(feedxUrls)
+  // let sites = Object.keys(feedxUrls)
+  let sites = feedxUrls
 
   sites.map(site => {
     performSite(site)
   })
-  performCDT()
+  // performCDT()
   // performSite('自由亚洲电台')
 }
 
@@ -129,8 +117,6 @@ async function performSite(site) {
     let siteFolder = `./_posts`
     fs.mkdirSync(siteFolder, { recursive: true })
 
-    let files = fs.readdirSync(siteFolder)
-
     let articles = await fetchArticles(site)
 
     articles.map(a => {
@@ -139,7 +125,7 @@ async function performSite(site) {
 
     // generateList(site)
   } catch(e) {
-    console.log([site, e])
+    console.log([site['site'], e])
   }
 }
 
@@ -151,7 +137,7 @@ function generateArticle(article) {
     pubDate = today
   }
   let dateString = pubDate.toISOString()
-  let titletext = article.title.toString().replace(/"/g, '\\"').replace(/'/g,'\\\'').replace("...", '')
+  let titletext = article.title.toString().replace(/"/g, '\\"').replace("...", '')
   let articlelink = new URL(article.link).href
   let header = `---
 layout: post
