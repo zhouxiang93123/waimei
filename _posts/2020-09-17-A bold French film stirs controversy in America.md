@@ -1,0 +1,16 @@
+---
+layout: post
+title: "A bold French film stirs controversy in America"
+date: 2020-09-17T21:43:16.000Z
+author: 经济学人en
+from: https://www.economist.com/books-and-arts/2020/09/19/a-bold-french-film-stirs-controversy-in-america
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1600378996000-->
+[A bold French film stirs controversy in America](https://www.economist.com/books-and-arts/2020/09/19/a-bold-french-film-stirs-controversy-in-america)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/sites/default/files/images/print-edition/20200919_BKP005_0.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-09-19T00:00:00Z" >Sep 19th 2020</time><meta itemProp="author" content="The Economist"/><p data-test-id="Dateline" itemType="http://schema.org/dateline" >PARIS</p></div></aside><p ><span data-caps="initial">L</span><small>IKE ANY</small> 11-year-old girl starting at a new school, Amy (Fathia Youssouf) just wants to fit in. The conservative Muslim teachings of her Senegalese mother’s world impose a creed of <em>pudeur</em>, or modesty. Passing the laundry room of her high-rise block in a <em>banlieue </em>of Paris, Amy is dazzled by a different universe. She glimpses Angelica (Médina El Aidi-Azouni), dressed in a crop top and practising hip-swivelling dance moves as her washing spins.</p><p >“Mignonnes” (“Cuties”) is about Amy’s painful quest to join Angelica’s dance gang. It is a powerful, disturbing story of belonging, female liberty, hysterical giggling and conflicting cultures, but also of the hyper-sexualisation of pre-teens. Inspired by much-“liked” video clips on social media, the pre-adolescent Amy naively urges the girls into ever-more explicit choreography. The Franco-Senegalese director, Maïmouna Doucouré, who won a Sundance award for the film, says she wanted to explore “dangerous” social pressures through the eyes of girls, but not to “judge” them.</p><div  id="gpt-ad-slot-1" data-test-id="Inline Ad"></div><p >Others have decided to judge, however. A low-grossing independent movie in French would ordinarily go unnoticed in America. But Netflix, which acquired the American distribution rights, has provoked a backlash. Ted Cruz, a Republican senator, wrote to the attorney-general asking him to determine whether the film “violated any federal laws against the production and distribution of child pornography”. A “cancel Netflix” petition, backed by QAnon conspiracists, is circulating online.</p><p >Netflix has apologised for the “inappropriate artwork” it initially used. It was far from the film’s French publicity shot, which showed the girls in a carefree moment of sorority. Yet the row raises a thorny question: when does a film about a troubling phenomenon become complicit in what it seeks to condemn? During dance scenes, the camera lingers uncomfortably on the children’s bodies in ways that shock and haunt the viewer. The political hijacking of the debate, though, leaves little space for subtlety. Which for a strong debut feature film by a young black female director is a shame.</p><p data-test-id="Footnote" >This article appeared in the Books &amp; arts section of the print edition under the headline &quot;The dancer and the dance&quot;</p>
+</div>
