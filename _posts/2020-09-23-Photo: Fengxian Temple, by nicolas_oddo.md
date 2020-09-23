@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Photo: Fengxian Temple, by nicolas_oddo"
+date: 2020-09-23T03:24:19.000Z
+author: 中国数字时代
+from: https://chinadigitaltimes.net/chinese/2020/09/photo-fengxian-temple-by-nicolas_oddo/
+tags: [ 中国数字时代 ]
+categories: [ 中国数字时代 ]
+---
+<!--1600831459000-->
+[Photo: Fengxian Temple, by nicolas_oddo](https://chinadigitaltimes.net/chinese/2020/09/photo-fengxian-temple-by-nicolas_oddo/)
+------
+
+<div>
+<div id="attachment_656215" style="width: 810px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-656215" loading="lazy" src="https://chinadigitaltimes.net/chinese/wp-content/blogs.dir/4/files/2020/09/50352119117_09585e08f7_c.jpg" alt="" width="800" height="533" class="size-full wp-image-656215" srcset="https://chinadigitaltimes.net/chinese/files/2020/09/50352119117_09585e08f7_c.jpg 800w, https://chinadigitaltimes.net/chinese/files/2020/09/50352119117_09585e08f7_c-300x200.jpg 300w, https://chinadigitaltimes.net/chinese/files/2020/09/50352119117_09585e08f7_c-768x512.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /><p id="caption-attachment-656215" class="wp-caption-text">Fengxian Temple, by <a href="https://www.flickr.com/photos/nicolas_oddo/50352119117">nicolas_oddo (CC BY-ND 2.0)</a></p></div>
+</div>
