@@ -58,5 +58,9 @@
     {
         "site": "中国数字时代",
         "url": "https://chinadigitaltimes.net/chinese/feed/"
+    },
+    {
+        "site": "大纪元",
+        "url": "https://www.epochtimes.com/gb/nsc413.xml"
     }
 ]
