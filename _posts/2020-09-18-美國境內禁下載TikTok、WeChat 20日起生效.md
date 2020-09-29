@@ -1,0 +1,16 @@
+---
+layout: post
+title: "美國境內禁下載TikTok、WeChat 20日起生效"
+date: 2020-09-18T13:56:32.000Z
+author: (臺)中央社CNA
+from: https://www.cna.com.tw/news/firstnews/202009180311.aspx
+tags: [ (臺)中央社CNA ]
+categories: [ (臺)中央社CNA ]
+---
+<!--1600437392000-->
+[美國境內禁下載TikTok、WeChat 20日起生效](https://www.cna.com.tw/news/firstnews/202009180311.aspx)
+------
+
+<div>
+<div class="fullPic"><div class="floatImg center"><div class="wrap"><img src="https://images.weserv.nl/?url=imgcdn.cna.com.tw/www/WebPhotos/1024/20200918/1920x1280_013526050403.jpg" alt="美國商務部18日將發布命令，禁止境內用戶新下載來自中國的應用程式WeChat和TikTok。（圖取自Pixabay圖庫）"></div><div class="picinfo">美國商務部18日將發布命令，禁止境內用戶新下載來自中國的應用程式WeChat和TikTok。（圖取自Pixabay圖庫）</div></div></div><div></div><div class="paragraph"><p>（中央社華盛頓18日綜合外電報導）路透社報導，美國商務部今天將發布命令，禁止境內用戶新下載來自中國的應用程式WeChat和TikTok。但對於TikTok可能與美企達成交易，總統川普可能在20日晚禁令生效前喊卡。</p><div class='SubscriptionInner mySubscriptionInner' data-listid='1'><div class='subscriInnTitle'>訂閱《國際新聞》電子報 第一手掌握世界最新脈動</div><div class='subsinput mySubsInput'><input type='text' class='myEpaperInputInner' aria-label='請輸入電子信箱' placeholder='請輸入電子信箱'><div class='errorMsg myErrorMsgInner'><img src='https://imgcdn.cna.com.tw/www/website/img/error.svg' alt=''> 請輸入正確的電子信箱格式</div></div><a class='subslink mySubEpaperInner' data-listid='1' href='javascript:'>訂閱</a><div class='endMsg'><div class='endcheck'><svg viewBox='-10 -10 500 500'><path class='circle' d='M877.28,335.72a203.17,203.17,0,0,1,37.86,118.1C915.14,565.26,823.44,657,712,657s-203.14-91.7-203.14-203.14S600.56,250.68,712,250.68a203.21,203.21,0,0,1,144.67,60.53' transform='translate(-508.86 -250.68)'/><polyline class='check' points='78.54 229.94 179.32 300.74 347.98 60.67'/></svg></div><div>感謝您的訂閱！</div></div></div><p>川普8月6日以構成國安威脅為由，簽署行政命令禁止美國任何人或企業與TikTok母公司字節跳動及WeChat母公司騰訊做生意，禁令將在45天後生效。當時川普也要求商務部在9月20日前擬定相關具體措施。</p><p>一名美國商務部官員透露，新命令將在美國「下架」這2款應用程式（app），禁止蘋果（Apple Inc.）和谷歌（Google）的應用程式商店及其他任何企業，在「美國境內可接觸到的」任何平台提供這2款app下載服務。（譯者：張正芊/核稿：楊昭彥）1090918</p><div class='paragraph moreArticle'><div class='moreArticle-title'>延伸閱讀</div><a class='moreArticle-link' href='https://www.cna.com.tw/news/firstnews/202009170214.aspx'><i class='icon-dot'></i><span>TikTok協議 字節跳動：不涉業務出售須美中批准</span></a><a class='moreArticle-link' href='https://www.cna.com.tw/news/firstnews/202009150014.aspx'><i class='icon-dot'></i><span>影片／中國網路市場飽和 促TikTok甲骨文合作協議</span></a><a class='moreArticle-link' href='https://www.cna.com.tw/news/aopl/202009170108.aspx'><i class='icon-dot'></i><span>美國將禁WeChat 強調不會針對使用者</span></a><a class='moreArticle-link autoTag' href='https://www.cna.com.tw/news/aopl/202008060013.aspx'><i class='icon-dot'></i><span>蓬佩奧盼下架不可信中國App 稱TikTok是重大威脅</span></a><a class='moreArticle-link autoTag' href='https://www.cna.com.tw/news/aopl/202007130025.aspx'><i class='icon-dot'></i><span>納瓦洛：川普料對TikTok與WeChat硬起來</span></a></div></div><div class="paragraph bottomArticleBanner show"><div class="pcBox adslot_infinite js_pcBox_EndAd2" id="adslot_pcBox_EndAd2" data-width="685" data-height="250" data-dfp="cna2018_article_685x250_end2"></div><div class="mbBox adslot_infinite js_mbBox_EndAd2" id="adslot_mbBox_EndAd2" data-width="300" data-height="250" data-dfp="cna2018_article_300x250_end2"></div></div>
+</div>
