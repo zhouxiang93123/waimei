@@ -1,0 +1,16 @@
+---
+layout: post
+title: "BBC Online 迁移到 AWS"
+date: 2020-11-06T07:09:20.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=66020
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1604646560000-->
+[BBC Online 迁移到 AWS](https://www.solidot.org/story?sid=66020)
+------
+
+<div>
+BBC Online <a href="https://www.bbc.co.uk/blogs/internet/entries/8673fe2a-e876-45fc-9a5f-203c049c9f9c">最近迁移到了 AWS 云服务</a>，从使用自己的数据中心改为使用亚马逊的数据中心。BBC 网站非常庞大，有 44 种语言，以前大部分网页都是用 PHP 写的，托管在伦敦附近的两个数据中心。云端服务相对于自行托管的一个优势是可以随时根据需要增添服务器，移除许多不必要的冗余。现在，BBC 的大部分网页都是在 AWS 使用 React 进行渲染。BBC Online 现在更快更可靠了。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
