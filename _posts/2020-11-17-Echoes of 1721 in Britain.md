@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Echoes of 1721 in Britain"
+date: 2020-11-17T15:09:44.000Z
+author: 经济学人en
+from: https://www.economist.com/the-world-ahead/2020/11/17/echoes-of-1721-in-britain
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1605625784000-->
+[Echoes of 1721 in Britain](https://www.economist.com/the-world-ahead/2020/11/17/echoes-of-1721-in-britain)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/articles/20201124_brp003.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-11-17T00:00:00Z" >Nov 17th 2020</time><p data-test-id="Article Byline"  itemProp="byline">by Emma Duncan: Britain editor, The Economist</p></div></aside><p ><span data-caps="initial">I</span>T WAS THE year of clearing up, after the bursting of the South Sea Bubble in 1720. Thousands had been ruined by speculation in the shares of a company granted a monopoly in trading slaves to the South Seas. A committee of inquiry—of the sort that will look into Britain’s mismanagement of covid-19—reported on the disaster in 1721 and found that big cheeses in government, who had taken free shares from the South Sea Company and helped inflate its share price, were culpable. Many were sacked. The chancellor of the exchequer was imprisoned. </p><p >Sir Robert Walpole, who had kept his nose clean, sorted out the mess. He stripped the company’s beneficiaries of most of their wealth and handed over the money to the victims, though he protected the king and his mistresses. He thus assuaged public fury, stayed on the right side of the monarch and made his reputation, becoming the first British prime minister. (The title was not used at the time, but was instead an insult used to describe a courtier who had accrued too much influence at court.) Walpole held the position for two decades—still a record. The lesson? Picking up the pieces after a disaster can make your career (as Rishi Sunak, Britain’s ambitious chancellor, is surely aware).</p><div id="" ><div><div id="econ-1"></div></div></div><p >That is not the only tale from three centuries ago that may prove relevant in 2021. Back then the wife of Britain’s ambassador to Turkey, Lady Mary Wortley Montagu, noticed that there was very little smallpox in the country. In each village, she wrote, an old woman “comes with a nut-shell full of the matter of the best sort of small-pox, and asks what vein you please to have opened. She immediately rips open that you offer her, with a large needle…and puts into the vein as much matter as can lie upon the head of her needle.” </p><p >Lady Mary returned to Britain and in 1721 had her daughter inoculated in front of a group of people, including the king’s doctor. An outcry ensued, but some of her friends followed suit, as did the king. It was not until 75 years later that Edward Jenner developed a vaccine from cowpox, and the practice took off. But 1721 was an important year in the defeat of a deadly disease. Britons will be hoping 2021 is, too.<span data-ornament="ufinish">■</span></p><p ><em>This article appeared in the Britain section of the print edition of The World in 2021 under the headline “Echoes of 1721”</em></p>
+</div>
