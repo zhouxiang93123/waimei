@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Fall-out from covid-19 will swell the ranks of the global poor"
+date: 2020-11-18T15:09:02.000Z
+author: 经济学人en
+from: https://www.economist.com/the-world-ahead/2020/11/17/fall-out-from-covid-19-will-swell-the-ranks-of-the-global-poor
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1605712142000-->
+[Fall-out from covid-19 will swell the ranks of the global poor](https://www.economist.com/the-world-ahead/2020/11/17/fall-out-from-covid-19-will-swell-the-ranks-of-the-global-poor)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/20201124_IRP007.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-11-17T00:00:00Z" >Nov 17th 2020</time><p data-test-id="Article Byline"  itemProp="byline">by Sarah Maslin: Brazil correspondent, The Economist </p><p data-test-id="Dateline" itemType="http://schema.org/dateline" >SÃO PAULO</p></div></aside><p ><span data-caps="initial">I</span>N 2021 POVERTY will rise to levels unseen in a decade and governments will struggle to respond. The World Bank predicts that the pandemic will increase the ranks of the extremely poor, on less than $1.90 a day, by up to 150m. From 1990 until 2019 their numbers fell from 36% of the world’s population to 8%. Now they are increasing for the first time since 1998. The UN says 240m-490m people in 70 countries will be pushed into “multidimensional poverty”, a measure that includes lacking basic shelter or having children go hungry.</p><p >Most of the newly destitute will be in South Asia and sub-Saharan Africa. City-dwellers will fare worse than the rural poor, because they cannot grow their own food and tend to work in informal sectors that have been slow to recover (for example, as maids or street vendors). Many saw their safeguards disappear in 2020. Remittances from family members abroad stopped. Many sold assets such as jewellery. Millions will return to their villages. Many children will leave school to go to work.</p><div id="" ><div><div id="econ-1"></div></div></div><p >The UN World Food Programme predicts that acute hunger will double by the end of 2020: an additional 130m people will not have enough to eat. The long-term effects will be dire, especially for young children whose physical growth and mental development will be stunted. The pandemic&#x27;s disruption of health care means more mothers will die in childbirth, and more people will die from chronic illnesses such as diabetes, and preventable diseases such as malaria, in 2021.</p><p >All this suffering will exacerbate political instability and social unrest. Fragile states teetering on the edge of armed conflict will see skirmishes break out. Some may descend into civil war. Rising inequality and widespread frustration could lead to protests. And with virtually every country dealing with crises at home, efforts to help the most vulnerable nations will be limited. In the shadow of the pandemic, the plague of poverty will spread even further.</p><p ><em>Sarah Maslin: Brazil correspondent, The Economist</em> <span data-ornament="ufinish">■</span></p><p ><em>This article appeared in the International section of the print edition of The World in 2021 under the headline “The plague of poverty”</em></p>
+</div>
