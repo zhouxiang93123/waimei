@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The recovery of low-wage jobs in America from covid-19 has halted"
+date: 2020-12-01T19:09:46.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/12/01/the-recovery-of-low-wage-jobs-in-america-from-covid-19-has-halted
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1606849786000-->
+[The recovery of low-wage jobs in America from covid-19 has halted](https://www.economist.com/graphic-detail/2020/12/01/the-recovery-of-low-wage-jobs-in-america-from-covid-19-has-halted)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/1085/90/sites/default/files/20201205_WOC942.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-12-01T00:00:00Z" >Dec 1st 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >BUSINESSES IN AMERICA were laid waste when covid-19 first swept across the country. A record 20m Americans filed for unemployment benefits in April, when the jobless rate hit a peak of 14.7%. And yet, even as the virus has persisted, the economy has begun to show signs of life. The latest figures, for October, put the unemployment rate at 6.9%.</p><p >These numbers are encouraging, but headline statistics can paint an incomplete picture. Opportunity Insights, a research group at Harvard University, has recently published a <a href="https://www.economist.comhttps://tracktherecovery.org/">database</a> on how well America’s businesses and workers are faring, by region. Their data, aggregated from private providers, offer a much more granular look at the state of the economy. They reveal that not all Americans have benefited equally from the recovery.</p><div id="" ><div><div id="econ-1"></div></div></div><p >Workers of all stripes were hit hard when the pandemic began in the spring, although those on low earnings (defined as less than $27,000 a year) suffered the most (see chart). Since then, employment rates for high-earning workers (who make at least $60,000 a year) have completely recovered. In contrast, the nationwide employment rate for low-earning workers is still roughly 20% below where it was in January. No progress has been made on these jobs since June.</p><p >Job losses for low-earners have been especially severe in America’s most affluent places. Many well-paid office workers have moved out of the cities, while others are doing their jobs at home. Trade at restaurants and coffee shops has collapsed as a consequence. Small businesses’ revenues in the country as a whole are 30% lower than in January and are down by 50% in the richest big city, San Francisco.</p><p >Opportunity Insights’ analysis also contains some lessons about public policy. Lockdowns have been hugely controversial. Many politicians have argued that the public-health benefits are not significant enough to justify their economic costs. Real-time business data suggest this may be an irrelevant point. Small firms in areas with high numbers of covid cases are all suffering, regardless of whether or not they are under formal lockdowns. People are shying away from dining out mainly because they are worried about getting sick, even without government restrictions.</p>
+</div>
