@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Google CEO 批评反垄断监管"
+date: 2020-12-24T15:46:53.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=66472
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1608824813000-->
+[Google CEO 批评反垄断监管](https://www.solidot.org/story?sid=66472)
+------
+
+<div>
+Google CEO Sundar Pichai 接受 FT 采访时警告<a href="https://news.slashdot.org/story/20/12/23/184257/google-ceo-criticises-antitrust-regulation">反垄断监管可能会出错</a>。他的公司正日益成为反垄断监管的对象。欧盟正在制定新的法规 Digital Services Act，该法案希望增加科技公司的透明度和竞争，将要求 Google 之类的科技企业公开排名算法，对内容进行监管。如果不遵守规定，科技巨头将会面临年营业额 6% 到 10% 的罚款。Pichai 以谨慎的态度对这项法案的制定表示欢迎，称作为重要的法规它需要仔细的规划。他说，GDPR 并没有打破科技巨头的垄断，这表明很多事情的答案是微妙的，监管可能会出错。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
