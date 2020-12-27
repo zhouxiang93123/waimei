@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Why rich countries are so vulnerable to covid-19"
+date: 2020-11-16T21:09:42.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/11/16/why-rich-countries-are-so-vulnerable-to-covid-19
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1605560982000-->
+[Why rich countries are so vulnerable to covid-19](https://www.economist.com/graphic-detail/2020/11/16/why-rich-countries-are-so-vulnerable-to-covid-19)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/755/90/sites/default/files/images/articles/20201121_wom932.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-11-16T00:00:00Z" >Nov 16th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >NEARLY A YEAR into the pandemic, researchers have identified dozens of factors that can increase a person’s chances of dying from covid-19, including hypertension, diabetes and obesity. But the biggest risk factor of all is being old. People in their 60s are twice as likely to die of covid-19 as are those in their 50s; the mortality rate of 70-somethings is higher still. Indeed, the probability of dying from the disease roughly doubles for every eight years of age. This helps to explain why older, richer countries have fared worse than expected in the pandemic, compared to younger, poorer ones.</p><p >To estimate a country’s vulnerability to covid-19, <em>The Economist</em> has combined population data from the United Nations with age-specific infection fatality rates (IFRs) for the disease. The latter was estimated using data from Brazil, Denmark, England, Sweden, Italy, the Netherlands, Spain and parts of Switzerland and the United States. From these data we calculated an age-adjusted IFR: the probability that a randomly selected person from a given country would die if stricken with covid-19, assuming access to health care similar to that available in the sample countries.</p><div id="" ><div><div id="econ-1"></div></div></div><p >We find that, all else being equal, Japan is more vulnerable to covid-19 than any other country in the world. With a median age of 48, it has an expected IFR of 1.3%. Italy, with a median age of 47, comes next at, 1.1%. Europe as a whole has an expected IFR of 0.9%, by our reckoning, higher than that of America (0.7%), China (0.5%) or India (0.3%). Countries in Africa, meanwhile, have an age-adjusted IFR of less than 0.2%. Least vulnerable of all is Uganda, where the median age is just 17 and the expected IFR is a mere 0.1%, less than a tenth that of Japan or Italy.</p><p >Of course, all else is not equal. Other risk factors, such as obesity and smoking, vary significantly across countries. Health-care systems vary, too. Most important of all, fatality rates only matter to those who are infected in the first place, and infection rates vary from country to country, not least because of different social-distancing rules and degrees of compliance with them. Nevertheless, knowing countries’ age-adjusted IFR is useful. It allows for fairer comparisons between countries. It also drives home the importance of keeping infections under control, especially in places with lots of older people such as Japan and much of Europe.</p>
+</div>

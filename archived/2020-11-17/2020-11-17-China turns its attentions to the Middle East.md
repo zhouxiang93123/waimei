@@ -1,0 +1,16 @@
+---
+layout: post
+title: "China turns its attentions to the Middle East"
+date: 2020-11-17T13:09:04.000Z
+author: 经济学人en
+from: https://www.economist.com/the-world-ahead/2020/11/17/china-turns-its-attentions-to-the-middle-east
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1605618544000-->
+[China turns its attentions to the Middle East](https://www.economist.com/the-world-ahead/2020/11/17/china-turns-its-attentions-to-the-middle-east)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/20201124_MEP001.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-11-17T00:00:00Z" >Nov 17th 2020</time><p data-test-id="Article Byline"  itemProp="byline">by Roger McShane: Middle East editor, The Economist</p></div></aside><p ><span data-caps="initial">O</span>NCE IT GOT the coronavirus under control at home, China went on a diplomatic offensive. Its aid was gratefully received in the Middle East. Egypt, the Gulf states, Iran and Iraq all received shipments. “China has sent medical supplies and their best experts…whereas America has not provided us with a single vial,” said Jafaar Allawi, Iraq’s health minister at the time.</p><p >As America withdraws, China’s influence is growing. Just look at Iraq. Today China is its biggest trading partner and, according to a former electricity minister, “our primary option as a strategic partner in the long run.” The feeling is shared across much of the region.</p><div id="" ><div><div id="econ-1"></div></div></div><p >Access to energy is China’s primary motivation, but its relationship with the Middle East goes beyond that. In return for oil China is building factories, ports and railways. It has helped Saudi Arabia with its nuclear programme. Huawei, a Chinese telecoms giant, does a large share of its 5G-networks business in the Middle East.</p><p >America views China as an economic and strategic competitor. So it has told Middle Eastern countries not to get too close. But many Arab leaders see China as a more reliable partner than America, which has been known to ask uncomfortable questions about human rights and, anyway, seems fed up with the region.</p><p >To be sure, a lot of Arab states still rely on America for arms and protection. China shows little interest in playing regional policeman. But its engagement is increasingly strategic. Take its draft co-operation agreement with Iran, under which the two would share intelligence and carry out joint research and weapons development. They already train together.</p><p >It is a tricky balancing act for China, which has sold drones to Saudi Arabia and the United Arab Emirates, Iran’s enemies. It is friendly with Israel, where Chinese state enterprises have leased ports. China has also built ports on the Indian Ocean, ostensibly for refuelling and resupply, that could be put to military use.</p><div id="" ><div><div id="econ-2"></div></div></div><p >According to surveys of people in the region, China is a more popular global power than America or Russia. Its influence in the Middle East will only grow in 2021.<span data-ornament="ufinish">■</span></p><p ><em>This article appeared in the Middle East section of the print edition of The World in 2021 under the headline “China’s moment”</em></p>
+</div>

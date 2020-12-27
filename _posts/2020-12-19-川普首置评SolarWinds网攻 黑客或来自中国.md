@@ -1,0 +1,16 @@
+---
+layout: post
+title: "川普首置评SolarWinds网攻 黑客或来自中国"
+date: 2020-12-19T18:06:02.000Z
+author: 大纪元
+from: https://www.epochtimes.com/gb/20/12/19/n12632320.htm
+tags: [ 大纪元 ]
+categories: [ 大纪元 ]
+---
+<!--1608401162000-->
+[川普首置评SolarWinds网攻 黑客或来自中国](https://www.epochtimes.com/gb/20/12/19/n12632320.htm)
+------
+
+<div>
+<p>【大纪元2020年12月20日讯】（大纪元记者林燕报导）美国总统川普（特朗普）周六（12月19日）首次置评SolarWinds网络攻击事件。他说，假媒体总优先质疑网攻来自俄罗斯，却不敢讨论网攻可能来自中国。川普还提到，美国的<a href="https://www.epochtimes.com/gb/tag/%E6%8A%95%E7%A5%A8%E6%9C%BA.html">投票机</a>也可能遭受到了这次网攻。</p><p>“假新闻媒体报导的网络黑客情况比实际情况要严重得多。我已经得到了全面简报，一切都在控制之中。</p><p>“俄罗斯，俄罗斯，俄罗斯是发生任何事情时的优先（怪罪）对象，因为假主流媒体（Lamestream，对主流媒体的贬称）主要出于经济考量，它们连讨论可能是中国（只是说可能）进行的网攻都不敢。</p><p>“选举期间，我们可笑的<a href="https://www.epochtimes.com/gb/tag/%E6%8A%95%E7%A5%A8%E6%9C%BA.html">投票机</a>也可能受到攻击——显然，我大大地赢得了这次选举——（投票机被外国黑客攻击舞弊）这对美国来说更是一种败坏的尴尬。”</p><p>川普的推文同时抄送给了情报总监拉特克利夫（John Ratcliffe）以及国务卿蓬佩奥（Mike Pompeo）。</p></p><p>&nbsp;</p><blockquote class="twitter-tweet"><p dir="ltr" lang="en">&#8230;.discussing the possibility that it may be China (it may!). There could also have been a hit on our ridiculous voting machines during the election, which is now obvious that I won big, making it an even more corrupted embarrassment for the USA. <a href="https://twitter.com/DNI_Ratcliffe?ref_src=twsrc%5Etfw">@DNI_Ratcliffe</a> <a href="https://twitter.com/SecPompeo?ref_src=twsrc%5Etfw">@SecPompeo</a></p><p>— Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1340333619299147781?ref_src=twsrc%5Etfw">December 19, 2020</a></p></blockquote><p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>蓬佩奥周五（18日）晚接受福克斯新闻台马克·莱文（Mark Levin）节目采访时说，目前政府仍在解密黑客攻击，但他相信俄罗斯在SolarWinds网络攻击背后，俄罗斯是美国的敌对国家，但中共才是美国的首要威胁。</p><p>绝大多数媒体周六报导说，蓬佩奥认为，俄罗斯发起本次网攻。</p><p>目前，黑客通过SolarWinds入侵美国各级政府、大型企业，造成严重威胁。</p><p>美国政府机构，包括国防部、国务院、国土安全部、能源部、财政部和商务部都发现有黑客借助SolarWinds入侵，随后都有马上采取措施以及进行损害评估。</p><p>路透社13日最早引述消息人士的话报导，有外国政府支持的黑客一直在监控美国财政部和商务部负责互联网和电信政策的机构的内部电子邮件往来。</p><p>联邦调查局和国土安全部的网络安全和基础设施安全局（CISA）介入调查这起网络间谍活动，CISA于14日晚发布紧急指令21-01，要求所有联邦以及民用机构审查其网络是否存在泄密迹象，并立即断开或关闭系统管理软件公司SolarWinds的Orion网络管理产品。</p><p>&nbsp;</p><figure id="attachment_12632339" style="width: 596px" class="wp-caption aligncenter"><a href="https://i.epochtimes.com/assets/uploads/2020/12/Screen-Shot-2020-12-15-at-2.07.15-PM-450x204-1.png"><img class=" wp-image-12632339" src="https://i.epochtimes.com/assets/uploads/2020/12/Screen-Shot-2020-12-15-at-2.07.15-PM-450x204-1-450x204.png" alt="" width="596" height="270" /></a><figcaption class="wp-caption-text">投票系统公司Dominion的网页存照上，在用户信息处显示的服务提供商SolarWinds的Logo和外部链接；目前Dominion的网页已删除SolarWinds的痕迹。（Dominion公司网站旧照，网络存档）</figcaption></figure><h2>Dominion试图撇清跟SolarWinds的联系</h2><p>SolarWinds是美国联邦政府部门、前十大电信供应商、美军的网络服务供应商，同时它也是投票机Dominion的服务供应商。</p><p>Dominion目前已从其网页上删除使用SolarWinds产品的链接，但过去的存档照中仍显示有SolarWinds的标识和链接。</p><p>Dominion的首席执行官约翰·普洛斯（John Poulos）15日在大选后首次出席密歇根州的听证会时，否认Dominion使用SolarWinds的产品。</p><p>由于Dominion的投票系统和机器在美国被广泛应用，近几周来它一直备受关注。根据多州进行的大选舞弊听证，有多位证人表示，Dominion产品在11月3日大选期间有连上互联网，引发安全疑虑。</p><p>密歇根州安特里姆县（Antrim County）使用Dominion投票机，最初报告民主党总统候选人乔·拜登获胜，后来又发现是错误地将投给川普的6,000票计算给了拜登，实际上是川普总统获胜。</p><p>密歇根州选举官员和Dominion坚称，发生的事情是人为错误造成的。对该县提起诉讼的一名律师上周表示，法证报告（Forensic Audit）表明，实际上错误是软件问题造成的。</p><p>责任编辑：林妍#</p>
+</div>

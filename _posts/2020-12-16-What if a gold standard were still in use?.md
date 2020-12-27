@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What if a gold standard were still in use?"
+date: 2020-12-16T17:09:58.000Z
+author: 经济学人en
+from: https://www.economist.com/finance-and-economics/2020/12/19/what-if-a-gold-standard-were-still-in-use
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1608138598000-->
+[What if a gold standard were still in use?](https://www.economist.com/finance-and-economics/2020/12/19/what-if-a-gold-standard-were-still-in-use)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/20201219_FNP502.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-12-19T00:00:00Z" >Dec 19th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p ><span data-caps="initial">I</span><small>N THE AFTERMATH</small> of the first world war, the gold standard inspired nearly religious fervour from central bankers. European officials dutifully re-pegged their war-battered currencies to gold at great cost to their citizens. A hundred years on, it has lost its lustre. Judy Shelton’s past support for it may have derailed her nomination to the Federal Reserve’s board. A recent paper* shows why the gold standard’s tarnished reputation is well deserved.</p><p >The authors calculate the impact of a gold standard, had it been in place in 2000-20. This would have required the Fed to set interest rates to maintain a fixed dollar price of gold, rather than to target inflation. The central bank’s policy rate would have become a function of gold supply—the amount of metal mined—and gold demand from investors and households.</p><div id="" ><div><div id="econ-1"></div></div></div><p >Fluctuating gold demand can make monetary policy procyclical. In bad times, people stop spending and increase their demand for gold, so central banks must raise interest rates to make other assets more attractive and stabilise gold’s price. In good times the reverse happens, and central banks have to cut rates. The pace at which gold is mined also introduces some randomness to monetary policy. Whenever gold floods the market, interest rates must fall to keep its price stable. Gold shortages force interest rates up. It is up to fate whether or not the movements in rates are good for the economy.</p><p >It requires Herculean assumptions for the gold standard to beat today’s regime, judged by gauges such as the volatility of inflation. The authors show this would be so if the only forces buffeting the economy were fluctuations in productivity growth and in labour supply, and if the supply of gold tracked productivity.</p><p >Those assumptions, though, do not survive contact with reality. To adhere to the gold standard the Fed would have had to maintain high interest rates even during the global financial crisis, and beyond, with disastrous effects; in the first quarter of 2020, output would have been 10% lower than otherwise. Gold’s lost shine is no bad thing.</p><p ><sup>*“Bury the gold standard? A quantitative exploration” by Anthony Diercks, Jonathan Rawls and Eric Sims, NBER Working Paper.</sup></p><p data-test-id="Footnote" >This article appeared in the Finance &amp; economics section of the print edition under the headline &quot;Panned&quot;</p>
+</div>

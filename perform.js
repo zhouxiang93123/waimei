@@ -40,8 +40,10 @@ async function fetchFeedx(site, url) {
       content = item['content:encoded']
     }else if (item['media:group']) {
       content = item['media:group']['media:description'][0]
+    }else if (item['content']) {
+      content = item['content']
     }else{
-      content = item.content
+      content = item.description
     }
     if (item['link']){
       link = item.link
@@ -51,6 +53,8 @@ async function fetchFeedx(site, url) {
     let author = site
     if (item['author']){
       author = item.author
+    }else if (item['dc:creator']){
+      author = item['dc:creator']
     }
     return {
       title: item.title.replace(/[\x00-\x1F\x7F-\x9F]/g, ""),
