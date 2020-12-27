@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Does working from home make employees more productive?"
+date: 2020-12-27T23:09:44.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2020/12/27/does-working-from-home-make-employees-more-productive
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1609110584000-->
+[Does working from home make employees more productive?](https://www.economist.com/graphic-detail/2020/12/27/does-working-from-home-make-employees-more-productive)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/755/90/sites/default/files/20210102_WOC211.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-12-27T00:00:00Z" >Dec 27th 2020</time><meta itemProp="author" content="The Economist"/></div></aside><p >REMOTE WORKING, relatively uncommon before the pandemic, has gone mainstream. Before covid-19 roughly 5% of Americans worked from home. By May the figure had risen to 62%. By October 40% were still shunning the office. Both employers and employees have grumbled that the shift to home-working has been disruptive. But according to <a href="https://www.economist.comhttps://scholar.harvard.edu/files/eharrington/files/harrington_jmp_working_remotely.pdf">new research</a> by Natalia Emanuel and Emma Harrington, two doctoral students in economics at Harvard, firms may be better off.</p><p >Ms Emanuel and Ms Harrington analysed the performance of call-centre workers employed by a big online retailer between January 2018 and August 2020. They found that the average worker answered 26 calls a day, or about one every 20 minutes. But comparing the call records of on-site and remote staff, the researchers found that the latter spent an extra 40 seconds on each call, making them 12% less productive.</p><div id="" ><div><div id="econ-1"></div></div></div><p >This seems to cast doubt on the efficiency of pyjama-clad workers. But, digging deeper, the researchers found that after the online retailer offered remote positions to its office employees in 2018-2019, those who switched increased their productivity by 7% (see chart). They became more reliable too, spending less time away from their phones. When lockdowns shut down offices in April, the productivity of the firm’s newly homebound workers increased by 7.6%.</p><p >The authors conclude that, for all its distractions, working from home may be more productive for call-centre work, and possibly for other sectors as well. That their initial evidence suggested otherwise was less to do with remote working itself, than with the particular crop of workers who initially chose to work remotely, who were less productive on average than those who opted for the office.</p><p >Hence, that so few workers toil from home in normal times constitutes a market failure. The authors reckon it would be more efficient for firms to pay workers a premium to work remotely. Such incentives may not be necessary, however. A <a href="https://www.economist.comhttps://bfi.uchicago.edu/wp-content/uploads/2020/12/BFI_WP_2020174.pdf">recent paper</a> by economists at Stanford, the University of Chicago and the Mexico Autonomous Institute of Technology estimates that the share of American workers choosing to work from home after the pandemic will increase from 5% to 22%.</p>
+</div>
