@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Nearly half of America’s states are increasing their minimum wage in 2021"
+date: 2021-01-05T19:09:51.000Z
+author: 经济学人en
+from: https://www.economist.com/graphic-detail/2021/01/05/nearly-half-of-americas-states-are-increasing-their-minimum-wage-in-2021
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1609873791000-->
+[Nearly half of America’s states are increasing their minimum wage in 2021](https://www.economist.com/graphic-detail/2021/01/05/nearly-half-of-americas-states-are-increasing-their-minimum-wage-in-2021)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/1339/90/sites/default/files/images/2021/01/articles/main/20210109_woc293.png"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-05T00:00:00Z" >Jan 5th 2021</time><meta itemProp="author" content="The Economist"/></div></aside><p >JOE BIDEN, America&#x27;s president-elect, campaigned on a promise to raise the federal minimum wage from $7.25 to $15 per hour. Although the odds of such an outcome are slim, especially if the Democrats fail to win a Senate majority in the run-off elections in Georgia on January 5th, it may not matter. According to a new <a href="https://www.economist.comhttps://s27147.pcdn.co/wp-content/uploads/Raises-From-Coast-to-Coast-2021.pdf">report</a> by the National Employment Law Project (NELP), an American lobby group, efforts to raise the minimum wage at the state and local level continue apace.</p><p >Over the course of 2021, two dozen states will have increased their minimum wage rates. Virginia will apply the biggest boost. It is raising its wage floor this year by 31%, from $7.25 an hour to $9.50, as part of its plan to increase it to $12 by 2023. Workers in Minnesota will get the stingiest pay rise, from $8.15 to $8.21 for small employers and from $10 to $10.08 for large ones—an average increase of less than 1%.</p><div id="" ><div><div id="econ-1"></div></div></div><p >With the federal minimum set at a tight-fisted $7.25 for more than a decade, even Republican-leaning states are raising their minimum wages. On January 1st Florida, which favoured President Donald Trump in November by a three-point margin, increased its minimum wage; the state will raise it again in September, to $10, as part of a constitutional amendment approved during the same election cycle.</p><p >Some worry that big increases in minimum wages will cost jobs. However, economists are less worried about this than they used to be. Despite the predictions of classic economic models, recent increases in local minimum wages have not typically led to big reductions in jobs. In some cases, employment has increased.</p><p >For many people, such pay rises may not be enough. Amy Glasmeier, a professor at MIT, has created a “living-wage calculator” which uses geographically specific spending and tax data to determine the earnings necessary to meet basic needs and maintain self-sufficiency. According to Ms Glasmeier’s model, of the 24 states raising their minimum wages this year, only three offer hourly rates that can be considered “living wages” based on her estimates for 2020, which are likely to be raised for 2021. Some cover just two-thirds of a person’s basic needs. The push to raise America’s wage floor continues.</p>
+</div>
