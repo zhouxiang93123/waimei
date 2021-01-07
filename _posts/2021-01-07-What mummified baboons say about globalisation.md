@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What mummified baboons say about globalisation"
+date: 2021-01-07T17:09:46.000Z
+author: 经济学人en
+from: https://www.economist.com/middle-east-and-africa/2021/01/09/what-mummified-baboons-say-about-globalisation
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1610039386000-->
+[What mummified baboons say about globalisation](https://www.economist.com/middle-east-and-africa/2021/01/09/what-mummified-baboons-say-about-globalisation)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/01/articles/main/20210109_map001.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-09T00:00:00Z" >Jan 9th 2021</time><meta itemProp="author" content="The Economist"/></div></aside><p ><span data-caps="initial">T</span><small>HOTH HAD</small> a broad bailiwick. He was the god of wisdom, writing and many strands of alchemy. Ancient Egyptians worshipped him alongside Ra, the sun god. So it is no wonder they had such great respect for the baboon, understood to be Thoth’s earthly manifestation in the pantheon of blessed beings.</p><p >New evidence uncovered by Nathaniel Dominy and his team at Dartmouth College confirms that Egypt’s early seafarers ventured to faraway Punt in search of the prized primates. The kingdom of Punt covered an area spanning much of Africa’s east coast. Travelling thousands of miles there and back would have required advanced nautical skills.</p><div id="" ><div><div id="econ-1"></div></div></div><p >Ancient Egypt’s most coveted species was <em>Papio hamadryas </em>(the sacred baboon), frequently depicted in paintings. Great care was taken when mummifying it. Linen was wrapped around the entombed animals’ tail and limbs.</p><p >The researchers examined two such specimens that would have lived in the period of the New Kingdom (1550-1069<small>BC</small>) and now reside in the British Museum. The strontium isotope composition of their teeth reveals the environment in which they grew.</p><p >By comparing these data with the dental strontium profiles of the baboons in east Africa today, the ancient animals’ place of origin can be located in modern-day Eritrea, Ethiopia or Somalia. These countries are all thought to have formed part of Punt. (Today’s Puntland is a north-eastern region of Somalia.)</p><p ><em>Papio anubis</em> (the olive baboon) has been found in tombs and temples, too. But the Egyptians were less fond of it. Five examples of this species from the Ptolemaic period (305-30<small>BC</small>) showed a strontium profile that indicates they were born in Egypt, suggesting that by the time of the last pharaoh the Egyptians were breeding baboons at home.</p><div id="" ><div><div id="econ-2"></div></div></div><p >Mr Dominy says that the first leg of what became the spice route was probably the result of at least 1,100 years of trade between Egypt and Punt. Though baboons were the most valued, many other goods changed hands, such as incense. Egyptologists argue this marked the beginning of global commerce.</p><p data-test-id="Footnote" >This article appeared in the Middle East &amp; Africa section of the print edition under the headline &quot;Monkey business&quot;</p>
+</div>
