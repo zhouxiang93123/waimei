@@ -1,0 +1,16 @@
+---
+layout: post
+title: "北爱达荷 ISP 以审查为由屏蔽 Facebook 和 Twitter "
+date: 2021-01-12T15:27:37.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=66639
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1610465257000-->
+[北爱达荷 ISP 以审查为由屏蔽 Facebook 和 Twitter](https://www.solidot.org/story?sid=66639)
+------
+
+<div>
+在社交媒体如 Facebook 和 Twitter 屏蔽美国总统特朗普的账号之后，北爱达荷 ISP Your T1 WIFI 表示它收到了很多有关审查的客户电话，因此<a href="https://tech.slashdot.org/story/21/01/12/0146245/citing-censorship-concerns-north-idaho-isp-blocks-facebook-and-twitter" target="_blank">决定屏蔽</a> Facebook 和 Twitter。它声称客户自己本可以利用防火墙程序屏蔽 Facebook 和 Twitter，但一部分人不具有相关的技术知识，而它为这些客户一个个做很麻烦也很昂贵。在社交网络引发广泛关注之后，Your T1 WIFI 改变了主意，表示只对提出要求的客户屏蔽这些网站。Your T1 WIFI 此举被认为违反了网络中立法律，ISP 不允许操纵内容的访问。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
