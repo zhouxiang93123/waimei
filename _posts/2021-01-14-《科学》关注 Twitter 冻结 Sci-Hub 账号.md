@@ -1,0 +1,16 @@
+---
+layout: post
+title: "《科学》关注 Twitter 冻结 Sci-Hub 账号"
+date: 2021-01-14T14:12:50.000Z
+author: Solidot
+from: https://www.solidot.org/story?sid=66663
+tags: [ Solidot ]
+categories: [ Solidot ]
+---
+<!--1610633570000-->
+[《科学》关注 Twitter 冻结 Sci-Hub 账号](https://www.solidot.org/story?sid=66663)
+------
+
+<div>
+《科学》网站发表文章，<a href="https://www.sciencemag.org/news/2021/01/twitter-shuts-down-account-sci-hub-pirated-papers-website">报道</a>了 Twitter 上周以违反政策为由永久冻结“科学海盗湾”Sci-Hub 的账号。事情发生在 1 月 6 日一家印度法庭就三大期刊出版商 Elsevier、Wiley&nbsp; 和 American Chemical Society 起诉 Sci-Hub 以侵犯版权为由寻求将其屏蔽一案举行听证会后。Sci-Hub 创始人 Alexandra Elbakyan 表示她的辩护将主要依赖因订阅费用难以承担而希望继续访问 Sci-Hub 的印度科学家的帖子。Elbakyan 在邮件中称，Sci-Hub 的 Twitter 账号并没有分享侵权材料，而是主要围绕开放科学问题展开讨论。她说 Twitter 的决定要么是搞错了要么是一种审查。Twitter 拒绝给出封杀账号的理由。Sci-Hub 在 9 年前开设了 Twitter 账号，吸引了超过 18 万粉丝。<p><img src="https://img.solidot.org//0/446/liiLIZF8Uh6yM.jpg" height="120" style="display:block"/></p>
+</div>
