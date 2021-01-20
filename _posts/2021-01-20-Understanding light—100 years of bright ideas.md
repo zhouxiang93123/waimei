@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Understanding light—100 years of bright ideas"
+date: 2021-01-20T19:09:43.000Z
+author: 经济学人en
+from: https://www.economist.com/podcasts/2021/01/20/understanding-light-100-years-of-bright-ideas
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1611169783000-->
+[Understanding light—100 years of bright ideas](https://www.economist.com/podcasts/2021/01/20/understanding-light-100-years-of-bright-ideas)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/20210123_blm511.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-20T16:50:51Z" >Jan 20th 2021</time><meta itemProp="author" content="The Economist"/></div></aside><div ><figure ><figcaption>Listen to this story</figcaption><audio  controls="" id="audio-player" preload="metadata" src="https://sphinx.acast.com/theeconomistbabbage/babbage-photonopportunity/media.mp3" title="Understanding light—100 years of bright ideas" controlsList="nodownload"><p>Your browser does not support the &lt;audio&gt; element.</p></audio></figure><p >Enjoy more audio and podcasts on<!-- --> <a id="audio-ios-cta" href="https://www.economist.comhttps://apps.apple.com/us/app/the-economist/id1239397626" target="_blank" rel="noreferrer">iOS</a> <!-- -->or<!-- --> <a id="audio-android-cta" href="https://www.economist.comhttps://play.google.com/store/apps/details?id=com.economist.lamarr" target="_blank" rel="noreferrer">Android</a>.</p></div><p >HOW HAS Albert Einstein’s work on photons ushered in a <a href="https://www.economist.com/technology-quarterly/2021/01/07/how-understanding-light-has-led-to-a-hundred-years-of-bright-ideas">golden age of light</a>? Oliver Morton, The Economist’s briefings editor, explores why the <a href="https://www.economist.com/technology-quarterly/2021/01/07/why-lasers-are-so-brilliantly-useful">laser’s applications</a> have been spectacular and how <a href="https://www.economist.com/technology-quarterly/2021/01/07/how-governments-spurred-the-rise-of-solar-power">solar power</a> became the cheapest source of electricity in many countries. Also, he talks to the scientists scanning the skies with the <a href="https://www.economist.com/technology-quarterly/2021/01/07/from-the-universe-to-the-dataverse">largest digital camera in the world</a>. Runtime: 23 min</p><p ><iframe height="215" src="//embed.acast.com/theeconomistbabbage/babbage-photonopportunity"></iframe></p><div id="" ><div><div id="econ-1"></div></div></div><p >Listen on: Apple Podcasts | <a href="https://www.economist.comhttps://open.spotify.com/show/0BCUrdrOb3tvfIwazeLBUH?si=9q8pxwzsQrWIb2zkAwM_5g">Spotify</a> |<a href="https://www.economist.comhttps://www.google.com/podcasts?feed=aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3RoZWVjb25vbWlzdGJhYmJhZ2U">Google</a> | <a href="https://www.economist.comhttp://www.stitcher.com/s?fid=142124&amp;refid=stpr">Stitcher</a> | <a href="https://www.economist.comhttps://tunein.com/podcasts/News--Politics-Podcasts/The-Economist-Babbage-p401958/">TuneIn</a></p><p >Please subscribe to <em>The Economist</em> for full access to print, digital and audio editions: <a href="https://www.economist.com/podcastoffer">www.economist.com/podcastoffer</a></p>
+</div>
