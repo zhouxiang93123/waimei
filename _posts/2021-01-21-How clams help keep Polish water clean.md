@@ -1,0 +1,16 @@
+---
+layout: post
+title: "How clams help keep Polish water clean"
+date: 2021-01-21T19:10:14.000Z
+author: 经济学人en
+from: https://www.economist.com/europe/2021/01/23/how-clams-help-keep-polish-water-clean
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1611256214000-->
+[How clams help keep Polish water clean](https://www.economist.com/europe/2021/01/23/how-clams-help-keep-polish-water-clean)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20210123_EUP002_0.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-23T00:00:00Z" >Jan 23rd 2021</time><meta itemProp="author" content="The Economist"/></div></aside><p data-caps="initial" ><span data-caps="initial">A</span><small> WATER PUMP</small> known as <em>Gruba Kaska</em> (Fat Kathy) is a local landmark in Warsaw. To get there, you must walk 300 metres through a slimy tunnel under the Vistula river. There you will find eight clams hooked up to computers. They are monitoring the city’s drinking water.</p><p >The system is nifty. When the molluscs encounter heavy metals, pesticides or other pollutants, they close their shells, explains Piotr Domek of Adam Mickiewicz University in Poznan, who has worked on the project for three decades. To create a natural early-warning system, Mr Domek and his colleagues collect the clams from rivers or reservoirs, and attach a coil and a magnet to their shells. Computers register whether their shells are open or closed by detecting changes in the magnetic field.</p><div id="" ><div><div id="econ-1"></div></div></div><p >“In the case of a terrorist attack, an ecological disaster or another contamination of the water supply, the clams will close,” says Mr Domek. This, in turn, will automatically cut off the water supply. The clams, he thinks, are life-savers. “If contaminated water goes straight to our taps, we will get poisoned,” he says in “Fat Kathy”, a short film that celebrates the invaluable bivalves.</p><p >Today 50 Polish waterworks (and one in Russia) use clams in this way. There are drawbacks. Clams, as the proverb reminds us, cannot talk. So they never reveal which toxin is causing them to clam up. Also, it seems that they may be less good at detecting dangerous pharmaceuticals. Still, Piotr Klimaszyk, who leads the team that developed the system, thinks it ought to be used everywhere. It is cheap: all you need is clams and computers. “It allows you to check the water quality hour by hour, minute by minute, so why not?”</p><p >Mr Domek is now so fond of clams that he tries to deter people from eating them. He mischievously suggests that they “have a negative effect on [sexual] potency”. Julia Pelka, the film-maker behind “Fat Kathy”, has also stopped gobbling them. We use them “to protect ourselves from ourselves”, she says.</p><p data-test-id="Footnote" >This article appeared in the Europe section of the print edition under the headline &quot;How clams fight pollution&quot;</p><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br></div>
+</div>
