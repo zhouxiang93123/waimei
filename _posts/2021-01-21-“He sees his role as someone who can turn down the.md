@@ -1,0 +1,16 @@
+---
+layout: post
+title: "“He sees his role as someone who can turn down the flames of America’s partisan warfare”—Biden begins"
+date: 2021-01-21T13:09:48.000Z
+author: 经济学人en
+from: https://www.economist.com/podcasts/2021/01/21/he-sees-his-role-as-someone-who-can-turn-down-the-flames-of-americas-partisan-warfare-biden-begins
+tags: [ 经济学人en ]
+categories: [ 经济学人en ]
+---
+<!--1611234588000-->
+[“He sees his role as someone who can turn down the flames of America’s partisan warfare”—Biden begins](https://www.economist.com/podcasts/2021/01/21/he-sees-his-role-as-someone-who-can-turn-down-the-flames-of-americas-partisan-warfare-biden-begins)
+------
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/20210123_blp506.jpg"/><div></div><aside ><div ><time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-21T10:56:37Z" >Jan 21st 2021</time><meta itemProp="author" content="The Economist"/></div></aside><div ><figure ><figcaption>Listen to this story</figcaption><audio  controls="" id="audio-player" preload="metadata" src="https://sphinx.acast.com/theintelligencepodcast/muchtorepair-biden-sfirstdayonthejob/media.mp3" title="“He sees his role as someone who can turn down the flames of America’s partisan warfare”—Biden begins" controlsList="nodownload"><p>Your browser does not support the &lt;audio&gt; element.</p></audio></figure><p >Enjoy more audio and podcasts on<!-- --> <a id="audio-ios-cta" href="https://www.economist.comhttps://apps.apple.com/us/app/the-economist/id1239397626" target="_blank" rel="noreferrer">iOS</a> <!-- -->or<!-- --> <a id="audio-android-cta" href="https://www.economist.comhttps://play.google.com/store/apps/details?id=com.economist.lamarr" target="_blank" rel="noreferrer">Android</a>.</p></div><p >THE WATCHWORD was unity as Joe Biden took office—he struck a calming tone and got immediately to work. We analyse the <a href="https://www.economist.com/united-states/2021/01/20/joe-biden-seeks-to-heal-the-wounds-inflicted-by-donald-trump">gargantuan tasks</a> that lie ahead. Messaging services such as WhatsApp provide a needed online forum; as users flood to new apps we examine questions of privacy and security. And the Parisian street artist depicting brutal protests to unsettling effect. Runtime: 22min</p><p ><iframe height="215" src="//embed.acast.com/theintelligencepodcast/muchtorepair-biden-sfirstdayonthejob"></iframe></p><div id="" ><div><div id="econ-1"></div></div></div><p >Listen on: <a href="https://www.economist.comhttps://itunes.apple.com/us/podcast/id1449631195?mt=2&amp;ls=1">Apple Podcasts</a> | <a href="https://www.economist.comhttps://open.spotify.com/show/12zKAMNyS2GNentUzxq9QN">Spotify</a> | <a href="https://www.economist.comhttps://www.google.com/podcasts?feed=aHR0cHM6Ly9yc3MuYWNhc3QuY29tL3RoZWludGVsbGlnZW5jZXBvZGNhc3Q">Google</a> | <a href="https://www.economist.comhttps://www.stitcher.com/s?fid=357733&amp;refid=stpr">Stitcher</a> | <a href="https://www.economist.comhttps://tunein.com/podcasts/News--Politics-Podcasts/The-Intelligence-p1186979/">TuneIn</a></p><p >For full access to print, digital and audio editions of <em>The Economist</em>, subscribe here <a href="https://www.economist.com/intelligenceoffer">www.economist.com/intelligenceoffer</a></p>
+</div>
