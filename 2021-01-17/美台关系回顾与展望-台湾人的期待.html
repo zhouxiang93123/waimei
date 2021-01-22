@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美台关系回顾与展望：台湾人的期待 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美台关系回顾与展望：台湾人的期待
+——
+" />
+    <meta property="og:description" content="
+美台关系回顾与展望：台湾人的期待
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美台关系回顾与展望：台湾人的期待" />
+    <meta property="twitter:title" content="美台关系回顾与展望：台湾人的期待" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Frc-01152021121507.html&t=%E7%BE%8E%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B%EF%BC%9A%E5%8F%B0%E6%B9%BE%E4%BA%BA%E7%9A%84%E6%9C%9F%E5%BE%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Frc-01152021121507.html&t=%E7%BE%8E%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B%EF%BC%9A%E5%8F%B0%E6%B9%BE%E4%BA%BA%E7%9A%84%E6%9C%9F%E5%BE%85&d=2021-01-17&e=
+美台关系回顾与展望：台湾人的期待
+——
+
+
+  
+  美国候任总统拜登即将在1月20日走马上任。在对中国政策上，拜登国安团队已经表明，将较过去的民主党政府采取更强势的立场，拜登的外交事务团队也有知台派的熟面孔。从现任总统特朗普的全面与中国对抗、正面单挑对决，到拜登政府会联合世界盟邦打团体战，与中国“有原则”地交往，台湾民众又如何看待自己身处的国境环境，对美台关系的未来有什么期待？
+  
+  
+    美国务院取消对台交往限制 “不再单方面安抚共产党政权”
+    美国务院高调宣布 美台政军对话七日展开
+    美前官员: 深化美台关系途径 持续对台军售 签订贸易协定
+  
+  
+  台北市的木栅市场一大早就很忙碌，这是许多台湾妈妈一天的开始。在充满热闹叫卖声的店铺前，有民进党籍的台北市议员简舒培的身影，她每逢年终都要亲自来给选民送贺年卡，这已经是她的议员生活的常态。但去年底因为台湾..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Frc-01152021121507.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html&text=美台关系回顾与展望：台湾人的期待&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html&title=美台关系回顾与展望：台湾人的期待" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html&title=美台关系回顾与展望：台湾人的期待" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美台关系回顾与展望：台湾人的期待&body=
+美台关系回顾与展望：台湾人的期待
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html&title=美台关系回顾与展望：台湾人的期待&caption=
+美台关系回顾与展望：台湾人的期待
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美台关系回顾与展望：台湾人的期待&url=https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美台关系回顾与展望：台湾人的期待</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Frc-01152021121507.html&t=%E7%BE%8E%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B%EF%BC%9A%E5%8F%B0%E6%B9%BE%E4%BA%BA%E7%9A%84%E6%9C%9F%E5%BE%85&d=2021-01-17&e=
+美台关系回顾与展望：台湾人的期待
+——
+
+
+  
+  美国候任总统拜登即将在1月20日走马上任。在对中国政策上，拜登国安团队已经表明，将较过去的民主党政府采取更强势的立场，拜登的外交事务团队也有知台派的熟面孔。从现任总统特朗普的全面与中国对抗、正面单挑对决，到拜登政府会联合世界盟邦打团体战，与中国“有原则”地交往，台湾民众又如何看待自己身处的国境环境，对美台关系的未来有什么期待？
+  
+  
+    美国务院取消对台交往限制 “不再单方面安抚共产党政权”
+    美国务院高调宣布 美台政军对话七日展开
+    美前官员: 深化美台关系途径 持续对台军售 签订贸易协定
+  
+  
+  台北市的木栅市场一大早就很忙碌，这是许多台湾妈妈一天的开始。在充满热闹叫卖声的店铺前，有民进党籍的台北市议员简舒培的身影，她每逢年终都要亲自来给选民送贺年卡，这已经是她的议员生活的常态。但去年底因为台湾..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Frc-01152021121507.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610946300000-->
+<p><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html">美台关系回顾与展望：台湾人的期待</a>
+——</p>
+
+<div>
+  <p></p>
+  <p>美国候任总统拜登即将在1<span>月</span>20日<span>走马上任。在对中国政策上，拜登国安团队已经表明，将较过去的民主党政府采取更强势的立场，拜登的外交事务团队也有知台派的熟面孔。从现任总统特朗普的全面与中国对抗、正面单挑对决，到拜登政府会联合世界盟邦打团体战，与中国“有原则”地交往，台湾民众又如何看待自己身处的国境环境，对美台关系的未来有什么期待？</span></p>
+  <p><br /></p>
+  <ul>
+    <li><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/hx1-01112021060102.html"><strong>美国务院取消对台交往限制 “不再单方面安抚共产党政权”</strong></a></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/hx1-01062021103006.html">美国务院高调宣布 美台政军对话七日展开</a></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/cm-11192020111845.html">美前官员: 深化美台关系途径 持续对台军售 签订贸易协定</a></strong></li>
+  </ul>
+  <p><br /></p>
+  <p>台北市的木栅市场一大早就很忙碌，这是许多台湾妈妈一天的开始。在充满热闹叫卖声的店铺前，有民进党籍的台北市议员简舒培的身影，她每逢年终都要亲自来给选民送贺年卡，这已经是她的议员生活的常态。但去年底因为台湾政府决定进口含有莱克多巴胺（俗称瘦肉精）的美国猪肉，这让她在和选民握手微笑时，遇到一些意外插曲。</p>
+  <p>“你们民进党就是进口毒猪啦……什么祝我健康平安，你们不要进毒猪就好了啦！”</p>
+  <p>简舒培告诉本台，作为台北市大安与文山区、这个深蓝选区选出的民进党籍地方议员，她面对选民抱怨，也只能尽力沟通莱克多巴胺已订定科学容许值的国际标准，牛肉也一样，即使还是有民众不谅解。</p>
+  <p>除了这个和台美关系深度连结的内政议题，她也告诉记者，她的选民去年底讨论热烈的还有美国总统大选，有民众对特朗普很热情，就像是跨海参与美选的支持者般。</p>
+  <p>    <figure class="image-richtext image-inline captioned" style="width:622px;">
+<img alt="2016年特朗普胜选后接听蔡英文的恭贺电话，这也是双方断交后的史上第一次。（路透社资料图）" height="350" src="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/rc0115.jpg/@@images/8ade036a-6d1e-4e8d-8272-be3d52b5a130.jpeg" title="rc0115.jpg" width="622" />      <figcaption class="image-caption">
+2016年特朗普胜选后接听蔡英文的恭贺电话，这也是双方断交后的史上第一次。（路透社资料图）
+      </figcaption>
+<small></small>      <div id="zoomattribute">
+<a data-caption="2016年特朗普胜选后接听蔡英文的恭贺电话，这也是双方断交后的史上第一次。（路透社资料图）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/rc0115.jpg" id="single_image" title="2016年特朗普胜选后接听蔡英文的恭贺电话，这也是双方断交后的史上第一次。（路透社资料图）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+      </div>
+    </figure>
+</p>
+  <p><strong>从美猪到美大选</strong><strong>    </strong><strong>台湾人生活里的美国情节</strong></p>
+  <p>“去年底真的很不一样，像是我的选区，选民对美国总统选举都非常、非常关心，聊天会聊到。” 简舒培说。</p>
+  <p>2016年特朗普胜选后接听蔡英文的恭贺电话，这也是双方断交后的史上第一次。“特蔡通话”（台湾称：川蔡通话）让特朗普这位不拘泥于传统的美国总统，在台湾享有高知名度。简舒培指出，“他真的是近三十年来对台湾最友善的美国总统”。</p>
+  <p>她指出，特朗普友台的形象深植台湾人心，在她的选区里，也会有民众讨论到拜登家族与中国往来密切。美国总统选战在太平洋另一头的台湾讨论热烈，她认为，主要还是因为台湾人对自身国际地位与中国因素的关切。</p>
+  <p>特朗普卸任前，国务卿蓬佩奥（Mike Pompeo）宣布全面松绑美国政府自身行之多年的《与台交往准则》自我设限；另一方面，尽管美国驻联合国大使克拉夫特（Kelly Craft）原定访台的行程最后一刻取消，克拉夫特仍透过视讯的方式，与蔡英文隔空对话，为台湾无法参与联合国体系的活动打抱不平。</p>
+  <p>在美国政坛，支持民主台湾一向是两党长期以来的难得共识，只是做法各有不同。</p>
+  <p>来自台湾的年轻人林倢，在华盛顿的非政府与非营利组织闯荡多年。回望故乡，距离反而让她有更广阔的视野。</p>
+  <p>    <figure class="image-richtext image-inline captioned" style="width:622px;">
+<img alt="美国国务卿蓬佩奥2021年1月9日发布声明，解除美台交往限制。（路透社）" height="350" src="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/rc0115a.jpg/@@images/9a04f57b-65ca-4134-a709-aa5cf261d5a5.jpeg" title="rc0115a.jpg" width="622" />      <figcaption class="image-caption">
+美国国务卿蓬佩奥2021年1月9日发布声明，解除美台交往限制。（路透社）
+      </figcaption>
+<small></small>      <div id="zoomattribute">
+<a data-caption="美国国务卿蓬佩奥2021年1月9日发布声明，解除美台交往限制。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/rc0115a.jpg" id="single_image" title="美国国务卿蓬佩奥2021年1月9日发布声明，解除美台交往限制。（路透社）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+      </div>
+    </figure>
+</p>
+  <p><strong>台湾应跳脱抗中</strong><strong>vs</strong><strong>挺台二元思维</strong></p>
+  <p>“我希望台湾跟美国建立更坚实、实质的关系，不是那么受制于美中关系，或是哪几个特定官员对中国的态度。如果他们（美中）关系不好，我们就（美台关系）有机会；但他们关系好了，我们是不是就没机会了？”林倢告诉记者。</p>
+  <p>林倢目前除义务担任台湾人公共事务会（FAPA）常委会成员之外，她曾供职于美国的人权组织自由之家，去年加入国际共和研究所（IRI）。她的观察是，特朗普主政期间，美台关系的确经历一段前所未见的正面发展，但除了有意义的象征性政治姿态外，她更关心台湾和美国、甚至和其他民主国家在民间的实质往来。</p>
+  <p>更重要的是，如何让台湾的利益成为美国两党政策圈的共识，她认为，有两点努力不能忽视。</p>
+  <p>一是台湾把能操之于己的事情做好，例如在抗击新冠肺炎疫情上，台湾就赢得国际社会的肯定。靠的不是大撒币，而是良好的公民素质与政府的科学善治。林倢说，“ Uber司机问我从哪来，一听说是台湾都立刻告诉我，喔！就是那个防疫好成功的国家”，这让她非常骄傲。</p>
+  <p>二是台湾跃上国际舞台，更多靠的是几十年来在民间点滴累积建立的基础，“这绝对不仅仅是美国特定一、两个官员有意义的政治性的表态促成的；除此之外，抵抗中国专制这件事，这背后有非常多人、国际组织与民间团体的长久耕耘与长时间累积。”林倢说。</p>
+  <p>这也是她为什么走深耕非营利与民间组织这条路的原因。与其担心美国下一次谁会选上、对台政策方向会不会转弯，“这也不是台湾人能决定的”，倒不如把精力耕耘在美国社会对台湾的认识之上。她认为，由下而上、让美国民间形成喜欢台湾、舍不得台湾的好感，让这股力量影响政治圈的决策者，更可长可久。</p>
+  <p>    <figure class="image-richtext image-inline captioned" style="width:621px;">
+<img alt="美国国家安全委员会将新设印太事务总协调官一职，由坎贝尔（Kurt Campbell）出任。（美联社资料图）" height="350" src="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/xx0114b.jpg/@@images/5501c3f1-2455-4bb3-82b1-59e87aafb490.jpeg" title="xx0114b.jpg" width="621" />      <figcaption class="image-caption">
+美国国家安全委员会将新设印太事务总协调官一职，由坎贝尔（Kurt Campbell）出任。（美联社资料图）
+      </figcaption>
+<small></small>      <div id="zoomattribute">
+<a data-caption="美国国家安全委员会将新设印太事务总协调官一职，由坎贝尔（Kurt Campbell）出任。（美联社资料图）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/xx0114b.jpg" id="single_image" title="美国国家安全委员会将新设印太事务总协调官一职，由坎贝尔（Kurt Campbell）出任。（美联社资料图）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+      </div>
+    </figure>
+</p>
+  <p><strong>台湾好朋友坎贝尔</strong> <strong>拜登印太事务总舵手</strong></p>
+  <p>不只深耕美国民间社会，台湾在美国两党里也都有熟悉的老朋友。白宫将换新主人，《华盛顿顿邮报》形容，拜登的亚洲事务团队，将让亚洲盟友松一口气。</p>
+  <p>白宫国安会将新设印太事务总协调官（Coordinator for the Indo-Pacific）一职，由坎贝尔（Kurt Campbell）出任。他不只是长期沉浸两岸事务的美国资深官员，去年底在一场台北主办的“台美日安全对话论坛”上，就自诩为台湾的朋友。</p>
+  <p>坎贝尔在柯林顿（Bill Clinton）主政时担任国防部亚太副助理部长，奥巴马（Barack Obama）任内任国务院亚太助卿。他曾为了营救中国盲人维权人士陈光诚，被现任中国驻美大使崔天凯奚落指责。</p>
+  <p>根据前国务卿希拉里·柯林顿的回忆录，当年为将陈光诚送出中国，坎贝尔与中方谈判代表、时任外交部副部长崔天凯有过激烈交锋，崔天凯指责坎贝尔应“回华盛顿、然后辞职”。</p>
+  <p><strong>抗中时代潮流</strong> <strong>大势所趋</strong></p>
+  <p>坎贝尔是奥巴马“重返亚洲”（Pivot to Asia）战略的主要制定者。在他的白宫任命宣布前，他在《外交政策》杂志撰文《美国如何构建亚洲秩序》中提到，中国实力不断增长，破坏印太地区平衡，美国应该与盟友一起向北京传达信号，即：“中国目前选择的道路有风险”，而这将是美国近代史上‘最具挑战的任务’。”</p>
+  <p>去年七月，他也在同一期刊撰文批评，中国外交上放弃“韬光养晦”，走向“锋芒毕露”，“中国的外交攻势必将成为未来美国政府的头等大事”，而美国须重新调整与平衡和欧、亚盟友的关系，这将是未来数十年“制衡中国的唯一机会”。</p>
+  <p>台湾民进党驻美办公室副主任吴迪就告诉记者，他对未来四年台美关系并不悲观， “（世界）对中国有更清醒的认识，这是整个国际环境的大趋势，（美国）民主党对中国的看法是有转变的，这对台湾是好的。”</p>
+  <p>    <iframe height="480" src="https://drive.google.com/file/d/1Pr8gqscigX_ZiG3wJajaXw2eQT7cTig8/preview?resourcekey=null" width="640"></iframe>
+</p>
+  <p><strong>特朗普抗中“帮台出气”</strong><strong>    </strong><strong>国民党盼拜登实质深化关系</strong></p>
+  <p>看在国民党国际事务部专员侯立藩眼中，比较特朗普与拜登在对台政策上的做法，他则说，特朗普这几年为了应对中国大陆、大打台湾牌，确实通过不少友台法案，国民党也很感谢；不过他更期待，已停滞多年的台美《贸易暨投资架构协定》（ TIFA）的谈判在拜登政府上台后能够重新开启，甚至能启动洽签台美双边贸易协定（BTA ）的谈判，尽管他也知道，拜登政府已在国际经贸谈判方面表示美国会“先安内、再攘外”。</p>
+  <p>“拜登会‘回归传统路线’抗中，也就是联合盟友的多边架构。我也相信拜登政府不会把台湾拱手让给中国大陆，政策也较有可预测性，就像国民党许多资深外交官办外交的方式，和国民党频率较近。”除此之外，侯立藩还希望拜登政府更深化台美安全合作。</p>
+  <p>不论美国的民主或共和两党谁执政，他们都提醒台湾要提高国防支出占比的立场，大方向从未改变。</p>
+  <p>台湾的安全靠美国，蓝、绿两党也各有规划不同的亲美路线图。对国民党最年轻的党主席江启臣来说，年底因美猪问题和美方互动上的意外插曲，就是一次对他们的亲美路线的测试。</p>
+  <p>    <figure class="image-richtext image-inline captioned" style="width:622px;">
+<img alt="为了推动“反莱猪公投”，国民党主席江启臣（中）率单车队骑行台湾。右为国民党国际事务部副主任何志勇。（何志勇提供）" height="349" src="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/kmt.jpg/@@images/c2b25542-1cee-4f87-9bfa-a15630a98a7b.jpeg" title="kmt.jpg" width="622" />      <figcaption class="image-caption">
+为了推动“反莱猪公投”，国民党主席江启臣（中）率单车队骑行台湾。右为国民党国际事务部副主任何志勇。（何志勇提供）
+      </figcaption>
+<small></small>      <div id="zoomattribute">
+<a data-caption="为了推动“反莱猪公投”，国民党主席江启臣（中）率单车队骑行台湾。右为国民党国际事务部副主任何志勇。（何志勇提供）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/rc-01152021121507.html/kmt.jpg" id="single_image" title="为了推动“反莱猪公投”，国民党主席江启臣（中）率单车队骑行台湾。右为国民党国际事务部副主任何志勇。（何志勇提供）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+      </div>
+    </figure>
+</p>
+  <p>国民党国际事务部副主任兼文传会发言人何志勇则说，“国民当然在乎和美国的关系，党内高层主管多数人都有留美背景，‘人不亲土亲啊！’；亲美从来（对国民党）就不是‘yes or no’（亲还是不亲）的问题。但是，每个国家都有自己的自主性，政党也有。”</p>
+  <p>对台湾这个新兴民主国家来说，外交事务上有举世独有的特殊处境，除了有中国因素外，任何想执政的政党都很清楚，要和美国维持良好的互动关系，有多么重要。</p>
+  <p>拜登从最年轻的联邦参议员将成为美国最年长的总统。当年台美断交，他是推动《台湾关系法》、投下赞成票的85名参议员之一。</p>
+  <p>在台湾议题上，拜登交接团队已经表明，拜登将信守他支持的《台湾关系法》与美国的“一中政策”，继续支持在符合台湾人民意愿与最大利益的情况下，和平解决两岸议题；拜登一向认为，美国对台湾的支持，必须是“坚定、有原则且跨党派”。</p>
+  <p>2015年时任副总统的拜登在华盛顿召开“美中战略与经济对话”（S&amp;ED）时，发挥政治人物的演说本领，从毛泽东讲到邓小平，既提醒中国应“持续改革开放路线”，又明白指出“社会发展不可能没有公民参与，这是二十一世纪国家迈向繁荣的原则与必经之路”。拜登这个长篇演说，让当时的中国副总理刘延东和汪洋在台上听讲近半小时。</p>
+  <p>习近平主政下的中国，如果希望美中能有建设性关系，在台湾议题上，能否听进拜登对两岸事务的看法，也是美中关系在拜登时代如何开局的观察指标之一。</p>
+  <p><br /></p>
+  <p>自由亚洲电台记者郑崇生华盛顿报道   责编：申铧   网编：洪伟</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E5%86%85%E8%92%99%E6%96%87%E5%8C%96%E6%B8%85%E6%B4%97%E5%8D%87%E7%BA%A7-%E5%BD%93%E5%B1%80%E5%90%91%E4%B8%AD%E5%B0%8F%E5%AD%A6%E5%8E%86%E5%8F%B2%E6%95%99%E6%9D%90%E5%BC%80%E5%88%80">
+          内蒙文化清洗升级 当局向中小学历史教材开刀
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85">
+          中国网民从官媒报道引证政府隐瞒疫情
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/%E5%AD%94%E5%AD%90%E5%AD%A6%E9%99%A2%E9%80%80%E5%9C%BA-%E5%8F%B0%E7%BE%8E%E5%90%88%E4%BD%9C%E8%AE%B2%E8%BF%B0%E5%8F%B0%E6%B9%BE%E6%95%85%E4%BA%8B">
+          孔子学院退场 台美合作讲述台湾故事
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E7%BE%8E%E5%9B%BD%E4%BC%9A%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%9D%83%E6%8A%A5%E5%91%8A-%E4%B8%AD%E5%9B%BD%E5%9C%A8%E6%96%B0%E7%96%86%E5%AE%9E%E6%96%BD-%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D">
+          美国会中国人权报告: 中国在新疆实施“种族灭绝”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E5%B7%B2%E5%85%A8%E9%9D%A2%E4%B8%8B%E6%9E%B6%E8%8D%A3%E8%80%80%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81">
+            前一篇：华为商城已全面下架荣耀系列产品
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E7%96%AB%E6%83%85%E5%A4%B1%E6%8E%A7-%E9%99%95%E8%A5%BF%E8%B6%85%E5%B8%82%E7%8E%B0%E6%8A%A2%E8%B4%AD%E6%BD%AE">
+            后一篇：【翻墙必看】疫情失控 陕西超市现抢购潮
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E5%B7%B2%E5%85%A8%E9%9D%A2%E4%B8%8B%E6%9E%B6%E8%8D%A3%E8%80%80%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E7%96%AB%E6%83%85%E5%A4%B1%E6%8E%A7-%E9%99%95%E8%A5%BF%E8%B6%85%E5%B8%82%E7%8E%B0%E6%8A%A2%E8%B4%AD%E6%BD%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E5%AD%94%E5%AD%90%E5%AD%A6%E9%99%A2%E9%80%80%E5%9C%BA-%E5%8F%B0%E7%BE%8E%E5%90%88%E4%BD%9C%E8%AE%B2%E8%BF%B0%E5%8F%B0%E6%B9%BE%E6%95%85%E4%BA%8B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E5%B7%B2%E5%85%A8%E9%9D%A2%E4%B8%8B%E6%9E%B6%E8%8D%A3%E8%80%80%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E7%96%AB%E6%83%85%E5%A4%B1%E6%8E%A7-%E9%99%95%E8%A5%BF%E8%B6%85%E5%B8%82%E7%8E%B0%E6%8A%A2%E8%B4%AD%E6%BD%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-16/%E5%AD%94%E5%AD%90%E5%AD%A6%E9%99%A2%E9%80%80%E5%9C%BA-%E5%8F%B0%E7%BE%8E%E5%90%88%E4%BD%9C%E8%AE%B2%E8%BF%B0%E5%8F%B0%E6%B9%BE%E6%95%85%E4%BA%8B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+" />
+    <meta property="og:description" content="
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职" />
+    <meta property="twitter:title" content="重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2587%258d%25e5%25bb%25ba%25e5%25b7%25b4%25e5%2588%25ab%25e5%25a1%2594%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25bd%258d%25e4%25ba%2594%25e4%25b8%25aa%25e6%259c%2588%25e5%2585%25b1%25e4%25bc%2591%25e6%2581%25af%25e4%25ba%2586%25e4%25ba%2594%25e5%25a4%25a9%25e7%259a%2584%25e6%258b%25bc%25e5%25a4%259a%2F&t=%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2587%258d%25e5%25bb%25ba%25e5%25b7%25b4%25e5%2588%25ab%25e5%25a1%2594%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25bd%258d%25e4%25ba%2594%25e4%25b8%25aa%25e6%259c%2588%25e5%2585%25b1%25e4%25bc%2591%25e6%2581%25af%25e4%25ba%2586%25e4%25ba%2594%25e5%25a4%25a9%25e7%259a%2584%25e6%258b%25bc%25e5%25a4%259a%2F&t=%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C&d=2021-01-11&e=
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+
+
+  *本文转载自某校内论坛，经原文匿名作者同意授权转载出来，未经原作者同意授权不得转载。文章内容有少量删改，正如该作者所说，“希望更多人能够认识到这家公司的所作所为。”
+  从拼多多离职，在和本科同学聊天时分享了在拼多多工作的这段经历，他说：“你应该把你这段经历总结一下，分享给大家，我听了你的经历后感觉很有收获。”同时，1月初，23岁的前同事猝死的消息引起了全网的极大关注，我自认为也需要将我的从加入拼多多到进入买菜组再到离职的经历感受分享给大家，作为一个参考。
+  昭昭前事 在拼多多的日子
+  有压力也有挑战的前半。
+  入职第一天，我是第二天零点后下班的。第一周要求完成新手项目，完全不会java的我不得不硬来。
+  “硬来”，是我经历的，拼多多培养新人的风格。拼多多的新人培养体系缺失严重，成立5年来，我们这..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2587%258d%25e5%25bb%25ba%25e5%25b7%25b4%25e5%2588%25ab%25e5%25a1%2594%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25bd%258d%25e4%25ba%2594%25e4%25b8%25aa%25e6%259c%2588%25e5%2585%25b1%25e4%25bc%2591%25e6%2581%25af%25e4%25ba%2586%25e4%25ba%2594%25e5%25a4%25a9%25e7%259a%2584%25e6%258b%25bc%25e5%25a4%259a%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/&text=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/&title=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/&title=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职&body=
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/&title=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职&caption=
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2587%258d%25e5%25bb%25ba%25e5%25b7%25b4%25e5%2588%25ab%25e5%25a1%2594%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25bd%258d%25e4%25ba%2594%25e4%25b8%25aa%25e6%259c%2588%25e5%2585%25b1%25e4%25bc%2591%25e6%2581%25af%25e4%25ba%2586%25e4%25ba%2594%25e5%25a4%25a9%25e7%259a%2584%25e6%258b%25bc%25e5%25a4%259a%2F&t=%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C&d=2021-01-11&e=
+重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+——
+
+
+  *本文转载自某校内论坛，经原文匿名作者同意授权转载出来，未经原作者同意授权不得转载。文章内容有少量删改，正如该作者所说，“希望更多人能够认识到这家公司的所作所为。”
+  从拼多多离职，在和本科同学聊天时分享了在拼多多工作的这段经历，他说：“你应该把你这段经历总结一下，分享给大家，我听了你的经历后感觉很有收获。”同时，1月初，23岁的前同事猝死的消息引起了全网的极大关注，我自认为也需要将我的从加入拼多多到进入买菜组再到离职的经历感受分享给大家，作为一个参考。
+  昭昭前事 在拼多多的日子
+  有压力也有挑战的前半。
+  入职第一天，我是第二天零点后下班的。第一周要求完成新手项目，完全不会java的我不得不硬来。
+  “硬来”，是我经历的，拼多多培养新人的风格。拼多多的新人培养体系缺失严重，成立5年来，我们这..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2587%258d%25e5%25bb%25ba%25e5%25b7%25b4%25e5%2588%25ab%25e5%25a1%2594%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25bd%258d%25e4%25ba%2594%25e4%25b8%25aa%25e6%259c%2588%25e5%2585%25b1%25e4%25bc%2591%25e6%2581%25af%25e4%25ba%2586%25e4%25ba%2594%25e5%25a4%25a9%25e7%259a%2584%25e6%258b%25bc%25e5%25a4%259a%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610407879000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/">重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职</a>
+——</p>
+
+<div>
+  <p>*本文转载自某校内论坛，经原文匿名作者同意授权转载出来，未经原作者同意授权不得转载。文章内容有少量删改，正如该作者所说，“希望更多人能够认识到这家公司的所作所为。”</p>
+  <p>从拼多多离职，在和本科同学聊天时分享了在拼多多工作的这段经历，他说：“你应该把你这段经历总结一下，分享给大家，我听了你的经历后感觉很有收获。”同时，1月初，23岁的前同事猝死的消息引起了全网的极大关注，我自认为也需要将我的从加入拼多多到进入买菜组再到离职的经历感受分享给大家，作为一个参考。</p>
+  <h3 id="section">昭昭前事 在拼多多的日子</h3>
+  <p>有压力也有挑战的前半。</p>
+  <p><strong>入职第一天，我是第二天零点后下班的。</strong>第一周要求完成新手项目，完全不会java的我不得不硬来。</p>
+  <p><strong>“硬来”，是我经历的，拼多多培养新人的风格。</strong>拼多多的新人培养体系缺失严重，成立5年来，我们这批，第一次有校招生培训活动。而对技术的培养，除了新手项目，剩下的就看个人的实力与运气，如果你的师父是个好人，如果你所在的组是个好组，那你是幸运的。</p>
+  <p>我应该算是幸运的，我的师父，和周围带我的老哥，都是很好的人。应该说，除了某个大部门颐指气使的风格外，周围的同事和对接的同事都是很好的人。<strong>有时我在想，这么多善良的人，为什么要受这种压榨。</strong></p>
+  <p>接下来的“硬来”，就是我这个刚完成新手项目，刚转java的人，要做一个同时对接多个业务方的需求。当时真的是茫然无措，读不懂的需求文档、不理解的“行话”、不明确的开发流程、还有每日一催，令我感到压抑、绝望。<strong>每天晚饭后，我都在楼下想，接下来要怎么办。</strong></p>
+  <p>最后，我花了很长的时间，才完成了这个需求。不过，随着时间的流逝，后面逐渐熟练起来。很怀念那个充实的7月，迭代的速度提升了很多。</p>
+  <p><strong>前半的时光，相对来说还可接受，平时可以晚上12点前后离开，周五可以早走，周六可以休息，虽然单休也觉得不太舒服，但与后半相比，“简直是天堂”。</strong></p>
+  <h3 id="section-1">逐渐疯狂的买菜组</h3>
+  <p>后半，进入了（多多）买菜这个项目。从此开始，一切都变了：<strong>12点以后走、周末无休、需求快速迭代。</strong>我休息的时间屈指可数：</p>
+  <p>8月无休，唯一算上休息的可能就是三点左右到家，5点才睡着的那个周六；</p>
+  <p>9月休息两天：9月6日、9月26日；</p>
+  <p>10月休息两天：10月1日、2日国庆假期；</p>
+  <p>11月休息一天：11月14日（连续工作<strong>42天后</strong>的休息）；</p>
+  <p>12月休息：12月5日（连续工作<strong>20天后</strong>的休息）</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661405-5ffcdfcc541eb.png" alt="图片" width="500" class="aligncenter" /></p>
+  <p><em>出勤表</em></p>
+  <p>这种疯狂的、无休的模式并不少见。之前的快团团项目、楼下的春晚项目、都是这个模式。大佬们都在说，“大家这几个月辛苦辛苦，等项目做成了，大家就可以休息了，等项目做成了，大家就有回报了。”</p>
+  <h3 id="section-2">真的是这样吗？</h3>
+  <p>加班加点上线了第一个版本后的周六，他们说：“大家周六辛苦辛苦，重构一下，满足用户需求！” 参与项目的人多了后，他们说：“到明年上旬，大家周六都来，满足前线同学的需求！” 人数更多后，他们说：“周六正常休息要和主管请假，大家如果手上没需求可以和我说，我们要早日达到设定的目标。“殊不知，当前的目标早已超过之前的设定。</p>
+  <p>只要拼多多仍然存在，这种疯狂的作息安排、加班时长，就一定会存在，之前是快团团，现在是买菜，然后是春晚。只要拼多多仍然存在，这种疯狂的工作强度就不会消失，他们会将第二天11点前定义为昨天、会让测试同事早上 8,9点下班、产品同事14-3-7作息，甚至16-4-7作息，甚至会21点提需求让第二天4点上线、会因为前期设计的问题而让大家切版本切到凌晨4点。</p>
+  <p>只要拼多多仍然存在，这种所谓的试金石项目就一直会有，他们会让运营强制去买菜，不去就别想调薪，他们会让开发强制去买菜，不去就去客服或者离职。不要有任何抱怨，累了、撑不住了、离职了、死了，<strong>那只能证明，你不是金子。</strong></p>
+  <h3 id="section-3">离去前夜</h3>
+  <p>后面，作息乱掉，成了阴间作息。每天中午12点上班，第二天1点左右下班，连续的加班让我的心情不稳定，头脑不清。某一周的最后一个需求终于在周五，被拖了1天后写完，被拖了2个小时后完成了发布，我手上的活，终于做完了。我和大佬说，我周六想休息，大佬迟疑、犹豫，最后，以一种不情愿的姿态，同意了休息。</p>
+  <p>说完后，<strong>我觉得自己很贱，那种卑躬屈膝的姿态，令我恶心，恶心了我回家的一路</strong>。我为了一个正常的、写在合同里的休息时间，如此卑躬屈膝，奴颜媚态。</p>
+  <p>第二天，大佬在群里说：“正常休息要和我及主管请假，现在发现大家每天都走的很早，别的组过来问，我只能尴 尬的回应，走得早来得早，其实并不是这样。不排除大家手上的活做完了，如果做完了可以来找我 balabala。。。” 一阵恶心袭来。</p>
+  <p>“为什么正常休息要请假？哪个组的人这么下作，过来比谁走的晚？这是不是他在无中生有，在pua？大家谁不是基本无休，每天熬到一点多，甚至两点，第二天来的晚点怎么了？手上的活做完了怎么就不能休息，做完了就一定要接着做吗？能者就一定要多劳吗？”恶心、愤怒、不爽。。。这段话匿名发了出去。</p>
+  <h3 id="section-4">离去当天</h3>
+  <p><strong>当天凌晨3点多下班，5点多睡着，13点在工位坐下。头昏脑涨，时不时眩晕，我还是来上班了。</strong>晚上，他们告诉我：你走吧。后来，我想了很久。也许，周六正常休息要请假，这件事是机密？毕竟他们这么搞是违法的。说的都是事实呀，怎么就是恶意中伤呢？</p>
+  <p>离开吧，我也累了。</p>
+  <h3 id="section-5">惕惕后人</h3>
+  <p>逐渐疯狂的拼多多自2020年7月以来，各种骚操作就没停过：</p>
+  <p>7月，雨季，金虹桥是高档商务区，不允许穿拖鞋上班。一个老哥穿拖鞋，被保安锁喉，公司劝他息事宁人；</p>
+  <p>8月，全员无休，超级大小周的说法，以及做法，开始出现；</p>
+  <p>9月，每年规定的3,9月调薪，愣是没做，活生生推迟一个月；</p>
+  <p>10月，黄峥说要开启硬核奋斗模式，同时告诉大家要<strong>注意锻炼身体</strong>。第二天，hr发通知，严格约束公司休息间，那些在外吃饭以及<strong>健身的同事</strong>要注意；</p>
+  <p>11月，要么去买菜，要么离职，不去买菜，不调薪；禁止员工私下建立微信群，并解散现有微信群；</p>
+  <p>12月，“安全组大佬离职事件”；</p>
+  <p>2021年1月，“你为多多夺边疆，多多为你删帖忙”</p>
+  <p>不知从何时开始，拼多多变了，学长和老哥口中2年前的好日子没了，变成了硬核奋斗，变成了超级大小周，变成了全公司向买菜学习。公司倾尽全力，能转买菜的都去买菜，不去买菜的就劝退。</p>
+  <p>我不明白，为什么要这样，为什么每个月一次骚操作，为什么赶着秋招来骚操作，为什么大家上班时间也要内卷。那个为多多夺边疆的女孩，很多人看这件事，可能是为拼多多知乎号的发言感到愤怒，为知乎“砍一刀”的行为叫好。</p>
+  <p>我看了全过程。前线的同事 前线的同事，比坐在公司里写代码更辛苦：她们真的无休，周六周日都在干活；她们要在远离市区的仓库值守、搬运、分拣蔬菜；她们要在23点后，宣传新一天的商品；她们要跟车送菜、她们住宿条件简陋；她们甚至凌晨1,2点开会，早上4,5点开始工作；她们有时不能按时吃饭 她们背着运营业绩高压在工作……</p>
+  <p>从东北，到云南，从新疆，到海南，严冬酷暑，她们因多多买菜，逐渐失去如花美眷，甚至被永远剥夺似水流年。</p>
+  <p>"可怕的不是失去了如花美眷，而是永远被剥夺了似水流年。"——《巡回检察组》台词（有修改）</p>
+  <h3 id="section-6">多多为你删帖忙</h3>
+  <p>她离去了，万马齐喑、噤若寒蝉，没人敢说这件事。终于，她的好友忍不住了，在脉脉近乎绝望的发声。</p>
+  <p>没人敢讲话，这个人讲了，哪怕泄露公司机密，哪怕恶意中伤公司。一声怒吼，群情激愤，帖子很快就被顶到了热搜第一。然后，举报、删帖。多个为此事发声的帖子被举报为不实消息，多个帖子无缘无故消失。在疯狂删帖后，拼多多承认了确有其事，在因“你懂的”的操作下，让员工们万马齐喑后。</p>
+  <p>清晨知乎上拼多多的发言引起了众怒，舆论持续发酵。后来知乎砍了一刀。</p>
+  <p>于是上午，公关操作出现：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661405-5ffcdfcecc2dd.png" alt="图片" width="500" class="aligncenter" /></p>
+  <p>这张图，虽然糊，但是，我敢拍着胸脯说，知乎“砍一刀”事件发生的上午，我看到了带有这张图的帖子。而后来的官方回应，也真的是这样的，拼多多承认确有其事。而且许多人都能看出来，那个回应、那朋友圈截图，不正常。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661405-5ffcdfd1c1d5b.png" alt="图片" width="500" class="aligncenter" /></p>
+  <p>随后，脉脉上出现了带节奏的帖子与回复：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661405-5ffcdfd4b6f82.png" alt="图片" width="500" class="aligncenter" /><br /><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661405-5ffcdfd6b729f.png" alt="图片" width="500" class="aligncenter" /></p>
+  <p>它们是谁呢？“我向来是不惮以最坏的恶意，来推测pdd的，然而我还不料，也不信竟会凶残到这地步。” ——套用鲁迅《记念刘和珍君》一文内容</p>
+  <h3 id="section-7">殷鉴不远 在夏后之世</h3>
+  <p>回顾到此结束。接下来先说说我当初的选择与收获。</p>
+  <p>为何选择拼多多？我不否认，钱是重要的因素。除此之外，这是唯一一个互联网公司的offer，相比于其他offer，将来的发展能够更广一些，不至于被局限。转行而无实习经历的我总要经历一下互联网大厂，经历一下真正生产环境中的代码如何写。</p>
+  <p>至于收获，我学到了很多，从一个转行者变成了能写出被全国人民用的软件的初级开发者。我认识了很多善良美好的人，他们耐心解答我的问题，我从他们身上学到了很多新的知识。如果排除变态的加班及作息，这么一家年轻，增长快的公司，会是个很好的选择吧。<strong>可是，排出量变态加班及作息的拼多多，还是拼多多吗？</strong></p>
+  <p>接下来，想对各位同学说：你要很“努力”，才能真正拿到拼多多的高薪。拼多多给你高薪，你觉得你赚了，实际上呢？</p>
+  <p>你要忍受每天工作12小时以上</p>
+  <p>你要忍受每周只休息一天</p>
+  <p>你要忍受试金石项目的无休</p>
+  <p>你要忍受离职的竞业协议</p>
+  <p>你要忍受离职不给全的加班费和曾经许诺的总包</p>
+  <p>你要忍受有解禁期的期权</p>
+  <p>有没有想过：50w，70w的高薪，你觉得能拿几年？你觉得为什么加班费要放到年终发才会给全？你觉得为什么年终奖要分两半发？你觉得为什么股票期权要5年解禁？</p>
+  <p>当有一天，你眼皮发黑、满脸痘痘、毛孔放大、神情涣散、衣物散发异味（亲身经历和散发异味的同事面对面讨论 问题），你想走的时候，那时，你工作了几年？拼多多用1倍的理论工作时间，换回了接近2倍的实际工作时间， 赔了吗？你赚了吗？</p>
+  <p>生活不只工作一件事 你想去过这样的生活吗：</p>
+  <p>每天凌晨2点，开车跨越半个城市回家， 每天晚上，一边看着老公/老婆发来的刚半个月大的儿子的视频，一边加班。只有公公婆婆/老丈人丈母娘来了，周六才有借口早点回家；</p>
+  <p>奉献所有的时间，不去陪伴你的男/女朋友，经营你们的关系 茕茕孑立，形影相吊，在大家都睡去时下班，一天的疲劳无处排解，没有人和你聊天。你真的希望将来听到这样的话吗 “为什么要离职，你可以离婚啊！” ——吴晓波《激荡十年 水大鱼大》中记录的任正非对想要辞职，结束与爱人两地分居生活的李玉琢说的话。</p>
+  <h3 id="section-8">想当干电池吗</h3>
+  <p>有没有想过，类似007的作息，你觉得你真的下班了吗？不，这不是下班，这只是上班机器的电用光了，需要充电。如果不需要充电，你不会有“下班”。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e9%87%8d%e5%bb%ba%e5%b7%b4%e5%88%ab%e5%a1%94%e8%ae%a1%e5%88%92-%e4%b8%80%e4%bd%8d%e4%ba%94%e4%b8%aa%e6%9c%88%e5%85%b1%e4%bc%91%e6%81%af%e4%ba%86%e4%ba%94%e5%a4%a9%e7%9a%84%e6%8b%bc%e5%a4%9a/">重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99-%E6%AF%8F%E6%97%A5%E4%BA%BA%E7%89%A9-%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B-%E5%80%92%E5%9C%A8%E5%AF%92%E5%86%AC%E9%87%8C">
+          【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung">
+          Photo: Taking Selfie, by Thomas_Yung
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%AF%BC%E7%AD%92directube-%E4%BB%8E-%E4%B8%80%E7%A7%92%E9%92%9F-%E5%88%B0-%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2-%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C">
+          导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB">
+          笨妈育儿育己 | 问答：“婚驴”、浪漫爱、渣男识别、开放关系
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%BD%B9%E6%83%85%E6%9C%80%E5%89%8D%E7%BA%BF-%E5%85%9A%E5%AA%92%E8%87%AA%E6%9B%9D%E6%83%A7%E6%80%95%E8%93%AC%E4%BD%A9%E5%A5%A5%E9%97%AA%E7%94%B5%E8%AE%BF%E5%8F%B0">
+            前一篇：【役情最前线】党媒自曝惧怕蓬佩奥闪电访台
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%89%E5%AE%B6%E5%A4%AE%E4%BC%81%E7%BB%88%E8%A2%AB%E7%BA%BD%E4%BA%A4%E6%89%80-%E6%91%98%E7%89%8C-%E5%8F%97%E5%BD%B1%E5%93%8D%E7%9A%84%E6%98%AF%E8%B0%81">
+            后一篇：三家央企终被纽交所“摘牌”，受影响的是谁？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%BD%B9%E6%83%85%E6%9C%80%E5%89%8D%E7%BA%BF-%E5%85%9A%E5%AA%92%E8%87%AA%E6%9B%9D%E6%83%A7%E6%80%95%E8%93%AC%E4%BD%A9%E5%A5%A5%E9%97%AA%E7%94%B5%E8%AE%BF%E5%8F%B0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%89%E5%AE%B6%E5%A4%AE%E4%BC%81%E7%BB%88%E8%A2%AB%E7%BA%BD%E4%BA%A4%E6%89%80-%E6%91%98%E7%89%8C-%E5%8F%97%E5%BD%B1%E5%93%8D%E7%9A%84%E6%98%AF%E8%B0%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%AF%BC%E7%AD%92directube-%E4%BB%8E-%E4%B8%80%E7%A7%92%E9%92%9F-%E5%88%B0-%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2-%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%BD%B9%E6%83%85%E6%9C%80%E5%89%8D%E7%BA%BF-%E5%85%9A%E5%AA%92%E8%87%AA%E6%9B%9D%E6%83%A7%E6%80%95%E8%93%AC%E4%BD%A9%E5%A5%A5%E9%97%AA%E7%94%B5%E8%AE%BF%E5%8F%B0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%89%E5%AE%B6%E5%A4%AE%E4%BC%81%E7%BB%88%E8%A2%AB%E7%BA%BD%E4%BA%A4%E6%89%80-%E6%91%98%E7%89%8C-%E5%8F%97%E5%BD%B1%E5%93%8D%E7%9A%84%E6%98%AF%E8%B0%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%AF%BC%E7%AD%92directube-%E4%BB%8E-%E4%B8%80%E7%A7%92%E9%92%9F-%E5%88%B0-%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2-%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

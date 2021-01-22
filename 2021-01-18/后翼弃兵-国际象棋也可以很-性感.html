@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>《后翼弃兵》：国际象棋也可以很“性感” – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+" />
+    <meta property="og:description" content="
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="《后翼弃兵》：国际象棋也可以很“性感”" />
+    <meta property="twitter:title" content="《后翼弃兵》：国际象棋也可以很“性感”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210118%2Fqueens-gambit-chess-netflix%2F&t=%E3%80%8A%E5%90%8E%E7%BF%BC%E5%BC%83%E5%85%B5%E3%80%8B%EF%BC%9A%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%BE%88%E2%80%9C%E6%80%A7%E6%84%9F%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210118%2Fqueens-gambit-chess-netflix%2F&t=%E3%80%8A%E5%90%8E%E7%BF%BC%E5%BC%83%E5%85%B5%E3%80%8B%EF%BC%9A%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%BE%88%E2%80%9C%E6%80%A7%E6%84%9F%E2%80%9D&d=2021-01-18&e=
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+
+
+  
+ALEXIS SOLOSKI2021-01-18 16:27:13
+  
+  
+马辛·多洛辛斯基和安雅·泰勒-乔伊在《后翼弃兵》中饰演了两位来自完全相反世界的国际象棋大师：他是一个守口如瓶的苏联男人，而她是一个迷人而麻烦不断的美国女人。
+  
+  作为史上最伟大的国际象棋选手之一，加里·卡斯帕罗夫(Garry Kasparov)对银幕上大多数的国际象棋场景都不怎么满意。“你可以看出来，是非职业人士在下棋，”卡斯帕罗夫在克罗地亚一通信号不佳的电话中说。“通常情况下，摆出的棋位都毫无道理可言。”
+  国际象棋是一项两个人（通常为男性）面对面坐着，几乎不说话或移动的运动，有时一坐就是几小时，这一题材似乎不太可能成为银幕宠儿。但从默片时代开始，国际象棋就对电影充满吸引力，出现在了惊悚片、爱情片、喜剧、传记片、纪录片、经典文学改编作品和..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210118%2Fqueens-gambit-chess-netflix%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/&text=《后翼弃兵》：国际象棋也可以很“性感”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/&title=《后翼弃兵》：国际象棋也可以很“性感”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/&title=《后翼弃兵》：国际象棋也可以很“性感”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=《后翼弃兵》：国际象棋也可以很“性感”&body=
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/&title=《后翼弃兵》：国际象棋也可以很“性感”&caption=
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=《后翼弃兵》：国际象棋也可以很“性感”&url=https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>《后翼弃兵》：国际象棋也可以很“性感”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210118%2Fqueens-gambit-chess-netflix%2F&t=%E3%80%8A%E5%90%8E%E7%BF%BC%E5%BC%83%E5%85%B5%E3%80%8B%EF%BC%9A%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%BE%88%E2%80%9C%E6%80%A7%E6%84%9F%E2%80%9D&d=2021-01-18&e=
+《后翼弃兵》：国际象棋也可以很“性感”
+——
+
+
+  
+ALEXIS SOLOSKI2021-01-18 16:27:13
+  
+  
+马辛·多洛辛斯基和安雅·泰勒-乔伊在《后翼弃兵》中饰演了两位来自完全相反世界的国际象棋大师：他是一个守口如瓶的苏联男人，而她是一个迷人而麻烦不断的美国女人。
+  
+  作为史上最伟大的国际象棋选手之一，加里·卡斯帕罗夫(Garry Kasparov)对银幕上大多数的国际象棋场景都不怎么满意。“你可以看出来，是非职业人士在下棋，”卡斯帕罗夫在克罗地亚一通信号不佳的电话中说。“通常情况下，摆出的棋位都毫无道理可言。”
+  国际象棋是一项两个人（通常为男性）面对面坐着，几乎不说话或移动的运动，有时一坐就是几小时，这一题材似乎不太可能成为银幕宠儿。但从默片时代开始，国际象棋就对电影充满吸引力，出现在了惊悚片、爱情片、喜剧、传记片、纪录片、经典文学改编作品和..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210118%2Fqueens-gambit-chess-netflix%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610959472000-->
+<p><a href="https://cn.nytimes.com/culture/20210118/queens-gambit-chess-netflix/">《后翼弃兵》：国际象棋也可以很“性感”</a>
+——</p>
+
+<div>
+  <div>
+<em>ALEXIS SOLOSKI<br />2021-01-18 16:27:13</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2020/10/18/arts/18gambit1/merlin_178097778_16cefb94-907f-4ab4-9f67-5f610ced065c-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">马辛·多洛辛斯基和安雅·泰勒-乔伊在《后翼弃兵》中饰演了两位来自完全相反世界的国际象棋大师：他是一个守口如瓶的苏联男人，而她是一个迷人而麻烦不断的美国女人。</small>
+  </div>
+  <p>作为史上<a rel="nofollow" target="_blank" href="https://www.chess.com/article/view/best-chess-players-of-all-time" title="Link: https://www.chess.com/article/view/best-chess-players-of-all-time">最伟大的国际象棋选手</a>之一，加里·卡斯帕罗夫(Garry Kasparov)对银幕上大多数的国际象棋场景都不怎么满意。“你可以看出来，是非职业人士在下棋，”卡斯帕罗夫在克罗地亚一通信号不佳的电话中说。“通常情况下，摆出的棋位都毫无道理可言。”</p>
+  <p>国际象棋是一项两个人（通常为男性）面对面坐着，几乎不说话或移动的运动，有时一坐就是几小时，这一题材似乎不太可能成为银幕宠儿。但从默片时代开始，国际象棋就对电影充满吸引力，出现在了惊悚片、爱情片、喜剧、传记片、纪录片、经典文学改编作品和卡通片里。很少有消遣活动能同时为英格玛·伯格曼（Ingmar Bergman，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/1958/10/14/archives/seventh-seal-swedish-allegory-has-premiere-at-paris.html" title="Link: https://www.nytimes.com/1958/10/14/archives/seventh-seal-swedish-allegory-has-premiere-at-paris.html">《第七封印》</a>[The Seventh Seal]）和皮克斯（<a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=9IYRC7g2ICg" title="Link: https://www.youtube.com/watch?v=9IYRC7g2ICg">《棋逢敌手》</a>[Geri’s Game]）带来灵感。在小银幕上，国际象棋也在《神探可伦坡》(Columbo)、《星际迷航》(Star Trek)甚至是<a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=SwGzxGZ0Zys">《老友记》</a>(Friends)中有过客串。</p>
+  <p>这使得于去年10月23日在Netflix首播的七集限定剧<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/11/23/arts/television/chess-set-board-sales.html">《后翼弃兵》</a>(The Queen’s Gambit)既熟悉又不寻常。这部剧描绘了国际象棋的魅力和痛苦，它的背景设置在20世纪50年代和60年代，主角是虚构人物贝丝·哈蒙（Beth Harmon，最初由伊斯拉·约翰斯顿[Isla Johnston]饰演，后来换成<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/02/21/movies/emma-jane-austen.html">安雅·泰勒-乔伊[Anya Taylor-Joy]</a>），她是一名神童，在肯塔基州的一家孤儿院学会了这种运动项目。尽管沉迷于酒精和镇静剂，身穿由加布里埃尔·宾德(Gabriele Binder)设计的优雅年代服饰的贝丝，痴迷于下棋和训练，排名不断上升，直到她要面对世界上最强的选手。这让她有点像会思考的女版洛奇(Rocky)。</p>
+  <p>有了麻烦缠身的主角和高潮迭起的比赛，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/11/23/arts/television/queens-gambit-chess-boards.html">《后翼弃兵》</a>与其他国际象棋戏剧就有了相似之处。将重点放在女性身上已有先例，首当其冲就是米拉·奈尔(Mira Nair)执导的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2016/09/23/movies/queen-of-katwe-review.html">《卡推女王》</a>(Queen of Katwe)，卡斯帕罗夫也力荐这部作品。但要论棋位——即棋盘上棋子的特殊排列方法——没有作品能在数量和精细度上与这部剧匹敌。</p>
+  <p>“它尽可能还原了国际象棋赛事的真实氛围，”担任该剧顾问的卡斯帕罗夫说。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2020/10/18/arts/18gambit2/18gambit2-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">特级大师加里·卡斯帕罗夫是剧集顾问，该剧努力试图还原国际象棋比赛的氛围。“相信我，”他说。“这是能拍出的最接近的效果了。”</small>
+  </div>
+  <p>它也非常忠实于原作，这是沃尔特·特维斯(Walter Tevis)<a rel="nofollow" target="_blank" href="https://www.nytimes.com/1983/03/01/books/books-of-the-times-261335.html" title="Link: https://www.nytimes.com/1983/03/01/books/books-of-the-times-261335.html">在1983年创作的一部篇幅不大的小说</a>，这位作家深受好莱坞的喜爱：《江湖浪子》(The Hustler)、《金钱本色》(The Color of Money)、《天外来客》(The Man Who Fell to Earth)都是他的作品。特维斯是一位备受尊重的俱乐部棋手，他的下棋节奏和文风甚至能让门外汉都兴趣盎然：西西里防御、半斯拉夫变着、佛克比尔反弃兵、西班牙开局。这本书的名字取自15世纪起就在使用的一种开局方式。</p>
+  <p>20世纪90年代初，编剧阿兰·斯科特（Allan Scott，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/1973/12/10/archives/filmdont-look-now-a-horror-taledonald-sutherland-and-julie-christie.html?searchResultPosition=1">《威尼斯疑魂》</a>[Don’t Look Now]）获得了这部小说的版权，并撰写了电影剧本。迈克尔·艾普特(Michael Apted)和贝纳多·贝托鲁奇(Bernardo Bertolucci)导演都表达过兴趣。莫莉·林沃德(Molly Ringwald)可能会出演。2008年，国际象棋爱好者希斯·莱杰(Heath Ledger)已经签约执导，定由艾伦·佩吉(Ellen Page)饰演贝丝。</p>
+  <p>后来莱杰在开拍前<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2008/01/23/movies/23ledger.html">死于</a>处方药使用过量。项目就停滞了。</p>
+  <p>“这部片很难拍，”长期参与该项目的制片人威廉·霍伯格(William Horberg)说。</p>
+  <p>但不一定非得是一部电影。几年前，曾在90年代读过这本书的作家兼导演斯科特·弗兰克(Scott Frank)对它产生了兴趣。弗兰克曾编剧并执导<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/11/21/arts/television/godless-netflix-tv-review.html">《无神》</a>(Godless)，这一故事片剧本后来被Netflix拍成了一部拿下了艾美奖的限定剧，他认为《后翼弃兵》可以用类似的方式重新编写。Netflix同意了。</p>
+  <p>这可能会是一次冒险。小说本身很短。对话很少，棋盘之外的动作也少之又少。但与斯科特一起创作该剧的弗兰克希望用小说所省略的历史和主题填补其中的空白。</p>
+  <p>“如果你把它拍成电影，那就会变成一部体育片：《她会打败那个俄罗斯人吗？》”弗兰克说。“而那不是这本书的主题。对我而言，主题就是拥有如此天赋带来的痛苦和代价。”</p>
+  <p>他写了六集剧本，然后发现需要第七集。为什么？“下棋很耗时间，”他说。</p>
+  <p>的确。2018年，世界国际象棋锦标赛的第一场比赛的<a rel="nofollow" target="_blank" href="https://www.theguardian.com/sport/2018/nov/09/king-toppled-before-play-begins-in-caruana-carlsen-chess-match">时长与这部剧相当</a>。（结果是平局。）于是，这就成了斯科特的难题：要展示多少下棋戏份，给其分配多少时间。描述比赛的时间太长，可能会让门外汉敬而远之。时间太短，又会把握不住塑造这部剧的体育逆境故事。《后翼弃兵》或许不只是一个有着极其时髦服式的体育故事，但这仍是这部剧的精髓所在。</p>
+  <p>开拍前，弗兰克主持了一场他所谓的“国际象棋峰会”。在这部剧的拍摄地柏林，弗兰克与剪辑师米歇尔·特索罗(Michelle Tesoro)与国际象棋专家会面，试图尽可能多地了解国际象棋比赛的场面、感觉，甚至是气味。他们向专家了解棋子风格、棋盘厚度、桌子的布置和观众的安排。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2020/10/18/arts/18GAMBIT3/18GAMBIT3-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">“面对国际象棋的实际布阵，我的舞蹈背景帮上了大忙，”泰勒-乔伊说。“那基本就是用你的手指编舞。”</small>
+  </div>
+  <p>曾为特维斯小说创作提供建议的著名国际象棋教练<a rel="nofollow" target="_blank" href="https://www.facebook.com/Bruce-Pandolfini-284750404954289/">布鲁斯·潘多菲尼(Bruce Pandolfini)</a>为这部剧打造出一本比赛和棋位的“圣经”，标出了哈蒙下棋中的关键时刻。他尝试了一些具有象征意义的走法，比如交换卒子或弃后。卡斯帕罗夫检查了这些棋位，并为一些重要比赛设计了走法。</p>
+  <p>卡斯帕罗夫也为制作团队提供了一些关于锦标赛的建议，尽管他认为，任何剧集都无法精准还原出国际象棋比赛的真实气氛。</p>
+  <p>“但相信我，”他说。“这是能拍出的最接近的效果了。”</p>
+  <p>很少有演员是国际象棋爱好者。于是，潘多菲尼就教他们如何看起来像个棋手——如何握住棋子，什么时候该拍下棋钟。潘多菲尼认为，即使是不懂国际象棋的观众，也可能会注意到错误的手势。</p>
+  <p>演员必须按顺序学习各个动作，潘多菲尼因此开发了助记符和视觉提示来帮助他们。“面对国际象棋的实际布阵，我的舞蹈背景帮上了大忙，”泰勒-乔伊说。“那基本就是用你的手指编舞。”</p>
+  <p>在诠释贝丝复杂的内心世界的同时，把皇后的一个卒子向前推，对她来说不是问题。“她对国际象棋的热情就像我对艺术的热情一样，”泰勒-乔伊说。“这样的移情不难做到。”</p>
+  <p>本文最初发表于2020年10月16日。<br />翻译：Harry Wong<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/10/16/arts/television/queens-gambit-chess-netflix.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%AE%80%E6%8A%A5-%E5%8D%8E%E7%9B%9B%E9%A1%BF%E5%9C%A8%E6%88%92%E5%A4%87%E4%B8%AD%E8%BF%8E%E6%9D%A5%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%91%A8-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E9%80%86%E5%8A%BF%E5%A4%8D%E8%8B%8F">
+          简报：华盛顿在戒备中迎来总统就职周；中国经济逆势复苏
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/TikTok%E5%89%8D%E9%80%94%E8%80%83%E9%AA%8C%E6%8B%9C%E7%99%BB%E5%AF%B9%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E7%AB%8B%E5%9C%BA">
+          TikTok前途考验拜登对中国科技公司立场
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E8%80%81%E5%B9%B2%E5%A6%88%E4%B8%8E%E8%93%9D%E9%A2%86%E6%BD%AE-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E5%B0%8F%E9%95%87%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%E6%A0%B7%E6%9C%AC">
+          老干妈与蓝领潮：一个中国小镇的经济复苏样本
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E9%80%86%E5%8A%BF%E5%A4%8D%E8%8B%8F-2020%E5%B9%B4GDP%E5%A2%9E%E9%95%BF2.3">
+          中国经济逆势复苏，2020年GDP增长2.3%
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85">
+            前一篇：中国网民从官媒报道引证政府隐瞒疫情
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%8A%E4%BA%BF%E4%BA%BA%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4%E6%BA%90%E5%90%AB%E6%9C%89%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E6%9C%89%E6%AF%92%E5%8C%96%E5%90%88%E7%89%A9">
+            后一篇：上亿人的饮用水源含有不安全的有毒化合物
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%8A%E4%BA%BF%E4%BA%BA%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4%E6%BA%90%E5%90%AB%E6%9C%89%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E6%9C%89%E6%AF%92%E5%8C%96%E5%90%88%E7%89%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/TikTok%E5%89%8D%E9%80%94%E8%80%83%E9%AA%8C%E6%8B%9C%E7%99%BB%E5%AF%B9%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E7%AB%8B%E5%9C%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E8%80%81%E5%B9%B2%E5%A6%88%E4%B8%8E%E8%93%9D%E9%A2%86%E6%BD%AE-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E5%B0%8F%E9%95%87%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%E6%A0%B7%E6%9C%AC'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E4%BB%8E%E5%AE%98%E5%AA%92%E6%8A%A5%E9%81%93%E5%BC%95%E8%AF%81%E6%94%BF%E5%BA%9C%E9%9A%90%E7%9E%92%E7%96%AB%E6%83%85">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%8A%E4%BA%BF%E4%BA%BA%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4%E6%BA%90%E5%90%AB%E6%9C%89%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E6%9C%89%E6%AF%92%E5%8C%96%E5%90%88%E7%89%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-18/TikTok%E5%89%8D%E9%80%94%E8%80%83%E9%AA%8C%E6%8B%9C%E7%99%BB%E5%AF%B9%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E7%AB%8B%E5%9C%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-18/%E8%80%81%E5%B9%B2%E5%A6%88%E4%B8%8E%E8%93%9D%E9%A2%86%E6%BD%AE-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E5%B0%8F%E9%95%87%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%E6%A0%B7%E6%9C%AC">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

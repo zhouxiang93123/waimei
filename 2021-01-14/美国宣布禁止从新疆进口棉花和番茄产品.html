@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美国宣布禁止从新疆进口棉花和番茄产品 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+" />
+    <meta property="og:description" content="
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美国宣布禁止从新疆进口棉花和番茄产品" />
+    <meta property="twitter:title" content="美国宣布禁止从新疆进口棉花和番茄产品" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Fxinjiang-cotton-tomato-ban%2F&t=%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Fxinjiang-cotton-tomato-ban%2F&t=%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81&d=2021-01-14&e=
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+
+
+  
+ANA SWANSON2021-01-14 17:45:43
+  
+  
+中国新疆地区的棉花田。一项禁止从该地区进口棉花的新禁令可能会给服装生产商产生深远影响。
+  
+  华盛顿——周三，特朗普政府宣布禁止从中国新疆进口棉花和番茄，以及所有用这些原料制成的产品，理由是该地区的人权侵犯和强迫劳力的广泛使用。
+  这项措施可能会对服装和食品制造商产生深远影响，其中许多企业一直试图与新疆的暴行保持距离，但始终难以确保自身供应链没有使用来自该地区的任何原材料。该地区是棉花、煤炭、化学品、糖、番茄和多晶硅（一种太阳能电池板材料）的主要产地，向中国和世界各地的工厂供货。
+  该禁令允许海关官员禁止进口他们怀疑用新疆原材料制成的产品，无论这些产品是直接从中国进入美国，还是从其他国家进口。
+  人权组织称，中国在位于偏远西部的新疆对以穆斯林为主..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Fxinjiang-cotton-tomato-ban%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/&text=美国宣布禁止从新疆进口棉花和番茄产品&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/&title=美国宣布禁止从新疆进口棉花和番茄产品" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/&title=美国宣布禁止从新疆进口棉花和番茄产品" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美国宣布禁止从新疆进口棉花和番茄产品&body=
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/&title=美国宣布禁止从新疆进口棉花和番茄产品&caption=
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美国宣布禁止从新疆进口棉花和番茄产品&url=https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美国宣布禁止从新疆进口棉花和番茄产品</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Fxinjiang-cotton-tomato-ban%2F&t=%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81&d=2021-01-14&e=
+美国宣布禁止从新疆进口棉花和番茄产品
+——
+
+
+  
+ANA SWANSON2021-01-14 17:45:43
+  
+  
+中国新疆地区的棉花田。一项禁止从该地区进口棉花的新禁令可能会给服装生产商产生深远影响。
+  
+  华盛顿——周三，特朗普政府宣布禁止从中国新疆进口棉花和番茄，以及所有用这些原料制成的产品，理由是该地区的人权侵犯和强迫劳力的广泛使用。
+  这项措施可能会对服装和食品制造商产生深远影响，其中许多企业一直试图与新疆的暴行保持距离，但始终难以确保自身供应链没有使用来自该地区的任何原材料。该地区是棉花、煤炭、化学品、糖、番茄和多晶硅（一种太阳能电池板材料）的主要产地，向中国和世界各地的工厂供货。
+  该禁令允许海关官员禁止进口他们怀疑用新疆原材料制成的产品，无论这些产品是直接从中国进入美国，还是从其他国家进口。
+  人权组织称，中国在位于偏远西部的新疆对以穆斯林为主..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Fxinjiang-cotton-tomato-ban%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610621071000-->
+<p><a href="https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/">美国宣布禁止从新疆进口棉花和番茄产品</a>
+——</p>
+
+<div>
+  <div>
+<em>ANA SWANSON<br />2021-01-14 17:45:43</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/us/13DC-XINJIANGBAN/merlin_145326369_4b64580a-2f96-4032-9af9-d1b5f94bd86d-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">中国新疆地区的棉花田。一项禁止从该地区进口棉花的新禁令可能会给服装生产商产生深远影响。</small>
+  </div>
+  <p>华盛顿——周三，特朗普政府宣布禁止从中国新疆进口棉花和番茄，以及所有用这些原料制成的产品，理由是该地区的人权侵犯和强迫劳力的广泛使用。</p>
+  <p>这项措施可能会对服装和食品制造商产生深远影响，其中许多企业一直试图与新疆的暴行保持距离，但始终难以确保自身供应链没有使用来自该地区的任何原材料。该地区是棉花、煤炭、化学品、糖、番茄和<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/08/business/economy/china-solar-companies-forced-labor-xinjiang.html">多晶硅</a>（一种太阳能电池板材料）的主要产地，向中国和世界各地的工厂供货。</p>
+  <p>该禁令允许海关官员禁止进口他们怀疑用新疆原材料制成的产品，无论这些产品是直接从中国进入美国，还是从其他国家进口。</p>
+  <p>人权组织称，中国在位于偏远西部的新疆对以穆斯林为主的少数民族进行了大规模镇压，包括在集中营关押了可能超过百万维吾尔人、哈萨克人和其他少数民族，并对其余人口进行密切监视。</p>
+  <p>强迫劳动在该地区似乎也很普遍。美国海关和边境保护局(U.S. Customs and Border Protection)称，在一项调查中发现新疆存在许多强迫劳动迹象，包括债务束缚、行动限制、扣留工资、以及辱虐性的生活和工作条件。中国政府否认新疆存在强迫劳动，称所有安排都出于自愿。</p>
+  <p>劳工权利组织工人权利共同体(Worker Rights Consortium)总干事斯科特·诺瓦(Scott Nova)表示，这一禁令“为任何继续否认”该地区“强迫劳力生产棉花的普遍问题的服饰品牌敲响了洪亮的警钟”。</p>
+  <p>“这一禁令将重新定义服装行业——从亚马逊(Amazon)到耐克(Nike)到Zara——如何获取材料和劳动力，”诺瓦说。“任何一个尚未退出或不打算迅速退出新疆的国际服饰品牌都将招致法律和声誉灾难。”</p>
+  <p>据工人权利共同体估计，美国品牌和零售商每年进口超过15亿件使用新疆材料的服装，这代表了超过200亿美元的零售额。该组织还表示，中国还是世界上最大的番茄生产国，新疆占到了其产量的大部分。</p>
+  <p>独立研究者和媒体报道已将数十家世界上最著名的跨国公司与新疆劳工或产品联系起来，包括<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20201130/nike-coca-cola-xinjiang-forced-labor-bill/">苹果、耐克</a>、<a rel="nofollow" target="_blank" href="https://www.wsj.com/articles/western-companies-get-tangled-in-chinas-muslim-clampdown-11558017472">卡夫亨氏(Kraft Heinz)和金宝汤(Campbell Soup)</a>。</p>
+  <p><a rel="nofollow" target="_blank" href="http://www.patagoniaworks.com/press/2020/7/23/update-patagonia-statement-on-xinjiang">巴塔哥尼亚(Patagonia)</a>、<a rel="nofollow" target="_blank" href="https://www.bbc.com/news/business-55555270">玛莎百货(Marks and Spencer)</a>和<a rel="nofollow" target="_blank" href="https://hmgroup.com/content/dam/hmgroup/groupsite/documents/masterlanguage/CSR/Policies/2020/Xinjiang%20Statement.pdf">H&amp;M</a>等一些使用新疆棉花或纱线的纺织和服装企业已宣布正在切断其关系。但许多企业发现很难追踪中国供应商使用的所有产品来源，特别是考虑到独立审计员无法进入新疆的工厂。</p>
+  <p>这项命令将“向贸易界发出再明确不过的信息：把你的供应链理清楚”，美国海关和边境保护局代理专员马克·摩根(Mark Morgan)说。他补充说，进口商必须确保自己的供应链不涉及强迫劳动。“这是法律规定。”</p>
+  <p>特朗普政府对新疆增加了越来越多的限制性措施，包括对数十家涉嫌侵犯人权的企业与个体实施制裁。</p>
+  <p>去年12月，海关官员<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2020/12/02/business/us-economy-coronavirus#us-announces-another-ban-on-imported-cotton-from-chinas-xinjiang-region">宣布禁止</a>由新疆生产建设兵团生产的棉花制品，该经济和准军事组织生产了新疆地区的大部分棉花。周三，官员们表示，根据该禁令，美国海关和边境保护局已经扣留了43批价值超过200万美元的货物。</p>
+  <p>国会也考虑通过<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20201130/nike-coca-cola-xinjiang-forced-labor-bill/">全面立法</a>来阻止从新疆进口，除非企业能证明贯穿整个新疆的供应链中没有强迫劳动。</p>
+  <p>虽然美国在这一问题上采取了最有力的行动，但<a rel="nofollow" target="_blank" href="https://www.international.gc.ca/global-affairs-affaires-mondiales/news-nouvelles/2021/2021-01-12-xinjiang-advisory-avis.aspx?lang=eng">加拿大</a>和<a rel="nofollow" target="_blank" href="https://www.reuters.com/article/idUSKBN29H1M2">英国</a>本周都出台了规定，限制与新疆有关的商品入境。</p>
+  <p><a rel="nofollow" target="_blank" href="https://www.csis.org/features/combatting-human-rights-abuses-xinjiang">国际战略研究中心(Center for Strategic and International Studies)</a>的数据显示，尽管对中国在该地区的行为愈发担心，但从2019年到2020年，新疆对美国和欧洲的出口<a rel="nofollow" target="_blank" href="https://oec.world/en/profile/subnational_chn/xingjiang-uygur-autonomous-region?finalDateExportSelector=202007&amp;initialDateExportSelector=201907">大幅增长</a>。</p>
+  <p>但贸易专家表示，这些新措施会引发质疑，即海关官员是否有能力全面执行这样一项波及广泛的禁令，这将需要通过全球供应链追踪新疆材料。</p>
+  <p>美国政府问责局(U.S. Government Accountability Office)<a rel="nofollow" target="_blank" href="https://www.gao.gov/products/GAO-21-106#summary">去年10月发布的一份报告</a>显示，尽管有一个新部门和专项资源负责禁止使用强迫劳力生产的产品，但海关仍面临人员短缺和其他问题。</p>
+  <p>在周三接受记者电话采访时，海关和边境保护局贸易办公室的执行助理专员布伦达·史密斯(Brenda Smith)表示，“将抵达入境口岸的货物与新疆生产的原材料联系起来，是一个难题。”她说，该部门正在采用新的追踪办法找出强迫劳力生产的产品。</p>
+  <p>官员们声称，该部门正在越来越多地利用花粉分析等新技术，试图在外国产品中识别出来自新疆的棉花和其他材料。</p>
+  <p>Ana Swanson是时报驻华盛顿记者，报道贸易和全球经济新闻。她此前在《华盛顿邮报》工作，报道贸易、美联储及经济方面的新闻。欢迎在Twitter上关注她：<a rel="nofollow" target="_blank" href="https://twitter.com/AnaSwanson">@AnaSwanson</a>。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/business/economy/xinjiang-cotton-tomato-ban.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%AE%80%E6%8A%A5-%E4%B8%96%E5%8D%AB%E4%B8%93%E5%AE%B6%E8%AE%BF%E5%8D%8E%E5%BC%80%E5%90%AF%E6%BA%AF%E6%BA%90%E8%B0%83%E6%9F%A5-%E5%AD%9F%E6%99%9A%E8%88%9F%E7%94%9F%E6%B4%BB%E7%8A%B6%E6%80%81%E6%9B%9D%E5%85%89">
+          简报：世卫专家访华开启溯源调查；孟晚舟生活状态曝光
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/WHO%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%9B%A2%E9%98%9F%E6%8A%B5%E8%BE%BE%E6%AD%A6%E6%B1%89-%E6%88%96%E9%9D%A2%E4%B8%B4%E9%87%8D%E9%87%8D%E5%9B%B0%E9%9A%BE">
+          WHO病毒溯源团队抵达武汉，或面临重重困难
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0">
+          第二次弹劾，特朗普时代注定的尾声
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84">
+          关于特朗普遭第二次弹劾，目前我们所知道的
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%95%86%E4%BC%9A-%E4%B8%AD%E5%9B%BD%E5%B0%86%E5%9C%A8%E6%8B%9C%E7%99%BB%E4%B8%8A%E4%BB%BB%E4%B8%8D%E4%B9%85%E5%90%8E%E6%B4%BE%E9%AB%98%E5%AE%98%E8%AE%BF%E7%BE%8E">
+            前一篇：美国商会：中国将在拜登上任不久后派高官访美
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/%E5%9F%BA%E6%B0%91%E7%9B%9F%E4%B8%BB%E5%B8%AD%E4%B8%89%E4%BA%BA%E4%BA%89%E9%9B%84-%E5%AF%B9%E5%BE%85%E4%B8%AD%E5%9B%BD%E5%9D%87%E6%9C%89%E4%BD%95%E8%A7%81%E8%A7%A3">
+            后一篇：基民盟主席三人争雄 对待中国均有何见解？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%95%86%E4%BC%9A-%E4%B8%AD%E5%9B%BD%E5%B0%86%E5%9C%A8%E6%8B%9C%E7%99%BB%E4%B8%8A%E4%BB%BB%E4%B8%8D%E4%B9%85%E5%90%8E%E6%B4%BE%E9%AB%98%E5%AE%98%E8%AE%BF%E7%BE%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E5%9F%BA%E6%B0%91%E7%9B%9F%E4%B8%BB%E5%B8%AD%E4%B8%89%E4%BA%BA%E4%BA%89%E9%9B%84-%E5%AF%B9%E5%BE%85%E4%B8%AD%E5%9B%BD%E5%9D%87%E6%9C%89%E4%BD%95%E8%A7%81%E8%A7%A3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/WHO%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%9B%A2%E9%98%9F%E6%8A%B5%E8%BE%BE%E6%AD%A6%E6%B1%89-%E6%88%96%E9%9D%A2%E4%B8%B4%E9%87%8D%E9%87%8D%E5%9B%B0%E9%9A%BE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%95%86%E4%BC%9A-%E4%B8%AD%E5%9B%BD%E5%B0%86%E5%9C%A8%E6%8B%9C%E7%99%BB%E4%B8%8A%E4%BB%BB%E4%B8%8D%E4%B9%85%E5%90%8E%E6%B4%BE%E9%AB%98%E5%AE%98%E8%AE%BF%E7%BE%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-14/%E5%9F%BA%E6%B0%91%E7%9B%9F%E4%B8%BB%E5%B8%AD%E4%B8%89%E4%BA%BA%E4%BA%89%E9%9B%84-%E5%AF%B9%E5%BE%85%E4%B8%AD%E5%9B%BD%E5%9D%87%E6%9C%89%E4%BD%95%E8%A7%81%E8%A7%A3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-14/WHO%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%9B%A2%E9%98%9F%E6%8A%B5%E8%BE%BE%E6%AD%A6%E6%B1%89-%E6%88%96%E9%9D%A2%E4%B8%B4%E9%87%8D%E9%87%8D%E5%9B%B0%E9%9A%BE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

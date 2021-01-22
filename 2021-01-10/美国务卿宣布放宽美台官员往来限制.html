@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美国务卿宣布放宽美台官员往来限制 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美国务卿宣布放宽美台官员往来限制
+——
+" />
+    <meta property="og:description" content="
+美国务卿宣布放宽美台官员往来限制
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美国务卿宣布放宽美台官员往来限制" />
+    <meta property="twitter:title" content="美国务卿宣布放宽美台官员往来限制" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210111%2Fstate-dept-taiwan-united-states-china%2F&t=%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%AE%A3%E5%B8%83%E6%94%BE%E5%AE%BD%E7%BE%8E%E5%8F%B0%E5%AE%98%E5%91%98%E5%BE%80%E6%9D%A5%E9%99%90%E5%88%B6" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210111%2Fstate-dept-taiwan-united-states-china%2F&t=%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%AE%A3%E5%B8%83%E6%94%BE%E5%AE%BD%E7%BE%8E%E5%8F%B0%E5%AE%98%E5%91%98%E5%BE%80%E6%9D%A5%E9%99%90%E5%88%B6&d=2021-01-10&e=
+美国务卿宣布放宽美台官员往来限制
+——
+
+
+  
+AMY QIN,AMY QIN2021-01-11 10:01:54
+  
+  
+国务卿迈克·庞皮欧说，美国“为试图安抚北京的共党政权”，单方面采取了限制措施。
+  
+  华盛顿——随着特朗普政府寻求在其任期的最后几天里锁定针对北京的更强硬立场，美国周六表示，将放松对美台官员互动的限制。
+  美国在1979年承认北京的共产党政府、不再承认统治台湾的国民党政府并接受“一个中国政策”之后，出台了一套复杂的指导方针，旨在让美台官员难以接触。
+  国务卿迈克·庞皮欧(Mike Pompeo)在周六的一份声明中说，美国“为试图安抚北京的共党政权”，单方面施加了这些限制。
+  “我宣布取消所有这些自我限制，”庞皮欧说。“行政机构各部门应该认为，国务院之前根据国务卿授权发布的对台关系的‘接触指南’是无效的。”
+  但乔治城大学(Georgetow..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210111%2Fstate-dept-taiwan-united-states-china%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/&text=美国务卿宣布放宽美台官员往来限制&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/&title=美国务卿宣布放宽美台官员往来限制" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/&title=美国务卿宣布放宽美台官员往来限制" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美国务卿宣布放宽美台官员往来限制&body=
+美国务卿宣布放宽美台官员往来限制
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/&title=美国务卿宣布放宽美台官员往来限制&caption=
+美国务卿宣布放宽美台官员往来限制
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美国务卿宣布放宽美台官员往来限制&url=https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美国务卿宣布放宽美台官员往来限制</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210111%2Fstate-dept-taiwan-united-states-china%2F&t=%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%AE%A3%E5%B8%83%E6%94%BE%E5%AE%BD%E7%BE%8E%E5%8F%B0%E5%AE%98%E5%91%98%E5%BE%80%E6%9D%A5%E9%99%90%E5%88%B6&d=2021-01-10&e=
+美国务卿宣布放宽美台官员往来限制
+——
+
+
+  
+AMY QIN,AMY QIN2021-01-11 10:01:54
+  
+  
+国务卿迈克·庞皮欧说，美国“为试图安抚北京的共党政权”，单方面采取了限制措施。
+  
+  华盛顿——随着特朗普政府寻求在其任期的最后几天里锁定针对北京的更强硬立场，美国周六表示，将放松对美台官员互动的限制。
+  美国在1979年承认北京的共产党政府、不再承认统治台湾的国民党政府并接受“一个中国政策”之后，出台了一套复杂的指导方针，旨在让美台官员难以接触。
+  国务卿迈克·庞皮欧(Mike Pompeo)在周六的一份声明中说，美国“为试图安抚北京的共党政权”，单方面施加了这些限制。
+  “我宣布取消所有这些自我限制，”庞皮欧说。“行政机构各部门应该认为，国务院之前根据国务卿授权发布的对台关系的‘接触指南’是无效的。”
+  但乔治城大学(Georgetow..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210111%2Fstate-dept-taiwan-united-states-china%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610333072000-->
+<p><a href="https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/">美国务卿宣布放宽美台官员往来限制</a>
+——</p>
+
+<div>
+  <div>
+<em>AMY QIN,AMY QIN<br />2021-01-11 10:01:54</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/us/politics/09dc-taiwan/merlin_181018080_0432addb-5abf-4896-8e16-f59a64c0fdfa-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">国务卿迈克·庞皮欧说，美国“为试图安抚北京的共党政权”，单方面采取了限制措施。</small>
+  </div>
+  <p>华盛顿——随着特朗普政府寻求在其任期的最后几天里锁定针对北京的更强硬立场，美国周六表示，将放松对美台官员互动的限制。</p>
+  <p>美国在1979年承认北京的共产党政府、不再承认统治台湾的国民党政府并接受“一个中国政策”之后，出台了一套复杂的指导方针，旨在让美台官员难以接触。</p>
+  <p>国务卿迈克·庞皮欧(Mike Pompeo)在周六的一份声明中说，美国“为试图安抚北京的共党政权”，单方面施加了这些限制。</p>
+  <p>“我宣布取消所有这些自我限制，”<a rel="nofollow" target="_blank" href="https://www.state.gov/lifting-self-imposed-restrictions-on-the-u-s-taiwan-relationship/">庞皮欧说</a>。“行政机构各部门应该认为，国务院之前根据国务卿授权发布的对台关系的‘接触指南’是无效的。”</p>
+  <p>但乔治城大学(Georgetown University)教授、曾在国家安全委员会(National Security Council)工作的埃文·S·梅代罗斯(<a rel="nofollow" target="_blank" href="https://gufaculty360.georgetown.edu/s/contact/0033600001FP3ogAAD/evan-medeiros">Evan S. Medeiros</a>)说，此举可能不会有什么实际影响。“这看起来像是一个宣传噱头，”他说。“本届政府将在两周内结束。”</p>
+  <p>梅代罗斯说，中国几乎肯定会对这项声明做出愤怒反应，但在候任总统小约瑟夫·R·拜登(Joseph R. Biden Jr.)就职之前，不太可能采取任何破坏美中关系的行动。</p>
+  <p>“中国人绝对不想让任何人对类似这样的做法造成的破坏性存在任何幻想，”梅代罗斯说。“那是他们要表态的目的，但在他们看到拜登将如何处理美中关系之前，不会采取事实上破坏与新一届政府关系的行动。”</p>
+  <p>截至周日上午，中国尚未对美国国务院的最新宣布发表正式评论。但北京几个月来一直表示，已在为特朗普政府在对华关系问题上采取其所谓“最后的疯狂”和“上演的歇斯底里”做准备。</p>
+  <p>周日上午，中国官方小报《环球时报》以《最后的疯狂！蓬佩奥发推：美将停止官方在与台湾接触上的限制》为题，发表了一篇关于取消限制的<a rel="nofollow" target="_blank" href="https://taiwan.huanqiu.com/article/41SGLd6BCsB" title="Link: https://taiwan.huanqiu.com/article/41SGLd6BCsB">简短报道</a>。</p>
+  <p>“如果这是美国对台政策新起点的话，这也将开启台湾当局继续存在下去的倒计时，”该报主编胡锡进周日在Twitter上写道，他有时被视为替中国政府<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20190801/hu-xijin-global-times-us-china-tensions/" title="Link: https://cn.nytimes.com/china/20190801/hu-xijin-global-times-us-china-tensions/">公开发表好斗声音</a>的人。</p>
+  <p>“用武力解决台湾问题的选择也将被提上议事日程，”胡锡进说，还表示战斗机会“随时”飞向台湾上空。</p>
+  <p>上海复旦大学国际关系学院教授沈丁立说，他估计北京将对美国的声明作出强有力的回应，以向即将上任的拜登政府发出一个信号。</p>
+  <p>“中国将对此表示零容忍，他们会立即谴责这项宣布，”沈丁立说。“拜登需要看到宣布造成的损害，这样他才会采取紧急措施扭转局面。”</p>
+  <p>在试图改善与台湾的关系上，特朗普政府开始时和结束时的做法大致相同。2016年12月，特朗普<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20161203/trump-speaks-with-taiwans-leader-a-possible-affront-to-china/">接听了台湾总统打来的祝贺当选的电话</a>，引发了人们对他的政府可能会改变美国长期政策的猜测。</p>
+  <p>尽管如此，在本届政府任期只剩下短短几天的时候，采取这个相对重大的步骤，还是让一些人不可理解。在政府内部，一些国务院官员已正式表达了他们对这个改变的反对意见，暗示这个做法没有经过适当的审查。一些外交官对在他们看来是最后一刻外交行动的混乱感到失望，他们认为本可以在政府任期更早的时候采取这些行动。</p>
+  <p>政府外部的一些专家说，这些行动的意图是给拜登设下圈套，迫使他要么逆转做法并因此付出国内的政治代价，要么不逆转做法从而导致与北京的关系恶化。</p>
+  <p>拜登过渡团队的一名官员说，拜登仍将坚持一个中国政策，也将遵守确保台北与华盛顿之间关系和对台军售的《与台湾关系法》。这名官员说，拜登认为，对台湾的支持应该是强有力的，而且应该是跨党派的。</p>
+  <p>中国视台湾为其主权领土，台北也从未宣布独立。美国的政策是，<a rel="nofollow" target="_blank" href="https://www.csis.org/analysis/what-us-one-china-policy-and-why-does-it-matter">认识到</a>北京对台湾有主权主张，但不承认这一主张。</p>
+  <p>长期以来，北京一直对台北与华盛顿关系正常化或合法化的任何努力做出否定反应。中国谴责台湾官员访美，批评他们与美方官员见面。来自北京的反对，以及美国国务院复杂的规定，确保了美台之间的大多数互动都发生在相对较低的层次。</p>
+  <p>美国驻联合国大使凯莉·克拉夫特(Kelly Craft)计划本周前往台湾进行为期三天的访问，目的是加强对这个自治岛屿扩大参与国际组织的支持。近年来，随着两岸关系的恶化，中国一直在利用自己日益增长的经济和政治影响力来削弱台湾的国际地位，包括阻止台湾加入联合国等国际组织的任何尝试。</p>
+  <p>在过去的一年，台湾试图利用在控制新型冠状病毒上取得的巨大成功，进行加入世界卫生组织的游说活动。尽管台湾与大陆很近，但这个拥有2300万人口的岛屿迄今为止只有828例病毒感染和7例死亡。</p>
+  <p>特朗普政府也开始推动这个问题。去年8月，美国卫生与公众服务部部长亚历克斯·M·阿扎二世(Alex M. Azar II)<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/asia-pacific/20200810/taiwan-us-azar-china/">访问台湾</a>时，这个问题得到了突出强调，那是美国几十年来对台湾进行的最高级别访问。中国对阿扎访台的回应是向台湾派出了两架战斗机，这是北京在过去一年里采取更强硬立场的一部分，几乎每天都有中国人民解放军的飞机飞向台湾。</p>
+  <p>中国强烈反对任何在他们眼里是对台湾官方地位认可的外交姿态，已对克拉夫特即将访台的消息作出谴责，并誓言要进行报复。</p>
+  <p>中国外交部发言人华春莹在上周五的例行记者会上提到庞皮欧，称他是特朗普政府中的“少数反华政客”之一，他们“为一己私利不择手段打压中国，变本加厉搞‘末日疯狂’，蓄意破坏中美关系”。</p>
+  <p>庞皮欧的声明在台湾受到欢迎。随着北京对台湾采取越来越咄咄逼人的做法，台湾一直在推动与美国建立更紧密的关系。台湾外交部长吴钊燮<a rel="nofollow" target="_blank" href="https://twitter.com/MOFA_Taiwan/status/1348071102648512513">在Twitter上表示</a>，他感谢庞皮欧解除了“过去多年来对我们的接触进行的不必要”的限制。</p>
+  <p>美国政府官员认为，对中国采取更强硬的立场——以及与台湾建立更密切的关系——可能是特朗普政治遗产的一部分。他们一直在设法锁定一些让拜登可能难以逆转的政策变化，把对中国持怀疑态度的官员安排在特朗普任期结束后仍可能继续的位置上，并把资源转移到研究和收集有关中国的情报上去。</p>
+  <p>最近几周，美国国家情报总监约翰·拉特克利夫(John Ratcliffe)已开始进行这些资源转移，并已在推进对中国的更多元的分析视角。</p>
+  <p>撤销蓬佩奥的宣布对被拜登<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/11/22/us/politics/biden-antony-blinken-secretary-of-state.html">提名为下任国务卿</a>的安东尼·J·布林肯(Antony J. Blinken)来说相对容易。即使布林肯不恢复那些规定，拜登也可能会阻止与台湾官员进行高层接触。</p>
+  <p>但随着北京继续打压香港，两党越来越支持与台北建立更紧密关系，哪怕只是为了阻止中国试图用武力收回台湾。</p>
+  <p>许多限制与台湾官员接触的规定，是美国与中国的关系更有希望的较早时代的产物，特朗普政府初期在五角大楼任职的埃尔布里奇·科尔比(Elbridge Colby)说。</p>
+  <p>“这些是官僚主义的障碍，是时间积累起来的拖累，”科尔比说。</p>
+  <p>北京打击民主运动、在全球坚持自己主张的做法，让加强与台湾的关系变得更重要，科尔比说。</p>
+  <p>“我们需要台湾增强自身的适应力、防御能力和经济实力，因为中国对台湾采取侵略性行动的可能性真实存在，”他说。</p>
+  <p>Julian E. Barnes是驻华盛顿的国家安全记者，负责报道情报机构方面的新闻。在2018年加入时报之前，他为《华尔街日报》撰写关于安全事务方面的文章。欢迎在<a rel="nofollow" target="_blank" href="https://twitter.com/julianbarnes">Twitter</a>和<a rel="nofollow" target="_blank" href="https://www.facebook.com/julian.e.barnes">Facebook</a>上关注他。<br />Amy Qin是《纽约时报》中国记者，负责报道文化、政治和社会交叉议题。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/amyyqin">@amyyqin</a>。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/09/us/politics/state-dept-taiwan-united-states-china.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%A5%E5%AF%92%E4%B8%8B%E7%9A%84%E7%BE%8E%E6%99%AF-%E4%BA%9A%E6%B4%B2%E5%A4%9A%E5%9C%B0%E5%87%BA%E7%8E%B0%E5%88%9B%E7%BA%AA%E5%BD%95%E4%BD%8E%E6%B8%A9">
+          严寒下的美景：亚洲多地出现创纪录低温
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%B0%E6%96%B0%E8%A7%84%E5%8F%8D%E5%88%B6%E7%BE%8E%E5%9B%BD%E5%AF%B9%E4%B8%AD%E4%BC%81%E9%99%90%E5%88%B6">
+          中国出台新规反制美国对中企限制
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91">
+          简报：特朗普或面临第二次弹劾；美国为美台官方交往松绑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E7%89%B9%E6%9C%97%E6%99%AE%E5%92%8C%E4%BB%96%E7%9A%84%E5%85%B1%E5%92%8C%E5%85%9A%E7%9B%9F%E5%8F%8B%E4%BC%9A%E5%8F%97%E5%88%B0%E6%83%A9%E7%BD%9A%E5%90%97">
+          特朗普和他的共和党盟友会受到惩罚吗？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91">
+            前一篇：简报：特朗普或面临第二次弹劾；美国为美台官方交往松绑
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E5%9B%9B%E5%9B%BD%E5%85%B3%E5%88%87%E6%B0%91%E4%B8%BB%E6%B4%BE%E8%A2%AB%E6%8D%95-%E6%B8%AF%E8%AD%A6%E7%A7%B0%E6%9C%89%E6%9D%83%E5%B0%81-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2">
+            后一篇：四国关切民主派被捕 港警称有权封「香港编年史」
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E5%9B%9B%E5%9B%BD%E5%85%B3%E5%88%87%E6%B0%91%E4%B8%BB%E6%B4%BE%E8%A2%AB%E6%8D%95-%E6%B8%AF%E8%AD%A6%E7%A7%B0%E6%9C%89%E6%9D%83%E5%B0%81-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%B0%E6%96%B0%E8%A7%84%E5%8F%8D%E5%88%B6%E7%BE%8E%E5%9B%BD%E5%AF%B9%E4%B8%AD%E4%BC%81%E9%99%90%E5%88%B6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E5%9B%9B%E5%9B%BD%E5%85%B3%E5%88%87%E6%B0%91%E4%B8%BB%E6%B4%BE%E8%A2%AB%E6%8D%95-%E6%B8%AF%E8%AD%A6%E7%A7%B0%E6%9C%89%E6%9D%83%E5%B0%81-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%B0%E6%96%B0%E8%A7%84%E5%8F%8D%E5%88%B6%E7%BE%8E%E5%9B%BD%E5%AF%B9%E4%B8%AD%E4%BC%81%E9%99%90%E5%88%B6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-10/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E6%88%96%E9%9D%A2%E4%B8%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%BE%8E%E5%9B%BD%E4%B8%BA%E7%BE%8E%E5%8F%B0%E5%AE%98%E6%96%B9%E4%BA%A4%E5%BE%80%E6%9D%BE%E7%BB%91">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

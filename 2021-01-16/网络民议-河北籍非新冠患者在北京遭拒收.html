@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【网络民议】河北籍非新冠患者在北京遭拒收 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+" />
+    <meta property="og:description" content="
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【网络民议】河北籍非新冠患者在北京遭拒收" />
+    <meta property="twitter:title" content="【网络民议】河北籍非新冠患者在北京遭拒收" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e6%25b2%25b3%25e5%258c%2597%25e7%25b1%258d%25e7%2597%2585%25e4%25ba%25ba%25e5%259c%25a8%25e5%258c%2597%25e4%25ba%25ac%25e9%2581%25ad%25e6%258b%2592%25e6%2594%25b6%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E6%B2%B3%E5%8C%97%E7%B1%8D%E9%9D%9E%E6%96%B0%E5%86%A0%E6%82%A3%E8%80%85%E5%9C%A8%E5%8C%97%E4%BA%AC%E9%81%AD%E6%8B%92%E6%94%B6" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e6%25b2%25b3%25e5%258c%2597%25e7%25b1%258d%25e7%2597%2585%25e4%25ba%25ba%25e5%259c%25a8%25e5%258c%2597%25e4%25ba%25ac%25e9%2581%25ad%25e6%258b%2592%25e6%2594%25b6%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E6%B2%B3%E5%8C%97%E7%B1%8D%E9%9D%9E%E6%96%B0%E5%86%A0%E6%82%A3%E8%80%85%E5%9C%A8%E5%8C%97%E4%BA%AC%E9%81%AD%E6%8B%92%E6%94%B6&d=2021-01-16&e=
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+
+
+  CDT编者按：随着河北疫情反弹，一些河北人遭遇了和去年初武汉人同样的歧视：非新冠患者，仅仅因为是河北籍就被北京的医院拒收。知乎上一篇相关文章遭到河蟹。
+  @听说是你笛：【1月15日最新进展及结果:1.联系到主任去别院手术。2.入住私立医院做术前支持等待手术。(后续有变动会告知) 3.具体手术时间还未确定。】
+  给河北籍病人的一些信息参考:①我们昨天已经打过12345以及卫计委求助电话要求督办，并未得到回复。如果非常紧急走投无路可以尝试。②经过我们多方询问打听，根据卫计委通知【不确定是不是院方说辞】，目前北京所有公立医院都无法收治河北籍患者(也许部队医院可以，但是很难有病房以及不适用姥姥病情，但是其他病情可以尝试联系)③部分私立医院及国际医院可以收治河北籍低风险区患者，但是可能不满足手术条件。另，如需医保报销也要慎重考虑。
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e6%25b2%25b3%25e5%258c%2597%25e7%25b1%258d%25e7%2597%2585%25e4%25ba%25ba%25e5%259c%25a8%25e5%258c%2597%25e4%25ba%25ac%25e9%2581%25ad%25e6%258b%2592%25e6%2594%25b6%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/&text=【网络民议】河北籍非新冠患者在北京遭拒收&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/&title=【网络民议】河北籍非新冠患者在北京遭拒收" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/&title=【网络民议】河北籍非新冠患者在北京遭拒收" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【网络民议】河北籍非新冠患者在北京遭拒收&body=
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/&title=【网络民议】河北籍非新冠患者在北京遭拒收&caption=
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【网络民议】河北籍非新冠患者在北京遭拒收&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【网络民议】河北籍非新冠患者在北京遭拒收</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-16
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e6%25b2%25b3%25e5%258c%2597%25e7%25b1%258d%25e7%2597%2585%25e4%25ba%25ba%25e5%259c%25a8%25e5%258c%2597%25e4%25ba%25ac%25e9%2581%25ad%25e6%258b%2592%25e6%2594%25b6%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E6%B2%B3%E5%8C%97%E7%B1%8D%E9%9D%9E%E6%96%B0%E5%86%A0%E6%82%A3%E8%80%85%E5%9C%A8%E5%8C%97%E4%BA%AC%E9%81%AD%E6%8B%92%E6%94%B6&d=2021-01-16&e=
+【网络民议】河北籍非新冠患者在北京遭拒收
+——
+
+
+  CDT编者按：随着河北疫情反弹，一些河北人遭遇了和去年初武汉人同样的歧视：非新冠患者，仅仅因为是河北籍就被北京的医院拒收。知乎上一篇相关文章遭到河蟹。
+  @听说是你笛：【1月15日最新进展及结果:1.联系到主任去别院手术。2.入住私立医院做术前支持等待手术。(后续有变动会告知) 3.具体手术时间还未确定。】
+  给河北籍病人的一些信息参考:①我们昨天已经打过12345以及卫计委求助电话要求督办，并未得到回复。如果非常紧急走投无路可以尝试。②经过我们多方询问打听，根据卫计委通知【不确定是不是院方说辞】，目前北京所有公立医院都无法收治河北籍患者(也许部队医院可以，但是很难有病房以及不适用姥姥病情，但是其他病情可以尝试联系)③部分私立医院及国际医院可以收治河北籍低风险区患者，但是可能不满足手术条件。另，如需医保报销也要慎重考虑。
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e6%25b2%25b3%25e5%258c%2597%25e7%25b1%258d%25e7%2597%2585%25e4%25ba%25ba%25e5%259c%25a8%25e5%258c%2597%25e4%25ba%25ac%25e9%2581%25ad%25e6%258b%2592%25e6%2594%25b6%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610848833000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/">【网络民议】河北籍非新冠患者在北京遭拒收</a>
+——</p>
+
+<div>
+  <p>CDT编者按：随着河北疫情反弹，一些河北人遭遇了和去年初武汉人同样的歧视：非新冠患者，仅仅因为是河北籍就被北京的医院拒收。知乎上一篇相关文章遭到河蟹。</p>
+  <p><a href="https://m.weibo.cn/status/4593350470025997?" title="@听说是你笛">@听说是你笛</a>：【1月15日最新进展及结果:1.联系到主任去别院手术。2.入住私立医院做术前支持等待手术。(后续有变动会告知) 3.具体手术时间还未确定。】</p>
+  <p>给河北籍病人的一些信息参考:<br />①我们昨天已经打过12345以及卫计委求助电话要求督办，并未得到回复。如果非常紧急走投无路可以尝试。<br />②经过我们多方询问打听，根据卫计委通知【不确定是不是院方说辞】，目前北京所有公立医院都无法收治河北籍患者(也许部队医院可以，但是很难有病房以及不适用姥姥病情，但是其他病情可以尝试联系)<br />③部分私立医院及国际医院可以收治河北籍低风险区患者，但是可能不满足手术条件。另，如需医保报销也要慎重考虑。</p>
+  <p>总之，在疫情情况下，对于河北籍(可能还有各个受疫情影响的省份)病人一刀切真的是一个非常不人性化的政策。作为病人家属以及经历过湖北疫情的看过若干受疫情影响得不到救治的案例，真的无法接受同样的事情反复出现，并没有因为有经验而有丝毫改善。希望政策早日具体化避免一刀切，大家都能健健康康！</p>
+  <p>另外，有媒体记者朋友们联系我，但是因为姥姥还没有进行手术，考虑可能会对医生和院方产生影响，为了避免意外，我暂时不考虑接受采访。非常非常感谢大家的关注和支持。</p>
+  <p>求助信息如下:<br />紧急求助！<br />我姥姥今年76岁，12月初被诊断出胃癌-贲门癌晚期，目前已经无法吞咽任何食物，只能喝营养液+输营养维持基本生活(见图一petct诊断)。12月初来北京看病，由于食管堵塞在北京无法做胃镜，12月15日回河北衡水做胃镜并于当天返回北京，已在京【30天】。期间没有接触任何有中高风险地区旅行史的人以及前往河北，多次出入肿瘤医院检查，其余时间均在北京家中。<br />1月11日，因为姥姥病情严重通知做核酸入院。(两次核酸结果已出，均为阴性)。(入院证明见图二)<br />1月12日由于疫情严重，肿瘤医院拒绝收治河北人(具体是不是河北全境不知道，但是包括衡水【衡水一直是低风险地区，12月以来没有新增新冠病例】)入院。<br />1月12日晚和1月13日，因为病情危机，我们紧急联系其他医院，均无法收治衡水患者。<br />1月14日，彻底失去入院希望。<br />(具体时间线可见聊天记录)<br />因为姥姥年龄已经很大，且病情发展非常严重，目前北京只有中国医学科学院肿瘤医院可以做微创，小开胸手术。其他手术的生存几率也非常小，真心求助大家，有没有什么办法可以入院？</p>
+  <p>或者现在北京还有什么医院可以接收河北患者么？</p>
+  <p>我真心感谢国家，医护人员以及大家对疫情的牺牲和努力，如果不是实在走投无路，不想看到姥姥从有生的希望，到就在入院前一天被拒绝，再到反复努力无果的绝望，也不会打扰大家。家人都还在努力寻找途径。真心希望大家给个办法，给我们提供一个入院手术机会。万分感谢！</p>
+  <p>另:因为微博评论里有人疑惑为什么北京做不了胃镜非要去河北。因为姥姥无法吞咽食物，很早之前的食物堵塞在食管里，无法下胃管，北京的医院病人很多，医生没有足够时间去清除食管的食物等待下管，只能回老家找熟悉的朋友慢慢清理。(因为涉及家里老人，不希望大家有恶意揣测，谢谢。)</p>
+  <p>——————————————————</p>
+  <p><a href="http://webcache.googleusercontent.com/search?q=cache:w65lcXhWhYgJ:https://zhuanlan.zhihu.com/p/344403946&amp;amp;hl=en&amp;amp;gl=uk&amp;amp;strip=1&amp;amp;vwsrc=0" title="知乎 | @Tony哥：2021抗击河北疫情正酣，我在首都儿研所遇到的奇葩事">知乎 | @Tony哥：2021抗击河北疫情正酣，我在首都儿研所遇到的奇葩事</a></p>
+  <div id="attachment_661588" style="width: 510px" class="wp-caption aligncenter">
+<img aria-describedby="caption-attachment-661588" loading="lazy" src="https://chinadigitaltimes.net/chinese/files/2021/01/Screen-Shot-2021-01-16-at-7.20.21-PM-e1610824977745.png" alt="" width="500" height="213" class="size-full wp-image-661588" />    <p id="caption-attachment-661588" class="wp-caption-text">北京时间17日凌晨3点截图</p>
+  </div>
+  <p>我家在河北省廊坊市北三县的燕郊镇，就是那个北京副中心旁边的，跟河北不接壤的，新闻里被炒得热热闹闹的河北省飞地北三县，被很多人误以为是北京地界的燕郊，跟北京一河之隔，那条疫情起来后，派人冰面把守，防止有人“偷渡”北京的潮白河。</p>
+  <p>1月12日起，整个廊坊进入战时状态，全员居家隔离7天，每天穿梭于燕郊和北京的30万上班族，全部停止通勤，边界检查站呈关闭状态，没有紧急事情，任何人不得进入北京。我很理解廊坊政府的命令，虽然只有一个中风险地区（固安县的一个小区），但廊坊全境八、九个区县全部进入战时状态，为的就是在环京区域建立一道防火墙，确保疫情不会传入北京。</p>
+  <p>非常不巧的是，就在这个时候，我家6岁孩子腹腔感染了。上个月孩子急性化脓性阑尾炎，在首都儿研所做的切除手术，本周一，也就是1月11号开始，孩子肚子又疼起来，感觉不妙。当时是河北全员隔离前一天，我在外地出差，夜里，孩子妈跑到首都儿研所挂急诊，B超夜间没有，急诊大夫让我们去北京儿童医院做，你猜怎么着，北京儿童医院听说我们是河北患者，压根就不让进门！管它什么健康宝，管它什么低风险区域，只要是河北人，北京儿童医院一概不接待！</p>
+  <p>孩子妈无奈赶回儿研所，在楼道里挨到天亮，周二早上8点，医院上班才做了B超，当时孩子右下腹网膜回声增强，盆腔积液，深处约1.9厘米。医生让输液治疗，输完回燕郊，准备第二天继续输液。</p>
+  <p>周二晚上，孩子感觉肚子越来越疼，孩子妈有些慌，当时廊坊全境进入战时状态，所有人在家隔离。周三一早，带孩子去当地儿童医院，整个医院居然是空的，医生们都做核酸检测去了，只有个全科大夫坐诊，啥病都看，问了我家孩子情况，他说这个只有主任能看，但主任去前线支援了，建议我们去当地另外一家医院。我们去了，问了既往病史，医生判断是腹膜炎，必须住院治疗，鉴于孩子太小，建议去之前手术的专业儿童医院，也就是首都儿研所。我出差在外，老婆慌忙到社区申请，通过被封锁的边界进入北京， 来到首都儿研所，就在这里，我们感受到作为河北人而受到的“礼遇”。</p>
+  <p><strong>不允许住院</strong></p>
+  <p>周三下午，在儿研所，B超显示病情严重了，右下腹淋巴结肿大，腹盆腔积液比昨天增加两倍多，深处达到4.8厘米，门诊大夫建议住院观察治疗。当时病房管床大夫也同意了，可外科主任就是不同意，当时孩子疼的直不起腰，孩子妈哭着求主任，主任推说情况没那么严重，观察再说。当时廊坊全境封闭，孩子不可能回去，孩子妈哭求住院吧，要不没地方去。主任回：不允许就是不允许，你哭也没用，你的意思是让我帮你找酒店吗？</p>
+  <p>当时我在飞机上，很难体会到孩子妈的绝望。</p>
+  <p>周四凌晨，我落地首都机场，然后急忙赶到儿研所旁的酒店跟老婆孩子会和。</p>
+  <p>也许是金塔下的许愿灵验，更可能是药物剂量加大，周四上午孩子感觉好了些，我领孩子来儿研所继续看医生，这时候才感觉到河北人在儿研所的“待遇”，就因为是廊坊来的，我们不被允许在外科诊室就诊，必须去旁边的感染发热门诊候诊，外科大夫全副武装去感染科给我们看病。我没来的前两天都是这样，管它什么健康码，管它什么低风险区域，全部到感染科候诊，和发热病人一起，至于病人之间的交叉感染，医院好像没有考虑，反正医生们是全副武装。</p>
+  <p>然而就在这里，我遇到了让我义愤填膺的事情，以至于让我写下今天的文字。</p>
+  <p>感染科有两位去过承德的父母，带着孩子来就诊，孩子具体啥病情不知道，听说已导致肾衰竭，眼睛都肿起来，门诊下了病危通知书，就这样，那个科室的主任不同意收治入院，让他们回承德治去。孩子父母本来在北京工作，听说在承德老家的孩子病了，急忙回承德接了送到首都儿研所，就这样行程码上留下了河北的行程。</p>
+  <p>我不相信他们到过中风险和高风险区域，因为一旦去过，他们会被拦在北京之外，根本进不了京，也根本进不了医院大门。既然这样，我不知道科室主任不让住院还有什么其它原因，但若因为是河北人、或有过河北行程，而武断拒绝一个病危的孩子，这个科室的主任实在有违白衣天使的名声。北京健康宝和大数据行程卡在平时是每个人的通关卡，但在今天，在这个承德病危的孩子身上，健康宝和行程卡就是救命的凭证。但这个负责入院的主任，难道他不认可这个凭证？</p>
+  <p>河北的医生去了前线支援，河北的孩子病了求到北京，却落到如此境遇。</p>
+  <p>当时这对父母好像也没太多争辩，准备带着孩子回承德了，我老婆惊讶于这对父母的冷静，他们居然就这样准备回去了…过了一会，承德孩子的妈妈好像回过味来，哭着喊着去求医生…后来我家孩子输完液就赶紧逃离了感染科。</p>
+  <p>晚上在酒店里，听孩子妈说起这事，我当时就火了，难以抑制的愤怒心情。河北为了给北京建立一道人肉防火墙，即使是低风险区域，也选择全员在家隔离，但这样的情况让首都儿研所认为，只要是河北人，默认就是风险人群，就应当无差别的隔离对待，即使是在北京北部，离疫区比北京还远的承德，承德的孩子就不应该在首都儿研所住院。</p>
+  <p>河北人为了大气环境关停了大量了高耗能企业，GDP从前10滑落到13名，河北人为首都做出的牺牲大家有目共睹，为什么疫情来了，河北人在北京却落如此遭遇。</p>
+  <p>今晚，我为承德病危孩子写下这些文字。</p>
+  <p>明天去医院的时候再打听一下承德孩子的情况。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e6%b2%b3%e5%8c%97%e7%b1%8d%e7%97%85%e4%ba%ba%e5%9c%a8%e5%8c%97%e4%ba%ac%e9%81%ad%e6%8b%92%e6%94%b6/">【网络民议】河北籍非新冠患者在北京遭拒收</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/%E5%8C%97%E9%9D%92%E6%B7%B1%E4%B8%80%E5%BA%A6-%E8%87%AA%E7%84%9A%E7%9A%84%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B-12%E6%9C%88%E8%B7%B3%E6%A7%BD-%E5%B7%A5%E8%B5%84%E8%A2%AB%E6%89%A35000%E5%85%83-%E5%A4%9A%E6%AC%A1%E8%AE%A8%E8%A6%81%E6%9C%AA%E6%9E%9C">
+          北青深一度 | 自焚的外卖骑手：12月跳槽，工资被扣5000元，多次讨要未果
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/%E5%8C%97%E9%9D%92%E6%B7%B1%E4%B8%80%E5%BA%A6-%E8%87%AA%E7%84%9A%E7%9A%84%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B-12%E6%9C%88%E8%B7%B3%E6%A7%BD-%E5%B7%A5%E8%B5%84%E8%A2%AB%E6%89%A35000%E5%85%83-%E5%A4%9A%E6%AC%A1%E8%AE%A8%E8%A6%81%E6%9C%AA%E6%9E%9C-%E6%B7%B1%E5%BA%A6%E8%81%9A%E7%84%A6">
+          北青深一度 | 自焚的外卖骑手：12月跳槽，工资被扣5000元，多次讨要未果 | 深度聚焦
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/BBC-%E5%8D%8E%E4%B8%BA%E4%B8%93%E5%88%A9%E6%8F%90%E5%8F%8A%E5%8F%AF%E8%AF%86%E5%88%AB%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E6%8A%80%E6%9C%AF">
+          BBC | 华为专利提及可识别维吾尔人技术
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/%E5%BC%82%E6%96%87%E8%A7%82%E6%AD%A2-%E4%B8%AD%E5%9B%BD%E9%A9%BB%E7%BE%8E%E5%A4%A7%E4%BD%BF%E9%A6%86-%E5%85%B3%E4%BA%8E-%E9%9D%9E%E5%BF%85%E8%A6%81-%E9%9D%9E%E7%B4%A7%E6%80%A5-%E4%B8%8D%E6%97%85%E8%A1%8C-%E8%BF%99%E4%BB%B6%E4%BA%8B-%E6%88%91%E4%BB%AC%E8%A6%81%E5%AF%B9%E6%82%A8%E8%AF%B4%E6%9B%B4%E5%A4%9A%E5%BF%83%E9%87%8C%E8%AF%9D">
+          【异文观止】中国驻美大使馆：关于“非必要、非紧急、不旅行”这件事，我们要对您说更多心里话
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-16/%E5%99%AA%E9%9F%B3%E7%95%B6%E6%A8%82%E5%99%A8-%E5%A7%9A%E4%BB%B2%E6%B6%B5%E7%94%A8%E7%A7%91%E6%8A%80%E7%8E%A9%E8%81%B2%E5%85%89">
+            前一篇：噪音當樂器 姚仲涵用科技玩聲光
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9-%E4%B8%A4%E4%BC%9A-%E4%BB%8A%E8%B5%B7%E5%BC%80%E5%B9%95">
+            后一篇：中国地方“两会”今起开幕
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E5%99%AA%E9%9F%B3%E7%95%B6%E6%A8%82%E5%99%A8-%E5%A7%9A%E4%BB%B2%E6%B6%B5%E7%94%A8%E7%A7%91%E6%8A%80%E7%8E%A9%E8%81%B2%E5%85%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9-%E4%B8%A4%E4%BC%9A-%E4%BB%8A%E8%B5%B7%E5%BC%80%E5%B9%95'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E5%8C%97%E9%9D%92%E6%B7%B1%E4%B8%80%E5%BA%A6-%E8%87%AA%E7%84%9A%E7%9A%84%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B-12%E6%9C%88%E8%B7%B3%E6%A7%BD-%E5%B7%A5%E8%B5%84%E8%A2%AB%E6%89%A35000%E5%85%83-%E5%A4%9A%E6%AC%A1%E8%AE%A8%E8%A6%81%E6%9C%AA%E6%9E%9C-%E6%B7%B1%E5%BA%A6%E8%81%9A%E7%84%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/BBC-%E5%8D%8E%E4%B8%BA%E4%B8%93%E5%88%A9%E6%8F%90%E5%8F%8A%E5%8F%AF%E8%AF%86%E5%88%AB%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E6%8A%80%E6%9C%AF'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-16/%E5%99%AA%E9%9F%B3%E7%95%B6%E6%A8%82%E5%99%A8-%E5%A7%9A%E4%BB%B2%E6%B6%B5%E7%94%A8%E7%A7%91%E6%8A%80%E7%8E%A9%E8%81%B2%E5%85%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9-%E4%B8%A4%E4%BC%9A-%E4%BB%8A%E8%B5%B7%E5%BC%80%E5%B9%95">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-16/%E5%8C%97%E9%9D%92%E6%B7%B1%E4%B8%80%E5%BA%A6-%E8%87%AA%E7%84%9A%E7%9A%84%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B-12%E6%9C%88%E8%B7%B3%E6%A7%BD-%E5%B7%A5%E8%B5%84%E8%A2%AB%E6%89%A35000%E5%85%83-%E5%A4%9A%E6%AC%A1%E8%AE%A8%E8%A6%81%E6%9C%AA%E6%9E%9C-%E6%B7%B1%E5%BA%A6%E8%81%9A%E7%84%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-16/BBC-%E5%8D%8E%E4%B8%BA%E4%B8%93%E5%88%A9%E6%8F%90%E5%8F%8A%E5%8F%AF%E8%AF%86%E5%88%AB%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E6%8A%80%E6%9C%AF">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

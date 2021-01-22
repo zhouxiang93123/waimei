@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>后特朗普时代，共和党何去何从？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+后特朗普时代，共和党何去何从？
+——
+" />
+    <meta property="og:description" content="
+后特朗普时代，共和党何去何从？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="后特朗普时代，共和党何去何从？" />
+    <meta property="twitter:title" content="后特朗普时代，共和党何去何从？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fgop-in-the-post-trump-era%2F5735841.html&t=%E5%90%8E%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fgop-in-the-post-trump-era%2F5735841.html&t=%E5%90%8E%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E%EF%BC%9F&d=2021-01-13&e=
+后特朗普时代，共和党何去何从？
+——
+
+
+  
+Thu, 14 Jan 2021 00:20:43 GMT
+  
+  
+特朗普总统1月12日在白宫南草坪 （美联社）
+  
+  美国国会众议院1月13日通过对特朗普总统的弹劾议案。分析人士指出，在过去四年中，特朗普深刻改变了共和党，然而，面对四年内连失众议院、白宫和参议院的打击，共和党正努力在反思中重生，1月6日的国会冲击事件以及随之而来的弹劾使得这一任务变得更为急迫与艰难。进入“后特朗普”时代，共和党要如何既延续特朗普所带来的积极变化，又摆脱因他而加剧的党内分裂，成为许多共和党人面临的两难，也是共和党能否浴火重生的关键。
+  特朗普深刻改变了共和党
+  从2016年赢下共和党党内初选至今，作为共和党实际领导人的特朗普在许多层面上改变了这个曾在他上任初期同掌参众两院和白宫的政党。
+  首先是政策路线的改变。2012年，共和党在输掉总统..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fgop-in-the-post-trump-era%2F5735841.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html&text=后特朗普时代，共和党何去何从？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html&title=后特朗普时代，共和党何去何从？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html&title=后特朗普时代，共和党何去何从？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=后特朗普时代，共和党何去何从？&body=
+后特朗普时代，共和党何去何从？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html&title=后特朗普时代，共和党何去何从？&caption=
+后特朗普时代，共和党何去何从？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=后特朗普时代，共和党何去何从？&url=https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>后特朗普时代，共和党何去何从？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fgop-in-the-post-trump-era%2F5735841.html&t=%E5%90%8E%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E%EF%BC%9F&d=2021-01-13&e=
+后特朗普时代，共和党何去何从？
+——
+
+
+  
+Thu, 14 Jan 2021 00:20:43 GMT
+  
+  
+特朗普总统1月12日在白宫南草坪 （美联社）
+  
+  美国国会众议院1月13日通过对特朗普总统的弹劾议案。分析人士指出，在过去四年中，特朗普深刻改变了共和党，然而，面对四年内连失众议院、白宫和参议院的打击，共和党正努力在反思中重生，1月6日的国会冲击事件以及随之而来的弹劾使得这一任务变得更为急迫与艰难。进入“后特朗普”时代，共和党要如何既延续特朗普所带来的积极变化，又摆脱因他而加剧的党内分裂，成为许多共和党人面临的两难，也是共和党能否浴火重生的关键。
+  特朗普深刻改变了共和党
+  从2016年赢下共和党党内初选至今，作为共和党实际领导人的特朗普在许多层面上改变了这个曾在他上任初期同掌参众两院和白宫的政党。
+  首先是政策路线的改变。2012年，共和党在输掉总统..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fgop-in-the-post-trump-era%2F5735841.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610584885000-->
+<p><a href="https://www.voachinese.com/a/gop-in-the-post-trump-era/5735841.html">后特朗普时代，共和党何去何从？</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 14 Jan 2021 00:20:43 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/0137078B-10E2-4950-8B05-3FF2610D550C_cx0_cy4_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">特朗普总统1月12日在白宫南草坪 （美联社）</small>
+  </div>
+  <p>美国国会众议院1月13日通过对特朗普总统的弹劾议案。分析人士指出，在过去四年中，特朗普深刻改变了共和党，然而，面对四年内连失众议院、白宫和参议院的打击，共和党正努力在反思中重生，1月6日的国会冲击事件以及随之而来的弹劾使得这一任务变得更为急迫与艰难。进入“后特朗普”时代，共和党要如何既延续特朗普所带来的积极变化，又摆脱因他而加剧的党内分裂，成为许多共和党人面临的两难，也是共和党能否浴火重生的关键。</p>
+  <p><strong>特朗普深刻改变了共和党</strong></p>
+  <p>从2016年赢下共和党党内初选至今，作为共和党实际领导人的特朗普在许多层面上改变了这个曾在他上任初期同掌参众两院和白宫的政党。</p>
+  <p>首先是政策路线的改变。2012年，共和党在输掉总统选举后发布了一份反思性报告，其中特别指出未来需要在移民问题上采取更开放的态度，以提升在拉丁裔等少数族裔群体中的支持。但特朗普自登上竞选舞台伊始便将这项共和党的既定方针带向了相反的方向。在贸易政策上，一贯亲自由贸易的共和党在特朗普的领导下，走上了偏保护主义和反全球化的道路。除此之外，共和党在特朗普出现之前曾将关注点集中在缩减财政赤字、加强全球安全防御联盟、提升美国的国际领导地位等问题上，这些也都在特朗普出现后发生了变化。</p>
+  <p>政治战略师、加州大学伯克利分校和南加大政治学教授丹·舒纽尔(Dan Schnur)对美国之音说：“在特朗普的领导下，共和党变得更为平民主义、民族主义和孤立主义。”</p>
+  <p>其次是政治运作方式的改变。内华达大学政治学副教授丹·李（Dan Lee)认为，特朗普延续并强化了自2010年“茶党运动”以来的“对抗性政治态度”，使得整个共和党在政治运作中“采取了更为强硬的路线和更具对抗性的方式”。</p>
+  <p>在许多分析人士看来，共和党政策路线和政治风格的改变是党内一部分长期被忽视的民意的一次集中爆发。</p>
+  <p>曾在2000年总统大选中担任共和党候选人约翰·麦凯恩 (John McCain) 竞选通讯主管的丹·舒纽尔认为，共和党内的草根选民对本党的经济路线早有不满，而共和党领导层和建制派长期以来却选择忽视这样的民意变化，只是用堕胎权、反同性恋婚姻这样的社会和文化议题勉强笼络住这些选民。这样的分裂为特朗普提供了机会。</p>
+  <p>特朗普抓住了党内的这些不满情绪，成为其代言人，并借助这股情绪背后的势能，迅速扩大自己对共和党的影响力。公共事务顾问、前国会共和党议员助理德鲁·霍尔登（Drew Holden) 指出，特朗普对共和党的重塑就在于他将党内的这些不满情绪带入了“主流保守主义运动”，“将更多声音带到了桌面上”。</p>
+  <p>这些转变的背后是共和党内权力态势的变化。霍尔登认为，在过去很长一段时间以来，建制派的影响力过大，他们控制着话语权、党的纲领路线和官员选择。而特朗普打碎了这一切，证明了建制派的控制力或只是镜花水月。</p>
+  <p>他说：“特朗普让普通共和党人看到，建制派自以为的影响力、权力、权威从来不是真正真实的，它只是从来没有被真正挑战过或测验过。但凡出现了像特朗普这样的人，通过他，我们看到建制派的影响力快速衰落。”</p>
+  <p>究其原因，纽约州立大学布法罗分校政治学副教授安托尼·吉中（Antoine Yoshinaka）解释说：特朗普在2016年取得的胜利对很多共和党人来说是个“警示”，他们认为，未来如果想要像特朗普一样赢下宾州、密歇根、威斯康星等长期支持民主党的州，就需要借鉴特朗普吸引白人蓝领工人的方式，追随他的政策主张和政治风格。</p>
+  <p>他对美国之音说：“特朗普在2016年为共和党带来了很多新选民，就是传统上不会投共和党的那些选民。他们主要是特朗普的支持者，而不是共和党的支持者。所以如果你想要留住这些人，让他们保持兴奋，能够被动员起来，你就需要确保他们投票给的那个人、也就是特朗普的意志得到执行。”</p>
+  <p>除此之外，分析人士还指出，虽然共和党建制派对于特朗普多有不满，但他们在减税、去监管、推行保守的文化议程等问题上与特朗普的立场有重合，他们需要借助特朗普的力量达成自己在这些问题上的目标。再加上他们害怕惹恼特朗普的基本盘或打击这些人参与投票的热情从而伤害自己未来竞选连任的几率，因此，在过去四年中，他们尽量避免与特朗普公开对立，也放弃了对特朗普的制约。</p>
+  <p>正因如此，特朗普一度基本上实现了对共和党的控制。最典型的例子就是在2020年党代会上，共和党全国委员会罕见地没有发布自己的党纲，而是宣布以特朗普的政治主张作为本党的议程。在许多人看来，这一刻，共和党已然成为了“特朗普党”。</p>
+  <p><strong>昔日的“特朗普党”随着特朗普的败选加剧分裂</strong></p>
+  <p>不过，这种特朗普旗帜之下的团结终究只能流于表面，它并未弥合共和党内深层次的意识形态分裂，也注定会在特朗普败选后迅速瓦解。</p>
+  <p>一个明显的迹象就是共和党内对2020年大选结果的分歧。包括犹他州参议员罗姆尼在内的“反特朗普”建制派早早就承认了拜登的胜选，并对特朗普的选举舞弊之说予以驳斥；以参议院多数党领袖麦康奈尔为代表的、曾与特朗普政治联姻的建制派，虽一度呼应了特朗普对选举结果的质疑，但在选举人团投票后也接受了选举结果，并反对阻止国会认证程序；一些曾被划归“特朗普阵营”的特朗普盟友，比如南卡罗来纳州参议员格雷厄姆，虽坚持不承认选举结果，并打算在国会认证选举结果的过程中提出异议，但在1月6日国会冲击事件发生后改变了自己的立场，与特朗普割席；而“特朗普阵营”中更忠心的追随者——包括8名共和党参议员和139名共和党众议员——即使在国会冲击事件发生后，依然坚持对选举结果提出异议。</p>
+  <p>分析指出，特朗普败选后的共和党可以被粗略地划分成“特朗普的追随者”和“非特朗普追随者”两大阵营。特朗普在选举后的言行和1月6日的事件进一步加剧了两大阵营之间的分裂。</p>
+  <p>两大阵营对共和党的未来也有着截然不同的期待。共和党顾问德鲁·霍尔登指出，非特朗普追随者们希望共和党回归传统的保守主义路线，将关注点转移回限制政府权力、缩小财政赤字等议题上。而特朗普追随者们对于这些议题并不感兴趣，他们希望共和党沿着特朗普的路线走下去，并且延续特朗普的“斗士”风格。</p>
+  <p>对很多共和党官员来说，迎合任何一方都意味着受到另一方的强烈抵制。这种两难也意味着共和党很难快速拿出统一的政党方针。</p>
+  <p>政治学教授丹·舒纽尔对美国之音说：“在接下来的三四年中，共和党内几乎一定会继续传统建制派和特朗普最忠诚支持者之间的激烈斗争。你或许会看到两个或三个版本的共和党思想，一个非常具有特朗普的风格，一个很传统，或许还有第三个或更多。不同州的参议员、众议员和州长的候选人会决定以不同样式的共和党人来竞选。”</p>
+  <p><strong>共和党内的分裂是否会带来“第三党”？</strong></p>
+  <p>面对共和党内的分裂，一些特朗普的支持者提出脱离共和党成立“第三党”的想法。前阿拉斯加州共和党籍州长，也曾做过副总统候选人的萨拉·佩林(Sarah Palin)1月6日在接受福克斯新闻的采访时呼吁特朗普支持者成立一个“健康、理智、和平”的第三党。</p>
+  <p>这在一些分析人士看来并非没有可能性。</p>
+  <p>丹·舒纽尔说：“很多很多年以来，人们问我美国政治中是否有可能出现可行的第三党。出于各种原因，我一直对这种可能性不屑一顾。但是现在，我第一次开始看到了这种可能性。传统共和党和特朗普最忠实的支持者之间不仅从哲学上，而且从结构上正分裂成两个不同的政党。如果要想避免这个发生，就需要有非常具有才干的领导人，能够让两个阵营都相信，他或她是能够代表两个不同的利益的。这会非常困难。”</p>
+  <p>不过，另一些分析人士则相信成立“第三党”的可能性依旧极低。因为在美国的选举制度下，第三党很难赢得选举，最多只能从民主党或共和党那里分走一些选票。所以对特朗普追随者来说，如果他们以“第三党”来竞选，不仅无法胜选，反而有可能因为分走了本属于共和党的选票而帮助了民主党取胜。</p>
+  <p>内华达大学政治学副教授丹·李说：“对特朗普支持者来说，最有效的影响政治的方式是通过影响共和党。所以我认为他们会采用的战略是利用共和党来推动他们的议程，而不是通过第三党。”</p>
+  <p>共和党顾问德鲁·霍尔登也认为，特朗普的支持者即使对共和党建制派充满不满，但只要他们有共同的“敌人”，就依旧会站在一起。</p>
+  <p>霍尔登对美国之音说：“我认为，整体上，特朗普的支持者并不是仅仅支持特朗普这个人，而更多的是反对左翼或者媒体或者企业集团。对他们来说，真正重要的不是盟友，而是他们的敌人。所以我认为，只要他们认为那些敌人是相对固定的，他们就会跟任何反对这些敌人的人站在一起。”</p>
+  <p><strong>“后特朗普时代” 特朗普的影响力和共和党的未来</strong></p>
+  <p>根据盖洛普的民调，自特朗普上任以来，他在共和党选民中的支持率基本上保持在80%以上，最低时也有77%的支持率，最高时则能达到95%。最近的一系列民调显示，1月6日国会冲击事件发生后，特朗普在共和党选民中的支持率有所下降，但依旧在70%以上。这体现着特朗普在共和党内不可小觑的影响力。</p>
+  <p>特朗普此前曾明确表示，他会在卸任后帮助一些共和党人竞选，也会站出来反对曾与自己背道而驰的共和党人。</p>
+  <p>纽约州立大学布法罗分校政治学副教授安托尼·吉中认为，未来特朗普越多地参与共和党内的政治，就越会加剧共和党内的分裂。</p>
+  <p>不过分析普遍认为，特朗普在2020年大选后的种种言行和国会冲击事件对他声誉的伤害，再加上之后各大社交媒体对他的封杀，都在很大程度上削弱了特朗普在卸任后原本可以具有的政治影响力。</p>
+  <p>内华达大学政治学副教授丹·李认为，未来特朗普的影响力或将在国会众议院有更多的体现。因为相比参议员和其他州一级别和联邦级别的官员，众议员所代表的选区较小，选民组成更单一，诉求更有“同质性”，所以众议员往往不需要做很多”平衡”，政治立场就会更为极化。那些代表特朗普基本盘聚居区的众议员势必会在众议院里继续推动“特朗普运动”。</p>
+  <p>他同时表示，未来共和党会向哪个方向发展尚不得而知，这取决于两大阵营的势力角逐，同时也取决于民主党会“向左”走多远。</p>
+  <p>他说：“如果民主党未来推动更进步主义、自由派的议程，这可能更加激怒特朗普的支持者，调动起他们的积极性，让他们继续活跃在政治中。如果民主党采取更温和的路线，这或许会让这些人原地不动，或至少不会激励他们前进。”</p>
+  <p>2022年的中期选举对于共和党而言是一个赢回国会控制权的好机会。根据历史经验，白宫易主后的第一个中期选举，“反对党”往往会在国会赢得更多席位，因为选民希望寻求一种平衡。而共和党若想把握住这个机会，就必须加强党内团结。</p>
+  <p>作为共和党建制派的德鲁·霍尔登认为，党内团结需要建制派首先认识到“特朗普和他的支持者是不会消失的”，建制派需要倾听他们并和他们建立联盟；其次，建制派需要有理有据地驳斥“特朗普主义”，说服特朗普的支持者，而不是简单地剥夺他们的话语权，或是背着他们秘密行事，因为这只会加剧这些党内力量的不满；更重要的是，共和党建制派需要对自身的信条进行修正，应该意识到，像过去那样只强调自由贸易和全球化的好处是行不通的，他们需要在这些问题上调整自己的政策主张。</p>
+  <p>“共和党建制派是无法将共和党带回到特朗普出现以前的，它必须要理解、并且吸收曾帮助特朗普成功的东西。”霍尔登说。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E7%9A%84%E4%BA%8C%E5%BA%A6%E5%BC%B9%E5%8A%BE">
+          美国众议院正式启动对特朗普总统的二度弹劾
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD">
+          总统就职典礼前首都华盛顿进一步强化安全措施
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%99%BD%E5%AE%AB%E8%A6%81%E4%B9%89-%E5%9B%BD%E4%BC%9A%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%BC%B9%E5%8A%BE%E6%A1%88">
+          白宫要义: 国会众议院通过对特朗普总统弹劾案
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A4%BE%E5%AA%92%E8%B4%A6%E5%8F%B7%E8%A2%AB%E5%B0%81%E7%BB%A7%E7%BB%AD%E6%BF%80%E5%8F%91%E6%9C%89%E5%85%B3%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%E7%9A%84%E8%BE%A9%E8%AE%BA">
+          特朗普社媒账号被封继续激发有关言论自由的辩论
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E9%A9%BB%E5%8D%8E%E9%A2%86%E9%A6%86%E7%BA%AA%E5%BF%B5%E7%96%AB%E6%83%85%E8%A2%AB%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E7%82%AE%E8%BD%B0">
+            前一篇：美驻华领馆纪念疫情被中国网民炮轰
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD">
+            后一篇：总统就职典礼前首都华盛顿进一步强化安全措施
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E9%A9%BB%E5%8D%8E%E9%A2%86%E9%A6%86%E7%BA%AA%E5%BF%B5%E7%96%AB%E6%83%85%E8%A2%AB%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E7%82%AE%E8%BD%B0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%99%BD%E5%AE%AB%E8%A6%81%E4%B9%89-%E5%9B%BD%E4%BC%9A%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%BC%B9%E5%8A%BE%E6%A1%88'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E9%A9%BB%E5%8D%8E%E9%A2%86%E9%A6%86%E7%BA%AA%E5%BF%B5%E7%96%AB%E6%83%85%E8%A2%AB%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E7%82%AE%E8%BD%B0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E5%89%8D%E9%A6%96%E9%83%BD%E5%8D%8E%E7%9B%9B%E9%A1%BF%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%BC%BA%E5%8C%96%E5%AE%89%E5%85%A8%E6%8E%AA%E6%96%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%99%BD%E5%AE%AB%E8%A6%81%E4%B9%89-%E5%9B%BD%E4%BC%9A%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%BC%B9%E5%8A%BE%E6%A1%88">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

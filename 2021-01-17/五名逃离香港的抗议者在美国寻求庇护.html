@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>五名逃离香港的抗议者在美国寻求庇护 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+五名逃离香港的抗议者在美国寻求庇护
+——
+" />
+    <meta property="og:description" content="
+五名逃离香港的抗议者在美国寻求庇护
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="五名逃离香港的抗议者在美国寻求庇护" />
+    <meta property="twitter:title" content="五名逃离香港的抗议者在美国寻求庇护" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210118%2Fhong-kong-us-asylum%2F&t=%E4%BA%94%E5%90%8D%E9%80%83%E7%A6%BB%E9%A6%99%E6%B8%AF%E7%9A%84%E6%8A%97%E8%AE%AE%E8%80%85%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210118%2Fhong-kong-us-asylum%2F&t=%E4%BA%94%E5%90%8D%E9%80%83%E7%A6%BB%E9%A6%99%E6%B8%AF%E7%9A%84%E6%8A%97%E8%AE%AE%E8%80%85%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4&d=2021-01-17&e=
+五名逃离香港的抗议者在美国寻求庇护
+——
+
+
+  
+傅才德2021-01-18 11:12:59
+  
+  
+去年，中国政府在香港实施的国安法扼杀了多种形式的政治异见。
+  
+  去年7月，五名年轻人在香港一个偏远的港口登上了一艘游艇。他们经过中国当局巡逻的水域，穿越中国南海向东航行。
+  当接近台湾时，他们关掉了引擎，希望能被台湾海岸警卫队营救。他们很幸运。
+  现在，在台湾停留数月后，他们于上周三抵达纽约肯尼迪国际机场，打算在美国寻求庇护。
+  自从中国中央政府于去年6月对香港实施严厉的国安法以来，陆陆续续有政治活动人士逃离香港，他们就是其中的几位。国安法的实施扼杀了多种形式的政治异见，包括这五人当时参加的亲民主抗议活动。
+  他们逃离香港、停留台湾和抵达美国的说法，是由香港民主委员会的创始人朱牧民提供的。该委员会是位于华盛顿的一个倡导组织，为这五人安排了旅行和住宿，并帮助他们..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210118%2Fhong-kong-us-asylum%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/&text=五名逃离香港的抗议者在美国寻求庇护&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/&title=五名逃离香港的抗议者在美国寻求庇护" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/&title=五名逃离香港的抗议者在美国寻求庇护" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=五名逃离香港的抗议者在美国寻求庇护&body=
+五名逃离香港的抗议者在美国寻求庇护
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/&title=五名逃离香港的抗议者在美国寻求庇护&caption=
+五名逃离香港的抗议者在美国寻求庇护
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=五名逃离香港的抗议者在美国寻求庇护&url=https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>五名逃离香港的抗议者在美国寻求庇护</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210118%2Fhong-kong-us-asylum%2F&t=%E4%BA%94%E5%90%8D%E9%80%83%E7%A6%BB%E9%A6%99%E6%B8%AF%E7%9A%84%E6%8A%97%E8%AE%AE%E8%80%85%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4&d=2021-01-17&e=
+五名逃离香港的抗议者在美国寻求庇护
+——
+
+
+  
+傅才德2021-01-18 11:12:59
+  
+  
+去年，中国政府在香港实施的国安法扼杀了多种形式的政治异见。
+  
+  去年7月，五名年轻人在香港一个偏远的港口登上了一艘游艇。他们经过中国当局巡逻的水域，穿越中国南海向东航行。
+  当接近台湾时，他们关掉了引擎，希望能被台湾海岸警卫队营救。他们很幸运。
+  现在，在台湾停留数月后，他们于上周三抵达纽约肯尼迪国际机场，打算在美国寻求庇护。
+  自从中国中央政府于去年6月对香港实施严厉的国安法以来，陆陆续续有政治活动人士逃离香港，他们就是其中的几位。国安法的实施扼杀了多种形式的政治异见，包括这五人当时参加的亲民主抗议活动。
+  他们逃离香港、停留台湾和抵达美国的说法，是由香港民主委员会的创始人朱牧民提供的。该委员会是位于华盛顿的一个倡导组织，为这五人安排了旅行和住宿，并帮助他们..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210118%2Fhong-kong-us-asylum%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610941471000-->
+<p><a href="https://cn.nytimes.com/china/20210118/hong-kong-us-asylum/">五名逃离香港的抗议者在美国寻求庇护</a>
+——</p>
+
+<div>
+  <div>
+<em>傅才德<br />2021-01-18 11:12:59</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/16/world/16hongkong-activists1/merlin_178316487_509c695c-545c-49ef-88ed-5f93c704658b-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">去年，中国政府在香港实施的国安法扼杀了多种形式的政治异见。</small>
+  </div>
+  <p>去年7月，五名年轻人在香港一个偏远的港口登上了一艘游艇。他们经过中国当局巡逻的水域，穿越中国南海向东航行。</p>
+  <p>当接近台湾时，他们关掉了引擎，希望能被台湾海岸警卫队营救。他们很幸运。</p>
+  <p>现在，在台湾停留数月后，他们于上周三抵达纽约肯尼迪国际机场，打算在美国寻求庇护。</p>
+  <p>自从中国中央政府于去年6月<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200701/china-critics-security-law-hong-kong/">对香港实施严厉的国安法</a>以来，陆陆续续有政治活动人士逃离香港，他们就是其中的几位。国安法的实施扼杀了多种形式的政治异见，包括这五人当时参加的亲民主抗议活动。</p>
+  <p>他们逃离香港、停留台湾和抵达美国的说法，是由<a rel="nofollow" target="_blank" href="https://hkdc.us/">香港民主委员会</a>的创始人朱牧民提供的。该委员会是位于华盛顿的一个倡导组织，为这五人安排了旅行和住宿，并帮助他们申请庇护。由于担心危及在香港的亲属，这五人都不希望泄露身份。其中一人接受了采访但要求不具名。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/16/world/16hongkong-activists2/merlin_181342986_76c11645-259a-4dac-994e-473a07789693-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">位于华盛顿的香港民主委员会创始人朱牧民。</small>
+  </div>
+  <p>在台湾期间，他们被关押在军事基地，不允许与家人和朋友交流，尽管同意接受采访的那个人说他们受到了很好的对待。他们认为，美国为他们提供了重新开始生活的最佳机会。</p>
+  <p>朱牧民说，经过数周的谈判，这些人被允许<a rel="nofollow" target="_blank" href="https://www.uscis.gov/humanitarian/humanitarian-or-significant-public-benefit-parole-for-individuals-outside-the-united-states">基于人道主义立场</a>进入美国。</p>
+  <p>他们的到来可能会加剧中美关系的紧张，两国之间的关系已经处于几十年来的最低点，这对即将上任的拜登政府构成了初期挑战。</p>
+  <p>中国将香港的民主抗议者定性为罪犯，而美国和其他民主国家就中国对香港城市自由的镇压提出了挑战。台湾是自治的民主岛国，中国视其为领土的一部分，它的介入只会增加事件的敏感性。</p>
+  <p>国务院和美国公民及移民服务局(United States Citizenship and Immigration Services)发言人以私隐为由拒绝置评。相当于事实上的美国驻台湾大使馆的<a rel="nofollow" target="_blank" href="https://www.ait.org.tw/">美国在台协会</a>(American Institute in Taiwan)的新闻官员也不愿对此置评，台湾大陆委员会的发言人也是如此。</p>
+  <p>朱牧民说，这五名年龄在18至26岁不等的抗议者因为担心很快会面临牢狱之灾而逃离香港，而且至少有一人此前曾因涉嫌参与抗议活动而被捕。</p>
+  <p>在特朗普政府执政的最后几天，以人道主义为由准许这些人入境的举动与过去四年<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/10/01/us/politics/trump-refugees.html">大幅削减</a>难民配额形成鲜明对比。去年12月，得州共和党参议员特德·克鲁兹(Ted Cruz)阻止了国会通过使香港居民更容易获得难民身份的立法。</p>
+  <p>政治异议人士逃离香港的想法在几年前似乎是难以想象的，香港是一个前英国殖民地，在1997年回归中国。香港拥有超过700万人口，是世界上人均收入最高的地区之一，享有中国大陆没有的政治自由。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/16/world/16hongkong-activists3/merlin_165610944_a0e2717f-1b94-42dc-850f-bb3cfa138296-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">2019年12月在香港铜锣湾区的抗议活动。</small>
+  </div>
+  <p>但是在习近平于2012年底成为中国最高领导人之后，北京开始以越来越强制的手段统治香港。国安法是在2019年大规模、时而暴力的民主抗议席卷整个城市之后实施的，该法<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/hk-taiwan/20201026/hong-kong-asylum-seekers/">促使一些活动人士离开香港</a>。大多数人的离去方式没有那么戏剧化，不过是登上前往欧洲或北美的飞机。也有人因担心在机场被捕而选择海路。</p>
+  <p>8月，在五人到达台湾几周后，其他12名香港活动人士在试图前往台湾时被中国的海警抓获。后者大多曾在香港被捕，为了躲避审判而逃离。他们在中国大陆被关押了数月之久而未被指控罪名；去年12月，10名活动人士被判处七个月至三年<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20201230/hong-kong-protesters-china/">徒刑</a>，其中两人被判组织他人偷越边境罪，其他被判偷越边境罪。余下两人是青少年，被送回香港。</p>
+  <p>其他国家也接纳了香港活动人士。为香港政治难民提供帮助的志愿者组织加拿大新香港文化协会(New Hong Kong Cultural Club Canada)的一份声明说，自12月底以来，加拿大已向来自香港的14人提供了庇护。10月，香港政府<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/hk-taiwan/20201026/hong-kong-asylum-seekers/">抗议</a>德国对面临暴动指控的示威领袖给予庇护。</p>
+  <p>英国正在向香港居民提供一种<a rel="nofollow" target="_blank" href="https://migrationobservatory.ox.ac.uk/resources/commentaries/qa-the-new-route-to-citizenship-for-some-hong-kong-residents/#:~:text=From%2031%20January%202021%2C%20a,and%20eventually%20become%20British%20citizens.">新签证</a>，这可能使数以百万计1997年移交前出生的人最终成为英国公民。</p>
+  <p>Amy Qin和Amy Chang Chien对本文有报道贡献。<br />傅才德(Michael Forsythe)是时报调查记者。他曾担任驻香港记者，报道中国金钱与政治的交集。他还曾在彭博新闻社工作，是一名美国海军老兵。欢迎在Twitter上关注他 <a rel="nofollow" target="_blank" href="https://twitter.com/PekingMike">@PekingMike</a>。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/asia/hong-kong-us-asylum.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E8%80%81%E5%B9%B2%E5%A6%88%E4%B8%8E%E8%93%9D%E9%A2%86%E6%BD%AE-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E5%B0%8F%E9%95%87%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%E6%A0%B7%E6%9C%AC">
+          老干妈与蓝领潮：一个中国小镇的经济复苏样本
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E9%80%86%E5%8A%BF%E5%A4%8D%E8%8B%8F-2020%E5%B9%B4GDP%E5%A2%9E%E9%95%BF2.3">
+          中国经济逆势复苏，2020年GDP增长2.3%
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+          香港新政党紫荆党搅动政界，背景目的引发争议
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E7%AE%80%E6%8A%A5-%E4%BA%94%E5%90%8D%E9%A6%99%E6%B8%AF%E6%8A%97%E8%AE%AE%E8%80%85%E8%B5%B4%E7%BE%8E%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4-%E5%90%89%E6%9E%97%E5%87%BA%E7%8E%B0%E8%B6%85%E7%BA%A7%E4%BC%A0%E6%92%AD%E8%80%85">
+          简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E4%BB%AA%E5%BC%8F%E6%98%AF%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%B8%BB%E7%9A%84%E6%9C%89%E5%8A%9B%E8%B1%A1%E5%BE%81">
+            前一篇：总统就职仪式是美国民主的有力象征
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD2020%E5%B9%B4%E5%9B%9B%E5%AD%A3%E5%BA%A6GDP%E5%90%8C%E6%AF%94%E5%A2%9E6.5-%E5%88%9B%E4%B8%A4%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%85%A8%E5%B9%B4%E5%A2%9E2.3-12%E6%9C%88%E6%B6%88%E8%B4%B9%E9%80%8A%E9%A2%84%E6%9C%9F">
+            后一篇：中国2020年四季度GDP同比增6.5%创两年高位全年增2.3% 12月消费逊预期
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E4%BB%AA%E5%BC%8F%E6%98%AF%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%B8%BB%E7%9A%84%E6%9C%89%E5%8A%9B%E8%B1%A1%E5%BE%81'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD2020%E5%B9%B4%E5%9B%9B%E5%AD%A3%E5%BA%A6GDP%E5%90%8C%E6%AF%94%E5%A2%9E6.5-%E5%88%9B%E4%B8%A4%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%85%A8%E5%B9%B4%E5%A2%9E2.3-12%E6%9C%88%E6%B6%88%E8%B4%B9%E9%80%8A%E9%A2%84%E6%9C%9F'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E9%80%86%E5%8A%BF%E5%A4%8D%E8%8B%8F-2020%E5%B9%B4GDP%E5%A2%9E%E9%95%BF2.3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E4%BB%AA%E5%BC%8F%E6%98%AF%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%B8%BB%E7%9A%84%E6%9C%89%E5%8A%9B%E8%B1%A1%E5%BE%81">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD2020%E5%B9%B4%E5%9B%9B%E5%AD%A3%E5%BA%A6GDP%E5%90%8C%E6%AF%94%E5%A2%9E6.5-%E5%88%9B%E4%B8%A4%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%85%A8%E5%B9%B4%E5%A2%9E2.3-12%E6%9C%88%E6%B6%88%E8%B4%B9%E9%80%8A%E9%A2%84%E6%9C%9F">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E9%80%86%E5%8A%BF%E5%A4%8D%E8%8B%8F-2020%E5%B9%B4GDP%E5%A2%9E%E9%95%BF2.3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

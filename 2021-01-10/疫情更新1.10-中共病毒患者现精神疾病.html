@@ -1,0 +1,3109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【疫情更新1.10】中共病毒患者现精神疾病 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+" />
+    <meta property="og:description" content="
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【疫情更新1.10】中共病毒患者现精神疾病" />
+    <meta property="twitter:title" content="【疫情更新1.10】中共病毒患者现精神疾病" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F10%2Fn12678707.htm&t=%E3%80%90%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B01.10%E3%80%91%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92%E6%82%A3%E8%80%85%E7%8E%B0%E7%B2%BE%E7%A5%9E%E7%96%BE%E7%97%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F10%2Fn12678707.htm&t=%E3%80%90%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B01.10%E3%80%91%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92%E6%82%A3%E8%80%85%E7%8E%B0%E7%B2%BE%E7%A5%9E%E7%96%BE%E7%97%85&d=2021-01-10&e=
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+
+
+  【大纪元2021年01月10日讯】（大纪元记者徐简综合报导）截止到2021年1月10日，全球纪录了9014万人确诊感染中共病毒（武汉肺炎，新冠状病毒，Covid-19),193.5万人病故。美国周六通报了24.9万起确诊病例，另外，3235人死亡。
+  然而糟糕的消息不断传来，前CDC主管Tom Frieden表示，人类在跟病毒的战争中，病毒正在取胜，其一是因为在美国大部分地区无控制的传播；其二疫苗接种缓慢；其三令人担心的突变病毒增加了传染性，而且降低了诊断、抗体治疗和疫苗的有效性。
+  更令人沮丧的是，感染中共病毒的患者不但呼吸系统遭受损伤，还可能出现精神疾病，严重者甚至有可怕的妄想、幻觉等症状。美国、英国、西班牙等多个国家都报告了类似病例。根据医学期刊《柳叶刀》的大型研究显示，有18.1％的患者被诊断出精神方面的疾病。
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F10%2Fn12678707.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/1/10/n12678707.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/1/10/n12678707.htm&text=【疫情更新1.10】中共病毒患者现精神疾病&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/1/10/n12678707.htm&title=【疫情更新1.10】中共病毒患者现精神疾病" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/1/10/n12678707.htm&title=【疫情更新1.10】中共病毒患者现精神疾病" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【疫情更新1.10】中共病毒患者现精神疾病&body=
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/1/10/n12678707.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/1/10/n12678707.htm&title=【疫情更新1.10】中共病毒患者现精神疾病&caption=
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【疫情更新1.10】中共病毒患者现精神疾病&url=https://www.epochtimes.com/gb/21/1/10/n12678707.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【疫情更新1.10】中共病毒患者现精神疾病</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/1/10/n12678707.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F10%2Fn12678707.htm&t=%E3%80%90%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B01.10%E3%80%91%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92%E6%82%A3%E8%80%85%E7%8E%B0%E7%B2%BE%E7%A5%9E%E7%96%BE%E7%97%85&d=2021-01-10&e=
+【疫情更新1.10】中共病毒患者现精神疾病
+——
+
+
+  【大纪元2021年01月10日讯】（大纪元记者徐简综合报导）截止到2021年1月10日，全球纪录了9014万人确诊感染中共病毒（武汉肺炎，新冠状病毒，Covid-19),193.5万人病故。美国周六通报了24.9万起确诊病例，另外，3235人死亡。
+  然而糟糕的消息不断传来，前CDC主管Tom Frieden表示，人类在跟病毒的战争中，病毒正在取胜，其一是因为在美国大部分地区无控制的传播；其二疫苗接种缓慢；其三令人担心的突变病毒增加了传染性，而且降低了诊断、抗体治疗和疫苗的有效性。
+  更令人沮丧的是，感染中共病毒的患者不但呼吸系统遭受损伤，还可能出现精神疾病，严重者甚至有可怕的妄想、幻觉等症状。美国、英国、西班牙等多个国家都报告了类似病例。根据医学期刊《柳叶刀》的大型研究显示，有18.1％的患者被诊断出精神方面的疾病。
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F10%2Fn12678707.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610274854000-->
+<p><a href="https://www.epochtimes.com/gb/21/1/10/n12678707.htm">【疫情更新1.10】中共病毒患者现精神疾病</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年01月10日讯】（大纪元记者徐简综合报导）截止到2021年1月10日，全球纪录了9014万人确诊感染<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>（<a href="https://www.epochtimes.com/gb/tag/%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E.html">武汉肺炎</a>，新冠状病毒，Covid-19),193.5万人病故。美国周六通报了24.9万起确诊病例，另外，3235人死亡。</p>
+  <p>然而糟糕的消息不断传来，前CDC主管Tom Frieden表示，人类在跟病毒的战争中，病毒正在取胜，其一是因为在美国大部分地区无控制的传播；其二疫苗接种缓慢；其三令人担心的突变病毒增加了传染性，而且降低了诊断、抗体治疗和疫苗的有效性。</p>
+  <p>更令人沮丧的是，感染<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>的患者不但呼吸系统遭受损伤，还可能出现精神疾病，严重者甚至有可怕的妄想、幻觉等症状。美国、英国、西班牙等多个国家都报告了类似病例。根据医学期刊《柳叶刀》的大型研究显示，有18.1％的患者被诊断出精神方面的疾病。</p>
+  <p>中共瘟疫大流行，改变了2020年几乎所有人的生活和工作方式，在很多人失业的同时，造成另外一些工作岗位的需求呈爆炸式增长，如医疗保健、运输、技术支持和必要服务职位，在疫情大流行期间增长最快。</p>
+  <p>虽然美国在2020年某些职业的工作机会明显增加，但美国就业市场总体上仍在长期复苏中，到12月，美国的工作岗位仍比大流行前减少了1000万。<br />中国大陆的疫情继续蔓延，石家庄近日突然封城，北京封堵进京通路导致大堵车，大纪元日前获得中共河北省内部防疫文件，发现中国大陆目前的疫情非常危急，中共再次隐瞒疫情。</p>
+  <p>中国国药集团研发的中共病毒疫苗被批准有条件上市后，中国大陆多名专家公开唱衰。他们指，该疫苗是“世界上最不安全”的疫苗；该疫苗对潜伏期及早期患者“无能为力”。</p>
+  <h2 id="section">以下是有关病毒疫情的实时更新：</h2>
+  <h3 id="section-1">病毒带来可怕精神疾病？更多国家出现案例</h3>
+  <p>许多患者出现不同的精神疾病，包括妄想、幻觉、忧郁症、焦虑症、躁郁症等，目前美国、英国、西班牙等多个国家的医生都报告了类似病例。</p>
+  <p>近期发表于医学期刊《柳叶刀》（The Lancet）的一项基于近7000万份健康记录的大型研究显示，在确诊感染中共病毒的14～90天内，有18.1％的患者被诊断出精神方面的疾病，其中5.8%是首次确诊。</p>
+  <p>精神科医师、整合医学专家杨景端医师介绍，最近的一些研究发现确实表明，人们在感染病毒后，发生精神疾病的风险增加了很多。，“一方面，以前就有精神疾病的人，得新冠的风险要比没有精神疾病的人大；另一方面，没有精神病史的人，确诊后，发生精神疾病的比率比正常人多2～3倍。”</p>
+  <h3 id="section-2">2020年增长最快的工作</h3>
+  <p>随着疫情肆虐，一些工种的需求度也发生了变化。薪资比较网站PayScale公司最近分析了433万人的大众网聚数据，以查找2020年与前一年相比增长最快的工作。</p>
+  <p>2020年增长最快的工作是健康检查员，这一工作的人数比2019年增长了136%，其次在长达几个月的居家隔离影响下，许多商家包括菜市场、餐馆和一些必须用品商家雇用了零时工或独立合同工送货上门，对购物助理员的需求增长了125%。</p>
+  <p>还有休闲车或RV修理工也是今年需求增长最快的工作之一，排在第三位。另外随着医院和各种医务护理机构面临感染人数的激增，从护士到急诊医疗主管，再到家庭护理人员的所有医疗保健相关工作需求都大幅度提高。</p>
+  <h3 id="section-3">台湾抗疫奇迹？专家：因为对中共有清楚的认识</h3>
+  <p>为何台湾的抗疫成果如此之好，远超西方？大纪元评论员横河说，那就是台湾对中共的清醒认识和拒绝中共。</p>
+  <p>横河说：“西方国家的医疗技术不会比台湾差，防范措施不会比台湾差，台湾没有实行西方国家普遍的关闭餐饮娱乐服务业和社交距离，1公尺社交距离也是4月1日提倡，5月1日必须，还很难实施，而且台湾和大陆的人员交往应该超过大多数西方国家，技术上并没有太多能学的。”</p>
+  <p>“如果拒绝中共可以保护一个国家，是不是也可以保护个人呢？这方面例子太多了。”横河说。</p>
+  <h3 id="section-4">中国产疫苗“附条件上市”多名专家公开唱衰</h3>
+  <p>中共国家药监局副局长陈时2020年12月31日在新闻发布会上称，该局12月30日附条件批准了国药集团中国生物北京公司的疫苗注册申请，“也就是大家通常讲的附条件上市”。</p>
+  <p>但是大陆多名专家公开指中国的疫苗存在很多问题。中国疫苗专家陶黎纳在微博上表示，疫苗的不良副作用高达73种，是“世界上最不安全的疫苗”。</p>
+  <p>武汉大学医学部病毒所杨占秋教授表示，中国目前投入使用的是灭活疫苗，对于已经感染的患者或处於潜伏期的患者而言“无能为力”。</p>
+  <p>台湾防疫专家、中研院生医所兼任研究员何美乡博士1月8日对大纪元记者表示，中国疫苗都是比较年轻的人打的，而老年人的死亡率高，因此中国疫苗“对死亡率影响不大”</p>
+  <h3 id="section-5">强封锁无效？ 德国单日疫亡人数创新高</h3>
+  <p>德国周四（1月7日）通报，新增中共病毒疫亡者1188人，创单日新高纪录。因担心传染力更高的变种病毒可能让早已穷于应付的医院不堪负荷，德国进一步加强全国防疫封锁措施。</p>
+  <p>去年12月祭出强封锁措施以来，德国未能大幅减少染疫人数。总理默克尔及16个州的州长于1月5日再度达成共识，不仅延长强封锁措施至1月31日，还继续加强了封锁。</p>
+  <p>然而，迄今为止，这些措施皆未见成效，德国的单日感染人数和疫亡人数都在破纪录。负责疾病管制及预防工作的罗伯特‧科赫研究所（RKI）1月7日公布的死亡人数超过了前一个纪录，也就是12月30日通报的1129人，德国累计疫亡者达到38,795人。</p>
+  <p>河北沧州防疫政策多变引恐慌 村民求助</p>
+  <p>1月9日，河北沧州南皮县村民王强（化名）向大纪元记者求助，他一家五口人，奶奶已经80岁，父母有糖尿病和高血压，一家核酸检测结果阴性，却被村干部要求强制集中隔离。</p>
+  <p>王强表示，“我们非常担心集中隔离过程中被传染，可是不去警察会介入。”</p>
+  <p>王强向大纪元记者介绍，“镇上本来规定外地回来的人员核酸检测后，居家隔离14天，就没事了。我们已经居家隔离了7天了，结果镇上要求我们去县城的宾馆集中隔离，然后再居家隔离。没人告诉我们个准信，到底隔离多少天？”</p>
+  <p>王强表示，“所谓‘向石家庄看齐’，表面上政绩好看了，打着所谓‘爱民思想’做一些官样文章。”</p>
+  <p>石家庄官方通报已经集中隔离11,708人。有不少人在网上反映，有强制集中隔离收费的情况，各地费用不同，每天几十元至几百元不等。</p>
+  <h3 id="section-6">河北防疫文件泄密：新年疫情更危急</h3>
+  <p>大纪元日前获得中共河北省内部防疫文件，根据石家庄防疫文件《石家庄市全员检测数量统计表》，发现中共当局再次撒谎，当地的单检能力根本达不到要求，因此必须使用混检。</p>
+  <p>大纪元还获得了河北省本次疫情主要发生地、石家庄市藁城区的人民医院投诉意见和反馈等部分文件，以及石家庄防疫指挥部2021年1月6日发给藁城区卫健局的一份《紧急通知》。</p>
+  <p>指挥部在通知中称“按照主要领导指示精神，急需启用新的隔离点”，要求区卫健局立即组织人员3个隔离点共计469间隔离用房，按行业标准要求进行验收。</p>
+  <p>而根据河北省官方数据，从2021年1月2日起截至1月6日当天，河北省总共仅新增76例确诊病例。因此官方两位数的新增数据，与藁城区紧急通知暗藏的紧迫氛围，构成了十分矛盾的对比。</p>
+  <p>责任编辑：李玲</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%86%8D%E6%9C%8911%E5%9C%B0%E5%8D%87%E4%B8%AD%E9%A3%8E%E9%99%A9%E5%8C%BA-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E6%89%A9%E6%95%A3">
+          石家庄再有11地升中风险区 黑龙江疫情扩散
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91-%E5%A4%A7%E9%99%86%E5%A4%9A%E5%9C%B0%E8%A6%81%E6%B1%82%E5%88%B0%E5%A4%96%E5%9C%B0%E8%BF%87%E5%B9%B4%E5%85%88%E6%8A%A5%E6%89%B9">
+          疫情爆发 大陆多地要求到外地过年先报批
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8">
+          中共如何用微信在美审查言论 华人揭真相
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%86%8D%E4%BC%A0%E5%91%98%E5%B7%A5%E6%AD%BB%E8%AE%AF-%E4%B8%80%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%B7%B3%E6%A5%BC%E8%BA%AB%E4%BA%A1">
+          拼多多再传员工死讯 一工程师跳楼身亡
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8">
+            前一篇：中共如何用微信在美审查言论 华人揭真相
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%83%E5%BC%A0%E5%9B%BE%E7%9C%8B%E4%B8%80%E5%91%A8%E5%A4%A7%E4%BA%8B">
+            后一篇：七张图看一周大事
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%83%E5%BC%A0%E5%9B%BE%E7%9C%8B%E4%B8%80%E5%91%A8%E5%A4%A7%E4%BA%8B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91-%E5%A4%A7%E9%99%86%E5%A4%9A%E5%9C%B0%E8%A6%81%E6%B1%82%E5%88%B0%E5%A4%96%E5%9C%B0%E8%BF%87%E5%B9%B4%E5%85%88%E6%8A%A5%E6%89%B9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%83%E5%BC%A0%E5%9B%BE%E7%9C%8B%E4%B8%80%E5%91%A8%E5%A4%A7%E4%BA%8B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-10/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91-%E5%A4%A7%E9%99%86%E5%A4%9A%E5%9C%B0%E8%A6%81%E6%B1%82%E5%88%B0%E5%A4%96%E5%9C%B0%E8%BF%87%E5%B9%B4%E5%85%88%E6%8A%A5%E6%89%B9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E7%94%A8%E5%BE%AE%E4%BF%A1%E5%9C%A8%E7%BE%8E%E5%AE%A1%E6%9F%A5%E8%A8%80%E8%AE%BA-%E5%8D%8E%E4%BA%BA%E6%8F%AD%E7%9C%9F%E7%9B%B8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

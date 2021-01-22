@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+" />
+    <meta property="og:description" content="
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验" />
+    <meta property="twitter:title" content="导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25af%25bc%25e7%25ad%2592directube-%25e4%25bb%258e%25e3%2580%258a%25e4%25b8%2580%25e7%25a7%2592%25e9%2592%259f%25e3%2580%258b%25e5%2588%25b0%25e3%2580%258a%25e5%2585%25b0%25e5%25bf%2583%25e5%25a4%25a7%25e5%2589%25a7%25e9%2599%25a2%25e3%2580%258b%25ef%25bc%259a%25e4%25b8%2593%25e5%25b1%259e%25e4%25ba%258e%2F&t=%E5%AF%BC%E7%AD%92directube+%7C+%E4%BB%8E%E3%80%8A%E4%B8%80%E7%A7%92%E9%92%9F%E3%80%8B%E5%88%B0%E3%80%8A%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2%E3%80%8B%EF%BC%9A%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25af%25bc%25e7%25ad%2592directube-%25e4%25bb%258e%25e3%2580%258a%25e4%25b8%2580%25e7%25a7%2592%25e9%2592%259f%25e3%2580%258b%25e5%2588%25b0%25e3%2580%258a%25e5%2585%25b0%25e5%25bf%2583%25e5%25a4%25a7%25e5%2589%25a7%25e9%2599%25a2%25e3%2580%258b%25ef%25bc%259a%25e4%25b8%2593%25e5%25b1%259e%25e4%25ba%258e%2F&t=%E5%AF%BC%E7%AD%92directube+%7C+%E4%BB%8E%E3%80%8A%E4%B8%80%E7%A7%92%E9%92%9F%E3%80%8B%E5%88%B0%E3%80%8A%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2%E3%80%8B%EF%BC%9A%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C&d=2021-01-11&e=
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+
+
+  作者：水泥
+  
+  历经坎坷完成公映之后，张艺谋的《一秒钟》已进入流媒体播映期
+  《一秒钟》撤档、删减与低调公映：
+  专属于中国影迷的创伤式观影体验
+  注：因本文写于2020年，故文中时态均以2020年为基准。
+  《一秒钟》终于公映了。
+  这部去年因“技术原因”退出柏林电影节主竞赛的张艺谋新作，可以说是打响了2019年一整年“技术原因”撤档的头炮。也正因如此，它最终得以成功上映，对于身在中国、非常关心中国电影发展的电影爱好者来说，有著非比寻常的意义。然而《一秒钟》在公映之前，还是发生了对于中国影迷来说足够惊心动魄的小插曲：2020年11月24日，就在《一秒钟》11月27日正式公映的同一周，《一秒钟》因“技术原因”被取消11月25日在金鸡百花电影节的开幕放映资格。原定于..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25af%25bc%25e7%25ad%2592directube-%25e4%25bb%258e%25e3%2580%258a%25e4%25b8%2580%25e7%25a7%2592%25e9%2592%259f%25e3%2580%258b%25e5%2588%25b0%25e3%2580%258a%25e5%2585%25b0%25e5%25bf%2583%25e5%25a4%25a7%25e5%2589%25a7%25e9%2599%25a2%25e3%2580%258b%25ef%25bc%259a%25e4%25b8%2593%25e5%25b1%259e%25e4%25ba%258e%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/&text=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/&title=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/&title=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验&body=
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/&title=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验&caption=
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验&url=https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25af%25bc%25e7%25ad%2592directube-%25e4%25bb%258e%25e3%2580%258a%25e4%25b8%2580%25e7%25a7%2592%25e9%2592%259f%25e3%2580%258b%25e5%2588%25b0%25e3%2580%258a%25e5%2585%25b0%25e5%25bf%2583%25e5%25a4%25a7%25e5%2589%25a7%25e9%2599%25a2%25e3%2580%258b%25ef%25bc%259a%25e4%25b8%2593%25e5%25b1%259e%25e4%25ba%258e%2F&t=%E5%AF%BC%E7%AD%92directube+%7C+%E4%BB%8E%E3%80%8A%E4%B8%80%E7%A7%92%E9%92%9F%E3%80%8B%E5%88%B0%E3%80%8A%E5%85%B0%E5%BF%83%E5%A4%A7%E5%89%A7%E9%99%A2%E3%80%8B%EF%BC%9A%E4%B8%93%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%9B%BD%E5%BD%B1%E8%BF%B7%E7%9A%84%E5%88%9B%E4%BC%A4%E5%BC%8F%E8%A7%82%E5%BD%B1%E4%BD%93%E9%AA%8C&d=2021-01-11&e=
+导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验
+——
+
+
+  作者：水泥
+  
+  历经坎坷完成公映之后，张艺谋的《一秒钟》已进入流媒体播映期
+  《一秒钟》撤档、删减与低调公映：
+  专属于中国影迷的创伤式观影体验
+  注：因本文写于2020年，故文中时态均以2020年为基准。
+  《一秒钟》终于公映了。
+  这部去年因“技术原因”退出柏林电影节主竞赛的张艺谋新作，可以说是打响了2019年一整年“技术原因”撤档的头炮。也正因如此，它最终得以成功上映，对于身在中国、非常关心中国电影发展的电影爱好者来说，有著非比寻常的意义。然而《一秒钟》在公映之前，还是发生了对于中国影迷来说足够惊心动魄的小插曲：2020年11月24日，就在《一秒钟》11月27日正式公映的同一周，《一秒钟》因“技术原因”被取消11月25日在金鸡百花电影节的开幕放映资格。原定于..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25af%25bc%25e7%25ad%2592directube-%25e4%25bb%258e%25e3%2580%258a%25e4%25b8%2580%25e7%25a7%2592%25e9%2592%259f%25e3%2580%258b%25e5%2588%25b0%25e3%2580%258a%25e5%2585%25b0%25e5%25bf%2583%25e5%25a4%25a7%25e5%2589%25a7%25e9%2599%25a2%25e3%2580%258b%25ef%25bc%259a%25e4%25b8%2593%25e5%25b1%259e%25e4%25ba%258e%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610406949000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/">导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验</a>
+——</p>
+
+<div>
+  <p>作者：水泥</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc2977dc2." alt="图片" width="500" class="aligncenter" /></p>
+  <p>历经坎坷完成公映之后，张艺谋的《一秒钟》已进入流媒体播映期</p>
+  <p><strong>《一秒钟》撤档、删减与低调公映：</strong></p>
+  <p><strong>专属于中国影迷的创伤式观影体验</strong></p>
+  <p>注：因本文写于2020年，故文中时态均以2020年为基准。</p>
+  <p>《一秒钟》终于公映了。</p>
+  <p>这部去年因“技术原因”退出柏林电影节主竞赛的张艺谋新作，可以说是打响了2019年一整年“技术原因”撤档的头炮。也正因如此，它最终得以成功上映，对于身在中国、非常关心中国电影发展的电影爱好者来说，有著非比寻常的意义。然而《一秒钟》在公映之前，还是发生了对于中国影迷来说足够惊心动魄的小插曲：2020年11月24日，就在《一秒钟》11月27日正式公映的同一周，《一秒钟》因“技术原因”被取消11月25日在金鸡百花电影节的开幕放映资格。原定于去年12月7日公映的娄烨新作《兰心大剧院》，同样是被取消在金鸡百花电影节的放映，在那之后更是消无声息地撤档，至今都未能登陆银幕。11月24日当天，中国影迷们总免不了担心，27号还能顺利地看到《一秒钟》吗？</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc2b49680." alt="图片" width="500" class="aligncenter" /></p>
+  <p><em>2019年2月，《一秒钟》退出柏林电影节</em></p>
+  <p>《一秒钟》的故事发生在1975年，文化大革命结束前的一年。劳改犯张九声（张译饰演）得知自己的女儿在《新闻简报》22号中出了镜，为了看一眼多年未见的女儿，冒死逃出劳改农场，想要在影院播放《新闻简报》时看见他的女儿。在这个过程中，他结识了想要偷胶片来做灯罩的刘闺女（刘浩存饰演），以及努力想要保住工作的放映员范电影（范伟饰演）。《新闻简报》的胶片出了意外，在地上被拖了好几里的路，严重损毁。众人合力抢救、清洗了胶片，才顺利地看到了电影。而张九声如愿以偿地在银幕上看见女儿后，再次被抓回劳改农场。</p>
+  <p>可以说，《一秒钟》的故事所处的时代背景，是这部电影备受关注，又遭受严苛审查的关键原因。文革近年来在中国愈发被淡化，张艺谋即便虚化时代背景，聚焦个体经验，也依然会触碰审查机构敏感的神经。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc2d3d091." alt="图片" width="500" class="aligncenter" /></p>
+  <p>文革这段历史，我并未经历过。《一秒钟》没有将主要的叙事精力放在文革上，没有亲身经历文革、对文革了解片面的我，也并非因电影中张九声的经历产生共情，却沉浸在一种相当痛苦的、不可言说的创伤之中。我身边不少影迷也有相似的观影体验——即便大家对《一秒钟》褒贬不一，都基本能明白彼此说的这种观影体验到底是什么。</p>
+  <p>这是一种正在成型的、专属于中国影迷的创伤式观影体验。</p>
+  <p>浏览《一秒钟》在豆瓣条目的各种评价与讨论，不难发现，散场后大家首先关心的问题是，《一秒钟》到底删了什么？</p>
+  <p>要提出这个问题，首先需要在观影的过程中意识到删减的存在。对于一个没有和“审查”一起生活过的观众，他或许也会觉得张九声不顾性命，赌上一切要看到女儿在《新闻简报》22号中那一秒钟是有点怪异的，说服力不足；而当他看到片尾的“两年后”，张九声获释，做的第一件事情竟然不是马上去见他的女儿，而是去找刘闺女，这种怪异感便会抵达顶峰，自然而然地会质疑编剧的剧作能力。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc2ed18af." alt="图片" width="500" class="aligncenter" /></p>
+  <p>然而对于一个“训练有素”的中国影迷来说，就算在进戏院之前不曾知道《一秒钟》公映前经历的这些风波，不知道《一秒钟》有补拍，在观影的过程中发现了张九声行为逻辑的不通顺之处，依然能察觉其中的怪异，这种怪异感逐渐从“戏内”转向“戏外”：不是编剧没有考虑到这一点，而是有些事情编剧没办法说，因为不让说。</p>
+  <p>阅读了关于《一秒钟》的评价和讨论后，这种怪异感找到了来由：张九声的女儿实际上已经死了，她因为父亲被判为劳改犯，需要“争先进”才能消失父亲对她的影响。在争著去抢第一袋面袋子时，她被尚未停稳的卡车给撞死了。《新闻简报》22号的那一秒钟，是她留在世间的最后一段影像。对于物质匮乏的那个年代，张九声错过了这一秒，便真的再也“见”不到他的女儿了。补上了这少了的最重要的“一帧胶片”，这部电影才完整。</p>
+  <p>要意识到少了这一“帧”，还得意识到这一“帧”是被审查机构剪去的，如果要顺畅地理解这个故事，观众还需要在观影时自己把这一“帧”给接上去，能同时做得到这么多事情的当然得是中国影迷。但情感发生的过程并不是机械地加一“帧”、去一“帧”，人坐在戏院里，并不能喊停电影的放映。影迷坐在座位上，隐约地察觉到了这一点，在影片继续放映的过程中逐渐消化这一点，足够敏锐的话还已经主动地把少掉的这关键一“帧”给补上，同时又不得不继续看著眼前残缺的影像。这足以勾起影迷们关于电影审查的各种创伤记忆，此时影迷们已经不只是在看电影所讲述的文革如何倾轧个体，更是在“看”现实中审查如何倾轧电影创作，眼前的人事物开始跳跃、模糊，对张九声、刘闺女、范电影等人的共情不再止步于现有的叙事。专属于中国影迷的创伤式观影体验，此时便开始具备雏形。</p>
+  <p>这种戏里戏外的互文，与《一秒钟》的叙事本身没有直接关系，借用《一秒钟》里的范电影使出的一个绝活儿或许更能理解：张九声表示女儿的影像只有一秒钟，太短，看不够，范电影便把张九声的女儿出现之后的胶片剪去，再把留下来的胶片接起来，在放映室里做了一个“大循环”，循环播放他的女儿的影像。</p>
+  <p>张艺谋在《一秒钟》里倾注得更多的是他对胶片电影的情结，“大循环”这一段，一方面是导演要给如今的观众展示已经被工业淘汰的胶片电影放映技术，另一方面是通过张九声循环地看著女儿在作为意识形态输出的《新闻简报》里那短短一秒钟，再现特殊年代对个体的伤害。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc30bbcfd." alt="图片" width="500" class="aligncenter" /></p>
+  <p>影迷们在观看《一秒钟》的这段时，与范电影、张九声的共情，和电影原来的语境有了出入。影迷们一方面代入张九声，需要把电影中明显的“杂音”给去除；另一方面代入范电影，在自己的脑海中实现“大循环”，把该去掉的东西去掉，把缺少的东西补上，自我构建一部“新”的《一秒钟》，并认定想像中的《一秒钟》比眼前的《一秒钟》要更真实。共情的发生在片尾明显为了适应审查而补拍的“两年后”应当会抵达顶峰，虽然眼前的角色依然在说著话，故事看起来还没结束，但影迷们知道，真正的《一秒钟》已经结束在漫天的黄沙覆过张九声女儿的胶片的那个镜头。</p>
+  <p>这些很明显都不是张艺谋拍《一秒钟》时原本想表达的东西，更不是单纯的“说者无意，听者有心”。是张艺谋原本的表达、审查机构的删改痕迹，以及影迷自身在其中的投射一起合力，才完成了如此非人的观影体验生产。《一秒钟》绝不是第一部迫于审查压力而遭到删改的电影，但此前有过类似遭遇的电影恐怕很难生产出这种观影体验。</p>
+  <p>《一秒钟》以胶片电影作为拍摄对象，电影作为一种实体在片中反复出现，原本就有助於戏内戏外互文的情感共振；《一秒钟》遭到删改的情节在整个剧本当中发挥著决定性作用，影响到整部电影的方方面面，足以不断地提醒观众删改的存在，并持续地影响观众对片中人物的理解与共情；而这种观影体验的生产又主要发生於戏外的时空，张艺谋没办法从一开始就精心地计算影片中的情感唤醒步骤，是多方合力下才阴差阳错地铸就了如此扭曲的体验。说实在的，看得懂这么多、想得到这么远，真的是一种值得骄傲的事情吗？一点都不是，这只能证明影迷离正常人有多远，为了看电影有多卑微。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc325175b." alt="图片" width="500" class="aligncenter" /></p>
+  <p>所以，看著崔干事（余皑磊饰演）心血来潮地把对张九声而言比生命还重要的那两格胶片翻出来，看著别人随意地把那两格胶片丢弃在荒漠中，我心疼的是那个如此珍惜电影，却又被审查机构如此粗暴且漫不经心地对待的每一位观众；而看到刘闺女虽然不明白那张旧报纸里曾经包著什么，仅仅因为知道那里面的东西对张九声很重要，捡起来后遥远地向被押送中的张九声挥舞时，我心疼且感动地落泪。张艺谋便如同刘闺女，虽然不知道自己是如此曲折地向观众完成了一次意义的表达，但其中的善意与良知能够跨越那么远的距离完成一次对彼此的联结。</p>
+  <p>去年12月在IFFAM澳门国际影展上看的《兰心大剧院》，也曾在我身上唤起过相似的创伤。区别在于，张艺谋是无心的，而娄烨是有意的。</p>
+  <p>娄烨的《兰心大剧院》是一部谍战片，故事发生在1941年的上海，彼时上海正处于孤岛时期。表面看起来，娄烨这一次的确只是在拍谍战的故事，但因为对导演的基本了解，我在其中读出了一些言外之意。如果说《一秒钟》里张艺谋与观众的暗号是胶片，那《兰心大剧院》里娄烨与观众的暗号是密码。也正因娄烨在《兰心大剧院》里是很主动地在试图与观众通过暗号来交流，所以他给观众留下了更多、更复杂的线索，好让观众确信自己不是在过度解读。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc34301bf." alt="图片" width="500" class="aligncenter" /></p>
+  <p>首先是全片多次出现了的多重时空切换。第一场戏是主要人物在排练舞台剧，期间“表演”的空间屡次被建立与打破，各种情绪在其中交织。我们在看各位演员演《兰心大剧院》，《兰心大剧院》里的角色也在排舞台剧，另外角色们在谍战里本就身披多重角色。虚实的切换已经把时空模糊到观众可能分不清的地步，我们何不再向前一步，把《兰心大剧院》也给模糊了呢？为何不试著分析娄烨是不是在这部电影的表象下暗藏玄机呢？</p>
+  <p>其次是谍战中必不可少的密码。于堇要破译日军的密码，获取情报。这提示我们，观看《兰心大剧院》，也可以是在破译娄烨埋藏其中真正的表达。</p>
+  <p>再次便是高潮戏，日军进入“兰心大剧院”，用暴力打断了正在演出的舞台剧。</p>
+  <p>根据这三个确定的点，我试图重构娄烨在《兰心大剧院》中建立的表意体系，并重新审视所有的情节与情绪。</p>
+  <p>被暴力打断的舞台剧，可能是娄烨的自诉，是他从影这么多年，被审查机构屡次阉割的控诉。片中试图帮助于堇（巩俐饰演）的女大学生来自燕京大学，被特务（王传君饰演）强奸后试图反抗再被杀害，可能是与娄烨的《夏宫》完成了一次遥远的呼应。故事设置在日军偷袭珍珠港之前，娄烨没有改写历史，日军偷袭依然成功，就是我们这个时代终究会继续坏下去，无法阻挡。于堇明知道去兰心就是死，也依然对司机说“去兰心”，以及于堇与谭呐（赵又廷饰演）相约出事后要在哪里相见，可能就是娄烨与我们的约定：哪怕时代已经糟糕至此，哪怕他已经不可能完整地表达自己，他依然可以如此曲折地与我们相约，在我们的“兰心大剧院”，看我们的《兰心大剧院》。我们读得懂娄烨，娄烨也知道我们读得懂。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc35c6ff6." alt="图片" width="500" class="aligncenter" /></p>
+  <p>娄烨穿透了审查的重重阻挡，依然能努力地在向我们表达真实的自己。意识得到这一点，解读得出这一层，已经足以勾起我的记忆中关于电影审查的创伤。</p>
+  <p>这种体验相当私人，原本实在很难向他人清晰地说明。神奇之处恰恰在于，看起来影迷们无需过多的赘述，便足以相互意会到那么多不可说的、游离于电影之外的情绪。在《一秒钟》与《兰心大剧院》的豆瓣评论区下方，影迷们不约而同地、隐晦地试图表达相似的感受。</p>
+  <p>在澳门旧法院大楼看完《兰心大剧院》后，我在感受到强烈的痛苦时，也在质疑这种痛苦是否属实，忍不住怀疑我可能只是过度解读了。与同场的友人交谈过，还完整地把豆瓣评论区的短评阅读了一遍后，我发现大家都察觉到了娄烨的意有所指。《兰心大剧院》内里如果真的存在著娄烨的隐晦自诉，那观众似乎只能通过彼此来确认这一点。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc3894033." alt="图片" width="500" class="aligncenter" /></p>
+  <p>而到了《一秒钟》，这一点似乎变得更为明显。一方面影迷人们与记者们都在讨论《一秒钟》，影迷们都在为能不能顺利公映而揪心，但映后大家只是在豆瓣评论区隐晦地、欲说还休地谈及这种“只有中国影迷能体会”的观影体验，“剩下的就不多说了，懂的都懂”之类的表述在大家的文章中大量出现。</p>
+  <p>我尝试著与身边的影迷朋友交流，结果往往要么是我们只需要只言片语就明白对方想说什么，剩下的无需多言；要么就无论怎么解释都不明白为何我会如此扭曲地与这部电影共情，迫使我把自己的伤痛再次揭开，才稍微能让对方理解为什么这种观影体验的生产是可能的。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661404-5ffcdc3a7c7fe." alt="图片" width="500" class="aligncenter" /></p>
+  <p>我很不愿意沉浸在这种体验当中。一方面，这种体验只能不断地提醒我自己活得有多扭曲，另一方面，沉迷于这种解读当中，也容易沦为顾影自怜与自我沉醉，对真实的表达并无多少益处。但又能有什么办法呢？我们毕竟是活在2020年的中国，注定只能继续和审查共存下去，这种专属于中国影迷的创伤式观影体验必然只会继续发生。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e5%af%bc%e7%ad%92directube-%e4%bb%8e%e3%80%8a%e4%b8%80%e7%a7%92%e9%92%9f%e3%80%8b%e5%88%b0%e3%80%8a%e5%85%b0%e5%bf%83%e5%a4%a7%e5%89%a7%e9%99%a2%e3%80%8b%ef%bc%9a%e4%b8%93%e5%b1%9e%e4%ba%8e/">导筒directube | 从《一秒钟》到《兰心大剧院》：专属于中国影迷的创伤式观影体验</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung">
+          Photo: Taking Selfie, by Thomas_Yung
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92-%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C">
+          重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB">
+          笨妈育儿育己 | 问答：“婚驴”、浪漫爱、渣男识别、开放关系
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E9%BB%91%E7%BE%8A%E5%85%AC%E7%A4%BE-%E5%BA%9F%E8%A8%80-%E8%BF%9B%E4%BA%AC%E8%BF%B7%E5%9F%8E-%E6%A3%80%E6%9F%A5%E7%AB%99-%E6%A0%B8%E9%85%B8%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%B0%B4%E5%B0%AC%E5%8C%97%E4%B8%89%E5%8E%BF">
+          黑羊公社 | 废言|进京迷城：检查站、核酸报告与尴尬北三县
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB">
+            前一篇：笨妈育儿育己 | 问答：“婚驴”、浪漫爱、渣男识别、开放关系
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%B1%B1%E4%B8%9C%E4%B8%80%E9%87%91%E7%9F%BF%E5%8F%91%E7%94%9F%E7%88%86%E7%82%B8-22%E5%90%8D%E5%B7%A5%E4%BA%BA%E8%A2%AB%E5%9B%B0">
+            后一篇：山东一金矿发生爆炸  22名工人被困
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%B1%B1%E4%B8%9C%E4%B8%80%E9%87%91%E7%9F%BF%E5%8F%91%E7%94%9F%E7%88%86%E7%82%B8-22%E5%90%8D%E5%B7%A5%E4%BA%BA%E8%A2%AB%E5%9B%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92-%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%B1%B1%E4%B8%9C%E4%B8%80%E9%87%91%E7%9F%BF%E5%8F%91%E7%94%9F%E7%88%86%E7%82%B8-22%E5%90%8D%E5%B7%A5%E4%BA%BA%E8%A2%AB%E5%9B%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92-%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AC%A8%E5%A6%88%E8%82%B2%E5%84%BF%E8%82%B2%E5%B7%B1-%E9%97%AE%E7%AD%94-%E5%A9%9A%E9%A9%B4-%E6%B5%AA%E6%BC%AB%E7%88%B1-%E6%B8%A3%E7%94%B7%E8%AF%86%E5%88%AB-%E5%BC%80%E6%94%BE%E5%85%B3%E7%B3%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

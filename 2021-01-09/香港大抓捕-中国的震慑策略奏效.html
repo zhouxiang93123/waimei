@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>香港大抓捕：中国的震慑策略奏效？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+香港大抓捕：中国的震慑策略奏效？
+——
+" />
+    <meta property="og:description" content="
+香港大抓捕：中国的震慑策略奏效？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="香港大抓捕：中国的震慑策略奏效？" />
+    <meta property="twitter:title" content="香港大抓捕：中国的震慑策略奏效？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%25A6%2599%25E6%25B8%25AF%25E5%25A4%25A7%25E6%258A%2593%25E6%258D%2595%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259A%2584%25E9%259C%2587%25E6%2585%2591%25E7%25AD%2596%25E7%2595%25A5%25E5%25A5%258F%25E6%2595%2588%25EF%25BC%259F%2Fa-56180152&t=%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%25A6%2599%25E6%25B8%25AF%25E5%25A4%25A7%25E6%258A%2593%25E6%258D%2595%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259A%2584%25E9%259C%2587%25E6%2585%2591%25E7%25AD%2596%25E7%2595%25A5%25E5%25A5%258F%25E6%2595%2588%25EF%25BC%259F%2Fa-56180152&t=%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F&d=2021-01-09&e=
+香港大抓捕：中国的震慑策略奏效？
+——
+
+
+  
+William Yang2021-01-09T14:10:05.115Z
+  
+  
+
+  
+  （德国之声中文网）数名社会观察家对德国之声表示，在港警周三依据《香港国安法》大规模抓捕了50余名反对派人士后，香港民主运动正被恐惧及不安的氛围所笼罩。
+  虽然多数被捕者都在周四交保获释，但当局对香港反对派的严厉打压，仍被广泛视为是中共向港人发出的一次警告。
+  因担忧自身安全选择化名受访的香港政治科学家John表示：“北京对香港人传递了非常明确的信息，只要你与反对派有关联，无论你是谁都会受到监视。”
+  “在国安法之下，北京及其在香港的羽翼可以用任何手段来打压你。”John在接受德国之声采访时如是说。“这不是常规意义上的法律，而是一种北京认为合适时就能随时运用的政治工具。”
+  北京在去年六月底出台《香港国安法》，用以回应香港民众抗议..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%25A6%2599%25E6%25B8%25AF%25E5%25A4%25A7%25E6%258A%2593%25E6%258D%2595%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259A%2584%25E9%259C%2587%25E6%2585%2591%25E7%25AD%2596%25E7%2595%25A5%25E5%25A5%258F%25E6%2595%2588%25EF%25BC%259F%2Fa-56180152" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152&text=香港大抓捕：中国的震慑策略奏效？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152&title=香港大抓捕：中国的震慑策略奏效？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152&title=香港大抓捕：中国的震慑策略奏效？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=香港大抓捕：中国的震慑策略奏效？&body=
+香港大抓捕：中国的震慑策略奏效？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152&title=香港大抓捕：中国的震慑策略奏效？&caption=
+香港大抓捕：中国的震慑策略奏效？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=香港大抓捕：中国的震慑策略奏效？&url=https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>香港大抓捕：中国的震慑策略奏效？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%25A6%2599%25E6%25B8%25AF%25E5%25A4%25A7%25E6%258A%2593%25E6%258D%2595%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259A%2584%25E9%259C%2587%25E6%2585%2591%25E7%25AD%2596%25E7%2595%25A5%25E5%25A5%258F%25E6%2595%2588%25EF%25BC%259F%2Fa-56180152&t=%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F&d=2021-01-09&e=
+香港大抓捕：中国的震慑策略奏效？
+——
+
+
+  
+William Yang2021-01-09T14:10:05.115Z
+  
+  
+
+  
+  （德国之声中文网）数名社会观察家对德国之声表示，在港警周三依据《香港国安法》大规模抓捕了50余名反对派人士后，香港民主运动正被恐惧及不安的氛围所笼罩。
+  虽然多数被捕者都在周四交保获释，但当局对香港反对派的严厉打压，仍被广泛视为是中共向港人发出的一次警告。
+  因担忧自身安全选择化名受访的香港政治科学家John表示：“北京对香港人传递了非常明确的信息，只要你与反对派有关联，无论你是谁都会受到监视。”
+  “在国安法之下，北京及其在香港的羽翼可以用任何手段来打压你。”John在接受德国之声采访时如是说。“这不是常规意义上的法律，而是一种北京认为合适时就能随时运用的政治工具。”
+  北京在去年六月底出台《香港国安法》，用以回应香港民众抗议..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%25A6%2599%25E6%25B8%25AF%25E5%25A4%25A7%25E6%258A%2593%25E6%258D%2595%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E7%259A%2584%25E9%259C%2587%25E6%2585%2591%25E7%25AD%2596%25E7%2595%25A5%25E5%25A5%258F%25E6%2595%2588%25EF%25BC%259F%2Fa-56180152" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610204130000-->
+<p><a href="https://www.dw.com/zh/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88%EF%BC%9F/a-56180152">香港大抓捕：中国的震慑策略奏效？</a>
+——</p>
+
+<div>
+  <div>
+<em>William Yang<br />2021-01-09T14:10:05.115Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56139239_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>（德国之声中文网）数名社会观察家对德国之声表示，在港警周三依据《香港国安法》<a href="https://api.dw.com/api/detail/article/56138998" rel="ArticleRef">大规模抓捕了50余名反对派人士</a>后，香港民主运动正被恐惧及不安的氛围所笼罩。</p>
+  <p>虽然多数被捕者都在周四交保获释，但当局对香港反对派的严厉打压，仍被广泛视为是中共向港人发出的一次警告。</p>
+  <p>因担忧自身安全选择化名受访的香港政治科学家John表示：“北京对香港人传递了非常明确的信息，只要你与反对派有关联，无论你是谁都会受到监视。”</p>
+  <p>“在国安法之下，北京及其在香港的羽翼可以用任何手段来打压你。”John在接受德国之声采访时如是说。“这不是常规意义上的法律，而是一种北京认为合适时就能随时运用的政治工具。”</p>
+  <p>北京在去年六月底出台《香港国安法》，用以回应香港民众抗议中共侵蚀其自治权的大规模民主运动。</p>
+  <p><strong><span class="placeholder" data-id="56139280" data-type="IMAGE" title="Bild"></span>      <p></p>
+</strong></p>
+  <p><strong>“一国两制”的终结</strong></p>
+  <p>1997年香港回归后，中国以“一国两制”框架治理香港，并承诺一国两制在2047年之前五十年不变。“一国两制”允许香港在《基本法》的保障下保留其经济、行政和司法架构。</p>
+  <p>然而，自香港实施备受争议的《国安法》后，北京可利用“分裂国家、颠覆国家政权、恐怖主义、勾结境外势力”的罪名逮捕任何人。《国安法》的出台引发国际社会强烈批评，认为该法案严重危害香港自由。</p>
+  <p>《香港国安法》出台至今，已有超过90名民主派政治家和活动人士因违反条款模糊的国家安全法规而被逮捕，其中4人遭到正式起诉，包括香港媒体大亨黎智英以及前“学生动员”召集人钟翰林。异议的空间被快速挤压消失。</p>
+  <p>2020年11月，香港特区政府宣布取消四名立法院泛民议员资格，理由是其“危害”国家安全。民主派议员随即宣布总辞以示抗议。</p>
+  <p><strong>向港人灌输恐惧</strong></p>
+  <p>活动人士和专家认为，近期的大抓捕显示北京意图进一步收紧对香港的钳制。</p>
+  <p>前香港立法会议员何俊仁对德国之声表示： “北京如今撒下天罗地网，可以抓捕所有想抓捕的人。现在即使是温和的民主派成员也免不了被捕。”</p>
+  <p>美国加州大学历史学者华志坚（Jeff Wasserstrom）指出，中国大陆和香港逮捕活动人士的差异正在缩小。在《国安法》实施的前后，不仅是抓捕规模改变，遭到香港政府针对的人群也有所不同。“其目标似乎是一次将恐惧注入尽可能多的群体。”</p>
+  <p><em></em></p>
+  <p>何俊仁称，过去在香港被捕的人士很快就会获释，释放后也能自由对媒体发言，但在《国安法》实施后，逮捕和起诉的过程变得更为“泛滥”。</p>
+  <p>“他们先逮捕你，将你整夜拘留以达到威吓目的，接下来才会正式起诉。很不幸，政府变得非常偏执。”</p>
+  <p><strong>自我审查之风盛行</strong></p>
+  <p>活动人士担忧，在针对过立法会议员后，北京会将矛头转向教育界等其他社会领域。出身学术界的政治科学家John认为，社会工作者以及司法人员也会成为潜在目标。</p>
+  <p>他表示，基于安全考量，部分香港学者已在实施自我审查。“他们也不想自我审查，但如此多的不确定性使其别无选择。”</p>
+  <p>John指出，恐惧迫使人们避免与当局对抗。“在可预见的未来中，我认为香港不会出现大型阻力，因为这样做的空间正在萎缩。”他预测，有关当局的镇压行动会持续，香港的局势将每况愈下。</p>
+  <p><em>© 2020</em><em>年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%A0%94%E7%A9%B6-%E5%A4%9A%E6%95%B0%E6%96%B0%E5%86%A0%E6%82%A3%E8%80%85%E5%87%BA%E7%8E%B0%E9%95%BF%E6%9C%9F%E5%90%8E%E9%81%97%E7%97%87">
+          研究：多数新冠患者出现长期后遗症
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98">
+          德语媒体：中国疫苗——不是问题的问题 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+          印度称扣押越界解放军 中方强调是“走失”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C-%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86">
+          肉类地图册：是时候重新思考我们吃什么了
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+            前一篇：印度称扣押越界解放军 中方强调是“走失”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/COVID-19%E5%85%A8%E7%90%83%E8%B6%85%E8%BF%878882%E4%B8%87%E4%BE%8B%E7%A1%AE%E8%AF%8A-191%E4%B8%87%E5%A4%9A%E4%BA%BA%E7%97%85%E4%BA%A1-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            后一篇：COVID-19全球超过8882万例确诊 191万多人病亡 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/COVID-19%E5%85%A8%E7%90%83%E8%B6%85%E8%BF%878882%E4%B8%87%E4%BE%8B%E7%A1%AE%E8%AF%8A-191%E4%B8%87%E5%A4%9A%E4%BA%BA%E7%97%85%E4%BA%A1-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/COVID-19%E5%85%A8%E7%90%83%E8%B6%85%E8%BF%878882%E4%B8%87%E4%BE%8B%E7%A1%AE%E8%AF%8A-191%E4%B8%87%E5%A4%9A%E4%BA%BA%E7%97%85%E4%BA%A1-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

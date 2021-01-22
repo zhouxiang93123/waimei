@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>挪威TALK｜对「返乡核酸检测」最新解读的最大疑问 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+" />
+    <meta property="og:description" content="
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="挪威TALK｜对「返乡核酸检测」最新解读的最大疑问" />
+    <meta property="twitter:title" content="挪威TALK｜对「返乡核酸检测」最新解读的最大疑问" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e6%258c%25aa%25e5%25a8%2581talk%25ef%25bd%259c%25e5%25af%25b9%25e3%2580%258c%25e8%25bf%2594%25e4%25b9%25a1%25e6%25a0%25b8%25e9%2585%25b8%25e6%25a3%2580%25e6%25b5%258b%25e3%2580%258d%25e6%259c%2580%25e6%2596%25b0%25e8%25a7%25a3%25e8%25af%25bb%25e7%259a%2584%25e6%259c%2580%25e5%25a4%25a7%25e7%2596%2591%25e9%2597%25ae%2F&t=%E6%8C%AA%E5%A8%81TALK%EF%BD%9C%E5%AF%B9%E3%80%8C%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E3%80%8D%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e6%258c%25aa%25e5%25a8%2581talk%25ef%25bd%259c%25e5%25af%25b9%25e3%2580%258c%25e8%25bf%2594%25e4%25b9%25a1%25e6%25a0%25b8%25e9%2585%25b8%25e6%25a3%2580%25e6%25b5%258b%25e3%2580%258d%25e6%259c%2580%25e6%2596%25b0%25e8%25a7%25a3%25e8%25af%25bb%25e7%259a%2584%25e6%259c%2580%25e5%25a4%25a7%25e7%2596%2591%25e9%2597%25ae%2F&t=%E6%8C%AA%E5%A8%81TALK%EF%BD%9C%E5%AF%B9%E3%80%8C%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E3%80%8D%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE&d=2021-01-21&e=
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+
+
+  
+  文 | 挪威
+  图 | 挪威·摄于广州
+  第 421 篇文章
+  今天早上，国家卫健委回应了「返乡核酸检测」的争论，对其中的「返乡人员」进行了最新解读，即：
+  
+    返乡人员指的是从外地返回农村地区人员。
+  
+  主要是指三类人：
+  （1）跨省返乡人员；（2）本省内中高风险区域所在地市的返乡人员（中高风险区域内部人员原则上不流动）；（3）本省内的进口冷链食品从业人员、口岸直接接触进口货物从业人员、隔离场所工作人员、交通运输工具从业人员等重点人群。
+  这个解读很快引发了更大的争论，不到两个小时，就引发了近亿人次的围观。
+  
+  来源：人民日报
+  很多人表示自己被冒犯了，因为回应中的那句「农村地区人员」。
+  没错，说的就是自己。
+  我稍稍微微也有那么点冒犯的感觉，毕竟被单独拎出来说了。但总体..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e6%258c%25aa%25e5%25a8%2581talk%25ef%25bd%259c%25e5%25af%25b9%25e3%2580%258c%25e8%25bf%2594%25e4%25b9%25a1%25e6%25a0%25b8%25e9%2585%25b8%25e6%25a3%2580%25e6%25b5%258b%25e3%2580%258d%25e6%259c%2580%25e6%2596%25b0%25e8%25a7%25a3%25e8%25af%25bb%25e7%259a%2584%25e6%259c%2580%25e5%25a4%25a7%25e7%2596%2591%25e9%2597%25ae%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/&text=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/&title=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/&title=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问&body=
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/&title=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问&caption=
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=挪威TALK｜对「返乡核酸检测」最新解读的最大疑问&url=https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>挪威TALK｜对「返乡核酸检测」最新解读的最大疑问</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e6%258c%25aa%25e5%25a8%2581talk%25ef%25bd%259c%25e5%25af%25b9%25e3%2580%258c%25e8%25bf%2594%25e4%25b9%25a1%25e6%25a0%25b8%25e9%2585%25b8%25e6%25a3%2580%25e6%25b5%258b%25e3%2580%258d%25e6%259c%2580%25e6%2596%25b0%25e8%25a7%25a3%25e8%25af%25bb%25e7%259a%2584%25e6%259c%2580%25e5%25a4%25a7%25e7%2596%2591%25e9%2597%25ae%2F&t=%E6%8C%AA%E5%A8%81TALK%EF%BD%9C%E5%AF%B9%E3%80%8C%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E3%80%8D%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE&d=2021-01-21&e=
+挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+——
+
+
+  
+  文 | 挪威
+  图 | 挪威·摄于广州
+  第 421 篇文章
+  今天早上，国家卫健委回应了「返乡核酸检测」的争论，对其中的「返乡人员」进行了最新解读，即：
+  
+    返乡人员指的是从外地返回农村地区人员。
+  
+  主要是指三类人：
+  （1）跨省返乡人员；（2）本省内中高风险区域所在地市的返乡人员（中高风险区域内部人员原则上不流动）；（3）本省内的进口冷链食品从业人员、口岸直接接触进口货物从业人员、隔离场所工作人员、交通运输工具从业人员等重点人群。
+  这个解读很快引发了更大的争论，不到两个小时，就引发了近亿人次的围观。
+  
+  来源：人民日报
+  很多人表示自己被冒犯了，因为回应中的那句「农村地区人员」。
+  没错，说的就是自己。
+  我稍稍微微也有那么点冒犯的感觉，毕竟被单独拎出来说了。但总体..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e6%258c%25aa%25e5%25a8%2581talk%25ef%25bd%259c%25e5%25af%25b9%25e3%2580%258c%25e8%25bf%2594%25e4%25b9%25a1%25e6%25a0%25b8%25e9%2585%25b8%25e6%25a3%2580%25e6%25b5%258b%25e3%2580%258d%25e6%259c%2580%25e6%2596%25b0%25e8%25a7%25a3%25e8%25af%25bb%25e7%259a%2584%25e6%259c%2580%25e5%25a4%25a7%25e7%2596%2591%25e9%2597%25ae%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611228467000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/">挪威TALK｜对「返乡核酸检测」最新解读的最大疑问</a>
+——</p>
+
+<div>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-6009651f21b8d." alt="图片" class="aligncenter" width="500" /></p>
+  <p>文 | 挪威</p>
+  <p>图 | 挪威·摄于广州</p>
+  <p>第 421 篇文章</p>
+  <p>今天早上，国家卫健委回应了「返乡核酸检测」的争论，对其中的「返乡人员」进行了最新解读，即：</p>
+  <blockquote>
+    <p>返乡人员指的是从外地返回农村地区人员。</p>
+  </blockquote>
+  <p>主要是指三类人：</p>
+  <p><em>（1）跨省返乡人员；（2）本省内中高风险区域所在地市的返乡人员（中高风险区域内部人员原则上不流动）；（3）本省内的进口冷链食品从业人员、口岸直接接触进口货物从业人员、隔离场所工作人员、交通运输工具从业人员等重点人群。</em></p>
+  <p>这个解读很快引发了更大的争论，不到两个小时，就引发了近亿人次的围观。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-600965211aa16." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>来源：人民日报</em></p>
+  <p>很多人表示自己被冒犯了，因为回应中的那句「农村地区人员」。</p>
+  <p>没错，说的就是自己。</p>
+  <p>我稍稍微微也有那么点冒犯的感觉，毕竟被单独拎出来说了。但总体来说，我觉得还好。不少人把这句话往阴谋论上扯，甚至说出了阶层歧视之类的话，这就没必要了。</p>
+  <p><strong>我相信这样做的目的不是为了其它，而是为了保护农村地区，这是初心，我相信初心的美好，原因也很简单，农村确是疫情防控的薄弱环节，首先医疗力量就比较薄弱。</strong></p>
+  <p>但我心里仍然有一个巨大的疑问，不吐不快：</p>
+  <blockquote>
+    <p>对于返乡核酸检测，为什么要有城乡区别？为什么不用地区（行业）风险等级的区别代替城乡区别？</p>
+  </blockquote>
+  <p>难道用地区或行业风险等级区别，不是一个比城乡区别更棒的办法吗？也更符合科学防控，不是吗？</p>
+  <p>毕竟防控的目的，是为了降低病毒传播风险。</p>
+  <p>所以我能理解禁止中高风险区域人员流动，我想即使我身处其中，如果有人告知我，春节期间如无必要，不要随意走动，免得传播病毒，我会遵守防疫措施的，因为中高风险地区的人员流动的确会带来更大的病毒传播风险。</p>
+  <p>我也能理解一些高风险行业的人员需要有核酸检测证明才能流动，例如口岸工作人员、冷链食品行业人员等等，根据近一年的疫情情况，这些行业的从业者比常人有更大的概率接触到病毒，所以需要核酸检测证明才能流动，才能近一步降低病毒风险传播。</p>
+  <p>但我的的确确无法理解：</p>
+  <p><strong>为什么从低风险地区到低风险地区流动的农村返乡人员，需要核酸证明，就因为跨了个省吗？</strong></p>
+  <p>根据央视新闻，截止到昨天下午五点半，全国高风险地区是6个，中风险地区58个，主要集中在黑龙江、河北、北京与吉林。</p>
+  <p>考虑到地区风险划分很细，甚至会细到某某某小区，所以事实上，全国绝大部分地区都是低风险地区。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-60096522b79b5." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>来源：央视新闻</em></p>
+  <p>广州是低风险地区，郴州也是低风险地区，从广州自驾回郴州车程大概六七个小时；广州是低风险地区，湛江也是低风险地区，从广州自驾回湛江车程大概也就是五个小时左右。</p>
+  <p>都是低风险地区流动，为什么回郴州要核酸检测，而回湛江不需要？</p>
+  <p>难道前者的风险性更强吗？</p>
+  <p>即使不自驾，坐火车，人员的复杂程度其实也一样的，像珠三角、长三角之类的地区本身就汇聚了全国范围内的打工人。</p>
+  <p>当然有人会说，毕竟你跨省了，省内流动和省外流动不一样。春节期间，全国范围内的人汇聚到一个地方，节后，大家再各自返回工作地，如果当中万一有一个人感染了，便会把病毒传播到全国范围内。</p>
+  <p>毕竟即使低风险地区也很难保证定然安全。</p>
+  <p>这么考虑是有道理的，但很难解释为什么只针对农村地区的返乡人员。</p>
+  <p><strong>如果对「低风险」这三个字本身就不信任的话，那么防疫管控的对象，应该是所有返乡人员，而不只是农村地区的返乡人员。</strong></p>
+  <p>去城市的返乡人员风险性未必就比农村地区的返乡人员低。</p>
+  <p>事实上，如果是这种情况，此前对不同地区进行风险等级划分，意义就不大了，甚至健康码的意义都不太大了，像国庆节也是大家一窝蜂出去玩，也会出现一人感染最后很可能病毒传播到全国范围内这种情况，因为每个景点汇聚的都是来自四面八方的客户。</p>
+  <p>而现实是，我们扛过了国庆节那一波人潮。</p>
+  <p><strong>充分说明低风险地区的疫情情况是值得信任的，也是此前我们总结出来的防控经验，这些经验也是值得信任的。</strong></p>
+  <p>不分地区的风险等级，也不分行业的属性，直接要求所有跨省的农村返乡人员都要核酸检测，我觉得有点简单暴力了。</p>
+  <p>而且似乎也不现实。</p>
+  <p>据交通部的预测，2021年春运会有17亿人次的规模，假设每个人都有往返，那就是8亿人。</p>
+  <p>这当然高估了，我们算5亿，刨除旅游出差的，算3亿，城乡务工人员对半开（事实上农村返乡人员的比例肯定更高），那么农村的返乡人员就是1.5亿人，往返各要一次核酸检测，那么就是3亿次核酸检测。</p>
+  <p>而前几天卫健委医管局向公众通报了我国目前核酸检测的能力：</p>
+  <p><em>全国有八千四百多家机构可以进行检测，日检测能力高达1254万人份。</em></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-600965266e667.png" alt="图片" class="aligncenter" width="450" /></p>
+  <p><em>来源：中国政府网</em></p>
+  <p>这个检测能力是很牛的。</p>
+  <p><strong>但要满足3亿人次的检测需求，需要各大卫生机构开足马力，并挤占其它人群的正常检测需求，全力满足返乡人员，即使如此，也要耗费差不多一个月的时间才能完成任务。</strong></p>
+  <p>医疗机构的工作人员就别想过年了，同时，返乡人员做好长时间排队的心里准备吧。</p>
+  <p>又考虑到不同城市的检测能力是不一样的，很可能出现这种情况：</p>
+  <p>回家比较顺利，但返工就难了，光核酸检测排队就要等上个十来天，等你回来，岗位已经被下属顶了。</p>
+  <p><strong>找工作吧朋友。</strong></p>
+  <p>事实上，有不少地区就是按照地区和行业风险来进行评估的，比如广东，八大类人群才需要提供核酸检测证明。</p>
+  <p>主要集中在重点风险地区和风险行业：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-6009652869728." alt="图片" class="aligncenter" width="450" /></p>
+  <p><em>来源：深圳卫健委</em></p>
+  <p>比较令人惊喜的是襄阳。</p>
+  <p>昨天，在国家层面卫健委发布了返乡人员需要提供核酸检测证明的声音之后，我看到了一份襄阳防疫指挥部的2号通告。</p>
+  <p>其中对于低风险地区的流动明确规定：</p>
+  <blockquote>
+    <p>国内低风险地区人员往来襄阳，凭健康码绿码、测体温正常即可通行。</p>
+  </blockquote>
+  <p>对于核酸检测的规定则是：</p>
+  <blockquote>
+    <p>1、返乡后第一时间向所在村或社区报告，由社区或村安排一次免费的核酸检测；2、对于旅客或出差商务人员，则根据个人意愿，亦可免费安排一次核酸检测服务。</p>
+  </blockquote>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-6009652a62ca2." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>来源：襄阳播报/襄阳播报是襄阳广播电视台的官方账号</em></p>
+  <p>而且截止到现在，这份通报也还没有删除。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661743-6009652c5a7cb." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>来源：襄阳播报</em></p>
+  <p>朋友们，这并不简单，这要顶着很大压力与责任。</p>
+  <p>流动越便捷，在你看不到的背后，防控就越周密，体系就越完善，当然，也体现了一座城市的信心、担当与对既往经验的尊重。</p>
+  <p>最后，放一下襄阳防疫指挥部2号令的最后一段话：</p>
+  <blockquote>
+    <p>既要严格落实各项防控措施，又要坚持科学精准防控，做到严之有度，严之有方，一律不得层层加码。</p>
+    <p>——襄阳市新冠疫情防控指挥部，2021年1月20日。</p>
+  </blockquote>
+  <p>我认为这是对张文宏医生所谓「动态清零」新常态的最好解释。</p>
+  <p>抗疫这件事严肃归严肃，但也有尺度和方法，比如你不能为了抗疫直接把人绑在树上，你怎么不直接把人绑在家里呢。</p>
+  <p>当然，也有可能我的疑问包含巨大错误，而我自己不自知。</p>
+  <p>那么希望有人可以说得再明白点，解释一下我的疑惑，我想这也是很多人的疑惑。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e6%8c%aa%e5%a8%81talk%ef%bd%9c%e5%af%b9%e3%80%8c%e8%bf%94%e4%b9%a1%e6%a0%b8%e9%85%b8%e6%a3%80%e6%b5%8b%e3%80%8d%e6%9c%80%e6%96%b0%e8%a7%a3%e8%af%bb%e7%9a%84%e6%9c%80%e5%a4%a7%e7%96%91%e9%97%ae/">挪威TALK｜对「返乡核酸检测」最新解读的最大疑问</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E4%BA%BA%E9%97%B4theLivings-%E5%9F%8E%E7%AE%A1%E9%98%9F%E4%BC%8D%E9%87%8C-%E9%82%A3%E4%B8%AA%E8%A2%AB%E5%98%B2%E7%AC%91%E7%9A%84%E8%80%81%E5%AE%9E%E4%BA%BA%E5%86%B3%E5%AE%9A%E8%80%83%E7%BC%96">
+          人间theLivings｜城管队伍里，那个被嘲笑的老实人决定考编
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9-%E5%AE%8B%E7%9F%B3%E7%94%B7-%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF">
+          默存格物｜宋石男：锦衣卫那些事儿
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E7%A7%91%E6%8A%80%E5%9C%88%E6%97%A5%E5%B8%B8-%E5%BE%AE%E4%BF%A1%E5%8D%81%E5%B9%B4-%E5%BD%93%E5%BC%A0%E5%B0%8F%E9%BE%99-%E8%A2%AB%E4%B8%8A%E5%B8%9D%E9%80%89%E4%B8%AD">
+          科技圈日常｜微信十年，当张小龙“被上帝选中”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E8%8B%B9%E6%9E%9C%E6%97%A5%E6%8A%A5-%E5%9B%A0%E8%BF%9D%E5%8F%8DTwitter%E5%8F%8D%E5%AF%B9-%E9%9D%9E%E4%BA%BA%E6%80%A7%E5%8C%96-%E6%94%BF%E7%AD%96-%E4%B8%AD%E5%9B%BD%E9%A9%BB%E7%BE%8E%E5%A4%A7%E4%BD%BF%E9%A6%86%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7%E8%A2%AB%E5%B0%81">
+          苹果日报｜因违反Twitter反对“非人性化”政策 中国驻美大使馆官方账号被封
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%E5%9B%9E%E5%8D%87%E4%BA%BA%E6%B0%91%E5%B8%81%E6%94%B6%E5%88%9B%E4%B8%A4%E5%91%A8%E6%96%B0%E9%AB%98-%E7%9F%AD%E6%9C%9F%E6%96%99%E9%9A%8F%E7%BE%8E%E6%8C%87%E6%B3%A2%E5%8A%A8">
+            前一篇：风险偏好回升人民币收创两周新高 短期料随美指波动
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%A4%9A%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%A5%9D%E8%B4%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9C%AA%E5%8F%91%E8%B4%BA%E8%AF%8D">
+            后一篇：拜登就职多国领导人祝贺 习近平未发贺词
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%E5%9B%9E%E5%8D%87%E4%BA%BA%E6%B0%91%E5%B8%81%E6%94%B6%E5%88%9B%E4%B8%A4%E5%91%A8%E6%96%B0%E9%AB%98-%E7%9F%AD%E6%9C%9F%E6%96%99%E9%9A%8F%E7%BE%8E%E6%8C%87%E6%B3%A2%E5%8A%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%A4%9A%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%A5%9D%E8%B4%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9C%AA%E5%8F%91%E8%B4%BA%E8%AF%8D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9-%E5%AE%8B%E7%9F%B3%E7%94%B7-%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E7%A7%91%E6%8A%80%E5%9C%88%E6%97%A5%E5%B8%B8-%E5%BE%AE%E4%BF%A1%E5%8D%81%E5%B9%B4-%E5%BD%93%E5%BC%A0%E5%B0%8F%E9%BE%99-%E8%A2%AB%E4%B8%8A%E5%B8%9D%E9%80%89%E4%B8%AD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%E5%9B%9E%E5%8D%87%E4%BA%BA%E6%B0%91%E5%B8%81%E6%94%B6%E5%88%9B%E4%B8%A4%E5%91%A8%E6%96%B0%E9%AB%98-%E7%9F%AD%E6%9C%9F%E6%96%99%E9%9A%8F%E7%BE%8E%E6%8C%87%E6%B3%A2%E5%8A%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%A4%9A%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%A5%9D%E8%B4%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9C%AA%E5%8F%91%E8%B4%BA%E8%AF%8D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9-%E5%AE%8B%E7%9F%B3%E7%94%B7-%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/%E7%A7%91%E6%8A%80%E5%9C%88%E6%97%A5%E5%B8%B8-%E5%BE%AE%E4%BF%A1%E5%8D%81%E5%B9%B4-%E5%BD%93%E5%BC%A0%E5%B0%8F%E9%BE%99-%E8%A2%AB%E4%B8%8A%E5%B8%9D%E9%80%89%E4%B8%AD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

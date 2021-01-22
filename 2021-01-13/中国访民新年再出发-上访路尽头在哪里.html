@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国访民新年再出发 上访路尽头在哪里？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国访民新年再出发 上访路尽头在哪里？
+——
+" />
+    <meta property="og:description" content="
+中国访民新年再出发 上访路尽头在哪里？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国访民新年再出发 上访路尽头在哪里？" />
+    <meta property="twitter:title" content="中国访民新年再出发 上访路尽头在哪里？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fpetitioning-in-China-2021-20210113%2F5735657.html&t=%E4%B8%AD%E5%9B%BD%E8%AE%BF%E6%B0%91%E6%96%B0%E5%B9%B4%E5%86%8D%E5%87%BA%E5%8F%91+%E4%B8%8A%E8%AE%BF%E8%B7%AF%E5%B0%BD%E5%A4%B4%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fpetitioning-in-China-2021-20210113%2F5735657.html&t=%E4%B8%AD%E5%9B%BD%E8%AE%BF%E6%B0%91%E6%96%B0%E5%B9%B4%E5%86%8D%E5%87%BA%E5%8F%91+%E4%B8%8A%E8%AE%BF%E8%B7%AF%E5%B0%BD%E5%A4%B4%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F&d=2021-01-13&e=
+中国访民新年再出发 上访路尽头在哪里？
+——
+
+
+  
+Wed, 13 Jan 2021 11:45:19 GMT
+  
+  
+资料照：在中国全国政协会议开幕前告状民众出现在北京天安门广场旁。（2018年3月3日）
+  
+  
+  
+中国访民新年再出发 上访路尽头在哪里？
+  
+  进入新年以來，新冠疫情在中国似乎有抬头迹象，本来就面对重重障碍的民众上访维权更加艰难，他们有的已进入北京，有的则在本地坚持抗争。人权活动人士表示，上访是中国人治社会的历史产物，不会有效解决社会矛盾。
+  新年开始上访路
+  2021年1月4日，北京国家信访局新年第一个工作日，59岁女访民杨浩刚到信访局，就收到家乡黑龙江饶河县859农场派出所发给她的短信，海外维权网报道，当局称其上访是为了谋取“不正当利益”，严重扰乱“社会秩序与国家机关工作秩序”，必须立即停止非法上访，否则将对她进行法律制裁！
+  江苏省..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fpetitioning-in-China-2021-20210113%2F5735657.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html&text=中国访民新年再出发 上访路尽头在哪里？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html&title=中国访民新年再出发 上访路尽头在哪里？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html&title=中国访民新年再出发 上访路尽头在哪里？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国访民新年再出发 上访路尽头在哪里？&body=
+中国访民新年再出发 上访路尽头在哪里？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html&title=中国访民新年再出发 上访路尽头在哪里？&caption=
+中国访民新年再出发 上访路尽头在哪里？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国访民新年再出发 上访路尽头在哪里？&url=https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国访民新年再出发 上访路尽头在哪里？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fpetitioning-in-China-2021-20210113%2F5735657.html&t=%E4%B8%AD%E5%9B%BD%E8%AE%BF%E6%B0%91%E6%96%B0%E5%B9%B4%E5%86%8D%E5%87%BA%E5%8F%91+%E4%B8%8A%E8%AE%BF%E8%B7%AF%E5%B0%BD%E5%A4%B4%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F&d=2021-01-13&e=
+中国访民新年再出发 上访路尽头在哪里？
+——
+
+
+  
+Wed, 13 Jan 2021 11:45:19 GMT
+  
+  
+资料照：在中国全国政协会议开幕前告状民众出现在北京天安门广场旁。（2018年3月3日）
+  
+  
+  
+中国访民新年再出发 上访路尽头在哪里？
+  
+  进入新年以來，新冠疫情在中国似乎有抬头迹象，本来就面对重重障碍的民众上访维权更加艰难，他们有的已进入北京，有的则在本地坚持抗争。人权活动人士表示，上访是中国人治社会的历史产物，不会有效解决社会矛盾。
+  新年开始上访路
+  2021年1月4日，北京国家信访局新年第一个工作日，59岁女访民杨浩刚到信访局，就收到家乡黑龙江饶河县859农场派出所发给她的短信，海外维权网报道，当局称其上访是为了谋取“不正当利益”，严重扰乱“社会秩序与国家机关工作秩序”，必须立即停止非法上访，否则将对她进行法律制裁！
+  江苏省..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fpetitioning-in-China-2021-20210113%2F5735657.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610541683000-->
+<p><a href="https://www.voachinese.com/a/petitioning-in-China-2021-20210113/5735657.html">中国访民新年再出发 上访路尽头在哪里？</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 13 Jan 2021 11:45:19 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/F539D40F-F228-4EE3-835C-EA77724373E9_cx0_cy4_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照：在中国全国政协会议开幕前告状民众出现在北京天安门广场旁。（2018年3月3日）</small>
+  </div>
+  <audio src="https://av.voanews.com/clips/VCH/2021/01/13/01e8b145-13db-4195-ab92-74c40d843eff.mp3" controls=""></audio>
+  <div>
+<small style="color: #999;">中国访民新年再出发 上访路尽头在哪里？</small>
+  </div>
+  <p>进入新年以來，新冠疫情在中国似乎有抬头迹象，本来就面对重重障碍的民众上访维权更加艰难，他们有的已进入北京，有的则在本地坚持抗争。人权活动人士表示，上访是中国人治社会的历史产物，不会有效解决社会矛盾。</p>
+  <p><strong>新年开始上访路</strong></p>
+  <p>2021年1月4日，北京国家信访局新年第一个工作日，59岁女访民杨浩刚到信访局，就收到家乡黑龙江饶河县859农场派出所发给她的短信，海外维权网报道，当局称其上访是为了谋取“不正当利益”，严重扰乱“社会秩序与国家机关工作秩序”，必须立即停止非法上访，否则将对她进行法律制裁！</p>
+  <p>江苏省如皋市维权人士夏明礼，2020年底去北京上访，12月30日在北京丰台区被家乡赶赴北京的公安和居委会人员强行押回江苏，预计他将被拘押到1月10日。他的妻子孟海霞对美国之音说：“行政拘留的理由是，多次去国家信访局上访，扰乱国家信访局的单位秩序，行政拘留十天。上访是每个公民的权利啊！信访局开门不就是让老百姓说理吗？”</p>
+  <p>山东省青岛市67岁老访民，原解放军三十八军退伍军人高宏毅，因健康码被当局控制，无法进京上访。元旦那天，青岛街头锣鼓喧天庆祝新年，高宏毅穿红领章、红帽徽军装，手持标语，抗议自己的退休福利被贪官剥夺。</p>
+  <p>高宏毅对美国之音说：“现在心里特不平衡，过得日子太苦，判了两年刑吧，好像被下了毒，得了十种的病，生活又这么困难。再加上年轻时好歹给中共38军贡献过鲜血和生命，所以心里特别不平衡。”</p>
+  <p>高宏毅2015年春节前曾到中共组织部、中纪委门前，公开要求退党，后因参加2017年全国老兵“5.11”集体上访，接受国际媒体采访，被山东青岛一家法院以“扰乱社会秩序罪”判刑2年。</p>
+  <p>1月1日“元旦”，江西维权人士肖青山在凛冽寒风中拉起横幅，抗议南京市雨花台区法院法官李书剑和院长陶红“枉法裁判”。</p>
+  <p>以上这些上访者，申诉的案情各异，主要针对的都是当地司法部门的案件判决，不过，他（她）们都要求北京的中央人民政府，或者最高领导人主持公道。例如，青岛访民高宏毅打出的标语称，他的小康梦是习近平和王岐山承诺的，江西访民肖青山要求“习近平总书记彻查司法领域的腐败，打掉诈骗团伙的保护伞”。</p>
+  <p><strong>“毛主席会派人下来调查”？</strong></p>
+  <div class="contentImage floatLeft">
+<img class="photo" src="https://images.weserv.nl?url=gdb.voanews.com/83D18156-862D-47C4-963B-324FF7344B76_w900.jpg" alt="资料照：中国访民在北京的国家信访局前排起长队告状。（2016年3月4日）" border="0" />    <div>
+<small style="color: #999;">资料照：中国访民在北京的国家信访局前排起长队告状。（2016年3月4日）</small>
+    </div>
+  </div>
+  <p>北美世界日报12月27日载文说，一直想不通为什么北京要设信访机构。可能是它曾经帮助过上访者解决问题，否则为什么全国各地那么多人，前仆后继地去北京上访呢？</p>
+  <p>中国古代就有“以拦御驾”，“越诉”的上访制度，关于中共建政后的上访制度，退伍军人高宏毅近日对美国之音说：“当年毛主席制定信访条例是怕被下面官员骗了，他想了解民情，所以要求通过信访，听到人民呼声，关心人民疾苦。写封信都可以，信访嘛，还免邮票，寄到人民日报，转毛主席收就行了。我爸爸给毛主席写过两封信，很解决问题，马上派人下来调查。”</p>
+  <p>高宏毅说，当年信访有一条，就是不能诬陷。由于是给毛主席写信，老百姓谁敢诬陷啊？他表示，很多访民家庭过去的类似信访或上访经历，成为支撑他们上访的动力。</p>
+  <p>不过，人权活动人士胡佳对美国之音说：“信访的确是毛泽东那个年代设置的，本身带有历史烙印。中国是一个人治社会，而不是一个法治社会。法治社会完全可以信法，不需要信访。问题是，中国现在有法律制度，但是没有法治，也就是有宪法，没有宪政；有法律，没法治的状态。”</p>
+  <p>胡佳说，他曾在北京中央和国家机关信访部门外面见过年近90岁，身体佝偻的拄杖老者，一生40多年马拉松上访。各地访民反应的案件，大量涉及地方官员，久拖不决，因为中共信访机构、法院和地方官员“沆瀣一气”。</p>
+  <p>胡佳说，北京处理信访案件的周期一般几个月，举报信最终会回到被举报人手里，信访办一般只是要求地方就案件协助办理。也就是说，大量上访案件将回到原案发地，说到底，上访并不根本解决问题。</p>
+  <p><strong>信访制度扭曲人性</strong></p>
+  <div class="contentImage floatLeft">
+<img class="photo" src="https://images.weserv.nl?url=gdb.voanews.com/0A5D76AE-72E2-4B01-91CF-7C720819C686_w900.jpg" alt="资料照：浙江乐清蒲岐镇寨桥村村民下跪乞求还村长钱云会公正。（2012年5月）" border="0" />    <div>
+<small style="color: #999;">资料照：浙江乐清蒲岐镇寨桥村村民下跪乞求还村长钱云会公正。（2012年5月）</small>
+    </div>
+  </div>
+  <p>访民高宏毅认为，问题在基层：“现在为什么信访制度不灵？因为矛盾太多了，不过，那都是贪污惹的祸。他们上访就抓、判刑，不让你上访，要实现‘零上访’。你去了北京，他们花钱就把北京买通。来这一套，怎么解决问题？”</p>
+  <p>胡佳说，与无数各地截访事件有关，中国当局动用维稳经费共同应对访民，维稳促使民间打手，即黑保安公司应运而生，成为中国信访制度衍生出来的特殊行业。他本人亲眼目睹全国各地驻京办事处人员或雇佣的便衣，在国家信访部门外面，通过口音和相貌识别，现场甄别本地访民，然后将他们强行带走，或者监禁，或者立即把他们送回原籍。</p>
+  <p>江苏省如皋市维权人士夏明礼的妻子孟海霞对美国之音说：“目前我家现在就有20多个人，24小时对我限制人身自由，就在我们家旁边运来一个20平方的集装箱，这些人是警察雇佣来的，据说一天180块钱一个人。”</p>
+  <p>孟海霞说，这些保安中一些人为糊口，不得已而为之：“我曾经和他们交流，让他们进我家里。我说，既然你们来看我，就来我家里吧，我有热水、热茶，我可以让你们坐在我家里看着我，省得在外面看着。他们对我说，也不愿意来干这个，他们是政府派来的，每天180块，盒饭都是政府人员送过来的。”</p>
+  <p>孟海霞说，很多政府公务员不愿现场露面，担心从事这样的打压会影响他们的“政绩”。另外，大家彼此认识，为了面子，应付差事，因此宁可雇佣黑保安公司人员代劳。</p>
+  <p>胡佳说，黑保安被当局要求参加维稳，治安综合治理项目，若行动中出现纠纷，当局可以一推六二五，顶多检讨一句“管理不善”。</p>
+  <p>事实上，很多上访者对这种维稳并不买账。例如，黑龙江饶河县访民杨浩在北京上访时收到派出所恐吓短信后，立即以“上边早已经规定公安机关不得参与截访等非警务活动”回怼，希望公安派出所不要充当维稳打手。</p>
+  <p><strong>信访是“金矿”“富矿”？</strong></p>
+  <p>新京报的报道《中国信访制度研究》说，信访制度是中国特色社会主义民主政治制度的有益补充，是中国特色社会主义法治体系的有机组成部分。</p>
+  <p>中国全国人大等机关的网上信访平台已开通，群众信访反应的情况，被称为监督政府工作的“金矿”“富矿”。</p>
+  <p>法治日报发表河北省晋州市副市长、公安局局长潘晓峰的文章，介绍当局规范和从源头减少上访的治理举措。</p>
+  <p>例如，对上级交办、转送的信访案件，“一把手”7个工作日内接访或约访，落实专家会诊制度。</p>
+  <p>抓源头。群众报警后，第一时间出警、第一时间调查取证、第一时间采取强制措施，提升“现场调解率”，严防初信、初访、转为重信、重访，力争一次性解决到位。</p>
+  <p>定期对新发生的信访案件进行自查，凡因执法瑕疵、执法过错、失职渎职引发的“有责信访案件”，将依法依纪追究相关人员责任。反思和纠正日常接访中“基层执法工作的随意和不规范问题”。</p>
+  <p>文章还提到，摸清所谓“缠访”、“闹访”的“底数“，建立“稳控台账”，“分类施策”、“及时掌握信访人的行踪动态”，将他们牢牢“稳控在当地”。</p>
+  <p><strong>维持信访制度为哪般？</strong></p>
+  <p>2021年新年元旦以来，在中国大陆疫情严峻形势下，访民为什么继续顽强进京上访，或者在原地以不同形式公开抗争？</p>
+  <p>世界新闻网的文章说，中国人传统上相信皇帝好，中央好，胡作非为的是地方官，所以访民对北京的信访局都抱希望。但是，总看到上访人员被地方政府拦截，抓回原籍，不准上访。信访制度实质上形同虚设。</p>
+  <p><strong>胡佳：信访制度没有存在的必要</strong></p>
+  <p>胡佳说：“中国官方曾经说过，信访解决问题率是千分之二。如果一个制度解决问题率还不到百分之一，那么它有存在的必要吗？是一个合理的方式吗？我接触的信访系统干部对外都是冠冕堂皇。由于我们彼此认识，这位干部就对我说，设计这个信访其实也知道它解决不了问题，不过，信访可以起到一个缓和矛盾的作用。”</p>
+  <p>胡佳进一步指出，中央政府维持信访制度的用意，似乎是希望把很多社会矛盾推到地方官头上，往往会指责地方官吏和系统执行政策不得力，或者胡作非为，而北京和中央则是好的。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%99%BD%E5%AE%AB%E8%A7%A3%E5%AF%86%E5%8D%B0%E5%A4%AA%E6%88%98%E7%95%A5%E6%A1%86%E6%9E%B6%E6%96%87%E4%BB%B6-%E7%9B%BC%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%AF%B9%E5%8D%8E%E6%88%98%E7%95%A5%E5%BE%97%E4%BB%A5%E5%BB%B6%E7%BB%AD">
+          白宫解密印太战略框架文件 盼特朗普政府对华战略得以延续
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%9F%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E7%97%85%E4%BE%8B%E8%B7%B3%E9%95%BF-%E4%B8%A4%E4%BC%9A%E5%BB%B6%E6%9C%9F-%E5%9B%9B%E5%B8%82%E5%B0%81%E5%9F%8E">
+          中国本土新冠感染病例跳长，两会延期，四市封城
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E9%83%AD%E9%A3%9E%E9%9B%84%E5%90%81%E8%AF%B7%E6%9D%8E%E5%85%8B%E5%BC%BA%E7%AD%89%E4%BC%B8%E6%8F%B4%E6%89%8B-%E6%94%BE%E4%BB%96%E8%B5%B4%E7%BE%8E%E7%85%A7%E6%96%99%E7%99%8C%E7%97%87%E6%89%8B%E6%9C%AF%E5%90%8E%E5%A6%BB%E5%AD%90">
+          郭飞雄吁请李克强等伸援手 放他赴美照料癌症手术后妻子
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%99%BD%E5%AE%AB%E8%A7%A3%E5%AF%86%E5%8D%B0%E5%A4%AA%E6%88%98%E7%95%A5%E6%A1%86%E6%9E%B6%E6%96%87%E4%BB%B6-%E7%9B%BC%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%AF%B9%E5%8D%8E%E6%88%98%E7%95%A5%E5%BE%97%E4%BB%A5">
+          白宫解密印太战略框架文件 盼特朗普政府对华战略得以
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%8F%90%E8%AE%AE%E7%9B%91%E7%AE%A1%E7%94%A8%E4%BA%8E%E6%8B%9B%E8%81%98%E7%9A%84%E7%AE%97%E6%B3%95">
+            前一篇：纽约市提议监管用于招聘的算法
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/Youtube%E6%9A%82%E5%B0%81%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7">
+            后一篇：Youtube暂封特朗普账号
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%8F%90%E8%AE%AE%E7%9B%91%E7%AE%A1%E7%94%A8%E4%BA%8E%E6%8B%9B%E8%81%98%E7%9A%84%E7%AE%97%E6%B3%95'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/Youtube%E6%9A%82%E5%B0%81%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%9F%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E7%97%85%E4%BE%8B%E8%B7%B3%E9%95%BF-%E4%B8%A4%E4%BC%9A%E5%BB%B6%E6%9C%9F-%E5%9B%9B%E5%B8%82%E5%B0%81%E5%9F%8E'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E9%83%AD%E9%A3%9E%E9%9B%84%E5%90%81%E8%AF%B7%E6%9D%8E%E5%85%8B%E5%BC%BA%E7%AD%89%E4%BC%B8%E6%8F%B4%E6%89%8B-%E6%94%BE%E4%BB%96%E8%B5%B4%E7%BE%8E%E7%85%A7%E6%96%99%E7%99%8C%E7%97%87%E6%89%8B%E6%9C%AF%E5%90%8E%E5%A6%BB%E5%AD%90'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%8F%90%E8%AE%AE%E7%9B%91%E7%AE%A1%E7%94%A8%E4%BA%8E%E6%8B%9B%E8%81%98%E7%9A%84%E7%AE%97%E6%B3%95">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/Youtube%E6%9A%82%E5%B0%81%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%9F%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E7%97%85%E4%BE%8B%E8%B7%B3%E9%95%BF-%E4%B8%A4%E4%BC%9A%E5%BB%B6%E6%9C%9F-%E5%9B%9B%E5%B8%82%E5%B0%81%E5%9F%8E">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E9%83%AD%E9%A3%9E%E9%9B%84%E5%90%81%E8%AF%B7%E6%9D%8E%E5%85%8B%E5%BC%BA%E7%AD%89%E4%BC%B8%E6%8F%B4%E6%89%8B-%E6%94%BE%E4%BB%96%E8%B5%B4%E7%BE%8E%E7%85%A7%E6%96%99%E7%99%8C%E7%97%87%E6%89%8B%E6%9C%AF%E5%90%8E%E5%A6%BB%E5%AD%90">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

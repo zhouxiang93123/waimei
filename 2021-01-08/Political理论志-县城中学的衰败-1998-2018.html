@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Political理论志  | 县城中学的衰败：1998-2018 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+Political理论志  | 县城中学的衰败：1998-2018
+——
+" />
+    <meta property="og:description" content="
+Political理论志  | 县城中学的衰败：1998-2018
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="Political理论志  | 县城中学的衰败：1998-2018" />
+    <meta property="twitter:title" content="Political理论志  | 县城中学的衰败：1998-2018" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2Fpolitical%25e7%2590%2586%25e8%25ae%25ba%25e5%25bf%2597-%25e5%258e%25bf%25e5%259f%258e%25e4%25b8%25ad%25e5%25ad%25a6%25e7%259a%2584%25e8%25a1%25b0%25e8%25b4%25a5%25ef%25bc%259a1998-2018%2F&t=Political%E7%90%86%E8%AE%BA%E5%BF%97++%7C+%E5%8E%BF%E5%9F%8E%E4%B8%AD%E5%AD%A6%E7%9A%84%E8%A1%B0%E8%B4%A5%EF%BC%9A1998-2018" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2Fpolitical%25e7%2590%2586%25e8%25ae%25ba%25e5%25bf%2597-%25e5%258e%25bf%25e5%259f%258e%25e4%25b8%25ad%25e5%25ad%25a6%25e7%259a%2584%25e8%25a1%25b0%25e8%25b4%25a5%25ef%25bc%259a1998-2018%2F&t=Political%E7%90%86%E8%AE%BA%E5%BF%97++%7C+%E5%8E%BF%E5%9F%8E%E4%B8%AD%E5%AD%A6%E7%9A%84%E8%A1%B0%E8%B4%A5%EF%BC%9A1998-2018&d=2021-01-08&e=
+Political理论志  | 县城中学的衰败：1998-2018
+——
+
+
+  常井项
+  县城中学的衰败：1998-2018
+  
+    写在前面：由于个人兴趣和一些功利目的，此前花了较多时间关注「县城中学」问题。研究做到一半稿子也写得差不多了，却是越改越没底，匿审的评价虽然尖刻却也大都正确，几番折腾后觉得自己当下实在没办法很好完成这么大的研究，遂想暂停一阵子。可是这个关键议题目前又很少有人关注，想了想就把目前的大概研究思路和一些基本结论写出来，如果有人能用去做自己的研究，也算是对相关问题有些帮助。
+  
+  （转载于Sociological理论大缸第337期。作者为常井项）
+  抛开各类宏观数据，如果某人年岁稍长且出生在非省会城市 / 县城，那么他 / 她很容易感受到：自新世纪以来，自己家乡的本地中学正在逐渐衰败，优秀的师生不断朝着省内几个中心学校聚集，原本一两年能出一两个..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2Fpolitical%25e7%2590%2586%25e8%25ae%25ba%25e5%25bf%2597-%25e5%258e%25bf%25e5%259f%258e%25e4%25b8%25ad%25e5%25ad%25a6%25e7%259a%2584%25e8%25a1%25b0%25e8%25b4%25a5%25ef%25bc%259a1998-2018%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/&text=Political理论志  | 县城中学的衰败：1998-2018&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/&title=Political理论志  | 县城中学的衰败：1998-2018" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/&title=Political理论志  | 县城中学的衰败：1998-2018" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=Political理论志  | 县城中学的衰败：1998-2018&body=
+Political理论志  | 县城中学的衰败：1998-2018
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/&title=Political理论志  | 县城中学的衰败：1998-2018&caption=
+Political理论志  | 县城中学的衰败：1998-2018
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=Political理论志  | 县城中学的衰败：1998-2018&url=https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>Political理论志  | 县城中学的衰败：1998-2018</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2Fpolitical%25e7%2590%2586%25e8%25ae%25ba%25e5%25bf%2597-%25e5%258e%25bf%25e5%259f%258e%25e4%25b8%25ad%25e5%25ad%25a6%25e7%259a%2584%25e8%25a1%25b0%25e8%25b4%25a5%25ef%25bc%259a1998-2018%2F&t=Political%E7%90%86%E8%AE%BA%E5%BF%97++%7C+%E5%8E%BF%E5%9F%8E%E4%B8%AD%E5%AD%A6%E7%9A%84%E8%A1%B0%E8%B4%A5%EF%BC%9A1998-2018&d=2021-01-08&e=
+Political理论志  | 县城中学的衰败：1998-2018
+——
+
+
+  常井项
+  县城中学的衰败：1998-2018
+  
+    写在前面：由于个人兴趣和一些功利目的，此前花了较多时间关注「县城中学」问题。研究做到一半稿子也写得差不多了，却是越改越没底，匿审的评价虽然尖刻却也大都正确，几番折腾后觉得自己当下实在没办法很好完成这么大的研究，遂想暂停一阵子。可是这个关键议题目前又很少有人关注，想了想就把目前的大概研究思路和一些基本结论写出来，如果有人能用去做自己的研究，也算是对相关问题有些帮助。
+  
+  （转载于Sociological理论大缸第337期。作者为常井项）
+  抛开各类宏观数据，如果某人年岁稍长且出生在非省会城市 / 县城，那么他 / 她很容易感受到：自新世纪以来，自己家乡的本地中学正在逐渐衰败，优秀的师生不断朝着省内几个中心学校聚集，原本一两年能出一两个..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2Fpolitical%25e7%2590%2586%25e8%25ae%25ba%25e5%25bf%2597-%25e5%258e%25bf%25e5%259f%258e%25e4%25b8%25ad%25e5%25ad%25a6%25e7%259a%2584%25e8%25a1%25b0%25e8%25b4%25a5%25ef%25bc%259a1998-2018%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610117947000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/">Political理论志  | 县城中学的衰败：1998-2018</a>
+——</p>
+
+<div>
+  <p>常井项</p>
+  <h1 id="section">县城中学的衰败：1998-2018</h1>
+  <blockquote>
+    <p>写在前面：由于个人兴趣和一些功利目的，此前花了较多时间关注「县城中学」问题。研究做到一半稿子也写得差不多了，却是越改越没底，匿审的评价虽然尖刻却也大都正确，几番折腾后觉得自己当下实在没办法很好完成这么大的研究，遂想暂停一阵子。可是这个关键议题目前又很少有人关注，想了想就把目前的大概研究思路和一些基本结论写出来，如果有人能用去做自己的研究，也算是对相关问题有些帮助。</p>
+  </blockquote>
+  <p>（转载于Sociological理论大缸第337期。作者为常井项）</p>
+  <p>抛开各类宏观数据，如果某人年岁稍长且出生在非省会城市 / 县城，那么他 / 她很容易感受到：自新世纪以来，自己家乡的本地中学正在逐渐衰败，优秀的师生不断朝着省内几个中心学校聚集，原本一两年能出一两个清华北大的本地学校，现在最高分甚至刚刚够到 985…… 与此同时，也是从新世纪开始（尤其是在 2008 年之后），各个学校的教学强度正在不断变大，一个新世纪前后出生的学生能够最直接地感受到，自己所经历的教育压力要远大于仅仅高自己几级的学长，却又远低于仅仅晚自己几年的后辈。</p>
+  <p>概言之，新世纪以来中学教育最直观的两个变化是</p>
+  <ul>
+    <li>
+      <p>1. 教育资源不断向心聚集</p>
+    </li>
+    <li>
+      <p>2. 教学强度不断增大。</p>
+    </li>
+  </ul>
+  <p>然而上述现象极少得到研究。就前一变化，现存研究大都是在讨论城乡教育差距（个体教育机会获得差异）时旁及学校间力量对比的变化，且绝大部分研究者将这一过程归结于「<strong>教育市场化</strong>」，即师生都会朝向资源丰富的上级城市（尤其是省城）流动。借助「市场」与「优胜劣汰」的逻辑，这一思路将县城中学的衰败理解为一种不可逆转的过程，且赋予其充分的道德正当性。</p>
+  <p>相对的，「制度」取向的学者尽管反对「市场」作用的叙事，其核心关注却仍停留在<strong>「重点 / 非重点」「城 / 乡</strong>」的两组对立（即杨东平所谓「双重二元格局」）上，并未能真正在经验上说明快速的资源流动与制度力量有关。至于教育强度的变化，几乎所有学者都将之归因于教育市场竞争的激烈或是家长、学校、社会的教育理念不正确。</p>
+  <h2 id="section-1">一、研究视角</h2>
+  <p>不难发现，现有的研究对于不同问题的解释是极为分裂的，既缺乏统一的视角也缺乏可靠的结论，对于各种新生的教育现象（「超级中学」「县中模式」）更是无从下手。因此，我希望能够在一个更整体的框架中解释上述两个问题，在我个人的研究草稿中，我将这一框架称为「地方教育生态」或「地方教育场域」，它涉及如下几个基本要点：</p>
+  <p>1. 研究对象：不再直接关注「个人教育机会获得」问题，而是研究学校间的力量变化，并通过后者绕回前者。</p>
+  <p>2. 研究思路：不再关注 What（什么影响了什么），而是关注 How（影响的机制）。</p>
+  <p>3. 基本假定一「封闭性」：由于高考是以省为单位录取，以高考为绝对导向的地方中等教育便以省为最大单位进行配置，每个省便可以被理解为一个相对独立的教育场域。</p>
+  <p>4. 基本假定二「传递性 / 同构性」：由于每一阶段学校的核心运作都是向下一阶段的学校输送学生，因此每一教育阶段的场域结构与资源配置都与下一阶段的场域结构紧密相关，这种关联性可以通过招生规模、竞争强度、教师流动等等方式体现（参考陶军明，2007）。</p>
+  <p>5. 基本假定三「向心性」：资源将逐渐从地方教育场域的边缘向中心聚集。这一聚集源于如下几个因素：</p>
+  <ul>
+    <li>
+      <p>（1）四重结构：地方教育场域并非双重二元的，而是由上到下的四层结构：「省会学校 – 地区级学校 – 县重点 – 县非重点」。教育资源的向心过程并非简单地从一元流向另一元：区域间的流动逐层发生在省会、地级市、县之间，重点、非重点间的流动则主要发生在县一级。</p>
+    </li>
+    <li>
+      <p>（2）行政主导：四层结构间的资源运作与其说是「流动」，毋宁说是单向且带有行政强制力的「汲取」，这种汲取大多发生在相邻的两层之间，较少出现跨层汲取的情况，且逐层汲取的动力看似是市场的，其根本却是政策的或制度的：「省会 / 地方」之间的作用是省会学校获取特殊政策的结果；「城 / 乡」之间的作用源于县与县级以上学校经费的不同来源；「重点 / 非重点」的影响则是县级财政与拔尖思路双重引导下的必然结局。（可参庞丽娟、韩小雨，2016；周钧，2015）</p>
+    </li>
+    <li>
+      <p>（3）「特权企业」：学校在教育市场中并非一个普通的「企业」，而是一个「特权企业」，这意味着学校既要在明面上比拼分数成绩经济资源，也要比拼各自所获得的政策（尤其是特殊政策）力度。后者构成了整个「向心」的核心动力。</p>
+    </li>
+  </ul>
+  <h2 id="section-2">二、核心结论</h2>
+  <p>从新世纪至今，大部分省份的中学都经历了（或正在经历）一次结构转型。这一转型涉及两个过程：一、高度集中资源；二、大幅提高管理强度。在不同地区，这一转型</p>
+  <ul>
+    <li>
+      <p>1. 汲取：依靠特殊政策，上层学校汲取下层学校优秀师生；</p>
+    </li>
+    <li>
+      <p>2. 反应：下层学校通过：（1）向再下层汲取资源；（2）高强度管理提高成绩——以弥补被汲取资源带来的劣势；</p>
+    </li>
+    <li>
+      <p>3. 冲击：上层学校同样引入高强度管理，并加大汲取力度；</p>
+    </li>
+    <li>
+      <p>4. 传递：下层学校汲取强化汲取并提高管理强度；</p>
+    </li>
+    <li>
+      <p>5. 溃败：最下层学校继续扩大管理强度，但学校资源已无法支撑，溃败逐渐向上传导。</p>
+    </li>
+  </ul>
+  <p>在诸如衡水中学这样的典型案例中，上层学校的「汲取」与「冲击」两个过程是一并出现的，因此留给下层学校的反应空间更小（事实上衡水确实是这套模式在全国推广的关键）。不过无论如何，这一过程最终都将导致不同层级的学校间差距持续扩大，而这又带来了三个后果：</p>
+  <p>1. 上层学校的优势将为后来的师生流动提供正当的基础（也即衡水校长不断强调的「靠实力吸引学生」），这将使生源流动彻底不可逆；</p>
+  <p>2. 学校管理强度的普遍提高必然带来单位教育成本的提高（原来老师每天管你八小时，现在管你十二小时），这一成本必然需要以各种方式转嫁（如学校经营房地产、学校收大量高费生、分校办学、政府补贴等），除去政府补贴外，其他所有转嫁的对象仍是普通家庭，尤其是「学校所在地外的其他地区的家庭」（参考撤点并校）。</p>
+  <p>3. 竞争强度的大幅度提高直接将大量低阶层学生（尤其是农村学生）排除在系统之外。「与 Tam &amp; Jiang （2015）的思路相似，我们认为，当重点与非重点间差距过大时，对学生而言，非重点学校就不再构成一种升学的有效『管道』，因此劣势区域希望进一步升学的学生面临着更强的竞争与系统性的排斥。这一排斥的根本原因是高中间的差距扩大，却最终体现在『初升高』阶段中。」</p>
+  <p>不难理解，上述三个后果都直接导致了县城中学的衰败，同时也导致了教育机会获得的差距不断扩大。然而通过营造一种「鲤鱼跃龙门」（勤奋学习使得贫苦孩子上大学）的叙事，同时通过强化「应试」与「素质」间的对抗，这场转型中的所有获益学校（超级中学们、县中们）都巧妙地回避了问题，并将自己打扮成拯救教育的天使，仿佛自己才是穷人的代表，可恶的只是越来越大的贫富差距和教育市场。</p>
+  <h2 id="section-3">三、延展讨论：转型路线问题</h2>
+  <p>学校转型过程牵涉到不同的转型路径。在此我选择借用 Tilly 的框架：在国家 / 学校转型的过程中，采取「资本化强制道路」（即同时聚集起「资本」与「强制」）的国家 / 学校最容易获得成功，而采取「强制密集道路」与「资本密集道路」的国家 / 学校则容易陷入失败。在此基础上我们便可以得到一个分类框架，将地方教育生态中的不同参与者放入其中：</p>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661288-5ff87225e456f." alt="img" width="500" /></p>
+  <p>上图展示了一种基本的分类框架，现行关于地方教育的讨论并没有对「县中」「超级中学」与「重点中学」作出区分。作为一种区分的尝试，我们认为，典型的「县中」可以被理解为采取「强制聚集道路」的中学，而「重点中学」尤其是「省会重点」则是采取「资本聚集道路」的中学，居中的「超级中学」则是采取「资本化强制道路」的中学。与欧洲国家的发展历程有所不同，具有强资本聚集属性的「省会中学」往往缺乏动力完成「强制聚集」（校内压力升级），因此纯粹意义上的「超级中学」更多是作为一种理想型而存在的，近十年来，几乎所有中学在发展过程中都有意识地朝这一路径靠拢，但在实际分析中，只有极少数的学校在特定时间段中能够并且确实采取了这一路线。</p>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661288-5ff87227826d2." alt="img" width="500" /></p>
+  <p>不妨在上述座标中添加一条斜线，这条斜线表达了教育场域转型后特定学校维持此前竞争地位所需要的「强制 – 资本」状况。基于此，我们可以进一步将我们此前曾分析过的对象加入到座标轴中，观察其转型路径及是否成功。可以发现，最接近「资本化强制道路」的是中后期的衡水中学与贵阳一中，由于其初始资源配置的差异，两校早期则分别采取了「强制聚集」与「资本聚集」的路线。类似的，清华中学、衡水二中与郸城一高也都采取了「强制聚集」路线，然而案例分析表明，由于进入转型的时间较晚，这三所学校也都根据自身初始状况采取了不同的路径：其中清华中学在转型之初省内尚未有强烈的竞争与资源流动限制，因此其可以通过相对平缓的曲线完成转型；而面临更强竞争压力的衡水二中与郸城一高则必须通过更高强度的强制聚集才能达成转型。相对而言，「云南师大附中」与「雅礼中学」则提供了两个更为典型的「资本聚集」样本，两校原本以较慢速度以资本聚集的模式推进转型，然而在面临竞争压力升级后不得不推动强制聚集以应对压力。</p>
+  <p>对不同转型路径的区分有助于我们理解不同层级的学校是如何主动参与或无奈卷入到这场转型游戏中。</p>
+  <h2 id="section-4">四、其他讨论</h2>
+  <p>1. 省会学校本来就一直比下层学校好，不是吗？</p>
+  <p>答：不是的，可参下表。</p>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661288-5ff872296db1a." alt="img" width="500" /></p>
+  <p>2. 教师流动如何直接作用于个体教育机会获得？</p>
+  <p>答：简单的算数题，A 地（非省会）此前有一位数学名师，由于水平出众，他 / 她每年带两个重点班，能够帮 120 个学生的分数从 60 到 130。一年后他 / 她被挖到省会顶级学校，在这里他的水准只能带次重点班，能够帮 120 个学生的分数从 100 到 130。这还没讨论他 / 她在原来学校带领学校教研的作用。</p>
+  <p>3. 学校差距具体如何作用于个体教育机会获得？</p>
+  <p>答：你出生在 A 地，十年前 A 地有一所重点中学，每年有 20% 的人能考上一本，70% 的人能考上本科，还有一所普通中学，每年 30% 的人考上本科。由于优秀师生持续流失，县政府决定将普通中学优秀教师集中到重点学校，此时重点学校一本率为 15%，本科率仍为 70%，普通中学本科率为 10%。全县本科率下降了。</p>
+  <p>4. 政府的作用具体在哪里？</p>
+  <p>答：篇幅限制没放案例。大致来说政府能够帮助：跨区招师生、财政补贴和其他政策。其中跨区域招生政策严密与否是一个非常有用的变量，在诸如山东和浙江这样的省份，学校间差距并没有显著扩大，核心原因正是两省非常早开始就阻止跨区招师生。</p>
+  <p>5. 本文不适用于哪些地区？</p>
+  <p>答：直辖市、浙江、山东（部分）、江苏（部分）。新疆、西藏不确定。</p>
+  <p>6. 继续研究要怎么进行？</p>
+  <p>答：一、案例研究，具体分析一个省或多个省内部的学校间的交互过程。工作量比一般案例研究大很多，因为至少要每个层次的学校都涉及。二、数据研究，CGSS2008 和刚出的 CFPS2018 中都提供了较好的特性支持相关数据研究，不过 CGSS 最新的两期（2013 与 2018）都放弃了这方面特性，CFPS2018 则仍旧未区分本科以上的学校层级（211、985 等），这是个比较大的问题。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/political%e7%90%86%e8%ae%ba%e5%bf%97-%e5%8e%bf%e5%9f%8e%e4%b8%ad%e5%ad%a6%e7%9a%84%e8%a1%b0%e8%b4%a5%ef%bc%9a1998-2018/">Political理论志 | 县城中学的衰败：1998-2018</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%A9%AC%E4%BA%91%E7%88%B8%E7%88%B8-%E4%BB%8A%E5%9C%A8%E5%93%AA%E5%84%BF-%E5%8F%8D%E6%AD%A3%E5%AE%98%E5%AA%92%E6%97%A0%E6%B3%95%E8%AF%B4">
+          德国之声 – “马云爸爸”今在哪儿？反正官媒无法说
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E8%87%AA%E7%94%B1%E4%BA%9A%E6%B4%B2-%E5%85%AD%E5%9B%9B%E6%8A%97%E5%91%BD%E7%9A%8438%E5%86%9B%E5%86%9B%E9%95%BF%E5%BE%90%E5%8B%A4%E5%85%88%E5%8E%BB%E4%B8%96">
+          自由亚洲 | 六四抗命的38军军长徐勤先去世
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E7%BE%8E%E5%9B%BD%E4%B9%8B%E9%9F%B3-%E6%B5%B7%E5%A4%96%E6%B8%AF%E4%BA%BA%E5%9B%A2%E4%BD%93%E5%8F%91%E8%A1%A8%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E%E8%B0%B4%E8%B4%A3%E6%B8%AF%E5%BA%9C%E5%8A%A0%E7%A0%81%E6%89%93%E5%87%BB%E5%BC%82%E8%A7%81">
+          美国之音 | 海外港人团体发表联合声明谴责港府加码打击异见
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E5%85%BD%E7%88%B7%E4%B8%A8%E8%BF%87%E5%8A%B3%E6%97%B6%E4%BB%A3">
+          兽爷丨过劳时代
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-08/%E4%BA%91%E5%8D%97-%E6%96%87%E6%98%8E-%E7%9B%91%E7%8B%B1%E8%99%90%E6%9D%80%E6%97%A0%E8%BE%9C%E7%94%9F%E5%91%BD%E7%9A%84%E6%89%8B%E6%AE%B5-1">
+            前一篇：云南“文明”监狱虐杀无辜生命的手段（1）
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-08/Scottish-nationalism-and-the-politics-of-patience">
+            后一篇：Scottish nationalism and the politics of patience
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-08/%E4%BA%91%E5%8D%97-%E6%96%87%E6%98%8E-%E7%9B%91%E7%8B%B1%E8%99%90%E6%9D%80%E6%97%A0%E8%BE%9C%E7%94%9F%E5%91%BD%E7%9A%84%E6%89%8B%E6%AE%B5-1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-08/Scottish-nationalism-and-the-politics-of-patience'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-08/%E8%87%AA%E7%94%B1%E4%BA%9A%E6%B4%B2-%E5%85%AD%E5%9B%9B%E6%8A%97%E5%91%BD%E7%9A%8438%E5%86%9B%E5%86%9B%E9%95%BF%E5%BE%90%E5%8B%A4%E5%85%88%E5%8E%BB%E4%B8%96'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-08/%E7%BE%8E%E5%9B%BD%E4%B9%8B%E9%9F%B3-%E6%B5%B7%E5%A4%96%E6%B8%AF%E4%BA%BA%E5%9B%A2%E4%BD%93%E5%8F%91%E8%A1%A8%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E%E8%B0%B4%E8%B4%A3%E6%B8%AF%E5%BA%9C%E5%8A%A0%E7%A0%81%E6%89%93%E5%87%BB%E5%BC%82%E8%A7%81'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-08/%E4%BA%91%E5%8D%97-%E6%96%87%E6%98%8E-%E7%9B%91%E7%8B%B1%E8%99%90%E6%9D%80%E6%97%A0%E8%BE%9C%E7%94%9F%E5%91%BD%E7%9A%84%E6%89%8B%E6%AE%B5-1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-08/Scottish-nationalism-and-the-politics-of-patience">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-08/%E8%87%AA%E7%94%B1%E4%BA%9A%E6%B4%B2-%E5%85%AD%E5%9B%9B%E6%8A%97%E5%91%BD%E7%9A%8438%E5%86%9B%E5%86%9B%E9%95%BF%E5%BE%90%E5%8B%A4%E5%85%88%E5%8E%BB%E4%B8%96">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-08/%E7%BE%8E%E5%9B%BD%E4%B9%8B%E9%9F%B3-%E6%B5%B7%E5%A4%96%E6%B8%AF%E4%BA%BA%E5%9B%A2%E4%BD%93%E5%8F%91%E8%A1%A8%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E%E8%B0%B4%E8%B4%A3%E6%B8%AF%E5%BA%9C%E5%8A%A0%E7%A0%81%E6%89%93%E5%87%BB%E5%BC%82%E8%A7%81">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

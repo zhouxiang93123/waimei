@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>特朗普离任前“挖坑”，拜登面临对华政策难题 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+" />
+    <meta property="og:description" content="
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="特朗普离任前“挖坑”，拜登面临对华政策难题" />
+    <meta property="twitter:title" content="特朗普离任前“挖坑”，拜登面临对华政策难题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210121%2Ftrump-china-biden%2F&t=%E7%89%B9%E6%9C%97%E6%99%AE%E7%A6%BB%E4%BB%BB%E5%89%8D%E2%80%9C%E6%8C%96%E5%9D%91%E2%80%9D%EF%BC%8C%E6%8B%9C%E7%99%BB%E9%9D%A2%E4%B8%B4%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%9A%BE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210121%2Ftrump-china-biden%2F&t=%E7%89%B9%E6%9C%97%E6%99%AE%E7%A6%BB%E4%BB%BB%E5%89%8D%E2%80%9C%E6%8C%96%E5%9D%91%E2%80%9D%EF%BC%8C%E6%8B%9C%E7%99%BB%E9%9D%A2%E4%B8%B4%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%9A%BE%E9%A2%98&d=2021-01-20&e=
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+
+
+  
+AMY QIN2021-01-21 12:32:25
+  
+  
+前总统在周三对支持者发表讲话。他的政府对中国的最后行动为下一阶段的美国外交政策带来了挑战。
+  
+  在任期即将结束的时候，特朗普政府对北京采取一系列行动，它称之为对抗中国专制领导层的必要措施。
+  其中包括，认定北京正在对遥远西部地区的维吾尔族人和其他穆斯林实施种族灭绝。一名美国高级特使和台湾总统举行视频会议，抛弃了长期以来限制美台湾官员交流的方针。北京宣称自治岛屿台湾为其领土的一部分。
+  但是，如此迅速地推进重大外交政策措施的决定，并且是在华盛顿动荡的时期，可能会使这些问题政治化，并削弱它们获得全球关注的能力。
+  尽管其中一些决策已经酝酿了数月时间，但推出的时机导致它们很容易被忽视。在北京看来，这些行动是离任政府为惹恼中国执政的共产党所做的最后努力。..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210121%2Ftrump-china-biden%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210121/trump-china-biden/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210121/trump-china-biden/&text=特朗普离任前“挖坑”，拜登面临对华政策难题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210121/trump-china-biden/&title=特朗普离任前“挖坑”，拜登面临对华政策难题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210121/trump-china-biden/&title=特朗普离任前“挖坑”，拜登面临对华政策难题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=特朗普离任前“挖坑”，拜登面临对华政策难题&body=
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210121/trump-china-biden/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210121/trump-china-biden/&title=特朗普离任前“挖坑”，拜登面临对华政策难题&caption=
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=特朗普离任前“挖坑”，拜登面临对华政策难题&url=https://cn.nytimes.com/usa/20210121/trump-china-biden/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>特朗普离任前“挖坑”，拜登面临对华政策难题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210121/trump-china-biden/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210121%2Ftrump-china-biden%2F&t=%E7%89%B9%E6%9C%97%E6%99%AE%E7%A6%BB%E4%BB%BB%E5%89%8D%E2%80%9C%E6%8C%96%E5%9D%91%E2%80%9D%EF%BC%8C%E6%8B%9C%E7%99%BB%E9%9D%A2%E4%B8%B4%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%9A%BE%E9%A2%98&d=2021-01-20&e=
+特朗普离任前“挖坑”，拜登面临对华政策难题
+——
+
+
+  
+AMY QIN2021-01-21 12:32:25
+  
+  
+前总统在周三对支持者发表讲话。他的政府对中国的最后行动为下一阶段的美国外交政策带来了挑战。
+  
+  在任期即将结束的时候，特朗普政府对北京采取一系列行动，它称之为对抗中国专制领导层的必要措施。
+  其中包括，认定北京正在对遥远西部地区的维吾尔族人和其他穆斯林实施种族灭绝。一名美国高级特使和台湾总统举行视频会议，抛弃了长期以来限制美台湾官员交流的方针。北京宣称自治岛屿台湾为其领土的一部分。
+  但是，如此迅速地推进重大外交政策措施的决定，并且是在华盛顿动荡的时期，可能会使这些问题政治化，并削弱它们获得全球关注的能力。
+  尽管其中一些决策已经酝酿了数月时间，但推出的时机导致它们很容易被忽视。在北京看来，这些行动是离任政府为惹恼中国执政的共产党所做的最后努力。..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210121%2Ftrump-china-biden%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611204271000-->
+<p><a href="https://cn.nytimes.com/usa/20210121/trump-china-biden/">特朗普离任前“挖坑”，拜登面临对华政策难题</a>
+——</p>
+
+<div>
+  <div>
+<em>AMY QIN<br />2021-01-21 12:32:25</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20china-trump1/merlin_182581512_fe42773d-0430-44ce-accc-48c0c7c94364-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">前总统在周三对支持者发表讲话。他的政府对中国的最后行动为下一阶段的美国外交政策带来了挑战。</small>
+  </div>
+  <p>在任期即将结束的时候，特朗普政府对北京采取一系列行动，它称之为对抗中国专制领导层的必要措施。</p>
+  <p>其中包括，认定北京正在对遥远西部地区的维吾尔族人和其他穆斯林实施<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210120/trump-china-xinjiang/">种族灭绝</a>。一名美国高级特使和台湾总统举行<a rel="nofollow" target="_blank" href="https://usun.usmission.gov/statement-by-ambassador-kelly-craft-on-taiwan-via-vtc/">视频会议</a>，<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/">抛弃了长期以来限制美台湾官员交流的方针</a>。北京宣称自治岛屿台湾为其领土的一部分。</p>
+  <p>但是，如此迅速地推进重大外交政策措施的决定，并且是在华盛顿动荡的时期，可能会使这些问题政治化，并削弱它们获得全球关注的能力。</p>
+  <p>尽管其中一些决策已经酝酿了数月时间，但推出的时机导致它们很容易被忽视。在北京看来，这些行动是离任政府为惹恼中国执政的共产党所做的最后努力。而且它们有可能使拜登陷入两难境地——要么逆转这些行动而显得对中国软弱，要么招致北京的愤怒。</p>
+  <p>此举受到许多台湾人、维吾尔人和特朗普政府曾想要支持的其他群体的欢迎。但是，有些人担心地缘政治给他们及他们的事业蒙上阴影。</p>
+  <p>“有很多人怀疑这一决定的合法性。”维吾尔族维权人士塔依尔·衣明(Tahir Imin)在美国宣布中国对其族裔的镇压<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210120/trump-china-xinjiang/">构成种族灭绝</a>后说。“但是所有事实清楚地表明，正在发生的就是种族灭绝。”</p>
+  <p>从短期来看，特朗普政府的举动可能将这些问题强行摆在拜登中国议程的前列，而不管后者自己的优先事项如何。这使新一届政府在维护人权和其他问题上保持对中国的战斗姿态，同时寻找合作领域，稳定双方不断恶化的关系的计划变得复杂起来。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20china-trump2/merlin_182573742_45b6e8bd-532b-4779-9b3e-a01fcec7c9a5-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">新疆一处据信是再教育营的设施。</small>
+  </div>
+  <p>北京可能会向拜登施加压力，要求他至少撤销特朗普政府的部分决定，作为其他问题恢复谈判的条件。但是，过快地撤销任何决定也可能向中国领导人发出一个信号，表明所有最近的行动都是可以讨论的。</p>
+  <p>拜登一直主张对中国保持强硬态度。他在竞选期间称中国在新疆的侵犯人权行为是“种族灭绝”。他选择的国务卿安东尼·布林肯(Antony J. Blinken)周二表示，他同意前任国务卿迈克·庞皮欧(Mike Pompeo)在其任期最后几天的举动，即宣布中国对维吾尔族人的镇压构成种族灭绝。</p>
+  <p>但是拜登政府已经表示，它将首先关注国内的优先事项。可能没有足够的资源来维持特朗普政府在贸易、技术和安全等领域发起的与中国的对抗。</p>
+  <p>“鉴于特朗普政府作出的这些行动，尤其是最后的一系列行动，中国人会想要更大的可预测性，”华盛顿国际战略研究中心(Center for Strategic and International Studies)亚洲事务高级顾问<a rel="nofollow" target="_blank" href="https://www.csis.org/people/bonnie-s-glaser" title="Link: https://www.csis.org/people/bonnie-s-glaser">葛来仪</a>(Bonnie S. Glaser)说。“他们将要求拜登政府做出更具体的承诺。”</p>
+  <p>面对来自华盛顿前任政府最后一刻的一系列行动，北京迄今为止表现出相对克制。</p>
+  <p>最近几周，中国官方媒体批评庞皮欧“疯狂”，称其是“史上最差国务卿”。周三，官方背景的小报《环球时报》<a rel="nofollow" target="_blank" href="https://www.globaltimes.cn/page/202101/1213362.shtml" title="Link: https://www.globaltimes.cn/page/202101/1213362.shtml">选取了中国互联网用户的评论</a>，嘲笑在任时的特朗普总统是“美国霸权的掘墓人”和“首位成功娱乐了中国人民同时毁了美国的美国总统”。</p>
+  <p>中国外交部驳回了种族灭绝的定性，称其为“恶意荒唐闹剧”。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20china-trump/20biden-world1-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">周二，华盛顿，拜登与妻子吉尔·拜登博士。</small>
+  </div>
+  <p>外交部发言人华春莹在周三的例行记者会上说：“这些年蓬佩奥散布的各种谎言和流毒必将随着他本人一起被扫进历史的垃圾堆。”</p>
+  <p>拜登宣誓就职几分钟后，中国外交部宣布将对庞皮欧和其他27名美国人——主要是特朗普政府官员——实施制裁，理由是他们“严重侵犯了中国的主权”。受到制裁的包括特朗普政府的许多中国鹰派高层人物，例如彼得·纳瓦罗(Peter Navarro)和马修·波廷格(Matthew Pottinger)。</p>
+  <p>外交部除了禁止这28名美国人及其家属进入中国内地、香港和澳门外，还表示他们及其关联企业、机构也已被限制与中国做生意。</p>
+  <p>但是，北京对拜登政府采取对抗还是合作的态度还有待观察。</p>
+  <p>北京已向拜登提出了建议，呼吁两国重启合作关系并加强合作。但它也在传播新的阴谋论，将美国军事实验室与新冠病毒联系起来，并发出了充满民族主义的信息，即面对全球挑战，“时与势在我们一边。”</p>
+  <p>《环球时报》在周日发表的<a rel="nofollow" target="_blank" href="https://opinion.huanqiu.com/article/41YQHtnOXBc">社论</a>中呼吁拜登“积极考虑废除上届政府在最后一段时间里以突袭方式出台的所有外交决定”。</p>
+  <p>中国人民大学国际关系教授<a rel="nofollow" target="_blank" href="http://en.igcu.pku.edu.cn/info/1019/1122.htm">时殷弘</a>在接受电话采访时说，“中国想知道哪些行动是一成不变的，哪些行动有希望得到缓解，哪些行动可以逆转。”</p>
+  <p>台湾问题将尤其棘手。特朗普政府以<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/asia-pacific/20200810/taiwan-us-azar-china/">官员访问</a>、<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/asia-pacific/20201125/taiwan-china-trump-biden/">经济合作承诺</a>和<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/asia-pacific/20200918/us-arms-sale-taiwan-china/" title="Link: https://cn.nytimes.com/asia-pacific/20200918/us-arms-sale-taiwan-china/">数十亿美元的武器销售</a>来支持台湾。这种不顾北京反对的做法使台湾再次成为中美关系的一个主要摩擦点。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20china-trump4/merlin_182521245_2e4e56af-4acd-497f-90a7-50770b36bfe1-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">台湾士兵周二在新竹举行军事演习。美国向台湾出售了价值数十亿美元的武器。</small>
+  </div>
+  <p>中国政府可能会向拜登政府施压，要求其恢复旨在限制美台官员之间互动的一系列方针。自1979年美国与台湾断交，转而承认北京以来，就一直在实施这些方针。</p>
+  <p>庞皮欧本月取消规则的举动——一些官员认为这是在<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210111/state-dept-taiwan-united-states-china/">没有经过适当审核</a>的情况下做出的——看起来更像是刺激拜登，不顾台湾面临的潜在风险，来反抗中国。此举受到许多台湾官员的欢迎，但台湾总统蔡英文一直没有就这个问题公开表态。蔡英文一直呼吁与北京进行对话，并担心紧张局势升级。</p>
+  <p>这种转变“旨在对抗中国，”2011年至2018年担任五角大楼中国事务主管的<a rel="nofollow" target="_blank" href="https://lkyspp.nus.edu.sg/cag/about-us/our-team/drew-thompson">德鲁·汤普森</a>(Drew Thompson)说，他现在是新加坡李光耀公共政策学院(Lee Kuan Yew School of Public Policy)的研究员。 “这是情绪化的，并非以目标为基础的。它不是基于台湾和美国的互惠利益。”</p>
+  <p>如果有必要，拜登可以<a rel="nofollow" target="_blank" href="https://www.brookings.edu/blog/order-from-chaos/2021/01/11/after-lifting-restrictions-on-us-taiwan-relations-what-comes-next/">启动对这些限制的审核</a>，并恢复其中一些限制。但这样做可能会惹恼台湾，并在一个已经得到两党支持的议题上招致国内的批评。</p>
+  <p>批评人士还指出，最近宣布一名美国官员计划访问台湾，证明特朗普政府支持台湾的最后举措，在很大程度上是为了故意惹恼北京。</p>
+  <p>按照官方的说法，美国驻联合国大使凯利·克拉夫特(Kelly Craft)此行的目的是为了支持台湾加入国际机构，这是中国反对的。但庞皮欧宣布此次访问是在一项谴责<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20210106/hong-kong-arrests-national-security-law/">中国在香港逮捕数十名民主人士</a><a rel="nofollow" target="_blank" href="https://www.state.gov/on-the-mass-arrests-of-democracy-advocates-in-hong-kong/" title="Link: https://www.state.gov/on-the-mass-arrests-of-democracy-advocates-in-hong-kong/">声明</a>的最后，实际上是将台湾的利益卷入了华盛顿和北京之间持续不断的争端之中。</p>
+  <p>这次行程后来被取消，取而代之的是与蔡英文的电话交谈。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20china-trump5/merlin_182024568_cb926e8d-5a39-4224-b17d-a0941173bbd7-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">警察将从香港立法会辞职的亲民主政治人士尹兆坚带走。前国务卿迈克·庞皮欧批评中国逮捕亲民主人士的做法。</small>
+  </div>
+  <p>“我们很像是两个大国之间的筹码，也让我们完全处在不稳定、不安全的状况之下，”台湾反对党国民党的立法委员马文君在访问被取消之前接受电话采访时说。</p>
+  <p>即将离任的特朗普政府惩罚中国大规模侵犯新疆维吾尔族和其他穆斯林少数民族人权的努力，<a rel="nofollow" target="_blank" href="https://foreignpolicy.com/2021/01/19/pompeo-uighur-genocide-declaration-china-propaganda/">同样存在对其政治动机的关切</a>。</p>
+  <p>尽管美国政府<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/07/31/us/politics/sanctions-china-xinjiang-uighurs.html">实施了制裁</a>，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2019/10/07/us/politics/us-to-blacklist-28-chinese-entities-over-abuses-in-xinjiang.html">将中国企业列入黑名单</a>，并<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210114/xinjiang-cotton-tomato-ban/">禁止从该地区进口棉花和番茄</a>，但在这个问题上的内部分歧往往是公开的。庞皮欧推动强硬措施，惩罚中国大规模关押<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/world/20200707/china-xinjiang-uighur-court/">维吾尔人</a>的行为，但特朗普拒绝了，因为他不想危及与北京的贸易谈判。</p>
+  <p>对于许多海外维吾尔人来说，美国政府周二宣布新疆发生种族灭绝的决定本应越快越好。这一认定可能为进一步制裁铺平道路，也可能获得其他国家的支持。</p>
+  <p>然而，一些维吾尔活动人士也表达了担忧，他们担心此举会显得纯粹是政治性的，特朗普政府受损的全球信誉可能会破坏这一事业。还有一些人说，他们希望拜登加强团结的承诺有助于在中国侵犯人权问题上向中国施加更大压力。</p>
+  <p>“我们真正想看到的是切实的行动，”弗吉尼亚州赫恩登的活动人士鲁珊·阿巴斯(Rushan Abbas)说，她的妹妹古丽仙(Gulshan)最近在新疆被判处20年有期徒刑。“不只是嘴上说说而已。”</p>
+  <p>Amy Chang Chien对本文有报道贡献。<br />Amy Qin是《纽约时报》中国记者，负责报道文化、政治和社会交叉议题。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/amyyqin">@amyyqin</a>。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/01/20/world/asia/trump-china-biden.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E9%87%8D%E8%BF%94%E5%9B%BD%E9%99%85%E8%88%9E%E5%8F%B0-%E6%8B%9C%E7%99%BB%E5%B0%86%E5%A6%82%E4%BD%95%E5%B8%A6%E9%A2%86%E7%BE%8E%E5%9B%BD-%E4%B8%8E%E4%B8%96%E7%95%8C%E6%8E%A5%E8%A7%A6">
+          重返国际舞台，拜登将如何带领美国“与世界接触”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93">
+          拜登就职演说：在危机与分裂中呼吁团结
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%AE%80%E6%8A%A5-%E6%8B%9C%E7%99%BB%E5%AE%A3%E8%AA%93%E5%B0%B1%E4%BB%BB%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F-%E9%83%91%E7%88%BD%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E4%B8%91%E9%97%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92">
+          简报：拜登宣誓就任美国总统；郑爽代孕弃养丑闻引发愤怒
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E9%83%91%E7%88%BD%E8%A2%AB%E6%8C%87%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92%E5%92%8C%E4%BA%89%E8%AE%AE">
+          中国明星郑爽被指代孕弃养引发愤怒和争议
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%BC%A0%E6%AC%A7%E7%BE%8E%E6%AC%B2%E5%85%A8%E9%9D%A2%E5%81%9C%E6%AD%A2%E5%90%91%E5%A4%A7%E9%99%86%E8%BD%A6%E4%BC%81%E6%8F%90%E4%BE%9B%E8%8A%AF%E7%89%87">
+            前一篇：传欧美欲全面停止向大陆车企提供芯片
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E6%89%B9%E8%A5%BF%E6%96%B9%E6%B7%A1%E5%8C%96%E8%BE%89%E7%91%9E%E7%96%AB%E8%8B%97%E5%8D%B1%E9%99%A9%E6%80%A7">
+            后一篇：中国媒体批西方淡化辉瑞疫苗危险性
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%BC%A0%E6%AC%A7%E7%BE%8E%E6%AC%B2%E5%85%A8%E9%9D%A2%E5%81%9C%E6%AD%A2%E5%90%91%E5%A4%A7%E9%99%86%E8%BD%A6%E4%BC%81%E6%8F%90%E4%BE%9B%E8%8A%AF%E7%89%87'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E6%89%B9%E8%A5%BF%E6%96%B9%E6%B7%A1%E5%8C%96%E8%BE%89%E7%91%9E%E7%96%AB%E8%8B%97%E5%8D%B1%E9%99%A9%E6%80%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%AE%80%E6%8A%A5-%E6%8B%9C%E7%99%BB%E5%AE%A3%E8%AA%93%E5%B0%B1%E4%BB%BB%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F-%E9%83%91%E7%88%BD%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E4%B8%91%E9%97%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%BC%A0%E6%AC%A7%E7%BE%8E%E6%AC%B2%E5%85%A8%E9%9D%A2%E5%81%9C%E6%AD%A2%E5%90%91%E5%A4%A7%E9%99%86%E8%BD%A6%E4%BC%81%E6%8F%90%E4%BE%9B%E8%8A%AF%E7%89%87">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E6%89%B9%E8%A5%BF%E6%96%B9%E6%B7%A1%E5%8C%96%E8%BE%89%E7%91%9E%E7%96%AB%E8%8B%97%E5%8D%B1%E9%99%A9%E6%80%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%AE%80%E6%8A%A5-%E6%8B%9C%E7%99%BB%E5%AE%A3%E8%AA%93%E5%B0%B1%E4%BB%BB%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F-%E9%83%91%E7%88%BD%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E4%B8%91%E9%97%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

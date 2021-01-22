@@ -1,0 +1,3095 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【一线采访】黑龙江疫情四起 民众不敢打疫苗 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+" />
+    <meta property="og:description" content="
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【一线采访】黑龙江疫情四起 民众不敢打疫苗" />
+    <meta property="twitter:title" content="【一线采访】黑龙江疫情四起 民众不敢打疫苗" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F20%2Fn12701511.htm&t=%E3%80%90%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF%E3%80%91%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E5%9B%9B%E8%B5%B7+%E6%B0%91%E4%BC%97%E4%B8%8D%E6%95%A2%E6%89%93%E7%96%AB%E8%8B%97" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F20%2Fn12701511.htm&t=%E3%80%90%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF%E3%80%91%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E5%9B%9B%E8%B5%B7+%E6%B0%91%E4%BC%97%E4%B8%8D%E6%95%A2%E6%89%93%E7%96%AB%E8%8B%97&d=2021-01-20&e=
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+
+
+  【大纪元2021年01月21日讯】（大纪元特约记者陈汉、李姗姗、林岑心采访报导）黑龙江绥化、齐齐哈尔多地爆发疫情，省会哈尔滨市郊区呼兰区、利民开发区、松北区、道里区亦发生病例。在疫情趋紧张之际，有民众透露，一些企事业单位、政府机关工作的人，都不敢打疫苗，害怕品质有问题。
+  绥化市望奎县全域高风险 昂昂溪爆疫情
+  绥化市望奎县的确诊病例还在急速增加，望奎县全域已调整为高风险地区。据当地的封锁规定，望奎县每个家庭之前每3天可有1人外出采购，现在是7天之内不允许出门，完全在家封闭，生活堪虑。
+  齐齐哈尔昂昂溪民众陈先生表示，已经有一周没出门了，现在疫情十分严重，“现在都严重了，都不让出门了，小区都不让出，从12日开始封到现在，街上全关门，都在家里等通知呢。昂昂溪有十几例，都封了。”
+  有民众透露，“昂昂溪严重程度，不次于望..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F20%2Fn12701511.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/1/20/n12701511.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/1/20/n12701511.htm&text=【一线采访】黑龙江疫情四起 民众不敢打疫苗&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/1/20/n12701511.htm&title=【一线采访】黑龙江疫情四起 民众不敢打疫苗" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/1/20/n12701511.htm&title=【一线采访】黑龙江疫情四起 民众不敢打疫苗" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【一线采访】黑龙江疫情四起 民众不敢打疫苗&body=
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/1/20/n12701511.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/1/20/n12701511.htm&title=【一线采访】黑龙江疫情四起 民众不敢打疫苗&caption=
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【一线采访】黑龙江疫情四起 民众不敢打疫苗&url=https://www.epochtimes.com/gb/21/1/20/n12701511.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【一线采访】黑龙江疫情四起 民众不敢打疫苗</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/1/20/n12701511.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F20%2Fn12701511.htm&t=%E3%80%90%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF%E3%80%91%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E5%9B%9B%E8%B5%B7+%E6%B0%91%E4%BC%97%E4%B8%8D%E6%95%A2%E6%89%93%E7%96%AB%E8%8B%97&d=2021-01-20&e=
+【一线采访】黑龙江疫情四起 民众不敢打疫苗
+——
+
+
+  【大纪元2021年01月21日讯】（大纪元特约记者陈汉、李姗姗、林岑心采访报导）黑龙江绥化、齐齐哈尔多地爆发疫情，省会哈尔滨市郊区呼兰区、利民开发区、松北区、道里区亦发生病例。在疫情趋紧张之际，有民众透露，一些企事业单位、政府机关工作的人，都不敢打疫苗，害怕品质有问题。
+  绥化市望奎县全域高风险 昂昂溪爆疫情
+  绥化市望奎县的确诊病例还在急速增加，望奎县全域已调整为高风险地区。据当地的封锁规定，望奎县每个家庭之前每3天可有1人外出采购，现在是7天之内不允许出门，完全在家封闭，生活堪虑。
+  齐齐哈尔昂昂溪民众陈先生表示，已经有一周没出门了，现在疫情十分严重，“现在都严重了，都不让出门了，小区都不让出，从12日开始封到现在，街上全关门，都在家里等通知呢。昂昂溪有十几例，都封了。”
+  有民众透露，“昂昂溪严重程度，不次于望..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F20%2Fn12701511.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611193521000-->
+<p><a href="https://www.epochtimes.com/gb/21/1/20/n12701511.htm">【一线采访】黑龙江疫情四起 民众不敢打疫苗</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年01月21日讯】（大纪元特约记者陈汉、李姗姗、林岑心采访报导）黑龙江绥化、齐齐哈尔多地爆发疫情，省会哈尔滨市郊区呼兰区、利民开发区、松北区、道里区亦发生病例。在疫情趋紧张之际，有民众透露，一些企事业单位、政府机关工作的人，都不敢打疫苗，害怕品质有问题。</p>
+  <h2 id="section">绥化市望奎县全域高风险 昂昂溪爆疫情</h2>
+  <p>绥化市望奎县的确诊病例还在急速增加，望奎县全域已调整为高风险地区。据当地的封锁规定，望奎县每个家庭之前每3天可有1人外出采购，现在是7天之内不允许出门，完全在家封闭，生活堪虑。</p>
+  <p>齐齐哈尔昂昂溪民众陈先生表示，已经有一周没出门了，现在疫情十分严重，“现在都严重了，都不让出门了，小区都不让出，从12日开始封到现在，街上全关门，都在家里等通知呢。昂昂溪有十几例，都封了。”</p>
+  <p>有民众透露，“昂昂溪严重程度，不次于望奎，有的（病例）它就不给你报了。”</p>
+  <p>此外，齐齐哈尔富拉尔基区也紧急发布通知，要求全区居民一律居家不得外出，家庭成员间保持安全距离。</p>
+  <h2 id="section-1">大庆市肇州县现病例 隔离政策被批昏招</h2>
+  <p>14日起，黑龙江肇州县实施了“21天集中隔离+7天居家隔离”管控措施，隔离费用均自理。</p>
+  <p>这个隔离政策被网友评为“史上最严的隔离政策”，在网上引发热议，连官媒新华社也批是“昏招”。在压力下，肇州县1月17日调整防控政策。</p>
+  <p>有知情人士告诉大纪元，大庆市肇州县、肇东县封闭得很严，乡道间已经设置土堆。“那个乡村现在整个都是封锁了，就是道与道之间，现在整个都不允许过去，原来说是有警察（看着），现在看来警察也没有了，直接就整一车大土，往中间一扬，根本车子就过不去。”</p>
+  <p>大庆市肇州县居民林女士说，肇州县所有酒店都不让住了，“现在都封城了，不让进，也不让出，有的小区封了，有的还没有封，不晓得到底有没有（病例）呢！”</p>
+  <h2 id="section-2">哈尔滨各区疫情蔓延 物价飞涨</h2>
+  <p>有鉴于黑龙江各县疫情严重，一直有消息传出哈尔滨市封城、双城区封路，19日，黑龙江市有18人以网路谣言被处罚。</p>
+  <p>▼呼兰区北医院采检点，现场视频显示十分拥挤，民众担心会感染。（网友提供）</p>
+  <p>    <center><iframe src="https://www.youtube.com/embed/gQIp2dpp070" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+从18日开始，哈尔滨市呼兰区、利民开发区、道里区群力新城中区出现病例，也扩散到松北区乐业镇、南岗区。</p>
+  <p>19日深夜，哈尔滨市急发通告，关停麻将馆、歌厅、舞厅、网吧、影院等公共场所。</p>
+  <p>呼兰区某出租车业者说，“哈尔滨市松北区让进不让出，呼兰区整个街道都封了，不让进也不让出。”</p>
+  <p>哈尔滨市民陈新（化名）告诉大纪元，哈尔滨市已经接近要封城了，官方下发了禁止聚集的各类通知。</p>
+  <p>陈新还说，“整个哈尔滨的物价高得离谱了，大葱现在是11块钱一斤，鸡蛋八块钱一斤，那肉根本就不敢看了，猪肉价基本就三十块钱以上，牛羊肉全四十五十块钱一斤。”</p>
+  <p>他认为，现在哈尔滨是“外松内紧”，已经十分紧张。但即使如此，许多企事业的人员都不敢打疫苗，对疫苗没信心。</p>
+  <p>陈新说，“我的朋友同学事业单位多、待政府机关的多，现在疫苗都不敢打，就是你让我打，我也不打，免费也不打。主要有两个原因，第一是害怕，疫苗的品质问题，第二是有出现不良反应的，他们看到了，所以也不敢打。现在我家没有一个人打的。”</p>
+  <p>陈新认为，现在官方报的数字，老百姓都不大相信，大家都知道，官方的数字还要乘上10以上。</p>
+  <p>责任编辑：李穹 #</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E6%B2%B3%E5%8C%97%E8%80%81%E4%BA%BA%E5%A4%96%E5%87%BA%E8%A2%AB%E7%BB%91%E6%A0%91%E4%B8%8A-%E8%A2%AB%E6%8C%87%E6%96%87%E9%9D%A9%E9%A3%8E%E5%86%8D%E7%8E%B0">
+          河北老人外出被绑树上 被指文革风再现
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E5%86%85%E5%B9%95-%E5%8E%8B%E5%88%B6%E8%88%86%E8%AE%BA-%E6%A1%82%E6%9E%97%E7%BD%91%E4%BF%A1%E5%8A%9E%E6%8A%B1%E6%80%A8%E4%BA%BA%E6%89%8B%E4%B8%8D%E5%A4%9F">
+          【内幕】压制舆论 桂林网信办抱怨人手不够
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83">
+          网文：大陆经济投入13元至多产出1元
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-20">
+          三退声明精选（2021/01/20）
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83">
+            前一篇：网文：大陆经济投入13元至多产出1元
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E5%88%B6%E8%A3%81%E5%A4%9A%E5%90%8D%E7%BE%8E%E5%89%8D%E5%AE%98%E5%91%98-%E4%B8%AD%E5%A4%96%E4%BA%A4%E9%83%A8-%E8%93%AC%E4%BD%A9%E5%A5%A5%E6%98%AF-%E4%B8%96%E7%BA%AA%E7%AC%91%E8%AF%9D">
+            后一篇：制裁多名美前官员 中外交部：蓬佩奥是「世纪笑话」 
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E5%88%B6%E8%A3%81%E5%A4%9A%E5%90%8D%E7%BE%8E%E5%89%8D%E5%AE%98%E5%91%98-%E4%B8%AD%E5%A4%96%E4%BA%A4%E9%83%A8-%E8%93%AC%E4%BD%A9%E5%A5%A5%E6%98%AF-%E4%B8%96%E7%BA%AA%E7%AC%91%E8%AF%9D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E5%86%85%E5%B9%95-%E5%8E%8B%E5%88%B6%E8%88%86%E8%AE%BA-%E6%A1%82%E6%9E%97%E7%BD%91%E4%BF%A1%E5%8A%9E%E6%8A%B1%E6%80%A8%E4%BA%BA%E6%89%8B%E4%B8%8D%E5%A4%9F'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E5%88%B6%E8%A3%81%E5%A4%9A%E5%90%8D%E7%BE%8E%E5%89%8D%E5%AE%98%E5%91%98-%E4%B8%AD%E5%A4%96%E4%BA%A4%E9%83%A8-%E8%93%AC%E4%BD%A9%E5%A5%A5%E6%98%AF-%E4%B8%96%E7%BA%AA%E7%AC%91%E8%AF%9D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-20/%E5%86%85%E5%B9%95-%E5%8E%8B%E5%88%B6%E8%88%86%E8%AE%BA-%E6%A1%82%E6%9E%97%E7%BD%91%E4%BF%A1%E5%8A%9E%E6%8A%B1%E6%80%A8%E4%BA%BA%E6%89%8B%E4%B8%8D%E5%A4%9F">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%BD%91%E6%96%87-%E5%A4%A7%E9%99%86%E7%BB%8F%E6%B5%8E%E6%8A%95%E5%85%A513%E5%85%83%E8%87%B3%E5%A4%9A%E4%BA%A7%E5%87%BA1%E5%85%83">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

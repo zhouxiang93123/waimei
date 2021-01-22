@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：民主党人提交弹劾条款；台湾新护照淡化中华民国 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+" />
+    <meta property="og:description" content="
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：民主党人提交弹劾条款；台湾新护照淡化中华民国" />
+    <meta property="twitter:title" content="简报：民主党人提交弹劾条款；台湾新护照淡化中华民国" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210112%2Fus-trump-impeachment-taiwan-new-passport%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE%EF%BC%9B%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210112%2Fus-trump-impeachment-taiwan-new-passport%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE%EF%BC%9B%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD&d=2021-01-11&e=
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-12 10:00:21
+  
+  
+旧版和新版的护照封面。“中华民国”的中文字样保留，英文在新版上的字体缩小了。
+  
+  • 台湾新版护照淡化中华民国痕迹。台湾官方名称“中华民国”仍以中文出现在护照封面上，但其英文翻译字体“Republic of China”被大大缩小，原有的“Taiwan Passport”则被放大加粗。台湾政府在大流行早期表示，新版设计旨在避免台湾公民被与大陆人混淆，但护照改版料将推动两岸紧张关系升级。
+  • 中国太阳能公司被指使用维吾尔强迫劳工。地平线咨询公司发布的一份报告显示，新疆正在崛起的太阳能行业与当地一项广泛的劳务派遣计划有关。该报告称，中国多家全球最大的太阳能公司与政府合作，吸纳新疆工人，并使其接受“军事化”培训，存在强迫劳..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210112%2Fus-trump-impeachment-taiwan-new-passport%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/&text=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/&title=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/&title=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国&body=
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/&title=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国&caption=
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：民主党人提交弹劾条款；台湾新护照淡化中华民国&url=https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：民主党人提交弹劾条款；台湾新护照淡化中华民国</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210112%2Fus-trump-impeachment-taiwan-new-passport%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE%EF%BC%9B%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD&d=2021-01-11&e=
+简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-12 10:00:21
+  
+  
+旧版和新版的护照封面。“中华民国”的中文字样保留，英文在新版上的字体缩小了。
+  
+  • 台湾新版护照淡化中华民国痕迹。台湾官方名称“中华民国”仍以中文出现在护照封面上，但其英文翻译字体“Republic of China”被大大缩小，原有的“Taiwan Passport”则被放大加粗。台湾政府在大流行早期表示，新版设计旨在避免台湾公民被与大陆人混淆，但护照改版料将推动两岸紧张关系升级。
+  • 中国太阳能公司被指使用维吾尔强迫劳工。地平线咨询公司发布的一份报告显示，新疆正在崛起的太阳能行业与当地一项广泛的劳务派遣计划有关。该报告称，中国多家全球最大的太阳能公司与政府合作，吸纳新疆工人，并使其接受“军事化”培训，存在强迫劳..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210112%2Fus-trump-impeachment-taiwan-new-passport%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610419472000-->
+<p><a href="https://cn.nytimes.com/morning-brief/20210112/us-trump-impeachment-taiwan-new-passport/">简报：民主党人提交弹劾条款；台湾新护照淡化中华民国</a>
+——</p>
+
+<div>
+  <div>
+<em>KONEY BAI,KONEY BAI<br />2021-01-12 10:00:21</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/11/world/11taiwan-2/merlin_176473032_c812fc18-d0ce-424a-b1f8-c37582741c28-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">旧版和新版的护照封面。“中华民国”的中文字样保留，英文在新版上的字体缩小了。</small>
+  </div>
+  <p>• 台湾新版护照<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/world/asia/taiwan-new-passport.html">淡化中华民国痕迹</a>。台湾官方名称“中华民国”仍以中文出现在护照封面上，但其英文翻译字体“Republic of China”被大大缩小，原有的“Taiwan Passport”则被放大加粗。台湾政府在大流行早期表示，新版设计旨在避免台湾公民被与大陆人混淆，但护照改版料将推动两岸紧张关系升级。</p>
+  <p>• 中国太阳能公司<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/08/business/economy/china-solar-companies-forced-labor-xinjiang.html">被指使用维吾尔强迫劳工</a>。地平线咨询公司发布的一份报告显示，新疆正在崛起的太阳能行业与当地一项广泛的劳务派遣计划有关。该报告称，中国多家全球最大的太阳能公司与政府合作，吸纳新疆工人，并使其接受“军事化”培训，存在强迫劳动迹象。但中国政府对此表示否认，称就业均为自愿。这份报告还暗示，全球太阳能行业的大部分供应链可能涉嫌强迫劳动，此类指控可能导致华盛顿推出禁令。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/08/us/politics/08dc-impeach/merlin_166159365_1c53c98c-50d0-453e-8a49-54b9fe518007-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">2019年12月，众议院投票弹劾特朗普总统。</small>
+  </div>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/11/us/joe-biden-trump#pence-impeachment">聚焦特朗普二次弹劾</a>：众议院民主党人提出针对特朗普的弹劾条款，指控其“煽动针对美国政府的暴力”；此前，共和党人阻止了一项正式呼吁彭斯根据第25修正案剥夺总统权力的动议。针对弹劾指控的投票最早可能在周三进行。宪法专家表示，参议院的弹劾审判可能会让特朗普无法再在未来担任公职。这里是弹劾条款的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2021/01/11/us/articles-impeachment-trump.html">全文</a>。</p>
+  <p>• 如何在12天内弹劾美国总统？美国历史上从未有过总统遭到两次弹劾，或在任内的最后时刻遭到弹劾的情况，也从未有总统被判有罪。目前国会正在推动这一进程，而距离特朗普的任期结束只剩下数天。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210111/impeachment-president-trump-capitol/">阅读本文中文版</a>）</p>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/us/chad-wolf-resigns.html">美国国土安全部代理部长辞职</a>。在距离下任总统就职典礼仅剩九天时，查德·沃尔夫宣布辞职。他本应帮助协调安保，以应对可能存在的暴力威胁。沃尔夫表示，离职的部分原因在于法院一项裁决判定特朗普的一些移民政策无效，提出了对其任命不合法的可能性。沃尔夫曾于上周公开呼吁特朗普对国会暴动发出谴责。</p>
+  <p>• 拜登<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/us/politics/cia-biden-burns.html">提名资深外交官威廉·伯恩斯为CIA局长</a>。拜登似乎决定把这个情报机构交给一位广受民间赞誉的职业外交官，伯恩斯曾任美国驻俄罗斯大使，还曾带领美国代表团与伊朗进行秘密会谈。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/10/us/politics/10dc-memo/merlin_182059503_277ffde3-2525-4a50-b617-8ea5100649e8-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">上周三，特朗普总统在白宫简报室，那里正在播放一段他上传到Twitter的关于冲击国会大厦暴徒的视频。</small>
+  </div>
+  <p>• 被Twitter封杀后，特朗普要去哪里寻求关注？特朗普是通过电视成为名人的，但Twitter给了他一个独特的发泄渠道，让他不受总统身份规范地表达自己的想法。现在失去了这个平台，他将如何自我表达和寻求关注？（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210111/trump-twitter/">阅读本文中文版</a>）</p>
+  <p>• Twitter永久封禁特朗普帐号违反第一修正案吗？法学学者说，这一决定可能不明智，但完全合法。因为第一修正案禁止政府审查，但不适用于私营企业的决定。但也有人指出，少数社交媒体巨头对言论的巨大影响力值得担忧。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210111/first-amendment-free-speech/">阅读本文中文版</a>）</p>
+  <p>• 梅拉尼娅谴责国会暴乱，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/us/politics/melania-trump-statement-capitol-riot.html">并称对自己的攻击是“可耻的”</a>。在对国会上周发生的暴乱事件沉默五天后，梅拉尼娅首度就此发声。这很可能是她作为第一夫人所做的最后一次公开声明，但其对自我遭遇的关注甚至招致了一些长期支持者的批评。</p>
+  <p>• 美国国务院<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/11/us/joe-biden-trump/cuba-terrorism">将古巴列为恐怖主义资助国</a>。此举将自动触发美国对古巴的制裁，包括美国的对外援助限制、出口控制和金融限制。特朗普政府在执政最后时刻祭出的外交政策将使拜登政府处理哈瓦那问题的计划复杂化。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-top/merlin_181985895_b90b325f-8dfa-4adb-9525-d7441c4f4246-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">中国武汉的一场展览纪念了该市一年前抗击新冠疫情的事迹。</small>
+  </div>
+  <p>• 武汉封城临近周年，中共力推抗疫胜利叙事。政府近期部署了检查员队伍，清理互联网对武汉疫情的批评性报道。宣传机构推出了正面宣传的视频和夸赞的文章，强调复兴和重生，并把习近平塑造成英雄领袖。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/">阅读本文中文版</a>）</p>
+  <p>• 印尼<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/world/indonesia-gives-emergency-approval-to-a-vaccine-from-a-chinese-company.html">为中国科兴疫苗下发紧急使用许可</a>。该国临床试验表明，科兴疫苗有效率达到65.3%（此前<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20210108/china-coronavirus-vaccine-sinovac/">巴西称科兴疫苗有效率为78%</a>）。印尼穆斯林神职机构上周曾宣布科兴疫苗“清真”，未来几周，这个世界上穆斯林人口最多的国家将启动大规模接种。此外，菲律宾表示，已与科兴达成2500万剂疫苗的供货协议，这使中国疫苗在亚洲铺开再进一步。</p>
+  <p>• 中国官方称<a rel="nofollow" target="_blank" href="http://www.xinhuanet.com/2021-01/11/c_1126969410.htm">WHO新冠病毒溯源专家组将访华</a>。新华社援引国家卫健委消息称，经双方协商，世卫组织新冠病毒溯源国际专家组将于1月14日到中国考察，与中方科学家就新冠病毒溯源进行联合科研合作。</p>
+  <p><em>感谢阅读今天的简报</em><em>，新读者请</em><em><a rel="nofollow" target="_blank" href="https://sso.nytcn.me/email/?source=top-right">点击此处订阅</a>。点击<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/morning-brief/">这里</a>查看往日更新</em><em>。</em><em>欢迎在Twitter(</em><a rel="nofollow" target="_blank" href="https://twitter.com/nytchinese"><em>@nytchinese</em></a><em>)、</em><a rel="nofollow" target="_blank" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw"><em>Instagram</em></a><em>和</em><a rel="nofollow" target="_blank" href="https://www.facebook.com/nytimeschinese.t/"><em>Facebook</em></a><em>上关注我们，了解更多中文资讯。也欢迎访问中文网</em><a rel="nofollow" target="_blank" href="https://cn.nytimes.com/"><em>首页</em></a><em>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97">
+          特朗普会因煽动性言论面临法律惩罚吗?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE">
+          我们为什么要再次弹劾特朗普
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+          新疆发生种族灭绝，我才开始寻根
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%8F%B0%E6%B9%BE%E6%96%B0%E7%89%88%E6%8A%A4%E7%85%A7%E6%94%BE%E5%A4%A7-TAIWAN-%E5%AD%97%E6%A0%B7-%E5%8A%9B%E6%B1%82%E6%8F%90%E5%8D%87%E8%BE%A8%E8%AF%86%E5%BA%A6">
+          台湾新版护照放大“TAIWAN”字样，力求提升辨识度
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+            前一篇：新疆发生种族灭绝，我才开始寻根
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%A4%A7%E9%99%86%E6%98%A8%E5%A4%A9%E6%96%B0%E5%A2%9E55%E4%BE%8B%E5%86%A0%E7%97%85%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B">
+            后一篇：大陆昨天新增55例冠病确诊病例
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%A4%A7%E9%99%86%E6%98%A8%E5%A4%A9%E6%96%B0%E5%A2%9E55%E4%BE%8B%E5%86%A0%E7%97%85%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%A4%A7%E9%99%86%E6%98%A8%E5%A4%A9%E6%96%B0%E5%A2%9E55%E4%BE%8B%E5%86%A0%E7%97%85%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>肉类地图册：是时候重新思考我们吃什么了 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+肉类地图册：是时候重新思考我们吃什么了
+——
+" />
+    <meta property="og:description" content="
+肉类地图册：是时候重新思考我们吃什么了
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="肉类地图册：是时候重新思考我们吃什么了" />
+    <meta property="twitter:title" content="肉类地图册：是时候重新思考我们吃什么了" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%2582%2589%25E7%25B1%25BB%25E5%259C%25B0%25E5%259B%25BE%25E5%2586%258C%25EF%25BC%259A%25E6%2598%25AF%25E6%2597%25B6%25E5%2580%2599%25E9%2587%258D%25E6%2596%25B0%25E6%2580%259D%25E8%2580%2583%25E6%2588%2591%25E4%25BB%25AC%25E5%2590%2583%25E4%25BB%2580%25E4%25B9%2588%25E4%25BA%2586%2Fa-56179663&t=%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%2582%2589%25E7%25B1%25BB%25E5%259C%25B0%25E5%259B%25BE%25E5%2586%258C%25EF%25BC%259A%25E6%2598%25AF%25E6%2597%25B6%25E5%2580%2599%25E9%2587%258D%25E6%2596%25B0%25E6%2580%259D%25E8%2580%2583%25E6%2588%2591%25E4%25BB%25AC%25E5%2590%2583%25E4%25BB%2580%25E4%25B9%2588%25E4%25BA%2586%2Fa-56179663&t=%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86&d=2021-01-09&e=
+肉类地图册：是时候重新思考我们吃什么了
+——
+
+
+  
+Gero Rueter 2021-01-09T13:00:57.783Z
+  
+  
+德国是欧洲主要的猪肉生产国，在肉类工业生产中扮演着重要作用
+  
+  （德国之声中文网）"工业化的肉类生产不仅带来不安全的工作环境，还驱使人们背井离乡，并导致森林伐戮、生物多样性丧失和杀虫剂的滥用--它也是气候危机的主要驱动因素之一。"
+  这是关心生态环境的智库--伯尔基金会（Heinrich Böll Foundation）的负责人乌姆西格（Barbara Unmüssig）在柏林举行"2021年肉类地图册"发布会上的警告。
+  这本特别的地图册总共50页，由伯尔基金会、德国地球之友（BUND）和国际月刊《世界外交论衡》（Le Monde Diplomatique）合作出版，概述了全球肉类生产的趋势及其对人类健康和地球生态的影响。
+  例..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%2582%2589%25E7%25B1%25BB%25E5%259C%25B0%25E5%259B%25BE%25E5%2586%258C%25EF%25BC%259A%25E6%2598%25AF%25E6%2597%25B6%25E5%2580%2599%25E9%2587%258D%25E6%2596%25B0%25E6%2580%259D%25E8%2580%2583%25E6%2588%2591%25E4%25BB%25AC%25E5%2590%2583%25E4%25BB%2580%25E4%25B9%2588%25E4%25BA%2586%2Fa-56179663" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663&text=肉类地图册：是时候重新思考我们吃什么了&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663&title=肉类地图册：是时候重新思考我们吃什么了" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663&title=肉类地图册：是时候重新思考我们吃什么了" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=肉类地图册：是时候重新思考我们吃什么了&body=
+肉类地图册：是时候重新思考我们吃什么了
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663&title=肉类地图册：是时候重新思考我们吃什么了&caption=
+肉类地图册：是时候重新思考我们吃什么了
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=肉类地图册：是时候重新思考我们吃什么了&url=https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>肉类地图册：是时候重新思考我们吃什么了</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%2582%2589%25E7%25B1%25BB%25E5%259C%25B0%25E5%259B%25BE%25E5%2586%258C%25EF%25BC%259A%25E6%2598%25AF%25E6%2597%25B6%25E5%2580%2599%25E9%2587%258D%25E6%2596%25B0%25E6%2580%259D%25E8%2580%2583%25E6%2588%2591%25E4%25BB%25AC%25E5%2590%2583%25E4%25BB%2580%25E4%25B9%2588%25E4%25BA%2586%2Fa-56179663&t=%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86&d=2021-01-09&e=
+肉类地图册：是时候重新思考我们吃什么了
+——
+
+
+  
+Gero Rueter 2021-01-09T13:00:57.783Z
+  
+  
+德国是欧洲主要的猪肉生产国，在肉类工业生产中扮演着重要作用
+  
+  （德国之声中文网）"工业化的肉类生产不仅带来不安全的工作环境，还驱使人们背井离乡，并导致森林伐戮、生物多样性丧失和杀虫剂的滥用--它也是气候危机的主要驱动因素之一。"
+  这是关心生态环境的智库--伯尔基金会（Heinrich Böll Foundation）的负责人乌姆西格（Barbara Unmüssig）在柏林举行"2021年肉类地图册"发布会上的警告。
+  这本特别的地图册总共50页，由伯尔基金会、德国地球之友（BUND）和国际月刊《世界外交论衡》（Le Monde Diplomatique）合作出版，概述了全球肉类生产的趋势及其对人类健康和地球生态的影响。
+  例..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%2582%2589%25E7%25B1%25BB%25E5%259C%25B0%25E5%259B%25BE%25E5%2586%258C%25EF%25BC%259A%25E6%2598%25AF%25E6%2597%25B6%25E5%2580%2599%25E9%2587%258D%25E6%2596%25B0%25E6%2580%259D%25E8%2580%2583%25E6%2588%2591%25E4%25BB%25AC%25E5%2590%2583%25E4%25BB%2580%25E4%25B9%2588%25E4%25BA%2586%2Fa-56179663" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610200434000-->
+<p><a href="https://www.dw.com/zh/%E8%82%89%E7%B1%BB%E5%9C%B0%E5%9B%BE%E5%86%8C%EF%BC%9A%E6%98%AF%E6%97%B6%E5%80%99%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E6%88%91%E4%BB%AC%E5%90%83%E4%BB%80%E4%B9%88%E4%BA%86/a-56179663">肉类地图册：是时候重新思考我们吃什么了</a>
+——</p>
+
+<div>
+  <div>
+<em>Gero Rueter <br />2021-01-09T13:00:57.783Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/54231078_303.jpg" width="100%" />  <div>
+<small style="color: #999;">德国是欧洲主要的猪肉生产国，在肉类工业生产中扮演着重要作用</small>
+  </div>
+  <p>（德国之声中文网）"工业化的肉类生产不仅带来不安全的工作环境，还驱使人们背井离乡，并导致森林伐戮、生物多样性丧失和杀虫剂的滥用--它也是气候危机的主要驱动因素之一。"</p>
+  <p>这是关心生态环境的智库--伯尔基金会（Heinrich Böll Foundation）的负责人乌姆西格（Barbara Unmüssig）在柏林举行"2021年肉类地图册"发布会上的警告。</p>
+  <p>这本特别的地图册总共50页，由伯尔基金会、德国地球之友（BUND）和国际月刊《世界外交论衡》（Le Monde Diplomatique）合作出版，概述了全球肉类生产的趋势及其对人类健康和地球生态的影响。</p>
+  <p>例如，它强调了集约化畜牧业中抗生素的滥用如何导致越来越多的抗药性病菌，从而威胁到人类医用药物的有效性。</p>
+  <p>同样，为了动物饲料而砍伐森林也造成对人类健康的威胁。由于自然生境的丧失，动物和人类接触更加密切，病毒更容易互相传播，可能导致新的大流行瘟疫。</p>
+  <p>发布会上展示的一项调查报告称，15岁至29岁的年轻人被问及对肉类的看法时，他们中的大多数人表示拒绝接受目前的肉类生产方式。</p>
+  <p><strong>雨林的消失</strong></p>
+  <p>全球人口增长和经济发展是肉类需求增加的驱动力。1960年，地球上只有30亿人。根据这份报告，当时的肉类消费量约为7000万公吨，相当于全球平均每人每年消费23公斤。到了2018年，人口增长到76亿，而肉类的消费量增长了7倍，达到3.5亿公吨左右，也就是全球平均每人每年消费46公斤。</p>
+  <p>伴随着这种消费的一个关键问题是，肉类生产需要大量的土地。随着全球对肉类的需求持续增长，可用耕地面临的压力也在增加。因此，在巴西等国家，为了种植动物饲料作物，大片的森林正在消失。</p>
+  <p>既要养活地球上的人口，又要阻止砍伐森林，并规划一些土地重新造林，专家们呼吁重新思考饮食问题：少吃肉，多吃素。植物性食材的生产用地面积需求要小得多。</p>
+  <p>在去年发表的一份关于地球健康的报告中，波茨坦气候影响研究所(PIK)所长罗克斯特伦（Johan Rockström）等全球顶尖科学家建议人类改变饮食习惯，将每人每年摄入的肉类和乳制品控制在16公斤和33公斤，而目前北美、南美以及欧洲的肉类消费量可能是这个数字的7倍之多。</p>
+  <p><strong>农药的滥用</strong></p>
+  <p>除了揭示全球肉类加工产业的破坏力量之外，《肉类地图册》的作者还阐明了食肉与全球化学工业的关系。他们写道，大型化工企业仍在销售危险的、甚至是被禁用的农药。这些企业包括欧洲的拜耳、巴斯夫、先正达和美国的科迪华等化工巨头。</p>
+  <p>乌姆西格认为，农药的滥用威胁着成千上万人的生命。德国地球之友主席班特（Olaf Bandt）呼吁， "德国政府必须尽一切努力确保德国企业不再出口被欧盟禁用的毒药"。</p>
+  <p>乌姆西格警告说，欧盟和南美洲国家的南方共同市场（MERCOSUR）协议将加剧危险物质的使用。"关税的取消将导致更多的农药被运往拉丁美洲，更多的雨林将被改造为大豆种植园和肉类生产基地。"</p>
+  <p>专家们给出的结论是，建立一种不伤害气候和环境、不虐待动物的养殖模式，需要农业政策的深度改变以及消费和生产观念的重新思考。</p>
+  <p>乌姆西格说，"到目前为止，我们还没有看到肉食转型的真正开始。"</p>
+  <h3 id="section">相关图集：环境保护如何给人类健康带来好处</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55841326_303.jpg" width="100%" /><strong>清洁能源意味着更清洁的空气</strong>：根据世卫组织提供的数据，室外空气的污染每年导致约420万人死于心脏病和肺炎。除农业和垃圾燃烧外，飞机、居家生活和工业生产燃烧的化石能源要对大部分空气污染负责。而转型使用绿色能源有利于人类和地球的健康。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/41834368_303.jpg" width="100%" /><strong>二氧化碳让我们的食物养份减少</strong>：减少温室气体的排放不仅能让地球变暖放慢，也能确保我们所吃食物的营养含量。吸收了多余的二氧化碳后，植物便会减少蛋白质和锌、铁等营养物的生产。而缺乏这些营养尤其会影响儿童的健康。如果大气中二氧化碳继续增加，就有可能导致数亿人营养不良。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/48604870_303.jpg" width="100%" /><strong>保护物种就是保护人类</strong>：植物和动物种类正以前所未有的速度消失。这些物种和它们所生活的生态系统对包括人类在内的地球上所有生命具有核心意义。它们提供食物、能源、水、药材，构成我们生存的基础。保护生态体系，才能保障世界上所有生命的健康。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/37658752_303.jpg" width="100%" /><strong>环境无害交通促进健康</strong>：全球一半以上人口在城市生活，而其数量还在增加。城市居民今天已苦于马路交通和工业导致的空气污染。由公交巴士、有轨电车、自行车构成的环保型交通网、给行人留下更多空间，能改善空气质量、减少噪音污染和交通事故、促进更积极的生活方式。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/40906670_303.jpg" width="100%" /><b>土地保养 </b>：就像此图上所显示的婆罗洲岛砍伐森林建棕榈油种植场那样，工农业对生命空间的利用是生物多样化受重创的主要原因。对土地的开发利用可能促进传染病的产生和蔓延，此外，农业和工业污染水和空气。建立更多自然保护区、采用可持续性土地利用方式，将能提供帮助。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55841661_303.jpg" width="100%" /><b>危险天气 </b>：地球变暖使超级飓风、森林大火、洪水和干旱出现的可能性提高。根据世卫组织提供的数据，尤其在发展中国家，气候灾难的后果更为严重，每年导致6万多人死亡。对应措施以及将增温控制在不超过前工业时代水平的2摄氏度，将有助于减少气候灾难的影响、降低死亡人数。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/52056531_303.jpg" width="100%" /><b>环境破坏导致的噩梦 </b>：极端天气的重创会让当地居民面临灾后的巨大压力，尤其是因此失去家园的人们。气候和环境破坏会在全球范围影响人们的心理健康。因此，对自然的保护和抑制气候危机也意味着减少人们的心理压力。
+  </div>
+  <p>© 2020年 德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E9%A6%99%E6%B8%AF%E5%A4%A7%E6%8A%93%E6%8D%95-%E4%B8%AD%E5%9B%BD%E7%9A%84%E9%9C%87%E6%85%91%E7%AD%96%E7%95%A5%E5%A5%8F%E6%95%88">
+          香港大抓捕：中国的震慑策略奏效？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+          印度称扣押越界解放军 中方强调是“走失”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E9%87%91%E6%AD%A3%E6%81%A9-%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%9C%9D%E9%B2%9C%E7%9A%84-%E6%9C%80%E5%A4%A7%E6%95%8C%E4%BA%BA">
+          金正恩：美国是朝鲜的“最大敌人”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%89%91%E6%8C%87%E7%BE%8E%E5%9B%BD-%E4%B8%AD%E5%9B%BD%E6%8E%A8%E6%96%B0%E8%A7%84%E6%AC%B2%E9%98%BB%E5%A4%96%E5%9B%BD%E6%B3%95-%E4%B8%8D%E5%BD%93%E5%9F%9F%E5%A4%96%E9%80%82%E7%94%A8">
+          剑指美国：中国推新规欲阻外国法“不当域外适用“
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B5%B7%E9%80%9A-%E4%B8%9C%E6%B5%B7%E5%9B%A0%E8%87%AA%E8%B4%AD%E5%80%BA%E5%88%B8%E8%A2%AB%E8%AD%A6%E5%91%8A">
+            前一篇：海通、东海因自购债券被警告
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/CDC-%E7%BE%8E%E5%9B%BD%E8%87%B3%E5%B0%918%E5%B7%9E%E5%87%BA%E7%8E%B0%E6%96%B0%E5%8F%98%E7%A7%8D%E7%97%85%E6%AF%92-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            后一篇：CDC：美国至少8州出现新变种病毒 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%B5%B7%E9%80%9A-%E4%B8%9C%E6%B5%B7%E5%9B%A0%E8%87%AA%E8%B4%AD%E5%80%BA%E5%88%B8%E8%A2%AB%E8%AD%A6%E5%91%8A'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/CDC-%E7%BE%8E%E5%9B%BD%E8%87%B3%E5%B0%918%E5%B7%9E%E5%87%BA%E7%8E%B0%E6%96%B0%E5%8F%98%E7%A7%8D%E7%97%85%E6%AF%92-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E9%87%91%E6%AD%A3%E6%81%A9-%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%9C%9D%E9%B2%9C%E7%9A%84-%E6%9C%80%E5%A4%A7%E6%95%8C%E4%BA%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B5%B7%E9%80%9A-%E4%B8%9C%E6%B5%B7%E5%9B%A0%E8%87%AA%E8%B4%AD%E5%80%BA%E5%88%B8%E8%A2%AB%E8%AD%A6%E5%91%8A">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/CDC-%E7%BE%8E%E5%9B%BD%E8%87%B3%E5%B0%918%E5%B7%9E%E5%87%BA%E7%8E%B0%E6%96%B0%E5%8F%98%E7%A7%8D%E7%97%85%E6%AF%92-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%BA%A6%E7%A7%B0%E6%89%A3%E6%8A%BC%E8%B6%8A%E7%95%8C%E8%A7%A3%E6%94%BE%E5%86%9B-%E4%B8%AD%E6%96%B9%E5%BC%BA%E8%B0%83%E6%98%AF-%E8%B5%B0%E5%A4%B1">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E9%87%91%E6%AD%A3%E6%81%A9-%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%9C%9D%E9%B2%9C%E7%9A%84-%E6%9C%80%E5%A4%A7%E6%95%8C%E4%BA%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

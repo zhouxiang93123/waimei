@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>第二次弹劾，特朗普时代注定的尾声 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+第二次弹劾，特朗普时代注定的尾声
+——
+" />
+    <meta property="og:description" content="
+第二次弹劾，特朗普时代注定的尾声
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="第二次弹劾，特朗普时代注定的尾声" />
+    <meta property="twitter:title" content="第二次弹劾，特朗普时代注定的尾声" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Ftrump-impeachment-coda-presidency%2F&t=%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Ftrump-impeachment-coda-presidency%2F&t=%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0&d=2021-01-14&e=
+第二次弹劾，特朗普时代注定的尾声
+——
+
+
+  
+PETER BAKER2021-01-14 17:22:10
+  
+  
+国民警卫队成员在国会大厦内休息，众议院准备就是否弹劾特朗普总统进行投票。
+  
+  华盛顿——自南北战争及战后余波的那些黑暗日子之后，华盛顿还没有出现过像周三这样的情况。
+  国会大厦里满是全副武装的士兵和新安装的金属探测器，上周遭到围攻时的破坏已被清理干净，但仍然能看到它在情感和政治上留下的破坏。在这里，美国总统因为试图颠覆美国民主遭到弹劾。
+  不知何故，对于一届不断挑战底线、瓦解国家纽带的政府，这感觉像是一个注定的尾声。特朗普还有不到一周的时间将卸任，在这个国家严重分裂、迷失自我的时候，他任期内的暴力和互相指责达到了顶峰。关于真相和现实的概念被原子化。对体制的信念遭到侵蚀。愤怒则成为人们的共同点。
+  华盛顿也变得乌烟瘴气，满是疑心和冲突，好像特朗普成为..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Ftrump-impeachment-coda-presidency%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/&text=第二次弹劾，特朗普时代注定的尾声&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/&title=第二次弹劾，特朗普时代注定的尾声" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/&title=第二次弹劾，特朗普时代注定的尾声" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=第二次弹劾，特朗普时代注定的尾声&body=
+第二次弹劾，特朗普时代注定的尾声
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/&title=第二次弹劾，特朗普时代注定的尾声&caption=
+第二次弹劾，特朗普时代注定的尾声
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=第二次弹劾，特朗普时代注定的尾声&url=https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>第二次弹劾，特朗普时代注定的尾声</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Ftrump-impeachment-coda-presidency%2F&t=%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%B6%E4%BB%A3%E6%B3%A8%E5%AE%9A%E7%9A%84%E5%B0%BE%E5%A3%B0&d=2021-01-14&e=
+第二次弹劾，特朗普时代注定的尾声
+——
+
+
+  
+PETER BAKER2021-01-14 17:22:10
+  
+  
+国民警卫队成员在国会大厦内休息，众议院准备就是否弹劾特朗普总统进行投票。
+  
+  华盛顿——自南北战争及战后余波的那些黑暗日子之后，华盛顿还没有出现过像周三这样的情况。
+  国会大厦里满是全副武装的士兵和新安装的金属探测器，上周遭到围攻时的破坏已被清理干净，但仍然能看到它在情感和政治上留下的破坏。在这里，美国总统因为试图颠覆美国民主遭到弹劾。
+  不知何故，对于一届不断挑战底线、瓦解国家纽带的政府，这感觉像是一个注定的尾声。特朗普还有不到一周的时间将卸任，在这个国家严重分裂、迷失自我的时候，他任期内的暴力和互相指责达到了顶峰。关于真相和现实的概念被原子化。对体制的信念遭到侵蚀。愤怒则成为人们的共同点。
+  华盛顿也变得乌烟瘴气，满是疑心和冲突，好像特朗普成为..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210114%2Ftrump-impeachment-coda-presidency%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610617472000-->
+<p><a href="https://cn.nytimes.com/usa/20210114/trump-impeachment-coda-presidency/">第二次弹劾，特朗普时代注定的尾声</a>
+——</p>
+
+<div>
+  <div>
+<em>PETER BAKER<br />2021-01-14 17:22:10</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/us/politics/13dc-assess1/merlin_182287398_51f6805c-109c-4d83-8322-4bb1c4207b7e-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">国民警卫队成员在国会大厦内休息，众议院准备就是否弹劾特朗普总统进行投票。</small>
+  </div>
+  <p>华盛顿——自南北战争及战后余波的那些黑暗日子之后，华盛顿还没有出现过像周三这样的情况。</p>
+  <p>国会大厦里满是全副武装的士兵和新安装的金属探测器，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2021/01/12/us/capitol-mob-timeline.html" title="Link: https://www.nytimes.com/interactive/2021/01/12/us/capitol-mob-timeline.html">上周遭到围攻</a>时的破坏已被清理干净，但仍然能看到它在情感和政治上留下的破坏。在这里，美国总统因为试图颠覆美国民主遭到弹劾。</p>
+  <p>不知何故，对于一届<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/06/us/politics/trump-congress.html?action=click&amp;module=RelatedLinks&amp;pgtype=Article" title="Link: https://www.nytimes.com/2021/01/06/us/politics/trump-congress.html?action=click&amp;module=RelatedLinks&amp;pgtype=Article">不断挑战底线、瓦解国家纽带</a>的政府，这感觉像是一个注定的尾声。特朗普还有不到一周的时间将卸任，在这个国家严重分裂、迷失自我的时候，他任期内的暴力和互相指责达到了顶峰。关于真相和现实的概念被原子化。对体制的信念遭到侵蚀。愤怒则成为人们的共同点。</p>
+  <p>华盛顿也变得乌烟瘴气，满是疑心和冲突，好像特朗普成为唯一被弹劾两次的总统、议员们在他任期还有几天的时候试图让他下台这些还不够一样。一名民主党国会议员<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/13/us/capitol-investigation/republicans-capitol-tours">指控其共和党人同僚</a>帮助上周的暴徒事先在国会大厦踩点。共和党成员则对禁止枪支进入众议院议政厅的安保措施怨声载道。</p>
+  <p>而这一切的背景是一场大疫，在人们的注意力被转移至他处时，疫情在特朗普总统任期的最后几周里正出现灾难性的恶化。</p>
+  <p>在众议院表决前一天，美国有<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" title="Link: https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">超过4400人死于新冠病毒</a>，比珍珠港、“9·11”袭击或是在安提塔姆战役单日死亡人数还多。在<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/us/politics/us-capitol-super-spreader-coronavirus.html" title="Link: https://www.nytimes.com/2021/01/11/us/politics/us-capitol-super-spreader-coronavirus.html">多位议员在国会大厦遇袭期间被感染</a>、新规颁布之后，他们才终于在周三的辩论期间一致戴上了口罩。</p>
+  <p>历史学家努力试图定义这一时刻，将其与大萧条、第二次世界大战、南北战争、麦卡锡时代和水门事件等其他充满巨大挑战的时期相比较。他们回想起查尔斯·萨姆纳(Charles Sumner)在参议院遭手杖殴打的事件，以及亚伯拉罕·林肯(Abraham Lincoln)为防遭受攻击，只得偷偷溜进华盛顿参加就职典礼的事。</p>
+  <p>他们举出了可怕的1968年的例子，当时牧师小马丁·路德·金博士(Rev. Dr. Martin Luther King Jr.)和罗伯特·F·肯尼迪(Robert F. Kennedy)遇刺，校园和市中心因越南战争和民权运动而沸腾。“9·11”恐怖袭击之后，更多的大规模暴力死亡似乎难以避免。但它们都无法完全与当前的时刻相比。</p>
+  <p>“我希望能给你一个聪明的类比，但老实说，我认为以前从未发生过类似的事情，”美国最受尊敬的历史学家之一杰弗里·C·沃德(Geoffrey C. Ward)说。“如果是在以前，你告诉我有个美国总统会鼓励一群充满妄想的暴徒走进我们的国会大厦，嚎叫着要求流血，我会说你被蛊惑了。”</p>
+  <p>专门研究内战和其他冲突时期的著名史学家杰伊·温尼克(Jay Winik)也同样表示，没有确切的类比。“这是一个非同寻常的时刻，实际上是历史上前所未有的，”他说。“曾经把我们团结在一起的粘合剂变得像现在这样分崩离析，这样的时刻很难找到。”</p>
+  <p>这一切令美国在世界舞台上的声誉处于低潮，让这个罗纳德·里根(Ronald Reagan)总统喜欢称之为“山巅的光辉之城”的地方，成为“即使是成熟的民主大国也可能面临挑战”的负面案例研究。</p>
+  <p>“我们充当模范的历史时刻基本上已经结束了，”耶鲁大学(Yale)研究威权主义的历史学家<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/09/magazine/trump-coup.html">蒂莫西·斯奈德</a>(Timothy Snyder)说。“我们现在必须重新去赢得信誉，这可能不是一件坏事。”</p>
+  <p>周三国会大厦的一幕让人想起伊拉克战争期间巴格达的绿区(Green Zone)。自从南北战争中邦联军威胁越过波托马克河以来，这是第一次有军队在国会大厦安营扎寨。</p>
+  <p>围绕特朗普命运的辩论就发生在众议院的同一个会议厅里，一周前在这里，安保人员拔出枪支、堵住大门，议员们有的冲进地下室，有的从后门逃走，躲避大群四下劫掠的特朗普支持者。对那次破坏的愤怒仍在人们心头萦绕不去。恐惧也未消失。</p>
+  <p>但这种震惊已经在一定程度上消退，相关讨论有时让人感到似曾相识，令人麻木。大多数议员迅速退回到自己的党派立场。</p>
+  <p>当民主党人要求问责时，许多共和党人进行反击，抨击他们在没有举行听证会、没有证据、甚至没有太多辩论的情况下就仓促做出判断。特朗普的指控者引用他在袭击前的集会上的煽动言论。为他辩护的人则引用众议院议长南希·佩洛西(Nancy Pelosi)、众议员玛克辛·沃特斯(Maxine Waters)，甚至是罗伯特·德尼罗(Robert De Niro)和麦当娜(Madonna)的挑衅性言论，坚持认为存在双重标准。</p>
+  <p>这就像是拿苹果和橘子相对比，本身并不重要，重要的是它所折射出的东西。特朗普谎称存在广泛的舞弊行为，以此推翻他输掉的民主选举，他向其他共和党人、甚至是他的副总统施压，要求他们支持他，并<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/06/us/politics/trump-speech-capitol.html">派遣一群不守规则的支持者到国会大厦游行</a>，“拼命战斗。”但他的盟友抱怨说，他长期以来一直遭受他们心目中不公平的党派攻击和调查。</p>
+  <p>“唐纳德·特朗普是有史以来占据椭圆形办公室的最危险的人，”得克萨斯州民主党众议员华金·卡斯特罗(Joaquin Castro)宣称。</p>
+  <p>佛罗里达州共和党众议员马特·盖兹(Matt Gaetz)宣称，“美国左派煽动的政治暴力远远超过右派。”</p>
+  <p>截然不同的立场概括了特朗普时代美国的特色。民主党多数派领袖、马里兰州众议员斯坦尼·H·霍耶(Steny H. Hoyer)对于另一方的描述表示愤怒。“你和我不是生活在同一个国家，”他感叹道。至少在这一点上，大家可以达成一致。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/us/politics/13dc-assess2/merlin_182250606_2a7b95dd-7e90-4807-861b-158ceea535b6-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">上周，特朗普鼓励他的一群支持者到国会大厦游行，但他对自己在随后的骚乱中所扮演的角色没有表现出任何悔意。</small>
+  </div>
+  <p>特朗普没有为自己辩护，选择对正在发生的重大事件视而不见。投票结束后，他发布了一段<a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=hDNiNdsPHNA&amp;feature=youtu.be" title="Link: https://www.youtube.com/watch?v=hDNiNdsPHNA&amp;feature=youtu.be">五分钟的视频信息</a>，其中对上周的暴力行为进行了更广泛的谴责，并否定了那些实施暴力的人。“如果你做了这些事情，你就不是在支持我们的运动，你是在攻击它，”他说。</p>
+  <p>然而，他对于激发政治分裂——不只是上周，而是四年——毫无悔意，也没有对任何事负有任何责任的意识。尽管他没有明确提及弹劾，但是他抱怨“对言论自由的空前攻击”，大概是指<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/08/technology/twitter-trump-suspended.html" title="Link: https://www.nytimes.com/2021/01/08/technology/twitter-trump-suspended.html">Twitter关停了他的帐户</a>以及针对其盟友的行动，这些盟友帮助他<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html" title="Link: https://www.nytimes.com/interactive/2021/01/07/us/elections/electoral-college-biden-objectors.html">试图阻止对选举结果的认可</a>。</p>
+  <p>特朗普第一次被弹劾是因为向乌克兰施压以削弱民主党人，这一次弹劾不同的是，他的政党中有人抛弃了他。最后，由<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/12/us/liz-cheney-trump.html">共和党三号人物、怀俄明州代表利兹·切尼(Liz Cheney)</a>带领的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/article/republicans-impeaching-donald-trump.html?action=click&amp;module=Spotlight&amp;pgtype=Homepage">10名众议院共和党人与所有民主党人一起</a>通过了弹劾条款。这证明了在特朗普的领导下，该党已经发生了很大变化，曾被视为意识形态挑衅者的切尼家族在这一刻成为传统共和党的捍卫者。</p>
+  <p>与投票反对弹劾的197名共和党人相比，10个并不算多。从另一方面看，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2019/12/18/us/politics/trump-impeached.html">这比2019年12月弹劾特朗普的票数多出10票</a>——是美国历史上总统本党成员支持弹劾票数最多的一次。</p>
+  <p>其他共和党人试图划出一个更细致的界线，认为特朗普对煽动暴徒负有责任，同时坚称此事不足以令他被弹劾，或者认为在候任总统<a rel="nofollow" target="_blank" href="https://www.nytimes.com/spotlight/joe-biden" title="Link: https://www.nytimes.com/spotlight/joe-biden">小约瑟夫·R·拜登</a>(Joseph R. Biden Jr.)宣誓就职前几天这样做是一种不明智、不必要、挑拨离间的行动。</p>
+  <p>“这并不意味着总统没有过错，”加利福尼亚州代表、共和党少数党领袖、特朗普最坚定的盟友之一凯文·麦卡锡(Kevin McCarthy)在发言反对弹劾时说。“总统应对暴徒周三对国会的袭击负责。当他看到事情正在发生时，他应该立即谴责暴民。”</p>
+  <p>尽管如此，对于一个输掉连任并对自己政党造成巨大损害的总统，还有如此多的共和党人保持忠诚，令人感到震惊。密苏里大学(University of Missouri)法学院的弹劾学者弗兰克·O·鲍曼三世(Frank O. Bowman III)说：“如果在美国两党之一的党派的当选代表中，绝大多数人无法拒绝一个煽动家，甚至在他公然策划推翻大选并且威胁到他们自己的生命之后都不行，那么，我们有很长的路要走。”</p>
+  <p>布伦达·维恩阿波(Brenda Wineapple)是关于1868年安德鲁·约翰逊(Andrew Johnson)总统的弹劾审判的《<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2019/05/18/books/review/brenda-wineapple-impeachers.html">弹劾者</a>》(The Impeachers)一书的作者。她说，她在周三的辩论中也听到了彼时反对定罪的一些论点——定罪将是一个不好的先例，只会进一步分裂国家。她还看到了另一个重叠，希望让约翰逊成为过去，将权力交由他的继任者尤利西斯·S·格兰特(Ulysses S. Grant)——他像拜登一样被视为疗愈的人物。</p>
+  <p>“这给了我希望，”她说，“我们必须要有希望。”</p>
+  <p>但是就美国需要修复的程度而言，如果没有跨党派的广泛共识，这可能对于任何总统而言都是一个艰巨的任务。特朗普也许会受到弹劾，但他几乎肯定会做满他的任期的最后一周，而且他不打算像其他只当了一届总统的失败者所做的那样羞耻地溜走，这使他有希望成为一个残余的影响力，即使这股力量正在减弱。</p>
+  <p>而且，将他的败选视为战斗号令的仍然大有人在。安全官员为下周拜登的就职典礼在华盛顿增派军队，他们<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/us/politics/capitol-breach-driver-of-violence.html?action=click&amp;module=Spotlight&amp;pgtype=Homepage" title="Link: https://www.nytimes.com/2021/01/13/us/politics/capitol-breach-driver-of-violence.html?action=click&amp;module=Spotlight&amp;pgtype=Homepage">担心对国会大厦的入侵会再次发生</a>。在特朗普一次又一次地对他们谎称选举被篡取后，民意调查显示，成百上千万的美国人相信他。</p>
+  <p>威廉姆斯学院(Williams College)历史学家、富兰克林·D·罗斯福(Franklin D. Roosevelt)的传记作者<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2013/07/28/books/review/those-angry-days-and-1940.html">苏珊·邓恩</a>(Susan Dunn)说：“在1940年大选前夕，FDR（罗斯福）表示，民主不仅仅是一个词——‘它是一个有生命的东西——像人一样由大脑、肌肉、心脏和灵魂组成。’”</p>
+  <p>她说，现在，在过去几天和这几年发生的事件之后，“我们知道了民主国家是脆弱的，我们民主的大脑和灵魂正处于严重的危险之中。”</p>
+  <p>Peter Baker是《纽约时报》首席白宫记者，已为时报和《华盛顿邮报》报道过过去四届总统的新闻。他还是五本书的作者，最新出版的一本是《Impeachment: An American History》。欢迎在<a rel="nofollow" target="_blank" href="https://twitter.com/peterbakernyt">Twitter</a>和<a rel="nofollow" target="_blank" href="https://www.facebook.com/peter.baker.351">Faceboook</a>上关注他。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/WHO%E7%97%85%E6%AF%92%E6%BA%AF%E6%BA%90%E5%9B%A2%E9%98%9F%E6%8A%B5%E8%BE%BE%E6%AD%A6%E6%B1%89-%E6%88%96%E9%9D%A2%E4%B8%B4%E9%87%8D%E9%87%8D%E5%9B%B0%E9%9A%BE">
+          WHO病毒溯源团队抵达武汉，或面临重重困难
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81">
+          美国宣布禁止从新疆进口棉花和番茄产品
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84">
+          关于特朗普遭第二次弹劾，目前我们所知道的
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%B7%B4%E8%A5%BF%E8%B0%83%E9%99%8D%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+          巴西调降科兴疫苗有效率意味着什么？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%BC%BA%E5%8C%96%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%96%B9%E8%83%8C%E6%99%AF%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B5%84%E7%A6%81%E4%BB%A4-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%85%BE%E8%AE%AF%E7%99%BE%E5%BA%A6%E8%A2%AB%E6%94%BE%E4%B8%80%E9%A9%AC">
+            前一篇：特朗普政府强化对中国军方背景公司投资禁令 阿里巴巴腾讯百度被放一马
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/%E4%B8%AD%E5%9B%BD%E6%A0%B8%E5%87%86%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-%E5%9C%9F%E8%80%B3%E5%85%B6%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%BF%A7%E8%A2%AB%E9%81%A3%E8%BF%94">
+            后一篇：中国核准引渡条约  土耳其维吾尔人忧被遣返
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%BC%BA%E5%8C%96%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%96%B9%E8%83%8C%E6%99%AF%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B5%84%E7%A6%81%E4%BB%A4-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%85%BE%E8%AE%AF%E7%99%BE%E5%BA%A6%E8%A2%AB%E6%94%BE%E4%B8%80%E9%A9%AC'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E4%B8%AD%E5%9B%BD%E6%A0%B8%E5%87%86%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-%E5%9C%9F%E8%80%B3%E5%85%B6%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%BF%A7%E8%A2%AB%E9%81%A3%E8%BF%94'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-14/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%BC%BA%E5%8C%96%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%96%B9%E8%83%8C%E6%99%AF%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B5%84%E7%A6%81%E4%BB%A4-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%85%BE%E8%AE%AF%E7%99%BE%E5%BA%A6%E8%A2%AB%E6%94%BE%E4%B8%80%E9%A9%AC">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-14/%E4%B8%AD%E5%9B%BD%E6%A0%B8%E5%87%86%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-%E5%9C%9F%E8%80%B3%E5%85%B6%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%BF%A7%E8%A2%AB%E9%81%A3%E8%BF%94">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-14/%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E7%A6%81%E6%AD%A2%E4%BB%8E%E6%96%B0%E7%96%86%E8%BF%9B%E5%8F%A3%E6%A3%89%E8%8A%B1%E5%92%8C%E7%95%AA%E8%8C%84%E4%BA%A7%E5%93%81">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-14/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

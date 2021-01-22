@@ -1,0 +1,3314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【疫情1·18】“中共和世卫遏制疫情上错误” – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+" />
+    <meta property="og:description" content="
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【疫情1·18】“中共和世卫遏制疫情上错误”" />
+    <meta property="twitter:title" content="【疫情1·18】“中共和世卫遏制疫情上错误”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F18%2Fn12695375.htm&t=%E3%80%90%E7%96%AB%E6%83%851%C2%B718%E3%80%91%E2%80%9C%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E9%94%99%E8%AF%AF%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F18%2Fn12695375.htm&t=%E3%80%90%E7%96%AB%E6%83%851%C2%B718%E3%80%91%E2%80%9C%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E9%94%99%E8%AF%AF%E2%80%9D&d=2021-01-18&e=
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+
+
+  【大纪元2021年01月18日讯】（大纪元记者徐简、戴芙若、李言综合报导）根据约翰·霍普金斯大学的统计数据，截至美东时间周一（1月18日）下午6：30，全球的中共病毒（武汉肺炎，COVID-19）病例总数超过了9,547万（95,475,781）例，死亡人数超过了203万（2,037,200）。
+  1月17日单日新增确诊和死亡人数：
+  美国174,513例确诊，1,723人死亡；印度13,788例确诊，145人死亡；巴西33,040例确诊，551人死亡；俄国23,178例确诊，467人死亡；英国38,670例确诊，682人死亡；法国37,405例确诊，329人死亡；德国11,484例确诊，437人死亡；日本5,773例确诊，44人死亡；韩国389例确诊，15人死亡。
+  面对全球的疫情控制，一些欧洲国家的企业和民众已经..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F18%2Fn12695375.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/1/18/n12695375.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/1/18/n12695375.htm&text=【疫情1·18】“中共和世卫遏制疫情上错误”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/1/18/n12695375.htm&title=【疫情1·18】“中共和世卫遏制疫情上错误”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/1/18/n12695375.htm&title=【疫情1·18】“中共和世卫遏制疫情上错误”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【疫情1·18】“中共和世卫遏制疫情上错误”&body=
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/1/18/n12695375.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/1/18/n12695375.htm&title=【疫情1·18】“中共和世卫遏制疫情上错误”&caption=
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【疫情1·18】“中共和世卫遏制疫情上错误”&url=https://www.epochtimes.com/gb/21/1/18/n12695375.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【疫情1·18】“中共和世卫遏制疫情上错误”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/1/18/n12695375.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F18%2Fn12695375.htm&t=%E3%80%90%E7%96%AB%E6%83%851%C2%B718%E3%80%91%E2%80%9C%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E9%94%99%E8%AF%AF%E2%80%9D&d=2021-01-18&e=
+【疫情1·18】“中共和世卫遏制疫情上错误”
+——
+
+
+  【大纪元2021年01月18日讯】（大纪元记者徐简、戴芙若、李言综合报导）根据约翰·霍普金斯大学的统计数据，截至美东时间周一（1月18日）下午6：30，全球的中共病毒（武汉肺炎，COVID-19）病例总数超过了9,547万（95,475,781）例，死亡人数超过了203万（2,037,200）。
+  1月17日单日新增确诊和死亡人数：
+  美国174,513例确诊，1,723人死亡；印度13,788例确诊，145人死亡；巴西33,040例确诊，551人死亡；俄国23,178例确诊，467人死亡；英国38,670例确诊，682人死亡；法国37,405例确诊，329人死亡；德国11,484例确诊，437人死亡；日本5,773例确诊，44人死亡；韩国389例确诊，15人死亡。
+  面对全球的疫情控制，一些欧洲国家的企业和民众已经..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F18%2Fn12695375.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610996447000-->
+<p><a href="https://www.epochtimes.com/gb/21/1/18/n12695375.htm">【疫情1·18】“中共和世卫遏制疫情上错误”</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年01月18日讯】（大纪元记者徐简、戴芙若、李言综合报导）根据约翰·霍普金斯大学的统计数据，截至美东时间周一（1月18日）下午6：30，全球的<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>（武汉肺炎，COVID-19）病例总数超过了9,547万（95,475,781）例，死亡人数超过了203万（2,037,200）。</p>
+  <p>1月17日单日新增确诊和死亡人数：</p>
+  <p>美国174,513例确诊，1,723人死亡；<br />印度13,788例确诊，145人死亡；<br />巴西33,040例确诊，551人死亡；<br />俄国23,178例确诊，467人死亡；<br />英国38,670例确诊，682人死亡；<br />法国37,405例确诊，329人死亡；<br />德国11,484例确诊，437人死亡；<br />日本5,773例确诊，44人死亡；<br />韩国389例确诊，15人死亡。</p>
+  <p>面对全球的<a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>控制，一些欧洲国家的企业和民众已经无法忍耐，上周末，多国发生了示威游行活动，表示对封锁政策的抗议。</p>
+  <p>上周五（1月15日），意大利约有几万家餐馆进行“全民抗命”，违背封锁令开门营业，有些餐馆里面坐满了顾客；上周六（16日）奥利地也发生了大规模的抵抗封锁的运动，约有1万人游行穿过维也纳的市中心抗议封锁限制，大多数游行民众都没有佩戴口罩，甚至还在相互亲吻和拥抱；周日（17日）上千人在荷兰首都阿姆斯特丹举行了抗议活动，一些人聚集在国家博物馆和梵高博物馆前的广场上，高呼“我们要自由！”</p>
+  <p>在中国大陆，华北、东北多地的<a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>再次卷土重来，而中共官方通报的疫情数据备受舆论质疑。</p>
+  <p>网曝疫情重灾区的黑龙江省绥化市、河北省廊坊市等地出现患者倒地毙命的现象。有的地区出现了超级传播者，例如吉林一个患者就感染了140多人，同时在疫情严重地区，当地民众出现抢购潮。</p>
+  <h2 id="section">以下是有关病毒疫情的实时更新：</h2>
+  <h3 id="section-1">专家组：中共和世卫在遏制疫情方面错误</h3>
+  <p>一个独立小组表示，中国（中共）官员本可以在2020年1月采取更强有力的公共卫生措施，来遏制最初的Covid-19疫情，并批评世界卫生组织（WHO）直到1月30日才宣布国际紧急状态。</p>
+  <p>由新西兰前总理海伦·克拉克（Helen Clark）和利比里亚前总统埃伦·约翰逊·西里夫（Ellen Johnson Sirleaf）领导的审查全球流行病处理的专家组呼吁对总部设在日内瓦的联合国机构进行改革。</p>
+  <p>他们的中期报告发表的几个小时之前，世卫组织首席紧急专家迈克·瑞安（Mike Ryan）表示全球“死于Covid”的人数“很快”将达到每周10万人。</p>
+  <p>专家组的报告说：“专家组清楚的是，中国（中共）地方和国家卫生部门在一月份可以采取更强有力的公共卫生措施，”指在湖北省武汉市中心地区首次爆发的<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>疫情。</p>
+  <h3 id="section-2">消息人士：川普有望取消旅行限制</h3>
+  <p>路透社报导，白宫官员透露，川普总统预计将下令从1月26日起取消对欧洲和巴西大部分地区施加的与中共病毒有关的旅行限制。</p>
+  <p>该命令在他离职六天后生效，目前尚不清楚当选总统乔·拜登一旦上任是否会撤销该命令。</p>
+  <p>自大流行开始以来，美国有逾398,000人死于Covid-19。</p>
+  <h3 id="section-3">摩洛哥确认第一例英国病毒变种病例</h3>
+  <p>摩洛哥卫生部确认了第一例英国病毒变种病例。</p>
+  <p>该部在一份声明中说，该变种是在摩洛哥国民从爱尔兰经马赛返回的丹吉尔北部港口发现的。</p>
+  <p>摩洛哥宣布计划启动针对2500万人或80％人口的免费疫苗接种运动。</p>
+  <p>摩洛哥从阿斯利康和中国国药集团订购了6600万剂疫苗，但是疫苗还没有到位。</p>
+  <p>摩洛哥从12月23日实施了为期四周的全国宵禁，宵禁时间是每天晚上9:00到上午6:00。</p>
+  <p>该国周一表示，该国共记录了460,144例确诊感染病例，包括7,977人死亡和16,481例活跃病例。</p>
+  <p>卫生专家对此高度可传播的新病毒突变表示担忧，目前已在英国、南非和巴西等地都发现了中共病毒的新变种。</p>
+  <h3 id="section-4">巴西报告近24,000例新病例  452人死亡</h3>
+  <p>巴西卫生部说，巴西周一报告了23,671例中共病毒新增病例，使病例总数增加到8,511,770例。</p>
+  <p>巴西的死亡人数上升了452人，死亡总人数达至210,299人，这是美国以外的全球大流行造成的死亡人数最高的国家。</p>
+  <p>（注：中共和伊朗隐瞒疫情真实数据，其实际数字应更高，排名不计在内。）</p>
+  <h3 id="section-5">加利福尼亚感染病例突破300万  美国第一州</h3>
+  <p>根据约翰·霍普金斯大学（Johns Hopkins University）和Covid追踪项目（Covid Tracking Project）的数据，加利福尼亚已成为美国第一个记录超过300万例中共病毒确诊感染病例的州。</p>
+  <p>在过去两个月中，加利福尼亚的Covid-19病例数量增加了两倍。</p>
+  <p>当前数据显示，中共病毒至少导致了3,005,830例确诊感染病例和33,623人死亡。</p>
+  <p>其中超过一百万的病例集中在洛杉矶县，大约是人口的十分之一。卫生官员推测实际人数可能高达三分之一。</p>
+  <p>超过33,000名加利福尼亚人死于Covid-19，并且该州各地的医院仍然充满了寻求治疗的Covid-19患者。</p>
+  <p>约有90％的州仍处于居家令中，部分旨在减轻重症监护病房的压力。</p>
+  <h3 id="section-6">哥伦比亚国防部长染疫  接受重症监护</h3>
+  <p>哥伦比亚政府说，国防部长卡洛斯·霍尔姆斯·特鲁希略（Carlos Holmes Trujillo）感染了中共病毒后，正在接受重症监护。</p>
+  <p>外交部报告说，特鲁希略上周二对该病毒进行了检测，结果为阳性；而前一天，外交部长克劳迪娅·布鲁姆（Claudia Blum）的也检测到被感染。</p>
+  <p>总统府在一份声明中说：“国防部长……继续在医院接受治疗，并受到重症监护。”</p>
+  <p>声明说，这位部长正遭受中共病毒感染和病毒性肺炎的折磨。</p>
+  <p>哥伦比亚其他感染病毒的著名人士包括第一夫人玛丽亚·朱莉安娜·鲁伊斯（Maria Juliana Ruiz），她在11月检测出阳性，副总统玛尔塔·露西亚·拉米雷斯（Marta Lucia Ramirez）在10月检测出阳性。</p>
+  <p>总统伊万·杜克（Ivan Duque）测试尚未得到阳性结果。由于杜克的高暴露水平和繁忙的日程安排，他定期进行测试。</p>
+  <p>迄今为止，哥伦比亚报告了超过190万例中共病毒感染，以及48,600多人死亡。</p>
+  <h3 id="section-7">美国确诊病例超过2400万  死亡人数逼近40万</h3>
+  <p>根据约翰·霍普金斯大学（Johns Hopkins University）汇编的数据，自中共病毒大流行开始以来，美国总共记录了至少24,018,793例中共病毒病例，至少有398,307人死于Covid-19。</p>
+  <p>根据约翰·霍普金斯大学的数据，美国花了304天的时间才达到1200万例Covid-19病例，而仅用了59天的时间就翻了一番。</p>
+  <h3 id="section-8">法国周一报告3,736新增病例  404人死亡</h3>
+  <p>法国卫生部周一报告了在过去24小时内新增3,736例感染病例，这一数字低于周日的16,642，但高于上周一的3,582。</p>
+  <p>死亡人数增加了404人，而周日为141人。</p>
+  <p>法国的累计病例总数现已达到2,914,725，而死亡总人数为70,687人。</p>
+  <p>新感染的7天滚动平均值（平均每周报告情况的平均值）增加至18,270例，为11月24日以来的最高水平。</p>
+  <p>重症监护病房接受治疗的人数连续第9天上升，自12月17日以来首次超过2800人。</p>
+  <h3 id="section-9">英国过去一周百万人口死亡人数最高</h3>
+  <figure id="attachment_12640354" style="width: 628px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/12/2012230559142124.jpg"><img class="size-medium_vertical wp-image-12640354" src="https://i.epochtimes.com/assets/uploads/2020/12/2012230559142124-628x400.jpg" alt="" width="628" height="400" /></a>    <figcaption class="wp-caption-text">
+12月22日，伦敦市中心的街上，因疫情严重购物者戴着口罩。 (TOLGA AKMEN/AFP via Getty Images)
+    </figcaption>
+  </figure>
+  <p>根据《数据世界》的数据，在截至1月17日的一周中，英国的中共病毒（武汉肺炎）百万人口死亡人数是全球最高的，平均每100万人中有16.5人死亡。</p>
+  <p>这一数字使英国遥遥领先于捷克。在同一时间段内，后者每100万人中有16.3人死亡。</p>
+  <p>如果以每100万人染疫死亡人数来衡量，英国目前列为全球最差的七个国家之一。</p>
+  <p>根据Our World in Data的数据，英国每100万人累积有1,317人染疫死亡，低于圣马力诺（San Marino）的1,915人；比利时的1,763人；斯洛文尼亚1,530人；意大利的1,359人；波斯尼亚和黑塞哥维那的1,344人和捷克的1,339人。数据世界。</p>
+  <p>注：中共隐瞒疫情，真实数字不为外界所知。</p>
+  <p>各国对冠状病毒（中共病毒）死亡的计数方式存在差异，这使得各国之间比较难以进行比较。</p>
+  <p>Our World in Data使用的数字来自英国政府每天报告的死亡人数。但是这些数字并不一定反映该国每个死亡日期的实际死亡人数。</p>
+  <p>国际间做比较的黄金标准是比较超额死亡人数。不过，国际统计机构收集、检查和报告这些数据需要更长的时间。</p>
+  <h3 id="section-10">西班牙周末染疫人数创新高</h3>
+  <figure id="attachment_12624982" style="width: 623px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/12/2012160533272124.jpg"><img class="size-medium_vertical wp-image-12624982" src="https://i.epochtimes.com/assets/uploads/2020/12/2012160533272124-623x400.jpg" alt="" width="623" height="400" /></a>    <figcaption class="wp-caption-text">
+12月13日，在罗马市中心的西班牙广场（Piazza di Spagna）附近的德尔巴比诺大街（Via del Babuino），人们在此为圣诞节购物。(VINCENZO PINTO/AFP via Getty Images)
+    </figcaption>
+  </figure>
+  <p>西班牙卫生部公布的数据显示，在刚刚过去的周末，该国感染Covid（中共病毒引发的疾病）的人数创历史新高。过去14天来检测到的新病例数量从上周五的575人/100,000人激增至周一的689人/100,000人。</p>
+  <p>自上周五以来，该国共报告近84,300新增病例，总数达到2,336,451例。 同期死亡增加455人，至53,769例。</p>
+  <h3 id="section-11">捷克共和国确认检测到英国变种毒株</h3>
+  <p>捷克通讯社CTK周一（1月18日）援引国家公共卫生研究所的话说，捷克共和国已确认发现在英国首先被发现的冠状病毒（中共病毒）新变种。该毒株更易传播。</p>
+  <p>该研究所发言人未立即发表评论。</p>
+  <h3 id="section-12">纽约报吿超过12,000例新增染疫病例</h3>
+  <figure id="attachment_12677153" style="width: 593px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/146224.jpg"><img class="size-medium_vertical wp-image-12677153" src="https://i.epochtimes.com/assets/uploads/2021/01/146224-593x400.jpg" alt="" width="593" height="400" /></a>    <figcaption class="wp-caption-text">
+图为疫情发生前的纽约时代广场。（Stephen Chernin/Getty Images）
+    </figcaption>
+  </figure>
+  <p>据纽约州州长安德鲁·库默（Andrew Cuomo）称，纽约州新增报告12,185例Covid-19（中共病毒引发的疾病）阳性病例，阳性率为6.54％。同时新增死亡153例。</p>
+  <p>库默在周一的新闻发布会上说：“好消息，圣诞节和除夕过后，Covid（中共病毒引发的疾病）染疫率下降。”</p>
+  <p>“医院容量仍在，红色区域、危险区域关闭。”库默说，他还在寻求通过联邦政府和辉瑞公司增加疫苗。</p>
+  <h3 id="section-13">弗吉尼亚州连续两天新增病例创疫情来最高</h3>
+  <p>约翰·霍普金斯大学（Johns Hopkins University，缩写为JHU）称，在刚刚过去的周末期间，弗吉尼亚州公布的新增Covid-19（中共病毒引发的疾病）病例为大流行开始以来最高。</p>
+  <p>据JHU称，周六（1月16日），弗吉尼亚州新增6,757例患者；而周日，该州则新增9,914例。该州7天平均新增病例达到最高，每天约为5,778例。而且新案件还在增加，较上周增加15％。</p>
+  <p>弗吉尼亚卫生部对CNN表示：“2020年1月17日（周日）的病例数量完整而准确地呈现了每日数字情况，”这并非由于病例积压或测试变更所致。各州偶尔出现所报告的数字高于通常的数字。</p>
+  <p>该部门在简短声明中表示：“这一增长很可能是由于假期期间的接触，与感恩节后的情况相似。”</p>
+  <p>州长拉尔夫·诺瑟姆（Ralph Northam）发推文说：“弗吉尼亚州的Covid-19病例和住院人数正以惊人的速度增长。”他敦促符合条件的居民接种疫苗，“但是，在广泛获得这种疫苗之前，我们所有人都必须继续像对待危险的威胁一样对待这种病毒。”</p>
+  <h3 id="section-14">科学家：新证据示南非病毒变种更具传染性</h3>
+  <figure id="attachment_12686707" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/shutterstock2_1734829064.jpg"><img class="size-large wp-image-12686707" src="https://i.epochtimes.com/assets/uploads/2021/01/shutterstock2_1734829064-600x308.jpg" alt="从英国、南非到日本发现的变种，新冠病毒越变越多、越变越严重。(Shutterstock)" width="600" height="308" /></a>    <figcaption class="wp-caption-text">
+从英国、南非到日本发现的变种，新冠病毒越变越多、越变越严重。(Shutterstock)
+    </figcaption>
+  </figure>
+  <p>据世界领先的传染病专家称，有新的生物学证据表明，南非Covid-19变种更容易与人类细胞结合，使其更具传染性。</p>
+  <p>领导南非治理艾滋病的流行病学专家阿卜杜勒·卡里姆（Abdool Karim）教授在南非广播公司（SABC）进行现场讨论。</p>
+  <p>他在讨论会上介绍了由科学家组成的小组对中共病毒变体501Y.V2的研究。</p>
+  <p>目前，没有证据表明死亡率会增加，但是随着南非医疗保健系统的压力增加，情况会改变。</p>
+  <h3 id="section-15">世卫：全球每周死亡人数预计很快超过10万</h3>
+  <p>世界卫生组织首席紧急专家迈克·瑞安（Mike Ryan）周一表示，全球COVID-19死亡人数预计“很快”达到每周10万人，上周报告的死亡人数为9.3万。</p>
+  <p>在向世卫组织执行委员会会议提供的流行病更新中，他补充说，美洲地区约占当前死亡人数的47％。 他说，在欧洲，病例和死亡人数稳定，但水平很高。</p>
+  <p>他对执委会说：“目前，我们的流行病形势是动态的，不平衡的，而且因变种而变得更加复杂。”</p>
+  <h3 id="section-16">病毒变异爆发  高档瑞士滑雪胜地隔离酒店</h3>
+  <figure id="attachment_12696066" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1229949796.jpg"><img class="size-large wp-image-12696066" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1229949796-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+瑞士滑雪胜地圣莫里茨，2021年1月18日发现10几例中共病毒变种病例，因此关闭了滑雪场，并把两个酒店隔离。图片摄于2020年12月5日。（Christophe Pallot/Agence Zoom/Getty Images）
+    </figcaption>
+  </figure>
+  <p>瑞士圣莫里茨（St. Moritz）滑雪胜地已隔离了两家酒店，并暂时关闭了所有滑雪学校，因为在酒店旅客中发现了中共病毒变种的病例。</p>
+  <p>瑞士格劳宾登（Canton of Grisons）州于周日晚上发现了感染病例后，即发布命令，该地区所有人员必须佩戴口罩。州卫生部门未指明出现了哪种变体。</p>
+  <p>目前在这两家酒店中大约有十二例确诊病例。为了保护民众和客人的健康，卫生部门已经隔离了两家酒店，并下令对其员工和客人进行测试。该高档滑雪胜地的所有将在星期二进行大规模测试。</p>
+  <p>在最近的节日期间，许多欧洲高山滑雪胜地被关闭。但是，瑞士采取了不同的方法。政府在12月初禁止公开活动和举行有限的私人聚会，但允许每个州政府授权在采取Covid-19措施的情况下是否可以开放。</p>
+  <h3 id="section-17">伊朗报告新增逾5,800病例</h3>
+  <p>伊朗周一报告了5806例新增感染病例，使得伊朗全国的官方病例数达到了130万以上。周一，还记录了83个新的死亡人数，使目前的死亡总数达到56,886人。</p>
+  <p>伊朗是受到大流行影响最严重的中东国家。</p>
+  <p>伊朗卫生部发言人西玛·萨达特·拉里（Sima Sadaat Lari）在国家电视台的新闻发布会上宣布了这些新数字。卫生部还说，目前有4348名患者在重症监护病房住院。</p>
+  <p>（注：伊朗和中共被指隐瞒疫情真实数据，以上仅为伊朗官方的数字，实际情况应更严重。）</p>
+  <h3 id="section-18">俄罗斯报告22,857例新病例和471例死亡</h3>
+  <figure id="attachment_12696055" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230651289.jpg"><img class="size-large wp-image-12696055" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230651289-600x399.jpg" alt="" width="600" height="399" /></a>    <figcaption class="wp-caption-text">
+2021年1月18日，俄罗斯首都莫斯科：人们在GUM百货商店的疫苗接种点排队接受注射俄罗斯的Sputnik V（Gam-COVID-Vac）疫苗。（ALEXANDER NEMENOV/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>俄罗斯周一报告了22,857例新增病例（其中莫斯科报告了3,679例），使得全国确诊病例总数达至3,591,066例。</p>
+  <p>当局还说，过去24小时内有471人死于该病毒，使俄罗斯的官方死亡人数增至66,037人。</p>
+  <h3 id="section-19">葡萄牙单日死亡人数创新纪录</h3>
+  <p>葡萄牙卫生部门表示，葡萄牙因中共病毒引起的每日死亡人数达到创纪录的167人，使得自大流行开始以来的死亡总人数达到9,028人。</p>
+  <p>该国目前有1000万人处于封锁状态，以阻止该病毒的传播。</p>
+  <p>据报导，医院面对感染病例激增的巨大压力，同时，重症监护病房中已有664名Covid患者，也是前所未有的状况。</p>
+  <h3 id="section-20">日本发现3例英国病毒变种  但无英国旅行记录</h3>
+  <figure id="attachment_12696061" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1297017571.jpg"><img class="size-large wp-image-12696061" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1297017571-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2021年1月18日，日本京都：日本最受欢迎的旅游胜地之一的清水寺入口。上周，日本政府将京都以及大阪府和其它几个县置于紧急状态。（Buddhika Weerasinghe/Getty Images）
+    </figcaption>
+  </figure>
+  <p>日本卫生部周一表示，日本医生已经在三名没有去过英国的人中发现了一种在英国首次发现的中共病毒变种。</p>
+  <p>卫生部证实，这三人年龄在20岁至60岁之间，居住在东京以西约125英里的静冈县，最初于1月初出现症状。</p>
+  <p>卫生部一位官员说，当局正在调查这三人是如何被感染的，并补充说，尚无证据表明在该病毒变种现正在静冈传播。</p>
+  <p>他说，迄今为止，日本已经发现了45例新的最初在英国、南非和巴西发现的病毒变种。</p>
+  <h3 id="section-21">选举日后  美国新增60%确诊病例</h3>
+  <figure id="attachment_12695924" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230593468.jpg"><img class="size-large wp-image-12695924" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230593468-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+图为2021年1月3日，加利福尼亚塔尔萨纳的Providence Cedars-Sinai Tarzana医疗中心，在该医院工作的尼尔·赫希特（Neil Hecht）医生和他的妻子在接受治疗。他们在圣诞节期间被感染并于12月29日入院。（APU GOMES/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>根据约翰·霍普金斯大学（Johns Hopkins University）的统计数据，自选举日以来，美国已报导了所有病例总数的一半以上（60％）。</p>
+  <p>约翰·霍普金斯大学称，截至星期一（1月18日）早上，美国共有23,937,331例Covid-19病例。而在11月4日上午（美国总统大选后的第二天），总数为9,573,836例。</p>
+  <h3 id="section-22">巴西今天开始疫苗接种计划</h3>
+  <p>巴西政府表示，其全国范围内的中共病毒疫苗接种计划将于周一下午开始。</p>
+  <p>巴西卫生部长爱德华多·帕祖洛（Eduardo Pazuello）当天早些时候在圣保罗卫生部的一项仪式上宣布了这一消息。</p>
+  <p>巴西健康监管机构安维萨（Anvisa）周日批准了中国盛产的Coronavac以及牛津/阿斯利康疫苗。帕祖洛曾在周日表示，国家免疫计划将于周三开始。 但是，应州长的要求提前了。</p>
+  <p>巴西目前记录了超过840万例Covid-19感染病例，近21万人死亡。</p>
+  <h3 id="section-23">反抗封锁和宵禁 意大利数万餐馆违章开业</h3>
+  <figure id="attachment_12695591" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/1-32.jpg"><img class="size-large wp-image-12695591" src="https://i.epochtimes.com/assets/uploads/2021/01/1-32-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+疫情导致意大利餐饮业受到重创。(Marco Di Lauro/Getty Images)
+    </figcaption>
+  </figure>
+  <p>意大利的餐饮旅业经营受疫情影响，财务状况极糟，很多餐厅陷入破产边缘。周五（1月15日），大约有几万家餐馆进行“全民抗命”，违章开业，抵制政府的封锁措施和宵禁令。</p>
+  <p>据breitbart媒体报导，多达5万家餐厅参加了在社交媒体上名为“我在15日开门”（＃IoApro1501）的行动。人们被要求使用这个标志前往他们最喜欢的餐厅提供支持。</p>
+  <p>意大利反对党议员维托里奥·斯加比（Vittorio Sgarbi）表示支持这项运动，他大声呼吁政府放松对企业的限制。</p>
+  <p>社交媒体的一个录像显示，米兰的一家餐馆重新开业，里面坐满了顾客，当警方赶来试图关闭这家餐厅时，却被顾客赶走。另外一个在博洛尼亚（bologna）拍摄的录像显示，当警察被顾客赶走时，顾客们鼓掌欢呼，还高喊着“自由！自由！自由！”</p>
+  <h3 id="section-24">奥地利民众大规模游行 抵抗封锁</h3>
+  <p>周六（1月16日），奥利地也发生了大规模的抵抗封锁的运动，约有1万人游行穿过奥地利首都维也纳的市中心，抗议政府为阻止疫情扩散而实施的封锁限制。在游行现场，大多数民众都没有佩戴口罩，甚至还在相互亲吻和拥抱。</p>
+  <p>在波兰，人们在#otwieraMY运动的号召下也进行了类似宣传。</p>
+  <p>波兰Górlaskie Veto组织的领导人塞巴斯蒂安·皮托恩（SebastianPitoń）说，“我们将终结这种疯狂（封锁）……这是想要消灭波兰和波兰人、消灭中产阶级、中小型企业并每天杀死数百人的疯狂行为。”Górlaskie Veto称自己代表约2百家企业。</p>
+  <p>皮托恩说：“我希望我们能使整个中欧摆脱这辆驶向毁灭的疯狂火车。”</p>
+  <h3 id="section-25">荷兰民众抗议封城 警方动用水炮驱离</h3>
+  <figure id="attachment_12695387" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230637569-1.jpg"><img class="size-large wp-image-12695387" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1230637569-1-600x405.jpg" alt="" width="600" height="405" /></a>    <figcaption class="wp-caption-text">
+1月17日，荷兰大批民众抗议封锁政策。(Robin VAN LONKHUIJSEN / ANP / AFP)
+    </figcaption>
+  </figure>
+  <p>周末，荷兰阿姆斯特丹约有两千名民众未经批准下走上街头，抗议全国疫情封锁令，防暴警察用水炮驱赶人群。</p>
+  <p>当时，抗议人士聚集在阿姆斯特丹国立博物馆（Rijksmuseum）与梵谷博物馆（Van Gogh Museum）前广场，高举牌子上面写着：“自由：终止围城”，并喊道“我们要自由！”</p>
+  <p>阿姆斯特丹市政府早前已拒绝这场在博物馆广场举行的集会申请。警方告戒民众须离开现场时，示威人群拒绝，有些人甚至丢掷炮竹。</p>
+  <p>随后警方动用水炮试图驱赶，当局说，已经逮捕约百名示威民众。市政府官方推特说，“为了防止对公众健康的危害，所有人都必须遵守限制令。示威者违反了规定。”</p>
+  <h3 id="section-26">英国本周起为70岁以上长者接种</h3>
+  <figure id="attachment_12688940" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1296169363.jpg"><img class="size-large wp-image-12688940" src="https://i.epochtimes.com/assets/uploads/2021/01/GettyImages-1296169363-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2021年1月13日，英国福克斯通（Folkestone），封锁期间大部分商店已关闭。(Dan Kitwood/Getty Images)
+    </figcaption>
+  </figure>
+  <p>英国政府宣布扩大疫苗接种范围，本周起为70岁以上长者及临床极度脆弱群体接种。</p>
+  <p>此外，英国政府再开放10个大规模疫苗接种中心，达到每分钟可为140人接种的速度。</p>
+  <p>英国将80岁以上长者、养老院的老人及职员、国民保健署（NHS）前线医护列为优先接种群体，目前超过380万人已接种首剂疫苗。</p>
+  <p>英国卫生大臣Matt Hancock说，超过一半的80岁以上长者已接种首剂疫苗。</p>
+  <h3 id="section-27">香港油麻地区增八大厦列强制检测</h3>
+  <figure id="attachment_12695588" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/4-14.jpg"><img class="size-large wp-image-12695588" src="https://i.epochtimes.com/assets/uploads/2021/01/4-14-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2021年1月17日，卫生防护中心传染病处主任张竹君（左）表示，当局近日收紧㓥房住户密切接触者的门槛。（宋碧龙／大纪元）
+    </figcaption>
+  </figure>
+  <p>截至1月17日零时零分，香港新增55宗中共病毒确诊个案，51宗属本地感染，其中16宗源头不明，累计9, 557宗确诊和1宗疑似个案。另有逾80宗初步阳性个案。新增个案中，有9宗患者居于油麻地指定区域，由上月底至今，累计近百宗个案，区内多8幢大厦列入强制检测。</p>
+  <p>根据港府初步记录，16日有超过660名居民依从强制检测公告的规定到上述地点接受检测，有超过3,180名居民自愿到上述地点检测。16日及17日合共有超过7,100名居民到上述地点接受检测。</p>
+  <h3 id="section-28">因撰写有关疫情的《武汉日记》 方方称受死亡威胁</h3>
+  <figure id="attachment_12693706" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/32b68e4778f5fe352b1de996faed8780.png"><img class="size-large wp-image-12693706" src="https://i.epochtimes.com/assets/uploads/2021/01/32b68e4778f5fe352b1de996faed8780-600x336.png" alt="大陆作家方方近日在接受法国媒体采访时表示，辑录成书的《武汉日记》让她付出不少代价，甚至受到生命威胁。图为方方微博。（微博截图）" width="600" height="336" /></a>    <figcaption class="wp-caption-text">
+大陆作家方方近日在接受法国媒体采访时表示，辑录成书的《武汉日记》让她付出不少代价，甚至受到生命威胁。图为方方微博。（微博截图）
+    </figcaption>
+  </figure>
+  <p>中共肺炎在武汉爆发、武汉封城时，大陆作家方方曾写下“封城日记”，后被辑录成书——《武汉日记》。近日她在接受法国媒体采访时表示，该书让她付出不少代价，不仅被中共当局排斥，甚至受到生命威胁。</p>
+  <p>1月14日，法国国际广播电台刊登了对大陆作家方方的专访。在专访中，方方表示，自己在武汉封城期间所写的日记编辑成书（《武汉日记》）后，她的文学生涯彻底改变。</p>
+  <p>65岁的方方表示，自己不仅被中共当局和文学界排斥，失去发表评论或在杂志发表文章的机会，亦无法参加各式文学活动。这是她自1982年开始从事文学工作后，首次遇到的情况；甚至收到左派主义者的威胁，现在尽量减少出门。</p>
+  <p>方方指，这显示了极左民族主义在中国社会，特别是政府官员心中根深蒂固。</p>
+  <h3 id="section-29">受疫情打击 大陆超三成县域工人收入下降</h3>
+  <figure id="attachment_12695590" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/2-22.jpg"><img class="size-large wp-image-12695590" src="https://i.epochtimes.com/assets/uploads/2021/01/2-22-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+中共病毒重创中国经济，民众收入锐减。图为2020年2月5日空荡荡的北京街景。(GREG BAKER/AFP)
+    </figcaption>
+  </figure>
+  <p>大陆清华大学日前发布的一份报告显示，去年受中共病毒（武汉肺炎）疫情打击，大陆县域超过三成工人收入下滑。有分析表示，这显示中共希望依靠消费提振市场依然不易。</p>
+  <p>据大陆第一财经报导，清华大学社会科学学院县域治理研究中心、社会与金融研究中心联合“58同城”1月16日发布了《2020年清华-58县域劳动力市场调查报告》。</p>
+  <p>报告显示，受瘟疫影响，在县域区域，有24.4%的工人收入比疫情前下降，还有6%的工人收入大幅减少，即合计有超过3成工人收入减少了；另有31.7%的工人在疫情后开始从事兼职以增加收入。调查报告还显示，非进行创业的样本中，有超过2成目前没有工作，其中近半数为失业者。</p>
+  <h3 id="section-30">河北疫情攻入晋陕 民众恐慌抢购</h3>
+  <figure id="attachment_12695589" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/3-19.jpg"><img class="size-large wp-image-12695589" src="https://i.epochtimes.com/assets/uploads/2021/01/3-19-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+陕西白水县出现疫情后，人们出现恐慌性抢购。（视频截图，大纪元合成）
+    </figcaption>
+  </figure>
+  <p>河北疫情持续肆虐，17日再增一地高风险区。河北疫情日前随河北返晋者攻入山西，近日再被传入陕西白水县，引起当地民众恐慌，超市出现抢购潮。</p>
+  <p>中共官方突然公布陕西白水县出现疫情要封城，引起当地民众恐慌，纷纷前往超市抢购、囤积食物“备战”。</p>
+  <p>白水县附近的村民磊先生向大纪元记者表示，现在去白水的所有的道路都封了，村都封了，人都出不来。磊先生说，他的村不属于白水县，但也受到不小影响，尤其蔬菜都涨价了，磊先生还介绍，现在当局对于药品的管控也更严了，“感冒药、咳嗽药都不能随便买”。</p>
+  <h3 id="section-31">河北核酸检测造假曝光 涉事机构遍布全国</h3>
+  <figure id="attachment_12695587" style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2021/01/5-13.jpg"><img class="size-large wp-image-12695587" src="https://i.epochtimes.com/assets/uploads/2021/01/5-13-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年8月17日河北省邯郸市的医务人员正在采集小学生的口咽拭子样本。外界注意到，很多大陆医务人员操作不规范，采集拭子样本时触及受检者的肢体易出现交叉感染。（ STR/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>中共隐瞒疫情及数据造假一直备受舆论诟病。在疫情重灾区的河北省，近日爆出核酸检测造假事件，而涉事的这家检测机构背景很深，其业务遍布全国。</p>
+  <p>1月17日，河北省邢台市当局在疫情新闻发布会上称，2021年1月12日至13日，隆尧县进行第二轮核酸检测，共检测31万余人。14日，济南华曦医学检验实验室翟某某向卫健部门反馈结果全部为阴性。但是这个数字被怀疑造假，因为后来隆尧县对其中10名人员进行重新采样，发现3名阳性。</p>
+  <p>公开资料显示，涉事的济南华曦医学检验室是山东核子基因科技有限公司100%控股，而山东核子基因是深圳市核子基因科技有限公司的全资子公司。深圳市核子基因旗下，还控制着湖南核子基因、福建核子基因、新疆核子华曦医学检验实验室等40家企业，其中大部分为深圳核子基因遍布在国内的医学检验实验室。</p>
+  <h3 id="section-32">官方隐瞒疫情 各地大规模核酸检测背后有猫腻</h3>
+  <p>中共官方通报的疫情数据亦备受舆论质疑。例如河北的疫情数据颇为诡异，河北15日确诊新冠病毒患者90例，12日确诊人数也是90例；13日81例；14日又是90例。</p>
+  <p>许多网民在官媒《央视新闻》微博下留言质疑：“河北怎么天天报导90，是巧合吗？还是不敢报多，每天报90个？”</p>
+  <p>根据河北网民1月3日在微博发布的一份阳性患者名单显示，石家庄下辖的新乐市、正定县、省二院等地发现6例阳性病例。而石家庄当局同日通报确诊病例仅为1例。</p>
+  <p>前美国陆军研究所病毒学研究员林晓旭博士向大纪元表示，当地政府的做法，中共肯定是瞒报的，绝对不会是因为个例，就把整个县一个村都封起来了，实际的病例跟官方公布的数字有相当大的出入。</p>
+  <p>“现在你搞核酸检测，可以骗来财政拨款的支持，给地方政府带来收入，给他们官员一点回扣，绝对有利益驱动。一旦哪个城市官员开展这种做法后，其它地方肯定会仿效。”他说。</p>
+  <p>【疫情1·17】请点击<a href="https://www.epochtimes.com/gb/21/1/17/n12693414.htm">这里</a>。</p>
+  <p>责任编辑：叶紫微#</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E5%A4%9A%E5%9C%B0%E6%8C%96%E6%B2%9F-%E5%A0%86%E5%9C%9F-%E7%A1%AC%E6%80%A7%E5%B0%81%E8%B7%AF-%E6%B2%B3%E5%8C%97%E6%80%A5%E4%B8%8B%E7%A6%81%E4%BB%A4">
+          多地挖沟、堆土 硬性封路 河北急下禁令
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%9F%B3%E5%AE%B6%E5%BA%84%E6%96%B0%E4%B9%90%E5%B8%82%E5%8D%87%E9%AB%98%E9%A3%8E%E9%99%A9%E5%8C%BA-%E5%BB%B6%E8%AF%AF%E9%98%B2%E7%96%AB%E5%86%8D%E5%87%BA%E8%8B%9B%E6%94%BF">
+          石家庄新乐市升高风险区 延误防疫再出苛政
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99">
+          【疫情1·18】“中共和世卫在遏制疫情上犯错”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF-%E9%BD%90%E9%BD%90%E5%93%88%E5%B0%94%E7%9E%92%E7%96%AB%E6%83%85-%E5%87%8C%E6%99%A8%E7%84%8A%E6%AD%BB%E6%A5%BC%E9%97%A8">
+          【一线采访】齐齐哈尔瞒疫情 凌晨焊死楼门
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99">
+            前一篇：【疫情1·18】“中共和世卫在遏制疫情上犯错”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%BE%8E%E5%9B%BD%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC2021-%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98">
+            后一篇：美国当选总统拜登就职典礼2021：你需要了解的几个关键问题
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E7%BE%8E%E5%9B%BD%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC2021-%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E7%9F%B3%E5%AE%B6%E5%BA%84%E6%96%B0%E4%B9%90%E5%B8%82%E5%8D%87%E9%AB%98%E9%A3%8E%E9%99%A9%E5%8C%BA-%E5%BB%B6%E8%AF%AF%E9%98%B2%E7%96%AB%E5%86%8D%E5%87%BA%E8%8B%9B%E6%94%BF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E7%BE%8E%E5%9B%BD%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC2021-%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-18/%E7%9F%B3%E5%AE%B6%E5%BA%84%E6%96%B0%E4%B9%90%E5%B8%82%E5%8D%87%E9%AB%98%E9%A3%8E%E9%99%A9%E5%8C%BA-%E5%BB%B6%E8%AF%AF%E9%98%B2%E7%96%AB%E5%86%8D%E5%87%BA%E8%8B%9B%E6%94%BF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-18/%E7%96%AB%E6%83%851-18-%E4%B8%AD%E5%85%B1%E5%92%8C%E4%B8%96%E5%8D%AB%E5%9C%A8%E9%81%8F%E5%88%B6%E7%96%AB%E6%83%85%E4%B8%8A%E7%8A%AF%E9%94%99">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

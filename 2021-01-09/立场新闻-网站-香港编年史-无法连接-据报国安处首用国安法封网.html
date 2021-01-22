@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+" />
+    <meta property="og:description" content="
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网" />
+    <meta property="twitter:title" content="立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ab%258b%25e5%259c%25ba%25e6%2596%25b0%25e9%2597%25bb-%25e7%25bd%2591%25e7%25ab%2599%25e9%25a6%2599%25e6%25b8%25af%25e7%25bc%2596%25e5%25b9%25b4%25e5%258f%25b2%25e6%2597%25a0%25e6%25b3%2595%25e8%25bf%259e%25e6%258e%25a5-%25e6%258d%25ae%25e6%258a%25a5%25e5%259b%25bd%25e5%25ae%2589%2F&t=%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB+%7C+%E7%BD%91%E7%AB%99%E2%80%9C%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2%E2%80%9D%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5+%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ab%258b%25e5%259c%25ba%25e6%2596%25b0%25e9%2597%25bb-%25e7%25bd%2591%25e7%25ab%2599%25e9%25a6%2599%25e6%25b8%25af%25e7%25bc%2596%25e5%25b9%25b4%25e5%258f%25b2%25e6%2597%25a0%25e6%25b3%2595%25e8%25bf%259e%25e6%258e%25a5-%25e6%258d%25ae%25e6%258a%25a5%25e5%259b%25bd%25e5%25ae%2589%2F&t=%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB+%7C+%E7%BD%91%E7%AB%99%E2%80%9C%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2%E2%80%9D%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5+%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91&d=2021-01-09&e=
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+
+
+  在网上披露大量香港警察、亲中人士、黄蓝商店资料的“香港编年史”，总编辑陈妍茵7日在 Telegram 频道表示，自 6 日晚上起，多名香港使用者报告指，在使用香港网络供应商（ISP）的服务时，都无法连线至网站。陈妍茵表示，有理由相信本港的 ISP 主动封锁网站，“当中或涉及政府部门的要求或合作”，扼杀公民信息自由，“在此呼吁香港市民提前做好准备，以应对接下来更大规模之封网行动，迎接黎明前的黑暗。”
+  《明报》、《香港01》、有线电视均引述消息指，是警方要求服务供应商封网，是警队国家安全处首次引用《港区国安法》第 43 条封锁网站。
+  
+  警方：不评论个别个案 香港宽频：无封锁“香港编年史”
+  对于有否要求 ISP 封锁“香港编年史”，警方早前回复《立场新闻》表示“不评论个别个案”。警方又指，根..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ab%258b%25e5%259c%25ba%25e6%2596%25b0%25e9%2597%25bb-%25e7%25bd%2591%25e7%25ab%2599%25e9%25a6%2599%25e6%25b8%25af%25e7%25bc%2596%25e5%25b9%25b4%25e5%258f%25b2%25e6%2597%25a0%25e6%25b3%2595%25e8%25bf%259e%25e6%258e%25a5-%25e6%258d%25ae%25e6%258a%25a5%25e5%259b%25bd%25e5%25ae%2589%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/&text=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/&title=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/&title=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网&body=
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/&title=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网&caption=
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ab%258b%25e5%259c%25ba%25e6%2596%25b0%25e9%2597%25bb-%25e7%25bd%2591%25e7%25ab%2599%25e9%25a6%2599%25e6%25b8%25af%25e7%25bc%2596%25e5%25b9%25b4%25e5%258f%25b2%25e6%2597%25a0%25e6%25b3%2595%25e8%25bf%259e%25e6%258e%25a5-%25e6%258d%25ae%25e6%258a%25a5%25e5%259b%25bd%25e5%25ae%2589%2F&t=%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB+%7C+%E7%BD%91%E7%AB%99%E2%80%9C%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2%E2%80%9D%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5+%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91&d=2021-01-09&e=
+立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+——
+
+
+  在网上披露大量香港警察、亲中人士、黄蓝商店资料的“香港编年史”，总编辑陈妍茵7日在 Telegram 频道表示，自 6 日晚上起，多名香港使用者报告指，在使用香港网络供应商（ISP）的服务时，都无法连线至网站。陈妍茵表示，有理由相信本港的 ISP 主动封锁网站，“当中或涉及政府部门的要求或合作”，扼杀公民信息自由，“在此呼吁香港市民提前做好准备，以应对接下来更大规模之封网行动，迎接黎明前的黑暗。”
+  《明报》、《香港01》、有线电视均引述消息指，是警方要求服务供应商封网，是警队国家安全处首次引用《港区国安法》第 43 条封锁网站。
+  
+  警方：不评论个别个案 香港宽频：无封锁“香港编年史”
+  对于有否要求 ISP 封锁“香港编年史”，警方早前回复《立场新闻》表示“不评论个别个案”。警方又指，根..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ab%258b%25e5%259c%25ba%25e6%2596%25b0%25e9%2597%25bb-%25e7%25bd%2591%25e7%25ab%2599%25e9%25a6%2599%25e6%25b8%25af%25e7%25bc%2596%25e5%25b9%25b4%25e5%258f%25b2%25e6%2597%25a0%25e6%25b3%2595%25e8%25bf%259e%25e6%258e%25a5-%25e6%258d%25ae%25e6%258a%25a5%25e5%259b%25bd%25e5%25ae%2589%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610177032000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/">立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网</a>
+——</p>
+
+<div>
+  <p>在网上披露大量香港警察、亲中人士、黄蓝商店资料的“香港编年史”，总编辑陈妍茵7日在 Telegram 频道表示，自 6 日晚上起，多名香港使用者报告指，在使用香港网络供应商（ISP）的服务时，都无法连线至网站。陈妍茵表示，有理由相信本港的 ISP 主动封锁网站，“当中或涉及政府部门的要求或合作”，扼杀公民信息自由，“在此呼吁香港市民提前做好准备，以应对接下来更大规模之封网行动，迎接黎明前的黑暗。”</p>
+  <p><a href="https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20210108/s00001/1610093311437/%e8%bc%89%e8%ad%a6%e5%93%a1%e5%80%8b%e4%ba%ba%e8%b3%87%e6%96%99%e3%80%8c%e9%a6%99%e6%b8%af%e7%b7%a8%e5%b9%b4%e5%8f%b2%e3%80%8d%e7%b6%b2%e7%ab%99%e7%84%a1%e6%b3%95%e9%80%a3%e7%b7%9a-%e6%b6%88%e6%81%af-%e8%ad%a6%e6%96%b9%e5%9c%8b%e5%ae%89%e8%99%95%e9%a6%96%e5%bc%95%e7%94%a8%e3%80%8a%e6%b8%af%e5%8d%80%e5%9c%8b%e5%ae%89%e6%b3%95%e3%80%8b%e5%b0%81%e7%b6%b2">《明报》</a>、<a href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/571956/%E5%8F%8D%E4%BF%AE%E4%BE%8B%E7%B6%B2-%E9%A6%99%E6%B8%AF%E7%B7%A8%E5%B9%B4%E5%8F%B2-%E6%9C%AA%E8%83%BD%E7%80%8F%E8%A6%BD-%E6%B6%88%E6%81%AF-%E8%AD%A6%E9%A6%96%E5%BC%95%E5%9C%8B%E5%AE%89%E6%B3%95%E5%B0%81%E9%8E%96%E7%B6%B2%E7%AB%99">《香港01》</a>、<a href="https://www.facebook.com/icable.news/posts/1661190614073000?__cft__[0]=AZX55nMAT4c2t3_OMsK6f2M1Xg0RmjV9WTSkHUa19hletl1k7jhis2YsKWOpMgmTD5imAFRA1K7E2fk6KoQ4TcSA1Kjnv01Za7sA-NIOOAIueBdLngRPiLl-sR6uh9k3cCS8GTKtwh4xIcPjt7p_yeXRr83J-ONdWAwBij4vtb8eOyfoY3TPn6rli_0GGgBIygk&amp;__tn__=%2CO%2CP-R">有线电视</a>均引述消息指，是警方要求服务供应商封网，是警队国家安全处首次引用《港区国安法》第 43 条封锁网站。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/20210108-1620copy_0GbFt_1200x0.png" alt="img" width="500" class="aligncenter" /></p>
+  <h2 id="section">警方：不评论个别个案 香港宽频：无封锁“香港编年史”</h2>
+  <p>对于有否要求 ISP 封锁“香港编年史”，警方早前回复《立场新闻》表示“不评论个别个案”。警方又指，根据《港区国安法》43 条及相关实施细则，警方可要求服务商对在电子平台上相当可能构成危害国家安全罪行，或相当可能导致危害国家安全罪行发生的电子信息，作出禁制行动，“警方采取任何行动，会按实际情况，依法处理。”</p>
+  <p>其中一间 ISP 香港宽频回复《立场新闻》指，“本公司没有封锁我们的宽频用户连线至该网站”；另一间 ISP 电讯盈科则指“没有评论”。</p>
+  <p>《立场新闻》记者下午透过本地 ISP 提供的网络连线，登入“香港编年史”网站，发现网站内容传递网络商（CDN）Cloudflare 表示网站现时离线（currently offline）。Cloudflare 并且从“网际网络时光机”（Wayback Machine）库存，取得网站过往的截取版本，即用户未能观看网站的即时最新内容。记者之后再以 VPN，透过海外服务器登入“香港编年史”网站，发现能正常浏览。</p>
+  <h2 id="isp-">香港编年史总编：网络从未采取封禁 斥本港 ISP 与政府合谋扼杀信息自由</h2>
+  <p>“香港编年史”总编陈妍茵<a href="https://t.me/s/hkchronicles">昨日傍晚表示</a>，在 6 日晚上起收到多名香港用户报告，表示使用部份香港 ISP 服务时，无法连线至该网站，而他们翻查统计数据后，亦发现来自香港的使用者数量大幅下跌。陈妍茵指，将网站内的信息向社会和世界各地传播是“香港编年史”的宗旨，网站“从来没有选择性封禁部份地区或特定网络供应商的 IP，未来亦不打算如此做”。</p>
+  <p>陈妍茵指，经过与网站支援者沟通及调查后，发现香港部份网络供应商在处理连线至该网的要求时，“故意将使用者传送的资料抛弃，令使用者无法获得本站服务器的回复”，结果无法看到该网站内容，又指与网站共用一样 IP 的其他网站亦受到一定程度影响，“现时参与封锁本站的网络供应商有 Smartone、CMHK、HKBN、PCCW 等。”陈妍茵又指，有理由相信香港的 ISP 主动封锁网站内容，可能涉及政府部门的要求或合作，“在此谴责香港网络供应商与中国及香港政府合谋，以封网行为扼杀香港公民获取信息的自由”，她最后呼吁香港市民提前做好准备，“以应对接下来更大规模之封网行动，迎接黎明前的黑暗。”</p>
+  <h2 id="it-">IT 界人士郑斌彬：暂未确定当局实施封锁</h2>
+  <p>对于目前情况，香港互联网协会董事郑斌彬向《立场新闻》表示，事件发生至今都未有足够资料，能百分百肯定当局主动封锁网站。他表示按照网友昨晚（7 日）汇报，不少使用电讯盈科以及 3 香港的用户，已经根据“香港编年史”的内容传递网络商（CDN）Cloudflare 日前提供的 3 条 IP 位址登入网站，但都显示无法连接。他认为有 3 个可能，一个是相关 IP 位址确实被封锁，另一个是 ISP 的路由（routing）设定错误，令用户无法正确指往网站；另一个可能是 Cloudflare 出现技术问题，令用户无法透过 Cloudflare 的 IP 位址连接相应的内容服务器，于是无法浏览网站。</p>
+  <p>郑斌彬又提到，有使用数码通的用户表示，当登入“香港编年史”网站时，数码通提供的服务器并非将用户指向 Cloudflare 提供的 IP 位址，反而以一个错误的 IP 位址（<a href="https://en.wikipedia.org/wiki/Localhost">127.0.0.1</a>）回应。郑斌彬指这情况亦有 3 种可能，可能是数码通主动封锁网站，亦可能是数码通储起 Cloudflare 表示“封锁”的暂存回复，又或是编年史的技术团队设定错误，令数码通暂存了相关的错误设定，令用户无法登入网站。</p>
+  <h2 id="section-1">可干扰网站连接快取资料 阻碍用户前往</h2>
+  <p>有说法指，由于 Cloudflare 属于 CDN，会安排过百上千的网站都采用同一条 IP 位址，例如“香港编年史”就跟数千个网站<a href="https://securitytrails.com/domain/hkchronicles.com/dns?fbclid=IwAR2mGyAdSbZFiAeNVXvxRDtUBo0Gcm-A9XI33pHD3QS1kJlHFje4htbnMaA">共用 3 条 IP 位址</a>。如果当局以封锁 IP 的形式禁止用户登入个别网站，最终会令数千个网站遭殃。郑斌彬表示有关说法正确，但他同时表示，当局如要令用户无法登入个别网站，可以采用其他方法，例如“网域服务器快取污染”（DNS cache pollution），简单而言就是连接网站过程中的快取资料被人为干扰，令用户最终无法登入网站。中国大陆当局以往就曾经用这种方式，令用户无法登入 Facebook、YouTube 等网站。</p>
+  <p>被问到一般网民如何确定当局已确实指示 ISP 封网，郑斌彬指其中一种方法是，世界其他地方的网民登入部分网站时，被导引至该国信息管理部门的提示页面，表示不准许用户登入；另一种则与现时类似，用户经常连接不到个别的 IP 主机，或者在登入部分网站时发现上述的“网域服务器快取污染”，这些都能够证明用户无法登入网站，原因不是设定或技术错误，而是故意行为。</p>
+  <h2 id="vpn-">VPN 可登入被封网站</h2>
+  <p>当被问到如果确认封锁，网民该如何应对，郑斌彬指，如果是“网域服务器快取污染”，只需要在手机、电脑等装置的网路设定当中更改网域即可；但如果是用到封锁 IP 位址或者类似“防火长城”的技术，就要使用 VPN。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ab%8b%e5%9c%ba%e6%96%b0%e9%97%bb-%e7%bd%91%e7%ab%99%e9%a6%99%e6%b8%af%e7%bc%96%e5%b9%b4%e5%8f%b2%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5-%e6%8d%ae%e6%8a%a5%e5%9b%bd%e5%ae%89/">立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E4%BA%BA%E7%89%A9-%E8%80%83%E7%A0%94%E4%B8%AD%E5%B9%B4%E4%BA%BA-%E8%B5%B0%E8%BF%9B%E4%BB%98%E8%B4%B9%E8%87%AA%E4%B9%A0%E5%AE%A4">
+          人物｜考研中年人，走进付费自习室
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F-%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7">
+          德国之声 | 长平观察：马云的中国智慧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB-%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0-%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81-%E9%80%83%E7%A6%BB-%E6%8B%BC%E5%A4%9A%E5%A4%9A">
+          红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85-%E5%9B%BD%E4%BC%9A%E5%86%B2%E7%AA%81-%E9%A6%99%E6%B8%AF%E6%8A%93%E6%8D%95-%E6%9C%B1%E4%BB%A4">
+          【CDT敏感词周报】石家庄疫情、国会冲突、香港抓捕、朱令
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E5%9B%BD%E5%8E%BB%E5%B9%B4%E6%B6%89%E5%8C%BB%E5%88%91%E6%A1%88%E4%B8%8B%E9%99%8D%E4%B8%89%E6%88%90">
+            前一篇：中国去年涉医刑案下降三成
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%B4%AF%E8%AE%A1%E6%A3%80%E5%87%BA%E9%98%B3%E6%80%A7%E4%BA%BA%E5%91%98354%E4%BA%BA">
+            后一篇：河北石家庄累计检出阳性人员354人
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E5%9B%BD%E5%8E%BB%E5%B9%B4%E6%B6%89%E5%8C%BB%E5%88%91%E6%A1%88%E4%B8%8B%E9%99%8D%E4%B8%89%E6%88%90'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%B4%AF%E8%AE%A1%E6%A3%80%E5%87%BA%E9%98%B3%E6%80%A7%E4%BA%BA%E5%91%98354%E4%BA%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F-%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB-%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0-%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81-%E9%80%83%E7%A6%BB-%E6%8B%BC%E5%A4%9A%E5%A4%9A'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E5%9B%BD%E5%8E%BB%E5%B9%B4%E6%B6%89%E5%8C%BB%E5%88%91%E6%A1%88%E4%B8%8B%E9%99%8D%E4%B8%89%E6%88%90">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%B4%AF%E8%AE%A1%E6%A3%80%E5%87%BA%E9%98%B3%E6%80%A7%E4%BA%BA%E5%91%98354%E4%BA%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F-%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB-%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0-%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81-%E9%80%83%E7%A6%BB-%E6%8B%BC%E5%A4%9A%E5%A4%9A">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

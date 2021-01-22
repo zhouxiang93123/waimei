@@ -1,0 +1,3165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>大疫下 看法轮功在海峡两岸强烈对比 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+大疫下 看法轮功在海峡两岸强烈对比
+——
+" />
+    <meta property="og:description" content="
+大疫下 看法轮功在海峡两岸强烈对比
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="大疫下 看法轮功在海峡两岸强烈对比" />
+    <meta property="twitter:title" content="大疫下 看法轮功在海峡两岸强烈对比" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F17%2Fn12694195.htm&t=%E5%A4%A7%E7%96%AB%E4%B8%8B+%E7%9C%8B%E6%B3%95%E8%BD%AE%E5%8A%9F%E5%9C%A8%E6%B5%B7%E5%B3%A1%E4%B8%A4%E5%B2%B8%E5%BC%BA%E7%83%88%E5%AF%B9%E6%AF%94" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F17%2Fn12694195.htm&t=%E5%A4%A7%E7%96%AB%E4%B8%8B+%E7%9C%8B%E6%B3%95%E8%BD%AE%E5%8A%9F%E5%9C%A8%E6%B5%B7%E5%B3%A1%E4%B8%A4%E5%B2%B8%E5%BC%BA%E7%83%88%E5%AF%B9%E6%AF%94&d=2021-01-17&e=
+大疫下 看法轮功在海峡两岸强烈对比
+——
+
+
+  【大纪元2021年01月18日讯】（大纪元记者李辰综合报导）2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。
+  疫情中的台北，虽然没有往日的热闹，但法轮功学员的炼功场面祥和美好，能量场强大，获得民众赞誉，外国游客纷纷拍照。
+  
+    
+2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。（明慧网）
+    
+  
+  
+    
+2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。（明慧网）
+    
+  
+  2020年初，中共病毒在武汉爆发，蔓延至全球。和大陆只有一水之隔的台湾，确诊人数一直相对较低。台湾法轮功学员和往年一样，在2020年5月、7月、12月，举行年度大型集会、炼功活动。场面壮观，令人赞叹。
+  
+    
+2020年5月9日，台北部分法轮功学员中正纪念堂自由广场炼功，提前庆..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F17%2Fn12694195.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/1/17/n12694195.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/1/17/n12694195.htm&text=大疫下 看法轮功在海峡两岸强烈对比&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/1/17/n12694195.htm&title=大疫下 看法轮功在海峡两岸强烈对比" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/1/17/n12694195.htm&title=大疫下 看法轮功在海峡两岸强烈对比" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=大疫下 看法轮功在海峡两岸强烈对比&body=
+大疫下 看法轮功在海峡两岸强烈对比
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/1/17/n12694195.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/1/17/n12694195.htm&title=大疫下 看法轮功在海峡两岸强烈对比&caption=
+大疫下 看法轮功在海峡两岸强烈对比
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=大疫下 看法轮功在海峡两岸强烈对比&url=https://www.epochtimes.com/gb/21/1/17/n12694195.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>大疫下 看法轮功在海峡两岸强烈对比</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/1/17/n12694195.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F17%2Fn12694195.htm&t=%E5%A4%A7%E7%96%AB%E4%B8%8B+%E7%9C%8B%E6%B3%95%E8%BD%AE%E5%8A%9F%E5%9C%A8%E6%B5%B7%E5%B3%A1%E4%B8%A4%E5%B2%B8%E5%BC%BA%E7%83%88%E5%AF%B9%E6%AF%94&d=2021-01-17&e=
+大疫下 看法轮功在海峡两岸强烈对比
+——
+
+
+  【大纪元2021年01月18日讯】（大纪元记者李辰综合报导）2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。
+  疫情中的台北，虽然没有往日的热闹，但法轮功学员的炼功场面祥和美好，能量场强大，获得民众赞誉，外国游客纷纷拍照。
+  
+    
+2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。（明慧网）
+    
+  
+  
+    
+2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。（明慧网）
+    
+  
+  2020年初，中共病毒在武汉爆发，蔓延至全球。和大陆只有一水之隔的台湾，确诊人数一直相对较低。台湾法轮功学员和往年一样，在2020年5月、7月、12月，举行年度大型集会、炼功活动。场面壮观，令人赞叹。
+  
+    
+2020年5月9日，台北部分法轮功学员中正纪念堂自由广场炼功，提前庆..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F1%2F17%2Fn12694195.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610931733000-->
+<p><a href="https://www.epochtimes.com/gb/21/1/17/n12694195.htm">大疫下 看法轮功在海峡两岸强烈对比</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年01月18日讯】（大纪元记者李辰综合报导）2021年1月16日，<a href="https://www.epochtimes.com/gb/tag/%E5%8F%B0%E6%B9%BE.html">台湾</a>台北<a href="https://www.epochtimes.com/gb/tag/%E6%B3%95%E8%BD%AE%E5%8A%9F.html">法轮功</a>学员在自由广场前集体炼功。</p>
+  <p><a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>中的台北，虽然没有往日的热闹，但<a href="https://www.epochtimes.com/gb/tag/%E6%B3%95%E8%BD%AE%E5%8A%9F.html">法轮功</a>学员的炼功场面祥和美好，能量场强大，获得民众赞誉，外国游客纷纷拍照。</p>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://www.minghui.org/mh/article_images/2021-1-16-taibei-liberty-square_01.jpg"><img class="size-large" src="https://www.minghui.org/mh/article_images/2021-1-16-taibei-liberty-square_01.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2021年1月16日，<a href="https://www.epochtimes.com/gb/tag/%E5%8F%B0%E6%B9%BE.html">台湾</a>台北法轮功学员在自由广场前集体炼功。（明慧网）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://www.minghui.org/mh/article_images/2021-1-16-taibei-liberty-square_02.jpg"><img class="size-large" src="https://www.minghui.org/mh/article_images/2021-1-16-taibei-liberty-square_02.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2021年1月16日，台湾台北法轮功学员在自由广场前集体炼功。（明慧网）
+    </figcaption>
+  </figure>
+  <p>2020年初，<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>在武汉爆发，蔓延至全球。和大陆只有一水之隔的台湾，确诊人数一直相对较低。台湾法轮功学员和往年一样，在2020年5月、7月、12月，举行年度大型集会、炼功活动。场面壮观，令人赞叹。</p>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/05/2005090749392384.jpg"><img class="size-large" src="https://i.epochtimes.com/assets/uploads/2020/05/2005090749392384.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年5月9日，台北部分法轮功学员中正纪念堂自由广场炼功，提前庆祝5月13日法轮功创始人李洪志先生华诞暨法轮大法洪传28周年。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href=" https://i.epochtimes.com/assets/uploads/2020/05/2005090748102384.jpg"><img class="size-large" src=" https://i.epochtimes.com/assets/uploads/2020/05/2005090748102384.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年5月9日，台北部分法轮功学员中正纪念堂自由广场炼功，提前庆祝5月13日法轮功创始人李洪志先生华诞暨法轮大法洪传28周年。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href=" https://i.epochtimes.com/assets/uploads/2020/07/PO_X8901-600x400.jpg"><img class="size-large" src=" https://i.epochtimes.com/assets/uploads/2020/07/PO_X8901-600x400.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+法轮功反迫害21周年，2020年7月18日下午4时，台湾部分法轮功学员约一千人在台北市区举行“天灭中共 结束迫害”游行。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href=" https://i.epochtimes.com/assets/uploads/2020/07/2007181103082384.jpg"><img class="size-large" src=" https://i.epochtimes.com/assets/uploads/2020/07/2007181103082384.jpg" width="600" height="433" /></a>    <figcaption class="wp-caption-text">
+法轮功反迫害21周年，2020年7月18日下午4时，台湾部分法轮功学员约一千人在台北市区举行“天灭中共 结束迫害”游行。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/07/2007181100222384.jpg"><img class="size-large" src="https://i.epochtimes.com/assets/uploads/2020/07/2007181100222384.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+法轮功反迫害21周年，2020年7月18日下午4时，台湾部分法轮功学员约一千人在台北市区举行“天灭中共 结束迫害”游行。图为台湾法轮功学员手持被迫害致死的大陆法轮功学员生前照片。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href=" https://i.epochtimes.com/assets/uploads/2020/12/2012050431112384.jpg"><img class="size-large" src=" https://i.epochtimes.com/assets/uploads/2020/12/2012050431112384.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年12月5日，约5,400名来自台湾各地的部分法轮功学员，不畏风雨，齐聚在中正纪念堂的自由广场集体炼功，并向法轮功创始人李洪志先生拜早年，“恭祝师父新年好！”（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/12/2012050430532384.jpg"><img class="size-large" src="https://i.epochtimes.com/assets/uploads/2020/12/2012050430532384.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年12月5日，约5,400名来自台湾各地的部分法轮功学员，不畏风雨，齐聚在中正纪念堂的自由广场演炼五套功法。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <figure style="width: 600px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/12/2012050340382384-600x400.jpg"><img class="size-large" src="https://i.epochtimes.com/assets/uploads/2020/12/2012050340382384-600x400.jpg" width="600" height="400" /></a>    <figcaption class="wp-caption-text">
+2020年12月5日，约5,400名来自台湾各地的部分法轮功学员，齐聚在中正纪念堂的自由广场，排出九字真言“法轮大法好、真善忍好”图像。（陈柏州／大纪元）
+    </figcaption>
+  </figure>
+  <p>和台湾形成鲜明对比的是，<a href="https://www.epochtimes.com/gb/tag/%E5%A4%A7%E7%96%AB.html">大疫</a>之下，中共对法轮功的迫害力度加大。</p>
+  <p>法轮大法信息中心执行主任布劳迪（Levi Browde）向大纪元表示，21年来中共对法轮功的迫害“没有任何减轻”，并且，在<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a><a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>下，迫害加剧。</p>
+  <h2 id="section">中共加剧迫害法轮功</h2>
+  <p>法轮大法信息中心的执行主任布劳迪（Levi Browde）近期在一个关于人权的视频研讨会上表示，“2020年2月，法轮功学员被捕人数和2019年2月相比，增加了200%，被骚扰人数增加76%。”</p>
+  <p>“请记住：2月的中国，是（中共病毒）封城时期。”</p>
+  <p>“2020年10月，和2019年10月相比，逮捕人数增加了63%，骚扰人数增加了500%。”</p>
+  <p>“总的趋势是，尽管封锁，但是，中国境内的逮捕和骚扰（法轮功学员事件）显着增加。” 布劳迪说。</p>
+  <h2 id="section-1">宫凤强被迫害昏迷 关入中共隔离病房</h2>
+  <p>2021年1月14日，美国国会及行政当局中国委员会（CECC）发布2020年年度人权报告，报告收录了大陆黑龙江法轮功学员被挟持到中共病毒（新冠肺炎）隔离医院，以掩盖其受迫害证据的案例。</p>
+  <p>报告说，“明慧网报导，据报告，2020年1月27日，（中共地方）当局将法轮功学员宫凤强带到一家冠状病毒（中共病毒）隔离医院，以掩盖导致他在监禁期间被虐待至昏迷的证据。”</p>
+  <figure style="width: 163px" class="wp-caption aligncenter">
+<a href="https://www.minghui.org/mh/article_images/2010-2-9-gongfq-01.jpg"><img class="size-large" src="https://www.minghui.org/mh/article_images/2010-2-9-gongfq-01.jpg" width="163" height="230" /></a>    <figcaption class="wp-caption-text">
+宫凤强（明慧网）
+    </figcaption>
+  </figure>
+  <figure style="width: 200px" class="wp-caption aligncenter">
+<a href="https://www.minghui.org/mh/article_images/2020-2-2-mh-liyanjie-1.jpg"><img class="size-large" src="https://www.minghui.org/mh/article_images/2020-2-2-mh-liyanjie-1.jpg" width="200" height="300" /></a>    <figcaption class="wp-caption-text">
+李艳杰（明慧网）
+    </figcaption>
+  </figure>
+  <p>宫凤强的妻子、法轮功学员李艳杰，于2019年12月7号晚，被黑龙江依兰县、七台河市两地国保警察围困逼死。宫凤强被迫流离失所，2019年12月27日被黑龙江密山警察绑架，被非法关押在依兰看守所。</p>
+  <p>2020年黄历大年初三，被依兰看守所严重迫害的宫凤强，突发昏迷休克。看守所通知国保警察后，在没有通知家属的情况下，偷偷把人送进医院，为了怕事情暴露，把宫凤强关押在用于瘟疫隔离的特殊病房，不让任何人接触。</p>
+  <p>宫凤强原是依兰煤矿第二采区职工，他真诚善良，工作认真出色，在亲朋好友和同事眼中公认的好人。由于坚持<a class="popup" title="法轮大法，也称法轮功，一九九二年五月由李洪志先生传出的佛家上乘修炼大法，以宇宙最高特性“真善忍”为根本指导，按照宇宙的演化原理而修炼。经亿万人的修炼实践证明，法轮大法是大法大道，在把真正修炼的人带到高层次的同时，对稳定社会、提高人们的身体素质和道德水准，也起到了不可估量的正面作用。 资料： * 国家体总：法轮功祛病健身有效率高达97.9%（图） * 法轮功健身功效北京万例调查报告 * 法轮功收到的褒奖和支持议案 * 关于法轮功的一些历史事实 * 法轮功传出的历史过程 * 法轮功传出时期的历史图片 * 法轮功书籍出版和发行情况一览 * “425”真相 * “720”见证 * 法轮功的真实故事 录像： * “自焚”真相： 书籍 * 《绝处逢生》（明慧丛书，法轮功祛病健身故事集） 中文版 * 《绝处逢生》（明慧丛书，法轮功祛病健身故事集） 英文版 * 《同化法光》（明慧丛书，现代人的修炼故事） " href="https://big5.minghui.org/mh/glossary.html#1">法轮功</a>“真、善、忍”信仰，多次遭非法关押迫害。</p>
+  <h2 id="section-2">传疫情消息和避疫良方 被非法绑架、关押、骚扰</h2>
+  <p>2021年1月7日，宁夏银川市法轮功学员单季宁, 遭西夏区法院非法庭审。单季宁于2020年8月22日在街上发放《疫情特刊》小册子，被公安国保绑架，非法关押至今。</p>
+  <p>单季宁的辩护律师在法庭上表示，《宪法》第三十六条明文规定，中华人民共和国公民有宗教信仰的自由；根据事实与法律规定，单季宁无罪，应当立即释放。</p>
+  <p>2020年3月4日，河北保定法轮功学员郭志萍和陈秀梅，告诉民众法轮功九字真言——“法轮大法好，真善忍好”是避疫良方时，被保定市竞秀区先锋街派出所警察绑架。二人后被非法抄家；4月8日，被非法批捕。</p>
+  <p>法轮功九字真言已被事实和科学证明，对治疗和改善中共病毒病情，效果神奇。</p>
+  <p>欧洲病毒学华裔专家董宇红，收集了从2020年1月1日到5月31日的36例武汉肺炎患者的改善案例，分析发现：36例患者总体症状改善率为100%。其中，26例（72%）症状康复，10例（28%）症状改善。11例重症患者10例症状康复，1例改善。重症且住ICU（重症加强护理病房）3例，2例完全康复，1例改善。</p>
+  <p>北美明慧网报导了法轮功九字真言令多人绝处逢生的案例。以下仅举一例：</p>
+  <p>四川南充地区龙门镇医院妇科医生曹菊容， 2004年患食道癌晚期。她的侄子曹春强（修炼法轮功，已被中共迫害致死）再次劝她：“只有相信法轮大法才能救你的命。”面对死亡，曹菊容终于放下心来诚心诚意念“法轮大法好、真善忍好”，并对侄子说：“我若诚心念七天有效，就跟你学法轮功。”就在她诚心念九字真言的第七天，想吃东西了。她从此开始学炼法轮功，不久癌症痊愈。全家人高兴不已，都支持她修炼法轮功。</p>
+  <p>法轮功，包括五套舒缓优美的功法动作，可帮助人迅速调理身体、恢复健康。</p>
+  <h2 id="section-3"><a href="https://www.epochtimes.com/gb/tag/%E5%A4%A7%E7%96%AB.html">大疫</a>下 逾80法轮功学员被迫害致死 至少662人被非法判刑</h2>
+  <p>据不完全统计，2020年，至少八十多名法轮功学员遭中共迫害离世.</p>
+  <p>其中，21人在中共的监狱、看守所、派出所、村委会非法关押期间被迫害致死。比如：</p>
+  <p>胡林，男，48岁，原沈阳飞机研究所（601所）工程师，毕业于北京航空航天大学。因坚持信仰法轮功，多次遭残酷迫害。2020年2月16日，胡林在沈阳康家山监狱被迫害致死。</p>
+  <p>李桂荣，女，辽宁沈阳市法轮功学员，原沈阳市大东区合作街小学校长，曾被誉为“区十佳优秀校长”。2020年1月中旬，李桂荣被辽宁省女子监狱迫害致死。</p>
+  <p>2020年，中共非法判法轮功学员至少622人。其中，65岁以上者114人，80岁以上者11人。</p>
+  <h2 id="section-4">美国会委员会：2020年中共迫害人权程度前所未有</h2>
+  <figure style="width: 450px" class="wp-caption aligncenter">
+<a href="https://i.epochtimes.com/assets/uploads/2020/04/0001-3.jpg"><img class="size-large" src="https://i.epochtimes.com/assets/uploads/2020/04/0001-3.jpg" width="450" height="300" /></a>    <figcaption class="wp-caption-text">
+图为美国国会大厦。（李莎／大纪元）
+    </figcaption>
+  </figure>
+  <p>美国国会及行政当局中国委员会（CECC）在2021年1月14日发布的报告中还说，“中共采取了前所未有的措施，通过对行使基本人权的中国人民审查、恐吓和拘留，扩大了他们的镇压政策。”</p>
+  <p>国会议员克里斯‧史密斯（Chris Smith）在CECC的新闻通告中批评中共“残忍侵犯” 人权。</p>
+  <p>史密斯说，“它使种族灭绝、强摘器官、奴隶劳动和酷刑成为可能。”“维吾尔族穆斯林、基督徒、藏人、法轮功学员、人权律师和香港公民所经历的长期镇压，必须成为新一届拜登政府关切的核心。”</p>
+  <p>CECC共同主席、国会议员吉姆‧麦戈文（Jim McGovern）表示，中国过去一年压迫人权的行动“令人震惊，前所未有”。</p>
+  <p>麦戈文敦促国会和即将上任的拜登政府，必须追究北京的责任。</p>
+  <p>“美国必须继续与中国人民站在一起进行战斗，并领导世界对中国政府侵犯人权的行为，做出协调一致的回应。”</p>
+  <p>责任编辑：高静#</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E9%82%93%E8%B6%85%E7%94%BB%E7%94%BB%E9%81%AD%E5%AD%99%E4%BF%AA%E5%90%90%E6%A7%BD-9%E5%B2%81%E5%84%BF%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%AC%91%E7%BF%BB%E7%BD%91%E5%8F%8B">
+          邓超画画遭孙俪吐槽 9岁儿一句话笑翻网友
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E9%82%93%E8%B6%85%E7%94%BB%E5%A9%9A%E7%85%A7%E5%BC%95%E5%AD%99%E4%BF%AA%E5%90%90%E6%A7%BD-9%E5%B2%81%E5%84%BF%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%AC%91%E7%BF%BB%E7%BD%91%E5%8F%8B">
+          邓超画婚照引孙俪吐槽 9岁儿一句话笑翻网友
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%9B%BD%E5%AE%B6%E6%83%85%E6%8A%A5%E6%80%BB%E7%9B%91-%E4%B8%AD%E5%85%B1%E5%AF%BB%E6%B1%82%E5%B9%B2%E9%A2%842020%E7%BE%8E%E5%9B%BD%E5%A4%A7%E9%80%89">
+          国家情报总监：中共寻求干预2020美国大选
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%90%8D%E5%AE%B6%E4%B8%93%E6%A0%8F-%E8%AD%A6%E9%92%9F-%E4%B8%AD%E5%85%B1%E5%BC%8F%E5%AE%A1%E6%9F%A5%E5%88%B6%E5%B7%B2%E7%99%BB%E9%99%86%E7%BE%8E%E5%9B%BD">
+          【名家专栏】警钟：中共式审查制已登陆美国
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%86%8D%E6%96%B0%E5%A2%9E109%E8%B5%B7%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B">
+            前一篇：中国大陆再新增109起确诊病例
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E8%BF%9E10%E6%97%A5%E8%B6%85%E4%B8%87%E4%BA%BF%E4%BA%BA%E6%B0%91%E5%B8%81-A%E8%82%A1%E6%88%90%E4%BA%A4%E9%A2%9D%E6%94%BE%E5%A4%A7%E6%88%96%E6%88%90%E5%B8%B8%E6%80%81">
+            后一篇：连10日超万亿人民币 A股成交额放大或成常态
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%86%8D%E6%96%B0%E5%A2%9E109%E8%B5%B7%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E8%BF%9E10%E6%97%A5%E8%B6%85%E4%B8%87%E4%BA%BF%E4%BA%BA%E6%B0%91%E5%B8%81-A%E8%82%A1%E6%88%90%E4%BA%A4%E9%A2%9D%E6%94%BE%E5%A4%A7%E6%88%96%E6%88%90%E5%B8%B8%E6%80%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E9%82%93%E8%B6%85%E7%94%BB%E5%A9%9A%E7%85%A7%E5%BC%95%E5%AD%99%E4%BF%AA%E5%90%90%E6%A7%BD-9%E5%B2%81%E5%84%BF%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%AC%91%E7%BF%BB%E7%BD%91%E5%8F%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E5%9B%BD%E5%AE%B6%E6%83%85%E6%8A%A5%E6%80%BB%E7%9B%91-%E4%B8%AD%E5%85%B1%E5%AF%BB%E6%B1%82%E5%B9%B2%E9%A2%842020%E7%BE%8E%E5%9B%BD%E5%A4%A7%E9%80%89'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%86%8D%E6%96%B0%E5%A2%9E109%E8%B5%B7%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E8%BF%9E10%E6%97%A5%E8%B6%85%E4%B8%87%E4%BA%BF%E4%BA%BA%E6%B0%91%E5%B8%81-A%E8%82%A1%E6%88%90%E4%BA%A4%E9%A2%9D%E6%94%BE%E5%A4%A7%E6%88%96%E6%88%90%E5%B8%B8%E6%80%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-17/%E9%82%93%E8%B6%85%E7%94%BB%E5%A9%9A%E7%85%A7%E5%BC%95%E5%AD%99%E4%BF%AA%E5%90%90%E6%A7%BD-9%E5%B2%81%E5%84%BF%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%AC%91%E7%BF%BB%E7%BD%91%E5%8F%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-17/%E5%9B%BD%E5%AE%B6%E6%83%85%E6%8A%A5%E6%80%BB%E7%9B%91-%E4%B8%AD%E5%85%B1%E5%AF%BB%E6%B1%82%E5%B9%B2%E9%A2%842020%E7%BE%8E%E5%9B%BD%E5%A4%A7%E9%80%89">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

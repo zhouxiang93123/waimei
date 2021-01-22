@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>The lives of others – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+The lives of others
+——
+" />
+    <meta property="og:description" content="
+The lives of others
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="The lives of others" />
+    <meta property="twitter:title" content="The lives of others" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2Fspecial-report%2F2021%2F01%2F23%2Fthe-lives-of-others&t=The+lives+of+others" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Fspecial-report%2F2021%2F01%2F23%2Fthe-lives-of-others&t=The+lives+of+others&d=2021-01-21&e=
+The lives of others
+——
+
+
+  
+  
+    
+      Jan 23rd 2021
+      
+    
+  
+  AT THE GoZeroWaste workshop in Suzhou, a canal town near Shanghai, a dozen young people learn to hand-sew face masks. The single-use, surgical sort are hardly in short supply, as no country makes more masks than China. Yet the masks, which contain plastics, are rarely recycled; and Suzhou’s apprentices want to be greener...." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Fspecial-report%2F2021%2F01%2F23%2Fthe-lives-of-others" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/special-report/2021/01/23/the-lives-of-others" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/special-report/2021/01/23/the-lives-of-others&text=The lives of others&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/special-report/2021/01/23/the-lives-of-others&title=The lives of others" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/special-report/2021/01/23/the-lives-of-others&title=The lives of others" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=The lives of others&body=
+The lives of others
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/special-report/2021/01/23/the-lives-of-others" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/special-report/2021/01/23/the-lives-of-others&title=The lives of others&caption=
+The lives of others
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=The lives of others&url=https://www.economist.com/special-report/2021/01/23/the-lives-of-others" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>The lives of others</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/special-report/2021/01/23/the-lives-of-others"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Fspecial-report%2F2021%2F01%2F23%2Fthe-lives-of-others&t=The+lives+of+others&d=2021-01-21&e=
+The lives of others
+——
+
+
+  
+  
+    
+      Jan 23rd 2021
+      
+    
+  
+  AT THE GoZeroWaste workshop in Suzhou, a canal town near Shanghai, a dozen young people learn to hand-sew face masks. The single-use, surgical sort are hardly in short supply, as no country makes more masks than China. Yet the masks, which contain plastics, are rarely recycled; and Suzhou’s apprentices want to be greener...." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Fspecial-report%2F2021%2F01%2F23%2Fthe-lives-of-others" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611256214000-->
+<p><a href="https://www.economist.com/special-report/2021/01/23/the-lives-of-others">The lives of others</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20210123_SRP049_0.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-23T00:00:00Z">Jan 23rd 2021</time>
+      <meta itemprop="author" content="The Economist" />
+    </div>
+  </aside>
+  <p data-caps="initial"><span data-caps="initial">A</span><small>T THE</small> GoZeroWaste workshop in Suzhou, a canal town near Shanghai, a dozen young people learn to hand-sew face masks. The single-use, surgical sort are hardly in short supply, as no country makes more masks than China. Yet the masks, which contain plastics, are rarely recycled; and Suzhou’s apprentices want to be greener. One participant says she is trying out vegetarianism, joining a tiny but growing group in China. Another “buys less stuff” since shopping binges began to “stress her out”. A third says “we are tired of consuming. We want to produce something, too.”</p>
+  <p>With China being the world’s largest polluter, environmental awareness is rising among the young. Lots use Ant Forest, a carbon-account scheme set up by Alipay, a payments giant, that tracks green spending and grants credits towards planting trees. More donate old clothes to Feimayi, an online charity, and buy from Xianyu, a website owned by Alibaba that sells second-hand goods. Plant-based meat is finding fans. Vegan nuggets at a <small>KFC</small> branch in Shanghai sold out within an hour last year. Dicos, a local rival, has launched meatless patties in over 2,600 stores since October. The young say the pandemic has attuned them to their health and even to animal rights.</p>
+  <div>
+    <div>
+      <div id="econ-1"></div>
+    </div>
+  </div>
+  <p>The <em>jiulinghou</em> are the first generation in China to have grown up amid consumerism. To their credit, many now seek to improve society. They proudly exhibit their values by dressing in home-grown brands or job-hopping to find work that suits them. Do-gooding is often part of the mix. To elders, taught in the Mao era to renounce individual dreams for collective goals, young people seem eccentric and headstrong. In their childhoods, eating meat was a rare indulgence and a stable income was a blessing. They call the young cohort “the lucky generation”.</p>
+  <p>Youths object that they have heavy burdens of their own, from the <em>gaokao</em> university-entrance exam to bleak job prospects and unaffordable housing. In Beijing and Shanghai, average house prices are 23 times median incomes, twice the ratio in London. That is a source of particular anxiety for young men, because home-ownership is often seen as a prerequisite for marriage. Youngsters worry about the burden of caring for ageing parents, since China has few nursing homes and pensions are low. When asked in surveys to name their greatest source of happiness, having healthy parents comes second to having a stable income.</p>
+  <p>Much young resentment comes from a sense of having lost out on both the boom years and the government’s former largesse. A widely shared joke encapsulates this: “The state gave houses to our parents, and now we pay for them; it raised the retirement age when we started working; the stockmarket crashed as we started buying; and when we thought we could enjoy being adults, the state told us to have a second child”. (In 2016 China introduced a two-child rule, reversing its one-child policy.) The rags-to-riches stories that captivated their parents’ generation feel distant.</p>
+  <p>One way to cope is to vent about this. Millions share memes and jokes online that sum up their frustrations. A new favourite is <em>neijuan</em>, or “involution”, an academic term for the process when extra input no longer yields more output. Young people use it to describe the meaningless competition in which they take part, from the educational rat-race to the fight for a white-collar job. Office workers joke that they are <em>dagong ren</em> (primarily manual labourers) to deplore the monotony of their jobs. They are tired of working overtime and of China’s “996” regime, a work schedule of 9am to 9pm, six days a week, usually without extra pay.</p>
+  <div>
+    <div>
+      <div id="econ-2"></div>
+    </div>
+  </div>
+  <p>As disillusionment sets in, young people question Chinese societal norms. Many tune into Qipa Shuo, a hit debating show. Its topics range from, “Should I stay in a city to pursue my career even if the air is polluted?” and “A job I like requires me to work ‘996’: should I quit?” to, “Would you choose to be an unmarried mother?” and “Is it a waste for a highly educated woman to be a full-time housewife?” Among fans the debate often continues, online and offline, after each episode.</p>
+  <p>Such themes reflect rapidly changing mindsets. A survey asking <em>jiulinghou</em> about dating and marriage found that more than half were happy to rent their homes as newlyweds. Seven in ten singletons said income was not the most important criterion in choosing a partner. Most said that the basis of marriage was a life shared by two like-minded people—a radical turn, considering that elders saw it as a contract between two sets of parents. In a society that for centuries held that a woman’s place was in the home, young mothers now increasingly reject old child-rearing norms.</p>
+  <p>Discrimination against women is on the rise, partly as the state tries to stimulate a baby boom. Government bodies have popularised a term for those unmarried beyond the age of 27: <em>shengnu </em>(leftover women). A backlash from young women has created a new genre of “she era” films that cheer for independent women. Last year’s hits included “Nothing But Thirty”, in which three heroines navigate far-from-perfect lives; and “Sisters Who Make Waves”, a reality show starring female celebrities over 30.</p>
+  <p>One outcome of the one-child policy is that families with daughters poured their resources into them. This has nurtured a generation of educated young women who balk at gender inequalities or personal injustices. They demand investigations into harassment by male bosses and teachers, sometimes with success.</p>
+  <p>Several young people interviewed for this report said that seeing rescue efforts after an earthquake in Sichuan in 2008 killed 70,000 people gave them more sense of social responsibility. Many praised the <em>jiulinghou</em> for their acts of service during the covid-19 pandemic as doctors, teachers and volunteers. Young ethnic Mongols in Inner Mongolia and elsewhere set up O9, a bilingual WeChat account, to translate official advice into Mongolian.</p>
+  <p>Young people are testing the limits of a regime that has long been suspicious of citizen-led movements. In 2019 anger over 996 sparked an online movement by office workers to demand more humane hours. Feminism and <small>LGBT</small> rights have found vocal champions in the <em>jiulinghou</em>, no mean feat when the party insists on traditional family values as the basis for a harmonious society.</p>
+  <h2 id="from-streets-to-tweets">From streets to tweets</h2>
+  <p>Activism has become harder under Xi Jinping. Many <small>NGO</small>s have been closed, notably on university campuses. In those that remain, monitors report on outspoken members to their university’s party authorities. In 2018 members of Marxist university clubs went to Shenzhen to support disgruntled workers trying to form an independent union (China bans them). Police arrested them. Women’s rights activists, known as the “feminist five”, were detained in 2015 for distributing leaflets decrying sexual harassment on public transport.</p>
+  <p>In 2012 two of the five walked with another friend through Beijing dressed in wedding gowns splattered with fake blood to raise awareness of domestic violence. They occupied men’s toilets to protest that women’s loos were too small. The press was sympathetic; some cities promised to install more cubicles. But as the movement grew, the authorities clamped down.</p>
+  <p>Among the few still taking to the streets is Ou Hongyi, an 18-year-old from Guangxi widely dubbed China’s first climate striker. Ms Ou protests in cities for Fridays For Future, a global green youth movement that calls on governments to take action. Some young people chat to her. But others “think we are threatening”, she says. “They tell us it looks like we want to overthrow the government.” She was briefly detained in September.</p>
+  <p>Young activists also campaign online. When millions were confined to their homes by covid-19, Guo Jing, a young feminist, set up “Vaccines Against Domestic Violence”. The initiative called on volunteers to listen out for abuse. <small>LGBT</small> advocates used China’s decennial census-taking in November to increase recognition for gay couples with a campaign called, “They are not my roommate, they are my partner”, encouraging gay couples to tick the “Other” box to describe their relationship.</p>
+  <p>Legal challenges have grown. Ms Guo was the first jobseeker to win a gender-discrimination case in 2014. A court in Beijing is hearing a case on sexual harassment brought by Zhou Xiaoxuan, a 27-year-old, against a television host. Ms Zhou is a frequent commentator on #MeToo issues. Courts have accepted cases by students over homophobia in textbooks. In October Ou Jiayong, a 23-year-old, lost a suit against the education ministry, but a hashtag on Weibo got 27m views. The professionalisation of China’s judiciary makes it harder for low-level officials to snuff out cases, says Darius Longarino of Yale University.</p>
+  <div>
+    <div>
+      <div id="econ-3"></div>
+    </div>
+  </div>
+  <p>Volunteers are left alone if they fill gaps in state provision, as with covid-19. Yet they must work within confines set by the government. Police officers signed up to O9 in Inner Mongolia as “volunteers”; organisers felt they could not refuse them. Ms Ou approached green <small>NGO</small>s only to be turned away as too radical. Despite the risks, could young Chinese yet become a political challenge?<span data-ornament="ufinish">■</span></p>
+  <div>
+<strong>Generation Xi<!-- --> <span>Chinese youth</span></strong>    <ul>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/generation-xi"><span>Generation Xi</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/homecoming"><span>Homecoming</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/partygoers"><span>Partygoers</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/how-to-rebel-in-china"><span>How to rebel in China</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/a-bale-of-sea-turtles"><span>A bale of sea turtles</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/23/the-lives-of-others"><span>The lives of others</span></a></li>
+      <li><a href="https://www.economist.comhttps://www.economist.com/special-report/2021/01/21/circling-the-square"><span>Circling the square</span></a></li>
+    </ul>
+  </div>
+  <p data-test-id="Footnote">This article appeared in the Special report section of the print edition under the headline "The lives of others"</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/The-struggle-over-chips-enters-a-new-phase">
+          The struggle over chips enters a new phase
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care">
+          The pandemic has exposed a crisis in Canada’s care homes
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran">
+          The history of America’s relationship with Iran
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/The-biggest-obstacle-to-China-s-rise-is-struggling">
+          The biggest obstacle to China’s rise is struggling rural children
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran">
+            前一篇：The history of America’s relationship with Iran
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care">
+            后一篇：The pandemic has exposed a crisis in Canada’s care homes
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/The-pandemic-has-exposed-a-crisis-in-Canada-s-care">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<经济学人en>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/The-history-of-America-s-relationship-with-Iran">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

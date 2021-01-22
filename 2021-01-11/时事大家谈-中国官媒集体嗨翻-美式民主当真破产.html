@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+" />
+    <meta property="og:description" content="
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？" />
+    <meta property="twitter:title" content="时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fvoaweishi-20210111-voaio-american-democracy-really-broke%2F5732835.html&t=%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88%3A+%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%AA%92%E9%9B%86%E4%BD%93%E5%97%A8%E7%BF%BB%EF%BC%8C%E7%BE%8E%E5%BC%8F%E6%B0%91%E4%B8%BB%E5%BD%93%E7%9C%9F%E7%A0%B4%E4%BA%A7%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fvoaweishi-20210111-voaio-american-democracy-really-broke%2F5732835.html&t=%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88%3A+%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%AA%92%E9%9B%86%E4%BD%93%E5%97%A8%E7%BF%BB%EF%BC%8C%E7%BE%8E%E5%BC%8F%E6%B0%91%E4%B8%BB%E5%BD%93%E7%9C%9F%E7%A0%B4%E4%BA%A7%EF%BC%9F&d=2021-01-11&e=
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+
+
+  
+Mon, 11 Jan 2021 13:55:24 GMT
+  
+  
+  
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+  
+  
+  
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+  
+  美国总统特朗普的支持者冲击国会大厦的暴力事件震惊全世界，中国官媒反应尤其强烈，大小媒体一齐动员，集体嗨翻，欢呼“世界正在见证美式民主的制度性危机”，“美式民主正在全世界面前丢丑、破产 ”，“美国大选扯下美式民主的最后遮羞布”。
+  国际观察人士评论，国会山的流血事件给了习近平一个难得的机会，希望让中国人相信，他的专制极权制度更为优越。
+  美式民主究竟有没有陷入危机？延续200多年的美国民主体制过去如何应对混乱与分裂？美国民主制度的韧性和修复能力体现在哪些地方？
+  
+    《北京之春》荣誉主编胡平认为，2..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fvoaweishi-20210111-voaio-american-democracy-really-broke%2F5732835.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html&text=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html&title=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html&title=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？&body=
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html&title=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？&caption=
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？&url=https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fvoaweishi-20210111-voaio-american-democracy-really-broke%2F5732835.html&t=%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88%3A+%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%AA%92%E9%9B%86%E4%BD%93%E5%97%A8%E7%BF%BB%EF%BC%8C%E7%BE%8E%E5%BC%8F%E6%B0%91%E4%B8%BB%E5%BD%93%E7%9C%9F%E7%A0%B4%E4%BA%A7%EF%BC%9F&d=2021-01-11&e=
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+——
+
+
+  
+Mon, 11 Jan 2021 13:55:24 GMT
+  
+  
+  
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+  
+  
+  
+时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？
+  
+  美国总统特朗普的支持者冲击国会大厦的暴力事件震惊全世界，中国官媒反应尤其强烈，大小媒体一齐动员，集体嗨翻，欢呼“世界正在见证美式民主的制度性危机”，“美式民主正在全世界面前丢丑、破产 ”，“美国大选扯下美式民主的最后遮羞布”。
+  国际观察人士评论，国会山的流血事件给了习近平一个难得的机会，希望让中国人相信，他的专制极权制度更为优越。
+  美式民主究竟有没有陷入危机？延续200多年的美国民主体制过去如何应对混乱与分裂？美国民主制度的韧性和修复能力体现在哪些地方？
+  
+    《北京之春》荣誉主编胡平认为，2..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fvoaweishi-20210111-voaio-american-democracy-really-broke%2F5732835.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610395886000-->
+<p><a href="https://www.voachinese.com/a/voaweishi-20210111-voaio-american-democracy-really-broke/5732835.html">时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 11 Jan 2021 13:55:24 GMT</em>
+  </div>
+  <video poster="https://images.weserv.nl?url=gdb.voanews.com/4314764f-be42-489f-8880-744aef1ee703_tv_r1_s_w900.jpg" src="https://av.voanews.com/Videoroot/Pangeavideo/2021/01/4/43/4314764f-be42-489f-8880-744aef1ee703_240p.mp4" style="width:100%" controls=""></video>
+  <div>
+<small style="color: #999;">时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？</small>
+  </div>
+  <audio src="https://av.voanews.com/clips/VCH/2021/01/11/da286d26-6220-48ce-a875-e8f0b5ec88dd.mp3" controls=""></audio>
+  <div>
+<small style="color: #999;">时事大家谈: 中国官媒集体嗨翻，美式民主当真破产？</small>
+  </div>
+  <p>美国总统特朗普的支持者冲击国会大厦的暴力事件震惊全世界，中国官媒反应尤其强烈，大小媒体一齐动员，集体嗨翻，欢呼“世界正在见证美式民主的制度性危机”，“美式民主正在全世界面前丢丑、破产 ”，“美国大选扯下美式民主的最后遮羞布”。</p>
+  <p>国际观察人士评论，国会山的流血事件给了习近平一个难得的机会，希望让中国人相信，他的专制极权制度更为优越。</p>
+  <p>美式民主究竟有没有陷入危机？延续200多年的美国民主体制过去如何应对混乱与分裂？美国民主制度的韧性和修复能力体现在哪些地方？</p>
+  <div>
+    <p>《北京之春》荣誉主编胡平认为，2020年的美国总统大选虽然存在一些争议，但根据现在已经披露出的证据、法庭诉讼以及媒体广泛的报道，应该可以基本上排除这次大选存在所谓大规模“舞弊”的情况，而且在各种纷争、谣言、假消息和司法挑战下，美国的选举反而体现了它的韧性。</p>
+    <p>纽约城市大学政治学教授表示<em>，</em>以法治原则为保障的美国民主体制在这次风暴中彰显其优势，而且美国司法和选举制度的健全可以确保选举可以公平、公正地进行。</p>
+    <p>他说：“本身美国三千多个县市独立的、各自的、有两党建立的中立的选举委员会在进行这些运作，这就保证没有任何一个政党可以控制它。另外可以看到整个选举程序，因为是在全国各地多元地进行，最后把它汇总上去。这样的话有舆论监督，有媒体、各种法院，包括司法部都可以去核证。所以有人要去作弊，风险是非常大的。我们参加过投票，这种投票过程在美国基本上都是性格签名，跟盖章比风险反而更小。最后一个就是司法制度，因为美国的司法制度不是一朝天子一朝臣，所以美国的法院不是由一个总统，也就是说不是由现任的川普总统全部任命的。它是由不同年代，甚至有的人可能已经任职几十年了，在不同的总统任期下，也有民主党也有共和党。所以在这种司法论证的程序过程中就没有一党可以一手遮天。再加上在美国，民主的最终体现就是选票。到底是要点人头还是杀人头，是要用子弹还是要用选票来决定。美国的选举最基本的就是点人头、用选票，而不是杀人头，枪杆子里面出政权。它的民主的基本保障就是法治原则，而整个法治原则形成一个独立的体系，包括法学院和法学系统都形成了一个独立的忠诚宪法的体系。所以在这样的情况下，今天的美国的法院行使的权力最终是忠诚于美国宪法。而美国宪法是两百多年前由国父花了几个月的时间最后把它推敲出来的，当时做为世界上第一部民主自由的宪法，它最重要的目标就是防止由专制者、暴君复辟把美国第一个民主自由的宪法毁掉。所以我觉得这些这次都起了作用，彰显了美国民主在这次风暴中存活下来，而且能够显示它的优势。”</p>
+    <p>本次美国总统大选最让中共官媒兴高采烈、幸灾乐祸的莫过于嘲笑众议院议长南希·佩洛希的“美丽风景线”一说。中国外交部发言人华春莹、《环球时报》主编胡锡进等人以极具嘲讽性的语言批评美国对本国和香港暴力事件的所谓“双重标准”。</p>
+    <p>但《北京之春》荣誉主编胡平表示，中国官方和官媒借“美丽风景线”来讽喻美国国会大厦被冲击事件是移花接木、栽赃造谣。</p>
+    <p>他说：“华春莹、胡锡进纯粹是移花接木、栽赃造谣。在前年‘反送中’运动中，佩洛西确实两次讲到‘一道亮丽的风景线’。第一次是在六四，她是在赞扬香港维园六四烛光晚会是‘一道亮丽的风景线’。另外一次是在前年6月19号，她看到6月16号香港200万人和平大游行之后很感动。她在一次早餐会上又谈到，把这件事称为‘一道亮丽的风景线’。她一直坚定地支持港人的和平抗争。同时一再告诫一定要坚持非暴力，要记住甘地、马丁路德·金的成功的经验、成功的典范。除了她之外，美国驻港澳总领事唐伟康在7月1号那天，因为香港出现勇武派冲击立法会，在当天唐伟康就表示对这种行为非常失望。然后包括美国副总统彭斯、蓬佩奥都多次讲话一再强调我们支持港人的非暴力和平抗争。而且说，对任何一方的暴力，我们都不能接受。一直到最后，前年11月，美国国会要通过《香港人权与民主法案》的时候，还通过了一个《香港关系法》的修正案。其中有一句本来讲的就是‘支持港人自由集会和抗议的权力’，特地再加了‘和平’两个字。其实本来这话的意思就是支持和平。但是它为了提醒大家，特地把它改成了‘支持港人自由集会和和平抗议的权力’。可见美国方面一直是坚持这个态度，这一点是毫无疑问的。”</p>
+    <p>纽约城市大学政治学教授夏明认为，美国华文媒体上出现的各种有关这次美国大选的乱象，包括对美国民主制度和候选人的抹黑、造谣或许都与中共在背后的操作有关。</p>
+    <p>他说：“必须指出，在这次整个大的媒体的操作过程中，有一个中共掌控的‘红磨坊’在里面不断地运作。它们磨得慢、磨得细、磨得精，它们不断在里面添油加醋，各种填料。所以我们看到很多假新闻，很多谎言，很多非常下流的对美国，尤其是民主党的总统候选人现在当选总统和副总统候选人现在当选副总统进行人身的、恶意的、下流的攻击，我认为这是中共在整个美国选举中押的第三个宝。第一个宝，他们以为如果特朗普赢，他们也可以跟特朗普搞定。只要是特朗普需要钱，他的家族需要钱。第二如果拜登赢，拜登也容易搞定。拜登是老政客，比较可以预测。而且有特朗普做为备用在那儿搅局，总归让美国难有有效的政策。两个人不管谁赢，一定不要让这个赢的过程非常轻松顺利。所以中共就在不断在美国投票选举和最终总统就任的50来天，不断搅局，散步各种流言蜚语。最终是想把美国的民主和西方的民主抹黑，捣毁。所以我认为这里面有中共大磨坊在高速运转。”</p>
+<a href="/a/5702351.html"></a>    <p>本期时事大家谈完整版：<a class="wsw__a" href="https://youtu.be/tArkojR4IJA" target="_blank">中国官媒集体嗨翻，美式民主当真破产？</a></p>
+  </div>
+  <p>时事大家谈每星期一到四，星期六北京时间晚上九点播出，敬请收看。</p>
+  <p>==========================================<br />嘉宾和观众听众发表的都是个人观点，并不代表美国之音。<br />==========================================</p>
+  <iframe src="https://www.youtube.com/embed/tArkojR4IJA?&amp;&amp;&amp;enablejsapi=1" frameborder="0" width="100%" style="min-height:270px" class="external-content YouTube">
+<a href="https://www.youtube.com/watch?v=tArkojR4IJA&amp;&amp;&amp;">YouTube</a>
+  </iframe>
+  <p>《时事大家谈》YouTube播放列表：<a class="wsw__a" href="http://bit.ly/VOAIO-youtube" target="_blank">http://bit.ly/VOAIO-youtube</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%B0%81%E6%9D%80%E7%89%B9%E6%9C%97%E6%99%AE%E5%90%8E-%E5%B0%8F%E8%AF%B4-1984-%E6%88%90%E7%BE%8E%E5%9B%BD%E6%9C%80%E7%95%85%E9%94%80%E4%B9%A6">
+          社交媒体封杀特朗普后 小说《1984》成美国最畅销书
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%A4%B1%E4%B8%9A%E5%8D%8E%E4%BA%BA%E5%A6%82%E4%BD%95%E8%A2%AB%E5%8D%B7%E5%85%A5%E8%B4%A9%E6%AF%92%E5%A4%A7%E6%A1%88">
+          疫情中的失业华人如何被卷入贩毒大案？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B">
+          众议院民主党人正式提案 就罢免特朗普对彭斯施压
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%8F%B0%E6%B9%BE%E5%BC%80%E5%A7%8B%E5%8F%91%E8%A1%8C%E6%99%B6%E7%89%87%E6%96%B0%E7%89%88%E6%8A%A4%E7%85%A7-%E6%94%BE%E5%A4%A7%E5%B0%81%E9%9D%A2TAIWAN-%E5%AD%97%E6%A0%B7">
+          台湾开始发行晶片新版护照 放大封面TAIWAN 字样
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B">
+            前一篇：众议院民主党人正式提案 就罢免特朗普对彭斯施压
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E6%92%AD-%E8%93%AC%E4%BD%A9%E5%A5%A5VOA%E8%AE%B2%E8%AF%9D-%E5%AF%B9%E5%A4%96%E5%B9%BF%E6%92%AD%E4%BB%80%E4%B9%88">
+            后一篇：【重播】蓬佩奥VOA讲话：对外广播什么
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E6%92%AD-%E8%93%AC%E4%BD%A9%E5%A5%A5VOA%E8%AE%B2%E8%AF%9D-%E5%AF%B9%E5%A4%96%E5%B9%BF%E6%92%AD%E4%BB%80%E4%B9%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%A4%B1%E4%B8%9A%E5%8D%8E%E4%BA%BA%E5%A6%82%E4%BD%95%E8%A2%AB%E5%8D%B7%E5%85%A5%E8%B4%A9%E6%AF%92%E5%A4%A7%E6%A1%88'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E6%92%AD-%E8%93%AC%E4%BD%A9%E5%A5%A5VOA%E8%AE%B2%E8%AF%9D-%E5%AF%B9%E5%A4%96%E5%B9%BF%E6%92%AD%E4%BB%80%E4%B9%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-11/%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%A4%B1%E4%B8%9A%E5%8D%8E%E4%BA%BA%E5%A6%82%E4%BD%95%E8%A2%AB%E5%8D%B7%E5%85%A5%E8%B4%A9%E6%AF%92%E5%A4%A7%E6%A1%88">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%AD%A3%E5%BC%8F%E6%8F%90%E6%A1%88-%E5%B0%B1%E7%BD%A2%E5%85%8D%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E5%BD%AD%E6%96%AF%E6%96%BD%E5%8E%8B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>新冠疫情：封城令下为何还有一堆网红“出国度假” – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+" />
+    <meta property="og:description" content="
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="新冠疫情：封城令下为何还有一堆网红“出国度假”" />
+    <meta property="twitter:title" content="新冠疫情：封城令下为何还有一堆网红“出国度假”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55566744&t=%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%EF%BC%9A%E5%B0%81%E5%9F%8E%E4%BB%A4%E4%B8%8B%E4%B8%BA%E4%BD%95%E8%BF%98%E6%9C%89%E4%B8%80%E5%A0%86%E7%BD%91%E7%BA%A2%E2%80%9C%E5%87%BA%E5%9B%BD%E5%BA%A6%E5%81%87%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55566744&t=%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%EF%BC%9A%E5%B0%81%E5%9F%8E%E4%BB%A4%E4%B8%8B%E4%B8%BA%E4%BD%95%E8%BF%98%E6%9C%89%E4%B8%80%E5%A0%86%E7%BD%91%E7%BA%A2%E2%80%9C%E5%87%BA%E5%9B%BD%E5%BA%A6%E5%81%87%E2%80%9D&d=2021-01-09&e=
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+
+
+  
+    新冠疫情：封城令下为何还有一堆网红“出国度假”
+  
+  
+    52 分钟前
+  
+  
+    
+      
+    
+  
+  
+    如果你经常浏览社交媒体，关注名人动态，很可能你会发现，刚过去的圣诞和新年假期里，有许多人分享他们异国奢华度假的照片。
+  
+  
+    怎么会这样？现在新冠病毒这么严重，怎么还能出国？英国和许多国家都重新开始封城措施，政府要求人们居家防疫，连学校都关门了，那些充满异国情调的奢华假期又是怎么来的呢？
+  
+  
+    看一看英国的报章杂志你就会发现，无论是恋爱岛真人秀明星到加勒比海巴巴多斯的海滩上，或是苏格兰的凯尔特人足球队到中东迪拜训练，都引来公众质疑他们违反新冠病毒的防疫措施。
+  
+  
+    防疫规定如何解释？
+  
+  
+    以英国为例，政府在新年..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55566744" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/world-55566744" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/world-55566744&text=新冠疫情：封城令下为何还有一堆网红“出国度假”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/world-55566744&title=新冠疫情：封城令下为何还有一堆网红“出国度假”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/world-55566744&title=新冠疫情：封城令下为何还有一堆网红“出国度假”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=新冠疫情：封城令下为何还有一堆网红“出国度假”&body=
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/world-55566744" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/world-55566744&title=新冠疫情：封城令下为何还有一堆网红“出国度假”&caption=
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=新冠疫情：封城令下为何还有一堆网红“出国度假”&url=http://www.bbc.com/zhongwen/simp/world-55566744" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>新冠疫情：封城令下为何还有一堆网红“出国度假”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/world-55566744"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55566744&t=%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%EF%BC%9A%E5%B0%81%E5%9F%8E%E4%BB%A4%E4%B8%8B%E4%B8%BA%E4%BD%95%E8%BF%98%E6%9C%89%E4%B8%80%E5%A0%86%E7%BD%91%E7%BA%A2%E2%80%9C%E5%87%BA%E5%9B%BD%E5%BA%A6%E5%81%87%E2%80%9D&d=2021-01-09&e=
+新冠疫情：封城令下为何还有一堆网红“出国度假”
+——
+
+
+  
+    新冠疫情：封城令下为何还有一堆网红“出国度假”
+  
+  
+    52 分钟前
+  
+  
+    
+      
+    
+  
+  
+    如果你经常浏览社交媒体，关注名人动态，很可能你会发现，刚过去的圣诞和新年假期里，有许多人分享他们异国奢华度假的照片。
+  
+  
+    怎么会这样？现在新冠病毒这么严重，怎么还能出国？英国和许多国家都重新开始封城措施，政府要求人们居家防疫，连学校都关门了，那些充满异国情调的奢华假期又是怎么来的呢？
+  
+  
+    看一看英国的报章杂志你就会发现，无论是恋爱岛真人秀明星到加勒比海巴巴多斯的海滩上，或是苏格兰的凯尔特人足球队到中东迪拜训练，都引来公众质疑他们违反新冠病毒的防疫措施。
+  
+  
+    防疫规定如何解释？
+  
+  
+    以英国为例，政府在新年..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55566744" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610207488000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/world-55566744">新冠疫情：封城令下为何还有一堆网红“出国度假”</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">新冠疫情：封城令下为何还有一堆网红“出国度假”</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-09" class="css-pb6w51-StyledTimestamp e4zesg50">52 分钟前</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="英国政府正在考虑新的旅游限制措施（Credit: Getty Images）" src="https://ichef.bbci.co.uk/news/600/cpsprodpb/88D3/production/_116372053_55566744.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>如果你经常浏览社交媒体，关注名人动态，很可能你会发现，刚过去的圣诞和新年假期里，有许多人分享他们异国奢华度假的照片。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">怎么会这样？现在新冠病毒这么严重，怎么还能出国？英国和许多国家都重新开始封城措施，政府要求人们居家防疫，连学校都关门了，那些充满异国情调的奢华假期又是怎么来的呢？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">看一看英国的报章杂志你就会发现，无论是恋爱岛真人秀明星到加勒比海巴巴多斯的海滩上，或是苏格兰的凯尔特人足球队到中东迪拜训练，都引来公众质疑他们违反新冠病毒的防疫措施。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="防疫规定如何解释" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">防疫规定如何解释？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">以英国为例，政府在新年过后已经实施全英格兰的封城措施，要求所有人都要留在家里，除非必要情况，不要出门。</p>
+  </div>
+  <section aria-label="广告 2" aria-hidden="true" role="region" data-e2e="advertisement" class="e1j2237y0 css-1bxjjj1 e1e90g5r0">
+    <div id="dotcom-mpu" class="dotcom-ad"></div>
+  </section>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但那些在社交媒体上分享的度假照片可能是在圣诞节前，防疫措施还没有这么严格的时候出国的。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">而且上述可以允许出门的所谓必要情况，就包括了购买食物、看医生、每天一次的出门运动锻炼，或是无法在家工作的人可以允许出门工作，例如建筑工人等行业。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-55529038" class="css-h9s9st-InlineLink e1cs6q200">新冠疫苗大规模接种在即，疫情后的春天还远吗？</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/uk-55539235" class="css-h9s9st-InlineLink e1cs6q200">新冠病例继续上升 首相宣布英格兰再度封城</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/uk-55528967" class="css-h9s9st-InlineLink e1cs6q200">新冠疫苗：牛津大学疫苗开始在英国接种</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="包括恋爱岛等一些真人秀明星都前往迪拜（Credit: Getty Images）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/AFE3/production/_116372054_55566744.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="为什么能出国" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">为什么能出国？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">一些知名人物和网红在分享异国度假照片时都加注某些品牌或媒体的标签，显示他们分享的内容属于工作或赞助活动，这也是防疫措施允许出国的范围之内。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">英国一家旅游公司“Trending Travel”（潮旅游）专门委托知名人物代言旅游产品，吸引消费者体验与名人一样的旅游度假。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">该公司首席执行官赫尔曼（Keith Herman）表示，12月至3月期间是旅游业销售夏季假期的关键时刻，因此会邀请许多名人出国度假并在网络上分享旅游照片。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他说，他的公司邀请许多知名人物，包括在社交媒体上拥有上百万关注粉丝的恋爱岛真人秀明星，前往充满异国情调的马尔代夫和迪拜旅游。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="为什么去这些地方" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">为什么去这些地方？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但这些旅游地点又是如何选择的呢？TikTok和其他社交媒体上可以看到许多“酸民”嘲讽那些到阿拉伯联合酋长国迪拜旅游的名人。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">一些网红和名人的关注粉丝对他们出国旅游的美照表示不以为然，指责他们与现实脱节，或是钻防疫措施规定的漏洞。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/54020721" class="css-h9s9st-InlineLink e1cs6q200">法国裸体度假胜地如何成为传播新冠病毒的温床</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/53572577" class="css-h9s9st-InlineLink e1cs6q200">不能出门旅行 “在家度假”也能有轻松愉快体验</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="迪拜是许多人庆祝新年的旅游热点（Credit: Reuters）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/D6F3/production/_116372055_55566744.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">只要航空公司维持航班，就继续会有乘客搭乘飞机出国，BBC联系到的一位英国旅客就表示，他只要提出新冠病毒检测证明就能够飞往迪拜，根本没人询问他是旅游还是工作。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">那为什么是迪拜或是马尔代夫呢？这两个地方目前都是英国安全旅游地点，意味着从这两个地方返回英国的人入境英国之后不需要隔离。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">迪拜所在的阿拉伯联合酋长国去年11月被列入安全旅游地点，因此圣诞新年假期在社交媒体上可以看到许多在迪拜度假的照片。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">英国12月出现变异过的新冠病毒新毒株，许多国家纷纷停止与英国的交通，但一些豪华旅游胜地并没有和英国断航。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">有些国家要求从英国来的人强制隔离一段时间，这样一来从英国去的人就自然少很多了，但是迪拜自夏天之后就一直对英国游客开放。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">BBC在迪拜的商务记者哈许米（Sameer Hashmi）就表示，旅游业占迪拜GDP的11%，是迪拜重要的经济支柱，当地的安全措施和旅游便利是促使游客前往的重要原因。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="入境迪拜需要提供新冠病毒阴性检测证明（Credit: AFP）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13838/production/_116382997_96c39a97-f613-42fa-a927-987fe0226e54.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="还有哪些批评" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">还有哪些批评？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">一些网红和真人秀明星在迪拜的度假照片也引来许多人对迪拜这个地方的批评。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">英国选秀节目X-Factor的参赛者，Jedward兄弟两人就指责网红和名人分享迪拜度假照片，为这个人权纪录不佳的海湾国家做宣传。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">虽然最近几年逐渐成为热门的旅游地点，阿拉伯联合酋长国一直因为人权纪录而面临批评。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">迪拜快速的发展吸引许多豪华酒店投资，但庞大的建设背后却是移民工人的血汗换来的，人权团体指责这些移民工人的签证与工作绑定，导致他们成为弱势群体被剥削的对象。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">人权观察组织表示，未获允许离职的工人面临“弃职潜逃”的罪名，被抓到后面临罚款监禁或遣返的惩罚，许多人因此而成为强迫劳工现代奴隶。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="现在怎么办" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">现在怎么办？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">社交媒体上盛传，最新的封城防疫措施可能会导致航班取消，那些网红名人可能会被迫滞留国外无法回国，但从他们分享的照片和消息来看，网红名人并不急着赶在断航之前回国。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">根据英国最新的封城防疫规定，政府表示目前在海外的英国居民不需要立即回国，但建议他们和旅游和航空公司保持联系，了解最新状况。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">英国航空向BBC表示，正在根据最新的防疫措施检讨目前的航班表，英航呼吁旅客查询网站上最新的飞航信息。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">英国政府表示，正在考虑未来几天内推出新的旅游限制措施，包括要求入境者提供新冠病毒阴性检测报告才能允许入境。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E9%A5%B1%E5%8F%97%E6%88%98%E4%B9%B1%E7%9A%84%E9%98%BF%E5%AF%8C%E6%B1%97-%E4%B8%80%E4%BD%8D%E8%A5%BF%E6%96%B9%E6%97%85%E5%AE%A2%E5%8D%B4%E5%A4%A7%E8%83%86%E7%8B%AC%E8%87%AA%E6%97%85%E8%A1%8C">
+          饱受战乱的阿富汗 一位西方旅客却大胆独自旅行
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E8%8B%B1%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8D%87%E7%BA%A7-%E4%BC%A6%E6%95%A6%E5%AE%A3%E5%B8%83%E4%B8%A5%E6%8E%A7-%E5%A5%B3%E7%8E%8B%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97">
+          英国新冠疫情升级 伦敦宣布严控 女王接种疫苗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%9B%BE%E8%BE%91-%E5%9C%A8%E5%AF%92%E6%B5%81%E5%92%8C%E6%96%B0%E5%86%A0%E4%B8%AD%E5%BC%80%E5%B9%95%E7%9A%84%E5%93%88%E5%B0%94%E6%BB%A8%E5%9B%BD%E9%99%85%E5%86%B0%E9%9B%AA%E8%8A%82">
+          图辑：在寒流和新冠中开幕的哈尔滨国际冰雪节
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%AA%9A%E4%B9%B1-%E6%8E%A8%E7%89%B9%E5%B0%81%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E8%AE%A1%E5%88%92%E5%86%8D%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE">
+          美国国会骚乱：推特封特朗普账号 民主党人计划再弹劾特朗普
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%BE%8B%E5%B8%88-%E4%BB%8A%E5%A4%A9%E6%88%91%E9%81%AD%E8%B7%9F%E8%B8%AA%E6%8B%8D%E7%85%A7%E6%83%85%E5%86%B5%E7%9A%84%E9%80%9A%E6%8A%A5">
+            前一篇： 卢思位律师：今天我遭跟踪拍照情况的通报   
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98">
+            后一篇：德语媒体：中国疫苗——不是问题的问题 
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%BE%8B%E5%B8%88-%E4%BB%8A%E5%A4%A9%E6%88%91%E9%81%AD%E8%B7%9F%E8%B8%AA%E6%8B%8D%E7%85%A7%E6%83%85%E5%86%B5%E7%9A%84%E9%80%9A%E6%8A%A5'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E8%8B%B1%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8D%87%E7%BA%A7-%E4%BC%A6%E6%95%A6%E5%AE%A3%E5%B8%83%E4%B8%A5%E6%8E%A7-%E5%A5%B3%E7%8E%8B%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%9B%BE%E8%BE%91-%E5%9C%A8%E5%AF%92%E6%B5%81%E5%92%8C%E6%96%B0%E5%86%A0%E4%B8%AD%E5%BC%80%E5%B9%95%E7%9A%84%E5%93%88%E5%B0%94%E6%BB%A8%E5%9B%BD%E9%99%85%E5%86%B0%E9%9B%AA%E8%8A%82'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%BE%8B%E5%B8%88-%E4%BB%8A%E5%A4%A9%E6%88%91%E9%81%AD%E8%B7%9F%E8%B8%AA%E6%8B%8D%E7%85%A7%E6%83%85%E5%86%B5%E7%9A%84%E9%80%9A%E6%8A%A5">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97-%E4%B8%8D%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E9%97%AE%E9%A2%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E8%8B%B1%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8D%87%E7%BA%A7-%E4%BC%A6%E6%95%A6%E5%AE%A3%E5%B8%83%E4%B8%A5%E6%8E%A7-%E5%A5%B3%E7%8E%8B%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%9B%BE%E8%BE%91-%E5%9C%A8%E5%AF%92%E6%B5%81%E5%92%8C%E6%96%B0%E5%86%A0%E4%B8%AD%E5%BC%80%E5%B9%95%E7%9A%84%E5%93%88%E5%B0%94%E6%BB%A8%E5%9B%BD%E9%99%85%E5%86%B0%E9%9B%AA%E8%8A%82">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

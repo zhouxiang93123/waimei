@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>我们为什么要再次弹劾特朗普 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+我们为什么要再次弹劾特朗普
+——
+" />
+    <meta property="og:description" content="
+我们为什么要再次弹劾特朗普
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="我们为什么要再次弹劾特朗普" />
+    <meta property="twitter:title" content="我们为什么要再次弹劾特朗普" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210112%2Ftrump-article-of-impeachment%2F&t=%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210112%2Ftrump-article-of-impeachment%2F&t=%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE&d=2021-01-12&e=
+我们为什么要再次弹劾特朗普
+——
+
+
+  
+DAVID N. CICILLINE2021-01-12 14:43:48
+  
+  
+
+  
+  自去年11月在美国总统大选中惨败以来，唐纳德·特朗普(Donald Trump)除了服从美国人民的民主意愿之外什么都做了。他抛出大量谎言和毫无根据的欺诈阴谋论，让他的支持者们产生错觉，认为他的选举被偷走了。他提出了一大堆荒唐的诉讼。他试图哄骗和恐吓各级政府官员，让他们破坏选举，好让他继续执政。然后，各种正当和不正当的追索权都用尽了，他又煽动了一场叛乱，反抗政府和他发誓维护的宪法。
+  上周三在美国国会大厦的未遂政变标志着我国245年民主试验中的最低点之一，它发生在国会议员清点选举人票，从而正式确认乔·拜登(Joe Biden)在选举中以压倒性优势被美国人民选为总统的时候。
+  从安德鲁·杰克逊(Andrew Jackson)到理查德·尼克松..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210112%2Ftrump-article-of-impeachment%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/&text=我们为什么要再次弹劾特朗普&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/&title=我们为什么要再次弹劾特朗普" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/&title=我们为什么要再次弹劾特朗普" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=我们为什么要再次弹劾特朗普&body=
+我们为什么要再次弹劾特朗普
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/&title=我们为什么要再次弹劾特朗普&caption=
+我们为什么要再次弹劾特朗普
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=我们为什么要再次弹劾特朗普&url=https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>我们为什么要再次弹劾特朗普</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210112%2Ftrump-article-of-impeachment%2F&t=%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%8D%E6%AC%A1%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE&d=2021-01-12&e=
+我们为什么要再次弹劾特朗普
+——
+
+
+  
+DAVID N. CICILLINE2021-01-12 14:43:48
+  
+  
+
+  
+  自去年11月在美国总统大选中惨败以来，唐纳德·特朗普(Donald Trump)除了服从美国人民的民主意愿之外什么都做了。他抛出大量谎言和毫无根据的欺诈阴谋论，让他的支持者们产生错觉，认为他的选举被偷走了。他提出了一大堆荒唐的诉讼。他试图哄骗和恐吓各级政府官员，让他们破坏选举，好让他继续执政。然后，各种正当和不正当的追索权都用尽了，他又煽动了一场叛乱，反抗政府和他发誓维护的宪法。
+  上周三在美国国会大厦的未遂政变标志着我国245年民主试验中的最低点之一，它发生在国会议员清点选举人票，从而正式确认乔·拜登(Joe Biden)在选举中以压倒性优势被美国人民选为总统的时候。
+  从安德鲁·杰克逊(Andrew Jackson)到理查德·尼克松..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210112%2Ftrump-article-of-impeachment%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610433872000-->
+<p><a href="https://cn.nytimes.com/opinion/20210112/trump-article-of-impeachment/">我们为什么要再次弹劾特朗普</a>
+——</p>
+
+<div>
+  <div>
+<em>DAVID N. CICILLINE<br />2021-01-12 14:43:48</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/11/opinion/11cicWeb/11cicWeb-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>自去年11月在美国总统大选中惨败以来，唐纳德·特朗普(Donald Trump)除了服从美国人民的民主意愿之外什么都做了。他抛出大量谎言和毫无根据的欺诈阴谋论，让他的支持者们产生错觉，认为他的选举被偷走了。他提出了一大堆荒唐的诉讼。他试图哄骗和恐吓各级政府官员，让他们破坏选举，好让他继续执政。然后，各种正当和不正当的追索权都用尽了，他又煽动了一场叛乱，反抗政府和他发誓维护的宪法。</p>
+  <p>上周三在美国国会大厦的未遂政变标志着我国245年民主试验中的最低点之一，它发生在国会议员清点选举人票，从而正式确认乔·拜登(Joe Biden)在选举中以压倒性优势被美国人民选为总统的时候。</p>
+  <p>从安德鲁·杰克逊(Andrew Jackson)到理查德·尼克松(Richard Nixon)，我们见过总统滥用权力，但从未见过一位美国总统在我们民主的堡垒上煽动暴民，不顾一切地试图保住权力。</p>
+  <p>我们不能坐视不管。特朗普一天比一天更加不顾一切。我们不能继续放任他威胁我们国家的安全了。</p>
+  <p>一旦众议院开始立法工作，我将与众议员刘云平(Ted Lieu)和杰米·拉斯金(Jamie Raskin)一起提出<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2021/01/11/us/articles-impeachment-trump.html">一项弹劾条款</a>，以煽动叛乱为由解除特朗普的职务。（众议院民主党人已正式提出弹劾案，并计划于周三投票。——编注）</p>
+  <p>作为曾经弹劾过这位总统的议员，我们并不是轻率地承担起这个职责。事实上，这并不是我们的第一选择。在上周三的围攻中，我们和其他人一起要求副总统迈克·彭斯(Mike Pence)召集内阁，援引第25修正案，迅速解除特朗普的职务。我们已呼吁总统辞职。</p>
+  <p>日子一天天过去，很明显，这两种可能性都不会实现。所以国会有责任采取行动。</p>
+  <p>美国人民亲眼目睹了特朗普的行为。我们都看到了他1月6日的演讲。我们看到他的狂热分子响应他的号召，冲进国会大厦。五人死亡，包括一名美国国会警察和总统的四名支持者。我们担心特朗普在剩余的任期内会做什么。</p>
+  <p>因此，我们认为应尽快对弹劾条款进行表决。的确，即使在我们采取行动之后，参议员米奇·麦康奈尔(Mitch McConnell)可能也会像一年前那样，试图阻止美国参议院定罪。同样，审判可能会延续到拜登政府上任的前几天。</p>
+  <p>这两种可能性都不应妨碍我们的工作。一些人认为，再次进行弹劾审判将进一步分裂我们的国家，进一步激怒特朗普的支持者。但事实是，我们别无选择。这项弹劾指控是为了捍卫共和国的完整。国会的两党议员都必须履行自己的誓言。如果不采取行动，将为未来的离任总统树立一个不负责任的危险先例。</p>
+  <p>此外，如果不对这场可怕叛乱的罪魁祸首实施惩罚，我们国家的分裂就无法愈合。总统必须承担责任。这只能通过第二次弹劾并在参议院定罪来实现。这一判决将允许国会禁止他再次担任联邦公职。</p>
+  <p>上周三发生的事情令人憎恶。这一点毋庸置疑。同样毋庸置疑的是，到目前为止，特朗普对公共安全的威胁还在增大。</p>
+  <p>现在唯一的问题是，国会将对此做些什么。</p>
+  <p>David N. Cicilline是民主党人，也是众议院司法委员会成员，他自2011年起担任罗德岛第一国会选区的众议员。欢迎在Twitter上关注他：<a rel="nofollow" target="_blank" href="https://twitter.com/davidcicilline">@davidcicilline</a>。<br />翻译：晋其角<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/11/opinion/trump-article-of-impeachment.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E9%82%93%E9%A3%9E%E6%A1%88%E4%B8%8E%E4%B8%AD%E5%9B%BD-%E6%88%91%E4%B9%9F%E6%98%AF-%E8%BF%90%E5%8A%A8%E5%9B%B0%E5%A2%83-%E5%8F%91%E5%A3%B0%E8%80%85%E8%A2%AB%E5%88%A4%E8%AF%BD%E8%B0%A4">
+          邓飞案与中国“我也是”运动困境：发声者被判诽谤
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97">
+          特朗普会因煽动性言论面临法律惩罚吗?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AE%80%E6%8A%A5-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE-%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD">
+          简报：民主党人提交弹劾条款；台湾新护照淡化中华民国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+          新疆发生种族灭绝，我才开始寻根
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E7%89%B9%E5%B0%94%E5%B0%86%E4%BB%A5%E5%8F%B0%E7%A7%AF%E7%94%B5%E4%B8%83%E5%A5%88%E7%B1%B3%E6%96%B0%E7%89%88%E5%88%B6%E7%A8%8B%E7%94%9F%E4%BA%A7DG2%E6%99%B6%E7%89%87-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB">
+            前一篇：英特尔将以台积电七奈米新版制程生产DG2晶片--消息人士
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97">
+            后一篇：特朗普会因煽动性言论面临法律惩罚吗?
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E7%89%B9%E5%B0%94%E5%B0%86%E4%BB%A5%E5%8F%B0%E7%A7%AF%E7%94%B5%E4%B8%83%E5%A5%88%E7%B1%B3%E6%96%B0%E7%89%88%E5%88%B6%E7%A8%8B%E7%94%9F%E4%BA%A7DG2%E6%99%B6%E7%89%87-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E7%AE%80%E6%8A%A5-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE-%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E7%89%B9%E5%B0%94%E5%B0%86%E4%BB%A5%E5%8F%B0%E7%A7%AF%E7%94%B5%E4%B8%83%E5%A5%88%E7%B1%B3%E6%96%B0%E7%89%88%E5%88%B6%E7%A8%8B%E7%94%9F%E4%BA%A7DG2%E6%99%B6%E7%89%87-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E5%9B%A0%E7%85%BD%E5%8A%A8%E6%80%A7%E8%A8%80%E8%AE%BA%E9%9D%A2%E4%B8%B4%E6%B3%95%E5%BE%8B%E6%83%A9%E7%BD%9A%E5%90%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E7%AE%80%E6%8A%A5-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%8F%90%E4%BA%A4%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE-%E5%8F%B0%E6%B9%BE%E6%96%B0%E6%8A%A4%E7%85%A7%E6%B7%A1%E5%8C%96%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

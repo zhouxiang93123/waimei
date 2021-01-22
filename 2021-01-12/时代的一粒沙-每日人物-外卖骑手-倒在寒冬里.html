@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+" />
+    <meta property="og:description" content="
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里" />
+    <meta property="twitter:title" content="【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e6%2597%25b6%25e4%25bb%25a3%25e7%259a%2584%25e4%25b8%2580%25e7%25b2%2592%25e6%25b2%2599%25e3%2580%2591%25e6%25af%258f%25e6%2597%25a5%25e4%25ba%25ba%25e7%2589%25a9%25ef%25bd%259c%25e5%25a4%2596%25e5%258d%2596%25e9%25aa%2591%25e6%2589%258b%25ef%25bc%258c%25e5%2580%2592%25e5%259c%25a8%25e5%25af%2592%25e5%2586%25ac%2F&t=%E3%80%90%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E3%80%91%E6%AF%8F%E6%97%A5%E4%BA%BA%E7%89%A9%EF%BD%9C%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B%EF%BC%8C%E5%80%92%E5%9C%A8%E5%AF%92%E5%86%AC%E9%87%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e6%2597%25b6%25e4%25bb%25a3%25e7%259a%2584%25e4%25b8%2580%25e7%25b2%2592%25e6%25b2%2599%25e3%2580%2591%25e6%25af%258f%25e6%2597%25a5%25e4%25ba%25ba%25e7%2589%25a9%25ef%25bd%259c%25e5%25a4%2596%25e5%258d%2596%25e9%25aa%2591%25e6%2589%258b%25ef%25bc%258c%25e5%2580%2592%25e5%259c%25a8%25e5%25af%2592%25e5%2586%25ac%2F&t=%E3%80%90%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E3%80%91%E6%AF%8F%E6%97%A5%E4%BA%BA%E7%89%A9%EF%BD%9C%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B%EF%BC%8C%E5%80%92%E5%9C%A8%E5%AF%92%E5%86%AC%E9%87%8C&d=2021-01-12&e=
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+
+
+  相关阅读：【时代的一粒沙】人物｜外卖骑手，困在系统里
+  
+  韩伟有一个快手号，名字叫“yis欢乐”。头像是一张老照片，是年轻时候的他，穿着笔挺的白衬衫，坐在一辆拉风的机车上。但他发的最后一条视频的主角是一辆摩托车，尾部挂着饿了么的蓝色箱子，两边把手上还有外卖的包装袋。
+  文 | 翟锦 林子璐
+  编辑 | 金匝
+  运营 | 肖睿
+  1
+  2020年冬至，距离新年只剩9天，晚上八点多，庄红估摸着丈夫韩伟跑完单了，给他打了一个视频电话，但手机屏幕里没有像往常一样出现丈夫的脸，而是一位陌生的交警。
+  韩伟在北京送外卖，作为一位外卖骑手，他被交警拦下，是和人发生冲突，还是遇到车祸？这是庄红当时最坏的猜测。
+  交警让庄红去一趟派出所，林华也去了，他是韩伟的同乡，也在北京做骑手。接到庄红电话时他心想，可能就是韩伟的单..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e6%2597%25b6%25e4%25bb%25a3%25e7%259a%2584%25e4%25b8%2580%25e7%25b2%2592%25e6%25b2%2599%25e3%2580%2591%25e6%25af%258f%25e6%2597%25a5%25e4%25ba%25ba%25e7%2589%25a9%25ef%25bd%259c%25e5%25a4%2596%25e5%258d%2596%25e9%25aa%2591%25e6%2589%258b%25ef%25bc%258c%25e5%2580%2592%25e5%259c%25a8%25e5%25af%2592%25e5%2586%25ac%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/&text=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/&title=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/&title=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里&body=
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/&title=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里&caption=
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e6%2597%25b6%25e4%25bb%25a3%25e7%259a%2584%25e4%25b8%2580%25e7%25b2%2592%25e6%25b2%2599%25e3%2580%2591%25e6%25af%258f%25e6%2597%25a5%25e4%25ba%25ba%25e7%2589%25a9%25ef%25bd%259c%25e5%25a4%2596%25e5%258d%2596%25e9%25aa%2591%25e6%2589%258b%25ef%25bc%258c%25e5%2580%2592%25e5%259c%25a8%25e5%25af%2592%25e5%2586%25ac%2F&t=%E3%80%90%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E3%80%91%E6%AF%8F%E6%97%A5%E4%BA%BA%E7%89%A9%EF%BD%9C%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B%EF%BC%8C%E5%80%92%E5%9C%A8%E5%AF%92%E5%86%AC%E9%87%8C&d=2021-01-12&e=
+【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里
+——
+
+
+  相关阅读：【时代的一粒沙】人物｜外卖骑手，困在系统里
+  
+  韩伟有一个快手号，名字叫“yis欢乐”。头像是一张老照片，是年轻时候的他，穿着笔挺的白衬衫，坐在一辆拉风的机车上。但他发的最后一条视频的主角是一辆摩托车，尾部挂着饿了么的蓝色箱子，两边把手上还有外卖的包装袋。
+  文 | 翟锦 林子璐
+  编辑 | 金匝
+  运营 | 肖睿
+  1
+  2020年冬至，距离新年只剩9天，晚上八点多，庄红估摸着丈夫韩伟跑完单了，给他打了一个视频电话，但手机屏幕里没有像往常一样出现丈夫的脸，而是一位陌生的交警。
+  韩伟在北京送外卖，作为一位外卖骑手，他被交警拦下，是和人发生冲突，还是遇到车祸？这是庄红当时最坏的猜测。
+  交警让庄红去一趟派出所，林华也去了，他是韩伟的同乡，也在北京做骑手。接到庄红电话时他心想，可能就是韩伟的单..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e6%2597%25b6%25e4%25bb%25a3%25e7%259a%2584%25e4%25b8%2580%25e7%25b2%2592%25e6%25b2%2599%25e3%2580%2591%25e6%25af%258f%25e6%2597%25a5%25e4%25ba%25ba%25e7%2589%25a9%25ef%25bd%259c%25e5%25a4%2596%25e5%258d%2596%25e9%25aa%2591%25e6%2589%258b%25ef%25bc%258c%25e5%2580%2592%25e5%259c%25a8%25e5%25af%2592%25e5%2586%25ac%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610439458000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/">【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里</a>
+——</p>
+
+<div>
+  <p>相关阅读：<a href="https://chinadigitaltimes.net/chinese/2020/09/%E3%80%90%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E3%80%91%E4%BA%BA%E7%89%A9%EF%BD%9C%E5%A4%96%E5%8D%96%E9%AA%91%E6%89%8B%EF%BC%8C%E5%9B%B0%E5%9C%A8%E7%B3%BB%E7%BB%9F%E9%87%8C/" title="【时代的一粒沙】人物｜外卖骑手，困在系统里">【时代的一粒沙】人物｜外卖骑手，困在系统里</a></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661427-5ffd5a2806300." alt="图片" class="aligncenter" width="500" /></p>
+  <p><strong>韩伟有一个快手号，名字叫“yis欢乐”。头像是一张老照片，是年轻时候的他，穿着笔挺的白衬衫，坐在一辆拉风的机车上。但他发的最后一条视频的主角是一辆摩托车，尾部挂着饿了么的蓝色箱子，两边把手上还有外卖的包装袋。</strong></p>
+  <p><strong>文 |</strong> 翟锦 林子璐</p>
+  <p><strong>编辑 |</strong> 金匝</p>
+  <p><strong>运营 |</strong> 肖睿</p>
+  <p><strong>1</strong></p>
+  <p>2020年冬至，距离新年只剩9天，晚上八点多，庄红估摸着丈夫韩伟跑完单了，给他打了一个视频电话，但手机屏幕里没有像往常一样出现丈夫的脸，而是一位陌生的交警。</p>
+  <p>韩伟在北京送外卖，作为一位外卖骑手，他被交警拦下，是和人发生冲突，还是遇到车祸？这是庄红当时最坏的猜测。</p>
+  <p>交警让庄红去一趟派出所，林华也去了，他是韩伟的同乡，也在北京做骑手。接到庄红电话时他心想，可能就是韩伟的单子快超时了，着急进小区，保安不让，两人吵起来，惊动了派出所。他和庄红都没料到，即将要面对的是一个噩耗。</p>
+  <p>3个小时前，韩伟接到当天要送的第34单外卖，到店取餐后，他沿着朝阳区的香江北路骑行，离开店不过几分钟，在一个十字路口前，陡然倒地猝死，摩托车后座上，还放着4份没送出去的外卖。</p>
+  <p>这一天，北京的天气是-7℃至5℃，天气寒冷。中午，庄红还叮嘱韩伟一定要好好吃饭，骑手吃饭不规律，韩伟在微信上回复她，说跟朋友们一起吃的，还给她拍了照片，是个吃得干净的碗。韩伟不抽烟，很少喝酒，猝死之前，庄红也没听他说起过身体有哪里不舒服。韩伟的弟弟韩飞听闻消息，连夜从太原开车赶到北京，见到哥哥的遗体时，哥哥还穿着那件蓝色的骑手制服。</p>
+  <p>如果韩伟这天没出意外，按照原来的生活轨迹，再过一会儿，他们一大家子就该聚在家庭群里，热热闹闹地打个视频电话，聊一聊吃了什么，天气冷不冷，今天跑了多少单，孩子听不听话。这是韩伟一天里最放松的时刻，远在山西的小儿子和爷爷奶奶挤在一个手机屏幕里，他白白胖胖，和韩伟长得像，性格也像，喜欢笑，喜欢说话。</p>
+  <p>2019年夏天，韩伟把两个孩子接到了北京，一家人在一起短暂地生活了一个月。大儿子不顾韩伟和庄红的反对，坚持给自己找了份暑期工，刷盘子，“要给自己攒学费。”韩飞叹息，“也上不起补习班。”</p>
+  <p>那个月，韩伟只休息了一天，没有送外卖，他和庄红把小儿子带上，去了天安门、鸟巢，这也是夫妻倆第一次在北京玩。等第二天他们各自去上班，小儿子就一个人待在出租屋里。</p>
+  <p>后来，两个孩子回了老家继续读书，大儿子读高二，小儿子上小学，韩伟很支持孩子学习，在他看来，如果孩子想念书，那他就要尽可能地创造条件，这是他生活里的一点盼头。韩飞见过韩伟反复叮嘱孩子：“没文化，在每个城市都做不了什么，只能像你爸一样，做最底层的工作。”</p>
+  <p>两个孩子读书这笔帐，是算不到头的，大儿子马上要高考，上大学，小儿子要读初中、高中、大学，需要学费。他们还想在县城给大儿子买套房，房子要大，敞亮，一百多平，好娶媳妇，但要花不少钱，至少七八十万，这意味着他们要在北京打拼很久，要“一个劲地干，一直干”。</p>
+  <p>来北京前，他们在太原打工，韩伟做快递员，庄红做家政工，两个人都是四千上下的收入。2019年，两个人到了北京，这里虽然租房贵，生活成本高，但工资也高，韩伟一个月能挣七八千，庄红能有五千，要实现那些生活里的目标，到底还是更有希望些。</p>
+  <p>同村的老乡，很多都和韩伟一样，人拉人来了北京，听说送外卖能挣钱，而且没什么门槛，下个APP就能跑，大家几乎都在干这一行。林华比韩伟要晚一些加入骑手队伍，刚开始跑的时候，他觉得很累，每天在路上，电动车要骑很快，风险很大，心里都是紧绷的。接单，取餐，上路，送货，一边担心超时，一边担心出车祸，每个环节都很紧张，只有下班了，手机不再弹出单子，人才能放松。但坚持跑了两天，林华还是决定留在外卖行业，因为挣钱确实比他之前要多。</p>
+  <p>在北京，韩伟和林华都住在顺义的一个村子里，十多平的房子，用玻璃板隔出厕所和厨房，租金一千左右，房间排着房间，一层能有六七家。尽管住在一起，但韩伟和林华真正意义上的聚会很少，因为送外卖，大家都不怎么休息，每天都在外面跑单子，晚上回去就歇着。即使等单休息的时候，也不能放松，要一直盯着平台页面，来单了，要迅速抢单，这个工作多劳多得，工作时间越长，接单越多，收入越好。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661427-5ffd5a2aae977." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>很多外卖员都是经老乡或熟人介绍进入这个行业，但繁忙的工作让他们很少有机会聚在一起。图 / 视觉中国</em></p>
+  <p><strong>2</strong></p>
+  <p>韩伟和林华，都不是饿了么的专职骑手，他们在蜂鸟众包APP上注册，签署一份《蜂鸟众包用户协议》后，就成为众包骑手。这份协议里有一项特别提示：“蜂鸟众包仅提供信息撮合服务，您与蜂鸟众包不存在任何形式的劳动/雇佣关系。”天眼查显示，饿了么CEO王磊，也是蜂鸟众包的执行董事和总经理。</p>
+  <p>也是因为如此，饿了么对骑手韩伟猝死的回应是，平台和韩伟并非劳动关系，出于人道主义，为骑手家属提供2000元的援助，其余由保险公司处理。而韩伟在蜂鸟众包上所缴纳的保险，对工作期间猝死这一项的赔偿是3万。</p>
+  <p>中国社科院助理研究员孙萍观察到，这几年，特别是疫情期间，工作难找，越来越多的人选择去众包平台上打零工。除了骑手，网约车司机、主播也是如此。这些人的工作状态相对自由，可以随时开始，随时结束，而互联网公司也能借由众包平台的方式，转移一定的风险和成本。</p>
+  <p>但韩伟并不了解这些，他和妻子庄红说过，众包更自由，门槛也低，那当然是选众包了，直接跟着老乡注册，基本不怎么看用户协议，“人家写的那些条条框框，我老公他也看不懂，也不知道是咋回事，咱们是找活的，反正能接单就行，能挣钱就行，管不了那么多。”</p>
+  <p>林华在蜂鸟众包上注册时也是如此，“一个方块，里边你得打对号，只能同意，因为不同意就跑不了。”林华受教育不多，看字慢，那些条文不好懂，平时有什么问题要和平台申诉，他都觉得费劲，因为申诉栏要写不少于60字，“就算了”。</p>
+  <p>但无论是什么身份，都不阻碍韩伟和林华把自己全部的时间投入去送外卖，从早上八点到晚上九点，接一个订单，收入六七块钱，一天跑三四十单，收入能有200元左右。</p>
+  <p>每天，蜂鸟众包会从骑手们第一单的收入里扣除3元，其中1.06元交给了保险公司，用来为骑手购买保险，剩下的1.94元，则是平台征收的服务费。</p>
+  <p>可以算一笔账，饿了么一天从一位外包骑手那收取1.94元的服务费，就算骑手一年只工作300天，饿了么也会有582元的收入。这个费用对比骑手猝死后饿了么“人道主义地赔偿了2000元”，公众产生了极大愤怒，“一句外包，把关系撇得干干净净。”</p>
+  <p>可即使不是众包骑手，也没有任何一位专送骑手和外卖平台存在直接的劳动雇佣关系，和他们签约的，都是各种不同的第三方人力资源公司。北京智工互联科技小包智工的COO徐韬认为，这种第三方人力资源公司的本质，就是在转移和承担风险，通过层层转嫁，大公司找中等公司，中等公司找小公司，把风险一直往外转移，直到找不到人来负责。</p>
+  <p>饿了么和美团会大量雇佣这些人力公司，2020年7月，外卖行业的人力中间商趣活科技公司甚至在美国上市了，饿了么和美团是它的大客户。</p>
+  <p>另一种方式就是成立众包平台，比如蜂鸟众包，和众包平台签约，意味着“人和公司”的模式，变成“人和平台”的模式，用“信息聚合、服务信息匹配、信息撮合服务”的包装，把风险转移给个人，也让很多流程更加复杂，让一些费用不明晰。</p>
+  <p>外包骑手没有劳动协议，很多专送骑手也没有签五险一金，即便是有，外卖平台承担得也很少，剩下的还是自己交。有些骑手不懂，比较短视，不愿意缴纳五险一金，宁愿多要一点钱，这也被平台和外包公司利用。孙萍能理解这一点，“对于眼前生计都解决不了的人来讲，当下就是最重要的”。一些和平台发生纠纷的骑手也会告诉她，出事后他们去找公司理论，发现和他们签订协议的公司的地址，“就是小破楼里的房间，两张桌子，一个电话，也没有人”。</p>
+  <p>但实际上，现在平台、算法、第三方公司的控制又非常强，骑手什么时候应该做什么，着装、态度、工作时长、强制加单，控制无孔不入，超越了过去普通的劳务关系。中国政法大学法学院副教授、大数据和人工智能法律研究中心主任沈伟伟关注到，已经有一些法院捕捉到这些变化，并会在认定劳动/劳务关系里雇主责任的临界点上，会更偏向雇主承担更多责任，这是一个趋势。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661427-5ffd5a2c4c110." alt="img" class="aligncenter" width="500" /></p>
+  <p><em>▲ 蜂鸟众包用户协议里的特别提示。图 / 网络</em></p>
+  <p><strong>3</strong></p>
+  <p>1月8日，饿了么发布了一份新的声明，承认众包骑手的保险结构不合理，金额不足，将保额提升到60万。韩伟的60万抚恤金，也将交付给他的家属。</p>
+  <p>看到这份声明，庄红觉得终于能喘口气。</p>
+  <p>11月，庄红的父亲因病去世，韩伟回老家处理丧事，在家待了10天，又回到北京跑外卖，才一个月，就猝死在寒冬的街头。这一连串的打击，让庄红缓不过神来：“天天就在空中飘着似的，找不到地。做梦，在梦里，都不敢接受这个现实。”</p>
+  <p>好几年前，夫妻俩还在太原工作的时候，一年三八妇女节，韩伟说要给庄红一个惊喜，他偷偷给她买了一个金佛。那个小金佛，庄红一直没戴，她在别人家做家政工，戴上也不自在，金佛一直放在老家，后来回老家戴了两次，她觉得郑重，戴了摘，摘了戴，麻烦，索性最后就不戴了，这个金佛，也成了韩伟留给她的最后念想。</p>
+  <p>庄红和韩伟是自由恋爱，朋友介绍，韩伟留给他的第一眼印象就挺好，温暖、细致。两人结婚 20年，大大小小的事情都是他操心，去打工在哪里租房，和房东沟通，交水电费，在网上给留在山西的孩子买东西，都是韩伟来做。</p>
+  <p>相比起来，庄红是依赖他的那个，总被他说“不独立”，在北京，她至今分不清东南西北，也不会用智能手机，不会手机支付，但韩伟都会，每个月发了工资，庄红就把卡给韩伟，钱都交给他管。</p>
+  <p>对韩飞来说，哥哥是总顶在最前面的那个人。2017年，他要买房，和韩伟提了一嘴，第二天，韩伟送来了5万块钱。“这是我哥和我嫂子当时打工挣的所有钱了。”</p>
+  <p>出事前，韩伟还跟庄红商量，今年春节一定要回老家，因为大儿子马上就高考，要回去给孩子打个气。现在，庄红觉得遗憾，两口子在北京，和家人一起的时间太短了，都在忙，忙着赶快挣钱，“要知道这，咱今年就不干了，明年再说，不能把命丢那儿。”</p>
+  <p>韩伟有一个快手号，名字叫“yis欢乐”。头像是一张老照片，是年轻时候的他，穿着笔挺的白衬衫，坐在一辆拉风的机车上。但他发的最后一条视频的主角是一辆摩托车，尾部挂着饿了么的蓝色箱子，两边把手上还有外卖的包装袋。</p>
+  <p>这是2020年北京的秋天，阳光不错。摩托车是他在2019年的冬天换的，原来那辆电瓶车，买的时候花了六千块，但在冬天总是没电，送餐总超时，庄红说，丈夫咬咬牙，说服自己，为了多跑单，多挣点钱，设备要好一点。最后韩伟买了一辆摩托车，又花了七千，相当于他一个月的工资，但新车好用了不少。</p>
+  <p>有阳光、饿了么的蓝色配送箱、摩托车的那个视频里，韩伟选了一首歌，歌词是这么唱的：“我真的就在北京，就站在二环街上，天空一片片白云，蓝蓝那是北京……”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661427-5ffd5a34809a2.gif" alt="img" class="aligncenter" width="400" /></p>
+  <p><em>▲ 韩伟快手的最后一条视频。图 / 韩伟快手账号</em></p>
+  <p><em>（应受访者要求，韩伟、庄红、林华、韩飞为化名）</em></p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e6%97%b6%e4%bb%a3%e7%9a%84%e4%b8%80%e7%b2%92%e6%b2%99%e3%80%91%e6%af%8f%e6%97%a5%e4%ba%ba%e7%89%a9%ef%bd%9c%e5%a4%96%e5%8d%96%e9%aa%91%e6%89%8b%ef%bc%8c%e5%80%92%e5%9c%a8%e5%af%92%e5%86%ac/">【时代的一粒沙】每日人物｜外卖骑手，倒在寒冬里</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E6%96%B0%E9%97%BB%E8%BF%9E%E8%BF%9E%E7%9C%8B-%E5%B0%8F%E4%BC%99%E8%BE%9E%E8%81%8C%E5%9B%9E%E5%9B%BD%E9%80%81%E5%A4%96%E5%8D%96-VS-%E6%88%91%E8%BF%9E%E5%91%BD%E9%83%BD%E4%B8%8D%E8%A6%81%E4%BA%86%E6%88%91%E8%A6%81%E8%A1%80%E6%B1%97%E9%92%B1">
+          【新闻连连看】“小伙辞职回国送外卖” VS “我连命都不要了我要血汗钱”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E5%AD%94%E5%B8%88%E5%82%85%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84-%E5%86%9C%E6%9D%91%E9%9D%9E%E6%B3%95%E5%AE%97%E6%95%99">
+          孔师傅的杂货铺｜石家庄疫情下的“农村非法宗教
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung">
+          Photo: Taking Selfie, by Thomas_Yung
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E9%87%8D%E5%BB%BA%E5%B7%B4%E5%88%AB%E5%A1%94%E8%AE%A1%E5%88%92-%E4%B8%80%E4%BD%8D%E4%BA%94%E4%B8%AA%E6%9C%88%E5%85%B1%E4%BC%91%E6%81%AF%E4%BA%86%E4%BA%94%E5%A4%A9%E7%9A%84%E6%8B%BC%E5%A4%9A%E5%A4%9A%E5%91%98%E5%B7%A5%E5%86%B3%E5%AE%9A%E7%A6%BB%E8%81%8C">
+          重建巴别塔计划 | 一位五个月共休息了五天的拼多多员工决定离职
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/PayPal%E6%88%90%E4%B8%AD%E5%9B%BD%E9%A6%96%E9%97%B4%E5%85%A8%E5%A4%96%E8%B5%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%94%AF%E4%BB%98%E6%9C%BA%E6%9E%84">
+            前一篇：PayPal成中国首间全外资第三方支付机构
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%85%B1%E5%85%AC%E5%B8%83%E5%8E%BB%E5%B9%B412%E6%9C%88CPI%E5%8F%8APPI%E6%95%B0%E6%8D%AE-%E7%8C%AA%E8%82%89%E5%8F%88%E6%B6%A8%E4%BB%B7%E4%BA%86">
+            后一篇：中共公布去年12月CPI及PPI数据 猪肉又涨价了
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/PayPal%E6%88%90%E4%B8%AD%E5%9B%BD%E9%A6%96%E9%97%B4%E5%85%A8%E5%A4%96%E8%B5%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%94%AF%E4%BB%98%E6%9C%BA%E6%9E%84'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%85%B1%E5%85%AC%E5%B8%83%E5%8E%BB%E5%B9%B412%E6%9C%88CPI%E5%8F%8APPI%E6%95%B0%E6%8D%AE-%E7%8C%AA%E8%82%89%E5%8F%88%E6%B6%A8%E4%BB%B7%E4%BA%86'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E5%AD%94%E5%B8%88%E5%82%85%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84-%E5%86%9C%E6%9D%91%E9%9D%9E%E6%B3%95%E5%AE%97%E6%95%99'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-12/PayPal%E6%88%90%E4%B8%AD%E5%9B%BD%E9%A6%96%E9%97%B4%E5%85%A8%E5%A4%96%E8%B5%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%94%AF%E4%BB%98%E6%9C%BA%E6%9E%84">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%85%B1%E5%85%AC%E5%B8%83%E5%8E%BB%E5%B9%B412%E6%9C%88CPI%E5%8F%8APPI%E6%95%B0%E6%8D%AE-%E7%8C%AA%E8%82%89%E5%8F%88%E6%B6%A8%E4%BB%B7%E4%BA%86">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/%E5%AD%94%E5%B8%88%E5%82%85%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85%E4%B8%8B%E7%9A%84-%E5%86%9C%E6%9D%91%E9%9D%9E%E6%B3%95%E5%AE%97%E6%95%99">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/Photo-Taking-Selfie,-by-Thomas_Yung">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

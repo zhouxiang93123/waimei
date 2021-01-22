@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>武汉封城临近周年，中共力推抗疫胜利叙事 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+" />
+    <meta property="og:description" content="
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="武汉封城临近周年，中共力推抗疫胜利叙事" />
+    <meta property="twitter:title" content="武汉封城临近周年，中共力推抗疫胜利叙事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210111%2Fwuhan-china-coronavirus%2F&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%B4%E8%BF%91%E5%91%A8%E5%B9%B4%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%8A%9B%E6%8E%A8%E6%8A%97%E7%96%AB%E8%83%9C%E5%88%A9%E5%8F%99%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210111%2Fwuhan-china-coronavirus%2F&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%B4%E8%BF%91%E5%91%A8%E5%B9%B4%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%8A%9B%E6%8E%A8%E6%8A%97%E7%96%AB%E8%83%9C%E5%88%A9%E5%8F%99%E4%BA%8B&d=2021-01-11&e=
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+
+
+  
+赫海威,赫海威2021-01-11 17:47:27
+  
+  
+中国武汉的一场展览纪念了该市一年前抗击新冠疫情的事迹。
+  
+  在中国武汉的一家博物馆里，一个庞大的展览描绘了一个激荡人心的故事，讲述了这座城市在残酷的76天封锁中的牺牲如何战胜了新冠病毒，并最终重生。
+  展览似乎对成本毫不吝啬，其特色包括医务人员穿梭于医院房间的全息影像，一线医务工作者令人心酸的信件以及大型隔离场所的模型，里面有床、微缩中国国旗和牙刷杯子。
+  但是，令人同样震惊的是展览所未包含的内容。没有提到艾芬的吹哨人角色，她是武汉最早拉响警报的医生之一，武汉被认为是该病毒的起源地。也没有提到上海医生张永振不顾官方命令与全世界分享基因序列的决定。
+  来访者被邀请在一面烈士墙面前献上虚拟的菊花，烈士包括武汉一家医院的眼科医生李文亮，他因病毒去世后曾引起..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210111%2Fwuhan-china-coronavirus%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/&text=武汉封城临近周年，中共力推抗疫胜利叙事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/&title=武汉封城临近周年，中共力推抗疫胜利叙事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/&title=武汉封城临近周年，中共力推抗疫胜利叙事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=武汉封城临近周年，中共力推抗疫胜利叙事&body=
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/&title=武汉封城临近周年，中共力推抗疫胜利叙事&caption=
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=武汉封城临近周年，中共力推抗疫胜利叙事&url=https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>武汉封城临近周年，中共力推抗疫胜利叙事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210111%2Fwuhan-china-coronavirus%2F&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%B4%E8%BF%91%E5%91%A8%E5%B9%B4%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%8A%9B%E6%8E%A8%E6%8A%97%E7%96%AB%E8%83%9C%E5%88%A9%E5%8F%99%E4%BA%8B&d=2021-01-11&e=
+武汉封城临近周年，中共力推抗疫胜利叙事
+——
+
+
+  
+赫海威,赫海威2021-01-11 17:47:27
+  
+  
+中国武汉的一场展览纪念了该市一年前抗击新冠疫情的事迹。
+  
+  在中国武汉的一家博物馆里，一个庞大的展览描绘了一个激荡人心的故事，讲述了这座城市在残酷的76天封锁中的牺牲如何战胜了新冠病毒，并最终重生。
+  展览似乎对成本毫不吝啬，其特色包括医务人员穿梭于医院房间的全息影像，一线医务工作者令人心酸的信件以及大型隔离场所的模型，里面有床、微缩中国国旗和牙刷杯子。
+  但是，令人同样震惊的是展览所未包含的内容。没有提到艾芬的吹哨人角色，她是武汉最早拉响警报的医生之一，武汉被认为是该病毒的起源地。也没有提到上海医生张永振不顾官方命令与全世界分享基因序列的决定。
+  来访者被邀请在一面烈士墙面前献上虚拟的菊花，烈士包括武汉一家医院的眼科医生李文亮，他因病毒去世后曾引起..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210111%2Fwuhan-china-coronavirus%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610361875000-->
+<p><a href="https://cn.nytimes.com/china/20210111/wuhan-china-coronavirus/">武汉封城临近周年，中共力推抗疫胜利叙事</a>
+——</p>
+
+<div>
+  <div>
+<em>赫海威,赫海威<br />2021-01-11 17:47:27</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-top/merlin_181985895_b90b325f-8dfa-4adb-9525-d7441c4f4246-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">中国武汉的一场展览纪念了该市一年前抗击新冠疫情的事迹。</small>
+  </div>
+  <p>在中国武汉的一家博物馆里，一个庞大的展览描绘了一个激荡人心的故事，讲述了这座城市在残酷的76天封锁中的牺牲如何战胜了新冠病毒，并最终重生。</p>
+  <p>展览似乎对成本毫不吝啬，其特色包括医务人员穿梭于医院房间的全息影像，一线医务工作者令人心酸的信件以及大型隔离场所的模型，里面有床、微缩中国国旗和牙刷杯子。</p>
+  <p>但是，令人同样震惊的是展览所未包含的内容。没有提到<a rel="nofollow" target="_blank" href="https://qz.com/1816219/chinese-internet-rallied-to-save-a-censored-coronavirus-story/">艾芬</a>的吹哨人角色，她是武汉最早拉响警报的医生之一，武汉被认为是该病毒的起源地。也没有提到上海医生<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20201230/china-coronavirus/">张永振</a>不顾官方命令与全世界分享基因序列的决定。</p>
+  <p>来访者被邀请在一面烈士墙面前献上虚拟的菊花，烈士包括武汉一家医院的眼科医生<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200207/li-wenliang-coronavirus/" title="Link: https://cn.nytimes.com/china/20200207/li-wenliang-coronavirus/">李文亮</a>，他因病毒去世后曾引起全国范围的哀悼。但是他的简介中缺失了一个关键事实：李文亮因警告同事小心这种后来夺去他的生命的病毒而被政府训诫。</p>
+  <p>在过去的一年中，中国花费了大量时间来试图将疫情的叙述扭转为共产党领导下的一次无可非议的胜利。官方新闻媒体在很大程度上忽略政府的失误，并将中国的应对描绘成其威权制度优越性的证明，特别是与美国和其他民主国家相比，这些国家仍在狼狈地遏制病毒的肆虐。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-5/merlin_181797486_5beb33f7-d004-46fa-8291-15b5b8c36b3b-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">上个月，在武汉横渡长江的人。就像中国大部分地区一样，武汉的生活基本已经恢复正常。</small>
+  </div>
+  <p>随着1月23日武汉封锁的周年纪念日临近，这些努力变得更加紧迫。最近几周，政府部署了一支检查员队伍，以清理互联网对武汉疫情的批评性报道。诸如“一周年纪念日”和“吹哨者”之类的词常常被从中国网站上删除。</p>
+  <p>据了解该命令的国家新闻媒体记者透露，最近一项宣传指示明确禁止对疫情周年纪念进行报道。相反，宣传机构推出了正面宣传的视频和阿谀奉承的文章，把武汉描绘成一座重生的城市，并淡化居民挥之不去的悲伤与愤怒。</p>
+  <p>对成功的赞美，武汉当之无愧。自4月封锁结束以来，这座城市的生活——这里一直以熙熙攘攘的商业中心闻名，大批游客来到这里吃热干面，听朋克音乐，观赏奔腾的长江——基本已经恢复正常，就像中国大部分地区一样。在病毒肆虐的国家，许多人只能在家中独自迎接2021年，但中国官媒大肆宣传了武汉人群拥挤着庆祝新年的画面。</p>
+  <p>但随着民族主义和公众对党的支持明显抬头，这种自信的形象重塑运动表明，中国领导人无意沉湎于过去，也不愿重新审视自己的错误。专家们称，他们的目标很简单：那就是确保任何东西都不能破坏党的胜利叙事。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-3/merlin_181820898_945e5192-3f1e-4e1a-b619-33e1972e33b0-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">武汉的展览展示了一个大规模检疫点的复刻品，细节包括牙刷杯（以及小的中国国旗）。</small>
+  </div>
+  <p>“中国的应对被描绘成中共的一次巨大胜利，”香港大学附属研究项目中国媒体计划(China Media Project)的联合主管班志远(David Bandurski)表示。“对中国领导人而言，故事已经写好了。”</p>
+  <p>中国当局长期以来都对敏感纪念日保持警惕，几乎没有发布关于如何纪念这一悲伤时刻的细节。</p>
+  <p>截至目前，官方安排的唯一事件是在1月22日上映由国家投拍的纪录片《武汉日夜》。作为对这座城市“平凡英雄”的感人致敬，这部影片的主题曲《你真好》由中国知名女演员周迅演唱，用一家<a rel="nofollow" target="_blank" href="http://www.chinanews.com/yl/2021/01-01/9376675.shtml">官媒</a>的话说，其温情的歌词传达了“温暖的力量”。</p>
+  <p>近来官媒对武汉的报道主要集中在该市蓬勃发展的旅游业和经济复苏之上。国家电视台中央电视台制作的一条<a rel="nofollow" target="_blank" href="https://weibo.com/tv/show/1034:4589990286655529?from=old_pc_videoshow">视频</a>通过对该市一位火车站工作人员的采访，编织了一则关于封城期间勇气和牺牲的故事。不到三天，该视频在人气社交媒体平台微博上的观看量就超过了250万。</p>
+  <p>另一条最近广为传播的<a rel="nofollow" target="_blank" href="https://weibo.com/tv/show/1034:4587937439088675?from=old_pc_videoshow">视频</a>则来自国家支持的《长江日报》，内容是联想、格力等企业的业务经理赞美了武汉的迅速复苏。“凡是杀不死我的都会使我变得强大，”旁白在激昂的管弦乐中说道。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-4/merlin_181856859_ec1c5ed6-b715-46cf-b6ae-4a37951f704b-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">元旦当天造访武汉宝通寺的人。</small>
+  </div>
+  <p>同样的，官员们也在强调复兴和重生的主题。武汉的中共最高官员王忠林在去年12月的一场旨在推动长江沿岸经济发展的会议上高调<a rel="nofollow" target="_blank" href="https://www.hubei.gov.cn/zwgk/hbyw/hbywqb/202012/t20201216_3086979.shtml">谈及了</a>武汉的雄心。</p>
+  <p>“锚定国际化大都市目标不放松，”他在谈到武汉时说。“坚决做到浴火重生、再创辉煌。”</p>
+  <p>宣传力度加大的同时，媒体管控也得到加强。一年前，中国新闻媒体——在危机初期受到的审查有时没有以往那么严格——发表了一些文章，最大限度揭露了政府应对病毒的迟缓和卫生系统的失败。</p>
+  <p>但在最近几周，中国的记者表示，编辑告诉他们不要在社交媒体上引起人们对封城周年纪念的关注。一些记者说，他们还被命令放弃采访在疫情暴发初期失去亲人的人的计划。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-8/merlin_181861239_e0bdef82-4111-4d41-88d7-99fa818c1cce-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">武汉一处公园里发光的中国国旗。</small>
+  </div>
+  <p>上个月，政府判处记录武汉苦难的37岁公民记者<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/12/28/world/asia/china-Zhang-Zhan-covid-convicted.html">张展</a>有期徒刑四年，这强调了它向媒体传达的态度。张展是首位因记录中国疫情而受审的人。</p>
+  <p>围绕纪念活动的审查是中国正在进行的一场运动的一部分，目的是彻底清除质疑官方说法的声音。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/02/17/world/asia/coronavirus-china-xu-zhiyong.html">活动人士被拘留</a>，直言不讳的病毒死者亲属<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200506/china-coronavirus-answers/">经常受到骚扰</a>。多伦多大学公民实验室(University of Toronto's Citizen Lab)去年进行的一项<a rel="nofollow" target="_blank" href="https://citizenlab.ca/2020/08/censored-contagion-ii-a-timeline-of-information-control-on-chinese-social-media-during-covid-19/">研究</a>发现，与疫情有关的数千个关键词在流行通讯应用微信上遭到审查；许多被删除的帖子都在批评中国官员。</p>
+  <p>当局对于向武汉眼科医生李文亮的致敬尤其敏感，他的死曾引发中国对言论自由的罕见呼吁。</p>
+  <p>最近几篇回忆李文亮行动的文章已从互联网上删除。同时，国家支持的民族主义小报《环球时报》试图重塑这位医生的遗产，他已经成为许多中国人心目中的英雄。</p>
+  <p>“观察人士表示，对中国大陆人民来说，李文亮并不像一些国际政客或媒体报道所说的那样，是代表反对或对抗中国当局的人物，”其最近发表的一篇<a rel="nofollow" target="_blank" href="https://www.globaltimes.cn/page/202012/1211500.shtml">文章</a>写道。“相反，中国观察人士称，李文亮是一个有勇气说出真相的平凡英雄。”</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/09/world/09wuhan-rebrand-7/merlin_181820940_a5772db4-e80c-41fd-a98c-9ddb5150ec43-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">该武汉展览包括李文亮，这位医生在死于新冠后受到了全国哀悼。但展览并未提及他曾因对病毒发出警告而受到训诫。</small>
+  </div>
+  <p>政府的目标是“为公众创造一种国家许可的新冠疫情集体记忆”，公民实验室的研究员阮洋(Lotus Ruan)说。</p>
+  <p>在疫情的官方叙事中，英雄有很多。但中国最高领导人习近平无疑才是明星。</p>
+  <p>在武汉那巨大的展厅里，参观者进门就能看到习近平的大照片，照片上正在主持会议的他表情严肃。一条近50英尺长的时间线记载了习近平在危机期间所采取的英勇措施，一天都没落下。在整个展览中，他都被描绘为一位坚定的领导人，几乎从一开始就控制住了疫情，尽管<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200217/xi-china-coronavirus/">支持这种说法的证据有限</a>。</p>
+  <p>“中国人民展现了坚韧、勤劳和勇敢的精神，”展览结语写道。“一直以来，中国共产党都把人民和人民生命放在第一位。”</p>
+  <p>Keith Bradsher、Amy Chang Chien、Albee Zhang、Liu Yi和Amber Wang对本文有报道和研究贡献。<br />Amy Qin是《纽约时报》中国记者，负责报道文化、政治和社会交叉议题。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/amyyqin">@amyyqin</a>。<br />赫海威(Javier C. Hernández)是《纽约时报》负责报道中国的记者。他报道了习近平领导下专制国家的崛起、#MeToo运动等社会理念的发展以及农民工和污染受害者等中国最弱势公民的困境。欢迎在Twitter上关注他<a rel="nofollow" target="_blank" href="https://twitter.com/HernandezJavier"> @HernandezJavier</a>。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/10/world/asia/wuhan-china-coronavirus.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E6%96%B0%E7%96%86%E5%8F%91%E7%94%9F%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E6%88%91%E6%89%8D%E5%BC%80%E5%A7%8B%E5%AF%BB%E6%A0%B9">
+          新疆发生种族灭绝，我才开始寻根
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%8F%B0%E6%B9%BE%E6%96%B0%E7%89%88%E6%8A%A4%E7%85%A7%E6%94%BE%E5%A4%A7-TAIWAN-%E5%AD%97%E6%A0%B7-%E5%8A%9B%E6%B1%82%E6%8F%90%E5%8D%87%E8%BE%A8%E8%AF%86%E5%BA%A6">
+          台湾新版护照放大“TAIWAN”字样，力求提升辨识度
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E8%A2%ABTwitter%E5%B0%81%E6%9D%80%E5%90%8E-%E7%89%B9%E6%9C%97%E6%99%AE%E8%A6%81%E5%8E%BB%E5%93%AA%E9%87%8C%E5%AF%BB%E6%B1%82%E5%85%B3%E6%B3%A8">
+          被Twitter封杀后，特朗普要去哪里寻求关注？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/Twitter%E6%B0%B8%E4%B9%85%E5%B0%81%E7%A6%81%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7%E8%BF%9D%E5%8F%8D%E7%AC%AC%E4%B8%80%E4%BF%AE%E6%AD%A3%E6%A1%88%E5%90%97">
+          Twitter永久封禁特朗普账号违反第一修正案吗？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E5%86%80%E8%B5%B4%E7%BE%8E%E7%85%A7%E9%A1%BE%E7%97%85%E9%87%8D%E5%A6%BB%E5%AD%90-%E9%83%AD%E9%A3%9E%E9%9B%84%E8%87%B4%E5%87%BD%E6%9D%8E%E5%85%8B%E5%BC%BA%E5%90%81%E5%8F%91%E8%BF%98%E6%8A%A4%E7%85%A7">
+            前一篇：冀赴美照顾病重妻子 郭飞雄致函李克强吁发还护照
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%8B%E5%8D%88%E5%AF%9F-%E5%B7%A5%E4%BD%9C%E8%87%B3%E6%AD%BB-%E4%B8%AD%E5%9B%BD%E5%BC%8F%E8%BF%87%E5%8A%B3%E9%9D%A2%E9%9D%A2%E8%A7%82">
+            后一篇：下午察：工作至死——中国式过劳面面观
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%86%80%E8%B5%B4%E7%BE%8E%E7%85%A7%E9%A1%BE%E7%97%85%E9%87%8D%E5%A6%BB%E5%AD%90-%E9%83%AD%E9%A3%9E%E9%9B%84%E8%87%B4%E5%87%BD%E6%9D%8E%E5%85%8B%E5%BC%BA%E5%90%81%E5%8F%91%E8%BF%98%E6%8A%A4%E7%85%A7'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%8B%E5%8D%88%E5%AF%9F-%E5%B7%A5%E4%BD%9C%E8%87%B3%E6%AD%BB-%E4%B8%AD%E5%9B%BD%E5%BC%8F%E8%BF%87%E5%8A%B3%E9%9D%A2%E9%9D%A2%E8%A7%82'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E5%8F%B0%E6%B9%BE%E6%96%B0%E7%89%88%E6%8A%A4%E7%85%A7%E6%94%BE%E5%A4%A7-TAIWAN-%E5%AD%97%E6%A0%B7-%E5%8A%9B%E6%B1%82%E6%8F%90%E5%8D%87%E8%BE%A8%E8%AF%86%E5%BA%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E8%A2%ABTwitter%E5%B0%81%E6%9D%80%E5%90%8E-%E7%89%B9%E6%9C%97%E6%99%AE%E8%A6%81%E5%8E%BB%E5%93%AA%E9%87%8C%E5%AF%BB%E6%B1%82%E5%85%B3%E6%B3%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%86%80%E8%B5%B4%E7%BE%8E%E7%85%A7%E9%A1%BE%E7%97%85%E9%87%8D%E5%A6%BB%E5%AD%90-%E9%83%AD%E9%A3%9E%E9%9B%84%E8%87%B4%E5%87%BD%E6%9D%8E%E5%85%8B%E5%BC%BA%E5%90%81%E5%8F%91%E8%BF%98%E6%8A%A4%E7%85%A7">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-11/%E4%B8%8B%E5%8D%88%E5%AF%9F-%E5%B7%A5%E4%BD%9C%E8%87%B3%E6%AD%BB-%E4%B8%AD%E5%9B%BD%E5%BC%8F%E8%BF%87%E5%8A%B3%E9%9D%A2%E9%9D%A2%E8%A7%82">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-11/%E5%8F%B0%E6%B9%BE%E6%96%B0%E7%89%88%E6%8A%A4%E7%85%A7%E6%94%BE%E5%A4%A7-TAIWAN-%E5%AD%97%E6%A0%B7-%E5%8A%9B%E6%B1%82%E6%8F%90%E5%8D%87%E8%BE%A8%E8%AF%86%E5%BA%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E8%A2%ABTwitter%E5%B0%81%E6%9D%80%E5%90%8E-%E7%89%B9%E6%9C%97%E6%99%AE%E8%A6%81%E5%8E%BB%E5%93%AA%E9%87%8C%E5%AF%BB%E6%B1%82%E5%85%B3%E6%B3%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

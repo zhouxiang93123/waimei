@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>石家庄等多地再封城，超2200万人受影响 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+石家庄等多地再封城，超2200万人受影响
+——
+" />
+    <meta property="og:description" content="
+石家庄等多地再封城，超2200万人受影响
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="石家庄等多地再封城，超2200万人受影响" />
+    <meta property="twitter:title" content="石家庄等多地再封城，超2200万人受影响" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210114%2Fchina-covid-lockdown%2F&t=%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E%EF%BC%8C%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210114%2Fchina-covid-lockdown%2F&t=%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E%EF%BC%8C%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D&d=2021-01-13&e=
+石家庄等多地再封城，超2200万人受影响
+——
+
+
+  
+STEVEN LEE MYERS2021-01-14 10:31:39
+  
+  
+石家庄周二的新冠病毒检测，石家庄是河北三个封城的城市之一。
+  
+  北京周边的一个省份本月出现了几例——似乎是在一个村庄婚礼上传播的——新冠病毒感染病例后，中国当局迅速采取了行动。
+  他们对总人口超过1700万的石家庄和邢台实施封城，下令对几乎所有居民进行病毒紧急检测，并在几天内完成了任务。
+  他们封锁了道路交通，取消了婚礼和葬礼，最重要的是，取消了一次省级中共会议。
+  到本周时，封城措施已扩大到北京周边的另一座城市廊坊，以及东北省份黑龙江的一个县。首都北京的一些行政区也采取了封闭措施。
+  总数超过2200万的居民被要求待在家里，受影响人数是去年1月中国中央政府对武汉进行封城时的两倍。武汉是最早报告新冠病毒的中部城市，封城在当时被看..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210114%2Fchina-covid-lockdown%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210114/china-covid-lockdown/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210114/china-covid-lockdown/&text=石家庄等多地再封城，超2200万人受影响&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210114/china-covid-lockdown/&title=石家庄等多地再封城，超2200万人受影响" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210114/china-covid-lockdown/&title=石家庄等多地再封城，超2200万人受影响" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=石家庄等多地再封城，超2200万人受影响&body=
+石家庄等多地再封城，超2200万人受影响
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210114/china-covid-lockdown/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210114/china-covid-lockdown/&title=石家庄等多地再封城，超2200万人受影响&caption=
+石家庄等多地再封城，超2200万人受影响
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=石家庄等多地再封城，超2200万人受影响&url=https://cn.nytimes.com/china/20210114/china-covid-lockdown/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>石家庄等多地再封城，超2200万人受影响</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210114/china-covid-lockdown/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210114%2Fchina-covid-lockdown%2F&t=%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E%EF%BC%8C%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D&d=2021-01-13&e=
+石家庄等多地再封城，超2200万人受影响
+——
+
+
+  
+STEVEN LEE MYERS2021-01-14 10:31:39
+  
+  
+石家庄周二的新冠病毒检测，石家庄是河北三个封城的城市之一。
+  
+  北京周边的一个省份本月出现了几例——似乎是在一个村庄婚礼上传播的——新冠病毒感染病例后，中国当局迅速采取了行动。
+  他们对总人口超过1700万的石家庄和邢台实施封城，下令对几乎所有居民进行病毒紧急检测，并在几天内完成了任务。
+  他们封锁了道路交通，取消了婚礼和葬礼，最重要的是，取消了一次省级中共会议。
+  到本周时，封城措施已扩大到北京周边的另一座城市廊坊，以及东北省份黑龙江的一个县。首都北京的一些行政区也采取了封闭措施。
+  总数超过2200万的居民被要求待在家里，受影响人数是去年1月中国中央政府对武汉进行封城时的两倍。武汉是最早报告新冠病毒的中部城市，封城在当时被看..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210114%2Fchina-covid-lockdown%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610592276000-->
+<p><a href="https://cn.nytimes.com/china/20210114/china-covid-lockdown/">石家庄等多地再封城，超2200万人受影响</a>
+——</p>
+
+<div>
+  <div>
+<em>STEVEN LEE MYERS<br />2021-01-14 10:31:39</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-1/merlin_182239554_0a5b09fa-aece-4b2e-8ada-775ed2d10339-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">石家庄周二的新冠病毒检测，石家庄是河北三个封城的城市之一。</small>
+  </div>
+  <p>北京周边的一个省份本月出现了几例——似乎是在一个村庄婚礼上传播的——新冠病毒感染病例后，中国当局迅速采取了行动。</p>
+  <p>他们对总人口超过1700万的石家庄和邢台实施封城，下令对几乎所有居民进行病毒紧急检测，并在几天内完成了任务。</p>
+  <p>他们封锁了道路交通，取消了婚礼和葬礼，最重要的是，取消了一次省级中共会议。</p>
+  <p>到本周时，封城措施已扩大到北京周边的另一座城市廊坊，以及东北省份黑龙江的一个县。首都北京的一些行政区也采取了封闭措施。</p>
+  <p>总数超过2200万的居民被要求待在家里，受影响人数是去年1月中国中央政府对武汉进行封城时的两倍。武汉是最早报告新冠病毒的中部城市，封城在当时<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200123/coronavirus-quarantines-history/">被看作令人震惊的举动</a>。</p>
+  <p>与其他国家的疫情破坏相比，中国最近的复发仍是小规模的，但它们可能会威胁削弱中共在遏制新冠病毒上取得的成功，遏制病毒的成功已使<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20201019/china-economy-covid/">中国经济</a>在去年的衰退后迅速复苏，使人民的生活恢复到<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20200824/china-coronavirus-normal-life/">接近正常的水平</a>。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-2/merlin_182239047_f40047b0-f958-48f5-99df-0243d1ad9550-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">志愿者周二在北京郊外与河北接壤处的一个检查站执勤。</small>
+  </div>
+  <p>政府目前的紧迫反应，与去年武汉官员的反应形成了鲜明对比。武汉官员曾<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20201230/china-coronavirus/">担心</a>，如果他们公开当时出现的神秘新疾病，会引起上级的强烈不满。尽管地方官员知道这种疾病有在人群中传播的风险，但还是让一次（类似于河北这次取消的）地方上的中共会议如期举行。</p>
+  <p>自武汉后，当局已<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20201102/china-covid-coronavirus/">形成了一套措施</a>，在必要时动员中共干部对疫情做出快速响应，封闭社区，大规模进行病毒检测，以及将大量人群隔离起来。</p>
+  <p>“健全应急处置机制，实事求是、公开透明发布信息，坚决遏制疫情扩散，”中国总理李克强在上周五的国务院常务会议上说。</p>
+  <p>据<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html">《纽约时报》的数据库</a>，有14亿人口的中国在过去一周日均新增109例新冠病毒感染。虽然对疫情严重得多的国家来说——包括日均新病例数超过25万的美国，这样的数字求之不得，却是中国自去年夏天以来最糟糕的数字。</p>
+  <p>中国国家卫生健康委员会没有报告存在新的死亡病例，但截至1月12日，世界卫生组织<a rel="nofollow" target="_blank" href="https://covid19.who.int/region/wpro/country/cn">记录</a>的中国2021年死亡病例数为12例，该组织使用来自中国的信息。中国卫健委没有回复对这个差异进行解释的请求。（<a rel="nofollow" target="_blank" href="http://www.nhc.gov.cn/xcs/yqfkdt/202101/1cd117e46f2640a29d00d5e9323ca2e5.shtml">中国卫健委</a>13日通报了一起河北的死亡病例——编注。）</p>
+  <p>在新疫情集中暴发的河北省，官方在上周宣布进入“战时状态”，目前没有迹象表明会很快解除这一状态。</p>
+  <p>在整个新冠病毒大流行期间，中国官员们似乎特别担心中共领导核心所在地北京。河北省委书记王东峰已在上周承诺，河北省要“当好首都政治‘护城河’”。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-3/merlin_182173953_10112345-4365-46da-a28b-f5c27a3cefe5-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">来自中国官媒的图片显示邢台上周进行的核酸筛查，邢台是河北省采取了封城措施的另一座城市。</small>
+  </div>
+  <p>疫情在很长时间里只有很少病例后再次暴发，增加了中国各地人们的焦虑，中国大多数地方的居民曾认为新冠病毒大流行已是过去的事情。</p>
+  <p>北方省份山西以及东北省份黑龙江和吉林也通报了新确诊病例。周三，上海呼吁居民不要离开该市，还宣布来自或途经中风险地区的人应在家自我隔离两周，两次病毒检测阴性后才可出门，来自或途经高风险地区的人则要在政府指定地点集中隔离。</p>
+  <p>武汉出现谣言，称该市可能会再次封城；虽然这种说法似乎毫无根据，但官员们已在一些街道上明显加强了体温检测。</p>
+  <p>在北京东北部的顺义区（该区既包括北京首都国际机场，也包括农村），自新冠感染病例在年前出现激增以来，居民已被要求呆在家里。工作人员在北京的主要火车站用消毒剂喷洒公共空间。</p>
+  <p>据官方小报《环球时报》<a rel="nofollow" target="_blank" href="https://china.huanqiu.com/article/41SaHCbux6T">报道</a>，北京当局已在上周末将一名网约车司机病毒检测阳性的结果通知到所涉及的144名乘客，让他们都去做病毒检测。现在，任何在北京乘坐出租车或网约车的人，都必须用他们的手机扫描二维码，让政府能快速地找到他们。</p>
+  <p>在下个月的农历新年到来之前，政府<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20201230/china-vaccine/">已开启</a>了<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20201230/china-coronavirus-vaccine/">对5000万人进行疫苗接种</a>的计划。全国有数亿人在农历新年传统节日期间回家过年。截至周三，政府已发送了超过1000万剂疫苗。</p>
+  <p>官员们警告人们，即使接种了疫苗，也不要在春节前出行。</p>
+  <p>“落实好这些措施就可以确保不发生、不出现大规模的疫情反弹，”中国疾病预防控制中心副主任冯子健周三在北京的新闻发布会上说。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-4/merlin_182208318_98e1bfdb-39ed-4421-bb09-5f1fff34346c-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">来自中国官媒的照片显示，石家庄居民周一排队接受集中隔离。</small>
+  </div>
+  <p>虽然新的限制措施给数百万人带来了不便，但似乎并没有引起公众的强烈抵制。</p>
+  <p>“其实全市封城这个措施我觉得挺好，”北京的一名大学生赵正宇说。她现在被困在石家庄的父母家中，她放寒假回到石家庄，正赶上那里的疫情暴发。</p>
+  <p>石家庄的很多人担心会像武汉那样被长时间封城，但赵女士听起来并不担心。</p>
+  <p>赵女士的父母现在在家工作，只是买菜时才出门去他们小区的一个市场。虽然她对不能见朋友或去图书馆学习表示失望，但她说，在网上学习已经是家常便饭。</p>
+  <p>“我们可能是习惯了，”她说。</p>
+  <p>这种反应凸显了政府调动资源控制疫情的迅速。</p>
+  <p>石家庄市1月6日宣布封城，当局在接下来的三天里采集了逾1000万份病毒检测样本，几乎每个人都采集到了，石家庄官员在该市的<a rel="nofollow" target="_blank" href="http://www.he.xinhuanet.com/xinwen/2021-01/12/c_1126973549.htm">新闻发布会</a>上说。检测出阳性354份，尽管其中一些感染者没有症状。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-5/merlin_182135001_32bf4e14-e9af-48f7-8541-2561e731a586-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">来自中国官媒的照片显示，石家庄市上周新建的一个检测新冠病毒的临时实验室。</small>
+  </div>
+  <p>第二轮大规模核酸检测已在周二开始。</p>
+  <p>“这么一个体制实际上是一种战时体制，在和平时期社会控制用了战争时代的手段。在疫情期间这个战时体制是管用的，”曾任报社编辑、用笔名“笑蜀”从事写作的陈敏说。去年武汉封城时，陈敏曾在那里。</p>
+  <p>中国政府的性质为该国提供了应对大流行病的工具——尽管有些措施似乎有些过头。</p>
+  <p>“中国城市实行这种物业小区制度——小的就几百人，大的几万人——一个小区一门，把门一关你几万人就出不去，”陈敏在电话采访中说。“他现在只要遇到这种情况，一定都是采取这种手段。在西方国家是不可能的。”</p>
+  <p>Chris Buckley和Keith Bradsher对本文有报道贡献。Claire Fu对本文有研究贡献。<br />Steven Lee Myers是《纽约时报》北京分社社长。他自1989年加入时报，曾在莫斯科、巴格达和华盛顿多地进行报道。他著有《新沙皇：弗拉基米尔·普京的崛起和统治》(The New Tsar: The Rise and Reign of Vladimir Putin)一书。欢迎在<a rel="nofollow" target="_blank" href="https://twitter.com/stevenleemyers">Twitter</a>和<a rel="nofollow" target="_blank" href="https://www.facebook.com/StevenLeeMyersNYT">Facebook</a>上关注他。<br />翻译：纽约时报中文网<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/world/asia/china-covid-lockdown.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%B7%B4%E8%A5%BF%E8%B0%83%E9%99%8D%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+          巴西调降科兴疫苗有效率意味着什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B">
+          简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82-%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97">
+          彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%89%93%E6%89%AB-%E5%81%9A%E9%A5%AD-%E4%BF%9D%E6%8C%81%E8%BA%AB%E6%9D%90-%E9%9F%A9%E5%9B%BD-%E5%AD%95%E5%A6%87%E6%8C%87%E5%8D%97-%E5%BC%95%E4%BC%97%E6%80%92">
+          打扫、做饭，保持身材：韩国“孕妇指南”引众怒
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E6%8C%81%E7%BB%AD-%E5%8F%A3%E7%BD%A9%E5%8A%9F%E8%83%BD%E4%BB%8E%E5%AE%9E%E7%94%A8%E6%89%A9%E5%A4%A7%E4%B8%BA%E8%A3%85%E9%A5%B0">
+            前一篇：新冠疫情持续 口罩功能从实用扩大为装饰
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B">
+            后一篇：简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E6%8C%81%E7%BB%AD-%E5%8F%A3%E7%BD%A9%E5%8A%9F%E8%83%BD%E4%BB%8E%E5%AE%9E%E7%94%A8%E6%89%A9%E5%A4%A7%E4%B8%BA%E8%A3%85%E9%A5%B0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82-%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E6%8C%81%E7%BB%AD-%E5%8F%A3%E7%BD%A9%E5%8A%9F%E8%83%BD%E4%BB%8E%E5%AE%9E%E7%94%A8%E6%89%A9%E5%A4%A7%E4%B8%BA%E8%A3%85%E9%A5%B0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82-%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

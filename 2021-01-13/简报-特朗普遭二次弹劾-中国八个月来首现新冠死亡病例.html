@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+" />
+    <meta property="og:description" content="
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例" />
+    <meta property="twitter:title" content="简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210114%2Fus-trump-impeachment-china-coronavirus-death%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210114%2Fus-trump-impeachment-china-coronavirus-death%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B&d=2021-01-13&e=
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-14 09:56:26
+  
+  
+众议院投票现场。
+  
+  • 特朗普成为美国史上首名被二度弹劾的总统。众议院投票结果显示，特朗普总统以232票对197票被弹劾。10名共和党人加入民主党人，指控其煽动针对国会的暴力叛乱。在距离卸任仅剩一周时，特朗普将面临参议院的审判。参议院多数党领袖麦康奈尔表示，他将不会动用紧急权力让参议院在1月19日之前提前结束休会期，这意味着参议院不太可能在拜登20日就职前开始弹劾审判。
+  • 联邦政府对拜登就职典礼发生暴乱敲响警钟。根据联邦当局发布的一份联合情报公告，上周国会大厦发生的致命暴乱将可能成为武装民兵组织和种族主义极端分子袭击就职典礼的“重要暴力驱动因素”。
+  • 彭斯与特朗普决裂：无用的忠诚和迟到的反抗。彭斯几乎从未..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210114%2Fus-trump-impeachment-china-coronavirus-death%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/&text=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/&title=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/&title=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例&body=
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/&title=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例&caption=
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例&url=https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210114%2Fus-trump-impeachment-china-coronavirus-death%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE%EF%BC%9B%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B&d=2021-01-13&e=
+简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-14 09:56:26
+  
+  
+众议院投票现场。
+  
+  • 特朗普成为美国史上首名被二度弹劾的总统。众议院投票结果显示，特朗普总统以232票对197票被弹劾。10名共和党人加入民主党人，指控其煽动针对国会的暴力叛乱。在距离卸任仅剩一周时，特朗普将面临参议院的审判。参议院多数党领袖麦康奈尔表示，他将不会动用紧急权力让参议院在1月19日之前提前结束休会期，这意味着参议院不太可能在拜登20日就职前开始弹劾审判。
+  • 联邦政府对拜登就职典礼发生暴乱敲响警钟。根据联邦当局发布的一份联合情报公告，上周国会大厦发生的致命暴乱将可能成为武装民兵组织和种族主义极端分子袭击就职典礼的“重要暴力驱动因素”。
+  • 彭斯与特朗普决裂：无用的忠诚和迟到的反抗。彭斯几乎从未..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210114%2Fus-trump-impeachment-china-coronavirus-death%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610592276000-->
+<p><a href="https://cn.nytimes.com/morning-brief/20210114/us-trump-impeachment-china-coronavirus-death/">简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例</a>
+——</p>
+
+<div>
+  <div>
+<em>KONEY BAI,KONEY BAI<br />2021-01-14 09:56:26</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/us/13PMBriefing-house/13hpwashington22-articleLarge-v3.jpg" width="100%" />  <div>
+<small style="color: #999;">众议院投票现场。</small>
+  </div>
+  <p>• 特朗普成为<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/13/us/trump-impeachment" title="Link: https://www.nytimes.com/live/2021/01/13/us/trump-impeachment">美国史上首名被二度弹劾的总统</a>。众议院投票结果显示，特朗普总统以232票对197票被弹劾。10名共和党人加入民主党人，指控其煽动针对国会的暴力叛乱。在距离卸任仅剩一周时，特朗普将面临参议院的审判。参议院多数党领袖麦康奈尔表示，他将不会动用紧急权力让参议院在1月19日之前提前结束休会期，这意味着参议院不太可能在拜登20日就职前开始弹劾审判。</p>
+  <p>• 联邦政府<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/us/politics/capitol-breach-driver-of-violence.html" title="Link: https://www.nytimes.com/2021/01/13/us/politics/capitol-breach-driver-of-violence.html">对拜登就职典礼发生暴乱敲响警钟</a>。根据联邦当局发布的一份联合情报公告，上周国会大厦发生的致命暴乱将可能成为武装民兵组织和种族主义极端分子袭击就职典礼的“重要暴力驱动因素”。</p>
+  <p>• 彭斯与特朗普决裂：无用的忠诚和迟到的反抗。彭斯几乎从未背离特朗普的意愿，巧妙地处理了其他所有可能的裂痕，但在总统和暴徒的压力面前，他仍坚持承认大选。四年间的顺从付诸流水，他也将付出代价。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210113/mike-pence-trump/">阅读本文中文版</a>）</p>
+  <p>• 新闻分析：为什么人们会相信统治者的弥天大谎？说谎作为政治工具并不新鲜。近年来，对欺骗心甘情愿的接受已经成为世界各地政治的一种驱动力。在特朗普时代，这股趋势已经从民粹主义领导人统治的国家蔓延到了美国。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/world/20210113/trump-truth-lies-power/">阅读本文中文版</a>）</p>
+  <p>• 观点：特朗普让美国成了笑柄。特朗普承诺让世界尊敬和畏惧美国，但这两样他都没有做到。国会暴乱使美国民主的复原力遭到质疑，美国全球影响力的地位也不再理所当然。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/opinion/20210113/trump-america-allies/">阅读本文中文版</a>）</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13virus-china-1/merlin_182239554_0a5b09fa-aece-4b2e-8ada-775ed2d10339-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">石家庄周二的新冠病毒检测，石家庄是河北三个封城的城市之一。</small>
+  </div>
+  <p>• 中国八个月来首次出现新冠死亡病例。据<a rel="nofollow" target="_blank" href="http://www.nhc.gov.cn/xcs/yqfkdt/202101/1cd117e46f2640a29d00d5e9323ca2e5.shtml">中国卫健委</a>消息，河北省周三新增死亡病例一例，为本土病例。中国大陆上一次通报死亡病例还是在<a rel="nofollow" target="_blank" href="http://www.nhc.gov.cn/xcs/yqtb/202005/738bb0aad4854450a0b07423ff9664ed.shtml" title="Link: http://www.nhc.gov.cn/xcs/yqtb/202005/738bb0aad4854450a0b07423ff9664ed.shtml">去年5月</a>。</p>
+  <p>• 中国暴发新一轮疫情，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/world/asia/china-covid-lockdown.html" title="Link: https://www.nytimes.com/2021/01/13/world/asia/china-covid-lockdown.html">2200万居民进入封锁</a>。中国过去一周日均新增109例感染，这是自去年夏天以来该国最糟的数字。政府已下令封锁道路、取消婚礼和葬礼、对上千万人进行检测，甚至叫停了一次省级中共会议。这种“战时体制”凸显了中国调动资源控制疫情的迅速，也表明当局对本轮暴发可能削弱其在遏制新冠方面所获成功的担忧。</p>
+  <p>• 巴西改口<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/business/chinese-vaccine-brazil-sinovac.html" title="Link: https://www.nytimes.com/2021/01/13/business/chinese-vaccine-brazil-sinovac.html">调降中国疫苗有效性意味着什么</a>？根据最新公布的数据，科兴疫苗有效性仅略高于50%的门槛，这可能会损害中国向发展中国家提供疫苗的野心。此外，已有至少10个国家订购了超过3.8亿剂科兴疫苗，这些国家可能会对疫苗有效性产生质疑，其国内政治也可能受到影响。</p>
+  <p>• 印尼总统<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/world/indonesias-president-receives-a-chinese-made-vaccine-that-produced-disappointing-trial-results.html" title="Link: https://www.nytimes.com/2021/01/13/world/indonesias-president-receives-a-chinese-made-vaccine-that-produced-disappointing-trial-results.html">直播接种中国疫苗</a>。卫生官员表示，总统佐科·维多多是该国首位接种这种疫苗的人，因为他想向公众保证，这种疫苗是安全、有效的，而且是“清真”的。当前该国已向科兴订购了1.255亿剂疫苗，希望在15个月内为三分之二的人口接种疫苗，从而实现群体免疫。</p>
+  <p>• 日本<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/13/world/covid19-coronavirus/japan-extends-a-state-of-emergency-and-other-news-from-around-the-world" title="Link: https://www.nytimes.com/live/2021/01/13/world/covid19-coronavirus/japan-extends-a-state-of-emergency-and-other-news-from-around-the-world">扩大疫情紧急状态范围</a>：鉴于新发感染不断增加、医疗系统承压，该国宣布将对东京及周边地区实施的紧急状态扩大至大阪府、爱知县等七地。这些措施将至少持续到2月初。</p>
+  <p>• “所有计划都泡汤了”：香港防疫新规引发隔离噩梦。香港突然提出的新入境要求将原本两周的隔离期延长至三周，导致旅客、酒店和航司不得不手忙脚乱地调整计划，一些外劳家政人员因此失业，科学家也质疑此举是否必要。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20210113/hong-kong-quarantine/">阅读本文中文版</a>）</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/13/world/13nkorea-1/merlin_182272725_02900ee5-9b98-46f5-9b20-76ad7c0bd9d8-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">朝鲜官方媒体发布了金正恩的照片，据信是在党代会的最后一天拍摄的。</small>
+  </div>
+  <p>• 金正恩将<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/world/asia/north-korea-kim-jong-un-nuclear.html" title="Link: https://www.nytimes.com/2021/01/13/world/asia/north-korea-kim-jong-un-nuclear.html">如何与拜登打交道</a>？在最近一次党代会上，尽管许多人希望他能重点关注经济，金正恩仍加强了核计划的力度。分析认为，朝鲜可能会等待并观察拜登政府是否会提议对话，如果得不到它想要的，则可能延续其激进策略。此外，在本轮党代会换届中，金正恩将领导外交工作的官员降职，并强调了与中国的关系。</p>
+  <p>• 美国<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/business/economy/xinjiang-cotton-tomato-ban.html" title="Link: https://www.nytimes.com/2021/01/13/business/economy/xinjiang-cotton-tomato-ban.html">禁止从新疆进口全部棉花及番茄制品</a>。特朗普政府援引人权侵犯和该地区普遍使用强迫劳动，宣布禁止从新疆进口棉花、番茄，以及所有用这些材料生产的产品。这项禁令或将对服装和食品制造商产生广泛影响，可能会迫使它们重组跨国供应链。</p>
+  <p>• 意大利开审<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/world/europe/italy-mob-trial-Ndrangheta-Calabria.html" title="Link: https://www.nytimes.com/2021/01/13/world/europe/italy-mob-trial-Ndrangheta-Calabria.html">数十年来最大黑手党案</a>。该国周三对325名与Ndrangheta家族有关的被告进行了审理，他们被控谋杀、洗钱、贩毒等多项罪名。这是自1980年代西西里黑手党遭受审判以来，意大利对犯罪组织采取的影响最深远的行动。该案审理预计持续数月，甚至数年。</p>
+  <p>• “智能”坐垫记录离座时间，杭州一公司被指监控员工。这家公司设计并发放给员工的坐垫号称用于监测坐姿、心率等健康数据，但员工发现人力资源部门借此掌握了他们离开工位的时间等。这引发了有关工作场所监控的辩论。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/china/20210113/china-office-cushion-surveillance/">阅读本文中文版</a>）</p>
+  <p><em>感谢阅读今天的简报</em><em>，新读者请</em><em><a rel="nofollow" target="_blank" href="https://sso.nytcn.me/email/?source=top-right">点击此处订阅</a>。点击<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/morning-brief/">这里</a>查看往日更新</em><em>。</em><em>欢迎在Twitter(</em><a rel="nofollow" target="_blank" href="https://twitter.com/nytchinese"><em>@nytchinese</em></a><em>)、</em><a rel="nofollow" target="_blank" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw"><em>Instagram</em></a><em>和</em><a rel="nofollow" target="_blank" href="https://www.facebook.com/nytimeschinese.t/"><em>Facebook</em></a><em>上关注我们，了解更多中文资讯。也欢迎访问中文网</em><a rel="nofollow" target="_blank" href="https://cn.nytimes.com/"><em>首页</em></a><em>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E7%9B%AE%E5%89%8D%E6%88%91%E4%BB%AC%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84">
+          关于特朗普遭第二次弹劾，目前我们所知道的
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%B7%B4%E8%A5%BF%E8%B0%83%E9%99%8D%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+          巴西调降科兴疫苗有效率意味着什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+          石家庄等多地再封城，超2200万人受影响
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82-%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97">
+          彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+            前一篇：石家庄等多地再封城，超2200万人受影响
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-13">
+            后一篇：三退声明精选（2021/01/13）
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-13'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E5%B7%B4%E8%A5%BF%E8%B0%83%E9%99%8D%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-13">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E5%B7%B4%E8%A5%BF%E8%B0%83%E9%99%8D%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

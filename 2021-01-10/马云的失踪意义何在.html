@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>马云的失踪意义何在 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+马云的失踪意义何在
+——
+" />
+    <meta property="og:description" content="
+马云的失踪意义何在
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="马云的失踪意义何在" />
+    <meta property="twitter:title" content="马云的失踪意义何在" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsignificance-of-jack-ma-disappearance%2F5731822.html&t=%E9%A9%AC%E4%BA%91%E7%9A%84%E5%A4%B1%E8%B8%AA%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsignificance-of-jack-ma-disappearance%2F5731822.html&t=%E9%A9%AC%E4%BA%91%E7%9A%84%E5%A4%B1%E8%B8%AA%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8&d=2021-01-10&e=
+马云的失踪意义何在
+——
+
+
+  
+Sun, 10 Jan 2021 14:06:51 GMT
+  
+  
+阿里巴巴创建人马云（AP资料照）
+  
+  中国商界大亨、世界首屈一指的电商大公司阿里巴巴创办人和中国共产党党员马云去年10下旬在批评中国政府金融监管部门思想陈旧落伍之后旋即被监管部门约谈训诫，他旗下的金融科技公司蚂蚁集团融资规模空前的上市安排去年11月初被紧急叫停，马云随后从公众视野中消失。眼下中国国内外众多观察家好奇马云再显影时是囹圄中的一个囚犯，还是仍是一个大亨。与此同时，马云的消失与中国国家主席习近平以及习近平的治国方略的关系也受到关注。
+   
+  马云眼下身处何种险境
+   
+  马云是中国以及全世界最富有的人之一，多年来是中国商场乃至世界商场上的风云人物。2020年11月5日，福布斯中国发布有400位上榜者的中国富豪榜，其中马云财富达到4377.2亿元人民币，连..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsignificance-of-jack-ma-disappearance%2F5731822.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html&text=马云的失踪意义何在&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html&title=马云的失踪意义何在" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html&title=马云的失踪意义何在" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=马云的失踪意义何在&body=
+马云的失踪意义何在
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html&title=马云的失踪意义何在&caption=
+马云的失踪意义何在
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=马云的失踪意义何在&url=https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>马云的失踪意义何在</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsignificance-of-jack-ma-disappearance%2F5731822.html&t=%E9%A9%AC%E4%BA%91%E7%9A%84%E5%A4%B1%E8%B8%AA%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8&d=2021-01-10&e=
+马云的失踪意义何在
+——
+
+
+  
+Sun, 10 Jan 2021 14:06:51 GMT
+  
+  
+阿里巴巴创建人马云（AP资料照）
+  
+  中国商界大亨、世界首屈一指的电商大公司阿里巴巴创办人和中国共产党党员马云去年10下旬在批评中国政府金融监管部门思想陈旧落伍之后旋即被监管部门约谈训诫，他旗下的金融科技公司蚂蚁集团融资规模空前的上市安排去年11月初被紧急叫停，马云随后从公众视野中消失。眼下中国国内外众多观察家好奇马云再显影时是囹圄中的一个囚犯，还是仍是一个大亨。与此同时，马云的消失与中国国家主席习近平以及习近平的治国方略的关系也受到关注。
+   
+  马云眼下身处何种险境
+   
+  马云是中国以及全世界最富有的人之一，多年来是中国商场乃至世界商场上的风云人物。2020年11月5日，福布斯中国发布有400位上榜者的中国富豪榜，其中马云财富达到4377.2亿元人民币，连..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsignificance-of-jack-ma-disappearance%2F5731822.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610289681000-->
+<p><a href="https://www.voachinese.com/a/significance-of-jack-ma-disappearance/5731822.html">马云的失踪意义何在</a>
+——</p>
+
+<div>
+  <div>
+<em>Sun, 10 Jan 2021 14:06:51 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/3cb8c00c-db0a-49bf-af38-d1b5f44fe2c2_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">阿里巴巴创建人马云（AP资料照）</small>
+  </div>
+  <p>中国商界大亨、世界首屈一指的电商大公司阿里巴巴创办人和中国共产党党员马云去年10下旬在批评中国政府金融监管部门思想陈旧落伍之后旋即被监管部门约谈训诫，他旗下的金融科技公司蚂蚁集团融资规模空前的上市安排去年11月初被紧急叫停，马云随后从公众视野中消失。眼下中国国内外众多观察家好奇马云再显影时是囹圄中的一个囚犯，还是仍是一个大亨。与此同时，马云的消失与中国国家主席习近平以及习近平的治国方略的关系也受到关注。</p>
+  <p> </p>
+  <p><strong>马云眼下身处何种险境</strong></p>
+  <p> </p>
+  <p>马云是中国以及全世界最富有的人之一，多年来是中国商场乃至世界商场上的风云人物。2020年11月5日，福布斯中国发布有400位上榜者的中国富豪榜，其中马云财富达到4377.2亿元人民币，连续第三年位列榜首。</p>
+  <p> </p>
+  <p>除了以财富规模名列前茅之外，马云还时常因发表雷人言论引起广泛的争议和非议而引人注目。如他先前公开就中国富豪回避的敏感话题发言，声言中共当局1989年出动野战军血腥镇压那些要民主和反腐败的和平抗议者对中国的经济发展是必要的。他还声言中国人每周工作六天一天工作12个小时是一种幸福。</p>
+  <p> </p>
+  <p>马云去年10月24日上海外滩金融峰会发表演讲，公开批评中国的金融监管体制陈旧落伍，监管部门以管理当铺的思维管理金融，阻碍并扼杀金融业创新。中国国内外的观察家们普遍认为，马云那番大胆言论虽然使他大出风头，但也无疑使他陷入了目前的危险境地，直接导致他从公众视野中失踪。</p>
+  <p> </p>
+  <p>马云的失踪使不少观察家不禁想起中国的另一位超级富豪、中国已故的最高领导人邓小平的孙女婿吴小晖。安邦保险董事长和总经理吴小晖2018年5月被判刑18年、没收追缴财产857亿元人民币之前也从公众视野中失踪了一段时间。<br /> </p>
+  <p>马云是否会步吴小晖的后尘？吴小晖的昨天是否就是马云的今天或明天？多年研究中国政治经济和金融问题的美国智库美国企业研究所在驻学者史剑道（Derrick Scissors）认为马云的结局可能不会像吴小晖一样悲惨。</p>
+  <p> </p>
+  <p>他说：“马云的名头要响亮得多。大部分海外的人不知道安邦是什么。再者，我所熟悉的安邦在海外的行为比阿里巴巴要恶劣多了。安邦弄出很多奇怪的交易，那些交易或者看上去不是浪费金钱，就是转移资金，或者是浪费资金。因此我不认为马云跟安邦的吴小晖类似。但我觉得马云可能跟复星集团董事长郭广昌类似，郭也一度被拘留了一段时间后来被释放。我想，马云不在公开场合露面是因为他知道现在最好是保持低调。我想他是受到了中国政府的讯问，但我不认为他会下狱。”</p>
+  <p> </p>
+  <p>史剑道在这里提到的总部设在上海的复星集团的董事长郭广昌2015年12月一度失踪，后来又低调复出，并一直保持低调。</p>
+  <p> </p>
+  <p>马云的失踪在史剑道看来将跟郭广昌一样最终是有惊无险，但在中国退休的老资格记者高瑜看来，马云眼下显然是凶多吉少，处境和下场不排除可能比吴小晖更惨。</p>
+  <p> </p>
+  <p>高瑜为她的这一观点提出的论证是，中国人现在喜欢用“割韭菜”这种说法，马云显然是一棵长得特别肥的韭菜，诱人收割的诱惑力特别大，因为马云更有钱，而且他还涉足金融，传媒，娱乐业，这些都是中共特别看重的领域。高瑜接着说，马云还因为鼓吹996工作制（即每天早上9点上班，晚上9点下班，一周工作6天）而激起公众的强烈反感甚至愤恨，这种既有民愤又有当局特别关注的局面，使马云面临在劫难逃的超危险境地。<br /> </p>
+  <p>高瑜说：“（马云）他不光涉及商业，他原来是搞商业平台的，又有金融平台，支付宝就是他的。他还有传媒和娱乐业。娱乐业在中共看来也是宣传呐。现在电影电视部都合成一块了。所以他这个就不得了了。”</p>
+  <p> </p>
+  <p><strong>蚂蚁集团上市遭腰斩与习近平的决策</strong></p>
+  <p> </p>
+  <p>去年10月下旬甚至11月开头，马云掌控的阿里巴巴旗下的金融技术公司蚂蚁集团以空前的350亿美元规模在上海和香港两地同步上市的计划还在按部就班的推进，但是在11月初，也就是在蚂蚁计划上市两天前被中国当局突然叫停。</p>
+  <p> </p>
+  <p>当局的这种出人意料的大动作在中国国内外引起巨大的震荡，并立即引起诸多的猜测。一些观察家认为，这种大动作的推手大有可能是中共领袖和中国国家主席习近平。<br /> </p>
+  <p>高瑜认为，许多人相信蚂蚁集团融资规模空前的上市计划被腰斩这种决策来自中共最高层自然有他们的到道理，这就是，在当今中国，中共当局一直在强调顶层设计，政治意识，看齐意识，定于一尊，一锤定音，也就是一切重大决策必须来自习近平，必须听从习近平指令，做出像腰斩蚂蚁集团上市这样的大决策没有习近平的指令是不可想象的。</p>
+  <p> </p>
+  <p>美国企业研究所中国问题专家史剑道也认为，蚂蚁集团上市计划被打断大有可能是习近平的决策。<br /> </p>
+  <p>史剑道说：“看来是马云批评金融监管部门导致了这种突变，使原先的按部就班的行进变成腰斩。中国的金融监管部门没有人有足够大的权力来如此拿住阿里巴巴。阿里巴巴原先是中国股市上市值最大的公司。如此拿住阿里巴巴必定是习近平下面的中共中央政治局级别的政治决策。但也很有可能就是习近平的决定，因为习近平不喜欢任何人批评他的政府。因此他就直接参与了这种决策。因此我认为很可能这是一个政治决定，而不是金融监管的决定。很可能是习近平本人的决定。”</p>
+  <p> </p>
+  <p>史剑道接着说，马云及其公司被整肃并不是新出现的现象。他说：“我想这是一种趋势的继续。我们不仅有安邦，有复星的老总被拘留，有万达集团，还有海南航空被处罚。我想，这不是什么新事。中国的企业家一直面临风险......任何人假如被认为是让习近平难堪，那就有危险了。这种趋势将持续下去，直到非常富有、非常成功的私营企业家明白过来他们在中国的自由和商业运作只是在党允许的情况下才会存在。”</p>
+  <p> </p>
+  <p><strong>马云与蚂蚁传达一种什么信号</strong></p>
+  <p> </p>
+  <p>蚂蚁集团上市运作在最后一刻被腰斩，马云随后从公众视野中失踪，在中国国内外引起纷纷议论。观察家们认为，这种局面的出现应当是在中共当局的预测之中，甚至是当局所谋求达到的效果。那么，当局打造这种局面究竟是想发出一种什么信号呢？</p>
+  <p> </p>
+  <p>在中共当局控制下的中国媒体对这个问题讳莫如深，闪烁其词。但海外媒体对这个问题有相当大的共识。这种共识相当清晰地反映在许多海外媒体报道的标题中，如美国财富杂志网站1月5日的报道标题：“马云失踪了吗？有关的谣传本身就代表了来自北京的一个令人心寒的新信息”。</p>
+  <p> </p>
+  <p>再如英国《卫报》1月4日的标题：“‘马云被驯服’：北京如何向技术业界的企业家展示谁是老总”。</p>
+  <p> </p>
+  <p>在高瑜看来，中共当局发出的信号是很清楚的。这就是“所有的企业家，都要老老实实的，平时听党的话，更不能有二心，不能说（党认为的）歪话，歪理，只能按照讲政治的原则来拥护，拥护，用户。但你一旦做大了，政府说不成了，你太大了，再大就侵犯我无产阶级专政了。你这不就得（把财产）交出去嘛。你要是不愿意交，或者有什么贼心或贼胆，你就是马云的下场。”</p>
+  <p> </p>
+  <p>几乎在高瑜发表上述评论的同时，美国《华尔街日报》发表报道说，中国监管机构试图让马云分享他旗下庞大的金融技术公司所收集的消费者信用资料。该报道援引一位消息人士的话说，当局提出两个选项: 一个是要求蚂蚁集团将资料转移给中国人民银行运营的全国性信用系统，另一个则是要求蚂蚁集团分享数据给央行实际掌控的信用评等公司，但马云始终拒绝像政府要求的那样让监管机构取得蚂蚁集团掌握的消费者个人信用数据。</p>
+  <p> </p>
+  <p>美国企业研究所研究中国经济问题的学者史剑道认为，中共当局通过高调整肃马云所发出的信号可以分两个方面来看。</p>
+  <p> </p>
+  <p>史剑道说，“我想（马云的事情）对中国人的发出的信号是清楚的，这就是，就私营/民营大公司而言，你应当为你在恩准下取得成功而感到幸福，假如你觉得不可接受，他就可以把成功从你这里拿走。因此，马云的事情在中国发出的信号是，一个中国企业家，即使是一个非常成功的企业家，假如是大胆说话，你就应当意识到他和他的企业会处于危险之中。”</p>
+  <p> </p>
+  <p>在另外一方面，史剑道认为马云被整肃对海外的投资者也是一种现实的教育。他说：“我想马云的事情对海外发出的信号是，阿里巴巴看上去像是亚马逊，但实际上跟亚马逊不同。因为阿里巴巴的总部是在中国。因为是在中国，中共会干预，会让你的公司，股票，融资，甚至你的自由受损，只是因为你自由发言。”</p>
+  <p> </p>
+  <p><strong>中共的“亲垄断的反垄断运动”</strong></p>
+  <p> </p>
+  <p>目前中共当局整肃马云以及他创办的阿里巴巴公司的一个主要理由是反垄断。然而，在此之前，当局却对阿里巴巴、腾讯这样的大技术公司形成垄断的局面不但一直不管不问，而且予以鼓励和赞扬。</p>
+  <p> </p>
+  <p>美国克莱芒·麦肯纳学院教授裴敏欣日前发表文章，对以习近平为首的中共当局当前异乎寻常的反垄断热情将进行了解析。裴敏欣文章的标题是。“中国的亲垄断的反垄断运动”。</p>
+  <p> </p>
+  <p>文章说，“尽管有种种缺陷，中国的民营公司是中国经济中最富有活力的运动员。假如中共对他们进行打压，但对（因得到中共当局加持而拥有垄断地位的）国有企业放任不管，私营企业的信心就会削弱，经济的生产力、创新和效率就会降低。国内生产总值就会下滑。一党体制的合法性就会恶化，因为中共一党制一直是依赖经济繁荣的许诺。</p>
+  <p> </p>
+  <p>“习近平和他的同事们加强中共政权对经济的掌控、制约私营企业或许会在短期内提升中共的政治安全。但从长远来看，中国当下的反垄断整肃行动的最大的受害者很可能是中共所力图保护的垄断即中共对政治权力的垄断。”</p>
+  <p> </p>
+  <p>鉴于中国政治的高度不透明，眼下马云的下落及其阿里巴巴的命运已经成为中外一些观察家观察和判断习近平治下的中国政治经济走向的一个风向标。</p>
+  <p> </p>
+  <p>1月5日，马云的运势似乎有一种逢凶转吉的迹象。美国专门报道金融和工商新闻的网刊《工商内线》（Business Insider）发表报道，标题是“在（美国财经新闻电视频道）CNBC报道其创始人马云只是蛰伏而不是失踪之后，阿里巴巴股价蹿升5%”。</p>
+  <p> </p>
+  <p>但到了1月7日，英国《金融时报》从北京发出一篇关于马云的报道，标题是：“北京下令中国媒体不得擅自报道阿里巴巴被调查的话题”。北京当局对马云话题所展示的这种超级敏感似乎使外界对马云的下落和命运、对习近平掌控中国经济更为担心。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%BB%A7%E8%B0%B7%E6%AD%8C%E4%B9%8B%E5%90%8E%E4%BA%9A%E9%A9%AC%E9%80%8A-%E8%8B%B9%E6%9E%9C%E6%8A%8A%E7%89%B9%E6%9C%97%E6%99%AE%E7%B2%89%E4%B8%9D%E5%B9%B3%E5%8F%B0Parler%E4%B8%8B%E6%9E%B6">
+          继谷歌之后亚马逊、苹果把特朗普粉丝平台Parler下架
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E6%95%99%E5%AE%97%E6%96%B9%E6%B5%8E%E5%90%84-%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E6%98%AF%E9%81%93%E5%BE%B7%E9%80%89%E6%8B%A9">
+          教宗方济各: 接种新冠疫苗，是道德选择
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E8%8A%AF%E7%89%87%E4%BA%A7%E4%B8%9A-%E8%99%9A%E7%81%AB-%E6%AD%A3%E6%97%BA-%E6%BB%91%E5%90%91%E4%BD%8E%E7%AB%AF%E4%BA%A7%E8%83%BD%E7%B2%97%E6%94%BE%E6%89%A9%E5%BC%A0">
+          中国芯片产业“虚火”正旺 滑向低端产能粗放扩张
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E4%BC%97%E8%AE%AE%E9%99%A2%E6%88%96%E4%BA%8E%E5%91%A8%E4%B8%80%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%8F%90%E5%87%BA%E5%BC%B9%E5%8A%BE%E6%9D%A1%E6%AC%BE">
+          众议院或于周一对特朗普提出弹劾条款
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%8F%8D%E9%A9%B3%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%8F%8A%E4%B8%89%E5%9B%BD%E5%A4%96%E9%95%BF%E7%9A%84%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E-%E8%AF%8B%E6%AF%81%E5%9B%BD%E5%AE%89%E6%B3%95%E6%98%8E%E6%98%BE%E5%8F%8C%E6%A0%87">
+            前一篇：香港政府反驳美国务卿及三国外长的联合声明：诋毁国安法明显双标
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E8%8B%B9%E6%9E%9C%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%B0%81%E6%9D%80-Parler-%E4%B8%BB%E8%A6%81%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E9%83%BD%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%88%87%E5%89%B2">
+            后一篇：苹果亚马逊封杀 Parler，主要社交平台都与特朗普切割
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%8F%8D%E9%A9%B3%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%8F%8A%E4%B8%89%E5%9B%BD%E5%A4%96%E9%95%BF%E7%9A%84%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E-%E8%AF%8B%E6%AF%81%E5%9B%BD%E5%AE%89%E6%B3%95%E6%98%8E%E6%98%BE%E5%8F%8C%E6%A0%87'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E8%8B%B9%E6%9E%9C%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%B0%81%E6%9D%80-Parler-%E4%B8%BB%E8%A6%81%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E9%83%BD%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%88%87%E5%89%B2'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E6%95%99%E5%AE%97%E6%96%B9%E6%B5%8E%E5%90%84-%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E6%98%AF%E9%81%93%E5%BE%B7%E9%80%89%E6%8B%A9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E8%8A%AF%E7%89%87%E4%BA%A7%E4%B8%9A-%E8%99%9A%E7%81%AB-%E6%AD%A3%E6%97%BA-%E6%BB%91%E5%90%91%E4%BD%8E%E7%AB%AF%E4%BA%A7%E8%83%BD%E7%B2%97%E6%94%BE%E6%89%A9%E5%BC%A0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%8F%8D%E9%A9%B3%E7%BE%8E%E5%9B%BD%E5%8A%A1%E5%8D%BF%E5%8F%8A%E4%B8%89%E5%9B%BD%E5%A4%96%E9%95%BF%E7%9A%84%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E-%E8%AF%8B%E6%AF%81%E5%9B%BD%E5%AE%89%E6%B3%95%E6%98%8E%E6%98%BE%E5%8F%8C%E6%A0%87">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E8%8B%B9%E6%9E%9C%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%B0%81%E6%9D%80-Parler-%E4%B8%BB%E8%A6%81%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E9%83%BD%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%88%87%E5%89%B2">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-10/%E6%95%99%E5%AE%97%E6%96%B9%E6%B5%8E%E5%90%84-%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E6%98%AF%E9%81%93%E5%BE%B7%E9%80%89%E6%8B%A9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-10/%E4%B8%AD%E5%9B%BD%E8%8A%AF%E7%89%87%E4%BA%A7%E4%B8%9A-%E8%99%9A%E7%81%AB-%E6%AD%A3%E6%97%BA-%E6%BB%91%E5%90%91%E4%BD%8E%E7%AB%AF%E4%BA%A7%E8%83%BD%E7%B2%97%E6%94%BE%E6%89%A9%E5%BC%A0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

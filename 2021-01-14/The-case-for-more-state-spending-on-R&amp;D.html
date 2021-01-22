@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>The case for more state spending on R&amp;D – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+The case for more state spending on R&amp;D
+——
+" />
+    <meta property="og:description" content="
+The case for more state spending on R&amp;D
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="The case for more state spending on R&amp;D" />
+    <meta property="twitter:title" content="The case for more state spending on R&amp;D" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2Fbriefing%2F2021%2F01%2F16%2Fthe-case-for-more-state-spending-on-r-and-d&t=The+case+for+more+state+spending+on+R%26amp%3BD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Fbriefing%2F2021%2F01%2F16%2Fthe-case-for-more-state-spending-on-r-and-d&t=The+case+for+more+state+spending+on+R%26amp%3BD&d=2021-01-14&e=
+The case for more state spending on R&amp;D
+——
+
+
+  
+  
+    
+      Jan 16th 2021
+      
+    
+  
+  THERE IS nothing new about economists arguing for more government spending on research and development (R&amp;D). Theoretical work done by Kenneth Arrow in the 1960s convinced his colleagues that the private sector would not on its own provide the amount of innovation that economies need to maximis..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Fbriefing%2F2021%2F01%2F16%2Fthe-case-for-more-state-spending-on-r-and-d" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d&text=The case for more state spending on R&amp;D&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d&title=The case for more state spending on R&amp;D" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d&title=The case for more state spending on R&amp;D" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=The case for more state spending on R&amp;D&body=
+The case for more state spending on R&amp;D
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d&title=The case for more state spending on R&amp;D&caption=
+The case for more state spending on R&amp;D
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=The case for more state spending on R&amp;D&url=https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>The case for more state spending on R&amp;D</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Fbriefing%2F2021%2F01%2F16%2Fthe-case-for-more-state-spending-on-r-and-d&t=The+case+for+more+state+spending+on+R%26amp%3BD&d=2021-01-14&e=
+The case for more state spending on R&amp;D
+——
+
+
+  
+  
+    
+      Jan 16th 2021
+      
+    
+  
+  THERE IS nothing new about economists arguing for more government spending on research and development (R&amp;D). Theoretical work done by Kenneth Arrow in the 1960s convinced his colleagues that the private sector would not on its own provide the amount of innovation that economies need to maximis..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Fbriefing%2F2021%2F01%2F16%2Fthe-case-for-more-state-spending-on-r-and-d" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610644192000-->
+<p><a href="https://www.economist.com/briefing/2021/01/16/the-case-for-more-state-spending-on-r-and-d">The case for more state spending on R&amp;D</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20210116_FBD001_0.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-16T00:00:00Z">Jan 16th 2021</time>
+      <meta itemprop="author" content="The Economist" />
+    </div>
+  </aside>
+  <p data-caps="initial"><span data-caps="initial">T</span><small>HERE IS</small> nothing new about economists arguing for more government spending on research and development (<small>R&amp;D</small>). Theoretical work done by Kenneth Arrow in the 1960s convinced his colleagues that the private sector would not on its own provide the amount of innovation that economies need to maximise their growth. Empirically the coincidence, in the 1950s, of increased government<small>R&amp;D</small> spending and excellent rates of productivity and <small>GDP</small> growth strengthened the case further.</p>
+  <p>It is true that the hard evidence for a positive impact of such <small>R&amp;D</small> spending on overall growth is both fairly weak and suggests that it lags the outlay by quite a while. But few doubt that the return is, in practice, significant. Rich-world governments currently spend, on average, a bit over 0.5% of <small>GDP</small> on <small>R&amp;D</small>; a couple more tenths of a percentage point could make a big difference.</p>
+  <div>
+    <div>
+      <div id="econ-1"></div>
+    </div>
+  </div>
+  <p>The economists have the advantage, here, of pushing at a door that others are in the process of pulling open. Government <small>R&amp;D</small> spending as a fraction of <small>GDP</small> has spent most of the past 40 years shrinking (see chart 1). In 2018, though, the most recent year for which data are available, figures from 24 <small>OECD</small> countries showed government spending on <small>R&amp;D</small> rising by a healthy 3% in real terms following a particularly lean period after the financial crisis. In 2020 the French government promised to increase its research budget by 30% over ten years as part of a new research strategy. The Japanese government has also been increasing funding, and setting up a new provision for “moonshots”. In America, having resisted Donald Trump’s attempts to cut research budgets, Congress may well look favourably on President-elect Joe Biden’s promise to pump them up.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/662/90/sites/default/files/images/print-edition/20210116_FBC393.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/662/90/sites/default/files/images/print-edition/20210116_FBC393.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>This enthusiasm is not simply driven by a belief that such spending will increase growth. It is also about a fear of China. A research backwater when its economy took off in the 1980s, China has since spent heavily on <small>R&amp;D</small> to obvious effect. A study published by Elsevier, a scientific publisher, and Nikkei, a news business, in 2019 found that China published more high-impact research papers than America did in 23 out of 30 “hot” research fields. Many in Europe and America think that competing with, or outcompeting, China means following its lead. The incoming Biden administration promises “breakthrough technology <small>R&amp;D</small> programmes” which will “direct investments to key technologies in support of <small>US</small> competitiveness”.</p>
+    <p>And a third factor unites governments inside and outside China: they have strategic goals they can only meet through the development of new technologies and the deployment of existing ones. The government support for vaccines against <small>SARS</small>-<small>C</small>o<small>V</small>-2 is a case in point. The increasing need for deep decarbonisation is another.</p>
+  </div>
+  <h2 id="rise-and-fall-and-rise">Rise and fall and rise?</h2>
+  <p>There are voices which would temper this enthusiasm. In “The Rise and Fall of American Growth”, a highly influential book published in 2016, Robert Gordon of Northwestern University argued that, although the century of exceptional American productivity growth from 1870 to 1970 was caused by technological change, such change will not come again (see chart 2). There is no future equivalent to the “great inventions”—internal-combustion engines, electrification, plumbing and the like—which allowed a one-off shift from an agrarian society to an industrialised consumer one over that singular period; they catered to the needs of the human condition in a primary and unrepeatable way. Moving from the internal-combustion engine to electric motors in order to move vehicles is both impressive and necessary, but it is not in the same league as moving from the horse to the car.</p>
+  <div>
+    <div>
+      <div id="econ-2"></div>
+    </div>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/1042/90/sites/default/files/images/print-edition/20210116_FBC427.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/1042/90/sites/default/files/images/print-edition/20210116_FBC427.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>Another concern is that emphasising government <small>R&amp;D</small> oversimplifies innovation. What matters to the economy are not scientific discoveries or the innovations at technology’s cutting edge, but the technology people and firms make widespread use of—not papers in peer-reviewed journals or even cool lab creations, but things which pervasively improve the everyday and generate economic activity in doing so. And there is no simple production line which, fed with new scientific understandings, produces such technological change.</p>
+    <p>A recent paper by Ashish Arora of Duke University and colleagues, which focuses on the large corporate lab of post-war America, shows how important that distinction can be. The post-second-world-war years were not only marked by a growth in government <small>R&amp;D</small> spending, but also by the scientific excellence of in-house laboratories at companies such as <small>AT&amp;T</small> and <small>IBM</small>. In the 1960s researchers at DuPont published more articles in the <em>Journal of the American Chemical Society</em>, the field’s leading journal, than <small>MIT</small> and Caltech combined. The production of scientific knowledge and the desire to solve real-world commercial problems were closely entwined. Science was being pulled into the economy, not just pushed; this was the environment in which, in the 1960s, the term <small>R&amp;D</small> was invented.</p>
+    <p>What is more, the link between scientific publication—whether publicly or privately funded—and economic improvements is weakening. “Ideas are getting harder to find,” according to a paper published in the <em>American Economic Review</em> in 2020. Applying econometric tools to technologies-in-use such as chipmaking and crop improvements, Nick Bloom of Stanford University and his colleagues found that, over time, more inputs—more researcher time, more money—have been needed to get the same improvement in outputs as before (see chart 3).</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/890/90/sites/default/files/images/2021/01/articles/body/20210116_fbc408.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/890/90/sites/default/files/images/2021/01/articles/body/20210116_fbc408.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>This may explain why, as a fraction of <small>GDP</small>, corporate-sector <small>R&amp;D</small> has grown by more than enough to offset the reduction in government research spending. Indeed, some firms are doing staggering amounts of <small>R&amp;D</small>, though their definitions may be elastic. Amazon claimed to spend $36bn on “technology and content” last year, more than the science budgets of Britain and France combined. Nevertheless Dr Arora argues that corporate science has gone into decline, with big firms increasingly choosing to license research from universities rather than do it themselves. Further removed from production, the universities which serve as the primary research focus in many countries are not so focused on useful invention. If the current innovation system is simply less good at creating growth-boosting innovations than it was, then spending more on <small>R&amp;D</small> will not raise incomes as much as it might. It may simply produce more research papers.</p>
+    <p>A final concern about boosting government spending is <em>cui bono</em>. In the clubby, closed world of the 1950s and 1960s it made sense for governments to invest in <small>R&amp;D</small> because one of their domestic firms—and, through its good offices, the nation’s consumers—would reap the benefits. What is more, big companies on the cutting edge were not that worried about technological competition. In 1995 a researcher at Bell Labs, the <small>R&amp;D</small> titan which in its pomp earned <small>AT&amp;T</small> Nobel prizes, noted that “xerography was invented...in 1937, but it was only commercialised by Xerox in 1950”, and “[w]hen the transistor was invented...at Bell Labs in 1948, several years elapsed before other laboratories acquired enough expertise in the semiconductor area to make [a] significant contribution.”</p>
+    <p>All that has changed, thanks to greater travel, better communications and, perhaps most straightforwardly, a much greater number of researchers and research centres. As a recent paper from the <small>IMF</small> puts it, “globalisation has intensified the diffusion of knowledge and technology across borders”. It has been doing so for some time; the Bell Labs anecdotist pointed out that following the “discovery of high-temperature superconductivity at the <small>IBM</small> Zurich lab in 1987, it took only a few weeks for groups at University of Houston, University of Alabama, Bell Labs and other places to make important further discoveries.”</p>
+    <p>David Edgerton of King’s College London, Britain’s foremost historian of technology, argues that “Only in techno-nationalist fantasies…does national invention drive national economic growth. In the real world, global innovation leads to national growth, and national innovation leads to global growth.” At most times and places, most of the technology which creates growth is imported from elsewhere, not made at home. In a globalised world, investing in domestic <small>R&amp;D</small> will never be purely to a country’s own advantage; it will help others too, willy-nilly.</p>
+  </div>
+  <h2 id="hot-wired-progress">Hot-wired progress</h2>
+  <p>To the extent that these concerns hold water, the worst they do is suggest that the returns to be expected from increased government <small>R&amp;D</small> expenditure may be lower than some claim, and less easily captured by the nations that make them. And their ability to hold water is open to question. Dr Gordon’s thesis, like much historical argument, is limited by a sample size of one. It is also, in its overall form, familiar; the idea that the best lies in the past has a long history, and it has spent most of that history being wrong.</p>
+  <p>What is more, such declinism can be used to argue that government <small>R&amp;D</small> spending, far from being futile, is vital. In the 1930s Alvin Hansen, a noted American economist, put a Gordon-like emphasis on the special qualities of certain “great inventions” when he argued that although railroads, electricity and the car had propelled growth in the past, America could not “take for granted the rapid emergence of new industries as rich in investment opportunities.” The people who argued for the government’s wartime <small>R&amp;D</small> effort to persist, in a modified form, after 1945 appreciated Hansen’s argument enough to be doing something about it. Rather than taking the formation of new industries for granted, they were creating a way for government to bring them into being, thus making good any failures of private investment.</p>
+  <p>Today plenty of people reckon that the government can help unlock further inventions. In their book “Jump-starting America”, Jonathan Gruber and Simon Johnson, two <small>MIT</small> economists, single out synthetic biology, hydrogen and deep-sea mining. Of the three it is synthetic biology, which offers new approaches to everything from petrochemicals and agriculture to medicine and computer memories, that is best placed for the “great invention” status that comes from improving the material conditions of billions of lives.</p>
+  <h2 id="the-shape-of-things-to-come">The shape of things to come</h2>
+  <p>The other contender for such laurels is <small>AI</small>. After spending some time being visible “everywhere but the productivity statistics”, in a famous quip of Robert Solow’s, computers finally provided a measurable boost in the mid-1990s. With ever more information to learn from, information appliances which can whisper into every ear, robots at its command and applicability to any number of problems computers that use <small>AI</small> might yet do more than that. The fact that an <small>AI</small> program recently showed unmatched prowess in the prediction of protein structures that synthetic biologists might like to change underlines that innovation can and will often come about most surprisingly where two fields collide.</p>
+  <p>There are also arguments against the idea that the link between scientific research and technology-in-use has become weaker. It may well have done so in some ways; but in other ways things have speeded up. This is particularly true of the process that puts today’s innovation into the hands of millions tomorrow. Electric appliances had been around for decades before they made a definitive difference to rich-country homes. Information appliances—specifically, smartphones—have spread far further far faster. The <small>SARS</small>-<small>C</small>o<small>V</small>-2 genome sequence was shared between China and the rest of the world before there were any confirmed cases of covid-19 outside Wuhan. The vaccines enabled by that sequence may turn out to be the technology-in-use with the greatest economic impact over a single year ever seen.</p>
+  <p>As for the difficulty of capturing the benefits of national <small>R&amp;D</small> spending in a global world, making use of cutting-edge technologies developed elsewhere is not possible without a lot of very highly trained locals, and such cadres are hard to produce and maintain without <small>R&amp;D</small> spending. China’s immense investment in <small>R&amp;D</small> (see chart 4) has produced an immense number of people with skills, know-how and curiosity, as well as institutions with the equipment they need. These researchers and engineers have developed many innovations of their own, but to date their most crucial role has been in exploiting knowledge brought in from elsewhere by fair means or foul. It is notable that, now it is in the <small>R&amp;D</small> front rank, China too is grappling with a slowdown in productivity growth.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/662/90/sites/default/files/images/print-edition/20210116_FBC413.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/662/90/sites/default/files/images/print-edition/20210116_FBC413.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>If Dr Bloom and his colleagues are correct in arguing that ideas are getting harder to find, more money may be required, in China and elsewhere, just to stand still. But raising<!-- --> government <small>R&amp;D</small> spending in the <small>G7</small> nations as far above its 1970 level, relative to <small>GDP</small>, as it is currently below that level would cost about $400bn a year overall: considering that the <small>G7</small>’s <small>GDP</small> is $36trn, this appears easily doable. Still, it would be worth finding ways to produce new ideas more efficiently. In much of the <small>OECD</small> the mechanisms and institutions through which governments support <small>R&amp;D</small> are more or less the same as they were 50 years ago. There is a degree of ossification.</p>
+    <p>A new paper by Mikko Packalen of the University of Waterloo and Jay Bhattacharya of Stanford University shows some evidence of this at America’s National Institutes of Health (<small>NIH</small>), where they find that funding for papers that build on the most recent advances has declined. Conservative funders get conservative researchers. Even <small>DARPA</small>, an agency of America’s Department of Defence famous for funding out-there projects, is accused of taking fewer risks than it used to.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/812/90/sites/default/files/images/print-edition/20210116_FBD002_0.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/812/90/sites/default/files/images/print-edition/20210116_FBD002_0.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>New organisations can be more innovative. Tyler Cowen of George Mason University has explored one possibility: Fast Grants, a project he launched in April with Patrick Collison of Stripe, a payments firm, dispenses grants for promising covid-19 research very quickly, usually within days. But the budget is tiny relative to what is required. Mr Biden promises to create new organisations for research on health and climate, while the British government says it plans to “experiment...with new funding models across long-term time horizons”. But the ideas are little more than sketches.</p>
+    <p>Another way to instil urgency is through a sense of mission. Dr Gordon’s point that “some inventions are more important than others” is very pertinent for governments. Technologies which let them achieve strategic goals become important, and they are willing to spend a lot on them. This can end badly. But when it works governments do not so much pick winners as make them. In the 1950s and 1960s, its strategic focus on the cold war, the American government made winners out of aerospace and electronics. In the 1970s France, always nervous about depending on others for electricity, made a winner of its nuclear industry.</p>
+    <p>Strategic programmes of this sort do not always require groundbreaking <small>R&amp;D</small>. France’s reactors were based on American designs. They may need hardly any <small>R&amp;D</small> at all. Germany made a winner of solar panels simply by providing massive subsidies for them, driving up demand and allowing manufacturers in China to make hay. And there is no clear evidence that the technologies governments decide that they need for strategic reasons will be those that most improve economic growth.</p>
+    <p>But such projects do typically lead to both a sense of mission among those involved and researchers from government and academia working alongside those from industry. If they do so in multidisciplinary environments—which missions often require, whether in the public or private sectors—then growth-boosting technologies may be more likely to emerge.</p>
+  </div>
+  <div>
+    <div>
+      <div id="econ-3"></div>
+    </div>
+  </div>
+  <p>It will take time for new ideas to have big effects. And in a world of 24-hour media, it will be hard to sweep unavoidable stories of wasted money and failed projects under the carpet—however inevitable, even welcome, some sorts of failure may be. But at a time when the need to boost innovation has never been greater, politicians may conclude that rebooting the innovation system is worth the risk. <span data-ornament="ufinish">■</span></p>
+  <p data-test-id="Footnote">This article appeared in the Briefing section of the print edition under the headline "Molecules, missions and money"</p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/To-show-support-for-democracy,-some-Hong-Kongers-d">
+          To show support for democracy, some Hong Kongers don yellow masks
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade">
+          The life and love of the Soviet Union’s last leader
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077">
+          The botched launch of “Cyberpunk 2077”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/The-West-once-dreamed-of-democracy-taking-root-in">
+          The West once dreamed of democracy taking root in rural China
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077">
+            前一篇：The botched launch of “Cyberpunk 2077”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade">
+            后一篇：The life and love of the Soviet Union’s last leader
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-14/The-life-and-love-of-the-Soviet-Union-s-last-leade">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<经济学人en>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-14/The-botched-launch-of-Cyberpunk-2077">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

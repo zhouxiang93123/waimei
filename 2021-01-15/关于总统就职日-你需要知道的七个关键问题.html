@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>关于总统就职日，你需要知道的七个关键问题 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+关于总统就职日，你需要知道的七个关键问题
+——
+" />
+    <meta property="og:description" content="
+关于总统就职日，你需要知道的七个关键问题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="关于总统就职日，你需要知道的七个关键问题" />
+    <meta property="twitter:title" content="关于总统就职日，你需要知道的七个关键问题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210115%2Finauguration-day%2F&t=%E5%85%B3%E4%BA%8E%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%97%A5%EF%BC%8C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E4%B8%83%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210115%2Finauguration-day%2F&t=%E5%85%B3%E4%BA%8E%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%97%A5%EF%BC%8C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E4%B8%83%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98&d=2021-01-15&e=
+关于总统就职日，你需要知道的七个关键问题
+——
+
+
+  
+AISHVARYA KAVI2021-01-15 14:24:11
+  
+  
+2017年特朗普总统的就职典礼上，国会大厦的看台上挤满了宾客。
+  
+  小约瑟夫·R·拜登(Joseph R. Biden Jr.)将于1月20日中午在一个缩减规模的就职典礼上成为美国总统。尽管关键元素仍将保持传统，但许多活动将被缩减和“重新设计”，以便更好地适应这个正在抗击新冠的国家。以下是典礼的指南。
+  就职典礼将会是什么样？
+  尽管很多活动都在网上举行，但总统就职委员会执行主任马祖·瓦尔盖塞(Maju Varghese)说，目标是“一场包容性强、平易近人的庆祝活动，让美国人团结起来，让我们的国家团结起来，尤其是在我们国家如此艰难的时期”。
+  中午之前，拜登将在首席大法官小约翰·G·罗伯茨(John G. Roberts Jr.)主持..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210115%2Finauguration-day%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210115/inauguration-day/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210115/inauguration-day/&text=关于总统就职日，你需要知道的七个关键问题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210115/inauguration-day/&title=关于总统就职日，你需要知道的七个关键问题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210115/inauguration-day/&title=关于总统就职日，你需要知道的七个关键问题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=关于总统就职日，你需要知道的七个关键问题&body=
+关于总统就职日，你需要知道的七个关键问题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210115/inauguration-day/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210115/inauguration-day/&title=关于总统就职日，你需要知道的七个关键问题&caption=
+关于总统就职日，你需要知道的七个关键问题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=关于总统就职日，你需要知道的七个关键问题&url=https://cn.nytimes.com/usa/20210115/inauguration-day/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>关于总统就职日，你需要知道的七个关键问题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-15
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210115/inauguration-day/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210115%2Finauguration-day%2F&t=%E5%85%B3%E4%BA%8E%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%97%A5%EF%BC%8C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E4%B8%83%E4%B8%AA%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98&d=2021-01-15&e=
+关于总统就职日，你需要知道的七个关键问题
+——
+
+
+  
+AISHVARYA KAVI2021-01-15 14:24:11
+  
+  
+2017年特朗普总统的就职典礼上，国会大厦的看台上挤满了宾客。
+  
+  小约瑟夫·R·拜登(Joseph R. Biden Jr.)将于1月20日中午在一个缩减规模的就职典礼上成为美国总统。尽管关键元素仍将保持传统，但许多活动将被缩减和“重新设计”，以便更好地适应这个正在抗击新冠的国家。以下是典礼的指南。
+  就职典礼将会是什么样？
+  尽管很多活动都在网上举行，但总统就职委员会执行主任马祖·瓦尔盖塞(Maju Varghese)说，目标是“一场包容性强、平易近人的庆祝活动，让美国人团结起来，让我们的国家团结起来，尤其是在我们国家如此艰难的时期”。
+  中午之前，拜登将在首席大法官小约翰·G·罗伯茨(John G. Roberts Jr.)主持..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210115%2Finauguration-day%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610693073000-->
+<p><a href="https://cn.nytimes.com/usa/20210115/inauguration-day/">关于总统就职日，你需要知道的七个关键问题</a>
+——</p>
+
+<div>
+  <div>
+<em>AISHVARYA KAVI<br />2021-01-15 14:24:11</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/11/us/politics/11dc-inauguration/11dc-inauguration-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">2017年特朗普总统的就职典礼上，国会大厦的看台上挤满了宾客。</small>
+  </div>
+  <p>小约瑟夫·R·拜登(Joseph R. Biden Jr.)将于1月20日中午在一个缩减规模的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/14/arts/music/biden-inauguration-lady-gaga-jennifer-lopez.html">就职典礼</a>上成为美国总统。尽管关键元素仍将保持传统，但许多活动<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/03/us/politics/biden-inauguration-day-plans.html">将被缩减和“重新设计”</a>，以便更好地适应这个正在<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">抗击新冠</a>的国家。以下是典礼的指南。</p>
+  <p>就职典礼将会是什么样？</p>
+  <p>尽管很多活动都在网上举行，但总统就职委员会执行主任马祖·瓦尔盖塞(Maju Varghese)说，目标是“一场包容性强、平易近人的庆祝活动，让美国人团结起来，让我们的国家团结起来，尤其是在我们国家如此艰难的时期”。</p>
+  <p>中午之前，拜登将在首席大法官小约翰·G·罗伯茨(John G. Roberts Jr.)主持下，在<a rel="nofollow" target="_blank" href="https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration" title="Link: https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration">国会大厦西面</a>宣誓就职。随后，按照传统，新总统将发表就职演说并检阅军队。</p>
+  <p>但是，当新任总统、副总统和他们的家人前往一英里外的白宫时，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/arts/music/biden-inauguration-performers.html" title="Link: https://www.nytimes.com/2021/01/13/arts/music/biden-inauguration-performers.html">出现在宾夕法尼亚大道上欢呼的观众面前的，将不是传统的游行</a>，而是一个城市街区的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/03/us/politics/biden-inauguration-day-plans.html">官方护卫队</a>，由各军种的代表组成。</p>
+  <p>就职典礼委员会计划为全国范围的远程观众举行一场网上游行，包括音乐、诗人和舞蹈者，“向在疫情前线的美国英雄们致敬”。</p>
+  <p>周二下午5点30分，也就是拜登宣誓就职的前一晚，该委员会将在林肯纪念堂倒影池周围举行<a rel="nofollow" target="_blank" href="https://apnews.com/article/joe-biden-politics-pandemics-inaugurations-coronavirus-pandemic-894976d2c3ac9777b2a26d577af7a5cd" title="Link: https://apnews.com/article/joe-biden-politics-pandemics-inaugurations-coronavirus-pandemic-894976d2c3ac9777b2a26d577af7a5cd">点灯仪式</a>，纪念在新冠病毒大流行中丧生的美国人。</p>
+  <p>等等，汤姆·汉克斯(Tom Hanks)也会去吗？</p>
+  <p>新总统就职典礼后，不是通常的舞会，而是在周三晚上8点30举办一场<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/13/arts/music/biden-inauguration-performers.html" title="Link: https://www.nytimes.com/2021/01/13/arts/music/biden-inauguration-performers.html">黄金时段电视活动</a>，由汤姆·汉克斯主持，出席的明星包括贾斯汀·汀布莱克(Justin Timberlake)、黛米·洛瓦托(Demi Lovato)、安特·克莱蒙斯(Ant Clemons)和乔·邦·乔维(Jon Bon Jovi)。</p>
+  <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/14/arts/music/biden-inaugural-lady-gaga.html">两位明星</a>将参加宣誓仪式：Lady Gaga将演唱国歌，詹妮弗·洛佩兹(Jennifer Lopez)将献唱。</p>
+  <p>预计会发生动乱吗？</p>
+  <p>几周来，华盛顿一直在为可能出现的抗议者做准备。但在一群暴徒<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/06/us/politics/capitol-breach-trump-protests.html">冲进国会大厦</a>，迫使议员们停止正式清点选举人票以确认拜登获胜后，首都进入了高度戒备状态。</p>
+  <p>市长穆丽尔·E·鲍泽(Muriel E. Bowser)警告，支持特朗普的极端分子可能会<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/10/us/inauguration-security-police.html">继续造成破坏</a>，她将该市的<a rel="nofollow" target="_blank" href="https://mayor.dc.gov/sites/default/files/dc/sites/mayormb/release_content/attachments/Mayor%27s%20Order%202021-003.pdf">公共紧急状态</a>延长至1月21日。</p>
+  <p><a rel="nofollow" target="_blank" href="https://www.newsweek.com/exclusive-threat-pro-trump-violence-washington-overshadows-inauguration-security-plans-1558615">联邦调查局</a>和<a rel="nofollow" target="_blank" href="https://www.cnn.com/politics/live-news/congress-electoral-college-vote-count-2021/h_a6424357b240cda40166f9983b2e2169">特勤局</a>加强了就职典礼前后的安保。专家警告说，一些极右极端组织<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/10/us/inauguration-security-police.html">已开始讨论</a>在就职日发动类似国会大厦致命袭击的行动。</p>
+  <p>就职日发生骚乱并非史无前例：在2017年特朗普就职典礼期间，华盛顿的人群<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/01/20/us/politics/inauguration-protests.html">破坏店面</a>，向警察投掷石块和砖块，并点燃一辆豪华轿车，以抗议特朗普当选。当天有200多人被捕。</p>
+  <p>特朗普总统会出席吗？</p>
+  <p>特朗普总统周五宣布，他<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/08/us/trump-biden/as-the-white-house-slips-into-deeper-crisis-trump-says-he-will-not-go-to-bidens-inauguration" title="Link: https://www.nytimes.com/live/2021/01/08/us/trump-biden/as-the-white-house-slips-into-deeper-crisis-trump-says-he-will-not-go-to-bidens-inauguration">不会参加拜登的就职典礼</a>。</p>
+  <p>拜登称这一决定是“他和我仅有的几件达成一致的事之一”。</p>
+  <p>尽管如此，对于一位总统来说，跳过该国民主的礼仪核心：权力的和平交接，仍然是对传统的一次重大背离。</p>
+  <p>副总统迈克·彭斯(Mike Pence)的一名助手周六表示<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/09/us/politics/pence-biden-inauguration.html">彭斯将出席</a>，此前拜登周五明确表示欢迎他出席。</p>
+  <p>只有三位总统错过了继任者的就职典礼：1801年的约翰·亚当斯(John Adams)；1829年，他的儿子约翰·昆西·亚当斯(John Quincy Adams)；以及民主党人安德鲁·约翰逊(Andrew Johnson)，他被共和党人尤利西斯-格兰特取代，于是缺席了后者1869年的就职典礼。</p>
+  <p>谁会去？</p>
+  <p>乔治·W·布什(George W. Bush)已经证实，他将和前第一夫人劳拉·布什(Laura Bush)一起<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/05/us/politics/george-bush-biden-inauguration.html">前往华盛顿</a>参加就职典礼。预计贝拉克·奥巴马(Barack Obam)和比尔·克林顿(Bill Clinton)，以及前第一夫人米歇尔·奥巴马(Michelle Obama)和希拉里·克林顿(Hillary Clinton)<a rel="nofollow" target="_blank" href="https://www.cnn.com/2021/01/08/politics/bill-clinton-barack-obama-george-w-bush-biden-inauguration/index.html?utm_content=2021-01-08T19%3A02%3A10&amp;utm_source=fbCNN&amp;utm_medium=social&amp;utm_term=link">也将出席</a>。96岁的吉米·卡特(Jimmy Carter)是在世的前总统中最年长的一位，他宣布他和妻子不会出席。这将是卡特宣誓就职以来首次缺席总统就职典礼。</p>
+  <p>我可以参加吗？</p>
+  <p>不行。传统上，国会就职典礼联合委员会(Joint Congressional Committee on就职典礼)会向国会议员分发数十万张就职典礼的入场券，让他们邀请选民参加，但今年的入场券<a rel="nofollow" target="_blank" href="https://www.inaugural.senate.gov/press_release/jccic-announces-attendance-guidelines-for-59th-inaugural-ceremonies/">不向公众开放</a>。策划人员敦促人们<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/12/15/us/politics/inauguration-planners-ask-americans-to-stay-home-on-jan-20-and-watch-the-historic-event-virtually.html" title="Link: https://www.nytimes.com/2020/12/15/us/politics/inauguration-planners-ask-americans-to-stay-home-on-jan-20-and-watch-the-historic-event-virtually.html">待在家里</a>，在网上观看就职活动，以防止大量人群聚集传播新冠病毒。</p>
+  <p>活动将由总统就职委员会和《纽约时报》进行<a rel="nofollow" target="_blank" href="https://bideninaugural.org/faq/">网络直播</a>。</p>
+  <p>为什么总统就职典礼这么重要？</p>
+  <p>宪法第20条修正案要求，每一位候任总统和副总统的任期从选举后的<a rel="nofollow" target="_blank" href="https://www.law.cornell.edu/constitution/amendmentxx" title="Link: https://www.law.cornell.edu/constitution/amendmentxx">1月20日中午</a>开始。<a rel="nofollow" target="_blank" href="https://www.archives.gov/publications/prologue/2000/winter/inaugurations" title="Link: https://www.archives.gov/publications/prologue/2000/winter/inaugurations">每一位总统</a>都需宣誓就职，未经宣誓不得就职。</p>
+  <p>从象征意义上讲，它标志着权力从现任总统和平地移交给下一任总统。今年的就职日将更加重要，因为拜登升任总统之际，政治分歧已经<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/06/us/politics/trump-congress.html" title="Link: https://www.nytimes.com/2021/01/06/us/politics/trump-congress.html">威胁到美国的民主制度</a>，而他的前任为了保住权力不惜铤而走险。</p>
+  <p>就职典礼对即将上任的总统来说也是一个重要的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/12/16/us/politics/biden-inauguration-donors-virtual.html">筹款机会</a>。虽然舞会等传统活动已被取消，但拜登的就职典礼委员会为企业和富豪提供了特别的“贵宾参与”机会，他们可以借此机会讨好新政府。</p>
+  <p>多余的捐款不能转移到联邦竞选活动或政党委员会。以往的就职委员会都会将未使用的资金捐给<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/09/27/us/politics/trump-inaugural-committee-donations-hurricanes.html">救灾慈善机构</a>，以及<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2018/02/15/us/politics/trumps-inaugural-committee-paid-26-million-to-first-ladys-friend.html">负责装饰和维护白宫和副总统官邸的团体</a>。</p>
+  <p>Aishvarya Kavi就职于《纽约时报》华盛顿分社。 欢迎在Twitter上关注她：<a rel="nofollow" target="_blank" href="https://twitter.com/AishvaryaKavi">@AishvaryaKavi</a>。<br />翻译：晋其角<br /><a rel="nofollow" target="_blank" href="http://www.nytimes.com/article/inauguration-day.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%B0%81%E6%9D%80%E7%89%B9%E6%9C%97%E6%99%AE%E4%B9%9F%E8%AE%B8%E6%9C%89%E6%95%88-%E4%BD%86%E4%BB%A3%E4%BB%B7%E6%98%AF%E4%BB%80%E4%B9%88">
+          社交媒体封杀特朗普也许有效，但代价是什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E8%A2%AB%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E5%B0%81%E6%9D%80%E7%9A%84%E7%89%B9%E6%9C%97%E6%99%AE%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%89%BE%E5%88%B0%E6%94%AF%E6%8C%81%E8%80%85">
+          被社交平台封杀的特朗普在中国找到支持者
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E8%B1%AA%E5%AE%85-%E8%89%BA%E6%9C%AF%E8%AF%BE%E5%92%8C%E5%8C%85%E5%9C%BA%E8%B4%AD%E7%89%A9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%94%9F%E6%B4%BB%E7%8A%B6%E6%80%81%E6%9B%9D%E5%85%89">
+          豪宅、艺术课和包场购物：孟晚舟在加拿大生活状态曝光
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/%E7%AE%80%E6%8A%A5-%E4%B8%96%E5%8D%AB%E4%B8%93%E5%AE%B6%E8%AE%BF%E5%8D%8E%E5%BC%80%E5%90%AF%E6%BA%AF%E6%BA%90%E8%B0%83%E6%9F%A5-%E5%AD%9F%E6%99%9A%E8%88%9F%E7%94%9F%E6%B4%BB%E7%8A%B6%E6%80%81%E6%9B%9D%E5%85%89">
+          简报：世卫专家访华开启溯源调查；孟晚舟生活状态曝光
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-15/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E4%B8%AD%E5%85%B1%E6%B5%B7%E5%86%9B%E7%AD%89%E5%AE%98%E5%91%98%E9%81%AD%E7%BE%8E%E7%AD%BE%E8%AF%81%E5%88%B6%E8%A3%81">
+            前一篇：【翻墙必看】中共海军等官员遭美签证制裁
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-15/%E9%A9%AC%E4%BA%91%E8%BA%AB%E5%9C%A8%E4%BD%95%E5%A4%84-%E8%8B%B1%E5%AA%92-%E5%9C%A8%E6%9D%AD%E5%B7%9E%E9%81%BF%E9%A3%8E%E5%A4%B4">
+            后一篇：马云身在何处？英媒：在杭州避风头
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-15/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E4%B8%AD%E5%85%B1%E6%B5%B7%E5%86%9B%E7%AD%89%E5%AE%98%E5%91%98%E9%81%AD%E7%BE%8E%E7%AD%BE%E8%AF%81%E5%88%B6%E8%A3%81'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-15/%E9%A9%AC%E4%BA%91%E8%BA%AB%E5%9C%A8%E4%BD%95%E5%A4%84-%E8%8B%B1%E5%AA%92-%E5%9C%A8%E6%9D%AD%E5%B7%9E%E9%81%BF%E9%A3%8E%E5%A4%B4'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-15/%E8%A2%AB%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E5%B0%81%E6%9D%80%E7%9A%84%E7%89%B9%E6%9C%97%E6%99%AE%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%89%BE%E5%88%B0%E6%94%AF%E6%8C%81%E8%80%85'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/%E8%B1%AA%E5%AE%85-%E8%89%BA%E6%9C%AF%E8%AF%BE%E5%92%8C%E5%8C%85%E5%9C%BA%E8%B4%AD%E7%89%A9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%94%9F%E6%B4%BB%E7%8A%B6%E6%80%81%E6%9B%9D%E5%85%89'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-15/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E4%B8%AD%E5%85%B1%E6%B5%B7%E5%86%9B%E7%AD%89%E5%AE%98%E5%91%98%E9%81%AD%E7%BE%8E%E7%AD%BE%E8%AF%81%E5%88%B6%E8%A3%81">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-15/%E9%A9%AC%E4%BA%91%E8%BA%AB%E5%9C%A8%E4%BD%95%E5%A4%84-%E8%8B%B1%E5%AA%92-%E5%9C%A8%E6%9D%AD%E5%B7%9E%E9%81%BF%E9%A3%8E%E5%A4%B4">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-15/%E8%A2%AB%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E5%B0%81%E6%9D%80%E7%9A%84%E7%89%B9%E6%9C%97%E6%99%AE%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%89%BE%E5%88%B0%E6%94%AF%E6%8C%81%E8%80%85">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-14/%E8%B1%AA%E5%AE%85-%E8%89%BA%E6%9C%AF%E8%AF%BE%E5%92%8C%E5%8C%85%E5%9C%BA%E8%B4%AD%E7%89%A9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%94%9F%E6%B4%BB%E7%8A%B6%E6%80%81%E6%9B%9D%E5%85%89">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

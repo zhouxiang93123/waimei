@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>The Trump era in covers – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+The Trump era in covers
+——
+" />
+    <meta property="og:description" content="
+The Trump era in covers
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="The Trump era in covers" />
+    <meta property="twitter:title" content="The Trump era in covers" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2Funited-states%2F2021%2F01%2F19%2Fthe-trump-era-in-covers&t=The+Trump+era+in+covers" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Funited-states%2F2021%2F01%2F19%2Fthe-trump-era-in-covers&t=The+Trump+era+in+covers&d=2021-01-19&e=
+The Trump era in covers
+——
+
+
+  
+  
+    
+      Jan 19th 2021
+      
+    
+  
+  DONALD TRUMP′S term in office ends on January 20th 2021. The story of his presidency has been deeply unpredictable in many ways, starting with the fact that it happened at all. But the nature of his administration should not have surprised anyone: chaos and disruption characterised both his candidacy and his time as c..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Funited-states%2F2021%2F01%2F19%2Fthe-trump-era-in-covers" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers&text=The Trump era in covers&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers&title=The Trump era in covers" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers&title=The Trump era in covers" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=The Trump era in covers&body=
+The Trump era in covers
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers&title=The Trump era in covers&caption=
+The Trump era in covers
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=The Trump era in covers&url=https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>The Trump era in covers</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Funited-states%2F2021%2F01%2F19%2Fthe-trump-era-in-covers&t=The+Trump+era+in+covers&d=2021-01-19&e=
+The Trump era in covers
+——
+
+
+  
+  
+    
+      Jan 19th 2021
+      
+    
+  
+  DONALD TRUMP′S term in office ends on January 20th 2021. The story of his presidency has been deeply unpredictable in many ways, starting with the fact that it happened at all. But the nature of his administration should not have surprised anyone: chaos and disruption characterised both his candidacy and his time as c..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Funited-states%2F2021%2F01%2F19%2Fthe-trump-era-in-covers" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611076184000-->
+<p><a href="https://www.economist.com/united-states/2021/01/19/the-trump-era-in-covers">The Trump era in covers</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/2000/1053/90/sites/default/files/images/2021/01/articles/main/trump_covers.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-19T00:00:00Z">Jan 19th 2021</time>
+      <meta itemprop="author" content="The Economist" />
+    </div>
+  </aside>
+  <p>DONALD TRUMP′S term in office ends on January 20th 2021. The story of his presidency has been deeply unpredictable in many ways, starting with the fact that it happened at all. But the nature of his administration should not have surprised anyone: chaos and disruption characterised both his candidacy and his time as commander-in-chief. Mr Trump has made our cover many times in the past five-and-a-bit years; this selection reflects the drama and the essence of his tenure.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd011.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd011.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>September 5th 2015: <a href="https://www.economist.com/weeklyedition/2015-09-05">Washington, we have a problem</a></p>
+    <p>When Mr Trump announced his candidacy for the presidency in June 2015, sophisticates scoffed. Even after leading the polls for the Republican nomination for weeks, many found it hard to take him seriously. But the possibility that he might win the presidency was <a href="https://www.economist.com/leaders/2015/09/05/trumps-america">no longer a joke</a>. “Demagogues in other countries sometimes win elections,” we wrote in our first cover devoted to Mr Trump, “and there is no compelling reason why America should always be immune.”</p>
+  </div>
+  <div>
+    <div>
+      <div id="econ-1"></div>
+    </div>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd012.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd012.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+  </div>
+  <p>November 12th 2016: <a href="https://www.economist.com/weeklyedition/2016-11-12">The Trump era</a></p>
+  <p>Mr Trump won the presidency on November 9th 2016. A campaign that flouted the rules of electioneering had <a href="https://www.economist.com/united-states/2016/11/12/how-it-happened">ended in triumph</a>, and flummoxed pollsters in the process. An era of uncertainty beckoned, for <a href="https://www.economist.com/briefing/2016/11/12/the-piecemaker">America’s allies</a> as well as its adversaries. In our cover leader in that week's issue, we mulled whether America’s 45th president might become a more emollient figure in office than he had been on the trail. Our conclusion was pessimistic. “We are deeply sceptical that he will make a good president—because of his policies, his temperament and the demands of political office.”</p>
+  <figure>
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="0">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/1720/90/sites/default/files/images/2021/01/articles/body/20210123_opd013.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/1280/1720/90/sites/default/files/images/2021/01/articles/body/20210123_opd013.png" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <div>
+    <div>
+      <div id="econ-2"></div>
+    </div>
+  </div>
+  <p>February 4th 2017: <a href="https://www.economist.com/weeklyedition/2017-02-04">An insurgent in the White House</a></p>
+  <p>When Mr Trump was inaugurated on January 20th 2017, the question was whether normal politics would be replaced by something different. Two weeks later, the answer was clear. The new administration had <a href="https://www.economist.com/briefing/2017/02/04/what-the-visa-ban-shows-about-american-foreign-policy">barred</a> citizens of seven mostly Muslim nations from entering America for 90 days, It had quit the Trans-Pacific Partnership, a free-trade agreement, and was demanding a renegotiation of NAFTA. Chaos was not something to be avoided. It was a governing principle.</p>
+  <figure>
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="0">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/1720/90/sites/default/files/images/2021/01/articles/body/20210123_opd014.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/1280/1720/90/sites/default/files/images/2021/01/articles/body/20210123_opd014.png" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <p>May 13th 2017: <a href="https://www.economist.com/printedition/2017-05-13">Trumponomics</a></p>
+  <p>In May 2017 The Economist interviewed Mr Trump about his <a href="https://www.economist.com/briefing/2017/05/13/cooking-up-an-economic-policy">economic credo</a>. Some of his policies looked like supply-side staples: a blend of tax cuts and deregulation promised to juice up growth and stockmarkets alike. But in its embrace of economic nationalism, Trumponomics was anything but familiar.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd015.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd015.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>August 19th 2017: <a href="https://www.economist.com/weeklyedition/2017-08-19">After Charlottesville</a></p>
+    <p>Three months later, white supremacists and counter-protesters clashed in <a href="https://www.economist.com/united-states/2017/08/19/donald-trumps-failure-of-character-emboldens-americas-far-right">Charlottesville, Virginia</a>. Heather Heyer, a protester, was killed when a white supremacist, since imprisoned for life, drove his car into her. Mr Trump, though he criticised neo-Nazis and the murder, found blame <a href="https://www.economist.com/leaders/2017/08/19/donald-trump-has-no-grasp-of-what-it-means-to-be-president">“on both sides”</a>. The extreme right felt encouraged. Unusually, we added no words to our cover image.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd016.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd016.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>March 10th 2018: <a href="https://www.economist.com/printedition/2018-03-10">The threat to world trade</a></p>
+    <p>Every president since Jimmy Carter has resorted to imposing protectionist tariffs on imports. But unlike his predecessors Mr Trump was a long-standing <a href="https://www.economist.com/leaders/2018/03/08/the-rules-based-system-is-in-grave-danger">sceptic of free trade</a>. His slapping of tariffs on steel and aluminium imports, supposedly on national-security grounds, risked an escalating trade war with close allies. Mr Trump also hobbled the World Trade Organisation’s system of settling disputes. He didn’t manage to blow up the multilateral trading system. But he put it in peril.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd017.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd017.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>April 21st 2018: <a href="https://www.economist.com/weeklyedition/2018-04-21">What has become of the Republican Party?</a></p>
+    <p>In April 2018 we lamented Mr Trump’s <a href="https://www.economist.com/briefing/2018/04/19/donald-trumps-takeover-of-his-party-is-near-complete">takeover of the Republican Party</a>. The party’s organising principle, we wrote, had become loyalty—not to an ideal or a legislative programme, but to one man and the rage of its voter base. The consequences were government by impulse, trashing of political convention and the denouncing of opponents as traitors. The best rebuke, we said, would be defeat at the ballot box; but responsibility also lay with Republicans who knew Mr Trump was bad for America.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd018.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd018.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>June 9th 2018: <a href="https://www.economist.com/weeklyedition/2018-06-09">America’s foreign policy</a></p>
+    <p>Mr Trump headed to Singapore in June 2018 for a meeting with Kim Jong Un, North Korea’s dictator, seeking a deal to denuclearise the Korean peninsula. All presidents try to exploit America’s immense power, but Mr Trump’s highly <a href="https://www.economist.com/leaders/2018/06/07/donald-trumps-demolition-theory-of-foreign-policy-wont-work">transactional approach</a>—sometimes, as with Mr Kim, cajoling foreign powers, often trying to bully them—was a marked (and dangerous) departure.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd023.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd023.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>August 28th 2018: <a href="https://www.economist.com/weeklyedition/2018-08-25">Above the law?</a></p>
+    <p>The conviction of Paul Manafort, Mr Trump's former campaign manager, for tax and bank fraud came on August 21st 2018, the same day that Michael Cohen, his erstwhile lawyer, pleaded guilty to violations of campaign-finance laws, among other things. With Robert Mueller still investigating allegations of collusion with Russia, a simple question hung in the air: is the president <a href="https://www.economist.com/leaders/2018/08/23/is-donald-trump-above-the-law">above the law</a>?</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd019.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd019.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>June 8th 2019: <a href="https://www.economist.com/printedition/2019-06-08">Weapons of mass disruption</a></p>
+    <p>America's superpower status conjures up images of warheads and aircraft-carriers. But the Trump administration brought home the country’s economic might. By threatening tariffs, imposing sanctions and issuing blacklists, Mr Trump showed just how America’s role as the <a href="https://www.economist.com/leaders/2019/06/06/america-is-deploying-a-new-economic-arsenal-to-assert-its-power">nerve centre of the global economy</a> could be exploited.</p>
+  </div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd020.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd020.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>October 29th 2020: <a href="https://www.economist.com/printedition/2020-10-31">Why it has to be Joe Biden</a></p>
+    <p>Our endorsement cover, in the week before last November’s election, came out in favour of <a href="https://www.economist.com/leaders/2020/10/29/why-it-has-to-be-biden">Joe Biden</a>. But Mr Trump’s presence was inescapable. His image occupies the negative space around the fraying edges of the flag. And his record in office was on the ballot paper. “The country that elected Donald Trump in 2016 was unhappy and divided,” we wrote. “The country he is asking to re-elect him is more unhappy and more divided.”</p>
+  </div>
+  <div>
+    <div>
+      <div id="econ-3"></div>
+    </div>
+  </div>
+  <figure>
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="0">
+      <meta itemprop="url" content="https://www.economist.com/img/b/2302/3028/90/sites/default/files/images/2021/01/articles/body/20210123_opd021jpg.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/2302/3028/90/sites/default/files/images/2021/01/articles/body/20210123_opd021jpg.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <p>January 9th 2021: <a href="https://www.economist.com/printedition/2021-01-09">Trump’s legacy</a></p>
+  <p>With Mr Trump’s departure from the Oval Office only a fortnight away, an invasion of the Capitol Building by his supporters, whipped up by his own fury to stop a fictitious “steal” of the election, <a href="https://www.economist.com/leaders/2021/01/09/trumps-legacy-the-shame-and-the-opportunity">sealed his legacy</a>. For Republicans, we wrote, “the cost of the cursed deal that their party did with Mr Trump had never been clearer”.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd022.jpg" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/800/90/sites/default/files/images/2021/01/articles/body/20210123_opd022.jpg" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>January 16th 2021: <a href="https://www.economist.com/leaders/2021/01/16/donald-trumps-reckoning">The reckoning</a></p>
+    <p>In the wake of the insurrection at the Capitol, Mr Trump became the first president to be <a href="https://www.economist.com/leaders/2021/01/16/donald-trumps-reckoning">impeached</a> twice and was banned from his favourite <a href="https://www.economist.com/leaders/2021/01/16/big-tech-and-censorship">social-media platforms</a>. He faces the prospect of <a href="https://www.economist.com/united-states/2021/01/13/congress-has-impeached-donald-trump-for-his-incitement-of-a-mob-attack-on-the-capitol">trial in the Senate</a> even after leaving office, to say nothing of numerous other <a href="https://www.economist.com/united-states/2021/01/17/donald-trump-faces-an-array-of-legal-trouble-when-he-leaves-office">legal threats</a>. A reckoning, indeed.</p>
+  </div>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/Will-Biden-s-American-rescue-plan-work">
+          Will Biden’s “American rescue plan” work?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/Tracking-Joe-Biden-s-first-100-days">
+          Tracking Joe Biden’s first 100 days
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have">
+          Democrats are more likely than Republicans to have heard of QAnon
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/They-re-willing-to-stay-put-for-a-whole-year-if-t">
+          “They’re willing to stay put for a whole year if they need to”—Indian farmers’ mass protests
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have">
+            前一篇：Democrats are more likely than Republicans to have heard of QAnon
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-19/%E6%B3%95%E5%9B%BD5%E5%90%8D-7%E6%97%AC%E8%80%81%E8%80%85%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%90%8E%E6%AD%BB%E4%BA%A1%E5%BC%95%E5%8F%91%E5%85%B3%E6%B3%A8">
+            后一篇：法国5名 7旬老者接种新冠疫苗后死亡引发关注
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/%E6%B3%95%E5%9B%BD5%E5%90%8D-7%E6%97%AC%E8%80%81%E8%80%85%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%90%8E%E6%AD%BB%E4%BA%A1%E5%BC%95%E5%8F%91%E5%85%B3%E6%B3%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/Tracking-Joe-Biden-s-first-100-days'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-19/%E6%B3%95%E5%9B%BD5%E5%90%8D-7%E6%97%AC%E8%80%81%E8%80%85%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%90%8E%E6%AD%BB%E4%BA%A1%E5%BC%95%E5%8F%91%E5%85%B3%E6%B3%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-19/Tracking-Joe-Biden-s-first-100-days">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<经济学人en>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-19/Democrats-are-more-likely-than-Republicans-to-have">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

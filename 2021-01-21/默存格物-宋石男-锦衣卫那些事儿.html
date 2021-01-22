@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>默存格物｜宋石男：锦衣卫那些事儿 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+默存格物｜宋石男：锦衣卫那些事儿
+——
+" />
+    <meta property="og:description" content="
+默存格物｜宋石男：锦衣卫那些事儿
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="默存格物｜宋石男：锦衣卫那些事儿" />
+    <meta property="twitter:title" content="默存格物｜宋石男：锦衣卫那些事儿" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%25bb%2598%25e5%25ad%2598%25e6%25a0%25bc%25e7%2589%25a9%25ef%25bd%259c%25e5%25ae%258b%25e7%259f%25b3%25e7%2594%25b7%25ef%25bc%259a%25e9%2594%25a6%25e8%25a1%25a3%25e5%258d%25ab%25e9%2582%25a3%25e4%25ba%259b%25e4%25ba%258b%25e5%2584%25bf%2F&t=%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9%EF%BD%9C%E5%AE%8B%E7%9F%B3%E7%94%B7%EF%BC%9A%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%25bb%2598%25e5%25ad%2598%25e6%25a0%25bc%25e7%2589%25a9%25ef%25bd%259c%25e5%25ae%258b%25e7%259f%25b3%25e7%2594%25b7%25ef%25bc%259a%25e9%2594%25a6%25e8%25a1%25a3%25e5%258d%25ab%25e9%2582%25a3%25e4%25ba%259b%25e4%25ba%258b%25e5%2584%25bf%2F&t=%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9%EF%BD%9C%E5%AE%8B%E7%9F%B3%E7%94%B7%EF%BC%9A%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF&d=2021-01-21&e=
+默存格物｜宋石男：锦衣卫那些事儿
+——
+
+
+  明代厂卫之缘起及其衰亡
+  文 / 宋石男
+  明代司法机构分为中央三法司和地方司。三法司是刑部、大理寺和都察院。刑部是国家最高审判机关，有点像现在的最高法院；大理寺掌复核，也有部分最高法院的功能；都察院是监察机关，兼理刑名，有点像现在的最高检察院。地方司则包括依照行省设置的提刑按察使，府县两级的知府、知县等。
+  在国家法定的以三法司为首的司法机构之外，明代还存在由皇帝直接支配和操纵（有时实权也落于宦官之手）的秘密警察系统，从侦查、拘捕到审讯及执行，做足全套。所谓“缉访于罗织之门，锻炼于诏狱之手，裁决于内降之旨”，法律失去自己的位置，司法受到极大扭曲。这套系统，历史学家一般称作“厂卫”，主要功能是侦察官员和民众的言行，不经正式司法机构之手，也无须遵循严格司法程序，即可将嫌疑人直接下狱刑讯并处罚。
+  厂卫之酷，贯穿有明一代，即使在以..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%25bb%2598%25e5%25ad%2598%25e6%25a0%25bc%25e7%2589%25a9%25ef%25bd%259c%25e5%25ae%258b%25e7%259f%25b3%25e7%2594%25b7%25ef%25bc%259a%25e9%2594%25a6%25e8%25a1%25a3%25e5%258d%25ab%25e9%2582%25a3%25e4%25ba%259b%25e4%25ba%258b%25e5%2584%25bf%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/&text=默存格物｜宋石男：锦衣卫那些事儿&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/&title=默存格物｜宋石男：锦衣卫那些事儿" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/&title=默存格物｜宋石男：锦衣卫那些事儿" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=默存格物｜宋石男：锦衣卫那些事儿&body=
+默存格物｜宋石男：锦衣卫那些事儿
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/&title=默存格物｜宋石男：锦衣卫那些事儿&caption=
+默存格物｜宋石男：锦衣卫那些事儿
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=默存格物｜宋石男：锦衣卫那些事儿&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>默存格物｜宋石男：锦衣卫那些事儿</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%25bb%2598%25e5%25ad%2598%25e6%25a0%25bc%25e7%2589%25a9%25ef%25bd%259c%25e5%25ae%258b%25e7%259f%25b3%25e7%2594%25b7%25ef%25bc%259a%25e9%2594%25a6%25e8%25a1%25a3%25e5%258d%25ab%25e9%2582%25a3%25e4%25ba%259b%25e4%25ba%258b%25e5%2584%25bf%2F&t=%E9%BB%98%E5%AD%98%E6%A0%BC%E7%89%A9%EF%BD%9C%E5%AE%8B%E7%9F%B3%E7%94%B7%EF%BC%9A%E9%94%A6%E8%A1%A3%E5%8D%AB%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF&d=2021-01-21&e=
+默存格物｜宋石男：锦衣卫那些事儿
+——
+
+
+  明代厂卫之缘起及其衰亡
+  文 / 宋石男
+  明代司法机构分为中央三法司和地方司。三法司是刑部、大理寺和都察院。刑部是国家最高审判机关，有点像现在的最高法院；大理寺掌复核，也有部分最高法院的功能；都察院是监察机关，兼理刑名，有点像现在的最高检察院。地方司则包括依照行省设置的提刑按察使，府县两级的知府、知县等。
+  在国家法定的以三法司为首的司法机构之外，明代还存在由皇帝直接支配和操纵（有时实权也落于宦官之手）的秘密警察系统，从侦查、拘捕到审讯及执行，做足全套。所谓“缉访于罗织之门，锻炼于诏狱之手，裁决于内降之旨”，法律失去自己的位置，司法受到极大扭曲。这套系统，历史学家一般称作“厂卫”，主要功能是侦察官员和民众的言行，不经正式司法机构之手，也无须遵循严格司法程序，即可将嫌疑人直接下狱刑讯并处罚。
+  厂卫之酷，贯穿有明一代，即使在以..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%25bb%2598%25e5%25ad%2598%25e6%25a0%25bc%25e7%2589%25a9%25ef%25bd%259c%25e5%25ae%258b%25e7%259f%25b3%25e7%2594%25b7%25ef%25bc%259a%25e9%2594%25a6%25e8%25a1%25a3%25e5%258d%25ab%25e9%2582%25a3%25e4%25ba%259b%25e4%25ba%258b%25e5%2584%25bf%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611240635000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/">默存格物｜宋石男：锦衣卫那些事儿</a>
+——</p>
+
+<div>
+  <p><strong>明代厂卫之缘起及其衰亡</strong></p>
+  <p>文 / 宋石男</p>
+  <p>明代司法机构分为中央三法司和地方司。三法司是刑部、大理寺和都察院。刑部是国家最高审判机关，有点像现在的最高法院；大理寺掌复核，也有部分最高法院的功能；都察院是监察机关，兼理刑名，有点像现在的最高检察院。地方司则包括依照行省设置的提刑按察使，府县两级的知府、知县等。</p>
+  <p>在国家法定的以三法司为首的司法机构之外，明代还存在由皇帝直接支配和操纵（有时实权也落于宦官之手）的秘密警察系统，从侦查、拘捕到审讯及执行，做足全套。所谓“缉访于罗织之门，锻炼于诏狱之手，裁决于内降之旨”，法律失去自己的位置，司法受到极大扭曲。这套系统，历史学家一般称作“厂卫”，主要功能是侦察官员和民众的言行，不经正式司法机构之手，也无须遵循严格司法程序，即可将嫌疑人直接下狱刑讯并处罚。</p>
+  <p>厂卫之酷，贯穿有明一代，即使在以宽厚著称的孝宗朝，也未能取缔。厂卫之反法制本质，《明史·刑法志》论曰：“刑法有创之自明，不衷古制者，廷杖、东西厂、锦衣卫、镇抚司狱是已。是数者，杀人至惨，而不丽于法。踵而行之，至末造而极。举朝野命，一听之武夫、宦竖之手，良可叹也。”有遗民在明朝覆亡后，发出“明不亡于流寇而亡于厂卫”之叹，泣血锥心。</p>
+  <p>厂卫之机构，包括锦衣卫和东厂、西厂（明宪宗时汪直创建，监视锦衣卫与东厂，后被废）及内行厂（明武宗时增设，监视锦衣卫与东西厂，只短期存在）。厂卫总部设于京师，在地方也有诸多分支机构。</p>
+  <p>锦衣卫属于军队编制，俗称“缇骑”，最多时达到十五六万人。其由朱元璋创立，除传统仪仗、警卫职责外，还兼管刑狱，名唤“诏狱”，专门侦察“不轨妖言”，可不经司法机关，直接逮捕拷讯有危害国家安全嫌疑的人员，其刑罚决定三法司也无权更改。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661748-600991ecd2c30." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>电影《锦衣卫》剧照</em></p>
+  <p>厂则是由司礼太监主管的秘密警察系统，只有东厂一直持续到明朝覆亡，此文且专叙东厂。东厂役长、番役均自锦衣卫中挑选，轮流外出侦查，一是听记刑部、大理寺、都察院和北镇抚司审案，一是打听官员情况及各种民情。侦查结果通常会写成报告，直接送交皇帝。与锦衣卫一样，东厂也有独立的逮捕、审讯和判决权，除非有圣旨，司法机构与内阁都不能过问。</p>
+  <p>厂卫的秘密警察性质，可由其职权充分体现。首先是秘密拘捕权。明代官府抓人，需要“符”（逮捕者的身份证明）以及逮捕证明，但厂卫无须“符”，只凭“驾帖”（逮捕证）就可千里之外跨省追捕。到明中期以后，厂卫甚至无须“驾帖”即可任意逮人。其次是秘密关押权，一下诏狱、厂狱，即如堕十八层地狱，少有生机。若冤死狱中，也无从投诉。再次是秘密审判权，厂卫均可自设法庭，秘密审讯。最后是独立处罚乃至处决权，旁人无法过问。</p>
+  <p>厂卫之酷烈，于成化汪直、正德刘瑾、天启魏忠贤三个时期最甚，又以魏忠贤时期最为黑暗和漫长。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661748-600991eecbda5." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>电影《新龙门客栈》剧照</em></p>
+  <p>天启年间，魏忠贤以司礼秉笔太监兼掌东厂，是实际上独裁最高权力的“九千岁”。其时秘密警察多如牛虱，不论百姓或官员，莫不置于严密监视之下。有平民与朋友在密室喝酒，大骂魏忠贤，立被东厂番役捕去，凌迟处死。当然厂卫监控更多的还是官员、士人中的持不同政见者，而且一人犯忌，亲朋好友皆受株连，随时有送命可能。东林党人魏大中被逮，有司不通知其家属所系何地，大中的儿子只能偷偷跑到京师，想刺探父亲的消息，还得“变姓名匿旅舍，昼伏夜出”。杨涟被捕下狱，他的一个朋友苏继欧，已经削籍回乡，且为人低调隐忍，本不至于招杀身之祸，但为同里阉党恐吓，竟自己上吊而死。周顺昌被下诏狱，朱祖文进京访周的朋友，战战兢兢如新娶之妇，和人接洽，只在萧寺古庙之中，信件常折成指头大小，藏于鞋袜，或糊之壁间。秘密警察的恐怖，将有良心而未附阉党的知识分子个个逼成“余则成”。</p>
+  <p>魏忠贤的秘密警察统治，可谓网罗森严，为达到“未雨绸缪”、“一网打尽”的目的，他和厂卫中人拟了不少黑名单，以防范、监视名单中人，随时将之构陷、逮捕、刑讯、处罚。</p>
+  <p>当时最著名的黑名单，是魏忠贤的干将王绍徽拟进的《东林点将录》和崔呈秀拟进的《同志录》，此外魏应嘉、邵辅忠、卢承钦、岳和声、阮大铖等人也都拟有名单。后来魏的刽子手许显纯逮人，就以上述名单为基础，钱谦益回忆说，“显纯操刀，每出片纸，姓名累累如保牒。”</p>
+  <p>王绍徽拟《东林点将录》，为增加“可读性”，将水浒群雄分配于欲构陷的朝臣名士，如东林党领袖李三才被封为托塔天王晁盖，叶向高被封为宋江，赵南星被封为卢俊义。名单一共109人，魏忠贤看了很喜欢，赞美王绍徽说：“王尚书斌媚如闺人，笔挟风霜乃耳，真吾家之珍耳。”大约是说，王绍徽这妩媚的小甜甜，却有残酷罗织的刀笔本领，真是咱家的宝贝小猪猡。</p>
+  <p>据说魏忠贤曾拿此名单去给朱由校看，这昏帝不读水浒，不知道托塔天王是何物种，魏忠贤就为述晁盖于溪头移塔之事，谁知这皇帝竟鼓掌叫好，“勇哉斯人！”魏忠贤大无趣，只好揣着名单走掉。</p>
+  <p>在魏忠贤掌权时期，大狱屡兴，前后诛杀朝臣名士不下百人（《先拨志始》记：每死一公，许显纯就剔其喉骨，以小盒封盛，交给魏忠贤以示信），无辜平民则以千计，基本上都是依靠厂卫之秘密警察系统。其狱之酷，《明史》诸传及明末野史有详尽记述，太过残忍，暂不征引。只摘方苞记史可法狱中见左光斗之《左忠毅公逸事》一段，可见一斑：“左公……席地倚墙而坐，面额焦烂不可辨，左膝以下筋骨尽脱矣。史前跪抱公膝而呜咽。公辨其声，而目不可开，乃奋臂以指拨眦，目光如炬……（史可法）后常流涕述其事以语人，曰：‘吾师肺肝，皆铁石所铸造也’。”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661748-600991f0bbad4." alt="图片" class="aligncenter" width="500" /></p>
+  <p><em>电影《绣春刀》剧照</em></p>
+  <p>左光斗之肺肝虽铁石铸造，终未能熬过黑狱，惨死其中。与他一同下狱的清流名士，也多遭酷刑致死。至今读这段历史，犹觉胸中耿耿，如有阴冷剑戟搅动活人生肉。</p>
+  <p>后来崇祯帝即位，魏忠贤倒台，此前的黑暗诏狱部分得到昭雪。但秘密警察统治并未结束，因为崇祯帝自己又搞起来，不但加强厂卫侦缉，还弄许多经济特务和军事特务。秘密警察的势焰较魏忠贤时代一点也不减弱，特务们对官员可玩弄于股掌，有次竟将京师附近各县县官一起免职，对老百姓更是生杀予夺，常因抢掠不成，将平民肆意逮虐。这帮秘密警察一到甲申明亡，又带头投降，期盼在新统治者手中“再建新功”。不过李自成没待见他们，不是打杀，就是赶走。沦落民间的过去的秘密警察们，被民众追逐喊打，只得“哀号奔走，青肿流血”，衣服被扯得稀烂，随身的钱也被抢得精光。</p>
+  <p>其实秘密警察头子，还真没几个有好下场。臭名昭著的魏忠贤，只落个自杀结局；再早的刘瑾，则遭凌迟处死；而西厂的缔造者汪直，最终被放逐南京御马监，废弃而死。“始作俑者，其无后乎？”有明一代，厂卫领袖多是宦官，这句格言，不但印证了他们的生前，也落实了他们的身后。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e9%bb%98%e5%ad%98%e6%a0%bc%e7%89%a9%ef%bd%9c%e5%ae%8b%e7%9f%b3%e7%94%b7%ef%bc%9a%e9%94%a6%e8%a1%a3%e5%8d%ab%e9%82%a3%e4%ba%9b%e4%ba%8b%e5%84%bf/">默存格物｜宋石男：锦衣卫那些事儿</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/Matters-2020%E5%B9%B4%E5%BA%A6%E9%BB%91%E5%BF%83%E4%BC%81%E4%B8%9A%E4%B9%9D%E5%A4%A7%E5%85%B3%E9%94%AE%E8%AF%8D-%E4%BD%A0%E4%B8%AD%E6%8B%9B%E4%BA%86%E5%90%97">
+          Matters | 2020年度黑心企业九大关键词！你中招了吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E4%BA%BA%E9%97%B4theLivings-%E5%9F%8E%E7%AE%A1%E9%98%9F%E4%BC%8D%E9%87%8C-%E9%82%A3%E4%B8%AA%E8%A2%AB%E5%98%B2%E7%AC%91%E7%9A%84%E8%80%81%E5%AE%9E%E4%BA%BA%E5%86%B3%E5%AE%9A%E8%80%83%E7%BC%96">
+          人间theLivings｜城管队伍里，那个被嘲笑的老实人决定考编
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8C%AA%E5%A8%81TALK-%E5%AF%B9-%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B-%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE">
+          挪威TALK｜对「返乡核酸检测」最新解读的最大疑问
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E7%A7%91%E6%8A%80%E5%9C%88%E6%97%A5%E5%B8%B8-%E5%BE%AE%E4%BF%A1%E5%8D%81%E5%B9%B4-%E5%BD%93%E5%BC%A0%E5%B0%8F%E9%BE%99-%E8%A2%AB%E4%B8%8A%E5%B8%9D%E9%80%89%E4%B8%AD">
+          科技圈日常｜微信十年，当张小龙“被上帝选中”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%BB%B4%E6%BB%B4%E5%A4%96%E5%8D%96%E6%9C%8D%E5%8A%A1%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%A6%8F%E5%86%88%E5%8E%BF%E5%90%AF%E5%8A%A8">
+            前一篇：滴滴外卖服务在日本福冈县启动
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E9%97%BB%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E6%8A%97%E5%85%B1-%E7%AC%AC%E4%B8%80%E5%85%B3%E8%A6%81%E6%9D%A5%E4%BA%86">
+            后一篇：【新闻大家谈】拜登政府抗共？第一关要来了
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%BB%B4%E6%BB%B4%E5%A4%96%E5%8D%96%E6%9C%8D%E5%8A%A1%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%A6%8F%E5%86%88%E5%8E%BF%E5%90%AF%E5%8A%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E9%97%BB%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E6%8A%97%E5%85%B1-%E7%AC%AC%E4%B8%80%E5%85%B3%E8%A6%81%E6%9D%A5%E4%BA%86'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E4%BA%BA%E9%97%B4theLivings-%E5%9F%8E%E7%AE%A1%E9%98%9F%E4%BC%8D%E9%87%8C-%E9%82%A3%E4%B8%AA%E8%A2%AB%E5%98%B2%E7%AC%91%E7%9A%84%E8%80%81%E5%AE%9E%E4%BA%BA%E5%86%B3%E5%AE%9A%E8%80%83%E7%BC%96'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%8C%AA%E5%A8%81TALK-%E5%AF%B9-%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B-%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%BB%B4%E6%BB%B4%E5%A4%96%E5%8D%96%E6%9C%8D%E5%8A%A1%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%A6%8F%E5%86%88%E5%8E%BF%E5%90%AF%E5%8A%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E9%97%BB%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E6%8A%97%E5%85%B1-%E7%AC%AC%E4%B8%80%E5%85%B3%E8%A6%81%E6%9D%A5%E4%BA%86">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/%E4%BA%BA%E9%97%B4theLivings-%E5%9F%8E%E7%AE%A1%E9%98%9F%E4%BC%8D%E9%87%8C-%E9%82%A3%E4%B8%AA%E8%A2%AB%E5%98%B2%E7%AC%91%E7%9A%84%E8%80%81%E5%AE%9E%E4%BA%BA%E5%86%B3%E5%AE%9A%E8%80%83%E7%BC%96">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8C%AA%E5%A8%81TALK-%E5%AF%B9-%E8%BF%94%E4%B9%A1%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B-%E6%9C%80%E6%96%B0%E8%A7%A3%E8%AF%BB%E7%9A%84%E6%9C%80%E5%A4%A7%E7%96%91%E9%97%AE">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

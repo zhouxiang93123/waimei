@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>WhatsApp要求用户同意与脸书分享资料 恐触发停用潮 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+" />
+    <meta property="og:description" content="
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="WhatsApp要求用户同意与脸书分享资料 恐触发停用潮" />
+    <meta property="twitter:title" content="WhatsApp要求用户同意与脸书分享资料 恐触发停用潮" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55628641&t=WhatsApp%E8%A6%81%E6%B1%82%E7%94%A8%E6%88%B7%E5%90%8C%E6%84%8F%E4%B8%8E%E8%84%B8%E4%B9%A6%E5%88%86%E4%BA%AB%E8%B5%84%E6%96%99+%E6%81%90%E8%A7%A6%E5%8F%91%E5%81%9C%E7%94%A8%E6%BD%AE" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55628641&t=WhatsApp%E8%A6%81%E6%B1%82%E7%94%A8%E6%88%B7%E5%90%8C%E6%84%8F%E4%B8%8E%E8%84%B8%E4%B9%A6%E5%88%86%E4%BA%AB%E8%B5%84%E6%96%99+%E6%81%90%E8%A7%A6%E5%8F%91%E5%81%9C%E7%94%A8%E6%BD%AE&d=2021-01-12&e=
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+
+
+  
+    WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+  
+  
+    40 分钟前
+  
+  
+    
+      
+    
+  
+  
+    即时通讯软件WhatsApp近日宣布准备更改使用条款，要求用户在2月8日之前同意它可以与母公司脸书（Facebook ）分享用户数据，否则用户应自己删除帐户，但英国和欧洲境内用户除外。
+  
+  
+    脸书解释英国和欧洲的用户获得豁免，是与欧洲当局就用户私隐问题商讨的结果，外界认为这是因为当地有关保护私隐的法规比其他地方更严紧。
+  
+  
+    荷兰欧洲议会议员保罗唐（Paul Tang）在社交网站形容，脸书在此事件上给予欧洲地区豁免，“显示了资讯保护的重要性”。
+  
+  
+    WhatsApp原本的讯息容许用户有30天宽限期，之后..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55628641" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/world-55628641" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/world-55628641&text=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/world-55628641&title=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/world-55628641&title=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮&body=
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/world-55628641" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/world-55628641&title=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮&caption=
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=WhatsApp要求用户同意与脸书分享资料 恐触发停用潮&url=http://www.bbc.com/zhongwen/simp/world-55628641" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>WhatsApp要求用户同意与脸书分享资料 恐触发停用潮</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/world-55628641"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55628641&t=WhatsApp%E8%A6%81%E6%B1%82%E7%94%A8%E6%88%B7%E5%90%8C%E6%84%8F%E4%B8%8E%E8%84%B8%E4%B9%A6%E5%88%86%E4%BA%AB%E8%B5%84%E6%96%99+%E6%81%90%E8%A7%A6%E5%8F%91%E5%81%9C%E7%94%A8%E6%BD%AE&d=2021-01-12&e=
+WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+——
+
+
+  
+    WhatsApp要求用户同意与脸书分享资料 恐触发停用潮
+  
+  
+    40 分钟前
+  
+  
+    
+      
+    
+  
+  
+    即时通讯软件WhatsApp近日宣布准备更改使用条款，要求用户在2月8日之前同意它可以与母公司脸书（Facebook ）分享用户数据，否则用户应自己删除帐户，但英国和欧洲境内用户除外。
+  
+  
+    脸书解释英国和欧洲的用户获得豁免，是与欧洲当局就用户私隐问题商讨的结果，外界认为这是因为当地有关保护私隐的法规比其他地方更严紧。
+  
+  
+    荷兰欧洲议会议员保罗唐（Paul Tang）在社交网站形容，脸书在此事件上给予欧洲地区豁免，“显示了资讯保护的重要性”。
+  
+  
+    WhatsApp原本的讯息容许用户有30天宽限期，之后..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55628641" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610441619000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/world-55628641">WhatsApp要求用户同意与脸书分享资料 恐触发停用潮</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">WhatsApp要求用户同意与脸书分享资料 恐触发停用潮</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-12" class="css-pb6w51-StyledTimestamp e4zesg50">40 分钟前</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="WhatsApp icon" src="https://ichef.bbci.co.uk/news/600/cpsprodpb/15218/production/_110725568_gettyimages-1048818328.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>即时通讯软件WhatsApp近日宣布准备更改使用条款，要求用户在2月8日之前同意它可以与母公司脸书（Facebook ）分享用户数据，否则用户应自己删除帐户，但英国和欧洲境内用户除外。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">脸书解释英国和欧洲的用户获得豁免，是与欧洲当局就用户私隐问题商讨的结果，外界认为这是因为当地有关保护私隐的法规比其他地方更严紧。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">荷兰欧洲议会议员保罗唐（Paul Tang）在社交网站形容，脸书在此事件上给予欧洲地区豁免，“显示了资讯保护的重要性”。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">WhatsApp原本的讯息容许用户有30天宽限期，之后脸书取消了这个宽限期，指用户如果想要删除帐号应到支援页面。</p>
+  </div>
+  <section aria-label="广告 2" aria-hidden="true" role="region" data-e2e="advertisement" class="e1j2237y0 css-1bxjjj1 e1e90g5r0">
+    <div id="dotcom-mpu" class="dotcom-ad"></div>
+  </section>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">脸书提出要求后，许多人都呼吁外界要转用Signal及Telegram等较安全的即时通讯软件，包括电动汽车公司特斯拉（Tesla）及SpaceX的创办人马斯克（Elon Musk）。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="什么资料受影响" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">什么资料受影响？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">WhatsApp在网站上发布的讯息显示，在新协议下它可以与脸书分享下列资料：</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1">用户的电话号码和其他用户登记时提供的资料，例如名字</li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1">用户电话的资料，例如品牌、型号和使用的电讯商</li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1">用户的IP位址，这个位址可以用来追查用户所处的地方</li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1">用户使用WhatsApp来付款的资料</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">WhatsApp也指出，它会收集其它在私隐权声明中会收集的资料，例如用户在什么时候登录、什么时候更新过状态讯息等。脸书没有解释为什么它现在要更新分享用户数据的协议。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/business-53319715" class="css-h9s9st-InlineLink e1cs6q200">国安法：TikTok撤出香港， 脸书谷歌停止向警方分享数据</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/business-55270283" class="css-h9s9st-InlineLink e1cs6q200">社交媒体巨头脸书可能面临的分拆和法律挑战</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-53316785" class="css-h9s9st-InlineLink e1cs6q200">香港政府为《国安法》订立搜查监听细则引发更多质疑</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure>
+<img alt="社交网站和即时通讯软件在香港示威浪潮中，扮演了重要角色。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/11BA9/production/_107371627_gettyimages-1149540017.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="香港国安法下的影响" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">香港《国安法》下的影响</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">WhatsApp这次更改使用者条款在香港也引发了关注，分析留意到脸书与Google等美国科技公司在香港《国安法》实施后，已经宣布不会处理香港政府提出的数据请求，因此在这方面的直接影响较小。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但有报道称，香港当局近日按香港《国安法》给予的权力，要求当地网络商封锁一个名为“香港编年史”的网站，这个网站载有许多警员和亲建制人士个人资料。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">香港媒体引述当地资讯科技商会荣誉会长方保侨说，如果将来脸书拒绝香港当局的数据请求，可能就会与“香港编年史”一样被封锁，连带影响WhatsApp的服务。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E8%80%85%E9%97%AF%E5%9B%BD%E4%BC%9A%E4%B8%8E%E7%BE%8E%E5%9B%BD%E8%AD%A6%E5%AF%9F%E8%A2%AB%E8%B4%A8%E7%96%91%E6%8C%81-%E5%8F%8C%E6%A0%87">
+          特朗普支持者闯国会与美国警察被质疑持“双标”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8F%8D%E5%BC%B9-%E5%8C%97%E6%96%B9%E5%A4%9A%E7%9C%81%E5%87%BA%E7%8E%B0%E7%97%85%E4%BE%8B">
+          中国新冠疫情反弹 北方多省出现病例
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+          香港：现代化都市日常生活中的迷信面面观
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/%E7%8E%B0%E4%BB%A3%E9%83%BD%E5%B8%82%E9%A6%99%E6%B8%AF%E4%B8%BA%E4%BD%95%E5%A6%82%E6%AD%A4%E8%BF%B7%E4%BF%A1">
+          现代都市香港为何如此迷信
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E6%96%99%E4%B8%AD%E5%9B%BD%E4%BB%8A%E5%B9%B4GDP%E5%A2%9E%E9%80%9F%E5%8F%8D%E5%BC%B9%E8%87%B38-%E4%B8%94%E6%9C%89%E7%A8%8D%E4%B8%BA%E4%B8%8A%E8%B0%83%E7%9A%84%E5%8F%AF%E8%83%BD-%E5%AE%89%E7%9B%9B">
+            前一篇：料中国今年GDP增速反弹至8% 且有稍为上调的可能--安盛
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E4%BC%A0%E6%9D%A8%E6%8C%AF%E5%AE%81%E8%AF%AD%E5%91%8A44%E5%B2%81%E7%9A%84%E7%BF%81%E5%B8%86%E4%B8%80%E6%97%A6%E4%BB%96%E7%A6%BB%E4%B8%96%E5%A5%B9%E5%8F%AF%E6%94%B9%E5%AB%81">
+            后一篇：传杨振宁语告44岁的翁帆一旦他离世她可改嫁
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E6%96%99%E4%B8%AD%E5%9B%BD%E4%BB%8A%E5%B9%B4GDP%E5%A2%9E%E9%80%9F%E5%8F%8D%E5%BC%B9%E8%87%B38-%E4%B8%94%E6%9C%89%E7%A8%8D%E4%B8%BA%E4%B8%8A%E8%B0%83%E7%9A%84%E5%8F%AF%E8%83%BD-%E5%AE%89%E7%9B%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E4%BC%A0%E6%9D%A8%E6%8C%AF%E5%AE%81%E8%AF%AD%E5%91%8A44%E5%B2%81%E7%9A%84%E7%BF%81%E5%B8%86%E4%B8%80%E6%97%A6%E4%BB%96%E7%A6%BB%E4%B8%96%E5%A5%B9%E5%8F%AF%E6%94%B9%E5%AB%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8F%8D%E5%BC%B9-%E5%8C%97%E6%96%B9%E5%A4%9A%E7%9C%81%E5%87%BA%E7%8E%B0%E7%97%85%E4%BE%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E6%96%99%E4%B8%AD%E5%9B%BD%E4%BB%8A%E5%B9%B4GDP%E5%A2%9E%E9%80%9F%E5%8F%8D%E5%BC%B9%E8%87%B38-%E4%B8%94%E6%9C%89%E7%A8%8D%E4%B8%BA%E4%B8%8A%E8%B0%83%E7%9A%84%E5%8F%AF%E8%83%BD-%E5%AE%89%E7%9B%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E4%BC%A0%E6%9D%A8%E6%8C%AF%E5%AE%81%E8%AF%AD%E5%91%8A44%E5%B2%81%E7%9A%84%E7%BF%81%E5%B8%86%E4%B8%80%E6%97%A6%E4%BB%96%E7%A6%BB%E4%B8%96%E5%A5%B9%E5%8F%AF%E6%94%B9%E5%AB%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/%E4%B8%AD%E5%9B%BD%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E5%8F%8D%E5%BC%B9-%E5%8C%97%E6%96%B9%E5%A4%9A%E7%9C%81%E5%87%BA%E7%8E%B0%E7%97%85%E4%BE%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

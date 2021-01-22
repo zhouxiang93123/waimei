@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>A Swiss money-laundering probe raises disturbing questions – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+A Swiss money-laundering probe raises disturbing questions
+——
+" />
+    <meta property="og:description" content="
+A Swiss money-laundering probe raises disturbing questions
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="A Swiss money-laundering probe raises disturbing questions" />
+    <meta property="twitter:title" content="A Swiss money-laundering probe raises disturbing questions" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2Ffinance-and-economics%2F2021%2F01%2F23%2Fa-swiss-money-laundering-probe-raises-disturbing-questions&t=A+Swiss+money-laundering+probe+raises+disturbing+questions" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Ffinance-and-economics%2F2021%2F01%2F23%2Fa-swiss-money-laundering-probe-raises-disturbing-questions&t=A+Swiss+money-laundering+probe+raises+disturbing+questions&d=2021-01-21&e=
+A Swiss money-laundering probe raises disturbing questions
+——
+
+
+  
+  
+    
+      Jan 23rd 2021
+      
+    
+  
+  IN 2014 SWITZERLAND’S then attorney-general and two colleagues posed for a photo with several other people on a boat on Lake Baikal in Siberia. The picture shows the men relaxing together on the deck. But their host was no ordinary sailor. He was one of Russia’s top prosecutors, late..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Ffinance-and-economics%2F2021%2F01%2F23%2Fa-swiss-money-laundering-probe-raises-disturbing-questions" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions&text=A Swiss money-laundering probe raises disturbing questions&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions&title=A Swiss money-laundering probe raises disturbing questions" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions&title=A Swiss money-laundering probe raises disturbing questions" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=A Swiss money-laundering probe raises disturbing questions&body=
+A Swiss money-laundering probe raises disturbing questions
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions&title=A Swiss money-laundering probe raises disturbing questions&caption=
+A Swiss money-laundering probe raises disturbing questions
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=A Swiss money-laundering probe raises disturbing questions&url=https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>A Swiss money-laundering probe raises disturbing questions</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Ffinance-and-economics%2F2021%2F01%2F23%2Fa-swiss-money-laundering-probe-raises-disturbing-questions&t=A+Swiss+money-laundering+probe+raises+disturbing+questions&d=2021-01-21&e=
+A Swiss money-laundering probe raises disturbing questions
+——
+
+
+  
+  
+    
+      Jan 23rd 2021
+      
+    
+  
+  IN 2014 SWITZERLAND’S then attorney-general and two colleagues posed for a photo with several other people on a boat on Lake Baikal in Siberia. The picture shows the men relaxing together on the deck. But their host was no ordinary sailor. He was one of Russia’s top prosecutors, late..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Ffinance-and-economics%2F2021%2F01%2F23%2Fa-swiss-money-laundering-probe-raises-disturbing-questions" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611234588000-->
+<p><a href="https://www.economist.com/finance-and-economics/2021/01/23/a-swiss-money-laundering-probe-raises-disturbing-questions">A Swiss money-laundering probe raises disturbing questions</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/sites/default/files/images/print-edition/20210123_FND002_0.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-23T00:00:00Z">Jan 23rd 2021</time>
+      <meta itemprop="author" content="The Economist" />
+    </div>
+  </aside>
+  <p data-caps="initial"><span data-caps="initial">I</span><small>N 2014 SWITZERLAND’S</small> then attorney-general and two colleagues posed for a photo with several other people on a boat on Lake Baikal in Siberia. The picture shows the men relaxing together on the deck. But their host was no ordinary sailor. He was one of Russia’s top prosecutors, later implicated in efforts to stymie a major international money-laundering case that his very guests were investigating.</p>
+  <p>The story behind the photograph involves an intriguing cast. It includes the Russian lawyer who met President Donald Trump’s campaign team in 2016, an encounter that featured in the Mueller report into Russian interference in that year’s election. Another starring character has been linked to corruption investigations at <small>FIFA,</small> world football’s governing body. The money-laundering case, and allegations of cosy relations between Swiss law enforcers and Russian counterparts, threaten to make a mockery of the Alpine country’s efforts to shed its global reputation as the home for shady people’s cash.</p>
+  <div>
+    <div>
+      <div id="econ-1"></div>
+    </div>
+  </div>
+  <p>At the heart of it all is the loot from the so-called Magnitsky case. In 2009 Sergei Magnitsky, a lawyer, died in a Russian prison after trying to investigate a fraud in which Russian officials and police officers, with the connivance of the courts, purloined a $230m tax refund for an investment firm, Hermitage Capital Management. Bill Browder, the firm’s founder and Magnitsky’s employer, has worked since to expose the scam. His lobbying has led several countries, including America and Britain, to pass “Magnitsky laws” that sanction foreign officials who commit human-rights abuses or steal money. An <small>EU</small>-wide version was adopted on December 7th.</p>
+  <p>Mr Browder’s team has tracked the money from the fraud to 26 countries, including Switzerland. Around $11m in Credit Suisse has been tied to Vladlen Stepanov, the husband of the official who approved the bogus tax refund. The couple have been hit with American sanctions. An undisclosed sum in <small>UBS</small>, another bank, was linked to Dmitry Klyuev, a Russian businessman also subject to sanctions. And over $7m in <small>UBS</small> was held by Denis Katsyv, another business figure, and firms linked to him. In 2017 one of the firms, Prevezon, agreed to pay $5.9m, without admitting guilt, to settle a <small>US</small> government asset-forfeiture suit over the case.</p>
+  <p>The Russians have all said the money in their accounts is unrelated to the alleged fraud and deny wrongdoing. But Mr Browder disagreed. In 2011 Hermitage filed a criminal complaint over the $230m theft with Swiss prosecutors. They launched a probe and froze the accounts. But despite progress in related probes elsewhere and plenty of evidence joining the dots, there have been no indictments or seizures. In November the Swiss prosecutor’s office said it planned to close the investigation and release most of the money in the accounts to their Russian owners. It also signalled that it may remove Hermitage as a plaintiff following a legal challenge, which <em>The Economist</em> understands to be from Prevezon. That would leave Hermitage unable to appeal the decision to drop the probe.</p>
+  <p>The Swiss have “capitulated” in the face of Russian efforts to sabotage the case, complains Mr Browder. He is not alone. Several Swiss politicians have raised the issue in parliament. A group of 20 lawmakers from several European countries signed a declaration bemoaning the reported closeness of Swiss investigators to Russia in the Magnitsky case. In December an American senator, Roger Wicker, wrote to Mike Pompeo to urge the secretary of state “to ensure that mutual legal assistance work with Switzerland does not inadvertently become a vector for Russian influence”.</p>
+  <div>
+    <div>
+      <div id="econ-2"></div>
+    </div>
+  </div>
+  <p>The Swiss officials in the case all deny any bias. The attorney-general’s office says that the link between sums suspected of being laundered in Switzerland and an offence committed abroad “must be established with a sufficient degree of certainty”, and that it was “justified” in closing the case after conducting a thorough investigation. However, documents seen by <em>The Economist</em>, including court records, raise disturbing questions about the integrity of the Swiss probe.</p>
+  <p>By 2013 there were three Swiss officials involved in the investigation. Patrick Lamon had just taken over as lead prosecutor. At around the same time, a police officer with expertise in Russia, “Viktor K”, was seconded to the prosecutor’s office to assist with the case. (<em>The Economist</em> cannot publish his real name without falling foul of Swiss law, which shields individuals who are not publicly known figures, including those convicted of crimes, from having their identities revealed.) Michael Lauber, Switzerland’s attorney-general, oversaw their work. What followed was not exactly an arm’s length investigation.</p>
+  <h2 id="boars-bears-and-choppers">Boars, bears and choppers</h2>
+  <p>In 2014 Viktor K went on a boar-hunting trip with a Russian prosecutor, Saak Karapetyan. According to court documents, they stayed at a lodge in the Yaroslavl region, 320km from Moscow, and the tab was picked up by an oligarch involved in energy and property. That summer all three Swiss men schmoozed with Mr Karapetyan on Lake Baikal. The Russians paid for the boat trip. In September 2015 Mr Lamon and K travelled from Zurich to Moscow on a plane owned by the Russian state, at the invitation of the prosecutor-general. Some of the expenses were paid by the Russians. K stayed on for another hunting trip with Mr Karapetyan. (K did not respond to questions from <em>The Economist</em>.)</p>
+  <p>Who was this hospitable Russian prosecutor? Evidence has emerged that Mr Karapetyan may have played a key role in covering up the $230m fraud. In 2014 he sent a letter to America’s Department of Justice refusing help in the Prevezon case and insisting that the company and its owner were innocent. Mr Karapetyan, who died in a helicopter crash in 2018, had accused Mr Browder of being behind the heist.</p>
+  <p>Intriguingly, a <small>D</small>o<small>J</small> investigation concluded that the letter had been drafted with help from a lawyer advising Prevezon, Natalia Veselnitskaya. The <small>D</small>o<small>J</small> has charged her with obstruction of justice in connection with its case against Prevezon. She is also known for meeting senior figures from Donald Trump’s presidential campaign, at Trump Tower in June 2016. Team Trump had been led to believe it might get hold of dirt on Hillary Clinton. Instead, according to several participants, Ms Veselnitskaya turned the conversation to the Magnitsky Act, which she had been lobbying to have repealed.</p>
+  <p>In that same year Hermitage filed a request to indict Mr Stepanov, who, it argued, could not adequately explain the lawful origin of the funds in his Swiss account. Four months later Mr Lamon turned down the request, citing insufficient grounds for indictment. (Hermitage later tried to have him recused for bias, but a court rejected the request.) In August 2016 K saw Mr Karapetyan again. This time they went bear-hunting in far-eastern Russia, where they were taken by helicopter to a lodge owned by another oligarch. The two men discussed the Magnitsky case for several hours, according to K’s statement.</p>
+  <p>On his return to Switzerland the policeman requested a meeting with Andreas Gross, a Swiss politician who had written a report on the Magnitsky case for the Council of Europe, accusing Russia of “a massive cover-up”. Later, K told a court: “My task was to show that the report does not constitute the absolute truth, that nothing has been verified, and that it is just Browder’s version…I told Lamon that we must discontinue the investigation immediately.” Mr Gross says of his meeting with K: “I agreed to go because I thought he wanted my help. But it turned into an interrogation that lasted all day. It felt like he was a Russian investigator, not a Swiss one.” Mr Browder claims that K wanted to discredit the report in order to close the Swiss case.</p>
+  <p>Soon afterwards, Mr Karapetyan asked K to come to Moscow to discuss a “confidential” matter. K asked his supervisor in the police if he could make the trip. The request was denied—but he went anyway. According to court documents, he used his diplomatic passport without permission. He paid for his flights, but the cost of his stay in Moscow was covered by the Russians. While there, “he was invited to discuss some problems in the jointly processed cases,” according to a Swiss court ruling from 2018. It describes his Russian host organising a meeting with the female lawyer of a defendant in the Magnitsky case, “without him [K] knowing anything beforehand”. The lawyer is believed to have been Ms Veselnitskaya, the anti-Magnitsky lobbyist in the Trump Tower meeting.</p>
+  <h2 id="the-hunter-is-hunted">The hunter is hunted</h2>
+  <p>Back in Switzerland K’s bosses were reportedly livid about his trip. On his return, the police filed a criminal complaint against him for four offences, including the abuse of office and bribery. But in January 2019 Mr Lauber’s office dropped the charges for a lighter one, “acceptance of advantage”. This carried a maximum three-year sentence.</p>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/1536/90/sites/default/files/images/print-edition/20210123_FNC476.png" />
+<img loading="lazy" src="https://www.economist.com/img/b/608/1536/90/sites/default/files/images/print-edition/20210123_FNC476.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>Viktor K lost his job, in part because of the unauthorised trip, and was convicted over his bear-hunting excursion. Yet there was no jail time. He did not even have to pay a fine: a SFr9,000 ($8,950) penalty was quashed on appeal—a ruling which, according to the court, was aimed at “facilitating his...reinsertion” back into his profession. That was not the only thing about the courts’ treatment of the policeman that struck some as unduly lenient. His conviction was expunged from the criminal record. Three-quarters of his lawyer’s fees were reimbursed by the state. He was acquitted over the two other trips on the grounds that any bribery would have taken place in Russia, not Switzerland—even though Swiss law covers offences that affect an official’s work in his own country, which this appeared to do. The attorney-general’s office did not appeal this ruling.</p>
+    <p>At the same time, according to the transcript of a hearing in June 2019, Russian officials singled out K for praise. The prosecutor-general said his “activity...has significantly contributed to the collaboration of the Russian and Swiss authorities”.</p>
+    <p>Mr Lauber stirred further controversy last year. The <em>Financial Times</em>, citing letters sent by his office to Swiss lawyers, reported that he planned to share sensitive testimony relating to the Magnitsky case with Russian counterparts. His office declined to confirm this. Mr Browder says the letters are authentic. The decision to transfer the information angered many politicians in Europe and America, since it contravenes guidance from Interpol and the Council of Europe, of which Switzerland is a member.</p>
+    <p>As things stand, most of the frozen money in <small>UBS</small> and Credit Suisse will go back to the account-holders. The remainder—as little as $1.1m—covers the amount deemed to be provably illicit. But how the Swiss attorney-general’s office calculated this has raised yet more eyebrows. It chose to use a “proportional” method, under which the share of money counted as tainted is heavily diluted if—as happened in this case—it is commingled with other funds while being moved around.</p>
+  </div>
+  <div>
+    <div>
+      <div id="econ-3"></div>
+    </div>
+  </div>
+  <p>This approach runs counter to a <small>UN</small> convention on organised crime, which allows far more money to be seized, even if it is mixed with other funds. It also goes against common practice, including that in Switzerland, says Mark Pieth, an expert who helped write the country’s anti-money-laundering laws. “The theory they applied is just wrong,” he says. “It’s an argument you’d expect a desperate defence lawyer to use, rather than a prosecutor obliged to follow the money. To my eyes it looks like they were working against their own interests. It’s weird.” The attorney-general’s office says the stingy methodology reflects the “link [that] can be established between the assets seized in Switzerland and the predicate offence committed in Russia”.</p>
+  <p>Mr Browder has threatened to sue the two Swiss banks for breaching American sanctions if they unfreeze the accounts. (Both banks say they do not comment on existing or potential client relationships but are committed to complying with all applicable laws and regulations.) He is expected to mount a legal challenge in the next few weeks.</p>
+  <p>Mr Lauber is no longer overseeing the case. He stepped down as attorney-general in August, after a court found he had covered up a meeting with Gianni Infantino, head of <small>FIFA</small>, and lied to supervisors while his office probed corruption at the organisation. The Swiss parliament has waived his immunity in the case, paving the way for criminal proceedings against him. Mr Lauber has denied wrongdoing. He declined to answer questions from <em>The Economist</em>, citing the fact that he was no longer attorney-general. The <small>FIFA</small> and Magnitsky cases suggest that the Swiss federal criminal-law system is “in deep trouble”, says Mr Pieth. In both, he says, prosecutors were unprofessionally close to third parties. Crucially, key meetings went unrecorded.</p>
+  <p>The tale of Russian money and cosy official links does not paint a flattering portrait of Switzerland, home to two big financial centres, Geneva and Zurich, and the largest market for offshore private wealth. There is no doubt the country has become less welcoming to dirty money over the past decade, including national wealth looted by kleptocrats. It is also more willing to help other Western governments pursue tax-dodgers, even handing over account data once deemed sacrosanct under its secrecy law. Yet the Magnitsky case undermines this tentative progress. Mr Browder goes further. The public evidence, he argues, points to conduct by Swiss officials that “strongly suggests something untoward is going on”. “This is not something anyone should expect from the Swiss. It makes them look like a banana republic.” <span data-ornament="ufinish">■</span></p>
+  <p data-test-id="Footnote">This article appeared in the Finance &amp; economics section of the print edition under the headline "Tilting the scales"</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/Fear-and-hope-on-Biden-s-inauguration-day">
+          Fear and hope on Biden’s inauguration day
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris">
+          A successful vaccination drive is crucial to Boris Johnson’s battered government
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/Why-re-opening-schools-in-minority-neighbourhoods">
+          Why re-opening schools in minority neighbourhoods is hard
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/Why-America-has-done-such-a-poor-job-of-keeping-sc">
+          Why America has done such a poor job of keeping schools open
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E8%87%BA%E7%94%A2%E9%98%B2%E7%96%AB%E4%BF%9D%E5%96%AE%E5%BC%95%E7%99%BC%E9%81%93%E5%BE%B7%E9%A2%A8%E9%9A%AA-%E9%87%91%E7%AE%A1%E6%9C%83-%E6%9C%89%E9%99%A4%E5%A4%96%E6%A2%9D%E6%AC%BE">
+            前一篇：臺產防疫保單引發道德風險？金管會：有除外條款
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris">
+            后一篇：A successful vaccination drive is crucial to Boris Johnson’s battered government
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E8%87%BA%E7%94%A2%E9%98%B2%E7%96%AB%E4%BF%9D%E5%96%AE%E5%BC%95%E7%99%BC%E9%81%93%E5%BE%B7%E9%A2%A8%E9%9A%AA-%E9%87%91%E7%AE%A1%E6%9C%83-%E6%9C%89%E9%99%A4%E5%A4%96%E6%A2%9D%E6%AC%BE'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/Why-re-opening-schools-in-minority-neighbourhoods'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E8%87%BA%E7%94%A2%E9%98%B2%E7%96%AB%E4%BF%9D%E5%96%AE%E5%BC%95%E7%99%BC%E9%81%93%E5%BE%B7%E9%A2%A8%E9%9A%AA-%E9%87%91%E7%AE%A1%E6%9C%83-%E6%9C%89%E9%99%A4%E5%A4%96%E6%A2%9D%E6%AC%BE">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/A-successful-vaccination-drive-is-crucial-to-Boris">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<经济学人en>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/Why-re-opening-schools-in-minority-neighbourhoods">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>重返国际舞台，拜登将如何带领美国“与世界接触” – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+" />
+    <meta property="og:description" content="
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="重返国际舞台，拜登将如何带领美国“与世界接触”" />
+    <meta property="twitter:title" content="重返国际舞台，拜登将如何带领美国“与世界接触”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210121%2Fbiden-world-democracy%2F&t=%E9%87%8D%E8%BF%94%E5%9B%BD%E9%99%85%E8%88%9E%E5%8F%B0%EF%BC%8C%E6%8B%9C%E7%99%BB%E5%B0%86%E5%A6%82%E4%BD%95%E5%B8%A6%E9%A2%86%E7%BE%8E%E5%9B%BD%E2%80%9C%E4%B8%8E%E4%B8%96%E7%95%8C%E6%8E%A5%E8%A7%A6%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210121%2Fbiden-world-democracy%2F&t=%E9%87%8D%E8%BF%94%E5%9B%BD%E9%99%85%E8%88%9E%E5%8F%B0%EF%BC%8C%E6%8B%9C%E7%99%BB%E5%B0%86%E5%A6%82%E4%BD%95%E5%B8%A6%E9%A2%86%E7%BE%8E%E5%9B%BD%E2%80%9C%E4%B8%8E%E4%B8%96%E7%95%8C%E6%8E%A5%E8%A7%A6%E2%80%9D&d=2021-01-21&e=
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+
+
+  
+MARK LANDLER2021-01-21 16:43:57
+  
+  
+小约瑟夫·拜登和吉尔·拜登博士周二抵达安德鲁斯联合基地。有理由相信，拜登在国际舞台上将比许多人预期的更引人注目。
+  
+  伦敦——十年前，小约瑟夫·R·拜登(Joseph R. Biden Jr.)大步走进雅典的一个接待室，与希腊总统会面。当时，希腊正深陷债务危机和与欧盟的紧张谈判僵局中。
+  “这个人是代表财政部的，”拜登故作严肃地指着他手下一名身穿灰色西装的代表团成员，对他的东道主说。“他带来了数亿美元。”
+  房间里爆发出一阵笑声：很明显，副总统并没有带着一公文包的现金来帮助希腊偿还债务。但他的笑话揭示了一个更深层次的真相——在2011年，许多人仍将美国视为国际秩序的终极担保人。而拜登显然认为自己是这一遗产的管理员，他轻松自信的表现，是..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210121%2Fbiden-world-democracy%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20210121/biden-world-democracy/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20210121/biden-world-democracy/&text=重返国际舞台，拜登将如何带领美国“与世界接触”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20210121/biden-world-democracy/&title=重返国际舞台，拜登将如何带领美国“与世界接触”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20210121/biden-world-democracy/&title=重返国际舞台，拜登将如何带领美国“与世界接触”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=重返国际舞台，拜登将如何带领美国“与世界接触”&body=
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20210121/biden-world-democracy/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20210121/biden-world-democracy/&title=重返国际舞台，拜登将如何带领美国“与世界接触”&caption=
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=重返国际舞台，拜登将如何带领美国“与世界接触”&url=https://cn.nytimes.com/world/20210121/biden-world-democracy/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>重返国际舞台，拜登将如何带领美国“与世界接触”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20210121/biden-world-democracy/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210121%2Fbiden-world-democracy%2F&t=%E9%87%8D%E8%BF%94%E5%9B%BD%E9%99%85%E8%88%9E%E5%8F%B0%EF%BC%8C%E6%8B%9C%E7%99%BB%E5%B0%86%E5%A6%82%E4%BD%95%E5%B8%A6%E9%A2%86%E7%BE%8E%E5%9B%BD%E2%80%9C%E4%B8%8E%E4%B8%96%E7%95%8C%E6%8E%A5%E8%A7%A6%E2%80%9D&d=2021-01-21&e=
+重返国际舞台，拜登将如何带领美国“与世界接触”
+——
+
+
+  
+MARK LANDLER2021-01-21 16:43:57
+  
+  
+小约瑟夫·拜登和吉尔·拜登博士周二抵达安德鲁斯联合基地。有理由相信，拜登在国际舞台上将比许多人预期的更引人注目。
+  
+  伦敦——十年前，小约瑟夫·R·拜登(Joseph R. Biden Jr.)大步走进雅典的一个接待室，与希腊总统会面。当时，希腊正深陷债务危机和与欧盟的紧张谈判僵局中。
+  “这个人是代表财政部的，”拜登故作严肃地指着他手下一名身穿灰色西装的代表团成员，对他的东道主说。“他带来了数亿美元。”
+  房间里爆发出一阵笑声：很明显，副总统并没有带着一公文包的现金来帮助希腊偿还债务。但他的笑话揭示了一个更深层次的真相——在2011年，许多人仍将美国视为国际秩序的终极担保人。而拜登显然认为自己是这一遗产的管理员，他轻松自信的表现，是..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210121%2Fbiden-world-democracy%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611218675000-->
+<p><a href="https://cn.nytimes.com/world/20210121/biden-world-democracy/">重返国际舞台，拜登将如何带领美国“与世界接触”</a>
+——</p>
+
+<div>
+  <div>
+<em>MARK LANDLER<br />2021-01-21 16:43:57</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20biden-world-ledesub/merlin_182558568_f8de25f1-9517-47d6-bfb0-79c44219a140-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">小约瑟夫·拜登和吉尔·拜登博士周二抵达安德鲁斯联合基地。有理由相信，拜登在国际舞台上将比许多人预期的更引人注目。</small>
+  </div>
+  <p>伦敦——十年前，小约瑟夫·R·拜登(Joseph R. Biden Jr.)大步走进雅典的一个接待室，与希腊总统会面。当时，希腊正深陷债务危机和与欧盟的紧张谈判僵局中。</p>
+  <p>“这个人是代表财政部的，”拜登故作严肃地指着他手下一名身穿灰色西装的代表团成员，对他的东道主说。“他带来了数亿美元。”</p>
+  <p>房间里爆发出一阵笑声：很明显，副总统并没有带着一公文包的现金来帮助希腊偿还债务。但他的笑话揭示了一个更深层次的真相——在2011年，许多人仍将美国视为国际秩序的终极担保人。而拜登显然认为自己是这一遗产的管理员，他轻松自信的表现，是40年来作为参议员行走世界的结果。</p>
+  <p>拜登周三宣誓就职时誓言，要“修复我们的盟友关系，再次与世界接触”，对许多海外人士来说，他们面临的问题是，是不是很快就能见到这么一个拥有世界格局的人。</p>
+  <p>从欧洲到亚洲，各国首都的外交官和外交政策专家都在质疑，美国是否太过分裂、太过虚弱、太过专注于内部动荡，而无法发挥出拜登作为参议员和副总统时认为理所当然的那种领导作用。</p>
+  <p>然而，我们有理由相信，拜登总统将比许多人预期的更显眼、更积极，尽管他仍在忙于应对疫情、庞大的经济复苏计划，以及特朗普时代留下的深刻分歧。了解拜登的人都说，从他为关键外交政策职位挑选的人选，到今年他有的出访机会来看，他都不太可能长期远离国际舞台。</p>
+  <p>“这是一个花了40年时间来认识世界各地的外国领导人的人，”奥巴马(Obama)执政期间曾作为英国驻华盛顿大使与拜登比邻而居的彼得·韦斯特马科特(Peter Westmacott)说。“一旦你品尝到了国际关系的滋味，你就不会背弃这一切。”</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20biden-world2/merlin_46094668_8926a8d9-9cbd-4154-afc9-470e0550d1ed-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">德国总理默克尔2011年在白宫与时任副总统拜登握手。</small>
+  </div>
+  <p>前德国驻美国大使<a rel="nofollow" target="_blank" href="https://www.eastwest.ngo/profile/amb-wolfgang-ischinger">沃尔夫冈·伊申格尔</a>(Wolfgang Ischinger)表示，他希望拜登能够利用自己的人际关系来修补被前总统唐纳德·J·特朗普(Donald J. Trump)破坏的欧洲盟友关系。</p>
+  <p>主持慕尼黑安全论坛(Munich Security Forum)的伊申格尔说：“乔·拜登是人际关系的大师，他将轻松地解决信任缺失的问题。”</p>
+  <p>伊申格尔的近期目标是说服总统参加他负责的这个富有影响力的年度会议。争取到拜登的机会不小：他多年来是慕尼黑会议的常客，最令人难忘的是在2009年，他宣布贝拉克·奥巴马总统想和俄罗斯按下“重启按钮”。</p>
+  <p>拜登在就职演说中说“世界在注视”。他承诺，美国将从最近的压力测试中“变得更加强大”。他承诺恢复美国的领导地位，他说：“我们将带头，不仅以我们的国力作为榜样，而且以我们作为榜样的力量。”</p>
+  <p>拜登的正式亮相很可能是在6月举行的七国集团领导人会议上，这次会议将在英国康沃尔的一个海滨度假胜地举行。他可能会将这次出行扩大到包括德国在内的其他欧洲目的地，在那里他可以趁着在任16年的总理安格拉·默克尔(Angela Merkel)离任前与她道别。</p>
+  <p>预计在秋天，拜登将出席在罗马举行的20国集团会议和在苏格兰格拉斯哥举行的联合国气候变化大会，在那里他可以展示他为重新加入《<a rel="nofollow" target="_blank" href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement">巴黎气候协定</a>》所做的行动。</p>
+  <p>在外交日程之外，专家们认为，拜登对团队的任命暗示着这届白宫不再是只关注自身。</p>
+  <p>例如，他选择<a rel="nofollow" target="_blank" href="https://theasiagroup.com/staff/kurt-m-campbell/">库特·M·坎贝尔</a>(Kurt M. Campbell)担任亚洲政策的高级协调人，可能预示对中国的强硬路线以及使美国盟友日本和韩国安心的积极努力。作为奥巴马政府的国务院官员，坎贝尔正是提出了“转向”亚洲的人。</p>
+  <p>布鲁金斯学会(Brookings Institution)外交政策专家<a rel="nofollow" target="_blank" href="https://www.brookings.edu/experts/thomas-wright/">托马斯·赖特</a>(Thomas Wright)表示：“拜登选择了了解并致力于战略竞争的人才。”</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20biden-world4/merlin_122914376_f7149e86-4845-46af-8d47-d63762a83bfc-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">特朗普总统于2017年退出《巴黎气候协定》。拜登周三扭转了这一行动，签署了重新加入的行政命令。</small>
+  </div>
+  <p>一些专家认为，国会大厦的混乱破坏了美国作为民主捍卫者的传统角色，而一系列的国内危机将消耗拜登的精力，对他的国际事务造成干扰。</p>
+  <p>“雄心勃勃的外交政策目标与美国国内政治和经济功能失调的现实完全不同调，”大西洋理事会高级研究员<a rel="nofollow" target="_blank" href="https://www.atlanticcouncil.org/expert/emma-ashford/">埃玛·阿什福德</a>(Emma Ashford)在《外交政策》(Foreign Policy)上写道。“如果美国自己几乎没有正常的民主，又如何传播民主或为他人树立榜样？”</p>
+  <p>但是赖特认为，本土对民主的威胁应使拜登政府增强打击中国、俄罗斯和其他专制政府侵犯人权的决心。</p>
+  <p>“我从来都不明白为什么要在国内和海外的抱负之间权衡，”他说。“正是由于民主制度在国内受到挑战，美国需要更加积极地捍卫海外的民主制度。”</p>
+  <p>曾担任奥巴马国家安全顾问的<a rel="nofollow" target="_blank" href="https://www.biography.com/political-figure/susan-rice" title="Link: https://www.biography.com/political-figure/susan-rice">苏珊·E·赖斯</a>(Susan E. Rice)被任命为拜登的国内政策委员会主任，进一步加强了国内政策与外交政策之间的联系。专家指出，像大流行这样的关键国内优先事项也是全球性挑战。</p>
+  <p>拜登的另一名高级助手、国家安全顾问杰克·沙利文(Jake Sullivan)在他的老板就职前，曾经用Twitter对敏感问题发表看法。他谴责<a rel="nofollow" target="_blank" href="https://twitter.com/jakejsullivan/status/1350893957375471628">俄罗斯逮捕反对派领袖阿列克谢·A·纳瓦尔尼</a>(Alexei A. Navalny)的行为，呼吁<a rel="nofollow" target="_blank" href="https://twitter.com/jakejsullivan/status/1341180109118726144">欧盟在与中国签署投资条约前三思</a>，并表示<a rel="nofollow" target="_blank" href="https://twitter.com/jakejsullivan/status/1350550304333438981">特朗普将也门的胡塞叛军列为恐怖组织</a>，“只会给也门人民带来更多苦难。”</p>
+  <p>当然，拜登政府是否会以行动来支持这些言论还有待观察。但一些人说，拜登的本能和气质，以及长期担任参议院外交关系委员会(Senate Foreign Relations Committee)成员的背景，让他不太可能放弃掌控世界舞台的机会。</p>
+  <p>担任副总统期间，他乐于同世界领导人接触。2011年访问土耳其时，曾有人怀疑正在手术康复中的雷杰普·塔伊普·埃尔多安(Recep Tayyip Erdogan)总统是否会接见他。相反，埃尔多安邀请拜登到自己的私人住所，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2011/12/04/world/europe/biden-parries-turkish-officials-economic-boast.html?searchResultPosition=4">两人穿着拖鞋，就叙利亚和伊朗问题谈了两个小时</a>。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/20/world/20biden-world3/merlin_181121766_c6324ee5-7b69-4a16-8bab-f968722e7cb2-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">拜登任命苏珊·赖斯领导其国内政策委员会。</small>
+  </div>
+  <p>“我不想让人觉得我在夸大自己的重要性或是与他的关系，”兴高采烈的拜登对记者说，“但我们听取了对方的意见。他是在真诚地听我说，并不是在挑战我的观点。”</p>
+  <p>在有些时候，拜登也为自己随时可以对外国领导人直言不讳而感到自豪。2009年，他在与阿富汗总统哈米德·卡尔扎伊(Hamid Karzai)共进晚餐时，因同对方就腐败问题展开激烈交锋而中途退席，这一事件广为人知。</p>
+  <p>2012年，时任中国副主席、被指定为未来领导人的习近平访问美国时，拜登受命接待他。在情人节那天的午餐上向习近平敬酒时，拜登列举了一连串的不满，从中国盗窃知识产权到侵犯人权。</p>
+  <p>“只有在公平的情况下，你我谈起的合作才能带来互惠，”在习近平的注视下，拜登说。</p>
+  <p>翌年访问中国时，拜登公开批评中国拒绝声明是否会为美国记者续签证，并封锁美国新闻媒体的网站。几年后，中国驱逐了《纽约时报》和其他出版物的记者。</p>
+  <p>当然，作为总统发言和作为副总统发言是不同的。2011年访问希腊期间，拜登曾考虑过评论希腊与欧盟之间财政紧张关系的风险。</p>
+  <p>“你知道，在我当参议员的美好时光里，我是自己做主的，”拜登当时对记者说。“我可以告诉你我的观点。但现在，无论我说什么都会被归于这届政府的立场。”</p>
+  <p>“我终于明白了，”现在已经成为政府领导人的拜登当时说。“我花了大约六个月的时间，但我记下来了。”</p>
+  <p>Mark Landler是《纽约时报》伦敦分社社长。他在为时报工作的27年间，曾任香港和法兰克福分社社长、白宫记者、外交记者、欧洲经济记者以及纽约商业记者。欢迎在Twitter上关注他 <a rel="nofollow" target="_blank" href="https://twitter.com/MarkLandler">@MarkLandler</a>。<br />翻译：Emily Chan、晋其角、邓妍<br /><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/20/world/americas/biden-world-democracy.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E4%B8%8D%E8%A6%81%E5%81%9A%E4%B8%AD%E5%9B%BD%E5%9C%A8%E6%96%B0%E7%96%86%E6%9A%B4%E8%A1%8C%E7%9A%84%E5%90%8C%E8%B0%8B">
+          不要做中国在新疆暴行的同谋
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E7%A7%B0%E4%B8%AD%E5%9B%BD%E5%9C%A8%E6%96%B0%E7%96%86%E7%8A%AF-%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E7%BD%AA%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+          美国称中国在新疆犯“种族灭绝”罪意味着什么
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93">
+          拜登就职演说：在危机与分裂中呼吁团结
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A6%BB%E4%BB%BB%E5%89%8D-%E6%8C%96%E5%9D%91-%E6%8B%9C%E7%99%BB%E9%9D%A2%E4%B8%B4%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%9A%BE%E9%A2%98">
+          特朗普离任前“挖坑”，拜登面临对华政策难题
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E5%8F%B0%E6%B9%BE%E9%A9%BB%E7%BE%8E%E4%BB%A3%E8%A1%A8%E8%90%A7%E7%BE%8E%E7%90%B4-%E5%8E%86%E5%8F%B2%E6%80%A7-%E8%8E%B7%E9%82%80%E5%87%BA%E5%B8%AD%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E7%9A%84%E8%83%8C%E5%90%8E">
+            前一篇：台湾驻美代表萧美琴“历史性”获邀出席美国总统就职典礼的背后
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E7%AD%BE%E5%A4%9A%E9%A1%B9%E8%A1%8C%E6%94%BF%E4%BB%A4%E6%8E%A8%E7%BF%BB%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E7%AD%96-%E5%9B%BD%E5%86%85-%E4%BF%AE%E5%A4%8D-%E4%B8%BA%E5%85%B6%E6%89%A7%E6%94%BF%E6%A0%B8%E5%BF%83">
+            后一篇：拜登签多项行政令推翻特朗普政策 国内“修复”为其执政核心
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E5%8F%B0%E6%B9%BE%E9%A9%BB%E7%BE%8E%E4%BB%A3%E8%A1%A8%E8%90%A7%E7%BE%8E%E7%90%B4-%E5%8E%86%E5%8F%B2%E6%80%A7-%E8%8E%B7%E9%82%80%E5%87%BA%E5%B8%AD%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E7%9A%84%E8%83%8C%E5%90%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E7%AD%BE%E5%A4%9A%E9%A1%B9%E8%A1%8C%E6%94%BF%E4%BB%A4%E6%8E%A8%E7%BF%BB%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E7%AD%96-%E5%9B%BD%E5%86%85-%E4%BF%AE%E5%A4%8D-%E4%B8%BA%E5%85%B6%E6%89%A7%E6%94%BF%E6%A0%B8%E5%BF%83'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E7%A7%B0%E4%B8%AD%E5%9B%BD%E5%9C%A8%E6%96%B0%E7%96%86%E7%8A%AF-%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E7%BD%AA%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E5%8F%B0%E6%B9%BE%E9%A9%BB%E7%BE%8E%E4%BB%A3%E8%A1%A8%E8%90%A7%E7%BE%8E%E7%90%B4-%E5%8E%86%E5%8F%B2%E6%80%A7-%E8%8E%B7%E9%82%80%E5%87%BA%E5%B8%AD%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E7%9A%84%E8%83%8C%E5%90%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E7%AD%BE%E5%A4%9A%E9%A1%B9%E8%A1%8C%E6%94%BF%E4%BB%A4%E6%8E%A8%E7%BF%BB%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E7%AD%96-%E5%9B%BD%E5%86%85-%E4%BF%AE%E5%A4%8D-%E4%B8%BA%E5%85%B6%E6%89%A7%E6%94%BF%E6%A0%B8%E5%BF%83">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E7%A7%B0%E4%B8%AD%E5%9B%BD%E5%9C%A8%E6%96%B0%E7%96%86%E7%8A%AF-%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E7%BD%AA%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4-%E5%9C%A8%E5%8D%B1%E6%9C%BA%E4%B8%8E%E5%88%86%E8%A3%82%E4%B8%AD%E5%91%BC%E5%90%81%E5%9B%A2%E7%BB%93">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

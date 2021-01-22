@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+" />
+    <meta property="og:description" content="
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者" />
+    <meta property="twitter:title" content="简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210118%2Fhong-kong-protesters-us-china-jilin-coronavirus%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%BA%94%E5%90%8D%E9%A6%99%E6%B8%AF%E6%8A%97%E8%AE%AE%E8%80%85%E8%B5%B4%E7%BE%8E%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4%EF%BC%9B%E5%90%89%E6%9E%97%E5%87%BA%E7%8E%B0%E8%B6%85%E7%BA%A7%E4%BC%A0%E6%92%AD%E8%80%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210118%2Fhong-kong-protesters-us-china-jilin-coronavirus%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%BA%94%E5%90%8D%E9%A6%99%E6%B8%AF%E6%8A%97%E8%AE%AE%E8%80%85%E8%B5%B4%E7%BE%8E%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4%EF%BC%9B%E5%90%89%E6%9E%97%E5%87%BA%E7%8E%B0%E8%B6%85%E7%BA%A7%E4%BC%A0%E6%92%AD%E8%80%85&d=2021-01-17&e=
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-18 09:57:30
+  
+  
+去年，中国政府在香港实施的国安法扼杀了许多形式的政治异见。
+  
+  • 逃离香港的抗议者在美国寻求庇护。五名去年乘船逃往台湾的香港抗议者上周抵达纽约，其中一名男子表示，他们在台湾被扣押在一个军事基地，尽管受到良好对待，但不能与家人和朋友联系，美国将是他们开启新生活的机会。他们的到来可能会进一步加剧中美紧张关系，给即将上任的拜登政府带来挑战。
+  • 大陆背景商人在香港创建紫荆党，引发激烈猜测。这个政党由从内地移居香港的企业高管领导，呼吁社会稳定、恢复受损经济、鼓励年轻人爱国。泛民派对新政党的成立充满敌意，建制派也同样感到不安。许多人想知道，中央是否会抛弃传统的权力掮客，转而支持更有效或更值得信赖的人。
+  • 吉林超级传播..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210118%2Fhong-kong-protesters-us-china-jilin-coronavirus%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/&text=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/&title=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/&title=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者&body=
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/&title=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者&caption=
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者&url=https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210118%2Fhong-kong-protesters-us-china-jilin-coronavirus%2F&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%BA%94%E5%90%8D%E9%A6%99%E6%B8%AF%E6%8A%97%E8%AE%AE%E8%80%85%E8%B5%B4%E7%BE%8E%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4%EF%BC%9B%E5%90%89%E6%9E%97%E5%87%BA%E7%8E%B0%E8%B6%85%E7%BA%A7%E4%BC%A0%E6%92%AD%E8%80%85&d=2021-01-17&e=
+简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者
+——
+
+
+  
+KONEY BAI,KONEY BAI2021-01-18 09:57:30
+  
+  
+去年，中国政府在香港实施的国安法扼杀了许多形式的政治异见。
+  
+  • 逃离香港的抗议者在美国寻求庇护。五名去年乘船逃往台湾的香港抗议者上周抵达纽约，其中一名男子表示，他们在台湾被扣押在一个军事基地，尽管受到良好对待，但不能与家人和朋友联系，美国将是他们开启新生活的机会。他们的到来可能会进一步加剧中美紧张关系，给即将上任的拜登政府带来挑战。
+  • 大陆背景商人在香港创建紫荆党，引发激烈猜测。这个政党由从内地移居香港的企业高管领导，呼吁社会稳定、恢复受损经济、鼓励年轻人爱国。泛民派对新政党的成立充满敌意，建制派也同样感到不安。许多人想知道，中央是否会抛弃传统的权力掮客，转而支持更有效或更值得信赖的人。
+  • 吉林超级传播..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fmorning-brief%2F20210118%2Fhong-kong-protesters-us-china-jilin-coronavirus%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610937872000-->
+<p><a href="https://cn.nytimes.com/morning-brief/20210118/hong-kong-protesters-us-china-jilin-coronavirus/">简报：五名香港抗议者赴美寻求庇护；吉林出现超级传播者</a>
+——</p>
+
+<div>
+  <div>
+<em>KONEY BAI,KONEY BAI<br />2021-01-18 09:57:30</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/16/world/16hongkong-activists1/merlin_178316487_509c695c-545c-49ef-88ed-5f93c704658b-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">去年，中国政府在香港实施的国安法扼杀了许多形式的政治异见。</small>
+  </div>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/asia/hong-kong-us-asylum.html">逃离香港的抗议者在美国寻求庇护</a>。五名去年乘船逃往台湾的香港抗议者上周抵达纽约，其中一名男子表示，他们在台湾被扣押在一个军事基地，尽管受到良好对待，但不能与家人和朋友联系，美国将是他们开启新生活的机会。他们的到来可能会进一步加剧中美紧张关系，给即将上任的拜登政府带来挑战。</p>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/asia/hongkong-politics-bauhinia.html">大陆背景商人在香港创建紫荆党</a>，引发激烈猜测。这个政党由从内地移居香港的企业高管领导，呼吁社会稳定、恢复受损经济、鼓励年轻人爱国。泛民派对新政党的成立充满敌意，建制派也同样感到不安。许多人想知道，中央是否会抛弃传统的权力掮客，转而支持更有效或更值得信赖的人。</p>
+  <p>• 吉林超级传播者以一传百：<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/17/world/covid-19-coronavirus/chinese-officials-trace-a-growing-new-outbreak-to-a-salesman-hawking-health-products">疫情追溯至一名保健品推销员</a>。据官方通报，该名培训讲师曾在六天内展开四场针对中老年人的营销活动，共有79名活动参与者新冠检测呈阳性，另有23名密切接触者被感染。当局称正在对涉事养生馆进行调查。在日渐老龄化的中国社会，养生正成为一个有利可图的行业。</p>
+  <p>• 白宫候任幕僚长警告，美国新冠死亡人数<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/17/world/Covid-deaths-Biden.html">可能在2月底达到50万</a>。疾控中心称，变种毒株可能成为未来几月的主要感染源。目前全美新冠死亡病例已接近40万宗，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/15/world/covid19-coronavirus">全球死亡人数已超过200万</a>。</p>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/15/world/india-covid-vaccine.html">印度启动新冠疫苗接种运动</a>。莫迪承诺，将在7月前为3亿名医护人员和一线工作人员接种疫苗，包括警察、教师等，但该国当前仅购买了1100万剂阿斯利康疫苗和550万剂国产疫苗。印度报告的感染病例超过1050万宗，仅次于美国，死亡人数超过15万，居世界第三。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/business/15Newworld-illo/15Newworld-illo-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>• 新新世界：被社交平台封杀的特朗普在中国找到支持者。时报科技专栏作家袁莉写到，特朗普支持者将此事与中国的言论审查相提并论；官方宣传机器则模糊了政府与私营企业的区别，宣称世界上没有人真正享有言论自由，这给了中共更大的道德权威来镇压言论。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/business/20210115/trump-china-censorship/">阅读本文中文版</a>）</p>
+  <p>• 观点：社交媒体封杀特朗普也许有效，但代价是什么？关停特朗普的社交媒体帐户真的会避免更多的暴力吗？此事对美国网络自由表达的现状有何启示？我们总结了来自各方人士对此事的看法和思考。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/opinion/20210115/trump-deplatform-twitter/">阅读本文中文版</a>）</p>
+  <p>• 关于总统就职日，你需要知道的七个关键问题。拜登将于1月20日在一个缩减规模的就职典礼上成为美国总统。尽管关键元素仍将保持，但许多活动将被“重新设计”，华盛顿也正在为可能发生的骚乱做准备。（<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/usa/20210115/inauguration-day/">阅读本文中文版</a>）</p>
+  <p>• 拜登上台后，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/16/us/inauguration-day-biden/biden-plans-to-roll-out-dozens-of-executive-orders-in-his-first-10-days-as-president">将首先推翻特朗普哪些政策</a>？根据侯任幕僚长的一份备忘录，拜登计划立即采取以下行动：重新加入巴黎气候变化协定、对跨州旅行下达口罩佩戴令、解除数个穆斯林国家的旅行禁令等。拜登即将接手的是一系列前所未有的棘手危机，他的就职典礼也面临暴力威胁。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/17/world/18ambriefing-asia-navalny/merlin_182449089_f84003ff-2704-40c7-803e-542ff6d83356-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">纳瓦尔尼登上飞往莫斯科的飞机。</small>
+  </div>
+  <p>• 俄罗斯反对派领袖<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/17/world/europe/navalny-russia-return.html">纳瓦尔尼回国后立即被捕</a>。俄罗斯监狱管理局发表声明称，他违反了之前的缓刑规定，已被拘留，正在等待法庭聆讯。自去年8月疑似被投毒以来，纳瓦尔尼一直在德国就医。他的被捕可能会引发抗议和国际社会的强烈反应。</p>
+  <p>• 默克尔的潜在接班者：<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/europe/angela-merkel-party-leader.html">基民盟选出新任主席</a>。阿明·拉舍特是默克尔的亲密盟友，被认为是党内偏自由派人士。他希望在秋季选举中接替默克尔的职位，但这还远不能确定。分析人士指出，当默克尔真的要离任时，该党的支持率可能会下降。</p>
+  <p> • 乌干达大选结果出炉：<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/africa/uganda-election-results.html">总统约韦里·穆塞韦尼将继续连任</a>。穆塞韦尼打败了其主要竞争对手反对派议员兼流行歌手波比·瓦恩，即将开启第六个五年任期。独立国际观察者称，本次选举并不公平。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/world/15nkorea-1/merlin_182344404_cc49522c-ac09-4bb5-acfb-46f27da9dddc-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">朝鲜官方媒体发布的阅兵式现场照片。</small>
+  </div>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/15/world/asia/north-korea-missile-biden.html">朝鲜展示新型潜射弹道导弹</a>。朝鲜于上周四晚间在平壤举行大阅兵，毫不掩饰地展示了其最新武器库。对于即将执政的拜登政府来说，他们即将面临的是一个比四年前奥巴马总统卸任时更为大胆、更为危险的朝鲜。</p>
+  <p>• <a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/14/fashion/watches-china-swiss-export-leader.html">中国首次成为瑞士钟表最大进口国</a>。随着大流行对全球经济和国际旅行造成冲击，中国奢侈品消费者转向在国内购物。根据瑞士钟表业联合会发布的最新数据，2020年1月至11月，瑞士钟表对中国大陆的出口总额约为23.9亿美元，比上一年同期增长17.1%，而在同一时期，该排名中前20位的其他市场均录得两位数跌幅。</p>
+  <p>• 尼泊尔登山队<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/16/world/asia/k2-summit-climbers.html">首次在冬季登顶世界第二高峰</a>。乔戈里峰海拔8611米，仅次于珠穆朗玛峰；气温最低可达零下60摄氏度。这是人类有记录以来首次在冬天完成这一挑战。</p>
+  <p><em>感谢阅读今天的简报</em><em>，新读者请</em><em><a rel="nofollow" target="_blank" href="https://sso.nytcn.me/email/?source=top-right">点击此处订阅</a>。点击<a rel="nofollow" target="_blank" href="https://cn.nytimes.com/morning-brief/">这里</a>查看往日更新</em><em>。</em><em>欢迎在Twitter(</em><a rel="nofollow" target="_blank" href="https://twitter.com/nytchinese"><em>@nytchinese</em></a><em>)、</em><a rel="nofollow" target="_blank" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw"><em>Instagram</em></a><em>和</em><a rel="nofollow" target="_blank" href="https://www.facebook.com/nytimeschinese.t/"><em>Facebook</em></a><em>上关注我们，了解更多中文资讯。也欢迎访问中文网</em><a rel="nofollow" target="_blank" href="https://cn.nytimes.com/"><em>首页</em></a><em>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E4%BA%94%E5%90%8D%E9%80%83%E7%A6%BB%E9%A6%99%E6%B8%AF%E7%9A%84%E6%8A%97%E8%AE%AE%E8%80%85%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4">
+          五名逃离香港的抗议者在美国寻求庇护
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+          香港新政党紫荆党搅动政界，背景目的引发争议
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%B0%81%E6%9D%80%E7%89%B9%E6%9C%97%E6%99%AE%E4%B9%9F%E8%AE%B8%E6%9C%89%E6%95%88-%E4%BD%86%E4%BB%A3%E4%BB%B7%E6%98%AF%E4%BB%80%E4%B9%88">
+          社交媒体封杀特朗普也许有效，但代价是什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E8%A2%AB%E7%A4%BE%E4%BA%A4%E5%B9%B3%E5%8F%B0%E5%B0%81%E6%9D%80%E7%9A%84%E7%89%B9%E6%9C%97%E6%99%AE%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%89%BE%E5%88%B0%E6%94%AF%E6%8C%81%E8%80%85">
+          被社交平台封杀的特朗普在中国找到支持者
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%A1%E9%A9%AC%E6%8B%89-%E5%93%88%E9%87%8C%E6%96%AF%E5%88%9B%E9%80%A0%E5%8E%86%E5%8F%B2">
+            前一篇：卡马拉·哈里斯创造历史
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+            后一篇：香港新政党紫荆党搅动政界，背景目的引发争议
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%A1%E9%A9%AC%E6%8B%89-%E5%93%88%E9%87%8C%E6%96%AF%E5%88%9B%E9%80%A0%E5%8E%86%E5%8F%B2'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-15/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%B0%81%E6%9D%80%E7%89%B9%E6%9C%97%E6%99%AE%E4%B9%9F%E8%AE%B8%E6%9C%89%E6%95%88-%E4%BD%86%E4%BB%A3%E4%BB%B7%E6%98%AF%E4%BB%80%E4%B9%88'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E5%8D%A1%E9%A9%AC%E6%8B%89-%E5%93%88%E9%87%8C%E6%96%AF%E5%88%9B%E9%80%A0%E5%8E%86%E5%8F%B2">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-17/%E9%A6%99%E6%B8%AF%E6%96%B0%E6%94%BF%E5%85%9A%E7%B4%AB%E8%8D%86%E5%85%9A%E6%90%85%E5%8A%A8%E6%94%BF%E7%95%8C-%E8%83%8C%E6%99%AF%E7%9B%AE%E7%9A%84%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-15/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%B0%81%E6%9D%80%E7%89%B9%E6%9C%97%E6%99%AE%E4%B9%9F%E8%AE%B8%E6%9C%89%E6%95%88-%E4%BD%86%E4%BB%A3%E4%BB%B7%E6%98%AF%E4%BB%80%E4%B9%88">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

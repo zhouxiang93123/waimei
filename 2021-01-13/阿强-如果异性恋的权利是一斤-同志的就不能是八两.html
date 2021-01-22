@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>阿强：如果异性恋的权利是一斤，同志的就不能是八两！ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+" />
+    <meta property="og:description" content="
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="阿强：如果异性恋的权利是一斤，同志的就不能是八两！" />
+    <meta property="twitter:title" content="阿强：如果异性恋的权利是一斤，同志的就不能是八两！" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2598%25bf%25e5%25bc%25ba%25ef%25bc%259a%25e5%25a6%2582%25e6%259e%259c%25e5%25bc%2582%25e6%2580%25a7%25e6%2581%258b%25e7%259a%2584%25e6%259d%2583%25e5%2588%25a9%25e6%2598%25af%25e4%25b8%2580%25e6%2596%25a4%25ef%25bc%258c%25e5%2590%258c%25e5%25bf%2597%25e7%259a%2584%25e5%25b0%25b1%25e4%25b8%258d%25e8%2583%25bd%25e6%2598%25af%2F&t=%E9%98%BF%E5%BC%BA%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%BC%82%E6%80%A7%E6%81%8B%E7%9A%84%E6%9D%83%E5%88%A9%E6%98%AF%E4%B8%80%E6%96%A4%EF%BC%8C%E5%90%8C%E5%BF%97%E7%9A%84%E5%B0%B1%E4%B8%8D%E8%83%BD%E6%98%AF%E5%85%AB%E4%B8%A4%EF%BC%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2598%25bf%25e5%25bc%25ba%25ef%25bc%259a%25e5%25a6%2582%25e6%259e%259c%25e5%25bc%2582%25e6%2580%25a7%25e6%2581%258b%25e7%259a%2584%25e6%259d%2583%25e5%2588%25a9%25e6%2598%25af%25e4%25b8%2580%25e6%2596%25a4%25ef%25bc%258c%25e5%2590%258c%25e5%25bf%2597%25e7%259a%2584%25e5%25b0%25b1%25e4%25b8%258d%25e8%2583%25bd%25e6%2598%25af%2F&t=%E9%98%BF%E5%BC%BA%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%BC%82%E6%80%A7%E6%81%8B%E7%9A%84%E6%9D%83%E5%88%A9%E6%98%AF%E4%B8%80%E6%96%A4%EF%BC%8C%E5%90%8C%E5%BF%97%E7%9A%84%E5%B0%B1%E4%B8%8D%E8%83%BD%E6%98%AF%E5%85%AB%E4%B8%A4%EF%BC%81&d=2021-01-13&e=
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+
+
+  1
+  大雾笼罩着整个县城，开往省城的中巴车5：30发车。
+  下过雪之后的早晨，窗外寒风刺骨，中巴车的玻璃上结了一层热气，除了几位送客的亲属，远处的早点摊上，已经冒起了炊烟。
+  我坐在客车的最后一排，用衣袖把后窗玻璃上的热气擦了擦，车缓缓启动，我看到他在向我挥手告别，我也向他挥手。能见度只有几十米，他追着车跑了几步，很快就消失在我的视线里。
+  泪水淌满了脸颊，旁边座位上的旅客看着我，我低下头，擦去泪水，压抑着自己的情绪。22年过去了，这一幕时常会浮现在我的脑海里。
+  那是1998年春节，流氓罪刚刚从《刑法》中删除，离同性恋不再被当成精神病，还差3年。
+  他是我的初恋，我们交往的时候，无论爱有多么美好，总有一个念头跳出来，“我们这是有病吧？”，那时候，同性恋不叫“同性恋”，叫“同性恋患者”。
+  羞耻和愧疚伴..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2598%25bf%25e5%25bc%25ba%25ef%25bc%259a%25e5%25a6%2582%25e6%259e%259c%25e5%25bc%2582%25e6%2580%25a7%25e6%2581%258b%25e7%259a%2584%25e6%259d%2583%25e5%2588%25a9%25e6%2598%25af%25e4%25b8%2580%25e6%2596%25a4%25ef%25bc%258c%25e5%2590%258c%25e5%25bf%2597%25e7%259a%2584%25e5%25b0%25b1%25e4%25b8%258d%25e8%2583%25bd%25e6%2598%25af%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/&text=阿强：如果异性恋的权利是一斤，同志的就不能是八两！&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/&title=阿强：如果异性恋的权利是一斤，同志的就不能是八两！" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/&title=阿强：如果异性恋的权利是一斤，同志的就不能是八两！" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=阿强：如果异性恋的权利是一斤，同志的就不能是八两！&body=
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/&title=阿强：如果异性恋的权利是一斤，同志的就不能是八两！&caption=
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=阿强：如果异性恋的权利是一斤，同志的就不能是八两！&url=https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>阿强：如果异性恋的权利是一斤，同志的就不能是八两！</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2598%25bf%25e5%25bc%25ba%25ef%25bc%259a%25e5%25a6%2582%25e6%259e%259c%25e5%25bc%2582%25e6%2580%25a7%25e6%2581%258b%25e7%259a%2584%25e6%259d%2583%25e5%2588%25a9%25e6%2598%25af%25e4%25b8%2580%25e6%2596%25a4%25ef%25bc%258c%25e5%2590%258c%25e5%25bf%2597%25e7%259a%2584%25e5%25b0%25b1%25e4%25b8%258d%25e8%2583%25bd%25e6%2598%25af%2F&t=%E9%98%BF%E5%BC%BA%EF%BC%9A%E5%A6%82%E6%9E%9C%E5%BC%82%E6%80%A7%E6%81%8B%E7%9A%84%E6%9D%83%E5%88%A9%E6%98%AF%E4%B8%80%E6%96%A4%EF%BC%8C%E5%90%8C%E5%BF%97%E7%9A%84%E5%B0%B1%E4%B8%8D%E8%83%BD%E6%98%AF%E5%85%AB%E4%B8%A4%EF%BC%81&d=2021-01-13&e=
+阿强：如果异性恋的权利是一斤，同志的就不能是八两！
+——
+
+
+  1
+  大雾笼罩着整个县城，开往省城的中巴车5：30发车。
+  下过雪之后的早晨，窗外寒风刺骨，中巴车的玻璃上结了一层热气，除了几位送客的亲属，远处的早点摊上，已经冒起了炊烟。
+  我坐在客车的最后一排，用衣袖把后窗玻璃上的热气擦了擦，车缓缓启动，我看到他在向我挥手告别，我也向他挥手。能见度只有几十米，他追着车跑了几步，很快就消失在我的视线里。
+  泪水淌满了脸颊，旁边座位上的旅客看着我，我低下头，擦去泪水，压抑着自己的情绪。22年过去了，这一幕时常会浮现在我的脑海里。
+  那是1998年春节，流氓罪刚刚从《刑法》中删除，离同性恋不再被当成精神病，还差3年。
+  他是我的初恋，我们交往的时候，无论爱有多么美好，总有一个念头跳出来，“我们这是有病吧？”，那时候，同性恋不叫“同性恋”，叫“同性恋患者”。
+  羞耻和愧疚伴..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e9%2598%25bf%25e5%25bc%25ba%25ef%25bc%259a%25e5%25a6%2582%25e6%259e%259c%25e5%25bc%2582%25e6%2580%25a7%25e6%2581%258b%25e7%259a%2584%25e6%259d%2583%25e5%2588%25a9%25e6%2598%25af%25e4%25b8%2580%25e6%2596%25a4%25ef%25bc%258c%25e5%2590%258c%25e5%25bf%2597%25e7%259a%2584%25e5%25b0%25b1%25e4%25b8%258d%25e8%2583%25bd%25e6%2598%25af%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610591953000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/">阿强：如果异性恋的权利是一斤，同志的就不能是八两！</a>
+——</p>
+
+<div>
+  <p><strong>1</strong></p>
+  <p>大雾笼罩着整个县城，开往省城的中巴车5：30发车。</p>
+  <p>下过雪之后的早晨，窗外寒风刺骨，中巴车的玻璃上结了一层热气，除了几位送客的亲属，远处的早点摊上，已经冒起了炊烟。</p>
+  <p>我坐在客车的最后一排，用衣袖把后窗玻璃上的热气擦了擦，车缓缓启动，我看到他在向我挥手告别，我也向他挥手。能见度只有几十米，他追着车跑了几步，很快就消失在我的视线里。</p>
+  <p>泪水淌满了脸颊，旁边座位上的旅客看着我，我低下头，擦去泪水，压抑着自己的情绪。22年过去了，这一幕时常会浮现在我的脑海里。</p>
+  <p>那是1998年春节，流氓罪刚刚从《刑法》中删除，离同性恋不再被当成精神病，还差3年。</p>
+  <p>他是我的初恋，我们交往的时候，无论爱有多么美好，总有一个念头跳出来，“我们这是有病吧？”，那时候，同性恋不叫“同性恋”，叫“同性恋患者”。</p>
+  <p>羞耻和愧疚伴随着爱与温暖，交往每深入一步，内心的纠结和迷茫就多一分。每天晚上，我们总要问彼此，我们以后该怎么办呢？</p>
+  <p>因为从没有见过第三个同性恋，我以为这个世界上，只有自己如此不堪。</p>
+  <p>“我们这样是没有未来的”，每天，我都要提醒自己，想要通过这种自我的恐吓，来战胜内心深处的那份爱和欲念。</p>
+  <p>最后，我决心离开，我要离他远远的，最好永不相见，我要过正常人的生活。</p>
+  <p><strong>2</strong></p>
+  <p>我选择了广州。一是这座城市离我的家乡够远，二是广州在上个时代，是时髦的代名词。在潜意识里，我希望这个城市，能容下我的与众不同。<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661473-5fffaed39b650.png" alt="img" width="500" class="aligncenter" /></p>
+  <p><em>来广州第一年的阿强</em></p>
+  <p>在度过了前两个月的紧张期之后，我的工作很快稳定下来。并在1998年中，买了电脑，链上了互联网，人生有了更大的改变。</p>
+  <p>那时候SOHU还是门户老大，首页上布满分类链接。我鬼始神差般的点开“两性”，下面分男性和女性，我又点了“男性”，下面有异性恋和同性恋。</p>
+  <p>看到“同性恋”三个字的时候，我有一种“天亮了”的感觉。我点了进去，已经有了300多个同性恋网站，其中大部分是英文的。</p>
+  <p>我看到李银河的书说，同性恋占人口的5%左右，中国有几千万同性恋，那个数字，让我突然有了解放的感觉，我藏着多年的秘密，不敢跟任何人说，突然知道身边有几千万人跟我一样，内心里一个声音激动地喊，“那我还怕啥啊！”</p>
+  <p>我又把初恋叫到广州来了，我们一起工作。那段时间，我特别相信，经济决定人的独立性。我们努力工作，改善自己的财务状况。</p>
+  <p>但我不敢想象，我可以为同志社群，做什么实质的帮助。在网上聊天时，我总在说，要是有一个名人出柜就好了，要是有一个权力者出柜就好了。我觉得只有他们，才能引起社会的关注和讨论，我自己，一个草根青年，不具有力量带来改变。</p>
+  <p>我等待了两年，也没有见到什么名人和权力者出柜。随着事业的发展，我有了更多业余时间，我先是给一家叫“中同新闻网”的同志网站写文章，然后，看到“广同”网上有招募热线的志愿者广告，我报了名。</p>
+  <p><strong>3</strong></p>
+  <p>志愿者面试选在人民公园。</p>
+  <p>热线负责人在电话中告诉我，他会在人民公园鲁迅头像下等我，到时他会手拿一本杂志，让我找不到，就打他电话，听上去像一次秘密接头。</p>
+  <p>作为一个外省青年，尽管我来广州已有三年，我根本不知道人民公园在哪里，我赶紧打车过去。</p>
+  <p>到了之后，我拨打那位热线负责人的电话，他告诉我，他就在鲁迅头像附近，已经观察我很久了。听他这样说，我有点脊背发凉。</p>
+  <p>简单的交流之后，我被录取了，我的表达能力，让他相信我能做好热线的接听工作。热线电话，就设置在他的家里，我需要坐地铁一号线，穿过半个广州城，每周两次去做接线员。</p>
+  <p>每等到一个电话打进来，我就有开张了的兴奋感。那时候我的经历单簿，除了讲大道理，几乎帮不到来电者，但来电者好像并不在意，他们从全国的某个角落里打进来，打电话之前，要先做好保密工作，确认身边无人才敢打，他们其实根本不需要我给什么建议，他们要的是说出自己的故事，有另一个人倾听就够了。就像当年的我一样，确认这个世界上，还有跟自己一样的人，就很满足了。</p>
+  <p>热线有时候讲几句就突然挂了，因为来电者身边有人走过，或者家人提前回来了。那是同性恋需要偷偷摸摸的时代，同性倾向要是别人知道了，担心会身败名裂。</p>
+  <p>接热线的经历，带给我很多的思考，我要什么样的生活，我要走进异性婚姻吗？我要过来电者描述的，每晚都不想回家，害怕晚上被妻子拥抱，全身起鸡皮疙瘩的日子吗？</p>
+  <p>与其说接热线是我在帮助他们，不如说，他们的分享帮助了我。</p>
+  <p><strong>4</strong></p>
+  <p>2004年，博客开始兴起。 我把自己的生活和做志愿者时遇到的故事，写到了博客上，我的博客叫《夫夫生活》。因为认真写作，经常有一些文章会被推荐到新浪首页，很快有了千万级的点击量。</p>
+  <p>很多人留言说，我在博客上分享的生命故事，给了TA力量。</p>
+  <p>现在回头看，写博客对我是重要的自我成长，我从讲述自己的故事，到写别人的故事，再到写评论，给媒体写专栏 。不仅训练了我的写作能力，也让我对同志社群有了更多的了解。</p>
+  <p>从2003年到2008年，我在智行基金会做了5年的志愿者，帮助机构做媒体传播。也让我有机会从线上走到线下，对社群有了更直观的了解。</p>
+  <p>我原以为，一边做好自己的事业，一边花点时间做志愿者，我能为社群做的也就这么多了。 但人生中的很多经历，会把我们带向不同的地方。</p>
+  <p>2006年的时候，我妈妈突然被检查出了胃癌晚期。我从广州赶回老家。</p>
+  <p>手术进行到15分钟的时候，医生推开手术室的小窗户，向我招了招手，“对不起，兄弟，癌细胞已经转移了，我们只能缝合上。”看着医生关上手术室的那扇窗户，我知道，他关闭的，还有我母亲的生命。</p>
+  <p>手术后第三天，母亲的病房里挤满了家人。在我们几个兄妹工作后，这是难得的一次都凑在一起。我试图讲几件开心事，让压抑的气氛能轻松一点。尽管满身病痛，母亲很快受到了我们情绪的感染。她带着撒娇的语调说，“你们都回来了，我很高兴，我现在就担心一件事。”“你可别担心那么多，有啥好担心的？”我想安慰她。</p>
+  <p>“我就担心你一个人，没有人照顾。他们几个都结婚了，我不用再操心了，要是我过不了这一关，死了……”母亲话未说完，泪水掉了下来。</p>
+  <p><strong>5</strong></p>
+  <p>在母亲去世前的几个月里，我都在要不要告诉她我的真实生活，还是继续隐瞒之间犹犹豫豫。</p>
+  <p>我最终没有告诉她。</p>
+  <p>好长一段时间，我内心深处充满着对母亲的愧疚，因为勇气不足，我没有跟她分享我最真实的人生。这个我最珍视和最珍爱的人，却活在我的生活之外。</p>
+  <p>这份人生遗憾，同志社群很多人都曾经历。无论我们在外人面前如何坦诚，但在父母面前却假扮另外一个人。</p>
+  <p>如何能改变这个状况呢？让那些我们最不愿伤害的人，我们最害怕面对的人，能站在我们身后，让我们有力量，有勇气，能自信地去做自己？如何才能更系统性的解决这个社会问题呢？</p>
+  <p>带着这份缘分，2008年，我和吴幼坚阿姨一起创办了亲友会。</p>
+  <p>从给别的公益组织做志愿者，到创办一个新的组织，要操更多的心，角色的转换，责任的增加，让我开始学习公益组织的运营。</p>
+  <p>2008年，也注定是我生命中最不平凡的一年，6月，我参与创办亲友会，8月，我跟初恋为13年的感情划上句号。</p>
+  <p>有三个月时间，我在家里拉上窗帘，蒙着毯子，躺在沙发上，自我哀怜。我甚至怀疑公益的意义，我为之努力了很多年，甚至难以改变自己身边的人。</p>
+  <p><strong>6</strong></p>
+  <p>我进入了一段自我怀疑的时间。</p>
+  <p>之后的一年多，我一边忙着自己的生意，一边做交友网站“夫夫网”，一边做亲友会。</p>
+  <p>人生进入到30岁的阶段了，我最想做的是什么？反复的思考之后，我决定做减法。我关闭了夫夫网，花更多时间自学英语，希望有机会去看看更大的世界。</p>
+  <p>2011年春天，我获得了去洛杉矶同志中心实习的机会，第一次更清晰的知道，如何发展和运营公益组织。回国之后，我下决心，把原来生意也转了出去，全身心的投入同志公益。</p>
+  <p>人生进入新的阶段。不过，并非一帆风顺。</p>
+  <p>做社群工作既婆婆妈妈，又纷纷扰扰，中间好几次想要放弃。</p>
+  <p>2015年，我差点就离开了。当时谈好了天使投资，准备去做另一件事情。到真的要离开的时候，又觉得，亲友会还没有做好，内心里很痛苦。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661473-5fffaed3ca5cc.png" alt="img" width="500" class="aligncenter" /></p>
+  <p>2015年，阿强前往驻马店解救一位被家人送到精神病院的男同性恋者</p>
+  <p>四月份在北京，我参加了一个公益活动，一位来自东北的银杏伙伴万小白，分享她和父亲这些年来治沙的经历，她就用了几张图片。第一年，四周都是沙，到了第五年，慢慢有了一块绿色，到了第十年，绿洲慢慢的扩大了，讲到第十五年的时候，我看到图片上，绿草悠悠，还有一些小鸡在散步，我的眼泪不能自已。</p>
+  <p>我被小白和父亲那份坚持的力量所打动。 之后，我去了西北旅行，火车在戈壁滩穿过，已是五月，一小片一小片的绿草，在戈壁上长出来。我打电话给我的老师，说我看到的景像，还有那位朋友在沙漠上种草的故事，以及我内心的纠结。</p>
+  <p>他说，“阿强，你的工作也是在种草，而且你已经种出了一小片一小片的草，我已经看到了那些变化，再坚持一些时间，这些草就能连成片。”</p>
+  <p>他的话击中了我，看着窗外变幻的风景，任泪水流淌。西北回来，我决定留在亲友会，继续工作。<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661473-5fffaed3f1819." alt="img" width="500" class="aligncenter" /></p>
+  <p>亲友会家长志愿者们的日常工作记录（2008.08.18）</p>
+  <p>7</p>
+  <p>这几年，大环境又有一些变化。春江水暖鸭先知，作为一线的行动者，几年前就感知到了。我总是告诫自己和团队，唯有拥抱变化，亲友会才能活下来，更好地为这个社群服务。 2015年起，亲友会开始转向社群筹款，这就要求我们要做大量的社群活动。参与我们工作的人越来越多，发展速度越来越快，但机构的培训并没有准备好。很长一段时间按住葫芦起了瓢，总是在堵各种漏洞，夜晚常常在焦虑中醒来。而社群里有些人，也会把外界压力和歧视造成的愤怒，转而攻击自己人。</p>
+  <p>那是带着伤前行的两年，感觉每天都很疲惫，内心里满是焦躁。我意识到，必须要学习充电，才能突破这个瓶颈。 2017年，在朋友的帮助下，我有机会去哈佛大学肯尼迪学院做访问学者。从一线抽离，被时间和空间强行分开，内心平静下来，才有机会学习和思考。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661473-5fffaed41e600." alt="img" width="500" class="aligncenter" /></p>
+  <p>通过学习，让我更坚定了以家庭为切入口，所有的问题背后都有痛点，对于同志来说，家人是最关心的，要经历真实而艰难的接纳过程。一旦家人接受，慢慢向外影响更大的圈层。</p>
+  <p>因为社会文化上的差异，解决同志议题也需要回到本土文化视角下寻找解决方案。亲友会坚持更具本土化的运营思路。</p>
+  <p>我意识到，做人的工作，没有弯道抄车，也没有捷径可寻，就是去改变一个一个的人。人心改变了，事情就好办了。</p>
+  <p>8</p>
+  <p>现在，很多零零后参与到亲友会的工作中了，他们直接跨过了流氓罪和精神病时代 ，不像我那一代人，要经历漫长的恐惧。</p>
+  <p>相比20年前，我从自我放逐的乡间少年，成为了同志公益的参与者，我从等待、围观、期待别人行动，到躬身入局的行动者，我从不自信，到自我成长与赋权，到坚信每一个普普通通的人，都能为同志社群带来改变。</p>
+  <p>回望过去20年，我们的同志社群发生了翻天覆地的变化，从当年找不到一个出柜的同志，到现在，身边有无数的同志过上自己想要的生活，从找不到一位家长公开身份，支持自己的同志子女，到现在，很多家长可以接受电视采访，从“谈同色变”，到越来越多的人理解接纳。可以说，只要你度过了自我认同关，中国同志，已经可以非常平静地生活。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661473-5fffaed44955e.png" alt="img" width="500" class="aligncenter" /></p>
+  <p>2020年，阿强的深圳国际公益学院入学照</p>
+  <p>上个月，我读高一的侄子来广州度暑假，跟我和伴侣一起生活了一段时间。</p>
+  <p>周末的晚上，我们去看电影《叔叔》，我说这是一部讲述老年同志故事的电影，你要看吗？ 他说，“要了解一下”。年青一代对同志议题越来越理解了。</p>
+  <p>我们不再因为隐藏生命中的某个部分，让人感觉“有点怪怪的”，我努力走近真实，真实的表达自己感受，真实的面对爱与被爱。真实让我的生命充满力量。</p>
+  <p>走到这一步，并不容易。</p>
+  <p>这20年来，一起参与公益的伙伴，因为各种各样的原因，绝大部分离开了。虽然，我们已经可以过自己想要的生活，但是，我们的很多权力还没有。</p>
+  <p>9</p>
+  <p>异性恋能结婚，同志不能，别人俩口子叫家庭，同志夫夫或妇妇，在法律上不叫家庭，在职场上，异性恋配偶所能享受到的福利，同志伴侣也总是被排除在外。</p>
+  <p>如果异性恋的权利是一斤，同志的就不能是八两，我们的权力和权利都不能打折。</p>
+  <p>今年是亲友会成立的第12个年头，是我自己参与同志公益的第20年。就像那位老师所说，我们已经种出了一片一片的小草，只要坚持下去，就能连成片。</p>
+  <p>这片草需要更多人来施肥，来浇水，才会茂盛起来，歧视的沙漠就会被覆盖，恐同的风沙就不会吹眯我们的眼睛。</p>
+  <p>亲友会的工作，就像这治沙种草一样，需要更多的人参与。需要更多人躬身入局，用行动和坚持，让这片草地绿起来。</p>
+  <p>我们希望能躺在草地上晒太阳，享受阳光，但我们需要先种下那片草。</p>
+  <p>这20年同志社群的进步，我身在其中，亲眼所见一个个隐藏着的同志，从柜子里走出来，成为有力量的人。</p>
+  <p>也期待未来的20年，你和我一起，为亲友会这样的公益组织，为我们的同志社群争取平等的权益，享受阳光照耀的生活，一起行动。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e9%98%bf%e5%bc%ba%ef%bc%9a%e5%a6%82%e6%9e%9c%e5%bc%82%e6%80%a7%e6%81%8b%e7%9a%84%e6%9d%83%e5%88%a9%e6%98%af%e4%b8%80%e6%96%a4%ef%bc%8c%e5%90%8c%e5%bf%97%e7%9a%84%e5%b0%b1%e4%b8%8d%e8%83%bd%e6%98%af/">阿强：如果异性恋的权利是一斤，同志的就不能是八两！</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%97%B6%E4%BB%A3%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99-%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E9%82%A3%E4%B8%AA%E6%89%AB%E5%9E%83%E5%9C%BE%E7%9A%84-%E5%9C%A8%E6%96%B0%E5%B9%B4%E4%B8%BE%E5%8A%9E%E8%91%AC%E7%A4%BC">
+          【时代的一粒沙】极昼工作室 | “那个扫垃圾的”在新年举办葬礼
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E8%A3%B8%E6%B3%B3-%E5%A4%A7%E5%8E%82%E9%87%8C%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A5%B4%E9%9A%B6">
+          裸泳 | 大厂里的数据奴隶
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E8%A1%8C%E8%B5%B0%E5%90%83%E7%93%9C%E5%9C%88-%E9%87%8D%E7%A3%85%E7%88%86%E6%96%99-%E6%88%91%E5%9C%A8%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%9A%84%E4%B8%89%E5%B9%B4">
+          行走吃瓜圈 | 重磅爆料，我在拼多多的三年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E8%B4%A2%E7%BB%8F%E6%9D%82%E5%BF%97-%E8%A2%AB%E7%AE%97%E6%B3%95%E7%9B%91%E6%8E%A7%E7%9A%84%E6%89%93%E5%B7%A5%E4%BA%BA-%E6%9C%89%E4%BA%BA%E5%8E%BB%E6%B4%97%E6%89%8B%E9%97%B4%E8%B6%85%E6%97%B63%E7%A7%92%E6%89%A3%E5%B7%A5%E8%B5%84-%E4%B8%8A%E7%8F%AD%E4%B9%B0%E9%A5%AD%E8%A2%AB%E6%89%A3%E8%AF%AF%E5%B7%A5%E8%B4%B9">
+          财经杂志 | 被算法监控的打工人：有人去洗手间超时3秒扣工资，上班买饭被扣误工费
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%B8%AF%E5%AA%92-%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E9%A9%BB%E6%B8%AF%E5%85%AC%E7%BD%B2%E7%89%B9%E6%B4%BE%E5%91%98%E8%B0%A2%E9%94%8B%E6%88%96%E4%BB%BB%E5%89%AF%E5%A4%96%E9%95%BF">
+            前一篇：港媒：中国外交部驻港公署特派员谢锋或任副外长
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%85%AD%E5%90%8D%E5%8A%A0%E5%B7%9E%E7%94%A8%E6%88%B7%E7%8A%B6%E5%91%8A%E8%85%BE%E8%AE%AF-%E5%BC%80%E5%90%AF%E5%8F%B8%E6%B3%95%E8%AE%A8%E4%BC%90%E5%BE%AE%E4%BF%A1%E4%BE%B5%E6%9D%83%E4%B9%8B%E6%88%98">
+            后一篇：六名加州用户状告腾讯，开启司法讨伐微信侵权之战
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E6%B8%AF%E5%AA%92-%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E9%A9%BB%E6%B8%AF%E5%85%AC%E7%BD%B2%E7%89%B9%E6%B4%BE%E5%91%98%E8%B0%A2%E9%94%8B%E6%88%96%E4%BB%BB%E5%89%AF%E5%A4%96%E9%95%BF'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E5%85%AD%E5%90%8D%E5%8A%A0%E5%B7%9E%E7%94%A8%E6%88%B7%E7%8A%B6%E5%91%8A%E8%85%BE%E8%AE%AF-%E5%BC%80%E5%90%AF%E5%8F%B8%E6%B3%95%E8%AE%A8%E4%BC%90%E5%BE%AE%E4%BF%A1%E4%BE%B5%E6%9D%83%E4%B9%8B%E6%88%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E8%A3%B8%E6%B3%B3-%E5%A4%A7%E5%8E%82%E9%87%8C%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A5%B4%E9%9A%B6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E8%A1%8C%E8%B5%B0%E5%90%83%E7%93%9C%E5%9C%88-%E9%87%8D%E7%A3%85%E7%88%86%E6%96%99-%E6%88%91%E5%9C%A8%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%9A%84%E4%B8%89%E5%B9%B4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E6%B8%AF%E5%AA%92-%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E9%A9%BB%E6%B8%AF%E5%85%AC%E7%BD%B2%E7%89%B9%E6%B4%BE%E5%91%98%E8%B0%A2%E9%94%8B%E6%88%96%E4%BB%BB%E5%89%AF%E5%A4%96%E9%95%BF">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E5%85%AD%E5%90%8D%E5%8A%A0%E5%B7%9E%E7%94%A8%E6%88%B7%E7%8A%B6%E5%91%8A%E8%85%BE%E8%AE%AF-%E5%BC%80%E5%90%AF%E5%8F%B8%E6%B3%95%E8%AE%A8%E4%BC%90%E5%BE%AE%E4%BF%A1%E4%BE%B5%E6%9D%83%E4%B9%8B%E6%88%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E8%A3%B8%E6%B3%B3-%E5%A4%A7%E5%8E%82%E9%87%8C%E7%9A%84%E6%95%B0%E6%8D%AE%E5%A5%B4%E9%9A%B6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E8%A1%8C%E8%B5%B0%E5%90%83%E7%93%9C%E5%9C%88-%E9%87%8D%E7%A3%85%E7%88%86%E6%96%99-%E6%88%91%E5%9C%A8%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%9A%84%E4%B8%89%E5%B9%B4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

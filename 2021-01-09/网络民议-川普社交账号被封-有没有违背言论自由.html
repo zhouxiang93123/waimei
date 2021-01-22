@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【网络民议】川普社交账号被封，有没有违背言论自由？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+" />
+    <meta property="og:description" content="
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【网络民议】川普社交账号被封，有没有违背言论自由？" />
+    <meta property="twitter:title" content="【网络民议】川普社交账号被封，有没有违背言论自由？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e5%25b7%259d%25e6%2599%25ae%25e7%25a4%25be%25e4%25ba%25a4%25e8%25b4%25a6%25e5%258f%25b7%25e8%25a2%25ab%25e5%25b0%2581%25ef%25bc%258c%25e6%259c%2589%25e6%25b2%25a1%25e6%259c%2589%25e8%25bf%259d%25e8%2583%258c%25e8%25a8%2580%25e8%25ae%25ba%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E5%B7%9D%E6%99%AE%E7%A4%BE%E4%BA%A4%E8%B4%A6%E5%8F%B7%E8%A2%AB%E5%B0%81%EF%BC%8C%E6%9C%89%E6%B2%A1%E6%9C%89%E8%BF%9D%E8%83%8C%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e5%25b7%259d%25e6%2599%25ae%25e7%25a4%25be%25e4%25ba%25a4%25e8%25b4%25a6%25e5%258f%25b7%25e8%25a2%25ab%25e5%25b0%2581%25ef%25bc%258c%25e6%259c%2589%25e6%25b2%25a1%25e6%259c%2589%25e8%25bf%259d%25e8%2583%258c%25e8%25a8%2580%25e8%25ae%25ba%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E5%B7%9D%E6%99%AE%E7%A4%BE%E4%BA%A4%E8%B4%A6%E5%8F%B7%E8%A2%AB%E5%B0%81%EF%BC%8C%E6%9C%89%E6%B2%A1%E6%9C%89%E8%BF%9D%E8%83%8C%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%EF%BC%9F&d=2021-01-09&e=
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+
+
+  CDT编者按：1月6日，美国国会召开联席会议，认证选举人团的票选结果，但拒绝承认拜登当选的特朗普支持者冲入国会大厦，与警方发生激烈冲突，一共造成五人死亡，其中包括一名警察。美国国会大厦的暴力冲突事件引起全球哗然。事件发生后，美国总统特朗普在其社群网站上发布视频呼吁支持者“和平回家”，但话锋一转又再次抨击选举中出现邪恶舞弊。他在视频中说道：“我知道你们很痛苦、很受伤，我们压倒性的选举胜利被偷走了，每个人都知晓此事。”他呼吁支持者保持和平，维护法律和秩序并尊重执法人员。“这是个非常艰难的时刻，过去从来没有发生过这种事，竟从我们所有人手中，从你、我和国家的手中夺走了胜利。这是一场诈欺的选举，但我们不能被这些人操弄，我们要保持和平。”这个视频很快被推特移除。推特在当天以特朗普一再严重违反推特《公民诚信政策》（Civic In..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e5%25b7%259d%25e6%2599%25ae%25e7%25a4%25be%25e4%25ba%25a4%25e8%25b4%25a6%25e5%258f%25b7%25e8%25a2%25ab%25e5%25b0%2581%25ef%25bc%258c%25e6%259c%2589%25e6%25b2%25a1%25e6%259c%2589%25e8%25bf%259d%25e8%2583%258c%25e8%25a8%2580%25e8%25ae%25ba%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/&text=【网络民议】川普社交账号被封，有没有违背言论自由？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/&title=【网络民议】川普社交账号被封，有没有违背言论自由？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/&title=【网络民议】川普社交账号被封，有没有违背言论自由？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【网络民议】川普社交账号被封，有没有违背言论自由？&body=
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/&title=【网络民议】川普社交账号被封，有没有违背言论自由？&caption=
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【网络民议】川普社交账号被封，有没有违背言论自由？&url=https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【网络民议】川普社交账号被封，有没有违背言论自由？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e5%25b7%259d%25e6%2599%25ae%25e7%25a4%25be%25e4%25ba%25a4%25e8%25b4%25a6%25e5%258f%25b7%25e8%25a2%25ab%25e5%25b0%2581%25ef%25bc%258c%25e6%259c%2589%25e6%25b2%25a1%25e6%259c%2589%25e8%25bf%259d%25e8%2583%258c%25e8%25a8%2580%25e8%25ae%25ba%2F&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E5%B7%9D%E6%99%AE%E7%A4%BE%E4%BA%A4%E8%B4%A6%E5%8F%B7%E8%A2%AB%E5%B0%81%EF%BC%8C%E6%9C%89%E6%B2%A1%E6%9C%89%E8%BF%9D%E8%83%8C%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1%EF%BC%9F&d=2021-01-09&e=
+【网络民议】川普社交账号被封，有没有违背言论自由？
+——
+
+
+  CDT编者按：1月6日，美国国会召开联席会议，认证选举人团的票选结果，但拒绝承认拜登当选的特朗普支持者冲入国会大厦，与警方发生激烈冲突，一共造成五人死亡，其中包括一名警察。美国国会大厦的暴力冲突事件引起全球哗然。事件发生后，美国总统特朗普在其社群网站上发布视频呼吁支持者“和平回家”，但话锋一转又再次抨击选举中出现邪恶舞弊。他在视频中说道：“我知道你们很痛苦、很受伤，我们压倒性的选举胜利被偷走了，每个人都知晓此事。”他呼吁支持者保持和平，维护法律和秩序并尊重执法人员。“这是个非常艰难的时刻，过去从来没有发生过这种事，竟从我们所有人手中，从你、我和国家的手中夺走了胜利。这是一场诈欺的选举，但我们不能被这些人操弄，我们要保持和平。”这个视频很快被推特移除。推特在当天以特朗普一再严重违反推特《公民诚信政策》（Civic In..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e3%2580%2590%25e7%25bd%2591%25e7%25bb%259c%25e6%25b0%2591%25e8%25ae%25ae%25e3%2580%2591%25e5%25b7%259d%25e6%2599%25ae%25e7%25a4%25be%25e4%25ba%25a4%25e8%25b4%25a6%25e5%258f%25b7%25e8%25a2%25ab%25e5%25b0%2581%25ef%25bc%258c%25e6%259c%2589%25e6%25b2%25a1%25e6%259c%2589%25e8%25bf%259d%25e8%2583%258c%25e8%25a8%2580%25e8%25ae%25ba%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610215472000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/">【网络民议】川普社交账号被封，有没有违背言论自由？</a>
+——</p>
+
+<div>
+  <p>CDT编者按：1月6日，美国国会召开联席会议，认证选举人团的票选结果，但拒绝承认拜登当选的特朗普支持者冲入国会大厦，与警方发生激烈冲突，一共造成五人死亡，其中包括一名警察。美国国会大厦的暴力冲突事件引起全球哗然。事件发生后，美国总统特朗普在其社群网站上发布视频呼吁支持者“和平回家”，但话锋一转又再次抨击选举中出现邪恶舞弊。他在视频中说道：“我知道你们很痛苦、很受伤，我们压倒性的选举胜利被偷走了，每个人都知晓此事。”他呼吁支持者保持和平，维护法律和秩序并尊重执法人员。“这是个非常艰难的时刻，过去从来没有发生过这种事，竟从我们所有人手中，从你、我和国家的手中夺走了胜利。这是一场诈欺的选举，但我们不能被这些人操弄，我们要保持和平。”这个视频很快被推特移除。推特在当天以特朗普一再严重违反推特《公民诚信政策》（Civic Integrity Policy）为由共删除了三则特朗普近期的推文并暂时封锁其账号12小时，若再违规则永久停用。</p>
+  <p>第二天，1月7日，脸书也宣布禁止特朗普使用旗下的脸书和Instagram服务。脸书创办人扎克伯格周四在其脸书页面上发文：“过去24小时的各种惊人事件显示，特朗普总统试图利用他余下的任期妨碍继任者拜登的和平合法权力交接。”扎克伯格指责特朗普利用社交平台发表不实言论并煽动暴力。他在贴文中表示，让特朗普在这个时期继续使用脸书服务的风险太高，因此将无限期延长对特朗普的脸书和Instagram帐号的封锁，至少到两周后权力和平转移才可能解封。</p>
+  <p>在同一天，特朗普在推特账号解封后发表了一支两分多钟的视频，谴责国会大厦的暴力事件。他敦促各方保持冷静，并表示新政府即将在1月20日上任，他接下来的重点将放在政权和平过渡上。特朗普还表示，那些在国会大厦中实施暴力和破坏的人将付出代价。</p>
+  <p>1月8日晚，特朗普的个人推特账号突然显示为“被冻结状态”。随后，推特方面发表声明证实，特朗普的推特账号确已被永久封禁（permanent suspension）。</p>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/截屏2021-01-09-上午11.55.58.png" alt="img" width="500" /></p>
+  <p>推特平台通过专门负责安全政策和信息更新的账号“Twitter Safety”发布了一份声明，其中写道：“在仔细审查了特朗普推特账号近期推文及相关内容，尤其是这些内容在推特线上线下的接收与解读反应后，由于存在进一步煽动暴力的风险，我们永久性地封禁该账号。”</p>
+  <p>推特还在声明中提及了本周发生的美国国会骚乱，并称该公司已于骚乱发生当天强调过，更多违反推特平台规则的行为将可能导致这一行动（永久封号）。</p>
+  <p>“我们构建的公共利益框架，旨在帮助公众能够直接听取民选官员和世界各国领导人的意见，这建立在民众有权公开行使权力的原则基础上。然而，几年前我们就已明确表示，一些账号不能完全凌驾于我们的规则之上，不能利用推特来煽动暴力等，我们将继续让政策和执行保持透明度。”推特的声明写道。</p>
+  <div style="width: 510px" class="wp-caption aligncenter">
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/截屏2021-01-09-上午11.49.09.png" alt="img" width="500" class="aligncenter" />    <p class="wp-caption-text">推特声明截图</p>
+  </div>
+  <p>美国有线电视新闻网（CNN）8日报道称，在推特公司做出永久封禁的决定之前，特朗普于当天下午发布了两条推特，这些内容也成了他的“推特绝唱”。</p>
+  <p>其中，特朗普倒数第二条推特所写内容是关于自己的支持者，依旧是一条极具特朗普风格的推文，大写字母和感叹号“横飞”。他写道：“有75000000位伟大的美国爱国者投票支持我，美国优先，让美国再次伟大，他们将在很长一段时间内发出巨大声浪。他们不会接受任何形式的不尊重和不公平对待！！！”</p>
+  <p><em>“The 75,000,000 great American Patriots who voted for me, AMERICA FIRST, and MAKE AMERICA GREAT AGAIN, will have a GIANT VOICE long into the future. They will not be disrespected or treated unfairly in any way, shape or form!!!”</em></p>
+  <p><em>——Donald J. Trump</em></p>
+  <p>而最后一条推特，特朗普则向外界透露，自己将不会出席1月20日拜登的就职典礼。</p>
+  <p><em>To all of those who have asked, I will not be going to the Inauguration on January 20th.</em></p>
+  <p><em>— Donald J. Trump (@realDonaldTrump) January 8, 2021</em></p>
+  <p>据路透社8日报道，推特公司当天除了对特朗普的账号采取行动以外，还对大量与美国右翼阴谋论组织“匿名者Q”（QAnon）有关的推特账号“动手”。在此过程中，包括迈克尔·弗林（Michael Flynn）和西德尼·鲍威尔（Sidney Powell）的账号也被推特永久封禁，所给理由是他们散布了大量阴谋论信息。弗林是特朗普执政任期内的前美国国家安全顾问，而鲍威尔则是特朗普的前竞选团队律师，两人均是特朗普的亲密盟友，此前都曾大力支持特朗普所宣称的“选举舞弊论”。推特在另一份声明中表示，考虑到类似的暴力事件有可能在未来几天再度发生，该平台将永久性地关闭那些专门用于分享“匿名者Q”阴谋论内容的账号。</p>
+  <p>特朗普社交网络被封，让一些支持特朗普的中国网民感到愤怒，认为这是美国言论自由的伤害。艺术家艾未未对此发了两条推特批评美国的言论自由：“推特和脸书允许来自环球时报、人民日报的宣传存在，却对自己的总统大动干戈，实行言论审查和禁言，可见专制并不是某党专利，言论自由也只是一个幌子而已。”“大多数人对于言论自由的含义并不理解，言论自由是人权部分，同时是说出与你不同观点的权利，无论以何种方式封锁审查言论都是对人的天赋权利的伤害，也自然是对公权的伤害。推特脸书的卑劣举动无非如此，走到这一步，不堪入目。”</p>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/截屏2021-01-09-下午12.37.56.png" alt="img" width="500" /><br /><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/截屏2021-01-09-下午12.38.04.png" alt="img" width="500" /></p>
+  <p>然而，更多的中国网民认为禁言特朗普不能与中国政府言论管控相提并论，并试图从法律角度去解读特朗普禁言一事和有关言论自由的法律问题：网络社交平台有没有权力封号？言论自由有没有边界？特朗普的言论自由有没有受到侵犯？CDT编辑特别将网络上的讨论汇集于此：</p>
+  <h3 id="from-">张雪忠：禁言特朗普是美国言论自由的倒退吗？（from 默存格物）</h3>
+  <blockquote>
+    <p>在出现美国国会受暴力冲击事件后，包括推特、Facebook在内的社交媒体平台，决定对特朗普进行封号或禁言处理。由此引发人们对美国言论自由问题的讨论。<br />关于推特永久封禁特朗普先生的帐号是否侵犯言论自由的问题，似应区分两个层面的问题：（1）推特是否绝对不应封禁任何帐号，无论用户发表什么内容的言论？如果答案是肯定的，问题就结束了。如果这个问题的答案是否定的，那就再讨论：（2）特朗普先生的推特言论是否满足永久封禁的条件？<br />对于第二个问题，我要再有针对性地研读一下美国联邦最高法院关于言论自由的一系列判例，才能给大家提供进一步的参考意见。目前，我只能提醒大家注意：不要将推特封禁现任美国总统帐号的做法，与政府任意压制公民言论自由的行为相提并论。这种不当的类比混淆了两种性质不同的行为，因而很有误导性。毕竟，这里禁言的主体（私营社交平台）和对象（公权力人物）都不一样。<br />不过，认为推特等社交媒体平台不是公权机构，只是私营平台，所以可以任意自定规则，并依照自定的规则对用户进行销号或禁言，这种看法似乎也过于简单。<br />美国联邦宪法第一修正案规定的言论自由（freedom of speech），其中的“speech”本义是用嘴巴“讲话”的意思。但随着表达媒介的不断更新和多样化，speech这个词以及言论自由的含义也在不断扩展。基于类似的原理，随着大型的私营言论平台的出现，如果任由平台自行制定规则并依此封禁个人帐号，的确会让一些人失去人们普遍拥有的表达和联络渠道。这与以前的报纸、电台和电视有重大区别，因为大家的生活对社交媒体的使用有很大的依赖。<br />这就使人们需要考虑两个问题：（1）是否需要通过立法来规范私营社交平台对言论的审查，以保障人们对平台的平等使用机会？（2）美国是否应该适用第一修正案，来保障人们的言论自由免受网络社交平台的实质性剥夺？<br />这就是我说要先研读联邦最高法院的系列判例，而不只是相关平台规则的原因。但还是要提醒大家注意：在出现冲击国会的暴力事件后，推特对现任总统的帐号封禁（总统还可寻求司法救济，就像被赶出白宫的新闻记者一样），与公权机构对普通公民任意而专断的销号——且没有任何中立的司法救济途径，是根本不同的两回事！前者是私营社交媒体对言论进行有限而例外的限制时，其范围如何厘定的问题；后者则是到底有没有言论自由的问题。因此，仅凭社交平台封禁特朗普账号而断言美国言论自由在倒退，是轻率无据的。<br />要之，言论自由是一种制度安排，主要是保护个体言论权利不被国家机器任意而专断地侵害。对言论的限制则是一种例外，主要是在言论会引起即刻而明显的危险，且无法通过言论对冲来及时消弭此种危险之时。最后，在言论自由得到保护的地方，即便某人被社交平台禁言甚至平台声称是“永久禁言”，也并非不可逆转，被禁言者可以去法院诉讼，而法院会最终裁定此种禁言是否合法。 要之，言论自由是一种制度安排，主要是保护个体言论权利不被国家机器任意而专断地侵害。对言论的限制则是一种例外，主要是在言论会引起即刻而明显的危险，且无法通过言论对冲来及时消弭此种危险之时。最后，在言论自由得到保护的地方，即便某人被社交平台禁言甚至平台声称是“永久禁言”，也并非不可逆转，被禁言者可以去法院诉讼，而法院会最终裁定此种禁言是否合法。</p>
+  </blockquote>
+  <h3 id="from--1">笑蜀:以川普账号为例，再谈言论自由笑蜀:以川普账号为例，再谈言论自由（from 微信）</h3>
+  <blockquote>
+    <p>必须明确，言论自由的主体是公民和公民社会，不是政府和公务人员。政府和公务人员不适用言论自由概念，其公共发言须受法定授权和职业伦理之严格限制，超出必被问责，这是民主政治的常识。而且级别愈高权力愈大，则受限愈多。法庭判决川普无权拉黑其推特关注者，原因就在于此。作为普通人尽可随意拉黑，但作为在任总统，不可以。显见公务人员尤其总统，言论自由度跟普通人无可比性。<br />这完全可以理解，因为这是从政必须付出的代价——从政必须牺牲很多个人自由包括言论自由，否则，又要权力而且是最高权力，又不负责任不受限制绝对自由，和尚打伞无法无天，对公共利益公共安全必是大患。所以才要把权力关进笼子里，要管住官员尤其总统的嘴。美国社交媒体平台今天正是这么做的，何足怪哉！<br />川普账号不是该不该封的问题，而是封太晚的问题，因其账号早已蜕变为谣言转播平台，而且是以美国总统的权力、声望为其加持，将总统的公权不加任何节制地用于其个人政治目的。这种最高级别的谣言平台史所罕见，对公共利益公共安全已经造成巨大损害，直接后果就是一月六号国会山之乱。在其已经酿成大祸，而且其人已经情绪失控的情况下，再不坚决查封，后果不堪设想。站在公共利益公共安全角度，这无疑是亡羊补牢，善莫大焉。为其痛心疾首，为其呼天抢地，都是过度移情所致，扯上言论自由的大旗为其呐喊，更是牛头不对马嘴。<br />再就普通个人用户、民间机构用户与推特或其他社交媒体平台的关系而言，窃以为，也难一概归于言论自由范畴。因为言论自由主要是针对公权力讲的，主要涉及公私关系。而推特或其他社交媒体平台都属于私营企业。用户与私企的关系，有双方合约规范。发生冲突，应首先按合约相关条款处理，而不是动辄上纲到言论自由层面。但鉴于推特或其他社交媒体平台强烈的外部性，的确也不能以私企性质而断言完全无涉言论自由，不能无条件为平台免责。强烈的外部性决定了社交媒体平台处理其与普通个人用户和民间机构用户关系，必须慎之又慎，以尊重用户、维护言论自由为第一要务，任何滥权都会是双刃剑，既伤用户，亦伤平台，其间没有赢家。<br />换言之，社交媒体平台与普通个人用户和民间机构用户的关系，是一种特别复杂的关系。既不同于公权力与公民和公民社会的关系，也不同于一般私企与用户的关系，这实际上是个新问题，需要在不断探索、多方博弈和互动的基础上，构建新的社会契约。一个简单的设想，是平台发展到相当程度之后，应尽快转型为社会企业，而非纯粹私企。作为社会企业，具有强烈的公共性，其规则制定、规则执行，均须充分纳入社会尤其第三方机构参与，接受社会尤其第三方机构监督评估，以尽可能保证平台中立、公正与透明，既保障用户言论自由，亦有利平台竞争与发展。</p>
+  </blockquote>
+  <h3 id="from--2">一名紐約律師的雜記:《社交媒體及言論自由》(From 个人脸书)</h3>
+  <blockquote>
+    <p>國會暴動事件後，Trump在數個社交媒體(包括Twitter)的帳戶被永久封鎖。一方的反應是︰言論自由呢？另一方的反應是︰現在才封？<br />美國憲法第一修正案保障了言論自由。可是，正如最高法院在1942年於Chaplinsky v State of New Hampshire一案中所言，言論自由並非絕對的("the right of free speech is not absolute at all times and under all circumstances")。美國的高中課程提及言論自由時，往往會用「劇院中亂叫火災」(falsely shouting fire in a theater)作為例子去表達出對公眾構成恐慌的言論並不為憲法第一修正案所保障。類似不被保障的例子也包括例如鼓吹非法行為、誹謗、仇恨言論、版權及知識產權作品等。<br />當然，某些言論不受言論自由保護，不代表發言者就應從此失去言論自由。問題是，憲法第一修正案一般只針對政府，而非私人企業。<br />一個適切的案例是Freedom Watch, Inc. v Google Inc., 816 Fed Appx 497, 499 [DC Cir 2020]。在該案中，原告保守派組織Freedom Watch起訴Google、Facebook、Twitter及Apple，聲稱被告共謀去壓制保守派的政治觀點，所以違反憲法第一修正案。聯邦地區法院撤銷該案、上訴法院維持原判。上訴庭認為，「一般而言，憲法第一修正案只是禁止政府對言論的限制」("In general, the First Amendment ‘prohibits only governmental abridgment of speech.’")。雖然原告聲稱Google Facebook等提供了重要的言論平台所以代表政府(state actor)，但上訴庭引用最高法院Manhattan Community Access Corp. v Halleck一案，指出並不能僅僅根據私人企業提供言論平台而判定那些私人企業就是代表政府。<br />那什麼樣的私人言論平台會是代表政府而受第一憲法修正案所限呢？最好的案例就是有關Trump的Twitter帳戶的Knight First Amendment Inst. at Columbia Univ. v Trump, 953 F3d 216 [2d Cir 2020]一案。該案中，原告起訴Trump在其Twitter帳戶封鎖意見不合的網民。聯邦地區法院認為Trump的Twitter帳戶屬於憲法第一修正案理解下的公共平台(public forum)，並判定原告勝訴。上訴法院維持原判，裁定Trump的Twitter帳戶的確就是用來進行公務(甚至連國家檔案和記錄管理局都將Trump的tweets視為官方紀錄)，而憲法第一修正案並不容許利用社交媒體帳號來進行公務的官員封鎖意見不同的人。但法庭在該案中也清楚表達，該案無關官員能否在其私人社交媒體帳號封鎖他人、也無關私人社交媒體企業在管理其平台時是否受限於憲法第一修正案。<br />所以，假設Trump現在起訴Twitter說封鎖他的帳戶是違反言論自由，是幾乎沒有可能成功的 – 最少在目前來說。<br />至於另一方的觀點就是社交媒體沒有盡責控制假消息及煽動言論。而說到這裡就不得不提及47 U.S. Code § 230。該法案的內容相當簡單，就是網路平台可以不用為其用戶所發表的言論負上責任，以及保護網路平台限制冒犯性內容。但該法案也有很大的爭議，不論民主黨還是共和黨都要求作出修改或廢除，但卻是出於相反的原因。很簡單來說，共和黨不滿是因為聲稱這些平台作為網路判官壓抑了保守派聲音，而民主黨不滿是因為該法案容許這些網路平台不須為虛假及誤導資訊負責。至於Trump，因為其不實言論經常被貼上警告標籤，自然也很討厭這個§ 230，甚至威脅否決國防法案(後來被國會推翻其否決)。<br />上面的討論只是有關概念的粗淺介紹。作為結尾，我想提及一個例子舉證虛假及誤導資訊的問題在美國有多嚴重︰<br />大概在今年7月左右，一群穿著醫生袍的人跑到美國最高法院前開記者會。該記者會沒有主流媒體，影片是由右翼陰謀論媒體Breitbart所作出。片段中的醫生自稱為America’s Frontline Doctors，他們稱走出來是因為「美國民眾並沒有聽到其他的專家」、口罩沒有用、羥氯喹(Hydroxychloroquine)可治療COVID-19、Dr. Fauci在誤導公眾、封城對阻止疫情沒有用等等。那班名不經傳的「醫生」沒有一個是傳染病專家，其中一個醫生Stella Immanuel甚至曾聲稱醫生的藥物是用外星人的DNA做的。Trump也在Twitter上轉發了該記者會的片段，該片段最後被社交媒體平台移除。<br />如果我沒有記錯，在當時，在該影片公佈的短短一日後，已有一千五百萬人觀看過。如果我沒有記錯，在當時，在該影片公佈的短短一日後，已有一千五百萬人觀看過。</p>
+  </blockquote>
+  <h3 id="from--3">逸草：关于川普被封帐号、言论自由与230条款（from 个人博客）</h3>
+  <blockquote>
+    <p>"WSJ：“230条款”是美国互联网管理法律中一条，它让互联网服务提供商不必为用户发布的内容负责，同时又给予了平台“善意”审查用户发布内容的自由，因而被视作互联网公司高速发展的保护伞。"<br />ZT 1996年美国《通讯规范法》（Communication Decency Act）的第230条规定：<br />任何交互式计算机服务的提供商或者用户不应被视为另一信息内容提供商提供的任何信息的发布者和发言人。［No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider.］<br />这短短26字的条款包括两层意思：互联网公司无须为平台上的第三方信息负责，互联网公司无须为他们善意删除平台内容的行为负责。<br />这一条款的本意是促使互联网公司主动去自我监督，净化网络环境，避免尚在起步阶段的他们遭受源源不断的诉讼的打击。虽然美国最高法院在后续诉讼中以“违反言论自由”为由否决了《通讯规范法》的大部分反色情条文，但这第230条款却一直保存至今，成为了互联网公司的最大保护伞。<br />所以，230条款被视为互联网的法律保障，甚至被称为美国互联网的奠基石。<br />群友&amp;网友：封号是社交媒体、互联网公司的决定，人家公司的政策是禁止在这个敏感时刻散布谣言和阴谋论，你不服可以去告。人家没不让你说话，你可以到大街上去喊，但在社交媒体上，对不起，人家拒绝谣言。你若有其他方面的问题，要警方、检方来调查，提告，不是私人公司的事。这么说，你是否清楚些了？<br />对方：如果媒体有封锁言论自由，那儿他们就不应再受230条款的保护。<br />群友&amp;网友：230条款是保护社交媒体不受政府的管制控制。如果没有它，tweeter 和脸书早被川普用行政命令关闭了。在美国，第一修正案比天大，它保护所有人都言论自由不受政府控制。如果你对Tweeter 和脸书的政策不满，认为他们封锁言论自由，好办，你可以注册一个专登谣言与煽动言论的网站，且禁止 fact check，这是你们公司反其道而行之的政策。你的这个网站也受230条款保护，你登的内容由发布者负责，你只是传播媒体，不负连带责任。但是发布者的内容如造成不良社会后果，会被司法追究，如川普煽动川粉冲击国会，联邦检察官正在取证和评估，是否以刑事罪或叛国罪起诉。<br />总结起来说，230条款的目的是保证公民、法人、社会的言论自由不受政府的侵犯。而各社交媒体公司的政策、立场，可以通过对立公司的政策、立场来相抗衡，（川普马仔参议员霍利的出版公司因国会山暴乱与他解约，有另一家保守主义公司马上表示愿接盘）而不是你不喜欢的媒体就不给它言论自由，让政府管住它。<br />别忘了，再过2周，政府就是拜登主政了。美国的宪法条款都是限制政府，维护民众的，这个你要有idea，别总陷在专制主义、权力崇拜的观念中反对民主宪政。别忘了，再过2周，政府就是拜登主政了。美国的宪法条款都是限制政府，维护民众的，这个你要有idea，别总陷在专制主义、权力崇拜的观念中反对民主宪政。</p>
+  </blockquote>
+  <p><img class="aligncenter" src="https://chinadigitaltimes.net/chinese/files/2021/01/2-1.jpeg" alt="img" width="500" /></p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e3%80%90%e7%bd%91%e7%bb%9c%e6%b0%91%e8%ae%ae%e3%80%91%e5%b7%9d%e6%99%ae%e7%a4%be%e4%ba%a4%e8%b4%a6%e5%8f%b7%e8%a2%ab%e5%b0%81%ef%bc%8c%e6%9c%89%e6%b2%a1%e6%9c%89%e8%bf%9d%e8%83%8c%e8%a8%80%e8%ae%ba/">【网络民议】川普社交账号被封，有没有违背言论自由？</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%9D%8E%E7%BF%98%E6%A5%9A-%E6%BC%A9%E6%B8%A6%E9%87%8C%E7%9A%84%E4%BA%BA-%E6%9C%89%E8%B4%A3%E4%BB%BB%E8%AA%AC%E5%87%BA%E6%BC%A9%E6%B8%A6%E7%9A%84%E6%A0%B7%E5%AD%90">
+          李翘楚：漩渦里的人，有责任説出漩渦的样子
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%9D%8E%E7%BF%98%E6%A5%9A-%E6%BC%A9%E6%B6%A1%E9%87%8C%E7%9A%84%E4%BA%BA-%E6%9C%89%E8%B4%A3%E4%BB%BB%E8%AF%B4%E5%87%BA%E6%BC%A9%E6%B6%A1%E7%9A%84%E6%A0%B7%E5%AD%90">
+          李翘楚：漩涡里的人，有责任说出漩涡的样子
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B3%95%E5%8F%B2%E5%A4%A9%E5%9C%B0-%E5%89%8D%E8%AE%B0%E8%80%85%E5%BC%A0%E8%B4%BE%E9%BE%99%E5%9B%A0%E6%8E%A8%E7%89%B9%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%A4%E5%88%91">
+          法史天地 | 前记者张贾龙因推特言论被判刑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8A%B3%E6%B4%9E-%E6%82%B2%E8%A7%82%E4%B8%8E%E8%A1%8C%E5%8A%A8%E7%9A%842020-%E5%8D%81%E5%A4%A7%E5%B7%A5%E4%BA%BA%E7%BB%B4%E6%9D%83%E8%A1%8C%E5%8A%A8%E7%9B%98%E7%82%B9">
+          劳洞 |  悲观与行动的2020：十大工人维权行动盘点
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%96%B0%E5%86%A0%E5%8F%98%E4%BD%93-%E6%9C%AA%E6%9D%A5%E6%8A%97%E7%96%AB%E5%8F%88%E9%81%87%E5%88%B0%E5%93%AA%E4%BA%9B%E6%96%B0%E6%8C%91%E6%88%98">
+            前一篇：时事大家谈：新冠变体 未来抗疫又遇到哪些新挑战？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E7%96%AB%E6%83%85%E6%80%8E%E6%A0%B7%E9%A2%A0%E8%A6%86%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%9F%E6%B4%BB%E5%92%8C%E8%AE%A4%E7%9F%A5">
+            后一篇：时事大家谈：疫情怎样颠覆我们的生活和认知？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%96%B0%E5%86%A0%E5%8F%98%E4%BD%93-%E6%9C%AA%E6%9D%A5%E6%8A%97%E7%96%AB%E5%8F%88%E9%81%87%E5%88%B0%E5%93%AA%E4%BA%9B%E6%96%B0%E6%8C%91%E6%88%98'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E7%96%AB%E6%83%85%E6%80%8E%E6%A0%B7%E9%A2%A0%E8%A6%86%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%9F%E6%B4%BB%E5%92%8C%E8%AE%A4%E7%9F%A5'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%9D%8E%E7%BF%98%E6%A5%9A-%E6%BC%A9%E6%B6%A1%E9%87%8C%E7%9A%84%E4%BA%BA-%E6%9C%89%E8%B4%A3%E4%BB%BB%E8%AF%B4%E5%87%BA%E6%BC%A9%E6%B6%A1%E7%9A%84%E6%A0%B7%E5%AD%90'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%B3%95%E5%8F%B2%E5%A4%A9%E5%9C%B0-%E5%89%8D%E8%AE%B0%E8%80%85%E5%BC%A0%E8%B4%BE%E9%BE%99%E5%9B%A0%E6%8E%A8%E7%89%B9%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%A4%E5%88%91'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E6%96%B0%E5%86%A0%E5%8F%98%E4%BD%93-%E6%9C%AA%E6%9D%A5%E6%8A%97%E7%96%AB%E5%8F%88%E9%81%87%E5%88%B0%E5%93%AA%E4%BA%9B%E6%96%B0%E6%8C%91%E6%88%98">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%97%B6%E4%BA%8B%E5%A4%A7%E5%AE%B6%E8%B0%88-%E7%96%AB%E6%83%85%E6%80%8E%E6%A0%B7%E9%A2%A0%E8%A6%86%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%9F%E6%B4%BB%E5%92%8C%E8%AE%A4%E7%9F%A5">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%9D%8E%E7%BF%98%E6%A5%9A-%E6%BC%A9%E6%B6%A1%E9%87%8C%E7%9A%84%E4%BA%BA-%E6%9C%89%E8%B4%A3%E4%BB%BB%E8%AF%B4%E5%87%BA%E6%BC%A9%E6%B6%A1%E7%9A%84%E6%A0%B7%E5%AD%90">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%B3%95%E5%8F%B2%E5%A4%A9%E5%9C%B0-%E5%89%8D%E8%AE%B0%E8%80%85%E5%BC%A0%E8%B4%BE%E9%BE%99%E5%9B%A0%E6%8E%A8%E7%89%B9%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%A4%E5%88%91">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

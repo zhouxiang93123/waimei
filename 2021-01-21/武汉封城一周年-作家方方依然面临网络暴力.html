@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>武汉封城一周年 作家方方依然面临网络暴力 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+武汉封城一周年 作家方方依然面临网络暴力
+——
+" />
+    <meta property="og:description" content="
+武汉封城一周年 作家方方依然面临网络暴力
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="武汉封城一周年 作家方方依然面临网络暴力" />
+    <meta property="twitter:title" content="武汉封城一周年 作家方方依然面临网络暴力" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ffangfang-wuhan-covid-19-20210121%2F5747478.html&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%80%E5%91%A8%E5%B9%B4+%E4%BD%9C%E5%AE%B6%E6%96%B9%E6%96%B9%E4%BE%9D%E7%84%B6%E9%9D%A2%E4%B8%B4%E7%BD%91%E7%BB%9C%E6%9A%B4%E5%8A%9B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ffangfang-wuhan-covid-19-20210121%2F5747478.html&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%80%E5%91%A8%E5%B9%B4+%E4%BD%9C%E5%AE%B6%E6%96%B9%E6%96%B9%E4%BE%9D%E7%84%B6%E9%9D%A2%E4%B8%B4%E7%BD%91%E7%BB%9C%E6%9A%B4%E5%8A%9B&d=2021-01-21&e=
+武汉封城一周年 作家方方依然面临网络暴力
+——
+
+
+  
+Fri, 22 Jan 2021 00:59:02 GMT
+  
+  
+中国武汉作家方方
+  
+  2021年1月23日即将到来，这一天距离武汉因新冠疫情而封城整整一周年。在中国的社交媒体微博和微信上，悼念和赞扬“吹哨人”李文亮医生的帖子数以万计，但是另一位为疫情发声的人却遭到截然不同的待遇。
+  中国武汉作家方方去年因为撰写《武汉日记》而饱受争议。一年之后，针对她的批评和谩骂依然层出不穷。方方曾在2020年的最后一天发表微博，重申了自己《武汉日记》最后一篇的观点：极左是中国祸国殃民式的存在。这篇微博状态获得了5千多个转发，其中多数是批评。很多网友称她是“恨国党”、“卖国贼”、“西方走狗”，还有网友呼吁中纪委对其进行“隔离审查”。
+  隔着大洋，加州大学洛杉矶分校的教授白睿文也被波及。白睿文是美国著名的中国当代文学翻译家和文..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ffangfang-wuhan-covid-19-20210121%2F5747478.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html&text=武汉封城一周年 作家方方依然面临网络暴力&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html&title=武汉封城一周年 作家方方依然面临网络暴力" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html&title=武汉封城一周年 作家方方依然面临网络暴力" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=武汉封城一周年 作家方方依然面临网络暴力&body=
+武汉封城一周年 作家方方依然面临网络暴力
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html&title=武汉封城一周年 作家方方依然面临网络暴力&caption=
+武汉封城一周年 作家方方依然面临网络暴力
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=武汉封城一周年 作家方方依然面临网络暴力&url=https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>武汉封城一周年 作家方方依然面临网络暴力</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ffangfang-wuhan-covid-19-20210121%2F5747478.html&t=%E6%AD%A6%E6%B1%89%E5%B0%81%E5%9F%8E%E4%B8%80%E5%91%A8%E5%B9%B4+%E4%BD%9C%E5%AE%B6%E6%96%B9%E6%96%B9%E4%BE%9D%E7%84%B6%E9%9D%A2%E4%B8%B4%E7%BD%91%E7%BB%9C%E6%9A%B4%E5%8A%9B&d=2021-01-21&e=
+武汉封城一周年 作家方方依然面临网络暴力
+——
+
+
+  
+Fri, 22 Jan 2021 00:59:02 GMT
+  
+  
+中国武汉作家方方
+  
+  2021年1月23日即将到来，这一天距离武汉因新冠疫情而封城整整一周年。在中国的社交媒体微博和微信上，悼念和赞扬“吹哨人”李文亮医生的帖子数以万计，但是另一位为疫情发声的人却遭到截然不同的待遇。
+  中国武汉作家方方去年因为撰写《武汉日记》而饱受争议。一年之后，针对她的批评和谩骂依然层出不穷。方方曾在2020年的最后一天发表微博，重申了自己《武汉日记》最后一篇的观点：极左是中国祸国殃民式的存在。这篇微博状态获得了5千多个转发，其中多数是批评。很多网友称她是“恨国党”、“卖国贼”、“西方走狗”，还有网友呼吁中纪委对其进行“隔离审查”。
+  隔着大洋，加州大学洛杉矶分校的教授白睿文也被波及。白睿文是美国著名的中国当代文学翻译家和文..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ffangfang-wuhan-covid-19-20210121%2F5747478.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611281491000-->
+<p><a href="https://www.voachinese.com/a/fangfang-wuhan-covid-19-20210121/5747478.html">武汉封城一周年 作家方方依然面临网络暴力</a>
+——</p>
+
+<div>
+  <div>
+<em>Fri, 22 Jan 2021 00:59:02 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/70960D78-B840-46DF-B765-1C4793758EB4_cx0_cy23_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">中国武汉作家方方</small>
+  </div>
+  <p>2021年1月23日即将到来，这一天距离武汉因新冠疫情而封城整整一周年。在中国的社交媒体微博和微信上，悼念和赞扬“吹哨人”李文亮医生的帖子数以万计，但是另一位为疫情发声的人却遭到截然不同的待遇。</p>
+  <p>中国武汉作家方方去年因为撰写《武汉日记》而饱受争议。一年之后，针对她的批评和谩骂依然层出不穷。方方曾在2020年的最后一天发表微博，重申了自己《武汉日记》最后一篇的观点：极左是中国祸国殃民式的存在。这篇微博状态获得了5千多个转发，其中多数是批评。很多网友称她是“恨国党”、“卖国贼”、“西方走狗”，还有网友呼吁中纪委对其进行“隔离审查”。</p>
+  <p>隔着大洋，加州大学洛杉矶分校的教授白睿文也被波及。白睿文是美国著名的中国当代文学翻译家和文化研究者，曾经翻译过王安忆、余华等当代作家的作品，著作包括对贾樟柯、侯孝贤等当代华人电影导演的研究。他去年翻译的《武汉日记》在美国出版，当时就在社交媒体上遭遇了充满敌意的攻击。</p>
+  <p>如今，这些愤怒的读者借着武汉封城一周年的契机卷土重来。白睿文告诉美国之音：“各种各样的人都有，五毛党，小粉红，还有纯粹出于爱国情绪。他们看到了媒体的报道，都没有去读日记本身，就有这么一个判断，觉得我是间谍，是CIA。他们很有很多丰富的想象。还有一些有来头的人，比如一些鼎鼎大名的大学教授，所以各种各样的人都有，他们之间还有互动。”</p>
+  <p>《武汉日记》英文版发行后不久，包括《纽约时报》、《华盛顿邮报》、《华尔街日报》、《卫报》、《金融时报》等在内的主要西方媒体都发表书评或进行了相关报道。该书已经或者将在20多个国家出版，而在德国，它一度列为畅销榜前十。</p>
+  <p>《纽约时报》评论说：“这本书最尖锐的批评在于，方方呼吁问责政府领导，这些领导者淡化了病毒的危险性，浪费了三周的时间，使得病毒大规模扩散到全球。她在封城期间也许过着沉默的生活，但是她的文字却是大胆的。”</p>
+  <p>方方反复呼吁问责政府引来了中国政府和一些民众的强烈负面回应。在他们对方方和白睿文的攻击中，最常见的就是质疑他们不批评西方国家，而只是针对中国。</p>
+  <p>57岁的武汉居民常先生（化名）在接受美国之音采访时，首先指出了武汉政府和中央政府抗疫不利，说：“希望政府能够改进官僚机制，不要瞒报谎报。”</p>
+  <p>但是一提到同样批评政府的方方，常先生却流露出了不满：“难道西方国家就做的很好吗？她为什么不去写一下纽约或者伦敦日记呢？”</p>
+  <p>白睿文作为翻译者也受到了类似的质疑。他说：“将近一年了，微博上几乎每天还有很多人给我发消息，说你的洛杉矶日记什么时候写，美国日记赶快写。可是这个和方方日记完全无关。方方是记录当时的情况。他们把方方当成反华势力的一部分，也把我列为反华分子。方方日记不是反华的，中国政府做的好的地方，她都会给予肯定；犯了小错误，她也会说出来。”</p>
+  <p>纽约城市大学政治学教授夏明认为，方方身在武汉，记录武汉的疫情是再正常不过的事情，而且西方媒体都在记录西方的疫情，并不是没有报道。他说：“美国的媒体天天都在写纽约日记和美国日记，这就是跟中国的差异。中国不允许当地的记者写当地的日记。”</p>
+  <p>但是像常先生一样，愤怒的读者认为日记针对中国，并且会置中国于国际政治中的不利地位。环球时报主编胡锡进说，日记“一定会被国际政治捕捉到”，而且“中国人民，包括那些曾经支持了方方的人，将用我们多那么一分的利益损失来为方方在西方的成名埋单。”</p>
+  <p>白睿文认为，所谓“抹黑中国”的说法是当局在寻找替罪羊。他说：“她提出追责问题，也许让某些人感到不安，他们采取这样一个措施来转移注意力，把方方变成批评对象，所以整个论述有一个非常大的转变。从四月初好几百万人是方方的粉丝，一下子到媒体突然把她塑造成反面人物。这个转变很快。但是我鼓励所有的读者回到原来的文本，日记不是批评中国。我一直把它当作方方给武汉写的情书，它充满了对武汉这个城市、对朋友和邻居的关心。”</p>
+  <p>胡锡进的说法代表了，或者说引导了一些中国人的态度，他说：“美国的抗疫都烂成这样了，还发起了对中国抗疫的猛烈攻击。” 同样地，很多中国人也陷入了“那又怎么样”主义的怪圈。他们在多少承认中国体制问题的同时，也在质疑西方体制，并且认为方方等知识分子对中国政府的批评过于片面。</p>
+  <p>在美国留学并且工作了6年的瑞娅（化名）原本是力挺方方的，但是在全球遭受疫情冲击后，她的想法也有所改变。瑞娅对美国之音说：“（西方国家）是更加透明吗？也许，但是结果一样不太好。对于美国来说，与其嘲笑攻击他人，不如专注于解决问题和防止将来类似现象发生。 ”</p>
+  <p>从小在武汉长大的海婷（化名）则比较介意《武汉日记》英文版的影响，她说：“方方的日记我一开始还能理解，但是为什么要出英文版呢？每个国家都有自己的问题，美国做得好的话也不至于死亡人数有37万。退一万步说，做的好不好都是我们自己国家的事情，犯不着给一些别有用心的国家递刀子。”</p>
+  <p>在武汉学习生活过四年的子场（化名）更加尖锐，她认为方方日记让武汉“永远也翻不了身”。她说：“将来此书大量出版永流传，所有武汉人都将被戴上一顶摘不下的virus帽子；所有在西方的亚裔脸孔都将被歧视被侮辱被损害；美帝军队人手一本，连战前动员都省了，打你的伦理依据已经深入人心。”</p>
+  <p>白睿文指出，很多关于日记的争议都是强加的，他说：“比如它变成了美中关系的一个热点话题。但是书本身和美中关系毫无牵连，方方基本就没有提到过美国，但是这本书却被裹挟进去了。我觉得这非常不自然。这本书和政治议题毫无关系，但是却被一些有政治目的的人利用，当成了替罪羊。包括所谓的‘给美国人递刀子’，实在是太荒唐了。这本书招来了太多的阴谋论。比如，我一生都致力于写关于中国的书、教授中国文化、翻译中国作品，我为什么要害中国？我们想做一些积极的有意义的事。到今天我都认为，那些攻击日记的人才是想要害中国，他们才是问题所在。如果他们觉得向一个翻译家发出死亡威胁，就能够帮助中国和中国的形象，那他们眼中的现实是扭曲的”</p>
+  <p>除了过度政治化的解读，令白睿文更加不解的是中国政府和一些民众对异议的愤恨。他说：“如果一个政府一个国家真的很强大，那应该有自信，有包容性。这个包容性很重要。就像方方自己说过的，难道因为一个日记，共产党就要垮掉吗？任何一个政府都应该有这种包容性，应该允许不同的视角、不同的论述、不同的个人来表述他们对事情的看法。”</p>
+  <p>夏明教授认为，言论自由在全球大流行病的背景下尤其重要。他说：“在目前全球面临新冠疫情的情况下，每一个宝贵资讯的自由流动都是可以挽救生命的。在目前的情况下，中国政府面临一个它不完全了解的病毒，还要去作为一个最高裁判，来决定哪些东西可以发，哪些东西不能发，哪些事情可以说，哪些事情不允许说，那么中国共产党是用新的错误掩盖自己失职的老错误，这是他们一贯的做法”</p>
+  <p>在微博上，一位名叫“空隙中的黄昏”的网友是少有的支持方方的人之一，她在方方的新年感想下评论道：“方方为底层老百姓说话，批评政府在应对疫情中的不足之处，还可以促进政府改进防疫措施！然而那些底层老百姓却以家国情怀为由，不允许批评政府，似乎政府是他们开的一样。”</p>
+  <p>但是他的发言也很快被反对的声音淹没，网友“幸福顺发” 回应说： “哪一个父母没有错？更何况这样一个大家庭！关键要看他是否爱你！对政府亦是如此。”</p>
+  <p>白睿文表示，方方日记之所引起这么大的风波，不只是因为疫情，更多的是中国人对于公民社会看法的激烈分歧。但是这种争论有积极的意义，可以促使人们去思考。他说：“方方日记激起了关于公民社会的争论，以及普通民众间的讨论，也就是他们到底想要什么样的社会，是普通人可以自由发表日记的社会，还是不代表国家利益的行为就不被允许的社会。”</p>
+  <p>从众人赞扬到死亡威胁，方方在舆论的风口浪尖度过了一整年。哪怕是像瑞娅这样比较理性的人，也只承认方方是一个记录者。瑞娅告诉美国之音：“没必要说家丑不可外扬，但也没必要上升到英雄的高度。” </p>
+  <p>但是在白睿文看来，方方就是时代的英雄。他告诉美国之音：“好多中国知识分子都有明哲保身的习惯，遇到麻烦就不管，特别是如果说出来，家人会受到牵连。但是方方完全相反，她觉得这就是我该做的事情，不管有多大的牺牲，她还是要去做。我觉得在当代中国社会，这种人越来越少，越来越可贵。”</p>
+  <p>湖北武汉正在举办一个长达3个月的新冠专题展览，共展出照片1100余张、实物展品1000余件、视频45个、大型场景33处，中国官媒新华社、中央电视台以及几家湖北地方媒体都进行了报道。</p>
+  <p>由中国官方投资制作的的纪录片《武汉日夜》也在1月22日上映，在这些少有的官方一周年纪念活动中，方方以及因记录武汉疫情而被判刑的公民记者张展都没有被提及。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%B5%B7%E4%B8%8A%E6%A1%A8%E6%9D%BF%E7%91%9C%E4%BC%BD%E6%88%90%E6%96%B0%E5%86%A0%E6%9C%9F%E9%97%B4%E8%BF%90%E5%8A%A8%E6%96%B0%E5%AE%A0">
+          海上桨板瑜伽成新冠期间运动新宠
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B">
+          美国失业保险申领人数持续居高不下
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E6%94%BF%E5%BA%9C%E5%B0%B1%E4%BB%BB-%E4%B8%A4%E5%85%9A%E6%94%AF%E6%8C%81%E8%80%85%E5%8F%8D%E5%BA%94%E4%B8%8D%E5%90%8C">
+          新政府就任 两党支持者反应不同
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-21</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-21/%E5%A4%9A%E5%9B%BD%E6%94%BF%E8%A6%81%E5%92%8C%E6%B0%91%E4%BC%97%E5%AF%B9%E6%8B%9C%E7%99%BB%E5%B0%B1%E8%81%8C%E5%90%84%E6%8A%92%E5%B7%B1%E8%A7%81">
+          多国政要和民众对拜登就职各抒己见
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E8%8B%B1%E7%89%B9%E7%88%BE%E6%99%B6%E7%89%87%E4%BB%A5%E8%87%AA%E8%A3%BD%E7%82%BA%E4%B8%BB-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%97%A9%E7%9B%A4%E8%82%A1%E5%83%B9%E8%B7%8C24%E5%85%83">
+            前一篇：英特爾晶片以自製為主 台積電早盤股價跌24元
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B">
+            后一篇：美国失业保险申领人数持续居高不下
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E8%8B%B1%E7%89%B9%E7%88%BE%E6%99%B6%E7%89%87%E4%BB%A5%E8%87%AA%E8%A3%BD%E7%82%BA%E4%B8%BB-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%97%A9%E7%9B%A4%E8%82%A1%E5%83%B9%E8%B7%8C24%E5%85%83'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E6%94%BF%E5%BA%9C%E5%B0%B1%E4%BB%BB-%E4%B8%A4%E5%85%9A%E6%94%AF%E6%8C%81%E8%80%85%E5%8F%8D%E5%BA%94%E4%B8%8D%E5%90%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E8%8B%B1%E7%89%B9%E7%88%BE%E6%99%B6%E7%89%87%E4%BB%A5%E8%87%AA%E8%A3%BD%E7%82%BA%E4%B8%BB-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%97%A9%E7%9B%A4%E8%82%A1%E5%83%B9%E8%B7%8C24%E5%85%83">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-21/%E7%BE%8E%E5%9B%BD%E5%A4%B1%E4%B8%9A%E4%BF%9D%E9%99%A9%E7%94%B3%E9%A2%86%E4%BA%BA%E6%95%B0%E6%8C%81%E7%BB%AD%E5%B1%85%E9%AB%98%E4%B8%8D%E4%B8%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-21/%E6%96%B0%E6%94%BF%E5%BA%9C%E5%B0%B1%E4%BB%BB-%E4%B8%A4%E5%85%9A%E6%94%AF%E6%8C%81%E8%80%85%E5%8F%8D%E5%BA%94%E4%B8%8D%E5%90%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？ – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+" />
+    <meta property="og:description" content="
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？" />
+    <meta property="twitter:title" content="红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ba%25a2%25e6%2598%259f%25e6%2596%25b0%25e9%2597%25bb-%25e6%2594%25be%25e5%25bc%2583%25e5%25b9%25b4%25e7%25bb%2588%25e5%25a5%2596%25e4%25b9%259f%25e8%25a6%2581%25e8%25b5%25b0%25ef%25bc%258c%25e4%25bb%2596%25e4%25bb%25ac%25e4%25b8%25ba%25e4%25bb%2580%25e4%25b9%2588%25e6%2583%25b3%25e8%25a6%2581%2F&t=%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB+%7C+%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0%EF%BC%8C%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E2%80%9C%E9%80%83%E7%A6%BB%E2%80%9D%E6%8B%BC%E5%A4%9A%E5%A4%9A%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ba%25a2%25e6%2598%259f%25e6%2596%25b0%25e9%2597%25bb-%25e6%2594%25be%25e5%25bc%2583%25e5%25b9%25b4%25e7%25bb%2588%25e5%25a5%2596%25e4%25b9%259f%25e8%25a6%2581%25e8%25b5%25b0%25ef%25bc%258c%25e4%25bb%2596%25e4%25bb%25ac%25e4%25b8%25ba%25e4%25bb%2580%25e4%25b9%2588%25e6%2583%25b3%25e8%25a6%2581%2F&t=%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB+%7C+%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0%EF%BC%8C%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E2%80%9C%E9%80%83%E7%A6%BB%E2%80%9D%E6%8B%BC%E5%A4%9A%E5%A4%9A%EF%BC%9F&d=2021-01-09&e=
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+
+
+  
+红星新闻记者：王田
+  
+  2020年的最后一个月，梦梦（化名）从拼多多离职了。她放弃了几个月后才发的高额年终奖，没有一点留恋。“那感觉就像，我‘出狱’了。”
+  新年伊始，“拼多多98年女员工加班后离世”事件给众多职场人心底猛扣一击，他们惋惜年轻生命的逝去，又对当下互联网大厂盛行的“996”无可奈何。
+  2021年1月3日，得知这条噩耗后，梦梦点赞转发了20多条相关微博，甚至一度产生“内疚感”——她认为自己作为此前的一员，也变相推波助澜了这种加班风气。
+  近日，几位拼多多前员工向红星新闻记者还原了此前他们真实的工作状态，他们认为，一直高歌猛进的拼多多，并不会因为猝死事件改变，外界也还是会有人前仆后继向往大厂。拼多多依然还是众多年轻人青睐的互联网公司，超过BAT等互联网大厂的薪资依然让其在就业市场..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ba%25a2%25e6%2598%259f%25e6%2596%25b0%25e9%2597%25bb-%25e6%2594%25be%25e5%25bc%2583%25e5%25b9%25b4%25e7%25bb%2588%25e5%25a5%2596%25e4%25b9%259f%25e8%25a6%2581%25e8%25b5%25b0%25ef%25bc%258c%25e4%25bb%2596%25e4%25bb%25ac%25e4%25b8%25ba%25e4%25bb%2580%25e4%25b9%2588%25e6%2583%25b3%25e8%25a6%2581%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/&text=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/&title=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/&title=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？&body=
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/&title=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？&caption=
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ba%25a2%25e6%2598%259f%25e6%2596%25b0%25e9%2597%25bb-%25e6%2594%25be%25e5%25bc%2583%25e5%25b9%25b4%25e7%25bb%2588%25e5%25a5%2596%25e4%25b9%259f%25e8%25a6%2581%25e8%25b5%25b0%25ef%25bc%258c%25e4%25bb%2596%25e4%25bb%25ac%25e4%25b8%25ba%25e4%25bb%2580%25e4%25b9%2588%25e6%2583%25b3%25e8%25a6%2581%2F&t=%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB+%7C+%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0%EF%BC%8C%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E2%80%9C%E9%80%83%E7%A6%BB%E2%80%9D%E6%8B%BC%E5%A4%9A%E5%A4%9A%EF%BC%9F&d=2021-01-09&e=
+红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+——
+
+
+  
+红星新闻记者：王田
+  
+  2020年的最后一个月，梦梦（化名）从拼多多离职了。她放弃了几个月后才发的高额年终奖，没有一点留恋。“那感觉就像，我‘出狱’了。”
+  新年伊始，“拼多多98年女员工加班后离世”事件给众多职场人心底猛扣一击，他们惋惜年轻生命的逝去，又对当下互联网大厂盛行的“996”无可奈何。
+  2021年1月3日，得知这条噩耗后，梦梦点赞转发了20多条相关微博，甚至一度产生“内疚感”——她认为自己作为此前的一员，也变相推波助澜了这种加班风气。
+  近日，几位拼多多前员工向红星新闻记者还原了此前他们真实的工作状态，他们认为，一直高歌猛进的拼多多，并不会因为猝死事件改变，外界也还是会有人前仆后继向往大厂。拼多多依然还是众多年轻人青睐的互联网公司，超过BAT等互联网大厂的薪资依然让其在就业市场..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%25ba%25a2%25e6%2598%259f%25e6%2596%25b0%25e9%2597%25bb-%25e6%2594%25be%25e5%25bc%2583%25e5%25b9%25b4%25e7%25bb%2588%25e5%25a5%2596%25e4%25b9%259f%25e8%25a6%2581%25e8%25b5%25b0%25ef%25bc%258c%25e4%25bb%2596%25e4%25bb%25ac%25e4%25b8%25ba%25e4%25bb%2580%25e4%25b9%2588%25e6%2583%25b3%25e8%25a6%2581%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610176282000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/">红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？</a>
+——</p>
+
+<div>
+  <div style="text-align:left;margin-bottom:30px;">
+红星新闻记者：王田
+  </div>
+  <p>2020年的最后一个月，梦梦（化名）从拼多多离职了。她放弃了几个月后才发的高额年终奖，没有一点留恋。“那感觉就像，我‘出狱’了。”</p>
+  <p>新年伊始，“拼多多98年女员工加班后离世”事件给众多职场人心底猛扣一击，他们惋惜年轻生命的逝去，又对当下互联网大厂盛行的“996”无可奈何。</p>
+  <p>2021年1月3日，得知这条噩耗后，梦梦点赞转发了20多条相关微博，甚至一度产生“内疚感”——她认为自己作为此前的一员，也变相推波助澜了这种加班风气。</p>
+  <p>近日，几位拼多多前员工向红星新闻记者还原了此前他们真实的工作状态，他们认为，一直高歌猛进的拼多多，并不会因为猝死事件改变，外界也还是会有人前仆后继向往大厂。拼多多依然还是众多年轻人青睐的互联网公司，超过BAT等互联网大厂的薪资依然让其在就业市场充满竞争力。</p>
+  <p>拼多多在资本市场的表现也侧面证实了这一点：1月5日，拼多多股价逆势暴涨，创下了历史新高187.2美元/股，市值也达到了历史记录的2300亿美元。</p>
+  <p>梦梦感慨大家各自都有苦衷，但每个人也都有权利选择离开。“有人选择继续赚钱，而我可能更惜命吧。”</p>
+  <div id="attachment_661303" style="width: 510px" class="wp-caption aligncenter">
+<img aria-describedby="caption-attachment-661303" loading="lazy" src="https://chinadigitaltimes.net/chinese/files/2021/01/640.jpg" alt="" width="500" height="auto" class="size-full wp-image-661303" srcset="https://chinadigitaltimes.net/chinese/files/2021/01/640.jpg 1080w, https://chinadigitaltimes.net/chinese/files/2021/01/640-300x191.jpg 300w, https://chinadigitaltimes.net/chinese/files/2021/01/640-1024x652.jpg 1024w, https://chinadigitaltimes.net/chinese/files/2021/01/640-768x489.jpg 768w" sizes="(max-width: 1080px) 100vw, 1080px" />    <p id="caption-attachment-661303" class="wp-caption-text">多多买菜电脑端页面</p>
+  </div>
+  <h2 id="section">年轻人的工作状态：硬核奋斗模式，从996到007</h2>
+  <p>离职3个月，小杰（化名）还未从紧绷的状态中缓解过来。此前他也在多多买菜项目，尽管与离世的98年姑娘花名“润肺”的张某霏素不相识，但相似的经历让他心痛。“你信不信，即便如此，夜里去金虹桥（拼多多上海总部位置），依然能看到排成长龙的出租车。”他苦笑说，上海出租车师傅都知道，凌晨这里最好拉活，因为拼多多员工下班了。</p>
+  <p>2020年夏天，拼多多上线“多多买菜”， 这是拼多多在农产品领域的最新业务，同时也是最重头的业务。</p>
+  <p>梦梦回忆，当时内部抽调过几波员工去支援“多多买菜”。第一批是老板“钦点”大将，过去带队伍；第二批是各个团队老板说，想去买菜的可以自愿过去；之后内部甚至还有一个“不成文的规定”，去买菜可以调薪，否则不能调薪。“基本点到名字就得过去。有运营没去，果然就没有年中调薪。”</p>
+  <p>小杰是后端开发，他原先部门的同事多半都调去了“多多买菜”，“新人基本都过去，部分老人留下来做老电商业务。”在公司内部，随时抽调力量支援新项目是很常见的事。“你可以理解为，在这里没有什么固定岗位，变化非常快，公司让你去哪里就去哪里。”</p>
+  <p>电商社区团购的竞争白热化之后，转变来了。2020年10月，拼多多董事长黄铮在公司五周年讲话时提到，买菜是个好业务，是个苦业务，是个长期业务，也是拼多多人的试金石。更号召拼多多“全员开启硬核奋斗模式”。</p>
+  <p>“硬核奋斗模式”的最直观变化就是从原先的“996”变成“007”。多位员工证实，买菜业务线的员工此前实行超级大小周（工作13天休一天）后来演变成全无休，每天工作时长基本在12小时。</p>
+  <p>在脉脉上，有认证的拼多多员工透露，有买菜同事最长的持续工作时间高达30小时，基本睁眼就工作，闭眼就睡觉。</p>
+  <p>人少，是拼多多的一大特征。在中国互联网公司TOP5中，拼多多的员工人数最少，仅6千多人。而根据公开数据显示，阿里在2019年员工数量就达到10.8万，京东员工数超22万。</p>
+  <p>小杰说：“活多，就算7*24小时，也是干不完的。”小杰对接最多的是一线产品同事，前线需求像滚雪球一样扑面而来，今天接到的任务往往要排到一周后才能做。</p>
+  <h2 id="section-1">被高薪驱动的年轻人“奋斗”日常：晚上10点下班已是最早</h2>
+  <p>在买菜业务里，很难看到年长员工。小杰说，放眼整个公司，除了管理层和领导，27、28的年纪已经属于“大龄”。</p>
+  <p>买菜的员工出差是常态。即便身为后端开发的小杰，也有可能1个月出趟差。而产品和运营，几乎常驻某地“开城”——有些人一两个礼拜就换城市继续支持，有些则在一个地方一直驻扎。</p>
+  <p>“开城”是社区团购业务首要任务，先抢占下哪个城市就意味着更多的市场份额。以往媒体报道中，“多多买菜”常被形容为“兵贵神速”“打法凶悍”。有媒体统计数据，上线不到一个月，多多买菜已切入华中、西北市场，在西安、咸阳、黄冈、黄石、鄂州、咸宁、孝感九个市场全面铺开。在百度百科中这样记录，“试运营2个月期间，多多买菜已经得到了13个省份共计31个城市消费者的支持。”</p>
+  <p>小杰从后端需求中能感受到一线同事的紧迫感。“比如刚开了西安，马上又去开贵阳、南昌以及二线城市。”再往后，任务从一个压一个变成了多线进程、全面铺开。</p>
+  <p>梦梦把买菜同事的经历形容为“上山下乡”。她列举了各种让人哭笑不得的场面，比如：HR姐姐去前线学会了开叉车；开发产品坐仓库里写需求，放下电脑可以秒变搬运工……“缺什么就干什么，开城就像去开荒。”</p>
+  <p>前线同事经常需要凌晨作业。按照多多买菜的模式，消费者头天23点前下单，次日便可到最近的自提点取回商品。而前线员工往往凌晨要在每个仓库点位，除了帮忙分拣以外，还要紧盯工作流程，如果出现问题，要及时和后方反映优化。</p>
+  <p>无休的日子持续一段时间，小杰有明显的身体不适感，经常萎靡不振，有时心跳突然加速，自己实在扛不住了，就晚上10点打卡下班。“10点是技术人员能走的最早的时间。”</p>
+  <p>“病假也是可以请的，但有前提。”小杰说，全员硬核奋斗模式启动之后，部门的“隐形目标”是“每月工作时间不低于300小时。”按每月30天计算，相当于每天工作10小时，全月无休。小杰说另一位不在买菜的同事，因身体原因每周都会请一天病假，相当于每个月可能会休息4-5天。“即便这样，那人还是要完成每个月300的工时。就靠平时加班攒。”</p>
+  <p>但大多数员工不敢休息。多位员工表示，每个月员工的绩效都会被公示出来，而工时达标只是完成KPI的一部分。</p>
+  <p>在这家员工平均年龄27岁的公司里，意味着很多员工毕业后第一份工作就来到这里。梦梦说，有应届生员工，每天奋战到凌晨2点；也有女员工因此内分泌严重失调，几个月都不来一次月经。</p>
+  <p>小杰不知道这对于应届生而言是好是坏，他们可能会收获一份远高于同龄人的薪资，但代价是自己的生活没了。</p>
+  <p>即便是这样的工作节奏，高速成长的拼多多依然还是众多年轻人青睐的互联网公司。按小杰所说，拼多多应届生拿到的比BAT高 30-50% 左右，以技术岗为例，15万以上的年终奖已经算“低水平”，而从BAT跳槽过去的人，月薪4、5万也是常态。“当然，之前也不是现在的工作状态，原来就是996。”</p>
+  <p>高薪吸引着“围城外”的人，但“围城内”的一部分最终选择逃离这里。梦梦甚至连年终奖都等不了。“去年是农历新年前一天，才发的上一年全年加班费+两个月合同上写的奖金。”小杰则“羡慕”麻木的人。“如果能一直麻木且习惯的话也挺好。”</p>
+  <h2 id="section-2">时刻存在的高压：月工时达到300小时显示为“本分员工”，迟到一分钟扣3小时工资</h2>
+  <p>就在近日，拼多多市值破2200亿美金，成为仅次于腾讯、阿里的第三大互联网公司。对这个刚成立5年的公司来说，效率足够被重视。</p>
+  <p>梦梦想起无数个奔跑的早上。按公司要求，上班时间11点，迟到一分钟扣3小时工资。“精确到秒，11:00:59以后都算迟到。”而梦梦的工作地点并不在总部，她本人自称所在部门甚至可以算得上是“山高皇帝远”，是相对轻松的部门。</p>
+  <p>变化循序渐进。梦梦记得2019年8月底，年中沟通时，主管隐晦表达“大家要更努力”，明确表示会更关注工时情况。“以前周日会早一点下班，后来提了周日也不让早走。”</p>
+  <p>工时也被视为各部门努力程度的“凭证”，每个组必须保证全员达标，全组才能达标。离职前夕，梦梦想“轻松”一下，每晚8点下班打卡。走前一周，组长找她摊牌，自己有工时压力，希望她最后几天能支持一下。“就算你一个人不怕扣罚，那也不行，因为统计是连坐的，一人会连累全组。”</p>
+  <p>吃饭时间也开始缩短。在全员硬核奋斗的时段，就餐休息的2小时慢慢“隐形缩水”至1小时。梦梦记得，部门还为这事还专门“强调”过。</p>
+  <p>每个楼层的门禁成了新的统计工具。“HR会统计午休刷门禁的时间，看看吃饭是不是太久了。各部门的领导也常提醒，不要回来太晚。”小杰说。</p>
+  <p>在拼多多，黄铮强调“本分”：当员工月工时达到300小时，系统会显示“您已本分”；在5周年大会上，黄铮又再一次提到，“本分就是首先要搞清楚自己的定位，为谁创造什么样的价值，依赖谁活着，自己的职责是什么。”</p>
+  <p>很多员工给出了自己对“本分”的理解：按规矩来，不要出格，不说公司坏话，老老实实加班。</p>
+  <p>“本分”渗透到同事之间的私交中。梦梦记得自己两年多前入职时，因为公司没有内部论坛，同事们都会热衷在微信组建兴趣群、校友群，但这些群被公司发现后，逐一解散。</p>
+  <p>“很多人干了一两年，连身边同事真名都不知道。因为大家都用花名。你甚至也不知道，对面这人‘是敌是友’，无间道一样。”小杰说。</p>
+  <p>此前，拼多多对张某霏的离世发表说明，表示“心如刀绞”“深深的想念”。</p>
+  <p>另据界面新闻消息，从上海市长宁区劳动保障监察大队获悉，接到网络舆情后，劳动保障监察部门已对拼多多公司的劳动用工情况进行调查，会对该公司用人合同、用工时间等情况进行检查。</p>
+  <p>记者联系了拼多多，但拼多多表示对加班问题目前暂无官方回应。</p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb-%e6%94%be%e5%bc%83%e5%b9%b4%e7%bb%88%e5%a5%96%e4%b9%9f%e8%a6%81%e8%b5%b0%ef%bc%8c%e4%bb%96%e4%bb%ac%e4%b8%ba%e4%bb%80%e4%b9%88%e6%83%b3%e8%a6%81/">红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F-%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7">
+          德国之声 | 长平观察：马云的中国智慧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91">
+          立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85-%E5%9B%BD%E4%BC%9A%E5%86%B2%E7%AA%81-%E9%A6%99%E6%B8%AF%E6%8A%93%E6%8D%95-%E6%9C%B1%E4%BB%A4">
+          【CDT敏感词周报】石家庄疫情、国会冲突、香港抓捕、朱令
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-08/%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0-%E9%A9%AC%E4%BA%91%E7%88%B8%E7%88%B8-%E4%BB%8A%E5%9C%A8%E5%93%AA%E5%84%BF-%E5%8F%8D%E6%AD%A3%E5%AE%98%E5%AA%92%E6%97%A0%E6%B3%95%E8%AF%B4">
+          德国之声 – “马云爸爸”今在哪儿？反正官媒无法说
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E7%BA%AA%E5%A7%94%E5%8F%91%E6%96%87%E6%89%B9%E5%AE%98%E5%91%98%E7%9F%A5%E7%BA%AA%E8%BF%9D%E7%BA%AA%E7%BB%99%E9%98%B2%E7%96%AB%E5%B8%A6%E6%9D%A5%E9%9A%90%E6%82%A3">
+            前一篇：中纪委发文批官员知纪违纪给防疫带来隐患
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E6%9C%B1%E7%AB%8B%E4%BC%A6-%E7%BE%8E%E9%A9%BB%E8%81%94%E5%A4%A7%E4%BD%BF%E8%AE%BF%E5%8F%B0%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8">
+            后一篇：朱立伦：美驻联大使访台意义何在？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E7%BA%AA%E5%A7%94%E5%8F%91%E6%96%87%E6%89%B9%E5%AE%98%E5%91%98%E7%9F%A5%E7%BA%AA%E8%BF%9D%E7%BA%AA%E7%BB%99%E9%98%B2%E7%96%AB%E5%B8%A6%E6%9D%A5%E9%9A%90%E6%82%A3'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E6%9C%B1%E7%AB%8B%E4%BC%A6-%E7%BE%8E%E9%A9%BB%E8%81%94%E5%A4%A7%E4%BD%BF%E8%AE%BF%E5%8F%B0%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85-%E5%9B%BD%E4%BC%9A%E5%86%B2%E7%AA%81-%E9%A6%99%E6%B8%AF%E6%8A%93%E6%8D%95-%E6%9C%B1%E4%BB%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E4%B8%AD%E7%BA%AA%E5%A7%94%E5%8F%91%E6%96%87%E6%89%B9%E5%AE%98%E5%91%98%E7%9F%A5%E7%BA%AA%E8%BF%9D%E7%BA%AA%E7%BB%99%E9%98%B2%E7%96%AB%E5%B8%A6%E6%9D%A5%E9%9A%90%E6%82%A3">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E6%9C%B1%E7%AB%8B%E4%BC%A6-%E7%BE%8E%E9%A9%BB%E8%81%94%E5%A4%A7%E4%BD%BF%E8%AE%BF%E5%8F%B0%E6%84%8F%E4%B9%89%E4%BD%95%E5%9C%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%96%AB%E6%83%85-%E5%9B%BD%E4%BC%9A%E5%86%B2%E7%AA%81-%E9%A6%99%E6%B8%AF%E6%8A%93%E6%8D%95-%E6%9C%B1%E4%BB%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

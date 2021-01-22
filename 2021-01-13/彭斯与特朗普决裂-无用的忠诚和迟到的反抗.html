@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>彭斯与特朗普决裂：无用的忠诚和迟到的反抗 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+" />
+    <meta property="og:description" content="
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="彭斯与特朗普决裂：无用的忠诚和迟到的反抗" />
+    <meta property="twitter:title" content="彭斯与特朗普决裂：无用的忠诚和迟到的反抗" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210113%2Fmike-pence-trump%2F&t=%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82%EF%BC%9A%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210113%2Fmike-pence-trump%2F&t=%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82%EF%BC%9A%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97&d=2021-01-13&e=
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+
+
+  
+ANNIE KARNI,ANNIE KARNI2021-01-13 17:12:38
+  
+  
+周三，副总统迈克·彭斯主持了国会两院联席会议，确认选举人团的计票结果。
+  
+  华盛顿——对副总统迈克·彭斯(Mike Pence)来说，现在已经到了紧要关头。在属于特朗普总统自我的危险水域航行三年11个月之后，在所有那些他为了赢得老板欢心而战略性沉默或夸张奉承的咬牙切齿、忍气吞声的时刻之后，如今的他得到了总统的咒骂。
+  特朗普对彭斯拒绝尝试推翻大选而暴怒。在一系列会议中，总统对他进行了无情施压，忽而哄骗，忽而威逼。最终，就在彭斯上周三前往国会主持选举人团计票之前，特朗普给副总统官邸打了最后一通电话，做出了最后一次逼迫。
+  “你要么作为一名爱国者被历史铭记，”据两名了解谈话内容的人士透露，特朗普这样对他说，“要么就被当作一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210113%2Fmike-pence-trump%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210113/mike-pence-trump/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210113/mike-pence-trump/&text=彭斯与特朗普决裂：无用的忠诚和迟到的反抗&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210113/mike-pence-trump/&title=彭斯与特朗普决裂：无用的忠诚和迟到的反抗" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210113/mike-pence-trump/&title=彭斯与特朗普决裂：无用的忠诚和迟到的反抗" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=彭斯与特朗普决裂：无用的忠诚和迟到的反抗&body=
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210113/mike-pence-trump/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210113/mike-pence-trump/&title=彭斯与特朗普决裂：无用的忠诚和迟到的反抗&caption=
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=彭斯与特朗普决裂：无用的忠诚和迟到的反抗&url=https://cn.nytimes.com/usa/20210113/mike-pence-trump/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>彭斯与特朗普决裂：无用的忠诚和迟到的反抗</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210113/mike-pence-trump/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210113%2Fmike-pence-trump%2F&t=%E5%BD%AD%E6%96%AF%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E5%86%B3%E8%A3%82%EF%BC%9A%E6%97%A0%E7%94%A8%E7%9A%84%E5%BF%A0%E8%AF%9A%E5%92%8C%E8%BF%9F%E5%88%B0%E7%9A%84%E5%8F%8D%E6%8A%97&d=2021-01-13&e=
+彭斯与特朗普决裂：无用的忠诚和迟到的反抗
+——
+
+
+  
+ANNIE KARNI,ANNIE KARNI2021-01-13 17:12:38
+  
+  
+周三，副总统迈克·彭斯主持了国会两院联席会议，确认选举人团的计票结果。
+  
+  华盛顿——对副总统迈克·彭斯(Mike Pence)来说，现在已经到了紧要关头。在属于特朗普总统自我的危险水域航行三年11个月之后，在所有那些他为了赢得老板欢心而战略性沉默或夸张奉承的咬牙切齿、忍气吞声的时刻之后，如今的他得到了总统的咒骂。
+  特朗普对彭斯拒绝尝试推翻大选而暴怒。在一系列会议中，总统对他进行了无情施压，忽而哄骗，忽而威逼。最终，就在彭斯上周三前往国会主持选举人团计票之前，特朗普给副总统官邸打了最后一通电话，做出了最后一次逼迫。
+  “你要么作为一名爱国者被历史铭记，”据两名了解谈话内容的人士透露，特朗普这样对他说，“要么就被当作一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210113%2Fmike-pence-trump%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610531075000-->
+<p><a href="https://cn.nytimes.com/usa/20210113/mike-pence-trump/">彭斯与特朗普决裂：无用的忠诚和迟到的反抗</a>
+——</p>
+
+<div>
+  <div>
+<em>ANNIE KARNI,ANNIE KARNI<br />2021-01-13 17:12:38</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/12/us/politics/12dc-pence/merlin_182054052_610b167c-8fb1-44ae-a8f6-5948c7b0e71c-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">周三，副总统迈克·彭斯主持了国会两院联席会议，确认选举人团的计票结果。</small>
+  </div>
+  <p>华盛顿——对副总统迈克·彭斯(Mike Pence)来说，现在已经到了紧要关头。在属于特朗普总统自我的危险水域航行三年11个月之后，在所有那些他为了赢得老板欢心而战略性沉默或夸张奉承的咬牙切齿、忍气吞声的时刻之后，如今的他得到了总统的咒骂。</p>
+  <p>特朗普对彭斯拒绝尝试推翻大选而暴怒。在一系列会议中，总统对他进行了无情施压，忽而哄骗，忽而威逼。最终，就在彭斯上周三前往国会主持<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/06/us/politics/congress-gop-subvert-election.html" title="Link: https://www.nytimes.com/2021/01/06/us/politics/congress-gop-subvert-election.html">选举人团计票</a>之前，特朗普给副总统官邸打了最后一通电话，做出了最后一次逼迫。</p>
+  <p>“你要么作为一名爱国者被历史铭记，”据两名了解谈话内容的人士透露，特朗普这样对他说，“要么就被当作一个娘炮载入史册。”</p>
+  <p>当总统在一个煽动性集会上公开谴责副总统，并把被鼓动起来的支持者送到国会大厦，其中一些<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2021/01/12/us/capitol-mob-timeline.html?action=click&amp;module=Spotlight&amp;pgtype=Homepage">闯入大楼</a>的人还喊着“吊死迈克·彭斯”的时候，美国职位最高的两位民选官员之间的冲突就戏剧性地爆发了。</p>
+  <p>撤离到地下室的彭斯躲了好几个小时，同时，特朗普在发推攻击他，而不是打电话询问他是否平安。</p>
+  <p>他们经受过无数挑战的伙伴关系以这种异乎寻常的方式破裂了。</p>
+  <p>这位忠诚的副手几乎从未背离总统，巧妙地处理了其他所有可能的裂痕，但终于走到了一个他无法回避的决策点。尽管有总统和暴徒，他还是坚持承认大选。他也将为此付出代价，失去曾希望可为自己竞选总统所用的票仓。</p>
+  <p>“彭斯可以在他的宪法职责和他的政治前途之间做出选择，他做了正确的决定，”彭斯办公室的法律学者顾问柳约翰(John Yoo)说。“不管是对民主党还是对共和党，我认为他在许多方面堪称此刻的中心人物。他履行了自己的职责，尽管他一定知道，当他这么做的时候，可能意味着他永远不能成为总统。”</p>
+  <p>并不是所有人都愿意赞美彭斯，有人认为，他不应该因为遵守了宪法就受到追捧，并坚称要不是他在近四年时间里的顺从，总统本来就不可能对民主发起攻击。</p>
+  <p>“我很高兴他没有违反法律，但也很难称赞这样一个在我们的民主政府体制被颠覆之时未伸出援手的人有勇气，”新泽西州民主党议员汤姆·马林诺夫斯基(Tom Malinowski)说。“他必须明白，他一直为之卖命并忠诚捍卫的这个人，几乎凭一己之力就在这个国家掀起了一场要绞死迈克·彭斯的运动。”</p>
+  <p>彭斯与特朗普之间的分歧成为了他们任期末尾的主题——特别是因为副总统有权在内阁的支持下根据宪法第25修正案将总统撤职。众议院计划于周二进行投票表决，要求彭斯采取这一措施，否则就将对特朗普发起弹劾。</p>
+  <p>周二晚些时候，彭斯<a rel="nofollow" target="_blank" href="https://www.nytimes.com/live/2021/01/12/us/impeachment-trump-25th-amendment#pence-25th-amendment">致信众议院议长南希·佩洛西(Nancy Pelosi)</a>，拒绝采取行动。但特朗普对此已经太过紧张，以至于他打破了五天来的冷淡态度，邀请他的副总统周一晚在椭圆形办公室会面，以缓和两人的矛盾。对于两人长达一小时的谈话，官方的描述是“不错”；非官方的描述则是“空洞”且“僵硬”。</p>
+  <p>特朗普在上任时并不真正了解他的前任们是如何处理与竞选伙伴的关系的。在任期之初，当这届政府不会有组织结构图或规范决策过程的事实已经很明显时，彭斯就成了椭圆形办公室的常客，他只是不带任何目的地到场，时常会撞见正在讨论政策，而对此他没有得到任何简报材料。</p>
+  <p>他每天早上到达西翼，被告知总统何时从住所下来，之后一整天的大多数时间里就驻扎在椭圆形办公室。他几乎从来没有被正式邀请参加任何会议，他的名字极少出现在正式的会议名单上。但是他几乎总能随时出现。</p>
+  <p>冷静且镇定自若的彭斯担当了内阁秘书和其他官员的知己角色，他们担心特朗普的怒气，他建议他们如何在不引发总统情绪的情况下提出令人不安的话题。</p>
+  <p>彭斯最终发现，对特朗普的忠诚不见得有用。最近几个月，随着总统私下里对彭斯的斥责，两人之间的紧张关系日渐加剧。副总统的盟友认为，这部分是由于白宫办公厅主任马克·梅多斯(Mark Meadows)的煽动，他告诉特朗普，彭斯的助手正在向记者泄密。远在选举日之前，这已经在两个团队之间营造了一种不良的气氛。</p>
+  <p>当特朗普推翻选举结果的<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2020/11/25/us/elections/trump-campaign-lawsuits.html">每一次努力都遭到州官员和法官的拒绝</a>，特朗普被错误地告知，副总统可以以负责选举人团投票计数的参议院议长身份，阻止对候选总统小约瑟夫·R·拜登(Joseph R. Biden Jr.)当选结果的认证。</p>
+  <p>彭斯的律师格雷格·雅各布(Greg Jacob)对此事进行了研究，并得出结论说，副总统没有这样的权力。特朗普在他的两位律师鲁道夫·W·朱利安尼(Rudolph W. Giuliani)和珍娜·埃利斯(Jenna Ellis)的推动下不断施压。</p>
+  <p>彭斯的办公室征求了更多的宪法意见，包括曾在布什政府任职的加州大学伯克利分校(University of California at Berkeley)的著名保守派人士柳约翰。</p>
+  <p>上周投票前一天，在椭圆形办公室，特朗普在一系列会议中催促彭斯，其中包括一个持续了至少一小时的会议。查普曼大学(Chapman University)的保守派宪政学者约翰·伊士曼(John Eastman)也在椭圆形办公室，他试图向彭斯解释他的确有权这样做。</p>
+  <p>第二天早晨，在投票前几个小时，彭斯的私人律师理查德·库伦(Richard Cullen)打电话给受到保守派推崇的前上诉法院法官J·迈克尔·卢蒂格(J. Michael Luttig)——伊士曼曾担任过他的助理。卢蒂格认为副总统无权更改结果，并同意把自己的意见快速写下来，然后发布在Twitter上。</p>
+  <p>几分钟后，彭斯的工作人员在宣布副总统决定不阻止选举团成员的信中引用了卢蒂格的理由，并提及了他的名字。卢蒂格在周二接受电话采访时表示，在维护宪法方面发挥作用是“我一生的最高荣誉”。</p>
+  <p>在愤怒地打电话咒骂彭斯之后，特朗普在集会上煽动支持者，反对他自己的副总统，他说，“我希望他不要听从徒有虚名的共和党人和那些蠢货的话。”</p>
+  <p>“那天，他把责任推给迈克·彭斯，坑害了他，”彭斯担任印第安纳州州长时的顾问瑞安·斯特里特(Ryan Streeter)说。“这在美国政治中是前所未有的。在我看来，一位总统这样把自己的副总统推向困境，还鼓励支持者们来对付他，这是不合情理的。”</p>
+  <p>当时彭斯已经在开往国会大厦的车队中。当暴徒冲进大楼时，特勤局特工把他和妻子与孩子们撤离，先把他们送到他的办公室，然后送进地下室。他的特工敦促他离开大厦，但他拒绝撤离。在地下室，他与国会领导人、国防部长和参谋长联席会议主席交谈，但没有与总统交谈。</p>
+  <p>一名共和党参议员后来表示，他从未见过彭斯如此愤怒，彭斯觉得自己为总统做了那么多，却遭到了背叛。一名顾问表示，在特朗普看来，副总统已经属于“塞申斯那号人”，这是指司法部长杰夫·塞申斯(Jeff Sessions)，他在被撤职前曾经饱受总统折磨。（总统不能将副总统免职。)</p>
+  <p>周四，也就是围困事件发生后的第二天，彭斯远离白宫，避开了特朗普。第二天，他去了白宫，但大部分时间都待在毗邻的艾森豪威尔行政办公楼里，并在那里为工作人员举行了告别派对。</p>
+  <p>但助手们表示，彭斯不想成为这位睚眦必报的总统的长期敌人，周一，他已经回到了白宫西翼。</p>
+  <p>Peter Baker是《纽约时报》首席白宫记者，已为时报和《华盛顿邮报》报道过过去四届总统的新闻。他还是五本书的作者，最新出版的一本是《Impeachment: An American History》。欢迎在<a rel="nofollow" target="_blank" href="https://twitter.com/peterbakernyt">Twitter</a>和<a rel="nofollow" target="_blank" href="https://www.facebook.com/peter.baker.351">Faceboook</a>上关注他。<br />Maggie Haberman是一名白宫记者。她自2015年以竞选报道记者一职加入时报，是2018年因报道唐纳德·特朗普的顾问及其与俄罗斯的联系而获普利策奖的团队成员之一。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/maggieNYT">@maggieNYT</a>。<br />Annie Karni是一名白宫记者。她此前为《Politico》报道白宫和希拉里·克林顿2016年大选，还为《纽约邮报》和《纽约每日新闻》报道地方新闻和政治新闻。欢迎在Twitter上关注她：<a rel="nofollow" target="_blank" href="https://twitter.com/AnnieKarni">@AnnieKarni</a>。<br />翻译：Harry Wong、晋其角、邓妍<br /><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/01/12/us/politics/mike-pence-trump.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%AE%80%E6%8A%A5-%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E4%BA%8C%E6%AC%A1%E5%BC%B9%E5%8A%BE-%E4%B8%AD%E5%9B%BD%E5%85%AB%E4%B8%AA%E6%9C%88%E6%9D%A5%E9%A6%96%E7%8E%B0%E6%96%B0%E5%86%A0%E6%AD%BB%E4%BA%A1%E7%97%85%E4%BE%8B">
+          简报：特朗普遭二次弹劾；中国八个月来首现新冠死亡病例
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+          石家庄等多地再封城，超2200万人受影响
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E6%89%93%E6%89%AB-%E5%81%9A%E9%A5%AD-%E4%BF%9D%E6%8C%81%E8%BA%AB%E6%9D%90-%E9%9F%A9%E5%9B%BD-%E5%AD%95%E5%A6%87%E6%8C%87%E5%8D%97-%E5%BC%95%E4%BC%97%E6%80%92">
+          打扫、做饭，保持身材：韩国“孕妇指南”引众怒
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AE%A9%E7%BE%8E%E5%9B%BD%E6%88%90%E4%BA%86%E7%AC%91%E6%9F%84">
+          特朗普让美国成了笑柄
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E5%AE%A1%E8%AE%AE%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE%E8%AE%AE%E6%A1%88%E5%9C%A8%E5%8D%B3-%E5%85%B1%E5%92%8C%E5%85%9A%E5%86%85%E6%8E%80%E8%B5%B7%E5%80%92%E6%88%88%E6%BD%AE">
+            前一篇：美国众议院审议弹劾特朗普议案在即 共和党内掀起倒戈潮
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/12%E6%B8%AF%E4%BA%BA%E6%A1%88%E5%BE%8B%E5%B8%88%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%90%8A%E7%85%A7%E5%90%AC%E8%AF%81-%E5%A4%9A%E4%BA%BA%E9%81%AD%E8%AD%A6%E5%B8%A6%E8%B5%B0">
+            后一篇：12港人案律师卢思位吊照听证  多人遭警带走
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E5%AE%A1%E8%AE%AE%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE%E8%AE%AE%E6%A1%88%E5%9C%A8%E5%8D%B3-%E5%85%B1%E5%92%8C%E5%85%9A%E5%86%85%E6%8E%80%E8%B5%B7%E5%80%92%E6%88%88%E6%BD%AE'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/12%E6%B8%AF%E4%BA%BA%E6%A1%88%E5%BE%8B%E5%B8%88%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%90%8A%E7%85%A7%E5%90%AC%E8%AF%81-%E5%A4%9A%E4%BA%BA%E9%81%AD%E8%AD%A6%E5%B8%A6%E8%B5%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E6%89%93%E6%89%AB-%E5%81%9A%E9%A5%AD-%E4%BF%9D%E6%8C%81%E8%BA%AB%E6%9D%90-%E9%9F%A9%E5%9B%BD-%E5%AD%95%E5%A6%87%E6%8C%87%E5%8D%97-%E5%BC%95%E4%BC%97%E6%80%92'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E5%AE%A1%E8%AE%AE%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE%E8%AE%AE%E6%A1%88%E5%9C%A8%E5%8D%B3-%E5%85%B1%E5%92%8C%E5%85%9A%E5%86%85%E6%8E%80%E8%B5%B7%E5%80%92%E6%88%88%E6%BD%AE">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/12%E6%B8%AF%E4%BA%BA%E6%A1%88%E5%BE%8B%E5%B8%88%E5%8D%A2%E6%80%9D%E4%BD%8D%E5%90%8A%E7%85%A7%E5%90%AC%E8%AF%81-%E5%A4%9A%E4%BA%BA%E9%81%AD%E8%AD%A6%E5%B8%A6%E8%B5%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%AD%89%E5%A4%9A%E5%9C%B0%E5%86%8D%E5%B0%81%E5%9F%8E-%E8%B6%852200%E4%B8%87%E4%BA%BA%E5%8F%97%E5%BD%B1%E5%93%8D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-13/%E6%89%93%E6%89%AB-%E5%81%9A%E9%A5%AD-%E4%BF%9D%E6%8C%81%E8%BA%AB%E6%9D%90-%E9%9F%A9%E5%9B%BD-%E5%AD%95%E5%A6%87%E6%8C%87%E5%8D%97-%E5%BC%95%E4%BC%97%E6%80%92">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

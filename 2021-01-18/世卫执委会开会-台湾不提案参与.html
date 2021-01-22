@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>世卫执委会开会 台湾不提案参与 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+世卫执委会开会 台湾不提案参与
+——
+" />
+    <meta property="og:description" content="
+世卫执委会开会 台湾不提案参与
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="世卫执委会开会 台湾不提案参与" />
+    <meta property="twitter:title" content="世卫执委会开会 台湾不提案参与" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fhcm-01182021064029.html&t=%E4%B8%96%E5%8D%AB%E6%89%A7%E5%A7%94%E4%BC%9A%E5%BC%80%E4%BC%9A+%E5%8F%B0%E6%B9%BE%E4%B8%8D%E6%8F%90%E6%A1%88%E5%8F%82%E4%B8%8E" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fhcm-01182021064029.html&t=%E4%B8%96%E5%8D%AB%E6%89%A7%E5%A7%94%E4%BC%9A%E5%BC%80%E4%BC%9A+%E5%8F%B0%E6%B9%BE%E4%B8%8D%E6%8F%90%E6%A1%88%E5%8F%82%E4%B8%8E&d=2021-01-18&e=
+世卫执委会开会 台湾不提案参与
+——
+
+
+  世界卫生组织(WHO)执委会18日以视讯形式召开年度会议，台湾过去始终被拒于世卫门外，也年年叩关争取支持。今年台湾外交部罕见地发表声明表示，在全球聚焦防疫及抗疫之际，为避免干扰以及遭泛政治化解读，台湾决定不在执委会提案。
+  自从新冠肺炎疫情爆发以来，台湾曾创下连续超过250天没有本土的案例，尽管台湾近期爆发医院群聚感染5名医护染病，不过，台湾防疫成就有目共睹，却无缘参与世卫组织(WHO)。
+  去年3月台湾总统蔡英文曾表示，此次世卫组织不能充分发挥领导全球防疫的功能，造成国际新冠肺炎疫情蔓延，国际社会都深自警惕，也更加理解合作的必要性。蔡英文还呼吁国际社会，台湾愿意贡献自己的防疫能量，一起照顾所有人类的健康。
+  台湾不提案理由 台外交部：避免政治化干扰专业议题讨论
+  然而，台湾外交部发言人欧江安18日说明今年台湾推案策略时表示，在..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fhcm-01182021064029.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html&text=世卫执委会开会 台湾不提案参与&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html&title=世卫执委会开会 台湾不提案参与" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html&title=世卫执委会开会 台湾不提案参与" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=世卫执委会开会 台湾不提案参与&body=
+世卫执委会开会 台湾不提案参与
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html&title=世卫执委会开会 台湾不提案参与&caption=
+世卫执委会开会 台湾不提案参与
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=世卫执委会开会 台湾不提案参与&url=https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>世卫执委会开会 台湾不提案参与</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fhcm-01182021064029.html&t=%E4%B8%96%E5%8D%AB%E6%89%A7%E5%A7%94%E4%BC%9A%E5%BC%80%E4%BC%9A+%E5%8F%B0%E6%B9%BE%E4%B8%8D%E6%8F%90%E6%A1%88%E5%8F%82%E4%B8%8E&d=2021-01-18&e=
+世卫执委会开会 台湾不提案参与
+——
+
+
+  世界卫生组织(WHO)执委会18日以视讯形式召开年度会议，台湾过去始终被拒于世卫门外，也年年叩关争取支持。今年台湾外交部罕见地发表声明表示，在全球聚焦防疫及抗疫之际，为避免干扰以及遭泛政治化解读，台湾决定不在执委会提案。
+  自从新冠肺炎疫情爆发以来，台湾曾创下连续超过250天没有本土的案例，尽管台湾近期爆发医院群聚感染5名医护染病，不过，台湾防疫成就有目共睹，却无缘参与世卫组织(WHO)。
+  去年3月台湾总统蔡英文曾表示，此次世卫组织不能充分发挥领导全球防疫的功能，造成国际新冠肺炎疫情蔓延，国际社会都深自警惕，也更加理解合作的必要性。蔡英文还呼吁国际社会，台湾愿意贡献自己的防疫能量，一起照顾所有人类的健康。
+  台湾不提案理由 台外交部：避免政治化干扰专业议题讨论
+  然而，台湾外交部发言人欧江安18日说明今年台湾推案策略时表示，在..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fhcm-01182021064029.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610970035000-->
+<p><a href="https://www.rfa.org/mandarin/yataibaodao/hcm-01182021064029.html">世卫执委会开会 台湾不提案参与</a>
+——</p>
+
+<div>
+  <p><br />世界卫生组织(WHO)执委会18日以视讯形式召开年度会议，台湾过去始终被拒于世卫门外，也年年叩关争取支持。今年台湾外交部罕见地发表声明表示，在全球聚焦防疫及抗疫之际，为避免干扰以及遭泛政治化解读，台湾决定不在执委会提案。</p>
+  <p>自从新冠肺炎疫情爆发以来，台湾曾创下连续超过250天没有本土的案例，尽管台湾近期爆发医院群聚感染5名医护染病，不过，台湾防疫成就有目共睹，却无缘参与世卫组织(WHO)。</p>
+  <p>去年3月台湾总统蔡英文曾表示，此次世卫组织不能充分发挥领导全球防疫的功能，造成国际新冠肺炎疫情蔓延，国际社会都深自警惕，也更加理解合作的必要性。蔡英文还呼吁国际社会，台湾愿意贡献自己的防疫能量，一起照顾所有人类的健康。</p>
+  <p><strong>台湾不提案理由 台外交部：避免政治化干扰专业议题讨论</strong></p>
+  <p>然而，台湾外交部发言人欧江安18日说明今年台湾推案策略时表示，在目前全球疫情未见停歇，甚至出现变种病毒株的严峻情势下，本届执委会会议期间各国公卫部门将高度聚焦于有效防疫、疫苗分配及疫情检讨等专业议题。“在全球聚焦防疫及抗疫之际，为避免干扰对会中专业议题的讨论，以及台湾世卫组织推案遭泛政治化的误解，台湾经审慎评估后决定不在讨论技术性议题的执委会提案。”</p>
+  <p>欧江安强调，台湾的诉求已经得到越来越多的国际支持，2020年11月世卫大会(WHA)复会，全球80多国超过1,700名国会议员公开表示支持台湾参与世卫组织(WHO)，就是具体例证。</p>
+  <p>世卫组织(WHO)从18日起举行第148届执委会（EB）会议，执委会成员共34席，包括美国、英国、德国等国家都是成员，中国也是成员国之一。</p>
+  <p><strong>台湾医界联盟推动参与WHO25年 林世嘉：提案就是要留下记录</strong></p>
+  <p>消息传来，长期推动台湾加入世卫组织的台湾NGO团体、台湾医界联盟，基金会执行长林世嘉18日告诉本台，台湾在疫情一直都是模范生，就算在执委会没有多数，这次在执委会至少包括理念相近的国家美、英、德国，平常帮台湾奔走要求跟WHO干事长或是副干事长见面的7个国家都在里面。林世嘉解释，按照世卫组织的议事规则，会员国提案就成案、成案就必须讨论，即便表决没过，就是一个记录。</p>
+  <p>林世嘉：“我要的是作为一个推动这案子超过四分之一世纪的单位-台湾医界联盟基金会，我们要的其实是个’记录’。我实在不想我们推了25年的事情，被这样处理跟糟蹋。”</p>
+  <p>林世嘉指出，台湾对公卫的努力跟表现，其实就像世界一盏明灯，照亮世界的黑暗处跟人心当中自私的黑暗处。对于其他需要协助与分享经验的地方、对于政治因素例如中国阻挠台湾入会、对于某些国家基于国家利益没有支持台湾，台湾正如一盏明灯照亮他们黑暗之处。</p>
+  <p><br />林世嘉：“我们提议’以战养战’维持量能，凸显中国要挡多少次。台湾的人命不值钱吗？按照世卫大会宪章明定，所有人不因为种族、宗教、信仰，都该得到最大程度的健康。这世界对台湾并不公平，我们一定要自己发声。’天助、自助’如果自己都不讲了，别人如何帮忙。对于世卫组织的参与，不容一个’以疫情为重、WHO很忙’就不处理它。”</p>
+  <p><strong>台湾不提案叩关世卫 刘仕杰表示错愕与不解</strong></p>
+  <p>时代力量国际部主任刘仕杰听到消息的第一反应是“错愕与不解”。刘仕杰认为世界卫生组织干事长谭德塞对台湾的态度已经到谷底，台湾还多所担心与顾虑，他认为实在没有必要自我设限。</p>
+  <p>刘仕杰：“全世界都看到，台湾在防疫上几乎是全球第一名的表现。除非真的有外界完全不知道的理由，光从字面我是无法理解。”</p>
+  <p><br />刘仕杰说，中国打压根本不是新闻，台湾不管提案不提案都会打压。打压不是新闻、不打压才是新闻。他反问，这本来就是政治问题，难不成是医疗专业的问题。</p>
+  <p><strong>彭锦鹏：拜登政府欲重返国际 对中“硬中带软”</strong></p>
+  <p>台大政治系副教授彭锦鹏接受本台访问时认为，这可能与美国即将上任的拜登政府有关。彭锦鹏指出，拜登政府上台前100天应该很多事情要做，需要修补跟世卫组织的关系，无暇顾及台湾。“这是最可能的理由，因为我们没有理由不提，尤其是我们现在提正当性又高。”</p>
+  <p>彭锦鹏表示，拜登已经在做全球事务管理，他已经表态第一天上台要重返《巴黎协定》，马上重返国际社会。台美关系会加强基础来往，特朗普政府留下的都会持续，拜登对中国会“硬中带软”一路硬下去。开放的部分就是engagement(参与)，他会继续跟中国好好谈判。</p>
+  <p><br />自由亚洲电台记者黄春梅 台北报道 责编 许书婷 胡力汉</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E5%8F%B0%E6%B9%BE%E6%96%87%E5%AD%A6%E5%9F%BA%E5%9C%B0%E8%90%BD%E6%88%90-%E6%96%87%E5%8C%96%E9%83%A8%E9%95%BF-%E4%B8%AD%E5%9B%BD%E4%BD%9C%E5%AE%B6%E5%9C%A8%E5%8F%B0%E5%87%BA%E4%B9%A6%E6%97%A0%E7%A6%81%E5%BF%8C">
+          台湾文学基地落成 文化部长：中国作家在台出书无禁忌
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E5%85%BB%E8%80%81%E9%87%91%E5%9B%A0%E5%9D%90%E7%89%A2%E5%8C%96%E4%B8%BA%E4%B9%8C%E6%9C%89-%E5%8C%97%E4%BA%AC%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E9%95%BF%E8%80%81%E5%BE%90%E6%B0%B8%E6%B5%B7%E8%AA%93%E8%AE%A8%E5%85%AC%E9%81%93">
+          养老金因坐牢化为乌有 北京家庭教会长老徐永海誓讨公道
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8B%E5%8F%B0%E5%89%8D%E5%8A%A0%E7%A0%81%E7%A6%81%E5%8D%8E%E4%B8%BA-%E6%8A%97%E4%B8%AD%E7%A7%91%E6%8A%80%E6%88%98%E5%9D%9A%E6%8C%81%E5%88%B0%E6%9C%80%E5%90%8E">
+          特朗普下台前加码禁华为 抗中科技战坚持到最后
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-18/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8B%E5%8F%B0%E5%89%8D%E5%8A%A0%E7%A0%81%E7%A6%81%E5%8D%8E%E4%B8%BA-%E6%8A%97%E4%B8%AD%E7%A7%91%E6%8A%80%E6%88%98%E5%9D%9A%E6%8C%81%E5%88%B0%E6%9C%80%E5%90%8E">
+          特朗普下台前加码禁华为  抗中科技战坚持到最后
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E5%85%A8%E7%90%83%E7%96%AB%E8%8B%97%E9%80%9F%E6%8A%A5-%E5%B7%B4%E8%A5%BF%E6%89%B9%E5%87%86%E4%B8%A4%E7%A7%8D%E7%96%AB%E8%8B%97%E4%BD%BF%E7%94%A8-%E6%8C%AA%E5%A8%81%E6%96%BD%E6%89%93%E7%96%AB%E8%8B%9729%E6%AD%BB">
+            前一篇：全球疫苗速报：巴西批准两种疫苗使用 挪威施打疫苗29死
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%89%E6%98%9F%E7%94%B5%E5%AD%90%E5%89%AF%E4%BC%9A%E9%95%BF%E6%9D%8E%E5%9C%A8%E9%95%95%E8%8E%B7%E5%88%91%E4%B8%A4%E5%B9%B4%E5%8D%8A">
+            后一篇：三星电子副会长李在镕获刑两年半
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E5%85%A8%E7%90%83%E7%96%AB%E8%8B%97%E9%80%9F%E6%8A%A5-%E5%B7%B4%E8%A5%BF%E6%89%B9%E5%87%86%E4%B8%A4%E7%A7%8D%E7%96%AB%E8%8B%97%E4%BD%BF%E7%94%A8-%E6%8C%AA%E5%A8%81%E6%96%BD%E6%89%93%E7%96%AB%E8%8B%9729%E6%AD%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%89%E6%98%9F%E7%94%B5%E5%AD%90%E5%89%AF%E4%BC%9A%E9%95%BF%E6%9D%8E%E5%9C%A8%E9%95%95%E8%8E%B7%E5%88%91%E4%B8%A4%E5%B9%B4%E5%8D%8A'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E5%85%BB%E8%80%81%E9%87%91%E5%9B%A0%E5%9D%90%E7%89%A2%E5%8C%96%E4%B8%BA%E4%B9%8C%E6%9C%89-%E5%8C%97%E4%BA%AC%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E9%95%BF%E8%80%81%E5%BE%90%E6%B0%B8%E6%B5%B7%E8%AA%93%E8%AE%A8%E5%85%AC%E9%81%93'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-18/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8B%E5%8F%B0%E5%89%8D%E5%8A%A0%E7%A0%81%E7%A6%81%E5%8D%8E%E4%B8%BA-%E6%8A%97%E4%B8%AD%E7%A7%91%E6%8A%80%E6%88%98%E5%9D%9A%E6%8C%81%E5%88%B0%E6%9C%80%E5%90%8E'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E5%85%A8%E7%90%83%E7%96%AB%E8%8B%97%E9%80%9F%E6%8A%A5-%E5%B7%B4%E8%A5%BF%E6%89%B9%E5%87%86%E4%B8%A4%E7%A7%8D%E7%96%AB%E8%8B%97%E4%BD%BF%E7%94%A8-%E6%8C%AA%E5%A8%81%E6%96%BD%E6%89%93%E7%96%AB%E8%8B%9729%E6%AD%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-18/%E4%B8%89%E6%98%9F%E7%94%B5%E5%AD%90%E5%89%AF%E4%BC%9A%E9%95%BF%E6%9D%8E%E5%9C%A8%E9%95%95%E8%8E%B7%E5%88%91%E4%B8%A4%E5%B9%B4%E5%8D%8A">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-18/%E5%85%BB%E8%80%81%E9%87%91%E5%9B%A0%E5%9D%90%E7%89%A2%E5%8C%96%E4%B8%BA%E4%B9%8C%E6%9C%89-%E5%8C%97%E4%BA%AC%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E9%95%BF%E8%80%81%E5%BE%90%E6%B0%B8%E6%B5%B7%E8%AA%93%E8%AE%A8%E5%85%AC%E9%81%93">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-18/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8B%E5%8F%B0%E5%89%8D%E5%8A%A0%E7%A0%81%E7%A6%81%E5%8D%8E%E4%B8%BA-%E6%8A%97%E4%B8%AD%E7%A7%91%E6%8A%80%E6%88%98%E5%9D%9A%E6%8C%81%E5%88%B0%E6%9C%80%E5%90%8E">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

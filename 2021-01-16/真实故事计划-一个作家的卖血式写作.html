@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>真实故事计划 | 一个作家的卖血式写作 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+真实故事计划 | 一个作家的卖血式写作
+——
+" />
+    <meta property="og:description" content="
+真实故事计划 | 一个作家的卖血式写作
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="真实故事计划 | 一个作家的卖血式写作" />
+    <meta property="twitter:title" content="真实故事计划 | 一个作家的卖血式写作" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%259c%259f%25e5%25ae%259e%25e6%2595%2585%25e4%25ba%258b%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25b8%25aa%25e4%25bd%259c%25e5%25ae%25b6%25e7%259a%2584%25e5%258d%2596%25e8%25a1%2580%25e5%25bc%258f%25e5%2586%2599%25e4%25bd%259c%2F&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%B8%AA%E4%BD%9C%E5%AE%B6%E7%9A%84%E5%8D%96%E8%A1%80%E5%BC%8F%E5%86%99%E4%BD%9C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%259c%259f%25e5%25ae%259e%25e6%2595%2585%25e4%25ba%258b%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25b8%25aa%25e4%25bd%259c%25e5%25ae%25b6%25e7%259a%2584%25e5%258d%2596%25e8%25a1%2580%25e5%25bc%258f%25e5%2586%2599%25e4%25bd%259c%2F&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%B8%AA%E4%BD%9C%E5%AE%B6%E7%9A%84%E5%8D%96%E8%A1%80%E5%BC%8F%E5%86%99%E4%BD%9C&d=2021-01-16&e=
+真实故事计划 | 一个作家的卖血式写作
+——
+
+
+  一个作家的卖血式写作
+  “我也不要求成为一个多么有影响力的人，我只需要跟人始终保持关系。我对人，生命，有一种渴求。”
+  在目光之外
+  有段时间，袁凌的桌上一直放着一张遗照：死者躺在冰柜里，耳朵和紧闭的眼睑旁边有凝结的血块，浑身显出紫疳色。有时洗漱之后，他还提醒自己看一眼照片再入睡。
+  后来，室友觉得太吓人了，将照片撕掉扔进了垃圾堆。袁凌为此差点跟他打了一架。
+  死者的父亲曾是袁凌的线人，给做记者的他反映过很多腐败案件。儿子在一处煤矿中意外死亡，他怀疑是谋杀，希望袁凌能帮忙报道一下。但“报社说，死个人，又不是北京的，社会新闻做不了，深度新闻不够做，算了”，他就没法做。在愧疚中，袁凌将死者的照片摆在了桌上。
+  矿难死者、留守儿童、被忽视的盲女、望京病房里的货郎……这些没有流量，远离话语系统的边缘人，是袁凌笔下最常出现的主..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%259c%259f%25e5%25ae%259e%25e6%2595%2585%25e4%25ba%258b%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25b8%25aa%25e4%25bd%259c%25e5%25ae%25b6%25e7%259a%2584%25e5%258d%2596%25e8%25a1%2580%25e5%25bc%258f%25e5%2586%2599%25e4%25bd%259c%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/&text=真实故事计划 | 一个作家的卖血式写作&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/&title=真实故事计划 | 一个作家的卖血式写作" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/&title=真实故事计划 | 一个作家的卖血式写作" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=真实故事计划 | 一个作家的卖血式写作&body=
+真实故事计划 | 一个作家的卖血式写作
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/&title=真实故事计划 | 一个作家的卖血式写作&caption=
+真实故事计划 | 一个作家的卖血式写作
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=真实故事计划 | 一个作家的卖血式写作&url=https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>真实故事计划 | 一个作家的卖血式写作</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-16
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%259c%259f%25e5%25ae%259e%25e6%2595%2585%25e4%25ba%258b%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25b8%25aa%25e4%25bd%259c%25e5%25ae%25b6%25e7%259a%2584%25e5%258d%2596%25e8%25a1%2580%25e5%25bc%258f%25e5%2586%2599%25e4%25bd%259c%2F&t=%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92+%7C+%E4%B8%80%E4%B8%AA%E4%BD%9C%E5%AE%B6%E7%9A%84%E5%8D%96%E8%A1%80%E5%BC%8F%E5%86%99%E4%BD%9C&d=2021-01-16&e=
+真实故事计划 | 一个作家的卖血式写作
+——
+
+
+  一个作家的卖血式写作
+  “我也不要求成为一个多么有影响力的人，我只需要跟人始终保持关系。我对人，生命，有一种渴求。”
+  在目光之外
+  有段时间，袁凌的桌上一直放着一张遗照：死者躺在冰柜里，耳朵和紧闭的眼睑旁边有凝结的血块，浑身显出紫疳色。有时洗漱之后，他还提醒自己看一眼照片再入睡。
+  后来，室友觉得太吓人了，将照片撕掉扔进了垃圾堆。袁凌为此差点跟他打了一架。
+  死者的父亲曾是袁凌的线人，给做记者的他反映过很多腐败案件。儿子在一处煤矿中意外死亡，他怀疑是谋杀，希望袁凌能帮忙报道一下。但“报社说，死个人，又不是北京的，社会新闻做不了，深度新闻不够做，算了”，他就没法做。在愧疚中，袁凌将死者的照片摆在了桌上。
+  矿难死者、留守儿童、被忽视的盲女、望京病房里的货郎……这些没有流量，远离话语系统的边缘人，是袁凌笔下最常出现的主..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e7%259c%259f%25e5%25ae%259e%25e6%2595%2585%25e4%25ba%258b%25e8%25ae%25a1%25e5%2588%2592-%25e4%25b8%2580%25e4%25b8%25aa%25e4%25bd%259c%25e5%25ae%25b6%25e7%259a%2584%25e5%258d%2596%25e8%25a1%2580%25e5%25bc%258f%25e5%2586%2599%25e4%25bd%259c%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610806828000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/">真实故事计划 | 一个作家的卖血式写作</a>
+——</p>
+
+<div>
+  <h2 id="section">一个作家的卖血式写作</h2>
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661572-6002ec9947b15.png" alt="img" width="500" class="aligncenter" />  <p>“我也不要求成为一个多么有影响力的人，我只需要跟人始终保持关系。我对人，生命，有一种渴求。”</p>
+  <h3 id="section-1"><strong>在目光之外</strong></h3>
+  <p>有段时间，袁凌的桌上一直放着一张遗照：死者躺在冰柜里，耳朵和紧闭的眼睑旁边有凝结的血块，浑身显出紫疳色。有时洗漱之后，他还提醒自己看一眼照片再入睡。</p>
+  <p>后来，室友觉得太吓人了，将照片撕掉扔进了垃圾堆。袁凌为此差点跟他打了一架。</p>
+  <p>死者的父亲曾是袁凌的线人，给做记者的他反映过很多腐败案件。儿子在一处煤矿中意外死亡，他怀疑是谋杀，希望袁凌能帮忙报道一下。但“报社说，死个人，又不是北京的，社会新闻做不了，深度新闻不够做，算了”，他就没法做。在愧疚中，袁凌将死者的照片摆在了桌上。</p>
+  <p>矿难死者、留守儿童、被忽视的盲女、望京病房里的货郎……这些没有流量，远离话语系统的边缘人，是袁凌笔下最常出现的主人公。作家野夫评论说，袁凌始终直面底层社会的冷与无奈，尽其体温以图敷热那些悲寒之生命。</p>
+  <p>对袁凌自己来说，这出于一种老派的，甚至有些过时的道德感：我只是希望自己作为一个普通人，与其他普通人产生联络，有一种彼此平等的关切和交流，我不愿意去做那种功利性特别强的采访。我想普通人和普通人相互看见、相互交流，这样我们大家互相理解，我们的社会可能会少一些障碍和隔膜，多一些宽容和理解。</p>
+  <p>1999年进入新闻行业，袁凌对功利性的新闻报道常常产生怀疑，一个事情发生了，去跑一下现场，回来发一篇稿子，这件事就算结束了。但是否真的深入理解了当事人，是否呈现了整个事件的复杂性？</p>
+  <p>这种不安推动他转向更深入的调查报道，直到写出《北京SARS后患者骨坏死不完全调查》《吕日周再调查》《汶川：重建的隐忧》等一系列轰动一时的作品。</p>
+  <p>但不够，还要更深入一些，还要看到更多的普通人命运。2005年，他选择辞掉媒体工作。</p>
+  <p>当时的他已经是新浪网新闻中心的副总监，处在职业生涯最光明的时刻，有高薪，以及去美国的机会。这个从陕西省安康市平利县八仙镇走出来青年即将完成阶层跃迁，但他却决定返乡。原因是这个僻远的家乡在城镇化过程中正快速消失，“再不写就来不及了”。</p>
+  <p>大多人都主动向流量系统靠近，争取更多资源，而袁凌选择“自我流放”。这在他身上发生并不太让人吃惊。还在1999年，刚从复旦大学研究生毕业时，面对《重庆晚报》的招聘，袁凌就问了这样一个问题：“你们那是不是有很多农村？”对方答：“我们这里是大城市，大农村。”袁凌立马去了那里，一呆四年。</p>
+  <p>从北京到西安，坐火车穿过世界上最长的秦岭终南山隧道，到汉江边的安康，再顺着支流岚河上行两百多里，进入大巴山深处的河流源头，袁凌终于回到了老家八仙镇。</p>
+  <div style="width: 510px" class="wp-caption aligncenter">
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661572-6002ec9c6b06e." alt="img" width="500" class="aligncenter" />    <p class="wp-caption-text">图 | 陕南农村丰收，青壮年都已出门打工</p>
+  </div>
+  <p>他呆了一年多，“开始住在一个算命先生废弃的粮管所里，后来住在一个路边小店”，能接触到形形色色的人。他写了20多篇，呈现城镇化运动中断裂状态下的乡土农民，但直到十多年后才有机会发表。这些人都离主流叙事太远了。</p>
+  <h3 id="section-2"><strong>疲惫的行走者</strong></h3>
+  <p>2015年，袁凌开始系统调查留守儿童的生存境遇。辗转北京、上海、陕西、河南、贵州等十来个省。沙漠中，雪山下，大海边，一家家走访。</p>
+  <p>那几年，原本消瘦的他体重下降，血压升到180多，生过两次病。一次在贵州，跟一个孩子和他爸去几百公里外的精神病院探望他妈妈，雪天里在摩托车上吹了五六个小时。另一次在甘肃，也是上吐下泻。2018下半年，身体症状集体爆发了一段时间，没多久胃也出问题。</p>
+  <p>他本来就不像一个身强体壮的人。过于后退的发际线，瘦小甚至干巴的身板，像是家乡小镇贫瘠土地上长出来的一根庄稼。或是那个骑着老马，持着长枪与风车搏斗的人。</p>
+  <p>这次调查持续四年多，孩子们的生存环境大多恶劣。采访时，袁凌跟着一起住在楼上的草堆里。早上，一大家子人合吃一个火烧的鸡蛋，一人一口往下传。但落到笔下时，袁凌尽量克制自己的表达，只细致地呈现这些微末命运的真实质地。</p>
+  <p>2017年，新京报将年度青年作家奖颁给袁凌，致敬词这样写到：</p>
+  <p>我们致敬青年作家袁凌，致敬这位苦行僧一般的写作者，他对贫穷、疾病、冤屈、苦难、死亡的持久凝视与追问。他并不轻易显露情感，更不想贩卖苦难和感动，他总是收敛而克制。</p>
+  <p>袁凌自己说，我们可能被诸多宏大的理念还有娱乐至死的氛围所包围了，这些东西剥夺了你的注意力，使得一些有价值的群体或者事件多少被忽视了。为卑微的生命做见证，使沉默的发声，这是袁凌给自己立下的使命，他自称“被选中的罪人”。</p>
+  <p>他写一个被嫌弃一生的本家叔叔，犯事坐了几年牢，出来后精神时好时坏，后来跟乡亲一起坐火车去新疆摘棉花。几个月后，家里婶婶接到甘肃的一个火车站打来的电话，说人死了，让去领取尸体，婶婶没去。</p>
+  <p>一个人的一生就这么寥寥几笔，不足200字。袁凌没有流露任何情感，只在后面又补了这样一句：多年以后，我听一个同行回来的老婆子说，当时他中途非要下车买东西，旁边人劝不住，下去就没上来。从下车到被发现死亡，中间隔了半个月，他应该一直留在车站，没有人注意。</p>
+  <p>他当初执意下车时候是不是精神出了问题？下车后怎么死的？没有交代，因为很可能“没有人注意”。</p>
+  <p>还写到一个因为收养众多弃婴出名的女人——袁厉害。后来房子着火，大多孩子死了，袁凌去看她。没有渲染孩子的惨死，没有声嘶力竭的问责，只写袁厉害躺在床上，太阳穴上贴着膏药，间歇性地念叨“我的娇儿啊”。袁凌补了这么一句：这个当地方言中的词句，跟现实的间距似乎太远，这里没有什么是娇弱的，贵重的。</p>
+  <p>这是独属于袁凌的写作方式，以巨大的自我消耗为代价。如同一个沉默的雕塑家在寂静的角落一点一滴地敲打，去掉话题的、流量的、情绪的，只剩下个体生命在凌冽现实中的具体处境。就像深秋时节，水位下降，露出坚硬扎实的河床与岩石。</p>
+  <p>去掉情绪尤其艰难，需要作者本身先咀嚼消化掉这些愤怒的、悲伤的、无奈的波涛涌动，最后只写上那么“云淡风轻”的一笔。有媒体将袁凌的书写称之为“卖血式写作”，熬尽心血，方使文字澄澈。</p>
+  <p>作家梁鸿评价说，袁凌的语言和叙事，因对大地生活的凝神关注而绵密细致，如清泉缓流，点滴注入，持久涤荡。人物因此充满情感并富于层次，乡村也因此重又恢复它的丰盈、灵性和坚韧的生命力。</p>
+  <p>刘瑜甚至说袁凌的文笔有一种毛茸茸，轻颤颤的诗意。</p>
+  <p>非虚构写作，这是袁凌的表达方式，没有新闻的时效性要求，他可以去持久地关注那些没有话题性的普通人群体，寻找微末生命“一世为人”的证据。</p>
+  <div style="width: 510px" class="wp-caption aligncenter">
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661572-6002eca585f41.png" alt="img" width="500" class="aligncenter" />    <p class="wp-caption-text">图 | 家乡石板屋内，烤地炉子的老人</p>
+  </div>
+  <p>在非虚构这个概念于国内流行起来之前，袁凌的写作总是被拒绝于出版市场之外，没有话题性、戏剧性，只是一些普通人甚至边缘人命运的白描。从这个意义上来说，袁凌是国内非虚构写作的先行者。随着非虚构写作在国内兴起，欧美特稿式的表达，受到越来越多年轻人的追逐与喜爱。</p>
+  <p>袁凌借鉴了非虚构写作的规则与框架，但内在审美趣味上却是东方的、中国的，深入中国人的肌肤与骨髓。为中国的非虚构写作开拓了一种全新的可能。有人将袁凌称之为“非虚构写作中的是枝裕和”，西方的框架，东方的细节和触感。</p>
+  <p>借助非虚构的东风，袁凌的写作迎来爆发，他先后出版了《我的九十九次死亡》《青苔不会消失》《寂静的孩子》等非虚构作品，2015年，获得腾讯书院文学奖“年度非虚构作家”荣誉，2017年，获得新京报年度青年作家奖，2019年，获得单向街书店文学奖。</p>
+  <h3 id="section-3"><strong>在别处</strong></h3>
+  <p>疫情期间，袁凌和妻子待在西安。结束了十几年的漂泊后，他终于稍稍安顿下来。写作的心境，被疫情信息扰动，他“开始感到虚弱，身体上没有发病，心理上却像被感染了，十分受挫”。</p>
+  <p>正如他自己曾说，“我对别人的心灵或者说他生活的一种状态，可能有比较强的共情能力”。直到后来受媒体托付，写了两篇关于疫区老百姓生活的稿子，心里才终于安静下来。对他来说，可能真的唯有写作，才是最后的安身立命之所。</p>
+  <p>2021年新年伊始，袁凌自传性质的故事集《在别处》终于面世。这是一个艰难的过程，疫情的延误，与出版审阅的反复，让这本书迟到了。在这本书中，原先为公共议题写作的袁凌退向幕后，《在别处》所呈现的，是一个非虚构作家的私人世界，是作家的自我观察之书。</p>
+  <p>袁凌在世俗成就上可能是个没有太大野心的人，但绝对不包括写作。他曾有宏愿：希望把整个时代和社会的生存做一个总体的呈现。《在别处》是朝着这个方向的努力，以他自己的“小历史”，去勾勒庞杂命运的脉络，人类生活的肌理。</p>
+  <div style="width: 510px" class="wp-caption aligncenter">
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661572-6002eca9e08e9.png" alt="img" width="500" class="aligncenter" />    <p class="wp-caption-text">图 | 袁凌自传散文集</p>
+  </div>
+  <p>稍微翻几页，就会被他惊人的坦诚打动，异乡漂泊的孤苦，个体与坚硬现实碰撞的狼狈，那些隐秘的，甚至私密的点滴，都被细致收录。</p>
+  <p>“我感到自己需要一个充气娃娃。这是从一个朋友分享的文章引发的，文章的作者是他的中学老师，老师北漂了三年，用一个充气娃娃陪伴自己，临走时才恋恋不舍地将“她”扔进了垃圾堆。”</p>
+  <p>刚进入北京，住在北郊燕丹村，袁凌从淘宝上买了一个充气娃娃，试用后有些后悔，因为“她只是一坨塑料，不管如何设计得像人的样子。”</p>
+  <p>即使写自己，袁凌也保持着一如既往的客观，甚至更加严苛。“不敢面对真实的自己，也就没法面对真实的世界”。在一个坚硬的现实中，人并不一定要足够体面才能活下去，沾点泥巴，活得狼狈，其实都没什么。还在很小时候，袁凌就触摸到了这个真相。</p>
+  <p>幼时与母亲养兔子。怕刚出生的仔兔被老鼠咬了，“母亲用棉花包裹，盛在西药纸盒子里，晚上放在炉火边不远处，听到一点动静就赶快呵斥。”但第二天醒来，仔兔的一只腿还是被咬残了。受冻加上病痛，终究死了。“那个冬天我家致富的希望，就此断绝。妈妈哭泣了不知多少回，我们咒了老鼠不知多少言语，却毫无办法。”</p>
+  <p>长大后成家、立业，依旧走不出生活的引力。与妻子第一次住宾馆，标准间八十，简直“太贵了”。“我们选了一个不带卫生间的三人间，包下来三张床，价格低二十块。赵玲说，只要床被干净就行。房间里整整齐齐地摆着三张床，蒙着同种颜色的床罩，显得我们似乎非常富有。”后来妻子的同学过来，戳破了这份脆弱的自我安慰，问“你们怎么要了三人间”。多年之后，与妻子离婚，再结婚，再离婚，终究缘聚缘散。</p>
+  <p>生活的不堪，甚至狼狈，都在他命运中徐徐展开。可以毫不夸张地说，《在别处》通向了袁凌的精神深处，读懂了这本书，也就能理解袁凌对主流叙事的抗拒，对青苔一般微末生命的持久地凝视和守望。</p>
+  <p>继续往下翻，那些他在八仙、北京、重庆、上海、西安等中国大地辗转时看见的人，住在瓦屋的三舅娘，安康车站乞讨的无臂女人，河南的煤矿工人，内蒙的留守儿童……都一一出现。他们曾零星散落在袁凌的其他作品中，如今逐一聚拢，回到他的生命之中。这种书写方式本身就传达出一个明确的信息，我们的人生因为看见其他人而丰盈。</p>
+  <div style="width: 510px" class="wp-caption aligncenter">
+<img src="https://chinadigitaltimes.net/chinese/files/2021/01/post-661572-6002ecaf5164b.png" alt="img" width="500" class="aligncenter" />    <p class="wp-caption-text">图 | 袁凌出生的石板屋屋顶，斑驳青深</p>
+  </div>
+  <p>“我也不要求成为一个多么有影响力的人，我只需要跟人始终保持关系。我对人，生命，有一种渴求。”</p>
+  <p>在别人都关注一线城市的房价、某互联网大厂的市值达到多少万亿，或者某某明星与人撞衫的时候，唯有袁凌还在絮絮叨叨地关心小姑在公婆葬礼上的哭泣，三舅与二舅的争吵，曹家三妹院子里的一株桂花树，甚至是一汪干涸的水潭。水要枯了，里面的鱼怎么办呢？</p>
+  <p>他写一个车站的妇人：一个农妇带着两只老母鸡，鸡站在一方铺地的编织袋上，面对汹涌人流显得不安。老妇不时轻抚它的头，也掩饰自己内心的某种不安。似乎在对自己手底下长大的母鸡说争气，场子要撑过去。</p>
+  <p>在与本书中的人物一一相遇时，脑子里总会跳出一个问题，我们有多久没有注意到身边的其他人了？我们都忙于在快速流动的世界里找到一个支点，一个稳定的工作，一份亮眼的KPI，一个中产的身份，以此接住自己，安顿焦虑。我们注意不到身边的人，学者项飚称之为“附近的消失”。</p>
+  <p>算法也在不断强化这一点。系统预测我们的喜好，针对性地推荐信息，这个过程不断重复，最后结出一个单一维度的信息茧房，圈出我们的视野。但袁凌的写作，很大程度上能帮助我们跳出系统设定的这个圈，看到更大的世界，更真实的人与活法。</p>
+  <p>“我不把普通人作为一个麻木的、化石式的群体来关注。我觉得他们虽然很普通，甚至是底层的人，边缘人，但每个人其实都在努力地生活，而且承担住了他生存的艰难和他人性的重量。”</p>
+  <p>对于他们，人生的意义都落在绵密的烟火日常上。其中包括尘肺病、残疾、贫穷、死别等碾压，也有一日三餐，年节时的久别重逢，瓦屋上的青苔，菜园子里的葱姜蒜。点点滴滴，如切如磋。在天长日久的摩挲中，那些尖锐的疼痛会被按下去，抚平，只留下一些褶皱。然后把艰难的日子继续过下去。这种细密扎实的生活观滋养了袁凌，拯救他免于虚无主义。</p>
+  <p>《南方人物周刊》在采访袁凌的时候，曾提及那张桌子上的照片，问“像这种对受访者的亏欠后来是否还有出现”，袁凌回答说：“一直都有。”</p>
+  <p>他想了想又说，自己认这个命。“人的生命有限，能做的也有限。”“在一个如此复杂的世界，我无法判断自己所写这些东西的价值，但我眼前能看到的，手边能够抓到的，我就把握住，我就做这么一点事情。在能够做的手边的事物当中，找到一点不成安慰的安慰，不成依靠的依靠。人可能就是这样的。”</p>
+  <p>在破碎的现实中，一砖一瓦，一桥一木地搭建意义，这是袁凌给自己找到的出路。</p>
+  <p>艰难的一年已经过去，在2021年的第一个月，真故出版了袁凌的《在别处》，这是我们“经典非虚构”系列的第一本书。在出版的过程中，我们经常想起袁凌写过的一个白血病少年张浩。他抱着吉他弹唱《当你老了》时，少年的奶奶说，“好听，有点伤心，又像得到了宽心”。阅读《在别处》也是这种感觉，看到袁凌在本书中彻底摊开的内心世界，有点感伤，却又得到宽心。</p>
+  <p>在新的一年开始，希望你喜欢这本书，同作家一样，寻回生活的知觉。</p>
+  <p><strong>– END –</strong></p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e7%9c%9f%e5%ae%9e%e6%95%85%e4%ba%8b%e8%ae%a1%e5%88%92-%e4%b8%80%e4%b8%aa%e4%bd%9c%e5%ae%b6%e7%9a%84%e5%8d%96%e8%a1%80%e5%bc%8f%e5%86%99%e4%bd%9c/">真实故事计划 | 一个作家的卖血式写作</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/Matters-%E6%88%91%E8%BF%98%E4%B8%8D%E6%98%AF%E5%88%B0%E5%A4%84%E8%AF%B4-%E5%BE%8B%E5%B8%88%E5%B0%9A%E6%BB%A1%E5%BA%86%E7%9A%84%E5%B0%81%E5%9F%8E%E6%97%B6%E5%85%89">
+          Matters | “我还不是到处说！” ——律师尚满庆的封城时光
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%89%E4%B8%89%E6%98%9F%E7%90%83-%E5%A6%82%E4%BD%95%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AF%81%E6%8E%89%E4%B8%AD%E5%9B%BD%E5%A5%B3%E6%80%A7">
+          三三星球 | 如何一句话毁掉中国女性？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E5%9B%9E%E5%A3%B0-%E4%BD%95%E8%B0%A6%E5%92%8C%E5%A5%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E4%BB%A5%E8%BA%AB%E8%AF%95%E6%B3%95-%E7%9A%84%E6%80%A7%E6%9A%B4%E5%8A%9B%E5%B9%B8%E5%AD%98%E8%80%85">
+          回声 | 何谦和她的朋友们：“以身试法”的性暴力幸存者
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/%E5%86%B0%E7%82%B9%E5%91%A8%E5%88%8A-%E8%BD%AC%E8%83%8E%E8%8D%AF-%E8%97%8F%E5%9C%A8%E4%BA%92%E8%81%94%E7%BD%91">
+          冰点周刊 | “转胎药”藏在互联网
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-16/%E7%81%AB%E7%AE%AD%E6%B0%91%E4%BC%81%E6%98%9F%E9%99%85%E8%8D%A3%E8%80%80%E6%88%96%E6%88%90%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E7%81%AB%E7%AE%AD%E7%AC%AC%E4%B8%80%E8%82%A1">
+            前一篇：火箭民企星际荣耀或成中国民营火箭第一股
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E5%95%86%E5%8D%8F%E4%BC%9A%E5%8F%91%E5%B8%83%E9%93%B6%E8%A1%8C%E9%97%B4%E5%80%BA%E5%B8%82%E7%8E%B0%E5%88%B8%E5%81%9A%E5%B8%82%E6%8C%87%E5%BC%95-%E5%B0%86%E5%AE%A2%E8%A7%82%E5%8F%8D%E6%98%A0%E4%B8%9A%E5%8A%A1%E6%83%85%E5%86%B5%E6%B7%A1%E5%8C%96%E6%8E%92%E5%90%8D">
+            后一篇：中国交易商协会发布银行间债市现券做市指引 将客观反映业务情况淡化排名
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E7%81%AB%E7%AE%AD%E6%B0%91%E4%BC%81%E6%98%9F%E9%99%85%E8%8D%A3%E8%80%80%E6%88%96%E6%88%90%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E7%81%AB%E7%AE%AD%E7%AC%AC%E4%B8%80%E8%82%A1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E5%95%86%E5%8D%8F%E4%BC%9A%E5%8F%91%E5%B8%83%E9%93%B6%E8%A1%8C%E9%97%B4%E5%80%BA%E5%B8%82%E7%8E%B0%E5%88%B8%E5%81%9A%E5%B8%82%E6%8C%87%E5%BC%95-%E5%B0%86%E5%AE%A2%E8%A7%82%E5%8F%8D%E6%98%A0%E4%B8%9A%E5%8A%A1%E6%83%85%E5%86%B5%E6%B7%A1%E5%8C%96%E6%8E%92%E5%90%8D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%89%E4%B8%89%E6%98%9F%E7%90%83-%E5%A6%82%E4%BD%95%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AF%81%E6%8E%89%E4%B8%AD%E5%9B%BD%E5%A5%B3%E6%80%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-15/%E5%9B%9E%E5%A3%B0-%E4%BD%95%E8%B0%A6%E5%92%8C%E5%A5%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E4%BB%A5%E8%BA%AB%E8%AF%95%E6%B3%95-%E7%9A%84%E6%80%A7%E6%9A%B4%E5%8A%9B%E5%B9%B8%E5%AD%98%E8%80%85'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-16/%E7%81%AB%E7%AE%AD%E6%B0%91%E4%BC%81%E6%98%9F%E9%99%85%E8%8D%A3%E8%80%80%E6%88%96%E6%88%90%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E7%81%AB%E7%AE%AD%E7%AC%AC%E4%B8%80%E8%82%A1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E5%95%86%E5%8D%8F%E4%BC%9A%E5%8F%91%E5%B8%83%E9%93%B6%E8%A1%8C%E9%97%B4%E5%80%BA%E5%B8%82%E7%8E%B0%E5%88%B8%E5%81%9A%E5%B8%82%E6%8C%87%E5%BC%95-%E5%B0%86%E5%AE%A2%E8%A7%82%E5%8F%8D%E6%98%A0%E4%B8%9A%E5%8A%A1%E6%83%85%E5%86%B5%E6%B7%A1%E5%8C%96%E6%8E%92%E5%90%8D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-16/%E4%B8%89%E4%B8%89%E6%98%9F%E7%90%83-%E5%A6%82%E4%BD%95%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AF%81%E6%8E%89%E4%B8%AD%E5%9B%BD%E5%A5%B3%E6%80%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-15/%E5%9B%9E%E5%A3%B0-%E4%BD%95%E8%B0%A6%E5%92%8C%E5%A5%B9%E7%9A%84%E6%9C%8B%E5%8F%8B%E4%BB%AC-%E4%BB%A5%E8%BA%AB%E8%AF%95%E6%B3%95-%E7%9A%84%E6%80%A7%E6%9A%B4%E5%8A%9B%E5%B9%B8%E5%AD%98%E8%80%85">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

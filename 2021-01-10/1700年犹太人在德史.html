@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>1700年犹太人在德史 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+1700年犹太人在德史
+——
+" />
+    <meta property="og:description" content="
+1700年犹太人在德史
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="1700年犹太人在德史" />
+    <meta property="twitter:title" content="1700年犹太人在德史" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F1700%25E5%25B9%25B4%25E7%258A%25B9%25E5%25A4%25AA%25E4%25BA%25BA%25E5%259C%25A8%25E5%25BE%25B7%25E5%258F%25B2%2Fa-56167209&t=1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F1700%25E5%25B9%25B4%25E7%258A%25B9%25E5%25A4%25AA%25E4%25BA%25BA%25E5%259C%25A8%25E5%25BE%25B7%25E5%258F%25B2%2Fa-56167209&t=1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2&d=2021-01-10&e=
+1700年犹太人在德史
+——
+
+
+  
+Sabine Oelze2021-01-10T08:24:36.179Z
+  
+  
+周年纪念庆祝活动的重点是犹太文化
+  
+  （德国之声中文网） 在公元4世纪发布一道诏书可不是一件容易的事。传递信息就是一大障碍。在 "321-2021：犹太人在德1700年历史"协会的主页上可以看到一段视频，用轻松幽默的木偶剧讲述了当时罗马帝国可能发生的事情。科隆--曾经的下日耳曼尼亚首府有一个骄傲的名字Colonia Claudia Ara Agrippinensium，在4世纪的时候，罗马可谓是远在天边。在那里，君士坦丁大帝收到了科隆市议会的请求，希望修复一座破旧的桥梁。这座莱茵河畔的城市当时资金紧张。科隆人在给君士坦丁大帝的信中写道，一个叫艾萨克（Isaac） 的犹太人想帮忙，但作为回报，他必须在市议会中获得一个职位。
+  
+考古学家在科隆发现了一个..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F1700%25E5%25B9%25B4%25E7%258A%25B9%25E5%25A4%25AA%25E4%25BA%25BA%25E5%259C%25A8%25E5%25BE%25B7%25E5%258F%25B2%2Fa-56167209" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209&text=1700年犹太人在德史&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209&title=1700年犹太人在德史" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209&title=1700年犹太人在德史" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=1700年犹太人在德史&body=
+1700年犹太人在德史
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209&title=1700年犹太人在德史&caption=
+1700年犹太人在德史
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=1700年犹太人在德史&url=https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>1700年犹太人在德史</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F1700%25E5%25B9%25B4%25E7%258A%25B9%25E5%25A4%25AA%25E4%25BA%25BA%25E5%259C%25A8%25E5%25BE%25B7%25E5%258F%25B2%2Fa-56167209&t=1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2&d=2021-01-10&e=
+1700年犹太人在德史
+——
+
+
+  
+Sabine Oelze2021-01-10T08:24:36.179Z
+  
+  
+周年纪念庆祝活动的重点是犹太文化
+  
+  （德国之声中文网） 在公元4世纪发布一道诏书可不是一件容易的事。传递信息就是一大障碍。在 "321-2021：犹太人在德1700年历史"协会的主页上可以看到一段视频，用轻松幽默的木偶剧讲述了当时罗马帝国可能发生的事情。科隆--曾经的下日耳曼尼亚首府有一个骄傲的名字Colonia Claudia Ara Agrippinensium，在4世纪的时候，罗马可谓是远在天边。在那里，君士坦丁大帝收到了科隆市议会的请求，希望修复一座破旧的桥梁。这座莱茵河畔的城市当时资金紧张。科隆人在给君士坦丁大帝的信中写道，一个叫艾萨克（Isaac） 的犹太人想帮忙，但作为回报，他必须在市议会中获得一个职位。
+  
+考古学家在科隆发现了一个..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F1700%25E5%25B9%25B4%25E7%258A%25B9%25E5%25A4%25AA%25E4%25BA%25BA%25E5%259C%25A8%25E5%25BE%25B7%25E5%258F%25B2%2Fa-56167209" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610268929000-->
+<p><a href="https://www.dw.com/zh/1700%E5%B9%B4%E7%8A%B9%E5%A4%AA%E4%BA%BA%E5%9C%A8%E5%BE%B7%E5%8F%B2/a-56167209">1700年犹太人在德史</a>
+——</p>
+
+<div>
+  <div>
+<em>Sabine Oelze<br />2021-01-10T08:24:36.179Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/48155294_303.jpg" width="100%" />  <div>
+<small style="color: #999;">周年纪念庆祝活动的重点是犹太文化</small>
+  </div>
+  <p>（德国之声中文网） 在公元4世纪发布一道诏书可不是一件容易的事。传递信息就是一大障碍。在 "321-2021：犹太人在德1700年历史"协会的主页上可以看到一段视频，用轻松幽默的木偶剧讲述了当时罗马帝国可能发生的事情。科隆--曾经的下日耳曼尼亚首府有一个骄傲的名字Colonia Claudia Ara Agrippinensium，在4世纪的时候，罗马可谓是远在天边。在那里，君士坦丁大帝收到了科隆市议会的请求，希望修复一座破旧的桥梁。这座莱茵河畔的城市当时资金紧张。科隆人在给君士坦丁大帝的信中写道，一个叫艾萨克（Isaac） 的犹太人想帮忙，但作为回报，他必须在市议会中获得一个职位。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55518740_303.jpg" width="100%" />  <div>
+<small style="color: #999;">考古学家在科隆发现了一个可以追溯到中世纪的犹太人区</small>
+  </div>
+  <p><strong>阿尔卑斯山以北最古老的犹太人聚居区</strong></p>
+  <p>君士坦丁大帝大概不知道他的这道政令留下了多么宝贵的历史证据。因为这份文件是现存最早的有关阿尔卑斯山以北欧洲犹太人生活的文字记载。它的内容是："根据在全国范围内生效的法律，我们允许所有市议会收纳犹太人成员。" 这份被送往科隆的法令，确凿地证明了当时有犹太人在科隆生活。</p>
+  <p>早在上世纪50年代，考古学家就在科隆市政厅广场下挖出了第一批犹太人区的宝藏。当时，他们发现了一座11世纪的犹太教堂残骸和密克威（Mikwe）犹太浴池。但人们在重建战后满目疮痍的科隆时，将市政厅广场改造成了停车场，这些宝藏又被埋藏了几十年。直到2007年，考古人员才再次挖开地面。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16781381_404.jpg" width="100%" />  <div>
+<small style="color: #999;">这只耳环是2013年被发现的，它可能是有人在逃离大屠杀时藏在科隆的</small>
+  </div>
+  <p><strong>考古学家发现科隆犹太人聚居区</strong></p>
+  <p>他们的世纪大发现：由小巷、墙壁、地窖和楼梯组成的杂乱无章的建筑原来是科隆完整的中世纪犹太人区。其中的一部分是否已在公元321年形成？</p>
+  <p>预计在2024年之前，科隆将在这一考古遗址上建造一座博物馆，该市也已为此申请加入联合国教科文组织的世界文化遗产。但在德国其他城市也有中世纪早期犹太人生活的证据。在奥格斯堡，考古学家发现了一盏4、5世纪的油灯，油灯上画着一盏犹太烛台（Menorah）。特里尔的犹太人也是由来已久，瓦伦蒂尼安一世大帝（（Valentinian I. ，364-375年）的诏书就是证据，该诏书禁止士兵驻扎在犹太教堂里。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56124210_303.jpg" width="100%" />  <div>
+<small style="color: #999;">安德烈·科瓦奇是 "犹太人在德1700年历史"协会的主席</small>
+  </div>
+  <p><strong>科隆是 "行动年"的核心</strong></p>
+  <p>然而，正如 "321-2021：犹太人在德1700年历史"协会主席、周年纪念活动的共同组织者安德烈·科瓦奇（Andrei Kovacs）所介绍的，君士坦丁大帝于公元321年发布的诏令时间最久远，也是"不同宗教共存"的重要证据。</p>
+  <p>科瓦奇认为，在当今世界，"展现犹太人的生活"尤为重要。 这位46岁的音乐家和企业家来自一个匈牙利犹太家庭。他的祖父母在布达佩斯犹太人区和贝尔根-贝尔森（ Bergen-Belsen）集中营中幸存下来。科瓦奇表示： "反犹主义大概有1700多年的历史。但我们也想展示犹太人长久以来对社会的贡献。今天有许多伟大的倡议连接我们社会中的犹太人和非犹太人。"</p>
+  <p><strong>反对种族主义</strong></p>
+  <p>今年的一系列庆祝活动将于2月开幕。其中包括一个巡回展览，将在科隆以及北威州的其他城市和柏林展出。在 "对与错"、"生活与共处"、"宗教与其历史"、"面孔、故事与感受"等主题活动中，德国犹太教的日常史和宗教史将被具体介绍。每周一档的播客节目将强调德国犹太人生活的多样性。</p>
+  <p>科瓦奇向德国之声介绍："我们的计划是大胆地采用新方法，通过通俗的活动尽可能地吸引不同阶层的民众，同时为人们创造接触犹太文化的机会。"在全德范围举办的主题活动期间，将有以游戏方式讲解犹太节日的木偶剧、"以色列是真实的 "舞蹈表演节、犹太洁食品尝会、"犹太文化之夏"等。科瓦奇补充说，因为新冠疫情，他们在策划过程中同时考虑了线上和线下的活动安排。</p>
+  <p><strong>反对反犹太雕像</strong></p>
+  <p>科瓦奇解释道，"犹太人在德1700年历史"系列活动不仅回顾过去，对犹太人的迫害和大屠杀是其中的一部分，但在纪念年期间，它们不应该是主要内容。"即使有艰难和悲惨的过去，我们也想展现一些积极的东西"。科瓦奇以庆祝活动的一大亮点"Sukkot XXL "项目为例，该项目将尝试以简单的方式介绍犹太节日--住棚节。"我们想一起建造和装饰一座树叶小屋，一个'棚（Sukka）'。我们想在里面共度美好时光：一起吃饭喝酒、一起聊天说笑、一起讨论。我们希望通过这种方式来抵制潜在的神秘和偏见。"</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/52261651_303.jpg" width="100%" />  <div>
+<small style="color: #999;">在科隆大教堂上也可以看到像威腾堡（Wittenberg）圣玛丽教堂上这种 "犹太母猪 "的浮雕</small>
+  </div>
+  <p>科隆大教堂上将出现一件关于当今犹太人和基督徒之间关系的新艺术作品。此外，科隆大主教区还希望通过公开讨论所谓的 "犹太母猪 "等反犹太雕塑，为纪念年做出贡献。</p>
+  <p>科隆犹太拉比耶希尔布·鲁克纳（Yechiel Brukner）要求采取激进的做法："如果有人能勇敢地、革命性地决定消除科隆大教堂上的反犹太雕塑，那就太好了。" 虽然有相关讨论，但是还没有一个德国教堂上的反犹太雕塑被真正去除。展开讨论有助于人们意识到根深蒂固的偏见。科瓦奇指出："我希望今年我们恰恰能让这种"尚未愈合的伤口"显现出来，并推动相关讨论。"但在今年的周年纪念活动中，宗教的美好和融洽才是重点 。</p>
+  <p> </p>
+  <h3 id="section">相关图集：柏林的犹太元素</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810166_303.jpg" width="100%" /><strong>反思之路</strong>：姓名、生日、忌日、身亡地点——柏林Schöneberg区Belziger大街37/39号门前的这些“绊脚石”是纪念曾经住在这里的七名犹太人，他们后来都被纳粹杀害。艺术家Gunter Demnig在柏林的这个作品囊括了超过4700块“绊脚石”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810164_303.jpg" width="100%" /><strong>巨大的墓地</strong>：位于柏林Weißensee附近的这片墓地是欧洲最大的犹太人墓地。这片占地40公顷的土地不仅仅能通过它的规模给人留下深刻的印象，它的美丽和气氛也同样独一无二。超过11万5千人在这里找到了最后的安身之地。这片墓地已经按照纪念碑式建筑的级别得以保护，今年准备申请成为世界遗产。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810165_303.jpg" width="100%" /><strong>水泥墓碑</strong>：犹太大屠杀纪念馆的原名是“欧洲遇害犹太人纪念馆”。这个离勃兰登堡门不远的波浪形纪念碑群由2700个方形石碑组成，看上去像一大片墓地。建在地下的档案馆为人们提供了无数珍贵的历史资料。其中包括一份所有已知犹太人大屠杀受害者的名单。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810167_303.jpg" width="100%" /><strong>Schöneberg区的犹太人传记</strong>：Schöneberg区政府所在地举办了名为“我们曾经是邻居”的常年展，讲述当时该城区大约150名犹太居民的生平故事。其中包括科学家爱因斯坦、导演比利·怀尔德以及摄影家赫尔穆特·牛顿。墙上的信息卡上记载着所有6000名当时被纳粹驱逐出Schöneberg区犹太居民的姓名及地址。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810177_303.jpg" width="100%" /><strong>不寻常的“大型”纪念碑</strong>：人们可以在专业向导的带领下，或是自行参观Schöneberg城区Bayrischen Viertel的“回忆之地”：人们在路灯以及街道名牌上面加上了80个正反面都写有当时纳粹法律的标牌。人们从中可以了解到，犹太人是怎样一步步被社会歧视，直到最后被剥夺所有权利，受尽侮辱的。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810189_303.jpg" width="100%" /><strong>“无名英雄”纪念馆</strong>：Rosenthaler大街39号的“无名英雄”纪念馆，讲述了在纳粹时期向犹太人提供帮助的德国人的故事。这里曾经是Otto Weidt盲人社区工作坊的所在地，它的所有者雇佣并保护了一批犹太人。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810190_303.jpg" width="100%" /><strong>Kreuzberg的游客集中地</strong>：位于Lindenstraße上的犹太博物馆是欧洲同类博物馆中最大的一座。凭着每年75万人次的拜访量，这座博物馆已经成为柏林最受欢迎的博物馆之一。建筑大师Daniel Libeskind迂回的设计理念让整个建筑从空中看上去像一颗散落的大卫之星。博物馆中常年展的主题包括2000年德国犹太人历史以及犹太人大屠杀。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810192_303.jpg" width="100%" /><strong>雄伟的教堂</strong>：位于Oranienburger街的新犹太教堂如今已经成为犹太文化、文献以及活动中心。除了一个档案馆和图书馆以外，教堂里还举办着关于其历史的常年展。目前，人们可以在这里看到柏林主题文化年“被摧毁的多元化”的三个特别展览。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810196_303.jpg" width="100%" /><strong>活跃的宗教信仰</strong>：在柏林Prenzlauer山Rykestraße的犹太教堂拥有1200个座席，是德国最大的犹太教堂。得益于它在居民楼中间的地理位置，这座教堂在第三帝国时期几乎没有受到损害。东德时期，这里是东柏林犹太教会的活动中心。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810207_303.jpg" width="100%" /><strong>来自以色列的设计</strong>：摇滚乐巨星Marilyn Manson或者德国Die Ärzte乐队的Bela B. 都是Itamar Zechoval的客户。这位来自特拉维夫的时尚设计师为艺术家、电影、戏剧、甚至整个酒店的员工设计服装。他的男士时装以神秘和俏皮著称，时而高雅、时而奢靡。旗下品牌“Dandy of the Grotesque”的总部就设在柏林城中的Gormannstraße上。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16810208_303.jpg" width="100%" /><strong>犹太人的艺术</strong>：Prenzlauer山位于Chodowieckistraße的犹太艺术画廊为犹太艺术家提供了一个平台。这里尤其收集了一些来自前苏联移民的绘画、图像、雕塑以及摄影作品。这个画廊让他们中的许多人成名。为了纪念其成立20周年，目前这里正在举行一次多名画家的集体作品展。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15859034_303.jpg" width="100%" /><strong>犹太剧场</strong>：从单口相声到讽刺喜剧，或是受纳粹迫害的作家们召开的读书会。位于柏林城中Admiralspalast的Bimah犹太剧场气氛时而轻松愉悦，时而严肃凝重。其最新节目是在作曲家Friedrich Hollaender领导下，重温柏林20、30年代的流行歌曲。
+  </div>
+  <p>© 2020年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E5%9B%9E%E6%B8%AF%E4%B9%8B%E8%B7%AF%E6%BC%AB%E6%BC%AB-%E9%98%B2%E7%96%AB%E6%8E%AA%E6%96%BD%E6%B7%B7%E4%B9%B1">
+          回港之路漫漫  防疫措施混乱
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0">
+          历时178年：格林兄弟《德语辞典》诞生记 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%B0%BC%E5%A4%B1%E8%81%94%E8%88%AA%E7%8F%AD%E7%96%91%E5%9D%A0%E6%B5%B7">
+          印尼失联航班疑坠海 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%A0%94%E7%A9%B6-%E5%A4%9A%E6%95%B0%E6%96%B0%E5%86%A0%E6%82%A3%E8%80%85%E5%87%BA%E7%8E%B0%E9%95%BF%E6%9C%9F%E5%90%8E%E9%81%97%E7%97%87">
+          研究：多数新冠患者出现长期后遗症
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%86%8D%E6%9C%894%E5%9C%B0%E5%8D%87%E4%B8%AD%E9%A3%8E%E9%99%A9%E5%8C%BA-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E6%89%A9%E6%95%A3">
+            前一篇：石家庄再有4地升中风险区 黑龙江疫情扩散
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0">
+            后一篇：历时178年：格林兄弟《德语辞典》诞生记 
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%86%8D%E6%9C%894%E5%9C%B0%E5%8D%87%E4%B8%AD%E9%A3%8E%E9%99%A9%E5%8C%BA-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E6%89%A9%E6%95%A3'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%B0%BC%E5%A4%B1%E8%81%94%E8%88%AA%E7%8F%AD%E7%96%91%E5%9D%A0%E6%B5%B7'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%86%8D%E6%9C%894%E5%9C%B0%E5%8D%87%E4%B8%AD%E9%A3%8E%E9%99%A9%E5%8C%BA-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%96%AB%E6%83%85%E6%89%A9%E6%95%A3">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-10/%E5%8E%86%E6%97%B6178%E5%B9%B4-%E6%A0%BC%E6%9E%97%E5%85%84%E5%BC%9F-%E5%BE%B7%E8%AF%AD%E8%BE%9E%E5%85%B8-%E8%AF%9E%E7%94%9F%E8%AE%B0">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%8D%B0%E5%B0%BC%E5%A4%B1%E8%81%94%E8%88%AA%E7%8F%AD%E7%96%91%E5%9D%A0%E6%B5%B7">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

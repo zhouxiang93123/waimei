@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>德国之声 | 长平观察：马云的中国智慧 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+德国之声 | 长平观察：马云的中国智慧
+——
+" />
+    <meta property="og:description" content="
+德国之声 | 长平观察：马云的中国智慧
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="德国之声 | 长平观察：马云的中国智慧" />
+    <meta property="twitter:title" content="德国之声 | 长平观察：马云的中国智慧" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25be%25b7%25e5%259b%25bd%25e4%25b9%258b%25e5%25a3%25b0-%25e9%2595%25bf%25e5%25b9%25b3%25e8%25a7%2582%25e5%25af%259f%25ef%25bc%259a%25e9%25a9%25ac%25e4%25ba%2591%25e7%259a%2584%25e4%25b8%25ad%25e5%259b%25bd%25e6%2599%25ba%25e6%2585%25a7%2F&t=%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0+%7C+%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25be%25b7%25e5%259b%25bd%25e4%25b9%258b%25e5%25a3%25b0-%25e9%2595%25bf%25e5%25b9%25b3%25e8%25a7%2582%25e5%25af%259f%25ef%25bc%259a%25e9%25a9%25ac%25e4%25ba%2591%25e7%259a%2584%25e4%25b8%25ad%25e5%259b%25bd%25e6%2599%25ba%25e6%2585%25a7%2F&t=%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0+%7C+%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7&d=2021-01-09&e=
+德国之声 | 长平观察：马云的中国智慧
+——
+
+
+  马云喜欢秀场，甚至有点上瘾。有网民总结说："与商界大佬座谈，与全球首脑会晤，是马老师的标配。"这还不够，他还投资拍电影让自己演功夫大师，他捐助乐团让自己当指挥，他与流行歌手王菲合唱，还和艺术家曾梵志共同作画。因此，当他有两个月没有公开露面和发声，而且还缺席了一档计划中的真人秀节目之后，媒体确信他"失踪"了。
+  2020年10月24日，马云在上海一个金融论坛演讲，对中国政府的金融业的控制提出批评。他说："中国不是金融系统性风险"，"中国金融基本上没有系统"。他指责中国的大银行还是"当铺思想"，害了很多企业家。据称他的讲话让高层震怒。很快，马云为实际控制人的金融科技公司蚂蚁集团的首次公开募股（IPO）被叫停，当局宣布对马云创建的阿里巴巴集团进行反垄断调查。
+  从一位普通英语老师到全球知名的富商，马云的成功毋庸置疑。但是，富甲天下..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25be%25b7%25e5%259b%25bd%25e4%25b9%258b%25e5%25a3%25b0-%25e9%2595%25bf%25e5%25b9%25b3%25e8%25a7%2582%25e5%25af%259f%25ef%25bc%259a%25e9%25a9%25ac%25e4%25ba%2591%25e7%259a%2584%25e4%25b8%25ad%25e5%259b%25bd%25e6%2599%25ba%25e6%2585%25a7%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/&text=德国之声 | 长平观察：马云的中国智慧&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/&title=德国之声 | 长平观察：马云的中国智慧" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/&title=德国之声 | 长平观察：马云的中国智慧" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=德国之声 | 长平观察：马云的中国智慧&body=
+德国之声 | 长平观察：马云的中国智慧
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/&title=德国之声 | 长平观察：马云的中国智慧&caption=
+德国之声 | 长平观察：马云的中国智慧
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=德国之声 | 长平观察：马云的中国智慧&url=https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>德国之声 | 长平观察：马云的中国智慧</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25be%25b7%25e5%259b%25bd%25e4%25b9%258b%25e5%25a3%25b0-%25e9%2595%25bf%25e5%25b9%25b3%25e8%25a7%2582%25e5%25af%259f%25ef%25bc%259a%25e9%25a9%25ac%25e4%25ba%2591%25e7%259a%2584%25e4%25b8%25ad%25e5%259b%25bd%25e6%2599%25ba%25e6%2585%25a7%2F&t=%E5%BE%B7%E5%9B%BD%E4%B9%8B%E5%A3%B0+%7C+%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E9%A9%AC%E4%BA%91%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%99%BA%E6%85%A7&d=2021-01-09&e=
+德国之声 | 长平观察：马云的中国智慧
+——
+
+
+  马云喜欢秀场，甚至有点上瘾。有网民总结说："与商界大佬座谈，与全球首脑会晤，是马老师的标配。"这还不够，他还投资拍电影让自己演功夫大师，他捐助乐团让自己当指挥，他与流行歌手王菲合唱，还和艺术家曾梵志共同作画。因此，当他有两个月没有公开露面和发声，而且还缺席了一档计划中的真人秀节目之后，媒体确信他"失踪"了。
+  2020年10月24日，马云在上海一个金融论坛演讲，对中国政府的金融业的控制提出批评。他说："中国不是金融系统性风险"，"中国金融基本上没有系统"。他指责中国的大银行还是"当铺思想"，害了很多企业家。据称他的讲话让高层震怒。很快，马云为实际控制人的金融科技公司蚂蚁集团的首次公开募股（IPO）被叫停，当局宣布对马云创建的阿里巴巴集团进行反垄断调查。
+  从一位普通英语老师到全球知名的富商，马云的成功毋庸置疑。但是，富甲天下..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F2021%2F01%2F%25e5%25be%25b7%25e5%259b%25bd%25e4%25b9%258b%25e5%25a3%25b0-%25e9%2595%25bf%25e5%25b9%25b3%25e8%25a7%2582%25e5%25af%259f%25ef%25bc%259a%25e9%25a9%25ac%25e4%25ba%2591%25e7%259a%2584%25e4%25b8%25ad%25e5%259b%25bd%25e6%2599%25ba%25e6%2585%25a7%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610179492000-->
+<p><a href="https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/">德国之声 | 长平观察：马云的中国智慧</a>
+——</p>
+
+<div>
+  <p>马云喜欢秀场，甚至有点上瘾。有网民总结说："与商界大佬座谈，与全球首脑会晤，是马老师的标配。"这还不够，他还投资拍电影让自己演功夫大师，他捐助乐团让自己当指挥，他与流行歌手王菲合唱，还和艺术家曾梵志共同作画。因此，当他有两个月没有公开露面和发声，而且还缺席了一档计划中的真人秀节目之后，媒体确信他"失踪"了。</p>
+  <p>2020年10月24日，马云在上海一个金融论坛演讲，对中国政府的金融业的控制提出批评。他说："中国不是金融系统性风险"，"中国金融基本上没有系统"。他指责中国的大银行还是"当铺思想"，害了很多企业家。据称他的讲话让高层震怒。很快，马云为实际控制人的金融科技公司蚂蚁集团的首次公开募股（IPO）被叫停，当局宣布对马云创建的阿里巴巴集团进行反垄断调查。</p>
+  <p>从一位普通英语老师到全球知名的富商，马云的成功毋庸置疑。但是，富甲天下的财富、达官贵人的关系和家喻户晓的名声都没有能够保护他，在政府权力面前，他也像一个普通的底层中国人一样，一不小心就"失踪"了，没有正式的消息，没有律师探访。如果当局需要，他也可以像"明天系"的肖建华那样床单蒙头、坐着轮椅被人从酒店推走后再无消息，甚至像大连实德的徐明那样被秘密判刑后猝死狱中。</p>
+  <p>和普通人不一样的是，聪明过人、求生欲强的马云，做了很多协助当局作恶的事情，并洋洋自得地称之为生存智慧，借助他的名声和讲台向全世界推销。对于随意收拾他的权力体系，他自己也贡献不菲。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/01/21.jpg" alt="" /></p>
+  <h2 id="section">“看见了当没看见”</h2>
+  <p>三十一年前，中国有过建立公平正义的民主社会的机会，那就是1989年的民主运动。对于这场被坦克机枪镇压的民主运动，马云在2013年7月接受《南华早报》记者采访时说："……邓小平在’六四’当中，他作为国家最高的决策者，他要稳定，他必须要做这些残酷的决定。这不是一个完美的决定，但这是一个最正确的决定，在当时是最正确的决定。"</p>
+  <p>马云称记者误解其原意，但是他的原意并没有那么难懂。何况他在专访中谈及中国互联网管控时，称赞"中国政府很了不起"，"管制很有水平"。而且他后来的各种表演，都证实记者没有冤枉他。</p>
+  <p>从2011年开始，我为《南华早报》写作专栏，讨论中国的言论自由、人权和法治，包括"六四"运动。到了2015年6月，我接到该报时任主编的来信，称因为版面调整，要停发我的专栏。据报道，还有另外几位经常批评中国政府的专栏作家也一起被"调整"了。后来我们知道，马云正在谈判收购该报。我无从知道这两件事情之间的联系，但是马云开始高谈阔论，让人们知道他不只会教英语，而且还会教传媒。</p>
+  <p>收购《南华早报》之后的首个年会上，马云登台发表演讲。他说，大家都知道达赖喇嘛、法轮功在中国的遭遇，但是中国人最厉害的智慧就是"看见了当没看见"。因为他是老板，台下那些资深编辑记者和作家不得不鼓掌叫好。作为媒体人，我看视频也感到受到极大的羞辱。随后，据媒体报道，《南华早报》被要求多发表对中国的正面报道，动辄删除负面报道，加入了"讲好中国故事"的大外宣媒体阵营。</p>
+  <h2 id="section-1">“支付宝可以随时上交国家”</h2>
+  <p>马云经常宣称自己的"清白"。但是，据《纽约时报》报道，在以阿里巴巴为母体的庞大商业帝国中，马云和中国的权势阶层有着盘根错节的联系。在投资阿里巴巴的四家中国企业的高管中，都有中共建政功臣和现任中央政治局常委的子孙。其中包括温家宝的儿子温云松，贺国强的儿子贺锦雷，陈云的儿子陈元，刘云山的儿子刘乐飞，曾培炎的儿子曾之杰，王震的儿子王军。</p>
+  <p>马云津津乐道于他的大数据如何协助政府预防犯罪，但是众所周知，中国政府最有兴趣的是利用大数据来监控异议人士和统治少数民族。据报道，阿里巴巴的云计算业务网站展示了客户能够如何使用其软件检测图像和视频中的维吾尔族及其他少数民族的面孔。</p>
+  <p>除了商业成功之外，马云也跟很多普通中国人一样，搞关系，混圈子，出风头，服膺强人，自我美化，把不正直当智慧，把作恶合理化。但是，当国家需要消灭你的时候，这些小聪明都无济于事，那些关系网都成为拦住你的天罗地网。</p>
+  <p>有人会说，如果马云再聪明一点，再低调一点，对于金融系统的问题"看见了当没看见"，是不是就能够平安无事呢？当然不是。领导震怒只是表面现象，背后是专制理性。</p>
+  <p>专制理性告诉当权者，绝不允许民营企业一家独大，所有资本都要控制在政府手里，所有垄断企业都必须是国有企业。马云多次表态，"只要国家需要，支付宝可以随时上交国家。"国家可不想扮演不讲理的强盗，它随时可以找出理由来"依法"夺取。</p>
+  <p><em>长平是中国资深媒体人、时事评论作家，现居德国。</em></p>
+  <p>The post <a rel="nofollow" href="https://chinadigitaltimes.net/chinese/2021/01/%e5%be%b7%e5%9b%bd%e4%b9%8b%e5%a3%b0-%e9%95%bf%e5%b9%b3%e8%a7%82%e5%af%9f%ef%bc%9a%e9%a9%ac%e4%ba%91%e7%9a%84%e4%b8%ad%e5%9b%bd%e6%99%ba%e6%85%a7/">德国之声 | 长平观察：马云的中国智慧</a> appeared first on <a rel="nofollow" href="https://chinadigitaltimes.net/chinese">中国数字时代</a>.</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E6%9B%BE%E4%BA%8ETwitter-%E5%A3%B0%E6%8F%B4%E9%A6%99%E6%B8%AF-%E5%86%85%E5%9C%B0%E5%89%8D%E8%AE%B0%E8%80%85%E5%BC%A0%E8%B4%BE%E9%BE%99%E5%AF%BB%E8%A1%85%E6%BB%8B%E4%BA%8B%E7%BD%AA%E6%88%90-%E5%88%A4%E5%9B%9A%E4%B8%80%E5%B9%B4%E5%8D%8A">
+          立场新闻 | 曾于Twitter 声援香港 内地前记者张贾龙寻衅滋事罪成 判囚一年半
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E4%BA%BA%E7%89%A9-%E8%80%83%E7%A0%94%E4%B8%AD%E5%B9%B4%E4%BA%BA-%E8%B5%B0%E8%BF%9B%E4%BB%98%E8%B4%B9%E8%87%AA%E4%B9%A0%E5%AE%A4">
+          人物｜考研中年人，走进付费自习室
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91">
+          立场新闻 | 网站“香港编年史”无法连接 据报国安处首用国安法封网
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BA%A2%E6%98%9F%E6%96%B0%E9%97%BB-%E6%94%BE%E5%BC%83%E5%B9%B4%E7%BB%88%E5%A5%96%E4%B9%9F%E8%A6%81%E8%B5%B0-%E4%BB%96%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81-%E9%80%83%E7%A6%BB-%E6%8B%BC%E5%A4%9A%E5%A4%9A">
+          红星新闻 | 放弃年终奖也要走，他们为什么想要“逃离”拼多多？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%AA%9A%E4%B9%B1-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E8%AE%A1%E5%88%92%E5%86%8D%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE-%E8%83%BD%E5%90%A6%E9%80%9A%E8%BF%87%E6%88%90%E7%96%91">
+            前一篇：美国国会骚乱：民主党人计划再弹劾特朗普 能否通过成疑
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BA%84%E7%BE%BD-%E9%83%AD%E6%95%AC%E6%98%8E%E7%AD%89%E9%81%93%E6%AD%89%E6%98%AF%E4%B8%8D%E5%BE%97%E5%B7%B2%E7%9A%84%E9%9D%9E%E8%87%AA%E5%8F%91%E8%A1%8C%E4%B8%BA">
+            后一篇：庄羽：郭敬明等道歉是不得已的非自发行为
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%AA%9A%E4%B9%B1-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E8%AE%A1%E5%88%92%E5%86%8D%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE-%E8%83%BD%E5%90%A6%E9%80%9A%E8%BF%87%E6%88%90%E7%96%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E5%BA%84%E7%BE%BD-%E9%83%AD%E6%95%AC%E6%98%8E%E7%AD%89%E9%81%93%E6%AD%89%E6%98%AF%E4%B8%8D%E5%BE%97%E5%B7%B2%E7%9A%84%E9%9D%9E%E8%87%AA%E5%8F%91%E8%A1%8C%E4%B8%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E4%BA%BA%E7%89%A9-%E8%80%83%E7%A0%94%E4%B8%AD%E5%B9%B4%E4%BA%BA-%E8%B5%B0%E8%BF%9B%E4%BB%98%E8%B4%B9%E8%87%AA%E4%B9%A0%E5%AE%A4'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%AA%9A%E4%B9%B1-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E8%AE%A1%E5%88%92%E5%86%8D%E5%BC%B9%E5%8A%BE%E7%89%B9%E6%9C%97%E6%99%AE-%E8%83%BD%E5%90%A6%E9%80%9A%E8%BF%87%E6%88%90%E7%96%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-09/%E5%BA%84%E7%BE%BD-%E9%83%AD%E6%95%AC%E6%98%8E%E7%AD%89%E9%81%93%E6%AD%89%E6%98%AF%E4%B8%8D%E5%BE%97%E5%B7%B2%E7%9A%84%E9%9D%9E%E8%87%AA%E5%8F%91%E8%A1%8C%E4%B8%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-09/%E4%BA%BA%E7%89%A9-%E8%80%83%E7%A0%94%E4%B8%AD%E5%B9%B4%E4%BA%BA-%E8%B5%B0%E8%BF%9B%E4%BB%98%E8%B4%B9%E8%87%AA%E4%B9%A0%E5%AE%A4">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-09/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E7%BD%91%E7%AB%99-%E9%A6%99%E6%B8%AF%E7%BC%96%E5%B9%B4%E5%8F%B2-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-%E6%8D%AE%E6%8A%A5%E5%9B%BD%E5%AE%89%E5%A4%84%E9%A6%96%E7%94%A8%E5%9B%BD%E5%AE%89%E6%B3%95%E5%B0%81%E7%BD%91">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

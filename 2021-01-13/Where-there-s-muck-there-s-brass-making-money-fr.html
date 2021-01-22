@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Where there’s muck there’s brass:  making money from sewage in Kolkata – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+" />
+    <meta property="og:description" content="
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="Where there’s muck there’s brass:  making money from sewage in Kolkata" />
+    <meta property="twitter:title" content="Where there’s muck there’s brass:  making money from sewage in Kolkata" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2F1843%2F2021%2F01%2F13%2Fwhere-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&t=Where+there%E2%80%99s+muck+there%E2%80%99s+brass%3A++making+money+from+sewage+in+Kolkata" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2F1843%2F2021%2F01%2F13%2Fwhere-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&t=Where+there%E2%80%99s+muck+there%E2%80%99s+brass%3A++making+money+from+sewage+in+Kolkata&d=2021-01-13&e=
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+
+
+  
+  
+    
+      Jan 13th 2021
+      by Amitangshu Acharya and Sudipto Sanyal
+    
+  
+  On a sultry afternoon Golam Gaiyan, a 75-year-old fisherman, sits with his back to the sun on the porch of a two-storey house, paint peeling off the walls. Sunbeams peek through a row of betel-nut trees and light up Gaiyan’s white v..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2F1843%2F2021%2F01%2F13%2Fwhere-theres-muck-theres-brass-making-money-from-sewage-in-kolkata" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&text=Where there’s muck there’s brass:  making money from sewage in Kolkata&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&title=Where there’s muck there’s brass:  making money from sewage in Kolkata" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&title=Where there’s muck there’s brass:  making money from sewage in Kolkata" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=Where there’s muck there’s brass:  making money from sewage in Kolkata&body=
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&title=Where there’s muck there’s brass:  making money from sewage in Kolkata&caption=
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=Where there’s muck there’s brass:  making money from sewage in Kolkata&url=https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>Where there’s muck there’s brass:  making money from sewage in Kolkata</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2F1843%2F2021%2F01%2F13%2Fwhere-theres-muck-theres-brass-making-money-from-sewage-in-kolkata&t=Where+there%E2%80%99s+muck+there%E2%80%99s+brass%3A++making+money+from+sewage+in+Kolkata&d=2021-01-13&e=
+Where there’s muck there’s brass:  making money from sewage in Kolkata
+——
+
+
+  
+  
+    
+      Jan 13th 2021
+      by Amitangshu Acharya and Sudipto Sanyal
+    
+  
+  On a sultry afternoon Golam Gaiyan, a 75-year-old fisherman, sits with his back to the sun on the porch of a two-storey house, paint peeling off the walls. Sunbeams peek through a row of betel-nut trees and light up Gaiyan’s white v..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2F1843%2F2021%2F01%2F13%2Fwhere-theres-muck-theres-brass-making-money-from-sewage-in-kolkata" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610543346000-->
+<p><a href="https://www.economist.com/1843/2021/01/13/where-theres-muck-theres-brass-making-money-from-sewage-in-kolkata">Where there’s muck there’s brass:  making money from sewage in Kolkata</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/1280/720/90/1843magazine.com/sites/default/files/styles/il_manual_crop_16_9/public/SewageKolkota01x1280Header.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2021-01-13T13:53:23Z">Jan 13th 2021</time>
+      <p data-test-id="Article Byline" itemprop="byline">by Amitangshu Acharya and Sudipto Sanyal</p>
+    </div>
+  </aside>
+  <p data-caps="initial"><span data-caps="initial">O</span>n a sultry afternoon Golam Gaiyan, a 75-year-old fisherman, sits with his back to the sun on the porch of a two-storey house, paint peeling off the walls. Sunbeams peek through a row of betel-nut trees and light up Gaiyan’s white vest. Thick veins pulsate along his tawny arms, which move in concert over the gold-grey nylon fishing net sprawled in front of him.</p>
+  <p>Equipped with a large needle, a small scraper and a knife, Gaiyan fixes the frayed and torn sections of a dragnet, a weighted net that can be drawn across a wide area. It is no simple task. The net weighs 37kg and when cast into a pond it covers a circumference of some 60 metres. Identifying a rip in this maze of overlapping mesh requires both diligence and a sharp eye. Gaiyan speaks softly, stitching each unfinished sentence to the next with a long pause, his gaze focused on the task at hand.</p>
+  <div>
+    <div>
+      <div id="econ-1"></div>
+    </div>
+  </div>
+  <p>He is readying the net for the morning. The East Kolkata Wetlands are a giant waterscape of around 50 square miles of water which lies to the east of the choking megacity of Kolkata in West Bengal. Each day the wetlands come alive with the sound of these fishing nets: the swish of a <em>khapla</em>, a small castnet, as it lands on the surface of a sewage-fed fish pond, or the frantic wriggle inside a <em>ghana jaal</em>, a dense dragnet, being slowly pulled out of water. In the tussle between fish and net, both end up scarred.</p>
+  <p>“In the old days, the fishing nets used to be made of cotton in this <em>jalabhoomi</em> (wetland),” Gaiyan says. Nylon is cheaper and more durable, but it lacks the grace of a cotton net. It also lacerates the fish. Gaiyan holds up a section he has mended, a white triangular patch sutured with new nylon threads. “Pangash tangra,” he says, with a twinkle in his eyes: the feisty and carnivorous yellowtail catfish is a relative newcomer to these wetlands, introduced by commercial farmers, and its frenzied writhing when caught can shred even the toughest nylon.</p>
+  <p>Fish is the currency of the East Kolkata Wetlands, a mosaic of 264 bodies of water, each one managed independently – some are private, others are run as co-operatives. At the end of a hard day, workers get paid a wage of 150-250 rupees ($2-3.50), along with a fish weighing at least 300g.</p>
+  <blockquote>
+    <p>The wetlands have been described variously as the “kidneys of Kolkata” and “the lungs of the city”</p>
+  </blockquote>
+  <div>
+    <div>
+      <div id="econ-2"></div>
+    </div>
+  </div>
+  <p>At night thieves sometimes try to steal fish. They come from neighbouring areas and slink around, casting their nets into unguarded fishponds. Locals consider this to be the equivalent of a bank heist.</p>
+  <p>“Did you ever fix a thief’s fishing net?”</p>
+  <p>“Never had the misfortune,” Gaiyan laughs. But there’s a sorrow too: there are fewer fish thieves around nowadays, he says, because the wetlands are disappearing.</p>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Ax1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Ax1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Bx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Bx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Cx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota02Cx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+    <figcaption>
+<strong>Water, water everywhere </strong> A worker by his fishpond (opening image). Golam Gaiyan, a weaver of fish nets, aboard his boat (top). Ready for market (middle). The palm before the storm (bottom)
+    </figcaption>
+  </figure>
+  <p>The East Kolkata Wetlands are not only famous for fish. Most cities in India clean their sewage in treatment plants. But in Kolkata, the filth of 5m inhabitants is instead recycled into fortune organically.</p>
+  <p>The wetlands are a sprawl of salt marshes, settling basins, sewage farms and agricultural farmlands. They were formed over the course of centuries, as repeated tidal flooding brought in silt and created an environment that was neither open water nor <em>terra firma</em>. Thousands of people work here, occupying small concrete houses and shanties of corrugated iron with tarpaulin roofs that fly off every time a cyclone blows through. There are makeshift stalls purveying tea and biscuits, weekly wholesale markets, a few schoolhouses. Paved roads and unpaved causeways criss-cross the marshes.</p>
+  <p>Wildlife thrives here too: there are more than 65 types of birds, dozens of reptiles and amphibians, and at least 16 species of mammal. If you’re lucky, you might glimpse an Asian palm civet (called poetically in Bengali <em>gondhogokul</em>, or “the fragrance of aromatic rice”), a golden jackal or a smooth-coated otter. And then there are the 40 or so varieties of fish farmed in the commercial fisheries.</p>
+  <p>The most extraordinary thing about the wetlands, however, is their capacity to transform the sewage of a teeming metropolis into shimmering black gold. The wetlands have been variously described as the “kidneys of Kolkata”, “the lungs of the city” and an “indispensable heritage”. Every day 750m litres of sewage and wastewater flow into them. With nearly a century of knowledge behind them, each year some 50,000 fisherfolk and vegetable farmers turn excrement into 10,000 tonnes of fish and 50,000 tonnes of vegetables.</p>
+  <p>When Calcutta was the capital of colonial India, the River Hooghly was used as an outlet for the city’s sewage as well as a source of drinking water. The folly of this became clear after repeated outbreaks of cholera. So, in the late 19th century, the vast salt marshes on the eastern fringe of the city, where the dry channels of the Bidyadhari river terminated, started being used for sewage disposal.</p>
+  <p>The next stage of the wetlands’ development was pure serendipity. In 1930 a local landlord called Bhabanath Sen, who owned a few local fish farms, began to let Calcutta’s wastewater into his fish ponds. About 5% of it was actual faeces. Rather than kill the fish, he found that they thrived and the soil grew fecund. Other fisheries soon copied him, and new ones were set up.</p>
+  <div>
+    <div>
+      <div id="econ-3"></div>
+    </div>
+  </div>
+  <p>After local engineers recognised the value of sewage as a low-cost source of nutrients for fish, they started to develop a drainage system to bring wastewater east. A number of wealthy landlords-turned-fishery-owners siphoned off the sewage into inter-connected fishponds, known as <em>bheris</em>, around the area now known as Salt Lake. By the time India won independence from Britain in 1947, Calcutta’s authorities had completed a series of channels to convey huge quantities of sewage into the fisheries. Sewage was becoming a valuable commodity.</p>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Ax1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Ax1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Bx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Bx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Cx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota03Cx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+    <figcaption>
+<strong>Waste not, want not </strong> Dwellings beside a canal (top). At Topsia pumping station, two flows of wastewater come together (middle). A boatman in a fishpond (bottom)
+    </figcaption>
+  </figure>
+  <p data-caps="initial"><span data-caps="initial">J</span>iten Munda is sitting on a recently constructed marble platform built around the base of a peepal, a sacred fig tree, wrapped in a thin cotton towel and chequered sarong. A rivulet of black sewage flows behind him. The immense trunk of a coconut tree, scaffolded with bamboo poles and jute ropes, has been laid across the width of the canal to serve as a bridge.</p>
+  <p>Munda leads us across the bridge to his fishpond, which is surrounded by a thicket of elephant-eared taro and communist weed (so-named because the ideology was proliferating rapidly in India in the 1960s, at the same time as the plant was doing so). The water is clearer here, except for a layer of brownish-green specks. “It’s fish feed,” he demonstrates, throwing a piece of rock on the pond. The splash reveals clear water underneath.</p>
+  <p>Converting black wastewater to clear water in fishponds is the miracle of the East Kolkata Wetlands. This alchemy, which challenges the conventional scientific wisdom of wastewater as a pollutant, is produced by the intersection of labour, sunlight and fish.</p>
+  <blockquote>
+    <p>One of the glories of sewage is that everyone’s waste looks the same</p>
+  </blockquote>
+  <div>
+    <div>
+      <div id="econ-4"></div>
+    </div>
+  </div>
+  <p>Munda is a second-generation fish farmer, now in his late 50s. He prepares his pond before releasing fish eggs into it, draining water out through a pipe during the winter, then cleaning, ploughing and mixing the exposed bed with lime, before scattering the seeds of a shrub called prickly sesban. A few months later, when the plant has grown to about 6ft, Munda opens up the incoming pipe to the canal and fills his pond, submerging the plants with wastewater and setting in motion a complex interplay between algae and bacteria.</p>
+  <p>The wastewater, which is composed of nutrients such as nitrates and phosphates, and faecal matter containing aerobic bacteria, enters the fishpond. There the water submerges the plants, enabling them to produce algae as they rot. The algae photosynthesise to emit oxygen, which the aerobic bacteria then use to break down the nutrients in the sewage. This process releases carbon dioxide: the algae consume this and so proliferate. Within a few days an algal bloom drapes the surface of the pond in a luxuriant green. The bloom radically improves the quality of the water by oxygenating it, and also produces what Munda refers to as “<em>maacher</em> menu”, a buffet of plankton for the fish. Tiny fish are then released into the water to feast on the plankton and other nutrients, and their gorging cleans the water further.</p>
+  <p>Another plant, the water hyacinth – which in the popular imagination is vilified as an invasive interloper from the Amazon – also works as a tireless purifier of waste. Though ecologists decry it in research papers, unlettered fishpond workers have long used the plant to their benefit. Lining the rim of a pond with water hyacinths protects the banks from erosion. The roots of the water hyacinth absorb heavy metals such as lead and mercury, along with excess nitrogen and potassium, which helps to clean the wastewater.</p>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Ax1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Ax1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Bx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Bx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Cx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota04Cx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+    <figcaption>
+<strong>The gates of smell </strong> A sluice gate regulates the flow of water into each pond (top). Goltala, one of the biggest fishponds in the East Kolkata Wetlands (middle). Dhruba Das Gupta, a wetland researcher and activist (bottom)
+    </figcaption>
+  </figure>
+  <p>Munda and other fish farmers in the wetlands keep the water hyacinth trimmed. The plant provides shade to fish from the scorching summer sun, and its roots provide food for at least one of the species found here. You might expect sewage deposits to make this a no-go area for wildlife. Instead, the fish, water hyacinths, bacteria and people all work in concert to purify the uninterrupted flow of excrement, turning rubbish into riches.</p>
+  <p data-caps="initial"><span data-caps="initial">O</span>ne of the glories of sewage is that everyone’s waste looks the same. Topsia pumping station, built in 1972, is located at the confluence of two different channels of wastewater. One stream of muddy grey flows from the wealthy modern enclaves of South Kolkata. The other comes from the congested old neighbourhoods of the North. Both mingle here and enter the same canal, heading towards the wetlands. Industrial effluents from nearby tanneries are drained into a separate canal system and funnelled away from the wetlands.</p>
+  <div>
+    <div>
+      <div id="econ-5"></div>
+    </div>
+  </div>
+  <p>The rivers of sewage abut a shanty neighbourhood. Clothes dry on lines stretched between wood-apple trees and the sound of a transistor radio floats across the wastewater. A cattle egret in pristine white plumes perches itself on a half-broken pipe jutting out of a makeshift bamboo toilet and pecks a meal out of the dark flowing water with its orange beak. A little girl sits on one side of the embankment trying to catch white butterflies. Behind her, tumbledown tenements with blue walls and roofs of layered black plastic sheeting and terracotta tiles line the bank that separates sewage from people.</p>
+  <p>This slum is known only by its official number: Ward 66. Informally, it is a <em>majdoor para</em>, a colony of migrant labourers. A large concrete plaque outside declares that Ward 66 is a “solar slum”, the second of its kind in India, benefiting 200 families. In practice this means that a single solar panel glitters on a rooftop, enveloped in vines.</p>
+  <p>From Topsia we follow Dhruba Das Gupta, a wetland researcher and activist, along the dry-weather flow, a 17-mile-long sewage canal that carries waste to the wetlands. The road along it is dotted with small plastic-recycling plants. Built on cheap migrant labour, these plants have mushroomed in the last decade because of weak regulation. The polluting impact of these units has yet to be calculated.</p>
+  <p>For more than a decade Das Gupta has worked with locals to protect the wetlands from developers. She has done so under the tutelage of Dhrubajyoti Ghosh, an ecologist, who was the first person to systematically research this aqueous laboratory. He gave it its name and had it designated as a wetland of international importance by an international conservation treaty. In the 1980s Ghosh famously drank water from a wastewater fishpond in front of the then chief minister of West Bengal to demonstrate that the wetlands, which were managed purely through human labour, were more efficient at treating urban sewage than a mechanised treatment plant. His bravado worked and plans to acquire treatment plants were ditched.</p>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Ax1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Ax1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Bx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Bx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Cx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota05Cx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+    <figcaption>
+<strong>Old, new and timeless </strong> Colonial-era sluice gates (top). Sector V, an IT hub on the north-eastern edge of the wetlands (middle). Fish being retrieved from nets (bottom)
+    </figcaption>
+  </figure>
+  <p>Vindication arrived three decades later. A research study in 2008, conducted as part of a project by the Asian Development Bank, estimated that the East Kolkata Wetlands had saved the city a total investment of $125m by treating the sewage at no cost, money that would have otherwise been spent constructing conventional sewage-treatment plants.</p>
+  <div>
+    <div>
+      <div id="econ-6"></div>
+    </div>
+  </div>
+  <p>We ask Das Gupta if the fish produced by the wastewater are safe.</p>
+  <p>“Pollution is not in the wastewater,” she says, exasperated. “Pollution is in people’s minds.”</p>
+  <p>Under a bright midday sun, the sewage in the main canal acquires a blue tint. The road by the canal meanders away from the asphalt and the feverish honking of cars towards a quiet green landscape, where stridulating crickets lodged in a coppice are accompanied by the drumming of woodpeckers on coconut trees. Ahead of us lies a vast lattice of fishponds, all the way to the horizon. The murk of the sewage in the canal contrasts with the clear, green water in the fishponds, which reflect the white candyfloss clouds floating above.</p>
+  <p data-caps="initial"><span data-caps="initial">B</span>ideshi Mandal has lived in and around the wetlands all her life. Armed only with a slingshot and an arsenal of scatological insults, she was chasing away cormorants from the fishponds when she came upon us sitting with Golam Gaiyan, the net-maker. “Women here don’t work at mending nets or get in the water too much,” she says. Her sari is draped over her head and a large red bindi crowns her brow.</p>
+  <p>Women like Mandal have the onerous task of managing the water hyacinth and protecting the ponds from swooping birds. If left unattended, they can steal up to a third of the fish in a pond. Stork-billed kingfishers, pond herons and gadwalls all want their share. Particularly pesky are cormorants and Indian darters – a bird that hunts while submerged in water, spears fish with its beak and brings its serpentine neck out above the surface to toss its prize in the air and swallow it head first.</p>
+  <blockquote>
+    <p>The East Kolkata Wetlands have a violent history: armed conflict, land grabs, political goons, robbers and thieves</p>
+  </blockquote>
+  <p>Mandal chases these birds away by hurling invectives at them: “Khanki’r chhele! Shuorchoda gandu’r dol!” she spits (“Whore-sons! Pig-fucking assholes!”): “They only listen when you cuss at them,” she says gleefully. Mandal is the oldest person in her extended family, her age is lost in the crow’s feet that etch her sun-tanned face. She is weather-beaten and formidable. She is also a survivor.</p>
+  <p>“The wetlands”, says Dhruba Das Gupta, “constantly feel the heat of urbanisation.” The East Kolkata Wetlands have a violent history, and Mandal has seen it all: armed conflict, land grabs, political goons, robbers and thieves.</p>
+  <div>
+    <div>
+      <div id="econ-7"></div>
+    </div>
+  </div>
+  <p>In the 1980s, when the construction of a bypass made this part of the city more accessible, property developers began to eye up large parts of the area. This led to clashes between developers – frequently in cahoots with politicians – and the people who lived and worked there. For the past 40 years, estate agents have been sending teams of workers to fill in fishponds under cover of darkness so that they can then lay claim to them. Once filled in, the area is no longer protected by environmental laws. Unscrupulous politicians then legitimise these unlawful transfers of land retroactively, often deploying armed men to quash any resistance by fishery workers or farmers. Even today, if you wander into the wrong places with a camera in hand, groups of young men may materialise out of nowhere to intimidate you.</p>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Ax1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Ax1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Bx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Bx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+  </figure>
+  <figure data-image-nozoom="true">
+    <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Cx1280.jpg" />
+<img loading="lazy" width="1280" height="850" src="https://www.economist.com/img/b/1280/850/90/1843magazine.com/sites/default/files/SewageKolkota06Cx1280.jpg" sizes="(min-width: 720px) 640px, 95vw" alt="" />
+    </div>
+    <figcaption>
+<strong>Pond life </strong> Some non-aquatic fauna (top). Children play beside a dumping site for solid waste that was once a fishpond (middle). A verdant sewage canal (bottom)
+    </figcaption>
+  </figure>
+  <p>Perhaps it is this long acquaintance with the demi-monde of the wetlands that has led Mandal into doing something that is extremely rare and risky for women here – guarding the <em>bheris</em> from fish thieves in the night. She claims to have once chased away six or eight thieves – she can’t remember the exact number – in a single evening.</p>
+  <p>‘We’ll kill you! We’ll feed you to the fishes!” they threatened.</p>
+  <p>“I’ll feed you and your grandchildren to the fishes!” she taunted in return.</p>
+  <p>Gaiyan cracks up at this re-enactment. “They’re all afraid of her,” he says.</p>
+  <div>
+    <div>
+      <div id="econ-8"></div>
+    </div>
+  </div>
+  <p>As these two wetland spirits banter, their carefree laughter floats over the ponds. In the distance, at the edge of the waterscape, the glass façades of skyscrapers glare back.</p>
+  <p data-caps="initial"><span data-caps="initial">S</span>lowly, the wetlands are disappearing from the city’s horizon. High-rise buildings obscure them from public view like steel-and-glass curtains, and the property market nibbles away at them. Ghosh’s and Das Gupta’s research has found that nearly 70 fishponds that were once part of the protected site, spanning almost 740 acres of land, have disappeared, transformed into illegal developments or plastic-recycling units.</p>
+  <p>The secret to dismantling a thriving wastewater-based ecosystem, as developers discovered, was simple. Switch off the flow of wastewater and wait for everything to fall apart. Ghosh and Das Gupta documented how, over a period of time, the flow of wastewater into the wetlands has been reduced, pushing fish-farm owners to increase their expenditure. As their income drops, so does their resistance to land sharks.</p>
+  <p>Like many people on these wetlands, Jiten Munda, the fish farmer we met, believed that his children’s future would be in the city. But it has proved easier to turn wastewater into fish than convert degrees into jobs. Munda’s son, a college graduate, is unemployed but is unwilling to work with him farming fish. “He could easily help me,” Munda says, “but his education gets in the way.”</p>
+  <p>As we leave, Munda, ever courteous, walks a little distance with us. We arrive at the peepal tree, the site of our chance encounter. A pair of terracotta idols of the Hindu god Karthik rests against its broad trunk. His eyes settle briefly on the discarded idols and he quickly turns back towards his house. The pitter-patter of his worn-out slippers lingers in the silence of a sunset hazy with pollution. The sky turns a muted red, almost the colour of Munda’s robe. He stops and turns. “Just the dirty water,” he whispers, “that’s all I need to survive. I ask for nothing else.”<span data-ornament="ufinish">■</span></p>
+  <p><strong>Amitangshu Acharya</strong> is a Leverhulme Trust <small>PHD</small> student at Edinburgh University and a fellow at the Konrad Lorenz Institute, Austria <br /><br /><strong>Sudipto Sanyal</strong> is an assistant professor of English at Techno India University in Kolkata, India</p>
+  <p>PHOTOGRAPHS: <strong>SWASTIK PAL</strong></p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/What-is-the-economic-impact-of-the-latest-round-of">
+          What is the economic impact of the latest round of lockdowns?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators">
+          “There’s a much better chance the worst violators are brought to justice”—human-rights law’s new tool
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/How-Donald-Trump-evolved-into-a-prolific,-angry-Tw">
+          How Donald Trump evolved into a prolific, angry Twitter user
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/Testing-their-metals-how-far-can-commodity-prices">
+          Testing their metals—how far can commodity prices rise?
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/%E5%93%8D%E5%BA%94%E7%BE%8E%E5%9B%BD%E5%88%B6%E8%A3%81-%E8%B4%9D%E8%8E%B1%E5%BE%B7%E6%8A%9B%E5%94%AE%E4%B8%AD%E5%9B%BD%E4%B8%89%E5%A4%A7%E7%94%B5%E8%AE%AF%E5%95%86%E8%82%A1%E7%A5%A8">
+            前一篇：响应美国制裁 贝莱德抛售中国三大电讯商股票
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators">
+            后一篇：“There’s a much better chance the worst violators are brought to justice”—human-rights law’s new tool
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/%E5%93%8D%E5%BA%94%E7%BE%8E%E5%9B%BD%E5%88%B6%E8%A3%81-%E8%B4%9D%E8%8E%B1%E5%BE%B7%E6%8A%9B%E5%94%AE%E4%B8%AD%E5%9B%BD%E4%B8%89%E5%A4%A7%E7%94%B5%E8%AE%AF%E5%95%86%E8%82%A1%E7%A5%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/How-Donald-Trump-evolved-into-a-prolific,-angry-Tw'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-13/%E5%93%8D%E5%BA%94%E7%BE%8E%E5%9B%BD%E5%88%B6%E8%A3%81-%E8%B4%9D%E8%8E%B1%E5%BE%B7%E6%8A%9B%E5%94%AE%E4%B8%AD%E5%9B%BD%E4%B8%89%E5%A4%A7%E7%94%B5%E8%AE%AF%E5%95%86%E8%82%A1%E7%A5%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-13/There-s-a-much-better-chance-the-worst-violators">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<经济学人en>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-12/How-Donald-Trump-evolved-into-a-prolific,-angry-Tw">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

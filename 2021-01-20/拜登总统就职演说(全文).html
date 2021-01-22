@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>拜登总统就职演说(全文) – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+拜登总统就职演说(全文)
+——
+" />
+    <meta property="og:description" content="
+拜登总统就职演说(全文)
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="拜登总统就职演说(全文)" />
+    <meta property="twitter:title" content="拜登总统就职演说(全文)" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbiden-inauguration-speech-full-text-translation-20210120%2F5745509.html&t=%E6%8B%9C%E7%99%BB%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4%28%E5%85%A8%E6%96%87%29" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbiden-inauguration-speech-full-text-translation-20210120%2F5745509.html&t=%E6%8B%9C%E7%99%BB%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4%28%E5%85%A8%E6%96%87%29&d=2021-01-20&e=
+拜登总统就职演说(全文)
+——
+
+
+  
+Thu, 21 Jan 2021 00:47:09 GMT
+  
+  
+美国总统拜登在就职典礼上发表讲话。(2021年1月20日)
+  
+  美国第46任总统拜登1月20日在国会山宣誓就职并发表了就职演说。这是美国第59届总统就职典礼。
+  以下是拜登总统就职演说的全文翻译：
+  小约瑟夫·R·拜登总统就职演说
+  首席大法官罗伯茨、副总统哈里斯、议长佩洛西、领袖舒默、领袖麦康奈尔、副总统彭斯，尊敬的来宾们，美国同胞们。
+  这是美国的一天。这是民主的一天，历史与希望的一天，复兴与决心的一天。通过一场历史性的磨练，美国重新经受了考验，美国挺身应对了挑战。
+  今天，我们庆祝的不是一位候选人的胜利，而是一项事业的胜利：民主的事业。人民、人民的意愿得到了倾听，人民的意愿得到了听取。我们再次了解到，民主是珍贵的，民主是脆弱的。而此时此刻，我的朋友..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbiden-inauguration-speech-full-text-translation-20210120%2F5745509.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html&text=拜登总统就职演说(全文)&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html&title=拜登总统就职演说(全文)" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html&title=拜登总统就职演说(全文)" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=拜登总统就职演说(全文)&body=
+拜登总统就职演说(全文)
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html&title=拜登总统就职演说(全文)&caption=
+拜登总统就职演说(全文)
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=拜登总统就职演说(全文)&url=https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>拜登总统就职演说(全文)</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbiden-inauguration-speech-full-text-translation-20210120%2F5745509.html&t=%E6%8B%9C%E7%99%BB%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E6%BC%94%E8%AF%B4%28%E5%85%A8%E6%96%87%29&d=2021-01-20&e=
+拜登总统就职演说(全文)
+——
+
+
+  
+Thu, 21 Jan 2021 00:47:09 GMT
+  
+  
+美国总统拜登在就职典礼上发表讲话。(2021年1月20日)
+  
+  美国第46任总统拜登1月20日在国会山宣誓就职并发表了就职演说。这是美国第59届总统就职典礼。
+  以下是拜登总统就职演说的全文翻译：
+  小约瑟夫·R·拜登总统就职演说
+  首席大法官罗伯茨、副总统哈里斯、议长佩洛西、领袖舒默、领袖麦康奈尔、副总统彭斯，尊敬的来宾们，美国同胞们。
+  这是美国的一天。这是民主的一天，历史与希望的一天，复兴与决心的一天。通过一场历史性的磨练，美国重新经受了考验，美国挺身应对了挑战。
+  今天，我们庆祝的不是一位候选人的胜利，而是一项事业的胜利：民主的事业。人民、人民的意愿得到了倾听，人民的意愿得到了听取。我们再次了解到，民主是珍贵的，民主是脆弱的。而此时此刻，我的朋友..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbiden-inauguration-speech-full-text-translation-20210120%2F5745509.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611191479000-->
+<p><a href="https://www.voachinese.com/a/biden-inauguration-speech-full-text-translation-20210120/5745509.html">拜登总统就职演说(全文)</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 21 Jan 2021 00:47:09 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/5C906A5E-2CF9-43B4-A78C-0DE0E5C70EDF_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">美国总统拜登在就职典礼上发表讲话。(2021年1月20日)</small>
+  </div>
+  <p>美国第46任总统拜登1月20日在国会山宣誓就职并发表了就职演说。这是美国第59届总统就职典礼。</p>
+  <p><strong>以下是拜登总统就职演说的全文翻译：</strong></p>
+  <p><strong>小约瑟夫·R·拜登总统就职演说</strong></p>
+  <p>首席大法官罗伯茨、副总统哈里斯、议长佩洛西、领袖舒默、领袖麦康奈尔、副总统彭斯，尊敬的来宾们，美国同胞们。</p>
+  <p>这是美国的一天。这是民主的一天，历史与希望的一天，复兴与决心的一天。通过一场历史性的磨练，美国重新经受了考验，美国挺身应对了挑战。</p>
+  <p>今天，我们庆祝的不是一位候选人的胜利，而是一项事业的胜利：民主的事业。人民、人民的意愿得到了倾听，人民的意愿得到了听取。我们再次了解到，民主是珍贵的，民主是脆弱的。而此时此刻，我的朋友们，民主取得了胜利。</p>
+  <p>所以现在，在这处圣洁的地方，---就在几天前，暴力企图撼动国会大厦的根基，我们团结在一起，作为上帝之下不可分裂的一个国家，进行和平的权力交接，就像我们两个多世纪以来一直在做的一样。</p>
+  <p>我们展望前方，以躁动、大胆、乐观的美国独特方式，把目标投向一个我们知道我们能够成为而且必须成为的国家。</p>
+  <p>我感谢我的来自两党的前任今天来到这里。我发自心底地感谢他们。我知道我们宪法的韧性和我们国家的力量。</p>
+  <p>卡特总统也知道。我昨晚与他通了话，他今天不能来到我们身边，但是我们向他毕生的奉献表达敬意。</p>
+  <p>我刚刚宣读了神圣的誓词，由乔治·华盛顿首先开始、所有那些爱国者都宣过的誓词。</p>
+  <p>然而，美国的故事所倚仗的，并不是我们当中的某一个人，不是我们当中的一些人，而是我们所有的人，是寻求一个更加完美的联邦的“我们人民”。</p>
+  <p>这是一个伟大的国家。我们是美好的人民。几个世纪以来，经历风暴与纷争、和平与战争，我们已经走过了漫漫的长路，但是还有漫漫的长路要走。</p>
+  <p>我们将带着速度和紧迫感而向前推进，因为在这个蕴藏着危险和重大机会的冬季, 我们有太多的事情要做. 要修补，要恢复，要愈合，要建设，要成就。</p>
+  <p>在我们国家的历史上，没有多少人受到这么多的挑战，或者处在我们目前所处在的如此具有挑战性和艰巨性的时代。</p>
+  <p>一个百年不遇的病毒正在无声地肆虐着国家。它在一年中夺去的生命相当于美国人在整个第二次世界大战期间丧失的生命。数百万就业岗位失去了。几十万商家歇业了。</p>
+  <p>大约四百年来不断发出的种族公正的呼声推动我们前行。为所有人实现公正的梦想将不再会被推迟了。</p>
+  <p>地球本身发出了生存的呼声，这种呼声再也绝望或清晰不过了。如今，政治极端主义、白人至上主义、国内恐怖主义抬头，我们必须面对，我们将会战胜。</p>
+  <p>为了克服这些挑战，恢复美国的灵魂，并保障美国的未来，仅有言辞是远远不够的。必须要有民主制中最难获取的: 团结、团结。</p>
+  <p>在另一个1月、1863年的元旦，亚伯拉罕·林肯签署了《解放奴隶宣言》。当他落笔时，这位总统说，我在此引用他的原话：“如果我的名字可能被载入史册，那将是因为这个法案，我把整个心灵都投入到其中。”</p>
+  <p>我把整个心灵都投入到其中。</p>
+  <p>今天，在这个1月的一天，我把整个心灵都投入到这一点：把美国凝聚在一起，团结我们的人民，团结我们的国家。</p>
+  <p>我请求每一位美国人与我一道加入这项事业，团结起来抗击我们面对的敌人：愤怒、憎恶和仇恨、极端主义、目无法律、暴力。疾病、失业和无望。</p>
+  <p>有了团结，我们可以成就了不起的事情、重要的事情。我们可以纠正错误。我们可以让人们找到好工作。我们可以在安全的学校里教育我们的孩子。我们能够克服致命的病毒。我们可以奖励工作，重建中产阶级，并使人人享有医疗保障。我们可以实现种族正义。我们可以使美国再次成为世界良善的领导力量。</p>
+  <p>我知道，在这些日子里谈论团结可能听起来像是愚蠢的幻想。我知道，分裂我们的力量根深蒂固、实实在在，但是我也知道，它们不是什么新鲜事。</p>
+  <p>我们的历史经常陷入这样的斗争，一方是我们人人生而平等的美国理念，一方是长期以来把我们撕裂的种族主义、本土主义、恐惧和妖魔化的丑恶现实。</p>
+  <p>这是一场持久的战斗。胜负从来未定。</p>
+  <p>经历了内战、大萧条、世界大战、9/11，经历了斗争、牺牲和挫折，我们“本性中更善良的天使”总是占据上风。在每一个这样的时刻，我们总是有足够多的人团结在一起，带领我们所有人前行。</p>
+  <p>我们现在就可以这样做。历史、信仰和理性显示了团结的方式。我们可以不将彼此视为对手，而是邻居。我们可以本着体面和尊重彼此相对。我们可以联起手来，停止喊叫，降低温度，</p>
+  <p>因为没有团结，就不会有和平，只会有怨恨和怒火，只会有耗尽精力的愤慨。不会有国家，只会有乱象。</p>
+  <p>这是我们充满危机和挑战的历史性的时刻。团结是唯一的前行道路，我们必须作为一个团结的美利坚合众国来面对这一时刻。</p>
+  <p>如果我们这样做，我向你保证，我们不会失败。我们一起行动的时候，美国从来没有、从来就没有失败过。</p>
+  <p>所以今天，在这个时候，在这个地方，让我们重新开始。我们所有人。让我们开始重新倾听彼此的声音。彼此听到对方，彼此看到对方，彼此尊重对方。</p>
+  <p>政治不必成为熊熊烈火，摧毁沿途的一切。每一个分歧并非要成为全面战争的起因。我们必须拒绝这种事实本身被操纵，甚至被捏造的文化。</p>
+  <p>我的美国同胞们，我们必须有所改变。美国应该比现在更好。我相信美国比这要好得多。</p>
+  <p>只需看看周围，我们现在站在国会大厦圆顶的影子之下，正如之前提到的，它是在内战期间竣工的，当时联邦本身正处于生死存亡的关头。然而，我们挺住了。我们胜利了。</p>
+  <p>我们站在这里，眺望金博士曾在此讲述他的梦想的大草坪。</p>
+  <p>我们站在这里，108年前这里曾举行了另一次就职典礼，成千上万的抗议者试图阻止勇敢的女性为投票权而游行。今天，我们迎来了美国历史上第一位当选国家领导职务的女性宣誓就职---卡玛拉·哈里斯副总统。</p>
+  <p>不要告诉我事情没法改变！</p>
+  <p>我们站在这里，波多马克河对岸就是阿灵顿公墓，做出终极奉献的英雄们永久安息在那里。</p>
+  <p>我们站在这里，就在几天前，一群骚乱者以为他们可以用暴力扼杀人民的意愿，阻拦我们的民主事业，将我们赶出这一神圣之地。然而，那并没有发生。永远也不会发生。今天不会。明天不会。永远不会。永远不会。</p>
+  <p>我想对支持过我们竞选的人说，你们寄予我们的信任令我心生谦卑。对不支持我们的人，我想说，在我们继续前行的路上，请听听我的想法，评测我和我的心。如果你依旧不认同，那就不认同吧。</p>
+  <p>这就是民主。这就是美国。在我们共和国的护栏之内和平表达异议的权利可能是我们国家最伟大的力量。</p>
+  <p>但请听清楚了：分歧绝不该导致分裂。</p>
+  <p>我向你们保证这一点：我将成为所有美国人的总统，所有美国人。我向你们承诺：我会为支持过我和没支持过我的人同样努力地奋斗。</p>
+  <p>许多世纪之前，我所在教会的圣徒圣奥古斯丁写道，一个民族是一个由他们共同热爱的目标所定义的大群体，由他们共同热爱的目标所界定。</p>
+  <p>我们美国人共同热爱的、将我们定义为美国人的目标是什么？</p>
+  <p>我想我们知道。机会、安全、自由、尊严、尊重、荣誉。是的，还有真相。</p>
+  <p>最近几周和几月我们上了惨痛的一课。有真相，也有谎言，为了权力和利益而编造的谎言。</p>
+  <p>我们每个人都有义务和责任---作为公民，作为美国人，特别是作为领袖，他们承诺遵守我们的宪法，保护我们的国家，捍卫真相，并且战胜谎言。</p>
+  <p>我明白我的许多美国同胞对未来充满恐惧和不安。我明白他们担心自己的工作，我明白，据像我父亲那样，他们夜里躺在床上盯着天花板，心里想着：‘我能保住我的医疗保险吗？我能支付我的房贷吗？’他们想着他们的家人，想着接下来会发生什么。</p>
+  <p>我向你保证，这些我都明白。</p>
+  <p>但这些问题的答案不是转为内向，退缩到对立派系当中，不信任那些模样和你不同的人、信仰方式和你不同的人或者新闻来源和你不同的人。</p>
+  <p>我们必须结束红与蓝、农村与城市、保守派与自由派之间这场不文明的战争。只要我们敞自己的心灵，而不是变得铁石心肠，我们就能做到。</p>
+  <p>只要我们展现出一点宽容和谦逊，只要我们愿意设身处地为别人着想---就像我母亲曾说过的那样---不妨稍稍站在别人的立场上感受一下。</p>
+  <p>因为人生就是如此：你不会知道命运将如何对待你。有些天里，你需要别人伸出援手。有些天里，我们受到呼召去向别人伸出援手。事情就应该这样，我们就应该这样彼此相助。</p>
+  <p>如果我们这样做，我们的国家将更强大，更繁荣，面对未来有更充分的准备。与此同时，我们仍然可以保持不同意见。</p>
+  <p>我的美国同胞们，在接下来的工作中，我们将相互需要。我们需要使出我们的所有力量，挺过这个黑暗的冬天。</p>
+  <p>我们正在进入的可能是最为艰难、最为致命的疫情阶段。我们必须抛开政治分歧，是时候凝聚成一个国家来面对这场大流行病。一个国家。</p>
+  <p>我向你保证，正如《圣经》所说，“一宿虽然有哭泣，早晨便必欢呼。” 我们将一起度过难关。一起。</p>
+  <p>听着，各位，在座所有在众议院和参议院与我共事过的同事们，我们都明白，今天，全世界都在看着我们，看着我们所有人。</p>
+  <p>因此，我要向我们国境之外的全世界传达这样的信息：美国经历了考验，我们已经挺身走出，并因此变得更为强大。</p>
+  <p>我们将修复我们的同盟，并再次与世界进行接触。不是去迎接昨天的挑战，而是迎接今天和明天的挑战。我们不仅要以我们力量的榜样，还要以我们榜样的力量来领导。在和平、进步与安全方面，我们将是一个强大并值得信赖的伙伴。</p>
+  <p>大家都知道，我们国家经历了太多。</p>
+  <p>在我作为总统的第一项行动中，我想请你们和我一起默祷片刻，纪念过去一年里我们在大流行病中失去的所有人。40万美国同胞---母亲、父亲、儿子、女儿、朋友、邻居和同事。</p>
+  <p>我们向他们表达敬意的方式是成为我们知道我们能够而且应该成为的人民和国家。因此，我请求你们，让我们为逝者、为存者并为我们的国家默祷。</p>
+  <p>阿门。</p>
+  <p>各位，这是一个考验的时刻。我们面临着对民主和真相的攻击。一个肆虐的病毒、不断扩大的不平等、系统性种族主义的刺痛、一个处于危机中的气候、美国在世界的角色。其中任何一项都足以给我们带来深远的挑战。而我们在同一时间面对这些问题，这让我们国家面临最为重大的责任之一。</p>
+  <p>现在我们必须加快步伐。我们所有的人。这是一个需要大胆的时候，因为有很多事情要做。这一点是肯定的。</p>
+  <p>我向你们保证，我们、你和我，将因我们如何解决我们时代的一连串危机而受到评判。</p>
+  <p>我们会经受得起考验吗? 这是问题所在。我们能主宰这个罕见而艰难的时刻吗?我们会履行我们的义务，并给我们的子孙后代留下一个新的、更美好的世界吗?</p>
+  <p>我相信我们必须这样做，而且我确信你们也这样认为。我相信我们会，而且当我们做到这一点时，我们将书写美国历史的下一个伟大篇章。美国的故事。</p>
+  <p>这个故事听起来可能就像一首对我来说意义重大的歌曲。这首歌叫《美国之歌》，其中一段词让我印象深刻:</p>
+  <p>“几个世纪的努力和祈祷，</p>
+  <p>把我们带到了今天。</p>
+  <p>我们的遗产将是什么?</p>
+  <p>我们的孩子会怎么说?</p>
+  <p>让我心中知道，</p>
+  <p>当我的日子结束时，</p>
+  <p>美国、美国，</p>
+  <p>我把我的最好都给了你。”</p>
+  <p>让我们为我们国家正在展开的故事添加我们自己的努力和祈祷。如果我们这样做，那么当我们的日子结束时，我们的孩子和孩子的孩子会说我们尽了最大努力，他们尽了他们的责任，他们治愈了一片破碎的土地。</p>
+  <p>我的美国同胞们，我以我开始时的神圣誓言来作为今天的结束。</p>
+  <p>在上帝和你们面前，我向你们保证。我将永远对你坦白。我将捍卫宪法。我将捍卫我们的民主。我将保卫美国。我将倾尽全力为你们服务，考虑的不是权力，而是机会。不是为了个人私利，而是为了公众的利益。</p>
+  <p>我们将一起书写一个充满希望而不是恐惧、团结而不是分裂、光明而不是黑暗的美国故事、一个充满正直和尊严、爱心和治愈、伟大和良善的美国故事。</p>
+  <p>愿这是指引我们的故事、激励我们的故事、告诉未来世代我们响应了历史召唤的故事。</p>
+  <p>我们迎接了这个时刻。民主和希望、真相和正义，没有在我们手下死去，而是茁壮成长。我们的美国确保了国内的自由，并再次成为世界的灯塔。这是我们对我们的祖先、对我们彼此以及对我们的后代所必须要做的。</p>
+  <p>因此，怀着目标和决心，我们着手处理我们时代的任务。以信仰为支撑，以信念为动力。我们彼此忠诚，全心全意爱着这个国家。</p>
+  <p>愿上帝保佑美国，愿上帝保护我们的军队。</p>
+  <p>谢谢你,美国。</p>
+  <p> </p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E5%8D%B8%E4%BB%BB%E5%AE%98%E5%91%98%E8%AD%A6%E5%91%8A%E4%B8%AD%E5%9B%BD%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%BE%8E%E5%9B%BD%E7%9A%84%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C">
+          卸任官员警告中国可能威胁美国的通信网络
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)">
+          特朗普总统卸任前在告别仪式上的讲话(全文)
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%93%E5%AE%B6-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E5%AF%B9%E5%8D%8E%E5%BC%BA%E7%A1%AC%E4%B8%8E%E5%90%A6-%E5%8F%96%E5%86%B3%E4%BA%8E%E4%B9%A0%E8%BF%91%E5%B9%B3">
+          专家：拜登政府对华强硬与否，取决于习近平
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%BE%8E%E5%9B%BD%E7%AC%AC46%E4%BB%BB%E6%80%BB%E7%BB%9F%E4%B9%94-%E6%8B%9C%E7%99%BB%E7%9A%84%E8%B6%B3%E8%BF%B9">
+          美国第46任总统乔·拜登的足迹
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-20">
+            前一篇：三退声明精选（2021/01/20）
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)">
+            后一篇：特朗普总统卸任前在告别仪式上的讲话(全文)
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-20'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%93%E5%AE%B6-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E5%AF%B9%E5%8D%8E%E5%BC%BA%E7%A1%AC%E4%B8%8E%E5%90%A6-%E5%8F%96%E5%86%B3%E4%BA%8E%E4%B9%A0%E8%BF%91%E5%B9%B3'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-01-20">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E5%8D%B8%E4%BB%BB%E5%89%8D%E5%9C%A8%E5%91%8A%E5%88%AB%E4%BB%AA%E5%BC%8F%E4%B8%8A%E7%9A%84%E8%AE%B2%E8%AF%9D(%E5%85%A8%E6%96%87)">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%93%E5%AE%B6-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E5%AF%B9%E5%8D%8E%E5%BC%BA%E7%A1%AC%E4%B8%8E%E5%90%A6-%E5%8F%96%E5%86%B3%E4%BA%8E%E4%B9%A0%E8%BF%91%E5%B9%B3">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

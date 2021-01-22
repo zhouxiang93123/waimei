@@ -1,0 +1,4777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+" />
+    <meta property="og:description" content="
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】" />
+    <meta property="twitter:title" content="抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202101185004.aspx&t=%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4%EF%BC%8F%E5%9C%98%E7%B5%90%E6%8A%97%E7%96%AB%E5%A4%A7%E4%BD%9C%E6%88%B0+%E5%9B%9E%E9%A6%96%E8%89%B1%E8%BE%9B%E7%9A%84%E9%80%99%E4%B8%80%E5%B9%B4%E3%80%90%E5%9C%96%E8%BC%AF%E3%80%91" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202101185004.aspx&t=%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4%EF%BC%8F%E5%9C%98%E7%B5%90%E6%8A%97%E7%96%AB%E5%A4%A7%E4%BD%9C%E6%88%B0+%E5%9B%9E%E9%A6%96%E8%89%B1%E8%BE%9B%E7%9A%84%E9%80%99%E4%B8%80%E5%B9%B4%E3%80%90%E5%9C%96%E8%BC%AF%E3%80%91&d=2021-01-17&e=
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+
+
+  
+  
+    
+      
+        
+              
+抗疫週年
+              
+
+        
+      
+    
+    （中央社網站）2020年1月20日，中央流行疫情指揮中心三級開設，吹起台灣對抗武漢肺炎（2019冠狀病毒疾病，COVID-19）疫情號角。這一年來，台灣靠著嚴守邊境、居家隔離檢疫、全民勤洗手戴口罩，在國際疫情失控的大環境下，國人仍能最大程度地如常生活，小孩能上學、工作大抵如常，能聚餐、還有跨年演唱會，股市還衝高突破了16000點。這一切歸功於防疫人員的犧牲奉獻，以及你、我、全體國人的齊心配合。
+    透過照片一起回首這艱辛的一年，2021我們持續努力。
+    包機模式
+    
+      
+        
+
+        
+       ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202101185004.aspx" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.cna.com.tw/news/firstnews/202101185004.aspx" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.cna.com.tw/news/firstnews/202101185004.aspx&text=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.cna.com.tw/news/firstnews/202101185004.aspx&title=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cna.com.tw/news/firstnews/202101185004.aspx&title=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】&body=
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.cna.com.tw/news/firstnews/202101185004.aspx" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.cna.com.tw/news/firstnews/202101185004.aspx&title=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】&caption=
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】&url=https://www.cna.com.tw/news/firstnews/202101185004.aspx" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA ">
+          (臺)中央社CNA
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.cna.com.tw/news/firstnews/202101185004.aspx"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="(臺)中央社CNA的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#(臺)中央社CNA 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202101185004.aspx&t=%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4%EF%BC%8F%E5%9C%98%E7%B5%90%E6%8A%97%E7%96%AB%E5%A4%A7%E4%BD%9C%E6%88%B0+%E5%9B%9E%E9%A6%96%E8%89%B1%E8%BE%9B%E7%9A%84%E9%80%99%E4%B8%80%E5%B9%B4%E3%80%90%E5%9C%96%E8%BC%AF%E3%80%91&d=2021-01-17&e=
+抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】
+——
+
+
+  
+  
+    
+      
+        
+              
+抗疫週年
+              
+
+        
+      
+    
+    （中央社網站）2020年1月20日，中央流行疫情指揮中心三級開設，吹起台灣對抗武漢肺炎（2019冠狀病毒疾病，COVID-19）疫情號角。這一年來，台灣靠著嚴守邊境、居家隔離檢疫、全民勤洗手戴口罩，在國際疫情失控的大環境下，國人仍能最大程度地如常生活，小孩能上學、工作大抵如常，能聚餐、還有跨年演唱會，股市還衝高突破了16000點。這一切歸功於防疫人員的犧牲奉獻，以及你、我、全體國人的齊心配合。
+    透過照片一起回首這艱辛的一年，2021我們持續努力。
+    包機模式
+    
+      
+        
+
+        
+       ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202101185004.aspx" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610945853000-->
+<p><a href="https://www.cna.com.tw/news/firstnews/202101185004.aspx">抗疫週年／團結抗疫大作戰 回首艱辛的這一年【圖輯】</a>
+——</p>
+
+<div>
+  <div></div>
+  <div class="paragraph">
+    <div class="media">
+      <div class="myCustom">
+        <div class="topicbox" style="line-height: 1.8; margin-bottom: 0.938rem; border-bottom: 1px solid #E1E1E1; text-align: left;">
+<a href="https://www.cna.com.tw/topic/newstopic/3389.aspx">              <div class="topictitle" style="color: #004E98; font-weight: bold; font-size: 1.5rem;">
+抗疫週年
+              </div>
+</a>
+        </div>
+      </div>
+    </div>
+    <p>（中央社網站）2020年1月20日，中央流行疫情指揮中心三級開設，吹起台灣對抗武漢肺炎（2019冠狀病毒疾病，COVID-19）疫情號角。這一年來，台灣靠著嚴守邊境、居家隔離檢疫、全民勤洗手戴口罩，在國際疫情失控的大環境下，國人仍能最大程度地如常生活，小孩能上學、工作大抵如常，能聚餐、還有跨年演唱會，股市還衝高突破了16000點。這一切歸功於防疫人員的犧牲奉獻，以及你、我、全體國人的齊心配合。</p>
+    <p>透過照片一起回首這艱辛的一年，2021我們持續努力。</p>
+    <h2 id="section">包機模式</h2>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1332_0739447752536.jpg" alt="搭載19名鑽石公主號台灣旅客及1名先遣醫師的華航包機順利返抵國門，透過機窗望去，機內人員皆是全副武裝。中央社記者邱俊欽桃園機場攝 109年2月21日" />
+        </div>
+        <div class="picinfo">
+搭載19名鑽石公主號台灣旅客及1名先遣醫師的華航包機順利返抵國門，透過機窗望去，機內人員皆是全副武裝。中央社記者邱俊欽桃園機場攝 109年2月21日
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x683_571639200025.jpg" alt="武漢肺炎肆虐歐洲，德國3月派遣軍機到義大利和法國將重症病患接到德國治療。圖為德軍空中巴士A310傷患後送專機，有「飛行加護病房」之稱。（美聯社）" />
+        </div>
+        <div class="picinfo">
+武漢肺炎肆虐歐洲，德國3月派遣軍機到義大利和法國將重症病患接到德國治療。圖為德軍空中巴士A310傷患後送專機，有「飛行加護病房」之稱。（美聯社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x683_211223222778.jpg" alt="7月，印度武漢肺炎成為全球第3高。首都新德里病床不足，政府借用火車、學校和飯店，緊急增設臨時病床。圖為新德里鐵路車廂準備轉換為臨時的護理中心。（美聯社）" />
+        </div>
+        <div class="picinfo">
+7月，印度武漢肺炎成為全球第3高。首都新德里病床不足，政府借用火車、學校和飯店，緊急增設臨時病床。圖為新德里鐵路車廂準備轉換為臨時的護理中心。（美聯社）
+        </div>
+      </div>
+    </div>
+    <h2 id="section-1">蒙面的一年</h2>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_0724134436301.jpg" alt="清明連假前，不少民眾搭乘台鐵列車提前返鄉，有乘客戴上濾罐式防毒面罩防疫。中央社記者徐肇昌攝 109年4月1日" />
+        </div>
+        <div class="picinfo">
+清明連假前，不少民眾搭乘台鐵列車提前返鄉，有乘客戴上濾罐式防毒面罩防疫。中央社記者徐肇昌攝 109年4月1日
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_002866845933.jpg" alt="由全女性官兵組成的M110A2自走砲班在漢光演習表現傑出，總統蔡英文赴陸軍砲兵第43指揮部視察。因應武漢肺炎疫情，全員戴上口罩演練。中央社記者張新偉攝109年4月9日" />
+        </div>
+        <div class="picinfo">
+由全女性官兵組成的M110A2自走砲班在漢光演習表現傑出，總統蔡英文赴陸軍砲兵第43指揮部視察。因應武漢肺炎疫情，全員戴上口罩演練。中央社記者張新偉攝109年4月9日
+        </div>
+      </div>
+    </div>
+    <h2 id="section-2">離別的一年</h2>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_0655931482711.jpg" alt="德國疫情持續惡化，位於薩克森州邁森市的火葬場堆滿了上百具等待火化的棺材，每一具棺材裡都是染疫去世的人。（美聯社）" />
+        </div>
+        <div class="picinfo">
+德國疫情持續惡化，位於薩克森州邁森市的火葬場堆滿了上百具等待火化的棺材，每一具棺材裡都是染疫去世的人。（美聯社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x704_602855395245.jpg" alt="4月，巴西亞馬遜州民眾未保持社交距離、篩檢數量不足和季節因素，疫情迅速惡化，染病率全國居冠。圖為當地殯葬人員穿著防護衣作業。（美聯社）" />
+        </div>
+        <div class="picinfo">
+4月，巴西亞馬遜州民眾未保持社交距離、篩檢數量不足和季節因素，疫情迅速惡化，染病率全國居冠。圖為當地殯葬人員穿著防護衣作業。（美聯社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x660_634023955059.jpg" alt="巴西瑪瑙斯市政府在阿芭蕾西達聖母公墓挖建集體墓穴，安葬染疫死者遺體。（美聯社）" />
+        </div>
+        <div class="picinfo">
+巴西瑪瑙斯市政府在阿芭蕾西達聖母公墓挖建集體墓穴，安葬染疫死者遺體。（美聯社）
+        </div>
+      </div>
+    </div>
+    <h2 id="section-3">疏離的一年</h2>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x683_560741536422.jpg" alt="沙烏地阿拉伯4月呼籲穆斯林等疫情更明朗再籌備朝覲和預訂行程，似為取消麥加朝覲預留伏筆。後來，麥加朝覲改為限定1萬人，以抽籤決定。圖為工作人員在麥加清真寺消毒。（美聯社）" />
+        </div>
+        <div class="picinfo">
+沙烏地阿拉伯4月呼籲穆斯林等疫情更明朗再籌備朝覲和預訂行程，似為取消麥加朝覲預留伏筆。後來，麥加朝覲改為限定1萬人，以抽籤決定。圖為工作人員在麥加清真寺消毒。（美聯社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x683_899221558201.jpg" alt="全球疫情未歇，俄羅斯單日確診也創新高。圖為莫斯科街道上人煙稀少。（安納杜魯新聞社提供）" />
+        </div>
+        <div class="picinfo">
+全球疫情未歇，俄羅斯單日確診也創新高。圖為莫斯科街道上人煙稀少。（安納杜魯新聞社提供）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x682_648023047150.jpg" alt="法國疫情10月出現第二波反撲，大巴黎地區以及8個大城市實施4到6週宵禁。以往擠滿觀展民眾的「蒙娜麗莎的微笑」展間只剩零星訪客。（法新社）" />
+        </div>
+        <div class="picinfo">
+法國疫情10月出現第二波反撲，大巴黎地區以及8個大城市實施4到6週宵禁。以往擠滿觀展民眾的「蒙娜麗莎的微笑」展間只剩零星訪客。（法新社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1500_0017625452223.jpg" alt="耶誕節前夕，倫敦疫情警報等級升至第4級，非必要商店關門，原本熱鬧的攝政街只剩大天使燈飾閃爍，街上人煙稀少。中央社記者戴雅真倫敦攝 109年12月23日" />
+        </div>
+        <div class="picinfo">
+耶誕節前夕，倫敦疫情警報等級升至第4級，非必要商店關門，原本熱鬧的攝政街只剩大天使燈飾閃爍，街上人煙稀少。中央社記者戴雅真倫敦攝 109年12月23日
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1212_0474853561367.jpg" alt="東京2020奧運破天荒延後一年。2021年1月，首都圈、京阪、福岡等縣市再度宣布進入緊急事態，疫情更加嚴峻。紐時分析東奧有可能成為二次大戰後，第一個被迫取消舉辦的奧運大會。（共同社）" />
+        </div>
+        <div class="picinfo">
+東京2020奧運破天荒延後一年。2021年1月，首都圈、京阪、福岡等縣市再度宣布進入緊急事態，疫情更加嚴峻。紐時分析東奧有可能成為二次大戰後，第一個被迫取消舉辦的奧運大會。（共同社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_0550254573454.jpg" alt="受到武漢肺炎疫情影響許多班機取消，桃園國際機場3月22日出境大廳空蕩蕩，一名民眾站在電子看板前觀看疫情警語。中央社記者林俊耀攝 109年3月22日" />
+        </div>
+        <div class="picinfo">
+受到武漢肺炎疫情影響許多班機取消，桃園國際機場3月22日出境大廳空蕩蕩，一名民眾站在電子看板前觀看疫情警語。中央社記者林俊耀攝 109年3月22日
+        </div>
+      </div>
+    </div>
+    <h2 id="section-4">團結的一年</h2>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/1024x716_615266319875.jpg" alt="歐洲聯盟各國領袖7月17日展開高峰會，受疫情影響，與會領袖戴著各式口罩並以新方式打招呼。圖為德國總理梅克爾與賽普勒斯總統擊肘打招呼。（法新社）" />
+        </div>
+        <div class="picinfo">
+歐洲聯盟各國領袖7月17日展開高峰會，受疫情影響，與會領袖戴著各式口罩並以新方式打招呼。圖為德國總理梅克爾與賽普勒斯總統擊肘打招呼。（法新社）
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1334_030914221972.jpg" alt="為了防疫，台灣各級學校延長寒假。開學之初，台北市大佳國小學童除了戴口罩上課，還在教室內使用自製的隔板，降低飛沫傳染的機率。中央社記者林俊耀攝 109年2月26日" />
+        </div>
+        <div class="picinfo">
+為了防疫，台灣各級學校延長寒假。開學之初，台北市大佳國小學童除了戴口罩上課，還在教室內使用自製的隔板，降低飛沫傳染的機率。中央社記者林俊耀攝 109年2月26日
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_0575952974635.jpg" alt="口罩國家隊由國內機具廠商組成，為口罩廠商組裝生產機台，大幅提升口罩產能，安定民心。中央社記者林俊耀攝109年3月14日" />
+        </div>
+        <div class="picinfo">
+口罩國家隊由國內機具廠商組成，為口罩廠商組裝生產機台，大幅提升口罩產能，安定民心。中央社記者林俊耀攝109年3月14日
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="wrap">
+<img class="lazyload" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210118/2000x1333_0950112502049.jpg" alt="4月16日中央流行疫情指揮中心宣布，台灣沒有新增確診個案。台北101大樓當晚晚間在外牆點亮燈光，打上「台灣加油」等字樣，為國人加油打氣。中央社記者裴禛攝 109年4月16日" />
+        </div>
+        <div class="picinfo">
+4月16日中央流行疫情指揮中心宣布，台灣沒有新增確診個案。台北101大樓當晚晚間在外牆點亮燈光，打上「台灣加油」等字樣，為國人加油打氣。中央社記者裴禛攝 109年4月16日
+        </div>
+      </div>
+    </div>
+    <div class="paragraph moreArticle">
+      <div class="moreArticle-title">
+延伸閱讀
+      </div>
+<a class="moreArticle-link" href="https://www.cna.com.tw/news/firstnews/202101180023.aspx"><em class="icon-dot"></em><span>專題／疫情與貿易戰淬鍊下 台灣成為世界最重要地方</span></a><a class="moreArticle-link" href="https://www.cna.com.tw/news/ahel/202101180024.aspx"><em class="icon-dot"></em><span>專題／疫情避風港 美籍新創家：從未看過這麼多人想來台灣</span></a><a class="moreArticle-link" href="https://www.cna.com.tw/project/20201229-yearofphoto/index.html"><em class="icon-dot"></em><span>圖輯／2020新聞現場 中央社精選年度照片</span></a><a class="moreArticle-link" href="https://www.cna.com.tw/news/ahel/202101185002.aspx"><em class="icon-dot"></em><span>專題／抗疫一週年 台灣與世界的改變</span></a>
+    </div>
+  </div>
+  <div class="paragraph bottomArticleBanner show">
+    <div class="pcBox adslot_infinite js_pcBox_EndAd2" id="adslot_pcBox_EndAd2" data-width="685" data-height="250" data-dfp="cna2018_article_685x250_end2"></div>
+    <div class="mbBox adslot_infinite js_mbBox_EndAd2" id="adslot_mbBox_EndAd2" data-width="300" data-height="250" data-dfp="cna2018_article_300x250_end2"></div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#(臺)中央社CNA 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%8D%88%E7%9B%A4%E5%BC%B7%E5%8D%874.97%E8%A7%92-%E6%9A%AB%E6%94%B6%E6%94%B627.983%E5%85%83">
+          新台幣午盤強升4.97角 暫收收27.983元
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9">
+          抗疫週年／疫情與貿易戰淬鍊下 台灣成為世界最重要地方
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C">
+          彩色口罩含致癌偶氮染料？抽驗112件全數過關
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%A4%AA%E9%99%BD%E8%8A%B1%E9%97%96%E8%A1%8C%E6%94%BF%E9%99%A2%E9%AD%8F%E6%8F%9A%E7%AD%897%E8%A2%AB%E5%91%8A%E4%BA%8C%E5%AF%A9%E5%88%A4%E6%9C%89%E7%BD%AA-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E7%99%BC%E5%9B%9E%E6%9B%B4%E5%AF%A9">
+          太陽花闖行政院魏揚等7被告二審判有罪 最高法院發回更審
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C">
+            前一篇：彩色口罩含致癌偶氮染料？抽驗112件全數過關
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9">
+            后一篇：抗疫週年／疫情與貿易戰淬鍊下 台灣成為世界最重要地方
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<(臺)中央社CNA>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-17/%E6%8A%97%E7%96%AB%E9%80%B1%E5%B9%B4-%E7%96%AB%E6%83%85%E8%88%87%E8%B2%BF%E6%98%93%E6%88%B0%E6%B7%AC%E9%8D%8A%E4%B8%8B-%E5%8F%B0%E7%81%A3%E6%88%90%E7%82%BA%E4%B8%96%E7%95%8C%E6%9C%80%E9%87%8D%E8%A6%81%E5%9C%B0%E6%96%B9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<(臺)中央社CNA>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-17/%E5%BD%A9%E8%89%B2%E5%8F%A3%E7%BD%A9%E5%90%AB%E8%87%B4%E7%99%8C%E5%81%B6%E6%B0%AE%E6%9F%93%E6%96%99-%E6%8A%BD%E9%A9%97112%E4%BB%B6%E5%85%A8%E6%95%B8%E9%81%8E%E9%97%9C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

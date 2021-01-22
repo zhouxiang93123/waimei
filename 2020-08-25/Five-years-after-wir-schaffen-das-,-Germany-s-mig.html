@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Five years after “wir schaffen das”, Germany’s migrants are integrating – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+" />
+    <meta property="og:description" content="
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="Five years after “wir schaffen das”, Germany’s migrants are integrating" />
+    <meta property="twitter:title" content="Five years after “wir schaffen das”, Germany’s migrants are integrating" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.economist.com%2Feurope%2F2020%2F08%2F25%2Ffive-years-after-wir-schaffen-das-germanys-migrants-are-integrating&t=Five+years+after+%E2%80%9Cwir+schaffen+das%E2%80%9D%2C+Germany%E2%80%99s+migrants+are+integrating" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Feurope%2F2020%2F08%2F25%2Ffive-years-after-wir-schaffen-das-germanys-migrants-are-integrating&t=Five+years+after+%E2%80%9Cwir+schaffen+das%E2%80%9D%2C+Germany%E2%80%99s+migrants+are+integrating&d=2020-08-25&e=
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+
+
+  
+  
+    
+      Aug 25th 2020
+      
+      BERLIN AND GÖTTINGEN
+    
+  
+  ASKED WHAT he makes of his new home, Safwan Daher, a Syrian refugee, chuckles: Duderstadt, a town near Göttingen that few Germans could find on a map, is “boring”. No matter. Mr Daher has an enjoyable computer-programming job that pays for a fl..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Feurope%2F2020%2F08%2F25%2Ffive-years-after-wir-schaffen-das-germanys-migrants-are-integrating" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating&text=Five years after “wir schaffen das”, Germany’s migrants are integrating&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating&title=Five years after “wir schaffen das”, Germany’s migrants are integrating" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating&title=Five years after “wir schaffen das”, Germany’s migrants are integrating" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=Five years after “wir schaffen das”, Germany’s migrants are integrating&body=
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating&title=Five years after “wir schaffen das”, Germany’s migrants are integrating&caption=
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=Five years after “wir schaffen das”, Germany’s migrants are integrating&url=https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+    
+
+
+
+<article class="post">
+  <h1>Five years after “wir schaffen das”, Germany’s migrants are integrating</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2020-08-25
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#经济学人en ">
+          经济学人en
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="经济学人en的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#经济学人en 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.economist.com%2Feurope%2F2020%2F08%2F25%2Ffive-years-after-wir-schaffen-das-germanys-migrants-are-integrating&t=Five+years+after+%E2%80%9Cwir+schaffen+das%E2%80%9D%2C+Germany%E2%80%99s+migrants+are+integrating&d=2020-08-25&e=
+Five years after “wir schaffen das”, Germany’s migrants are integrating
+——
+
+
+  
+  
+    
+      Aug 25th 2020
+      
+      BERLIN AND GÖTTINGEN
+    
+  
+  ASKED WHAT he makes of his new home, Safwan Daher, a Syrian refugee, chuckles: Duderstadt, a town near Göttingen that few Germans could find on a map, is “boring”. No matter. Mr Daher has an enjoyable computer-programming job that pays for a fl..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.economist.com%2Feurope%2F2020%2F08%2F25%2Ffive-years-after-wir-schaffen-das-germanys-migrants-are-integrating" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1598396946000-->
+<p><a href="https://www.economist.com/europe/2020/08/25/five-years-after-wir-schaffen-das-germanys-migrants-are-integrating">Five years after “wir schaffen das”, Germany’s migrants are integrating</a>
+——</p>
+
+<div>
+<img src="https://images.weserv.nl/?url=www.economist.com/sites/default/files/20200829_EUP001.jpg" />  <div></div>
+  <aside>
+    <div>
+      <time itemscope="" itemType="http://schema.org/DateTime" dateTime="2020-08-25T00:00:00Z">Aug 25th 2020</time>
+      <meta itemprop="author" content="The Economist" />
+      <p data-test-id="Dateline" itemtype="http://schema.org/dateline">BERLIN AND GÖTTINGEN</p>
+    </div>
+  </aside>
+  <p>ASKED WHAT he makes of his new home, Safwan Daher, a Syrian refugee, chuckles: Duderstadt, a town near Göttingen that few Germans could find on a map, is “boring”. No matter. Mr Daher has an enjoyable computer-programming job that pays for a flat with three bedrooms. He keeps one empty, hoping his parents will leave Syria and join him. In his spare time he hangs out with his brother, a student at Göttingen University. The next step is German citizenship, for which he has just applied.</p>
+  <p>Karam Kabbani, an activist who fled Aleppo after Bashar al-Assad’s thugs tortured him, has had a rougher time. Nervously chain-smoking, he describes an anguished five years bouncing from one agency to another, forced to take dead-end jobs, with no help offered for his psychological scars. He plans to leave Germany when he can. “Germans are very closed people,” he says. “No one wants to help.”</p>
+  <div id="gpt-ad-slot-1" data-test-id="Inline Ad"></div>
+  <div>
+    <figure>
+      <div itemscope="" itemprop="image" itemtype="https://schema.org/ImageObject" data-slim="1">
+        <meta itemprop="url" content="https://www.economist.com/img/b/608/662/90/sites/default/files/20200829_EUC314.png" />
+<img src="https://images.weserv.nl/?url=www.economist.com/img/b/608/662/90/sites/default/files/20200829_EUC314.png" sizes="300px" alt="" />
+      </div>
+    </figure>
+    <p>On August 31st 2015, with a growing number of asylum-seekers reaching Germany, Angela Merkel declared: “<em>Wir schaffen das</em>” (roughly, “We can handle this”). A few days later the chancellor opened the borders to migrants stranded in Budapest, amplifying the wave: perhaps 1.2m reached Germany before Balkan border closures and a deal with Turkey in 2016 stemmed the flow. Initially Germany handled the migrants well. Yet five years on, its experience integrating them has been mixed.</p>
+  </div>
+  <p>Start with work. In 2015 an influx of mainly young migrants looked a neat fit for German firms facing an ageing labour force. Daimler’s boss foresaw an “economic miracle”. Rules were eased for asylum-seekers looking for jobs, and the government pushed 1.1m through integration and language courses. By 2018 43% of the asylum-seekers who arrived between 2013 and 2016 were in some form of employment or training (next to over 75% for Germany as a whole)—better than the wave of refugees from the disintegrating Yugoslavia in the 1990s. (A stronger labour market helped too.) Jobs came slowly at first, but accelerated as people emerged from integration courses. There are promising signs from courses that combine language and skills training. “These numbers are not perfect, but they are hopeful,” says Marlene Thiele, who runs a project called Network Companies Integrate Refugees at the German Chamber of Commerce to help firms hire refugees.</p>
+  <p>But the headline figure conceals big discrepancies. Barely half of the refugees in Germany’s labour force today work in skilled jobs, although over 80% did in their home countries, <span><span>calculates Herbert Brücker at the Institute for Employment Research, <span><span>the research arm of the Federal Employment Agency</span></span></span></span>. Many are in low-wage service sectors like hospitality and tourism, which offer few prospects for advancement (and leave them exposed to covid-related layoffs). Women in particular have struggled, especially those from cultures that think their place is in the home. (A new federal initiative seeks to combat this.) Many of the newcomers, especially from countries like Eritrea and Iraq, were functionally illiterate when they arrived and are still years from entering the job market. Control for age, and average migrant earnings are around two-thirds the native German level.</p>
+  <p>Migrants were dispersed all over Germany; over half live outside cities. That was a test for Germany’s model of decentralisation, which gives lots of power to local officials. (“In Berlin integration is just an abstract question,” grumbles Rolf-Georg Köhler, Göttingen’s mayor.) A study of 92 municipalities funded by the Robert Bosch Foundation found that many were surprisingly adaptable, for example launching their own language courses while waiting for the bureaucratic wheels to turn in Berlin. Civil society, too, was crucial. Mr Köhler credits the local sport association with speeding integration: the language of football is universal. Over half of Germany’s population has worked in some way with refugees. “We can activate a whole network if we need to,” says Bettina Briesemeister, who runs a refugee housing centre in Göttingen.</p>
+  <div id="gpt-ad-slot-2" data-test-id="Inline Ad"></div>
+  <p>The flip side is confusion and inefficiency. Officials are sometimes unclear on which layer of government is responsible for a policy, and Germany’s states and municipalities swap ideas surprisingly rarely. Over 600 overworked local “foreigners’ offices” are responsible for matters like work permits and deportations. The bureaucratic maze is disconcerting. “Ask any refugee what they fear most, and it’s the letterbox,” says Mr Kabbani: the contents invariably include demands, appointments or warnings from official bodies they have never heard of.</p>
+  <p>Like many European countries Germany has struggled to deport failed asylum-seekers. Over 200,000 people have been granted <em>Duldung</em> (“tolerated”) status, meaning they have no right to be in the country but do not face immediate deportation. (Perhaps a further 50,000 have no legal status.) To stop them from slipping into idleness or worse, under new rules some may work or take on apprenticeships. But the insecurity persists. One such rejected asylum-seeker, Mohammad Walizada, an Afghan who had worked with an American de-mining firm in Kabul, now has a legal job in a phone shop on Sylt, a North Sea island. But he has given up on his goal of getting a doctorate in Germany. “I have no hopes, it’s just survival,” he says.</p>
+  <p>“There is a huge difference in integration outcomes between people that receive protection and those that are in<em> Duldung</em> or rejected,” says Victoria Rietig of the German Council on Foreign Relations. Just 3% of those with <em>Duldung</em> status can move freely throughout Germany, which hinders job-seeking. And because Germany has no birthright citizenship rule, their children are usually given the same status, and risk being deported to a country they have never known. “It’s this population we should be worried about,” says Ms Rietig. Germany seems afraid both of enforcing its rules and of making it too easy for failed asylum-seekers to find alternative ways into German society. As the numbers grow, the dilemma worsens.</p>
+  <p>Yet the country remains paralysed by the political battles of five years ago. The migrant crisis jolted the radical-right Alternative for Germany into third place at the 2017 election. A poll last year found a majority of Germans thought the country should accept no more refugees. These days the borders are quieter and the issue has gone off the boil, but fresh waves of migrants from Europe’s troubled neighbourhood can hardly be ruled out. “Mama” Merkel, as she is known to many refugees, long ago abandoned her “<em>Wir schaffen das</em>” mantra for a more paradoxical claim: that her decision to leave the borders open was correct, and must never be repeated.</p>
+  <p>Ahmad Denno, a well-integrated Syrian who is completing a degree in Berlin, identifies three types of German: those who treat him normally; racists who want him to leave; and those for whom he is permanently on probation. Asked if he could ever feel at home here, he shrugs. “For some, I could never be German. For others, I already am. I don’t feel like an outsider here. I’m just looking for a normal, safe life.”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#经济学人en 的其它文章</h4>
+    
+      <li>
+        <time>2020-08-26</time>
+        <a href="https://nodebe4.github.io/waimei/2020-08-26/A-new-hit-Chinese-drama-explores-the-pressures-fac">
+          A new hit Chinese drama explores the pressures faced by young women
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2020-08-26</time>
+        <a href="https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society">
+          “These claims really have stunned Mexican society”—sweeping graft allegations
+        </a>
+      </li>
+    
+    
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2020-08-02/SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1-%E7%BE%8E%E5%9B%BD-%E8%BD%BD%E4%BA%BA%E9%BE%99-%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83">
+            前一篇：SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society">
+            后一篇：“These claims really have stunned Mexican society”—sweeping graft allegations
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2020-08-02/SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1-%E7%BE%8E%E5%9B%BD-%E8%BD%BD%E4%BA%BA%E9%BE%99-%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2020-08-02/SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1-%E7%BE%8E%E5%9B%BD-%E8%BD%BD%E4%BA%BA%E9%BE%99-%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<经济学人en>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2020-08-26/These-claims-really-have-stunned-Mexican-society">
+      <i>左</i>
+    </a>
+    
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

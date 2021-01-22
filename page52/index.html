@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX">
+    <meta property="og:description" content="git.io/JJCxX" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage52%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage52%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage52%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page52/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page52/&text=外媒报道-git.io/JJCxX&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page52/&title=外媒报道-git.io/JJCxX" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page52/&title=外媒报道-git.io/JJCxX" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page52/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page52/&title=外媒报道-git.io/JJCxX&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX&url=https://nodebe4.github.io/waimei/page52/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E6%8F%B4%E5%AE%AA%E6%B3%95%E8%B5%B6%E5%B7%9D%E6%99%AE%E4%B8%8B%E5%8F%B0-%E7%BA%BD%E6%97%B6-%E5%89%AF%E6%80%BB%E7%BB%9F%E5%BD%AD%E6%96%AF%E5%8F%8D%E5%AF%B9-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        援宪法赶川普下台 纽时：副总统彭斯反对 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E6%8F%B4%E5%AE%AA%E6%B3%95%E8%B5%B6%E5%B7%9D%E6%99%AE%E4%B8%8B%E5%8F%B0-%E7%BA%BD%E6%97%B6-%E5%89%AF%E6%80%BB%E7%BB%9F%E5%BD%AD%E6%96%AF%E5%8F%8D%E5%AF%B9" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%AD%A6%E8%80%85-%E5%A4%A7%E6%90%9C%E6%8D%95%E6%AC%B2%E5%85%A8%E9%9D%A2%E6%89%91%E7%81%AD%E6%B0%91%E4%B8%BB%E8%BF%90%E5%8A%A8-%E7%94%9A%E6%88%96%E6%98%AF%E6%B8%AF%E7%89%88-%E6%94%B9%E5%9C%9F%E5%BD%92%E6%B5%81-%E4%B8%8B%E7%AB%99%E6%98%AF%E5%8F%B0%E6%B9%BE">
+      
+        学者：大搜捕欲全面扑灭民主运动 甚或是港版「改土归流」 下站是台湾
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20210108-%E5%AD%A6%E8%80%85-%E5%A4%A7%E6%90%9C%E6%8D%95%E6%AC%B2%E5%85%A8%E9%9D%A2%E6%89%91%E7%81%AD%E6%B0%91%E4%B8%BB%E8%BF%90%E5%8A%A8-%E7%94%9A%E6%88%96%E6%98%AF%E6%B8%AF%E7%89%88-%E6%94%B9%E5%9C%9F%E5%BD%92%E6%B5%81-%E4%B8%8B%E7%AB%99%E6%98%AF%E5%8F%B0%E6%B9%BE" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%96%E5%8D%AB-%E7%A9%B7%E5%9B%BD1%E6%9C%88%E5%BA%95%E8%B5%B7%E5%8F%AF%E9%99%86%E7%BB%AD%E6%94%B6%E5%88%B0COVID-19%E7%96%AB%E8%8B%97-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        世卫：穷国1月底起可陆续收到COVID-19疫苗 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E4%B8%96%E5%8D%AB-%E7%A9%B7%E5%9B%BD1%E6%9C%88%E5%BA%95%E8%B5%B7%E5%8F%AF%E9%99%86%E7%BB%AD%E6%94%B6%E5%88%B0covid-19%E7%96%AB%E8%8B%97" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E6%B8%AF%E5%88%9D%E9%80%89%E8%A2%AB%E6%8D%95%E8%80%85%E6%9A%82%E6%9C%AA%E8%B5%B7%E8%AF%89-%E6%88%B4%E8%80%80%E5%BB%B7-%E4%BF%A1%E6%B8%AF%E4%BA%BA%E9%80%86%E9%A3%8E%E8%80%8C%E8%A1%8C">
+      
+        港初选被捕者暂未起诉  戴耀廷：信港人逆风而行
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E6%B8%AF%E5%88%9D%E9%80%89%E8%A2%AB%E6%8D%95%E8%80%85%E6%9A%82%E6%9C%AA%E8%B5%B7%E8%AF%89%20%C2%A0%E6%88%B4%E8%80%80%E5%BB%B7%EF%BC%9A%E4%BF%A1%E6%B8%AF%E4%BA%BA%E9%80%86%E9%A3%8E%E8%80%8C%E8%A1%8C/a-56166311" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/FT-%E5%8C%97%E4%BA%AC%E8%A6%81%E6%B1%82%E5%AE%A1%E6%9F%A5%E9%98%BF%E9%87%8C%E5%8F%8D%E5%9E%84%E6%96%AD%E6%8A%A5%E9%81%93">
+      
+        FT –  北京要求审查阿里反垄断报道
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://www.ft.com/content/62fe82c5-b058-4dd0-bb15-e9428593f078#new_tab" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E8%A7%86%E9%A2%91-%E7%BE%8E%E5%8F%98%E4%B8%91-%E5%8D%B8%E5%A6%86%E5%B7%BE%E5%B9%BF%E5%91%8A%E8%A2%AB%E6%89%B9%E4%BE%AE%E8%BE%B1%E5%A5%B3%E6%80%A7">
+      
+        【视频】“美变丑”卸妆巾广告被批侮辱女性
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114796" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%90%91%E6%B3%95%E8%A5%BF%E6%96%AF%E4%B8%BB%E4%B9%89%E8%80%85%E7%89%B9%E6%9C%97%E6%99%AE%E7%BB%A5%E9%9D%96%E7%9A%84%E4%B8%8B%E5%9C%BA">
+      
+        向法西斯主义者特朗普绥靖的下场
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#纽约时报" class="tag">
+        纽约时报
+      </a>
+      
+
+      
+      <a href="https://cn.nytimes.com/opinion/20210108/donald-trump-fascism/" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E8%A6%81%E6%98%AF%E8%BF%9E%E8%8A%B1%E6%B8%85%E7%98%9F%E6%97%A9%E7%82%B9%E5%8F%91%E6%8C%A5%E4%BD%9C%E7%94%A8-%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%BF%98%E4%BC%9A%E7%88%86%E5%8F%91%E7%96%AB%E6%83%85%E5%90%97">
+      
+        基本常识｜要是连花清瘟早点发挥作用，石家庄还会爆发疫情吗？
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/2021/01/%e5%9f%ba%e6%9c%ac%e5%b8%b8%e8%af%86%ef%bd%9c%e8%a6%81%e6%98%af%e8%bf%9e%e8%8a%b1%e6%b8%85%e7%98%9f%e6%97%a9%e7%82%b9%e5%8f%91%e6%8c%a5%e4%bd%9c%e7%94%a8%ef%bc%8c%e7%9f%b3%e5%ae%b6%e5%ba%84%e8%bf%98/" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E9%98%BF%E9%87%8C%E5%9B%9E%E5%BA%94AI%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%85%B3%E9%97%AD%E6%B6%88%E6%81%AF-%E5%B7%B2%E5%B9%B6%E5%85%A5%E4%BA%91%E6%99%BA%E8%83%BD">
+      
+        阿里回应AI实验室关闭消息：已并入云智能
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114791" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%AD%E5%9B%BD%E7%96%AB%E6%83%85%E9%87%8D%E7%81%BE%E5%8C%BA%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%BF%8E%E6%9D%A5%E4%BB%A3%E7%90%86%E5%B8%82%E9%95%BF%E9%A9%AC%E5%AE%87%E9%AA%8F-%E5%89%8D%E4%BB%BB%E5%B8%82%E9%95%BF%E6%AD%A3%E6%8E%A5%E5%8F%97%E8%B0%83%E6%9F%A5">
+      
+        中国疫情重灾区河北石家庄迎来代理市长马宇骏 前任市长正接受调查
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/shijiazhuang-mayor-change-0108-fri-idCNKBS29D0RH" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E6%B3%A2%E9%9F%B3%E4%B8%8E%E7%BE%8E%E5%9B%BD%E5%8F%B8%E6%B3%95%E9%83%A8%E8%BE%BE%E6%88%9025%E4%BA%BF%E7%BE%8E%E5%85%83%E5%92%8C%E8%A7%A3%E5%8D%8F%E8%AE%AE-%E7%BB%93%E6%9D%9F%E5%AF%B9737-MAX%E5%9D%A0%E6%9C%BA%E7%9A%84%E5%88%91%E4%BA%8B%E8%B0%83%E6%9F%A5">
+      
+        波音与美国司法部达成25亿美元和解协议 结束对737 MAX坠机的刑事调查
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="http://www.bbc.com/zhongwen/simp/business-55583849" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%AD%E7%A7%91%E9%99%A2%E9%A2%84%E8%AE%A1%E4%BB%8A%E5%B9%B4%E4%B8%AD%E5%9B%BDGDP%E5%A2%9E%E9%80%9F%E4%B8%BA8.5-%E5%B7%A6%E5%8F%B3">
+      
+        中科院预计今年中国GDP增速为8.5%左右
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114774" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E9%A1%8F%E8%81%96%E5%86%A0%E9%80%80%E5%87%BA%E6%B0%91%E9%80%B2%E9%BB%A8%E5%8C%97%E5%B8%82%E9%BB%A8%E9%83%A8%E4%B8%BB%E5%A7%94%E9%81%B8%E8%88%89-%E7%9B%AE%E5%89%8D%E5%83%85%E5%90%B3%E6%80%A1%E8%BE%B2%E5%AE%8C%E6%88%90%E7%99%BB%E8%A8%98">
+      
+        顏聖冠退出民進黨北市黨部主委選舉 目前僅吳怡農完成登記
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080142.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E8%87%AA%E4%B8%BB%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E7%A6%81%E8%81%9A%E6%9C%83%E8%81%9A%E9%A4%90-%E9%81%95%E8%80%85%E6%9C%80%E9%87%8D%E7%BD%B030%E8%90%AC%E5%85%83">
+      
+        自主健康管理禁聚會聚餐 違者最重罰30萬元
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080156.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%B4%90%E4%BA%A4%E6%89%80%E9%87%8D%E5%95%9F%E4%B8%8B%E5%B8%82-%E5%9C%8B%E9%9A%9B%E6%8C%87%E6%95%B8%E5%89%94%E9%99%A4%E4%B8%AD%E5%9C%8B3%E5%A4%A7%E9%9B%BB%E4%BF%A1%E8%82%A1%E7%A5%A8">
+      
+        紐交所重啟下市 國際指數剔除中國3大電信股票
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080157.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%AD%E5%9C%8B%E7%A7%91%E5%AD%B8%E9%99%A2-2021%E7%B6%93%E6%BF%9F%E6%88%90%E9%95%B78.5-%E9%A6%96%E5%AD%A316.3">
+      
+        中國科學院：2021經濟成長8.5% 首季16.3%
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080154.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%BE%8E%E8%BF%90%E8%BE%93%E9%83%A8%E9%95%BF%E8%BE%9E%E8%81%8C-%E6%95%99%E8%82%B2%E9%83%A8%E9%95%BF%E4%B9%9F%E9%80%92%E8%BE%9E%E5%91%88-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        美运输部长辞职　教育部长也递辞呈 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E7%BE%8E%E8%BF%90%E8%BE%93%E9%83%A8%E9%95%BF%E8%BE%9E%E8%81%8C-%E6%95%99%E8%82%B2%E9%83%A8%E9%95%BF%E4%B9%9F%E9%80%92%E8%BE%9E%E5%91%88" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E4%BB%80%E5%8F%B6%E6%B4%BE%E5%93%88%E6%89%8E%E6%8B%89%E7%A9%86%E6%96%AF%E6%9E%97%E5%8F%97%E6%94%BB%E5%87%BB">
+      
+        巴基斯坦什叶派哈扎拉穆斯林受攻击
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E4%B8%AD%E5%9B%BD/20210108-%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E4%BB%80%E5%8F%B6%E6%B4%BE%E5%93%88%E6%89%8E%E6%8B%89%E7%A9%86%E6%96%AF%E6%9E%97%E5%8F%97%E6%94%BB%E5%87%BB" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A%E5%BC%95%E5%85%AC%E6%84%A4-%E8%A6%81%E5%B7%9D%E6%99%AE%E5%8E%BB%E8%81%8C%E5%91%BC%E5%A3%B0%E7%9B%8A%E5%A2%9E-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        川粉闯国会引公愤 要川普去职呼声益增 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A%E5%BC%95%E5%85%AC%E6%84%A4-%E8%A6%81%E5%B7%9D%E6%99%AE%E5%8E%BB%E8%81%8C%E5%91%BC%E5%A3%B0%E7%9B%8A%E5%A2%9E" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A%E4%BA%8B%E4%BB%B6%E4%BD%99%E6%B3%A2%E8%8D%A1%E6%BC%BE-%E7%BE%8E%E6%95%99%E8%82%B2%E9%83%A8%E9%95%BF%E8%AF%B7%E8%BE%9E-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        川粉闯国会事件余波荡漾 美教育部长请辞 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A%E4%BA%8B%E4%BB%B6%E4%BD%99%E6%B3%A2%E8%8D%A1%E6%BC%BE-%E7%BE%8E%E6%95%99%E8%82%B2%E9%83%A8%E9%95%BF%E8%AF%B7%E8%BE%9E" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A-%E6%8B%9C%E7%99%BB%E7%A7%B0%E7%BE%8E%E5%9B%BD%E5%8F%B2%E4%B8%8A%E6%9C%80%E9%BB%91%E6%9A%97%E6%97%A5%E5%AD%90%E4%B9%8B%E4%B8%80-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        川粉闯国会 拜登称美国史上最黑暗日子之一 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E5%B7%9D%E7%B2%89%E9%97%AF%E5%9B%BD%E4%BC%9A-%E6%8B%9C%E7%99%BB%E7%A7%B0%E7%BE%8E%E5%9B%BD%E5%8F%B2%E4%B8%8A%E6%9C%80%E9%BB%91%E6%9A%97%E6%97%A5%E5%AD%90%E4%B9%8B%E4%B8%80" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B7%9D%E6%99%AE%E9%BC%93%E5%8A%B1%E6%94%AF%E6%8C%81%E8%80%85%E9%97%AF%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6-%E8%8B%B1%E7%9B%B8%E5%BC%BA%E7%94%9F%E5%85%AC%E5%BC%80%E8%B0%B4%E8%B4%A3-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      
+        川普鼓励支持者闯国会大厦 英相强生公开谴责 – 法国国际广播电台 - RFI
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#法广" class="tag">
+        法广
+      </a>
+      
+
+      
+      <a href="http://www.rfi.fr//cn/%E5%B7%9D%E6%99%AE%E9%BC%93%E5%8A%B1%E6%94%AF%E6%8C%81%E8%80%85%E9%97%AF%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6-%E8%8B%B1%E7%9B%B8%E5%BC%BA%E7%94%9F%E5%85%AC%E5%BC%80%E8%B0%B4%E8%B4%A3" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6%E9%81%AD%E5%9B%B4%E6%94%BB%E5%90%8E-%E6%B0%91%E4%B8%BB%E5%85%9A%E4%BA%BA%E6%9C%9D%E4%BA%8C%E5%BA%A6%E5%BC%B9%E5%8A%BE%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE%E6%8E%A8%E8%BF%9B">
+      
+        美国国会大厦遭围攻后 民主党人朝二度弹劾总统特朗普推进
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/usa-impeachment-second-likely-0108-fri-idCNKBS29D0OB" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%9B%BD%E4%BC%9A%E5%B1%B1%E4%B9%8B%E4%B9%B1%E9%87%8D%E5%87%BB%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%B8%BB%E6%B3%95%E6%B2%BB%E5%BD%A2%E8%B1%A1">
+      
+        国会山之乱重击美国民主法治形象
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/capital-mob-0108-impact-fri-idCNKBS29D0PZ" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%8B%AC%E5%AE%B6-%E6%84%9F%E8%B0%A2%E4%BF%A1%E6%9A%B4%E9%9C%B2%E4%B8%AD%E5%85%B1%E6%B5%B7%E5%A4%96%E7%BB%9F%E6%88%98%E6%8D%AE%E7%82%B9">
+      
+        【独家】感谢信暴露中共海外统战据点
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/7/n12672099.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%8B%AC%E5%AE%B6-%E6%84%9F%E8%B0%A2%E4%BF%A1-%E6%9A%B4%E9%9C%B2%E4%B8%AD%E5%85%B1%E6%B5%B7%E5%A4%96%E7%BB%9F%E6%88%98%E6%8D%AE%E7%82%B9">
+      
+        【独家】“感谢信”暴露中共海外统战据点
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/7/n12672099.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E8%83%BD%E7%BD%A2%E5%85%8D%E6%80%BB%E7%BB%9F%E7%9A%84%E5%AE%AA%E6%B3%95%E7%AC%AC25%E4%BF%AE%E6%AD%A3%E6%A1%88">
+      
+        一文读懂能罢免总统的宪法第25修正案
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#纽约时报" class="tag">
+        纽约时报
+      </a>
+      
+
+      
+      <a href="https://cn.nytimes.com/usa/20210108/what-is-the-25th-amendment-and-how-does-it-work/" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E4%B8%AD%E5%9B%BD%E9%87%8D%E8%A6%81%E8%B4%A2%E7%BB%8F%E6%96%B0%E9%97%BB%E4%B8%80%E5%91%A8%E5%9B%9E%E9%A1%BE">
+      
+        中国重要财经新闻一周回顾
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/weekly-glance-china-finnews-0108-idCNKBS29D0LB" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%B8%82%E9%95%BF%E9%82%93%E6%B2%9B%E7%84%B6%E8%BE%9E%E8%81%8C-%E9%A9%AC%E5%AE%87%E9%AA%8F%E4%BB%BB%E4%BB%A3%E5%B8%82%E9%95%BF">
+      
+        石家庄市长邓沛然辞职  马宇骏任代市长
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114771" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E8%B6%85%E5%BC%BA%E5%AF%92%E6%B5%81%E5%B8%AD%E5%8D%B7%E4%B8%AD%E5%9B%BD-%E5%8C%97%E4%BA%AC%E8%BF%8E%E5%8D%8A%E4%B8%96%E7%BA%AA%E4%BB%A5%E6%9D%A5%E6%9C%80%E5%86%B7%E7%9A%84%E4%B8%80%E5%A4%A9">
+      
+        超强寒流席卷中国，北京迎半世纪以来最冷的一天
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="http://www.bbc.com/zhongwen/simp/chinese-news-55584004" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E7%99%BE%E5%BA%A6%E5%9C%A8%E6%B8%AF%E8%82%A1%E4%BB%B7%E5%A4%A7%E6%B6%A818">
+      
+        百度在港股价大涨18%
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114770" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/Epic-%E6%94%B6%E8%B4%AD-RAD-Game-Tools">
+      
+        Epic 收购 RAD Game Tools
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66600" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-08/%E5%B9%BF%E4%B8%9C%E9%80%BE121%E4%B8%87%E4%BA%BA%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97-%E9%87%8D%E7%82%B9%E4%BA%BA%E7%BE%A4%E5%9F%BA%E6%9C%AC%E5%AE%8C%E6%88%90%E9%A6%96%E9%92%88">
+      
+        广东逾121万人接种疫苗 重点人群基本完成首针
+      </a>
+      <time>2021-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114768" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-01-07</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B2%B3%E5%8C%97%E7%96%AB%E6%83%85%E5%86%B2%E5%87%BB%E5%8C%97%E4%BA%AC-%E7%8E%AF%E4%BA%AC%E4%B8%8A%E7%8F%AD%E6%97%8F%E9%9C%80%E6%8C%81%E6%A0%B8%E9%85%B8%E8%AF%81%E6%98%8E">
+      
+        河北疫情冲击北京 环京上班族需持核酸证明
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674972.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E8%AB%B7%E7%BE%8E%E5%9C%8B%E6%9C%83%E4%BA%8B%E4%BB%B6-%E8%8F%AF%E6%98%A5%E7%91%A9%E7%BE%8E%E9%BA%97%E9%A2%A8%E6%99%AF%E7%B7%9A%E8%AA%AA%E8%A2%AB%E6%8C%87%E7%A7%BB%E8%8A%B1%E6%8E%A5%E6%9C%A8">
+      
+        諷美國會事件 華春瑩美麗風景線說被指移花接木
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080126.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B3%9B%E6%B0%91%E5%A4%A7%E6%8A%93%E6%8D%95-%E8%83%A1%E5%BF%97%E5%81%89%E8%A2%AB%E6%8C%87%E9%81%95%E5%8F%8D%E6%A2%9D%E4%BB%B6%E6%9A%AB%E6%9C%AA%E8%83%BD%E4%BF%9D%E9%87%8B">
+      
+        泛民大抓捕  胡志偉被指違反條件暫未能保釋
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080123.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%85%A8%E5%8F%B0%E4%B8%8B%E9%9B%AA%E5%9C%B0%E5%9C%96%E4%B8%80%E6%AC%A1%E6%8E%8C%E6%8F%A1-%E9%99%BD%E6%98%8E%E5%B1%B1-%E5%A4%AA%E5%B9%B3%E5%B1%B1-%E6%8B%89%E6%8B%89%E5%B1%B1%E9%8A%80%E7%99%BD%E4%B8%96%E7%95%8C%E7%BE%8E%E5%91%86%E4%BA%86">
+      
+        全台下雪地圖一次掌握 陽明山、太平山、拉拉山銀白世界美呆了
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101085004.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B2%B3%E5%8C%97%E8%BF%9B%E5%85%A5-%E6%88%98%E6%97%B6%E7%8A%B6%E6%80%81">
+      
+        河北进入“战时状态”
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66599" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BE%8E%E5%9B%BD%E4%B8%80%E5%90%8D%E8%AD%A6%E5%AF%9F%E5%9C%A8%E5%A4%84%E7%90%86%E5%9B%BD%E4%BC%9A%E6%9A%B4%E4%B9%B1%E4%BA%8B%E4%BB%B6%E6%97%B6%E4%BC%A4%E9%87%8D%E4%B8%8D%E6%B2%BB">
+      
+        美国一名警察在处理国会暴乱事件时伤重不治
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/us-capitol-violence-policeman-0108-idCNKBS29D0KG" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%88%86%E6%9E%90-%E6%96%B0%E5%B9%B4%E9%A6%96%E5%91%A8%E9%98%B2-%E6%BC%AB%E7%81%8C-%E4%B8%AD%E5%9B%BD%E5%A4%AE%E8%A1%8C%E5%A4%A7%E5%8A%9B-%E6%8A%BD%E6%B0%B4-%E9%80%86%E5%9B%9E%E8%B4%AD%E4%BD%8E%E9%87%8F%E5%9D%9A%E5%AE%88%E4%BB%8D%E4%BC%A0%E5%96%84%E6%84%8F">
+      
+        分析：新年首周防“漫灌”中国央行大力“抽水” 逆回购低量坚守仍传善意
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/china-cen-liquiditymarket-0108-idCNKBS29D0KE" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%94%90%E9%9D%92%E7%9C%8B%E6%97%B6%E4%BA%8B-%E5%9B%B4%E6%94%BB%E5%B7%9D%E6%99%AE-%E4%B8%AD%E7%BE%8E%E4%B8%BA%E4%BD%95%E5%90%8C%E8%B0%83">
+      
+        【唐青看时事】围攻川普 中美为何同调？
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674856.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%AF%92%E6%BD%AE%E5%AF%BC%E8%87%B4%E4%B8%8A%E6%B5%B7%E7%94%A8%E7%94%B5%E8%B4%9F%E8%8D%B7%E7%AA%81%E7%A0%B4%E5%A4%8F%E5%AD%A3%E9%AB%98%E5%B3%B0%E8%AE%B0%E5%BD%95">
+      
+        寒潮导致上海用电负荷突破夏季高峰记录
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114763" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8F%B0%E7%BE%8E%E6%94%BF%E5%86%9B%E5%AF%B9%E8%AF%9D-%E4%B8%93%E5%AE%B6-%E6%98%BE%E8%A7%81%E7%BE%8E%E5%AF%B9%E5%8F%B0%E6%94%BF%E7%AD%96%E5%BB%B6%E7%BB%AD">
+      
+        台美政军对话 专家：显见美对台政策延续
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674730.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%B7%B4%E8%A5%BF%E7%A7%B0%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87-78">
+      
+        巴西称中国科兴疫苗有效率 78%
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66598" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8F%B0%E6%B9%BE%E4%BA%BA%E5%8F%A3%E9%A6%96%E5%BA%A6%E5%87%BA%E7%8E%B0%E8%B4%9F%E6%88%90%E9%95%BF">
+      
+        台湾人口首度出现负成长
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114765" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%8E%B0%E4%BB%A3%E6%B1%BD%E8%BD%A6%E5%9C%A8%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E9%A2%86%E5%9F%9F%E4%B8%8E%E8%8B%B9%E6%9E%9C%E7%A3%8B%E5%95%86%E5%90%88%E4%BD%9C">
+      
+        现代汽车在电动汽车领域与苹果磋商合作
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66597" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B8%A9%E5%B7%9E%E5%80%A1%E8%AE%AE175%E4%B8%87%E5%9C%A8%E5%A4%96%E6%B8%A9%E5%95%86%E5%B0%B1%E5%9C%B0%E8%BF%87%E5%B9%B4">
+      
+        温州倡议175万在外温商就地过年
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114759" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%9B%BE%E7%A8%B1%E5%9C%8B%E8%97%A5%E7%96%AB%E8%8B%97%E4%B8%8D%E5%AE%89%E5%85%A8-%E4%B8%AD%E5%9C%8B%E5%B0%88%E5%AE%B6%E9%81%93%E6%AD%89%E8%A1%A8%E7%A4%BA%E5%B0%87%E6%8E%A5%E7%A8%AE">
+      
+        曾稱國藥疫苗不安全 中國專家道歉表示將接種
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080116.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%8D%88%E7%9B%A4%E5%BC%B7%E5%8D%874.24%E8%A7%92-%E6%9A%AB%E6%94%B628.005%E5%85%83">
+      
+        新台幣午盤強升4.24角 暫收28.005元
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080104.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/Tiffany%E4%BD%B5%E5%85%A5LVMH-%E6%AD%A3%E5%BC%8F%E6%8F%AE%E5%88%A5%E7%8D%A8%E7%AB%8B%E4%B9%8B%E8%BA%AB">
+      
+        Tiffany併入LVMH 正式揮別獨立之身
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202101080106.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%A5%E7%9B%8A%E6%88%90%E4%B8%BA%E5%AD%A4%E5%AE%B6%E5%AF%A1%E4%BA%BA-%E6%80%92%E6%96%A5%E5%89%AF%E6%80%BB%E7%BB%9F%E4%B8%8D%E9%98%BB%E6%AD%A2%E5%9B%BD%E4%BC%9A%E7%A1%AE%E8%AE%A4%E6%8B%9C%E7%99%BB%E8%83%9C%E9%80%89">
+      
+        特朗普日益成为孤家寡人 怒斥副总统不阻止国会确认拜登胜选
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/usa-trump-wh-pence-0108-idCNKBS29D0GP" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E5%8F%88%E6%9C%89%E5%9B%9B%E5%90%8D%E5%9B%BD%E5%AE%89%E9%AB%98%E7%BA%A7%E9%A1%BE%E9%97%AE%E8%BE%9E%E8%81%8C-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB">
+      
+        特朗普政府又有四名国安高级顾问辞职--消息人士
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/us-national-security-offcials-resign-010-idCNKBS29D0GT" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%BA%9A%E8%82%A1%E8%A7%A6%E5%8F%8A%E7%BA%AA%E5%BD%95%E9%AB%98%E4%BD%8D-%E5%9B%A0%E5%AF%84%E6%9C%9B%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F">
+      
+        亚股触及纪录高位 因寄望全球经济复苏
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/global-market-asia-stock-0108-idCNKBS29D0G5" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%8F%AD%E7%A7%98%E4%B8%AD%E5%85%B1%E9%BB%91%E6%89%8B%E5%9C%A8%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%9A%84%E7%A7%98%E5%AF%86%E6%B4%BB%E5%8A%A8">
+      
+        揭秘中共黑手在美国大学的秘密活动
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674757.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%B7%B4%E8%A5%BF%E8%AE%A1%E5%88%92%E8%B4%AD%E4%B9%B01%E4%BA%BF%E5%89%82%E7%A7%91%E5%85%B4%E5%86%A0%E7%97%85%E7%96%AB%E8%8B%97">
+      
+        巴西计划购买1亿剂科兴冠病疫苗
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114762" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%B7%B4%E8%A5%BF%E7%A7%B0%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E7%8E%87%E4%B8%BA78">
+      
+        巴西称中国科兴疫苗有效率为78%
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#纽约时报" class="tag">
+        纽约时报
+      </a>
+      
+
+      
+      <a href="https://cn.nytimes.com/business/20210108/china-coronavirus-vaccine-sinovac/" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8F%B0%E5%A4%96%E4%BA%A4%E9%83%A8%E7%A5%9D%E8%B4%BA%E6%8B%9C%E7%99%BB%E5%BD%93%E9%80%89%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F">
+      
+        台外交部祝贺拜登当选美国总统
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114760" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%8E%B0%E5%9C%BA-%E9%AA%9A%E4%B9%B1%E8%BF%87%E5%90%8E%E7%9A%84%E5%8D%8E%E7%9B%9B%E9%A1%BF-%E8%A1%A8%E9%9D%A2%E5%B9%B3%E9%9D%99%E4%B9%8B%E4%B8%8B%E7%9A%84%E7%9E%AC%E6%81%AF%E4%B8%87%E5%8F%98">
+      
+        现场：骚乱过后的华盛顿 表面平静之下的瞬息万变
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="http://www.bbc.com/zhongwen/simp/world-55583564" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9B%BD%E9%80%9A%E6%9E%97%E5%9F%B9%E7%91%9E-%E7%BE%8E%E5%9B%BD%E4%B8%8E%E9%A6%99%E6%B8%AF%E7%A4%BA%E5%A8%81%E6%9C%89%E6%A0%B9%E6%9C%AC%E5%8C%BA%E5%88%AB">
+      
+        中国通林培瑞：美国与香港示威有根本区别
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-protest-hk-20200107/5729174.html" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E9%9C%87%E6%83%8A-%E5%BF%83%E7%A2%8E-%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6%E9%81%AD%E6%94%BB%E5%87%BB%E5%90%8E%E4%B8%A4%E5%85%9A%E5%91%BC%E5%90%81%E6%81%A2%E5%A4%8D%E7%90%86%E6%80%A7-%E9%87%8D%E5%BB%BA%E6%B0%91%E4%B8%BB%E4%BF%A1%E5%BF%B5">
+      
+        “震惊、心碎” ：国会大厦遭攻击后两党呼吁恢复理性、重建民主信念
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-bipartisan-congress-members-call-for-restore-democracy-and-faith-20200107/5729707.html" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8D%97%E9%9D%9E%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E5%8F%98%E7%A7%8D%E6%88%96%E5%BD%B1%E5%93%8D%E7%96%AB%E8%8B%97%E6%9C%89%E6%95%88%E6%80%A7">
+      
+        南非新冠病毒变种或影响疫苗有效性
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66596" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BF%BB%E5%A2%99%E5%BF%85%E7%9C%8B-%E4%B8%AD%E5%85%B1%E6%94%BF%E6%B2%BB%E5%B1%80%E5%B8%B8%E5%A7%94%E4%BC%9A%E5%86%8D%E7%88%86%E5%86%85%E6%96%97">
+      
+        【翻墙必看】中共政治局常委会再爆内斗
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674609.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%AA%92%E4%BD%93%E4%BA%BA%E5%BC%A0%E8%B4%BE%E9%BE%99%E5%9B%A0%E6%8E%A8%E7%89%B9%E8%A8%80%E8%AE%BA%E8%A2%AB%E4%BB%A5%E5%AF%BB%E8%A1%85%E6%BB%8B%E4%BA%8B%E7%BD%AA%E5%88%A4%E5%88%911%E5%B9%B46%E4%B8%AA%E6%9C%88">
+      
+         媒体人张贾龙因推特言论被以寻衅滋事罪判刑1年6个月      
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2021/01/16.html" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/Facebook-%E5%86%BB%E7%BB%93%E7%89%B9%E6%9C%97%E6%99%AE%E8%B4%A6%E5%8F%B7%E8%87%B3%E5%85%B6%E5%8D%B8%E4%BB%BB%E4%B9%8B%E5%90%8E">
+      
+        Facebook 冻结特朗普账号至其卸任之后
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=66595" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%89%E6%9C%BA%E5%85%B3%E4%B8%BB%E7%AE%A1%E5%8F%8D%E9%97%B4%E8%B0%8D%E5%B7%A5%E4%BD%9C">
+      
+        中国国安机关主管反间谍工作
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114757" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E8%B0%83%E6%9F%A5-%E6%96%B0%E5%B9%B4%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%B0%E6%B0%94%E8%B1%A1-%E7%BE%8E%E5%85%83%E4%BB%8D%E5%8F%97%E8%80%81%E9%97%AE%E9%A2%98%E5%8E%8B%E5%88%B6">
+      
+        调查：新年找不到新气象 美元仍受老问题压制
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/poll-usdfx-2021-0108-idCNKBS29D0EH" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BE%8E%E5%9B%BD%E8%BF%90%E8%BE%93%E9%83%A8%E9%95%BF-%E6%95%99%E8%82%B2%E9%83%A8%E9%95%BF%E8%AF%B7%E8%BE%9E-%E6%8A%97%E8%AE%AE%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E8%80%85%E5%86%B2%E5%87%BB%E5%9B%BD%E4%BC%9A">
+      
+        美国运输部长、教育部长请辞 抗议特朗普支持者冲击国会
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/usa-resignations-cabinet-members-0107-th-idCNKBS29D0F1" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%BD%A9%E6%B4%9B%E5%B8%8C%E7%A7%B0-%E9%AB%98%E5%B1%82%E5%B7%A5%E4%BD%9C%E4%B8%8D%E5%8A%9B-%E5%91%BC%E5%90%81%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E8%AD%A6%E5%AF%9F%E5%B1%80%E9%95%BF%E8%BE%9E%E8%81%8C">
+      
+        佩洛希称“高层工作不力” 呼吁美国国会警察局长辞职
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/us-pelosi-capitol-police-station-0108-idCNKBS29D0EA" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E7%BE%8E%E7%B4%A7%E5%BC%A0%E5%85%B3%E7%B3%BB%E6%96%99%E6%8C%81%E7%BB%AD%E4%BD%86%E4%B8%AD%E5%9B%BD%E8%82%A1%E7%A5%A8%E9%A3%8E%E9%99%A9%E5%8F%AF%E6%8E%A7-%E7%A7%91%E6%8A%80%E8%A1%8C%E4%B8%9A%E5%AF%BB%E6%9C%BA%E9%81%87-%E5%AE%8F%E5%88%A9">
+      
+        中美紧张关系料持续但中国股票风险可控 科技行业寻机遇--宏利
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/fund-view-china-shares-0108-fri-idCNKBS29D0EU" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9B%BD%E4%B8%89%E5%A4%A7%E7%94%B5%E4%BF%A1%E5%95%86%E9%81%ADMSCI%E5%8F%8A%E5%AF%8C%E6%97%B6%E7%BD%97%E7%B4%A0%E6%97%97%E4%B8%8B%E6%8C%87%E6%95%B0%E5%89%94%E9%99%A4-%E8%82%A1%E4%BB%B7%E9%87%8D%E6%8C%AB">
+      
+        中国三大电信商遭MSCI及富时罗素旗下指数剔除 股价重挫
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/china-telecom-giants-msci-ftserussell-01-idCNKBS29D0EP" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B2%88%E9%98%B3%E7%88%B6%E5%AD%90%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E6%8F%92%E9%98%9F%E8%A2%AD%E8%AD%A6%E8%8E%B7%E5%88%91">
+      
+        沈阳父子核酸检测插队袭警获刑
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114756" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E8%81%94%E9%82%A6%E6%A3%80%E5%AF%9F%E5%AE%98%E5%BC%80%E5%A7%8B%E5%AF%B9%E6%94%BB%E5%87%BB%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6%E7%9A%84%E9%AA%9A%E4%B9%B1%E8%80%85%E6%8F%90%E5%87%BA%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7">
+      
+        联邦检察官开始对攻击国会大厦的骚乱者提出刑事指控
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-prosecutors-preparing-to-bring-charges-against-capitol-hill-rioters-20200107/5729668.html" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E8%A1%80%E6%B6%B2%E5%BA%AB%E5%AD%98%E5%BF%AB%E8%A6%8B%E5%BA%95-%E5%8F%B0%E5%8C%97%E6%96%B0%E7%AB%B9%E6%9C%80%E7%BC%BAO%E5%9E%8BAB%E5%9E%8B">
+      
+        血液庫存快見底 台北新竹最缺O型AB型
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080073.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B8%AF%E5%AA%92-%E5%95%86%E4%BA%BA%E6%9E%97%E5%BB%BA%E5%90%8D%E7%97%85%E9%80%9D-%E4%BA%AB%E5%A3%BD84%E6%AD%B2">
+      
+        港媒：商人林建名病逝 享壽84歲
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080074.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%8B%BF%E7%B6%AD%E5%90%BE%E7%88%BE%E4%BA%BA%E6%8F%9B%E7%96%AB%E8%8B%97-%E5%82%B3%E4%B8%AD%E5%9C%8B%E8%84%85%E8%BF%AB%E5%9C%9F%E8%80%B3%E5%85%B6%E6%89%B9%E5%87%86%E9%80%81%E4%B8%AD%E6%A2%9D%E7%B4%84">
+      
+        拿維吾爾人換疫苗？傳中國脅迫土耳其批准送中條約
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080054.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9C%8B%E6%8C%81%E7%BA%8C%E5%B0%8D%E7%B6%B2%E8%B7%AF%E6%8E%83%E9%BB%83%E6%89%93%E9%9D%9E-6%E5%84%84%E7%94%A8%E6%88%B6%E6%8A%96%E9%9F%B3%E9%81%AD%E7%BD%B0%E6%AC%BE">
+      
+        中國持續對網路掃黃打非  6億用戶抖音遭罰款
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080098.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9C%8B2020%E5%9C%96%E6%9B%B8%E9%9B%B6%E5%94%AE%E8%90%8E%E7%B8%AE-196%E8%90%AC%E7%A8%AE%E6%9B%B8%E8%B3%A3%E4%B8%8D%E5%88%B0%E5%8D%83%E6%9C%AC">
+      
+        中國2020圖書零售萎縮  196萬種書賣不到千本
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080072.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BE%8E%E5%B8%B8%E9%A9%BB%E8%81%94%E5%90%88%E5%9B%BD%E4%BB%A3%E8%A1%A8%E4%B8%8B%E5%91%A8%E8%AE%BF%E5%8F%B0">
+      
+        美常驻联合国代表下周访台
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E7%BE%8E%E5%B8%B8%E9%A9%BB%E8%81%94%E5%90%88%E5%9B%BD%E4%BB%A3%E8%A1%A8%E4%B8%8B%E5%91%A8%E8%AE%BF%E5%8F%B0/a-56157744" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E6%96%B0%E5%A2%9E%E9%98%B3%E6%80%A731%E4%BE%8B-%E5%BD%93%E5%B1%80%E7%A6%81%E4%BA%BA%E8%BD%A6%E5%87%BA%E5%B8%82">
+      
+        河北石家庄新增阳性31例 当局禁人车出市
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E6%96%B0%E5%A2%9E%E9%98%B3%E6%80%A731%E4%BE%8B%20%E5%BD%93%E5%B1%80%E7%A6%81%E4%BA%BA%E8%BD%A6%E5%87%BA%E5%B8%82/a-56165322" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%BC%A0%E5%8D%AB%E5%81%A5%E7%95%99%E6%B8%AF%E9%99%AA%E4%BC%B4%E6%AF%8D%E4%BA%B2-%E5%9B%A0%E7%96%AB%E6%83%85%E4%B8%8E%E5%A6%BB%E5%AD%90%E5%88%86%E9%9A%94%E8%BF%91%E4%B8%80%E5%B9%B4">
+      
+        张卫健留港陪伴母亲 因疫情与妻子分隔近一年
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674476.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E9%99%AA%E6%9C%8B%E5%8F%8B%E8%AF%95%E9%95%9C-%E7%BB%93%E6%9E%9C%E8%87%AA%E5%B7%B1%E8%A2%AB%E9%80%89%E4%B8%8A%E5%87%BA%E9%81%93%E7%9A%845%E4%BD%8D%E6%98%8E%E6%98%9F">
+      
+        陪朋友试镜 结果自己被选上出道的5位明星
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/7/n12674191.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%AC%B2%E5%8F%91%E8%A1%8C%E6%9C%80%E5%A4%9A80%E4%BA%BF%E7%BE%8E%E5%85%83%E5%80%BA%E5%88%B8">
+      
+        阿里巴巴欲发行最多80亿美元债券
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674418.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/12%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E8%A2%AB%E7%A6%81%E6%AD%A2%E5%9C%A8%E7%BE%8E%E5%9C%BA%E5%A4%96%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E4%BA%A4%E6%98%93">
+      
+        12中国证券被禁止在美场外交易平台交易
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114752" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/G7%E8%AE%AE%E5%91%98%E8%81%94%E5%90%8D%E5%87%BD%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA-%E5%90%81%E5%90%88%E4%BD%9C%E5%9B%A0%E5%BA%94%E4%B8%AD%E5%85%B1%E5%A8%81%E8%83%81">
+      
+        G7议员联名函各国领导人 吁合作因应中共威胁
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674644.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E7%96%BE%E6%8E%A7-%E5%86%A0%E7%97%85%E6%84%9F%E6%9F%93%E8%80%85%E6%9A%82%E4%B8%8D%E5%BB%BA%E8%AE%AE%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97">
+      
+        中疾控：冠病感染者暂不建议接种疫苗
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114750" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6%E5%BB%BA%E7%AD%91%E7%89%A9%E6%9C%AA%E4%B9%B0%E4%BF%9D%E9%99%A9-%E6%9A%B4%E4%B9%B1%E7%9B%B8%E5%85%B3%E6%8D%9F%E5%A4%B1%E5%B0%86%E7%94%B1%E7%BA%B3%E7%A8%8E%E4%BA%BA%E4%B9%B0%E5%8D%95">
+      
+        美国国会大厦建筑物未买保险 暴乱相关损失将由纳税人买单
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/us-congress-destroy-insurance-0108-idCNKBS29D0D4" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%8E%B0%E4%BB%A3%E6%B1%BD%E8%BD%A6%E7%A7%B0%E6%AD%A3%E5%9C%A8%E4%B8%8E%E8%8B%B9%E6%9E%9C%E5%B0%B1%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%90%88%E4%BD%9C%E8%BF%9B%E8%A1%8C%E5%88%9D%E6%AD%A5%E7%A3%8B%E5%95%86-%E8%82%A1%E4%BB%B7%E8%B7%B3%E5%8D%8720">
+      
+        现代汽车称正在与苹果就电动汽车合作进行初步磋商 股价跳升20%
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#路透" class="tag">
+        路透
+      </a>
+      
+
+      
+      <a href="https://cn.reuters.com/article/hyundai-apple-evtalks-0108-fri-idCNKBS29D0CU" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%BB%A3%E7%90%86%E4%BA%BA%E6%9D%83%E6%A1%88%E5%B0%86%E8%A2%AB%E5%90%8A%E7%85%A7-%E4%BB%BB%E5%85%A8%E7%89%9B%E5%BE%8B%E5%B8%88%E8%A6%81%E6%B1%82%E5%85%AC%E5%BC%80%E5%90%AC%E8%AF%81">
+      
+        代理人权案将被吊照 任全牛律师要求公开听证
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#大纪元" class="tag">
+        大纪元
+      </a>
+      
+
+      
+      <a href="https://www.epochtimes.com/gb/21/1/8/n12674620.htm" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9B%BD%E8%AE%A1%E5%88%92%E4%BA%94%E5%B9%B4%E5%86%85%E9%93%81%E7%9F%BF%E7%9F%B3%E8%87%AA%E7%BB%99%E7%8E%87%E8%BE%BE45">
+      
+        中国计划五年内铁矿石自给率达45%
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20210108-1114747" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%80%E4%BA%9B%E5%86%B2%E5%87%BB%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8E%A6%E7%9A%84%E4%BA%BA%E5%9C%A8%E8%BA%AB%E4%BB%BD%E6%9B%9D%E5%85%89%E5%90%8E%E9%81%AD%E5%88%B0%E8%A7%A3%E9%9B%87">
+      
+        一些冲击国会大厦的人在身份曝光后遭到解雇
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/capitol-rioters-fired-20210107/5729648.html" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%BE%8E%E9%A7%90%E8%81%AF%E5%90%88%E5%9C%8B%E5%A4%A7%E4%BD%BF%E5%85%8B%E6%8B%89%E5%A4%AB%E7%89%B9-13%E8%87%B315%E6%97%A5%E8%A8%AA%E5%8F%B0">
+      
+        美駐聯合國大使克拉夫特 13至15日訪台
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101085003.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E7%89%B9%E6%96%AF%E6%8B%89%E5%B8%82%E5%80%BC%E8%B6%85%E8%B6%8A%E8%87%89%E6%9B%B8-%E9%A6%AC%E6%96%AF%E5%85%8B%E8%BA%AB%E5%83%B9%E5%A4%A7%E6%BC%B2%E6%88%90%E5%85%A8%E7%90%83%E9%A6%96%E5%AF%8C">
+      
+        特斯拉市值超越臉書 馬斯克身價大漲成全球首富
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080055.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%B8%AF%E6%B3%9B%E6%B0%91%E4%BA%BA%E5%A3%AB%E7%8D%B2%E4%BF%9D%E9%87%8B-%E6%88%B4%E8%80%80%E5%BB%B7-%E9%A6%99%E6%B8%AF%E9%80%B2%E5%85%A5%E5%AF%92%E5%86%AC">
+      
+        港泛民人士獲保釋  戴耀廷：香港進入寒冬
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080060.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E%E5%A2%9E3%E4%BE%8B%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5-%E5%85%A8%E5%8F%B0%E7%B4%AF%E8%A8%88825%E4%BE%8B">
+      
+        武漢肺炎增3例境外移入  全台累計825例
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080053.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%B7%9D%E6%99%AE%E9%A6%96%E5%BA%A6%E6%89%BF%E8%AA%8D%E6%8B%9C%E7%99%BB%E7%95%B6%E9%81%B8%E7%B8%BD%E7%B5%B1-%E8%AD%B4%E8%B2%AC%E5%9C%8B%E6%9C%83%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6-%E5%BD%B1">
+      
+        川普首度承認拜登當選總統 譴責國會暴力事件[影]
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080029.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%AE%9C%E8%98%AD%E5%A4%AA%E5%B9%B3%E5%B1%B1%E4%B8%8B%E9%9B%AA-%E6%95%B4%E7%89%87%E5%B1%B1%E6%88%90%E9%8A%80%E7%99%BD%E4%B8%96%E7%95%8C-%E5%9C%96%E8%BC%AF">
+      
+        宜蘭太平山下雪 整片山成銀白世界【圖輯】
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080032.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%9C%8B%E6%9C%83%E9%81%AD%E6%94%BB%E6%93%8A-%E7%99%BD%E5%AE%AE%E8%AD%B4%E8%B2%AC%E6%9A%B4%E5%8A%9B%E6%89%BF%E8%AB%BE%E6%94%BF%E6%AC%8A%E6%9C%89%E5%BA%8F%E8%BD%89%E7%A7%BB">
+      
+        國會遭攻擊  白宮譴責暴力承諾政權有序轉移
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080023.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8F%B0%E8%82%A1%E6%97%A9%E7%9B%A4%E8%A1%9D15400%E9%BB%9E-%E5%86%8D%E5%89%B5%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98">
+      
+        台股早盤衝15400點 再創歷史新高
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101085002.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%82%A1%E5%83%B9%E5%89%B5580%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E5%B8%82%E5%80%BC15.03%E5%85%86%E5%85%83">
+      
+        台積電股價創580元新天價 市值15.03兆元
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/firstnews/202101080038.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-01-07/%E4%B8%AD%E5%9C%8B%E6%96%B0%E5%A2%9E53%E4%BE%8B%E7%A2%BA%E8%A8%BA-%E6%B2%B3%E5%8C%97%E6%9C%8933%E5%AE%97%E6%9C%AC%E5%9C%9F%E7%97%85%E4%BE%8B">
+      
+        中國新增53例確診  河北有33宗本土病例
+      </a>
+      <time>2021-01-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acn/202101080040.aspx" style="font-size:14px;">原文</a>
+      
+
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page51/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page53/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page51/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page53/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page51/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page53/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

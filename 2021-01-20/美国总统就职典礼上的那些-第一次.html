@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美国总统就职典礼上的那些“第一次” – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美国总统就职典礼上的那些“第一次”
+——
+" />
+    <meta property="og:description" content="
+美国总统就职典礼上的那些“第一次”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美国总统就职典礼上的那些“第一次”" />
+    <meta property="twitter:title" content="美国总统就职典礼上的那些“第一次”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210120%2Fpresidential-inauguration-history-facts%2F&t=%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E4%B8%8A%E7%9A%84%E9%82%A3%E4%BA%9B%E2%80%9C%E7%AC%AC%E4%B8%80%E6%AC%A1%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210120%2Fpresidential-inauguration-history-facts%2F&t=%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E4%B8%8A%E7%9A%84%E9%82%A3%E4%BA%9B%E2%80%9C%E7%AC%AC%E4%B8%80%E6%AC%A1%E2%80%9D&d=2021-01-20&e=
+美国总统就职典礼上的那些“第一次”
+——
+
+
+  
+CHRISTINE HAUSER2021-01-20 16:49:29
+  
+  
+周五，国会大厦正在为小约瑟夫·R·拜登的就职典礼做准备。
+  
+  就职典礼的基本要素很简单：在宪法规定的那天，新总统念一段有35个单词的誓词宣誓就任。
+  但整个流程留出了许多可以自由发挥的空间。随着几十年来这一典礼不断演化，许多就职典礼成为了传统上的转折点，充斥着灾难、创新和心血来潮的姿态。
+  当吉米·卡特(Jimmy Carter)意外从礼车里下来，走在宾夕法尼亚大道上时，他开创了一项非正式传统。当贝拉克·奥巴马(Barack Obama)重复了一遍就职宣誓时，他的第一个任期有了一个不寻常的开始。哈里·S·杜鲁门(Harry S. Truman)的第二次就职典礼是首个被电视转播的，1997年比尔·克林顿(Bill Clinton)的就职典礼..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210120%2Fpresidential-inauguration-history-facts%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/&text=美国总统就职典礼上的那些“第一次”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/&title=美国总统就职典礼上的那些“第一次”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/&title=美国总统就职典礼上的那些“第一次”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美国总统就职典礼上的那些“第一次”&body=
+美国总统就职典礼上的那些“第一次”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/&title=美国总统就职典礼上的那些“第一次”&caption=
+美国总统就职典礼上的那些“第一次”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美国总统就职典礼上的那些“第一次”&url=https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美国总统就职典礼上的那些“第一次”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210120%2Fpresidential-inauguration-history-facts%2F&t=%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC%E4%B8%8A%E7%9A%84%E9%82%A3%E4%BA%9B%E2%80%9C%E7%AC%AC%E4%B8%80%E6%AC%A1%E2%80%9D&d=2021-01-20&e=
+美国总统就职典礼上的那些“第一次”
+——
+
+
+  
+CHRISTINE HAUSER2021-01-20 16:49:29
+  
+  
+周五，国会大厦正在为小约瑟夫·R·拜登的就职典礼做准备。
+  
+  就职典礼的基本要素很简单：在宪法规定的那天，新总统念一段有35个单词的誓词宣誓就任。
+  但整个流程留出了许多可以自由发挥的空间。随着几十年来这一典礼不断演化，许多就职典礼成为了传统上的转折点，充斥着灾难、创新和心血来潮的姿态。
+  当吉米·卡特(Jimmy Carter)意外从礼车里下来，走在宾夕法尼亚大道上时，他开创了一项非正式传统。当贝拉克·奥巴马(Barack Obama)重复了一遍就职宣誓时，他的第一个任期有了一个不寻常的开始。哈里·S·杜鲁门(Harry S. Truman)的第二次就职典礼是首个被电视转播的，1997年比尔·克林顿(Bill Clinton)的就职典礼..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210120%2Fpresidential-inauguration-history-facts%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611135873000-->
+<p><a href="https://cn.nytimes.com/usa/20210120/presidential-inauguration-history-facts/">美国总统就职典礼上的那些“第一次”</a>
+——</p>
+
+<div>
+  <div>
+<em>CHRISTINE HAUSER<br />2021-01-20 16:49:29</em>
+  </div>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-photo1/merlin_182375532_fb050bc0-ae2f-4610-a8b4-6c3009642624-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">周五，国会大厦正在为小约瑟夫·R·拜登的就职典礼做准备。</small>
+  </div>
+  <p>就职典礼的基本要素很简单：在宪法规定的那天，新总统念一段有35个单词的誓词宣誓就任。</p>
+  <p>但整个流程留出了许多可以自由发挥的空间。随着几十年来这一典礼不断演化，许多就职典礼成为了传统上的转折点，充斥着灾难、创新和心血来潮的姿态。</p>
+  <p>当吉米·卡特(Jimmy Carter)<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/01/19/us/trump-inaugural-parade-walk.html">意外从礼车里下来</a>，走在宾夕法尼亚大道上时，他开创了一项非正式传统。当贝拉克·奥巴马(Barack Obama)<a rel="nofollow" target="_blank" href="https://thecaucus.blogs.nytimes.com/2009/01/21/oath-is-administered-once-again/">重复了一遍就职宣誓</a>时，他的第一个任期有了一个不寻常的开始。哈里·S·杜鲁门(Harry S. Truman)的第二次就职典礼是首个被电视转播的，1997年比尔·克林顿(Bill Clinton)的就职典礼则是<a rel="nofollow" target="_blank" href="https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration" title="Link: https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration">首个被网络直播的</a>。</p>
+  <p>周三，<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/01/03/us/politics/biden-inauguration-day-plans.html">小约瑟夫·R·拜登的就职典礼</a>也将在传统与当下的挑战之间寻求平衡。这些挑战包括大流行和广泛的政治剧变。前往白宫的队伍将首次由“虚拟游行”所取代，为的是减缓已经导致<a rel="nofollow" target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">近40万美国人丧生</a>的疫情扩散。（美国新冠死亡人数目前已超过40万。——编注）</p>
+  <p>以下是对总统就职史上一些先例的回顾。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-johnson/00xp-inauguration-johnson-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">1963年11月22日，约翰·F·肯尼迪总统遇刺后，林登·B·约翰逊在总统专机上宣誓就任总统。右侧是肯尼迪的遗孀杰奎琳·肯尼迪。</small>
+  </div>
+  <p>宣誓</p>
+  <p>总统宣誓就职也<a rel="nofollow" target="_blank" href="https://www.archives.gov/founding-docs/constitution-transcript">载入了宪法</a>：“我谨庄严宣誓（或郑重声明），我必忠实执行美利坚合众国总统职务，竭尽全力，恪守、维护及捍卫美利坚合众国宪法。”</p>
+  <p>每个总统都必须复述一遍就任宣言，在拜登之前，<a rel="nofollow" target="_blank" href="https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration#dates">已有45任总统进行过72次宣誓</a>。</p>
+  <p>1853年，富兰克林·皮尔斯(Franklin Pierce)成为第一个选择“声明”(affirm)而非“宣誓”(swear)一词的人，并且打破先例，没有亲吻《圣经》。</p>
+  <p>约翰·F·肯尼迪(John F. Kennedy)于1963年11月22日遇刺之后，林登·B·约翰逊(Lyndon B. Johnson)成了第一位也是唯一一位在飞机上宣誓就职的总统。这也是第一次由女性主持宣誓：在从达拉斯飞往华盛顿的空军一号上，得克萨斯州北区法官萨拉·T·休斯(Sarah T. Hughes)用飞机上找到的一本罗马天主教祷告书为约翰逊主持了宣誓仪式。</p>
+  <p>2009年成为美国首位黑人总统的贝拉克·奥巴马(Barack Obama)的宣誓仪式上有个独特的插曲。首席大法官小约翰·G·罗伯茨(John G. Roberts Jr.)为他主持了两次宣誓仪式：第二次是在1月21日在白宫重新进行的，因为两人在前一天的就职典礼上都出现了口误。</p>
+  <p>“在25秒内，奥巴马总统再次成为总统，”<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2009/01/22/us/politics/22oath.html?searchResultPosition=5">《纽约时报》写道</a>。</p>
+  <p>演讲</p>
+  <p>乔治·华盛顿(George Washington)是个沉默寡言的人。他的第二次就职演说只有135个单词，是有史以来最短的。1817年，詹姆斯·门罗(James Monroe)成为第一位在户外宣誓并发表就职演说的总统，地点是在<a rel="nofollow" target="_blank" href="https://www.visitthecapitol.gov/exhibitions/timeline/image/old-brick-capitol-mathew-brady-1865">老砖墙国会楼</a>前。威廉·亨利·哈里森(William Henry Harrison)的演讲最长，1841年，他的就职演说有一万个单词。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-reagan/merlin_105449608_bc39e2d5-8691-402e-95ce-ae3c5eafb70e-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">1981年，在首席大法官沃伦·伯格的主持下，罗纳德·里根在妻子南希·里根身边挥手，宣誓就任美国第40任总统。</small>
+  </div>
+  <p>会场</p>
+  <p>乔治·华盛顿在纽约市联邦大厅宣誓就职，然后在参议院会议厅发表演讲。1797年，约翰·亚当斯(John Adams)在费城的国会大厅举行就职典礼。1801年，托马斯·杰斐逊(Thomas Jefferson)是第一个步行往返就职典礼会场的人，并成为第一位在华盛顿国会大厦就职的总统。</p>
+  <p>日期</p>
+  <p>就职日并不总是在1月。乔治·华盛顿于1789年4月30日宣誓就职。在19世纪，3月4日成为宪法规定的就职日。但在1933年，经正式批准的第20修正案规定，总统和副总统的任期将在1月20日中午结束。</p>
+  <p>第一位在1月20日宣誓就职的总统是富兰克林·D·罗斯福(Franklin D. Roosevelt)，他于1937年宣誓就职，开始了第二届任期。<a rel="nofollow" target="_blank" href="https://history.house.gov/Historical-Highlights/1901-1950/The-first-inauguration-after-the-lame-duck-amendment/">当天尽管下着冷雨，仍有大群人观礼</a>。</p>
+  <p>过渡</p>
+  <p>1837年，安德鲁·杰克逊(Andrew Jackson)和马丁·范布伦(Martin Van Buren)一起乘坐马车前往国会大厦参加就职典礼，这是首次有即将离任的总统与继任者一起前往就职典礼。“我们现在已经习惯这种情况了，但遗憾的是，这种事今年不会发生，”研究就职典礼的历史学家吉姆·本达特(Jim Bendat)说。“这是一个重要的象征性时刻，表明新老双方可以和睦相处，即使他们属于不同的党派。”</p>
+  <p>任期即将结束的总统是不需要参加就职典礼的。1801年，约翰·亚当斯(John Adams)成为第一位没有参加继任者托马斯·杰斐逊(Thomas Jefferson)宣誓就职仪式的总统。几个月来，特朗普一直谎称2020年的选举被人窃取，现在他宣布不会参加拜登的就职典礼。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-jfk/00xp-inauguration-jfk-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">1961年，就职典礼前不久，约翰·F·肯尼迪（中）和他的前任德怀特·D·艾森豪威尔（右）在白宫前合影。</small>
+  </div>
+  <p>帽子</p>
+  <p>高顶礼帽是许多总统参加就职典礼的传统帽子选择。但据<a rel="nofollow" target="_blank" href="https://timesmachine.nytimes.com/timesmachine/1953/01/15/96494036.html?pageNumber=20">时报报道</a>，德怀特·D·艾森豪威尔(Dwight D. Eisenhower)在1953年用洪堡帽取代了它，打破了“官方服装传统”。1961年，肯尼迪又恢复了戴传统礼帽的习惯，后来帽子在官方服装中逐渐消失。</p>
+  <p>诗人</p>
+  <p>肯尼迪是第一个在就职典礼中加入诗人的人。那次活动没有按照计划进行。当时86岁的罗伯特·弗罗斯特(Robert Frost)原计划朗读他为那次活动所作的《序言》(The Preface)一诗。但书页上的反光让他看不清楚。“我这里的光线一点都不好，”<a rel="nofollow" target="_blank" href="https://timesmachine.nytimes.com/timesmachine/1961/01/21/97650370.html?pageNumber=9">根据时报对这次活动的报道，他说</a>。</p>
+  <p>约翰逊试图用他的大礼帽挡住反光。但弗罗斯特却把它放在一边，背诵了他自己那首熟记于心的《<a rel="nofollow" target="_blank" href="https://www.poetryfoundation.org/poems/53013/the-gift-outright">全心的奉献</a>》(The Gift Outright)。</p>
+  <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/11/03/style/amanda-gorman-first-youth-poet-laureate.html">2017年成为首位全国青年诗人桂冠奖获得者的阿曼达·戈尔曼</a>(Amanda Gorman)将在今年的颁奖典礼上朗诵。</p>
+  <p>《圣经》</p>
+  <p>多年来，大多数总统宣誓时都会将手放在《圣经》上。有些人选择自家的圣经，把华盛顿使用过的那本《圣经》放在讲台上，比如吉米·卡特(Jimmy Carter)。1901年的西奥多·罗斯福(Theodore Roosevelt)是个例外。威廉·麦金利(William McKinley)<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/01/18/us/politics/lincoln-bible-trump-oath.html">遇刺</a>后，罗斯福在朋友家中，没有使用《圣经》，而是“<a rel="nofollow" target="_blank" href="https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration">举起手</a>”宣誓就职。</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/19/world/19Trump-global2/merlin_157126788_043381e6-73f8-4b21-b9d3-d6837c443627-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">2019年，特朗普在日本G20峰会会晤俄罗斯总统弗拉基米尔·V·普京。</small>
+  </div>
+  <p>有些人为这个仪式留下了自己独特的印记。肯尼迪是第一位当选总统的罗马天主教徒，他使用的是天主教《圣经》。约翰逊要求妻子“小瓢虫”(Lady Bird)在他宣誓时手持圣经，他是第一个这样做的人。奥巴马使用了亚伯拉罕·林肯(Abraham Lincoln)的《圣经》。（特朗普在2017年<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2017/01/18/us/politics/lincoln-bible-trump-oath.html">也使用了那本林肯的《圣经》</a>。）</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-carter/merlin_55243738_86b03955-6e4b-4034-9b1a-82807ebdfd2a-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">1977年，在总统就职游行中，吉米和罗莎琳·卡特牵着女儿艾米的手走在宾夕法尼亚大道上。</small>
+  </div>
+  <p>游行</p>
+  <p>林肯在1865年的第二次就职典礼第一次有非裔美国人参加就职游行。女性第一次参加就职游行是在1917年，也就是伍德罗·威尔逊(Woodrow Wilson)的第二任期开始的时候。1977年，卡特成为第一个<a rel="nofollow" target="_blank" href="https://www.c-span.org/video/?c3344704/jimmy-carter-walks-inaugural-parade">步行</a>超过一英里前往白宫的人。当时卡特与妻子罗莎琳(Rosalynn)和他们九岁的女儿艾米(Amy)一起步行前往，这成为一项传统，被之后的总统们效仿——不过步行距离就不一样了。</p>
+  <p>跳舞</p>
+  <p>詹姆斯和多莉·麦迪逊(James and Dolley Madison)在1809年<a rel="nofollow" target="_blank" href="https://www.whitehousehistory.org/collections/presidential-inaugurations">开创了白宫招待会和就职舞会的传统</a>。当时的票价是4美元，按现在的价格计算约为85美元。</p>
+  <p>技术</p>
+  <p>就职典礼反映了科技和工业的创新。1921年，沃伦·G·哈丁(Warren G. Harding)是第一个乘坐汽车前往就职典礼的人；其后快速发展到防弹、封闭的豪华轿车，1965年在约翰逊的就职典礼上亮相。</p>
+  <p>随着技术的发展，观众也在扩大。1845年，詹姆斯·波尔克(James Polk)的就职演说通过电报传播给了更多的人。1897年，麦金利的就职典礼使用了胶片摄影机拍摄，卡尔文·柯立芝(Calvin Coolidge)在1925年的就职典礼做了无线电播出。</p>
+  <p>前演员罗纳德·里根(Ronald Reagan)在1985年从国会大厦前往白宫的途中，<a rel="nofollow" target="_blank" href="https://www.aoc.gov/what-we-do/programs-ceremonies/inauguration">在自己的豪华轿车里安装了一台电视摄像机</a>。1997年，比尔·克林顿(Bill Clinton)的就职典礼首次在互联网上直播。</p>
+  <p>家庭</p>
+<img src="https://images.weserv.nl?url=static01.nyt.com/images/2021/01/15/lens/00xp-inauguration-bush/00xp-inauguration-bush-articleLarge.jpg" width="100%" />  <div>
+<small style="color: #999;">2001年，前总统乔治·布什（右）在儿子乔治·W·布什（左）的就职典礼上。</small>
+  </div>
+  <p>一些就职典礼以家庭事务的形式开展。1881年，詹姆斯·加菲尔德(James Garfield)的母亲参加了他的就职典礼，开创了一个先例。1923年，卡尔文·柯立芝(Calvin Coolidge)的父亲、佛蒙特州的治安法官主持了儿子的宣誓就职仪式。1961年，肯尼迪的父母出席总统就职典礼，这是第一次总统的父母都出席。2001年，前总统乔治·布什(George Bush)出席了乔治·W·布什(George W. Bush)的就职典礼，一位前总统出席儿子的总统就职典礼，这是第一次也是唯一的一次。</p>
+  <p>Christine Hauser负责报道国内外新闻。她之前在新闻编辑部的工作包括为商业新闻版面报道金融市场，以及为城市版面报道警察局新闻。欢迎在Twitter上关注她：<a rel="nofollow" target="_blank" href="https://twitter.com/ChristineNYT">@ChristineNYT</a>。<br />翻译：Annie Xu、晋其角<br /><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/01/18/us/politics/presidential-inauguration-history-facts.html">点击查看本文英文版。</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%AE%80%E6%8A%A5-%E6%8B%9C%E7%99%BB%E5%AE%A3%E8%AA%93%E5%B0%B1%E4%BB%BB%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F-%E9%83%91%E7%88%BD%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E4%B8%91%E9%97%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92">
+          简报：拜登宣誓就任美国总统；郑爽代孕弃养丑闻引发愤怒
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E9%83%91%E7%88%BD%E8%A2%AB%E6%8C%87%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92%E5%92%8C%E4%BA%89%E8%AE%AE">
+          中国明星郑爽被指代孕弃养引发愤怒和争议
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C">
+          特朗普留给拜登一个被颠覆的世界
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/%E6%A2%85%E6%8B%89%E5%B0%BC%E5%A8%85%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%AB%E4%BA%BA%E7%94%9F%E6%B6%AF-%E8%87%AA%E6%80%9C-%E5%85%AC%E5%85%B3%E7%81%BE%E9%9A%BE%E5%92%8C%E7%BC%BA%E5%B8%AD">
+          梅拉尼娅的第一夫人生涯：自怜、公关灾难和缺席
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C">
+            前一篇：特朗普留给拜登一个被颠覆的世界
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E4%BF%AE%E6%95%99%E8%82%B2%E6%B3%95%E6%8B%9F%E6%98%8E%E7%A1%AE%E5%86%92%E5%90%8D%E9%A1%B6%E6%9B%BF%E5%85%A5%E5%AD%A6%E6%B3%95%E5%BE%8B%E8%B4%A3%E4%BB%BB">
+            后一篇：中国修教育法拟明确冒名顶替入学法律责任
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E4%BF%AE%E6%95%99%E8%82%B2%E6%B3%95%E6%8B%9F%E6%98%8E%E7%A1%AE%E5%86%92%E5%90%8D%E9%A1%B6%E6%9B%BF%E5%85%A5%E5%AD%A6%E6%B3%95%E5%BE%8B%E8%B4%A3%E4%BB%BB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E9%83%91%E7%88%BD%E8%A2%AB%E6%8C%87%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92%E5%92%8C%E4%BA%89%E8%AE%AE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E4%BF%AE%E6%95%99%E8%82%B2%E6%B3%95%E6%8B%9F%E6%98%8E%E7%A1%AE%E5%86%92%E5%90%8D%E9%A1%B6%E6%9B%BF%E5%85%A5%E5%AD%A6%E6%B3%95%E5%BE%8B%E8%B4%A3%E4%BB%BB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-20/%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E9%83%91%E7%88%BD%E8%A2%AB%E6%8C%87%E4%BB%A3%E5%AD%95%E5%BC%83%E5%85%BB%E5%BC%95%E5%8F%91%E6%84%A4%E6%80%92%E5%92%8C%E4%BA%89%E8%AE%AE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-20/%E7%89%B9%E6%9C%97%E6%99%AE%E7%95%99%E7%BB%99%E6%8B%9C%E7%99%BB%E4%B8%80%E4%B8%AA%E8%A2%AB%E9%A2%A0%E8%A6%86%E7%9A%84%E4%B8%96%E7%95%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

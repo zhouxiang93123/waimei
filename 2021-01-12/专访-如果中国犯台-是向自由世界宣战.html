@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>专访：如果中国犯台 是向自由世界宣战 – 外媒报道 – git.io/JJCxX</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+专访：如果中国犯台 是向自由世界宣战
+——
+" />
+    <meta property="og:description" content="
+专访：如果中国犯台 是向自由世界宣战
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="专访：如果中国犯台 是向自由世界宣战" />
+    <meta property="twitter:title" content="专访：如果中国犯台 是向自由世界宣战" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5300)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2593%25E8%25AE%25BF%25EF%25BC%259A%25E5%25A6%2582%25E6%259E%259C%25E4%25B8%25AD%25E5%259B%25BD%25E7%258A%25AF%25E5%258F%25B0%2520%25E6%2598%25AF%25E5%2590%2591%25E8%2587%25AA%25E7%2594%25B1%25E4%25B8%2596%25E7%2595%258C%25E5%25AE%25A3%25E6%2588%2598%2Fa-56205148&t=%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0+%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2593%25E8%25AE%25BF%25EF%25BC%259A%25E5%25A6%2582%25E6%259E%259C%25E4%25B8%25AD%25E5%259B%25BD%25E7%258A%25AF%25E5%258F%25B0%2520%25E6%2598%25AF%25E5%2590%2591%25E8%2587%25AA%25E7%2594%25B1%25E4%25B8%2596%25E7%2595%258C%25E5%25AE%25A3%25E6%2588%2598%2Fa-56205148&t=%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0+%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98&d=2021-01-12&e=
+专访：如果中国犯台 是向自由世界宣战
+——
+
+
+  
+2021-01-12T15:37:58.301Z
+  
+  
+台湾驻德国代表处大使谢志伟2020年10月19日应邀到联邦议院人权委员会做客
+  
+  （德国之声中文网）
+  德国之声：您怎么看克拉夫特大使即将访问台湾？
+  谢志伟：我们非常高兴，非常荣幸地欢迎美国驻联合国大使克拉夫特女士（Kelly Craft）正式到访。我想，这是向世界发出的信号，正像美国国务卿蓬配奥在其新闻发布中指明的，“台湾与美国共享相同的价值”。
+  我们都是民主体制国家，共同遵守个人自由、法治以及尊重人的尊严等基本价值观。由于中国的影响，过去四十、五十年来，台湾受到非常、非常不公正的对待。
+  德国之声：对不起，我打断一下，我想，最大的问题其实是，您认为，克拉夫特女士到访、或者说特朗普政府和台湾政府如此靠近，它会延续到几天后即将上任的拜登政府吗？
+  ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2593%25E8%25AE%25BF%25EF%25BC%259A%25E5%25A6%2582%25E6%259E%259C%25E4%25B8%25AD%25E5%259B%25BD%25E7%258A%25AF%25E5%258F%25B0%2520%25E6%2598%25AF%25E5%2590%2591%25E8%2587%25AA%25E7%2594%25B1%25E4%25B8%2596%25E7%2595%258C%25E5%25AE%25A3%25E6%2588%2598%2Fa-56205148" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148&text=专访：如果中国犯台 是向自由世界宣战&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148&title=专访：如果中国犯台 是向自由世界宣战" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148&title=专访：如果中国犯台 是向自由世界宣战" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=专访：如果中国犯台 是向自由世界宣战&body=
+专访：如果中国犯台 是向自由世界宣战
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148&title=专访：如果中国犯台 是向自由世界宣战&caption=
+专访：如果中国犯台 是向自由世界宣战
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=专访：如果中国犯台 是向自由世界宣战&url=https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>专访：如果中国犯台 是向自由世界宣战</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2593%25E8%25AE%25BF%25EF%25BC%259A%25E5%25A6%2582%25E6%259E%259C%25E4%25B8%25AD%25E5%259B%25BD%25E7%258A%25AF%25E5%258F%25B0%2520%25E6%2598%25AF%25E5%2590%2591%25E8%2587%25AA%25E7%2594%25B1%25E4%25B8%2596%25E7%2595%258C%25E5%25AE%25A3%25E6%2588%2598%2Fa-56205148&t=%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0+%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98&d=2021-01-12&e=
+专访：如果中国犯台 是向自由世界宣战
+——
+
+
+  
+2021-01-12T15:37:58.301Z
+  
+  
+台湾驻德国代表处大使谢志伟2020年10月19日应邀到联邦议院人权委员会做客
+  
+  （德国之声中文网）
+  德国之声：您怎么看克拉夫特大使即将访问台湾？
+  谢志伟：我们非常高兴，非常荣幸地欢迎美国驻联合国大使克拉夫特女士（Kelly Craft）正式到访。我想，这是向世界发出的信号，正像美国国务卿蓬配奥在其新闻发布中指明的，“台湾与美国共享相同的价值”。
+  我们都是民主体制国家，共同遵守个人自由、法治以及尊重人的尊严等基本价值观。由于中国的影响，过去四十、五十年来，台湾受到非常、非常不公正的对待。
+  德国之声：对不起，我打断一下，我想，最大的问题其实是，您认为，克拉夫特女士到访、或者说特朗普政府和台湾政府如此靠近，它会延续到几天后即将上任的拜登政府吗？
+  ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%2593%25E8%25AE%25BF%25EF%25BC%259A%25E5%25A6%2582%25E6%259E%259C%25E4%25B8%25AD%25E5%259B%25BD%25E7%258A%25AF%25E5%258F%25B0%2520%25E6%2598%25AF%25E5%2590%2591%25E8%2587%25AA%25E7%2594%25B1%25E4%25B8%2596%25E7%2595%258C%25E5%25AE%25A3%25E6%2588%2598%2Fa-56205148" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610466834000-->
+<p><a href="https://www.dw.com/zh/%E4%B8%93%E8%AE%BF%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%B8%AD%E5%9B%BD%E7%8A%AF%E5%8F%B0%20%E6%98%AF%E5%90%91%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C%E5%AE%A3%E6%88%98/a-56205148">专访：如果中国犯台 是向自由世界宣战</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2021-01-12T15:37:58.301Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55345548_303.jpg" width="100%" />  <div>
+<small style="color: #999;">台湾驻德国代表处大使谢志伟2020年10月19日应邀到联邦议院人权委员会做客</small>
+  </div>
+  <p>（德国之声中文网）</p>
+  <p><strong>德国之声：您怎么看克拉夫特大使即将访问台湾？</strong></p>
+  <p>谢志伟：我们非常高兴，非常荣幸地<a href="https://api.dw.com/api/detail/article/56157744" rel="ArticleRef">欢迎美国驻联合国大使克拉夫特女士（Kelly Craft）正式到访</a>。我想，这是向世界发出的信号，正像美国国务卿蓬配奥在其新闻发布中指明的，“台湾与美国共享相同的价值”。</p>
+  <p>我们都是民主体制国家，共同遵守个人自由、法治以及尊重人的尊严等基本价值观。由于中国的影响，过去四十、五十年来，台湾受到非常、非常不公正的对待。</p>
+  <p><strong>德国之声：对不起，我打断一下，我想，最大的问题其实是，您认为，克拉夫特女士到访、或者说特朗普政府和台湾政府如此靠近，它会延续到几天后即将上任的拜登政府吗？</strong></p>
+  <p>谢志伟：也许会有人说，这是特朗普政府给台湾最后的告别礼物。不过，我想，这也是特朗普政府留给拜登政府的遗产的一部分，因为一直以来，美国不论民主党还是共和党都是台湾政府的朋友。所以，我想，对拜登政府而言这会是非常好的影响。他们会接受的，因为它合乎拜登对台政策的大方向，也因为它合乎美国的利益，而不仅仅是特朗普政府的利益。</p>
+  <p><strong>德国之声：历史上看，美国同台湾的关系受到所谓“台湾关系法”的约束。<a href="https://api.dw.com/api/detail/article/55286262" rel="ArticleRef">该法要求美国向台湾出售武器</a>，以确保台湾针对中国的防卫能力。但没有法律要求美国军事保卫台湾，即便中国袭击台湾。您认为，这里是否有必要改变？</strong></p>
+  <p>谢志伟：“台湾关系法”旨在维护西太平洋的和平、安全和稳定，不仅仅是台湾海峡。因此，台湾不仅对台湾有着战略重要意义，对美国、日本和韩国，乃至所有南中国海沿岸的亚洲国家都是如此，甚至对澳大利亚、新西兰和印度也不例外。</p>
+  <p>一旦中国企图侵略台湾，发生冲突、发生战争，这便不单是台湾和中国之间的战争，而是中国向美国、日本以及全太平洋地区宣战。这是我的看法。</p>
+  <p>因此，问题应以另一种方式提出：如果台湾受到中国侵略，那么意味着中国向自由世界发动战争。因此我认为，如果中国这样做，如果台湾被中国接管，美国、日本，我认为甚至欧盟国家，他们的利益、贸易利益都会受到损害。</p>
+  <h3 id="section">相关图集：2020年美国对台军售总额创历史最高</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/47693891_303.jpg" width="100%" /><strong>年末再添一笔军售</strong>：路透社报道，美国本周宣布了对台2.8亿美元的“野战资讯通信系统”军售，帮助台湾军事现代化，加强防御能力。这是是美国今年第六度对台军售，中国外交部发言人华春莹在周二的例行发布会上敦促美国停止售台武器和美台任何军事联系，她表示，美国对台出售武器装备严重违反一中原则和中美三个联合公报规定，严重损害中美关系。(图为幻影战机资料图片)
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55775878_303.jpeg" width="100%" /><strong>2020年美国对外军售的最大买家</strong>：11月28日，美国在台协会台北办事处处长郦英杰（William Brent Christensen）在台湾出席一场研讨会时声称，台湾已是全世界公认的美国武器最大采购方，今年美国对台计划中的军售额总计高达118亿美元，是台湾史上单年最高的年度防务采购。他强调，美国对台军售获得美国两党的支持，这些军售对台湾提升“不对称作战能力”具有相当关键的力量。他还透露，放眼2021年，美国政府已通知国会对台军售52亿美元。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44326518_303.jpg" width="100%" /><strong>台北谨慎回应</strong>：11月29日，台湾国防部就骊英杰的表态做出了回应。声明指出，美国对台出售防卫性武器，有助强化整体防卫战力，确保台海及印太区域的和平与稳定，国防部对此表示感谢。但同时声明也强调，明年并无规划新增对美提出52亿美元的重大军购项目。（图为台湾空军资料照片）
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/39492051_303.jpg" width="100%" /><strong>特朗普任内军售频繁</strong>：10月26日，华盛顿方面公布2020年内第四波对台军售案，表示美国国务院已核准将100枚鱼叉反舰飞弹出售给台湾。据台湾中央社报道，这笔军售交易总额高达23.7亿美元。鱼叉海岸防御系统（HCDS）射程在200到300公里之间，可对沿岸、港湾以及陆上目标实施打击，符合台湾近年机动、不对称战力的诉求。这是也是美国总统特朗普上任以来的第九个对台军售案。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/46931843_303.jpg" width="100%" /><strong>40余年，上百次对台军售案</strong>：美国向台湾出售武器，源于1979年美国与台北断交，转而与北京建交之后，制定的《台湾关系法》。在撤离驻台美军之后，美国开始依照该法律为台湾提供防御性军武。根据1982年时任总统罗纳德·里根建立的备忘录，美国对台提供武器之性能与数量“视中共所构成之威胁而定”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55099641_303.jpg" width="100%" /><strong>具有标志性意义的F16战机</strong>：在数十年的历次对台军售案当中，最为引人注目的先进武器之一莫过于美国的F16战斗机。这是由洛克希德·马丁公司研制的轻型战斗机，在战机世代上归类于第四代战斗机，同时也是第四代战机中产量最高的机种。台北方面从70年代就开始要求向美国采购这种先进战机，但是直到90年代才得以达成交易。1997年，台湾采购的首批F16战机进行交付。之后该系列战机又经历了多次升级和换装，美方提供的飞行训练和技术支援也都包括在军售交易之内。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/43370935_303.jpg" width="100%" /><strong>基隆级驱逐舰</strong>：纪德级驱逐舰（Kidd class）是美国海军已除役的飞弹驱逐舰，2005年到2006年期间，美国海军陆续将该系列一共四艘驱逐舰交接给台湾海军，并改称为基隆级驱逐舰。图为台湾总统蔡英文2018年视察该舰。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/43166273_303.jpg" width="100%" /><strong>爱国者导弹</strong>：爱国者导弹（Patriot）是美国雷神公司制造的中程地对空导弹系统，该系统曾在海湾战争中成功拦截了伊拉克军队发射的飞毛腿导弹，从而声名大噪。这款具有代表性的美军武器在之后经多次升级，从90年代起台湾多次向美国采购爱国者导弹。2020年7月达成的美国对台军售案中还包括爱国者三型导弹的零组件相关更换、维修、测试与后勤支援等内容。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18141453_303.jpg" width="100%" /><strong>将台湾打造成一个“堡垒”</strong>：近年来，随着中国军事装备力量的不断壮大，以及美中关系的日益紧张，美国出售给台湾的武器种类也发生了变化。美国兰德公司的研究员葛莱斯曼 (Derek Grossman)10月中旬在接受德国之声采访时表示：“美国过去卖给台湾许多不同类型的武器，有时是能提升台湾不对称防御战力的武器，有时是像F-16战机这种标志性的武器。不过现在美国的对台军援政策似乎做了一个明显的调整。”他认为，为了要阻止中国透过两栖登陆的方式入侵台湾，美国要协助台湾成为一个“坚不可摧的堡垒”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/51596702_303.jpg" width="100%" /><strong>北京如何应对？</strong>：历来的美国对台军售案都会引起北京方面的反对，但大多数情况下都仅限于口头抗议。10月26日，中国外交部发言人赵立坚在例行记者会上表示，中国将对参与上周对台军售案的洛克希德·马丁丶波音防务丶雷神等美国企业与个人实施制裁。其实洛克希德·马丁公司鲜少与中国做生意，多年来一直向台湾提供武器和国防设备。然而，如果中国对波音(Boeing)实施制裁，这可能对其造成沉重打击，因为该公司也向中国出售民航飞机。
+  </div>
+  <p><em>德国之声致力于为您提供客观中立的新闻报道，以及展现多种角度的评论分析。文中评论及分析仅代表作者或专家个人立场。</em></p>
+  <p><em>© 2020年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E8%AF%84%E8%AE%BA-%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93-%E7%A6%81%E8%A8%80%E5%B9%B6%E9%9D%9E%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%9B%9E%E5%BA%94">
+          评论：社交媒体 – 禁言并非正确的回应
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7">
+          德语媒体：特朗普的对华政策遗产
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E8%BF%87%E5%8E%BB11%E5%B9%B4%E7%9A%84%E5%BE%B7%E5%9B%BD%E5%B9%B4%E5%BA%A6-%E6%81%B6%E8%AF%8D">
+          过去11年的德国年度“恶词”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E5%9B%BD%E4%BA%BA%E5%8F%A3%E6%80%BB%E6%95%B0%E5%8D%81%E5%B9%B4%E6%9D%A5%E9%A6%96%E6%AC%A1%E4%B8%8B%E9%99%8D">
+          德国人口总数十年来首次下降
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E5%9B%BD%E4%B8%A5%E7%A6%81%E6%96%B0%E7%96%86%E5%BC%BA%E8%BF%AB%E5%8A%B3%E5%8A%A8%E5%88%B6%E5%93%81%E8%BF%9B%E5%8F%A3-%E5%AD%A6%E8%80%85%E5%91%BC%E5%90%81%E5%9B%BD%E9%99%85%E8%81%94%E5%90%88%E8%A1%8C%E5%8A%A8">
+            前一篇：英国严禁新疆强迫劳动制品进口 学者呼吁国际联合行动
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7">
+            后一篇：德语媒体：特朗普的对华政策遗产
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E5%9B%BD%E4%B8%A5%E7%A6%81%E6%96%B0%E7%96%86%E5%BC%BA%E8%BF%AB%E5%8A%B3%E5%8A%A8%E5%88%B6%E5%93%81%E8%BF%9B%E5%8F%A3-%E5%AD%A6%E8%80%85%E5%91%BC%E5%90%81%E5%9B%BD%E9%99%85%E8%81%94%E5%90%88%E8%A1%8C%E5%8A%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/%E8%BF%87%E5%8E%BB11%E5%B9%B4%E7%9A%84%E5%BE%B7%E5%9B%BD%E5%B9%B4%E5%BA%A6-%E6%81%B6%E8%AF%8D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E8%8B%B1%E5%9B%BD%E4%B8%A5%E7%A6%81%E6%96%B0%E7%96%86%E5%BC%BA%E8%BF%AB%E5%8A%B3%E5%8A%A8%E5%88%B6%E5%93%81%E8%BF%9B%E5%8F%A3-%E5%AD%A6%E8%80%85%E5%91%BC%E5%90%81%E5%9B%BD%E9%99%85%E8%81%94%E5%90%88%E8%A1%8C%E5%8A%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E9%81%97%E4%BA%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-12/%E8%BF%87%E5%8E%BB11%E5%B9%B4%E7%9A%84%E5%BE%B7%E5%9B%BD%E5%B9%B4%E5%BA%A6-%E6%81%B6%E8%AF%8D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>
